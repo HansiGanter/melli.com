@@ -1,5 +1,19 @@
 # Emilia WebApp
 
+The `flake.nix` provides a development environment with:
+
+* Node.js 16.x
+* pnpm
+* Cypress
+
+Activate development environment:
+
+```sh
+nix develop
+# or install direnv to automatically activate env
+direnv allow
+```
+
 Install dependencies:
 
 ```
