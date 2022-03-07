@@ -1,3 +1,4 @@
+import { DateTimeFormatOptions } from '.pnpm/@intlify+core-base@9.1.9/node_modules/@intlify/core-base'
 import { createI18n } from 'vue-i18n'
 import type { UserModule } from '~/types'
 
@@ -12,11 +13,22 @@ const messages = Object.fromEntries(
     }),
 )
 
+const longFormat: DateTimeFormatOptions = {
+  weekday: "long",
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
+
 export const install: UserModule = ({ app }) => {
   const i18n = createI18n({
     legacy: false,
-    locale: 'en',
+    locale: 'de',
     messages,
+    datetimeFormats: {
+      'en': { long: longFormat },
+      'de': { long: longFormat },
+    }
   })
 
   app.use(i18n)

@@ -1,3 +1,18 @@
+'404':
+  contact-support: Kontakt zum Support
+  go-home: Zurück zur Startseite
+  not-found:
+    heading: Seite nicht gefunden
+    text: >-
+      Bitte überprüfen Sie die URL in der Adressleiste und versuchen Sie es
+      erneut.
+blog:
+  heading: Blog
+  subheading: Alle Informationen rund um Emilia
+blog-preview:
+  heading: Aus unserem Blog
+  reading-time: Lesezeit
+  subheading: Erfahren Sie mehr über Emlia aus einem unseren Blogeinträgen
 button:
   about: Über
   back: Zurück
@@ -5,10 +20,204 @@ button:
   home: Startseite
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
+faq:
+  '1':
+    answer: >-
+      Emilia schützt vor unangemessenen Inhalten insoweit, dass dem Nutzer kein
+      uneingeschränkter Zugang zum Internet ermöglicht wird. Emilia bewegt sich
+      online lediglich in festgelegten und geprüften Räumen und kann diese
+      selbst auf Befehl des Nutzers nicht verlassen.
+    question: >-
+      Ist der Nutzer vor unangemessenen Inhalten oder Kostenfallen aus dem
+      Internet geschützt?
+  '2':
+    answer: >-
+      Emilia kommt mit einem 10,1 Zoll Tablet, einem Lautsprecher, der
+      gleichzeitig der Stromversorgung des Tablets dient und einem Ladekabel zu
+      Ihnen nach Hause.
+    question: Was ist beim Kauf einer Emilia alles dabei?
+  '3':
+    answer: >-
+      Emilia benötigt eine Verbindung zum Internet. Wenn vor Ort kein WLAN zu
+      Verfügung steht, kann Emilia auf Wunsch mit einer eigenen
+      Internetverbindung zu Ihnen nach Hause geliefert werden. Geben Sie im Shop
+      bei der Abo-Konfiguration einfach an, dass eine SIM-Karte mit mobilem
+      Internet benötigt wird. Die Kosten dafür werden bei Ihrer individuellen
+      Preisberechnung berücksichtigt.
+    question: Wird für die Nutzung von Emilia ein Internetanschluss zuhause benötigt?
+  '4':
+    answer: >-
+      Anders als herkömmliche Sprachassistenten wartet Emilia nicht auf
+      Anweisungen ihrer Nutzer, sondern geht proaktiv mit Aktivitätsvorschlägen
+      auf sie zu. Auf diese Weise motiviert sie zu einem aktiveren Alltag, in
+      dem soziale Kontakte eine wichtige Rolle spielen.
+    question: Was unterscheidet Emilia von anderen Sprachassistenten?
+  '5':
+    answer: >-
+      Sollte ein Notfall eintreten, so hat Emilia eine
+      Notfallvalidierungsfunktion, die festgelegte Notfallkontakte und im
+      schlimmsten Fall auch einen Krankenwagen verständigen kann. Außerdem
+      bietet die integrierte Drop-In Funktion zusätzliche Sicherheit. Mit Hilfe
+      dieses Features können sich berechtigte Kontakte jederzeit vergewissern,
+      ob es dem Nutzer gut geht, ohne, dass dieser extra abheben muss.
+    question: Ist Emilia ein Ersatz für den Notrufknopf & Notfallarmband?
+  '6':
+    answer: >-
+      Dank der Bedienung per Sprachsteuerung ist das Telefonieren mit Kontakten
+      sowohl per Video- als auch per normalem Sprachanruf kinderleicht und ohne
+      Barriere nutzbar.
+    question: Ist Emilia ein Ersatz für Seniorenhandys?
+  '7':
+    answer: >-
+      Ja Emilia ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
+      ihre Nutzer fortlaufend dazu anregt und motiviert einen aktiven Alltag mit
+      möglichst vielen sozialen Kontakten zu gestalten. Strukturgebende
+      Funktionen wie beispielsweise die Terminplanung oder der morgendliche
+      Wecker helfen außerdem gegen die sich leicht einschleichende Trägheit.
+    question: |
+      Ist Emilia bei Depression und Antriebsarmut geeignet?
+  '8':
+    answer: >-
+      Ja Emilia eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
+      durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
+      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+      eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
+      beispielsweise sehr positiv auf die Ernährung ausüben kann. Außerdem kann
+      sie kognitive Einschränkungen kompensieren und die geistige und
+      körperliche Fitness durch kleine Übungen trainieren.
+    question: |-
+
+      Ist Emilia bei Demenz geeignet?
+  heading: Häufig gestelle Fragen
+footer:
+  company:
+    about: Über Uns
+    blog: Blog
+    heading: Unternehmen
+    jobs: Jobs
+    team: Team
+  resources:
+    claim: Widerruf
+    contact: Kontakt
+    heading: Ressourcen
+    privacy: Datenschutz
+    terms: AGB
+  settings:
+    heading: Sprache & Theme
+hero:
+  coming-soon: Demnächst verfügbar
+  heading-1: Emilia
+  heading-2: Die Tagesbegleitung von morgen
+  heading-3: >-
+    Begleiterin im Alltag, Seniorentreff, Entertainerin & Verbindung zu den
+    Liebsten. Emilia ist alles in Einem.
+  learn-more: Mehr erfahren
+  pre-order: Kostenlos vorbestellen
 intro:
+  aka: Auch bekannt als
   desc: Vite Startvorlage mit Vorlieben
   dynamic-route: Demo einer dynamischen Route
   hi: Hi, {name}!
-  aka: Auch bekannt als
   whats-your-name: Wie heißt du?
+jobs:
+  heading: Offene Stellen
+  open-positions:
+    heading: Außerdem suchen wir auch
+  subheading: Unsere offenen Stellen
+  typing:
+    text-1: Hallo ich bin Emilia 👋
+    text-2: Schön dich kennenzulernen!
+    text-3: Lust für unser Team zu spielen?
+navbar:
+  Emilia Device: {}
+  accessibility:
+    heading: Barrierefrei
+    text: Mit Sprachsteuerung technische Barrieren überwinden.
+  all-features:
+    heading: Alle Funktionen
+    text: Emilia kommt mit einer Reihe von anderen nützlichen Funktionen.
+  already-signed-up: Haben Sie schon ein Konto?
+  blog:
+    heading: Blog
+  emilia-app:
+    heading: Emilia App
+    text: Freunde & Familie einbeziehen. Mit der Emilia-App.
+  emilia-device:
+    heading: Emilia Tablet
+    text: Einfach einschalten und schon wacht Emilia auf - von ganz allein.
+  features:
+    heading: Emilia
+  guides:
+    heading: Guides
+    text: Lerne alles rund um die Einrichtung und Verwaltung von Emilia.
+  jobs:
+    heading: Jobs
+  more: Mehr
+  pre-order:
+    badge: Demnächst verfügbar
+    heading: Jetzt vorbestellen
+    text: Entwickelt von Experten aus Geriatrie & Pflege
+  safety:
+    heading: Sicherheit
+  security:
+    heading: Sicherheit
+    text: Wir nehmen Ihre Privatsphäre ernst.
+  sign-in: Anmelden
+  sign-up: Registrieren
+  social-integration:
+    heading: Soziale Integration
+    text: Emilia passt auf. Sicherheit rund um die Uhr.
+  support:
+    heading: Hilfe-Center
+    text: >-
+      Holen Sie sich Antworten auf all Ihre Fragen in unseren Foren oder
+      kontaktieren Sie den Support.
+  team:
+    heading: Team
+    text: Lernen Sie unser Team kennen!
+newsletter:
+  condition: '*bei Abschluss eines Emilia-Abonnements'
+  heading: Newsletter abonieren & Emilia für 3 Monate gratis sichern
+  placeholder: Ihre E-Mail Adresse
+  subscribe: Abonnieren
+  text: >-
+    Wir freuen uns mit dir in Kontakt zu bleiben und als Dankeschön schenken wir
+    dir drei kostenlose Monate mit Emilia.*
 not-found: Nicht gefunden
+reliability:
+  heading: Emilia passt auf. Sicherheit rund um die Uhr.
+  text: >-
+    Funktionen wie Drop-In Anrufe und automatische Notfallerkennung geben
+    Familie und Freunden das beruhigende Gefühl, dass alles in Ordnung ist und
+    den Nutzern die Sicherheit, im Notfall ganz schnell Hilfe zu bekommen. Gegen
+    die Sorge, nicht im richtigen Moment da sein zu können, vor allem, wenn die
+    Entfernung zu groß ist.
+stats-section:
+  accessibility: Barrierefreie Bedienung
+  heading: Entwickelt von Experten aus Geriatrie & Pflege
+  more: Mehr
+  safety: Sicherheit rund um die Uhr
+  social-integration: Soziale Integration
+  text: >-
+    Emilia nimmt ihre Nutzer an die Hand und gestaltet zusammen mit ihnen einen
+    aktiven und abwechslungsreichen Alltag: Gemeinschaft und der Kontakt zu
+    Familie und Freunden großgeschrieben.
+support:
+  heading: Hilfe-Center
+  text: >-
+    Für spezifische Fragen wenden Sie sich an unseren Kundensupport. Ansonsten
+    können Sie die FAQs lesen.
+team:
+  heading: Unser Team
+  subheading: >-
+    Wir wollen Neues schaffen – mit künstlicher Intelligenz für das Leben im
+    Alter! Bist du bereit mit uns eine Zukunft zu schaffen, in der jeder Mensch,
+    in jeder Lebensphase gemeinsame Momente erleben und teilen kann - unabhängig
+    vom Alter, den Lebensumständen, körperlichen Fähigkeiten oder anderen
+    Hürden?
+testimonial:
+  affiliation: Pflegerin
+  name: Judith Black
+  text: >-
+    Alle in unserer Einrichtung, die Emilia benutzen, sind seitdem deutlich
+    aktiver, positiver und auch fröhlicher.

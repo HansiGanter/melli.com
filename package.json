@@ -12,7 +12,8 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@vueuse/core": "^7.4.1",
+    "@headlessui/vue": "^1.4.2",
+    "@vueuse/core": "^7.5.3",
     "@vueuse/head": "^0.7.4",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.9",
@@ -20,11 +21,14 @@
     "vue": "^3.2.26",
     "vue-demi": "^0.12.1",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vue-typical": "^2.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.14.0",
+    "@antfu/eslint-config": "^0.15.0",
     "@iconify-json/carbon": "^1.0.12",
+    "@iconify-json/heroicons-outline": "^1.0.2",
+    "@iconify-json/heroicons-solid": "^1.0.2",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
@@ -37,6 +41,8 @@
     "cypress": "^9.1.1",
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "fs-extra": "^10.0.0",
+    "gray-matter": "^4.0.3",
     "https-localhost": "^4.7.0",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.1",
@@ -45,7 +51,7 @@
     "unplugin-auto-import": "^0.5.4",
     "unplugin-icons": "^0.13.0",
     "unplugin-vue-components": "^0.17.11",
-    "vite": "^2.7.6",
+    "vite": "^2.7.10",
     "vite-plugin-inspect": "^0.3.11",
     "vite-plugin-md": "^0.11.7",
     "vite-plugin-pages": "^0.19.7",

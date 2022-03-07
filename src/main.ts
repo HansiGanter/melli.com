@@ -16,10 +16,16 @@ import 'virtual:windi-devtools'
 
 const routes = setupLayouts(generatedRoutes)
 
+import type { RouterScrollBehavior } from 'vue-router'
+
+const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) => {
+  return savedPosition ? savedPosition : { top: 0 }
+}
+
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
   App,
-  { routes, base: import.meta.env.BASE_URL },
+  { routes, scrollBehavior, base: import.meta.env.BASE_URL },
   (ctx) => {
     // install all modules under `modules/`
     Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))

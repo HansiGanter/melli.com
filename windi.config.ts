@@ -1,17 +1,34 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
+import forms from 'windicss/plugin/forms'
 import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
+  extract: {
+    include: [
+      'index.html',
+      'pages/**/*.{md,vue}',
+      'src/**/*.{vue,ts,css}',
+    ],
+  },
   darkMode: 'class',
   // https://windicss.org/posts/v30.html#attributify-mode
   attributify: true,
 
   plugins: [
+    forms,
     typography(),
   ],
   theme: {
     extend: {
+      colors: {
+        ...colors,
+        primary: colors.emerald,
+        secondary: colors.lime,
+        tertiary: colors.yellow,
+        danger: colors.red,
+        gray: colors.stone,
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -24,7 +41,7 @@ export default defineConfig({
               'textDecoration': 'underline',
               '&:hover': {
                 opacity: 1,
-                color: colors.teal[600],
+                color: colors.emerald[400],
               },
             },
             b: { color: 'inherit' },

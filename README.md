@@ -1,4 +1,6 @@
-# Emilia WebApp
+# Emilia Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ceb70686-1725-4137-b9ad-2b0d055ea0ac/deploy-status)](https://app.netlify.com/sites/clever-wing-ee1bc8/deploys)
 
 The `flake.nix` provides a development environment with:
 

@@ -1,4 +1,5 @@
 import path from 'path'
+import fs from 'fs-extra'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
@@ -6,6 +7,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
@@ -13,9 +15,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
+import matter from 'gray-matter'
 import LinkAttributes from 'markdown-it-link-attributes'
-
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
   resolve: {
@@ -31,6 +32,21 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
+      pagesDir: 'pages',
+      extendRoute(route) {
+        const path_ = path.resolve(__dirname, route.component.slice(1))
+
+        if (path_.endsWith('.md')) {
+          const md = fs.readFileSync(path_, 'utf-8')
+          const { data } = matter(md)
+          // todo: is there a more elegant way??
+          if (data) {
+            route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+          }
+        }
+
+        return route
+      },
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -59,6 +75,7 @@ export default defineConfig({
 
       // custom resolvers
       resolvers: [
+        HeadlessUiResolver({ prefix: '' }),
         // auto import icons
         // https://github.com/antfu/unplugin-icons
         IconsResolver({
@@ -76,13 +93,11 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS({
-      safelist: markdownWrapperClasses,
-    }),
+    WindiCSS(),
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperClasses: markdownWrapperClasses,
+      wrapperComponent: 'Post',
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/

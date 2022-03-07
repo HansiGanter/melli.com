@@ -5,7 +5,7 @@
 useHead({
   title: 'Emilia',
   meta: [
-    { name: 'description', content: 'Emilia WebApp' },
+    { name: 'description', content: 'Emilia' },
   ],
 })
 </script>

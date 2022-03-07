@@ -1,3 +1,11 @@
+'404':
+  go-home: Go back home
+  not-found:
+    heading: Page not found
+    text: Please check the URL in the address bar and try again.
+blog-preview:
+  heading: From Our Blog
+  reading-time: read
 button:
   about: About
   back: Back
@@ -5,10 +13,27 @@ button:
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+footer:
+  settings:
+    heading: Language & Appearance
 intro:
+  aka: Also known as
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
+navbar:
+  already-signed-up: Have an account?
+  more: More
+  pre-order:
+    badge: Cooming soon
+  sign-in: Sign in
+  sign-up: Sign up
+  support:
+    text: Get all of your questions answered in our forums or contact support.
+newsletter:
+  heading: Subscribe to our newsletter
+  placeholder: Enter your email
+  subscribe: Subscribe
+  text: The latest news, articles, and resources, sent to your inbox weekly.
 not-found: Not found
