@@ -10,7 +10,7 @@ import Components from 'unplugin-vue-components/vite'
 import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-md'
-import WindiCSS from 'vite-plugin-windicss'
+import UnoCSS from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
@@ -40,9 +40,8 @@ export default defineConfig({
           const md = fs.readFileSync(path_, 'utf-8')
           const { data } = matter(md)
           // todo: is there a more elegant way??
-          if (data) {
+          if (data)
             route.meta = Object.assign(route.meta || {}, { frontmatter: data })
-          }
         }
 
         return route
@@ -92,8 +91,8 @@ export default defineConfig({
       autoInstall: true,
     }),
 
-    // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS(),
+    // https://github.com/unocss/unocss
+    UnoCSS(),
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
