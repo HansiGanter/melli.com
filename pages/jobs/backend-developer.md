@@ -5,16 +5,12 @@ category:
     name: Jobs
     href: jobs
 author:
-    name: Sahar Zoheidi
-    imageUrl: https://meetap-it.gitlab.io/emilia/assets/icons/placeholder-avatar.svg
+    name: Leonie Krumbholz
+    imageUrl: https://assets.melli.com/images/team/leonie-krumbholz.webp
 date: 2022-01-05T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://meetap-it.gitlab.io/emilia/assets/jobs/backend-developer.webp
+imageUrl: https://assets.melli.com/images/stock/jobs/backend-developer.webp
 ---
-
-<div class="flex gap-2 items-center mb-4 text-lg text-primary-500">
-    <heroicons-outline-location-marker /> Berlin
-</div>
 
 <job-header />
 
@@ -22,7 +18,7 @@ imageUrl: https://meetap-it.gitlab.io/emilia/assets/jobs/backend-developer.webp
 
 ### Deine Aufgaben
 
-* Du bist für die Umsetzung und Mitgestaltung von innovativen Features für unsere Software Emilia zuständig
+* Du bist für die Umsetzung und Mitgestaltung von innovativen Features für unsere Software Melli zuständig
 * Du findest Lösungen von komplexen Aufgabenstellungen in einem hochmotivierten Team
 * Du entwickelst und wartest unsere Software und Datenbank und stellst die qualitätsgerechte Umsetzung sicher
 
@@ -30,7 +26,7 @@ imageUrl: https://meetap-it.gitlab.io/emilia/assets/jobs/backend-developer.webp
 
 * Du hast ein abgeschlossenes Informatikstudium oder ein vergleichbares Studium (vorzugsweise von einer technischen Universität) - gerne auch Berufseinsteiger*innen
 * Du beherrschst gängige Programmiersprachen (Python, TypeScript, PHP oder Rust)
-* Du verfügst über sehr gute Deutschkenntnisse (mindestens C1) – Emilia ist eine deutschsprachige Tagesbegleitung
+* Du verfügst über sehr gute Deutschkenntnisse (mindestens C1) – Melli ist eine deutschsprachige Tagesbegleitung
 
 ### Dafür bieten wir Dir
 

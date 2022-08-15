@@ -1,22 +1,76 @@
 <script setup lang="ts">
 const { t } = useI18n()
+
+const open = () => {
+  alert('opened')
+}
+
+const filters = ['Latest', 'Pricing', 'Product', 'Social']
+const currentFilter = ref('')
+const email = ref('')
 </script>
 
 <template>
-  <Container class="bg-gradient-to-b from-primary-50 to-tertiary-50">
-    <NavBar class="text-primary-900" />
-    <SectionHeader
-      class="pt-8 lg:pt-16 pb-64 text-primary-800"
-      :heading="t('blog.heading')"
-      :text="t('blog.subheading')"
-    />
+  <Container class="py-8 lg:py-16 overflow-hidden">
+    <div class="grid gap-8">
+      <div class="grid gap-3 sm:gap-4 md:max-w-xl lg:max-w-3xl xl:max-w-none text-center">
+        <h2 class="text-2xl font-semibold lg:text-5xl text-gray-900">
+          {{ t('blog.heading') }}
+        </h2>
+        <p class="text-gray-500 font-medium text-lg lg:text-2xl">
+          {{ t('blog.subheading') }}
+        </p>
+      </div>
+      <div class="grid gap-2 w-full lg:w-6/12 lg:mx-auto">
+        <FormKit
+          class="flex items-stretch h-fit"
+          type="form"
+          :actions="false"
+          :incomplete-message="false"
+          @submit="open"
+        >
+          <div class="flex items-stretch h-fit">
+            <FormKit
+              v-model="email"
+              type="email"
+              name="email"
+              placeholder="Email-Adresse"
+              outer-class="grow"
+              wrapper-class="h-fill"
+              validation="required|email"
+              validation-visibility="submit"
+              inner-class="w-full h-fill border border-primary-400 rounded-l-lg overflow-hidden"
+              message-class="text-red mt-1"
+              input-class="w-full h-13 lg:h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 focus:outline-none"
+            />
+            <FormKit
+              type="submit"
+              input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-400 rounded-r-lg text-white"
+              wrapper-class="grow"
+            >
+              <span>{{ t('blog.subscribe-button') }}</span>
+              <div class="i-carbon:chevron-right" />
+            </FormKit>
+          </div>
+        </FormKit>
+      </div>
+    </div>
   </Container>
-  <Container class="-mt-56 pb-20 lg:pb-28">
-    <PostPreview prefix="/blog" />
+  <Container class="pb-20 lg:pb-28">
+    <div class="grid gap-8">
+      <div class="flex items-center justify-center gap-3">
+        <button
+          v-for="filter in filters"
+          :key="filter"
+          type="button"
+          class="py-2.5 px-4 font-medium text-sm inline rounded-full transition delay-150 ease-in-out"
+          :class="currentFilter === filter ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'"
+          @click="currentFilter = filter"
+        >
+          {{ filter }}
+        </button>
+      </div>
+      <PostPreview prefix="/blog" />
+    </div>
   </Container>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: blank
-</route>

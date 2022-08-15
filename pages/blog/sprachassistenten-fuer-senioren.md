@@ -7,13 +7,13 @@ category:
     href: #
 author:
     name: Philip Krech
-    imageUrl: https://meetap-it.gitlab.io/emilia/assets/team/philip-krech.webp
+    imageUrl: https://assets.melli.com/images/team/philip-krech.webp
 date: 2022-01-18T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://meetap-it.gitlab.io/emilia/assets/stock/video-chat-1.webp
+imageUrl: https://assets.melli.com/images/stock/357607827.webp
 ---
 
-![](https://meetap-it.gitlab.io/emilia/assets/stock/video-chat-1.webp)
+![](https://assets.melli.com/images/stock/357607827.webp)
 
 ## Digitale Assistenten -- der Mehrwert für Senioren
 

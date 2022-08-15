@@ -1,55 +1,29 @@
 <script setup lang="ts">
 const { t } = useI18n()
+
+const hero = {
+  title:
+      {
+        highlight: t('hero.heading-1.highlight'),
+        text: t('hero.heading-1.text'),
+      },
+  description: t('hero.heading-3'),
+}
 </script>
 
 <template>
-  <Container class="pt-16 pb-4 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-16 overflow-hidden">
-    <BlurryHeader class="-top-20 -left-28 opacity-60" />
-    <div class="grid gap-8 lg:grid-cols-2 items-center">
-      <div class="sm:text-center lg:text-left md:max-w-2xl md:mx-auto">
-        <div class="mix-blend-multiply dark:mix-blend-lighten">
-          <div
-            class="mb-1 text-sm font-semibold uppercase tracking-wide text-primary-800 dark:text-primary-200 sm:text-base lg:text-sm xl:text-base"
-          >
-            {{ t('hero.coming-soon') }}
-          </div>
-          <h1
-            class="mb-2 tracking-tighter inline-block font-bold text-transparent text-5xl sm:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-l from-primary-300 to-secondary-300"
-          >
-            {{ t('hero.heading-1') }}
-          </h1>
-          <h2
-            class="mb-8 tracking-tight text-2xl sm:text-3xl xl:text-4xl text-primary-800 dark:text-primary-200"
-          >
-            {{ t('hero.heading-2') }}
-          </h2>
-          <p class="sm:mt-5 sm:text-xl lg:text-lg xl:text-xl ">
-            {{ t('hero.heading-3') }}
-          </p>
-        </div>
-        <div class="mt-10 grid sm:inline-grid sm:grid-cols-2 gap-3">
-          <router-link
-            to="/subscription"
-            class="grid place-items-center px-6 py-3 font-medium rounded-md text-primary-800 bg-gradient-to-tl from-primary-50 to-secondary-50 hover:text-primary-600"
-          >
-            {{ t('hero.pre-order') }}
-          </router-link>
-          <router-link
-            to="/how-it-works"
-            class="grid place-items-center px-6 py-3 font-medium rounded-md opacity-65 hover:opacity-50"
-          >
-            {{ t('hero.learn-more') }}
-          </router-link>
-        </div>
-      </div>
-      <div
-        class="rounded-2xl px-16 pt-4 bg-gradient-to-l from-primary-100 to-secondary-100 border-12 border-gray-900 shadow-lg"
-      >
+  <Container class="backdrop-contrast-75 py-40 sm:py-16 lg:py-80 bg-no-repeat bg-cover bg-center lg:bg-top-right" style="background-image: url('https://assets.melli.com/images/stock/584239506.webp')">
+    <div class="filter-none grid gap-5 lg:gap-9 lg:w-1/2 lg:mx-auto md:text-center">
+      <h1 class="font-semibold text-4xl md:text-5xl text-white">
+        <span class="text-primary-400">{{ hero.title.highlight }}</span> {{ hero.title.text }}
+      </h1>
+      <a href="#" class="flex justify-start gap-2.5 items-center text-primary-300 font-medium text-base mr-auto lg:mx-auto">
+        <span>Sieh dir das ganze Video an</span>
         <img
-          class="h-full max-w-xs ml-auto "
-          src="https://mit-emilia.de/wp-content/uploads/2021/10/Emilia_sprechend_Zeichenflaeche-1.svg"
+          src="https://assets.melli.com/icons/arrow-circle.svg"
+          class="mx-auto stroke-primary-300 w-6"
         >
-      </div>
+      </a>
     </div>
   </Container>
 </template>

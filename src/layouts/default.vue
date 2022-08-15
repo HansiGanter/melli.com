@@ -4,7 +4,7 @@
       <NavBar />
     </Container>
 
-    <router-view />
+    <RouterView />
 
     <Container>
       <Footer />

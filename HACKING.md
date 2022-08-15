@@ -62,7 +62,7 @@ If you are using VS Code, [`i18n Ally`](https://github.com/lokalise/i18n-ally) i
 A custom user module system. Place a `.ts` file with the following template, it will be installed automatically.
 
 ```ts
-import { UserModule } from '~/types'
+import { type UserModule } from '~/types'
 
 export const install: UserModule = ({ app, router, isClient }) => {
   // do something

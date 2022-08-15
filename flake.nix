@@ -1,5 +1,5 @@
 {
-  description = "Emilia WebApp";
+  description = "melli.com";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -15,7 +15,6 @@
           buildInputs = [
             nodejs-16_x
             nodePackages.pnpm
-            cypress
           ];
         };
       }

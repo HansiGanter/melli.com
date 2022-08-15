@@ -7,13 +7,13 @@ category:
     href: #
 author:
     name: Matthias Weber
-    imageUrl: https://meetap-it.gitlab.io/emilia/assets/team/matthias-weber.webp
+    imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
 date: 2022-01-12T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://meetap-it.gitlab.io/emilia/assets/stock/2.webp
+imageUrl: https://assets.melli.com/images/stock/584239506.webp
 ---
 
-![](https://meetap-it.gitlab.io/emilia/assets/stock/2.webp)
+![](https://assets.melli.com/images/stock/584239506.webp)
 
 ## Willkommen in der Silver Society
 
@@ -30,7 +30,7 @@ Da in vielen Ländern gleichzeitig die Geburtenrate sinkt, wandelt sich die Gese
 * **Neue Strategien und Technologien** für seniorengerechtes Wohnen werden in Zukunft deshalb eine tragende Rolle übernehmen. Besonders wichtig dabei: Generationskompatibilität und ganzheitliche Wohnkonzepte die niemanden ausschließen (zum Beispiel kollaborative Wohnformen). Außerdem sollte Praktikabilität nicht im Kontrast zu Ästhetik stehen.
 
 
-![](https://meetap-it.gitlab.io/emilia/assets/stock/video-chat-1.webp)
+![](https://assets.melli.com/stock/video-chat-1.webp)
 
 ## Digitale Technologien als Gamechanger
 
@@ -47,31 +47,31 @@ kompliziert ist.
     name="Dr. Ariane Schenk" 
     role="Bereichsleiterin Health & Pharma bei Bitkom" 
     url="https://www.bitkom.org/"
-    imageUrl="https://www.bitkom.org/sites/default/files/styles/contact_large/public/2019-08/ariane_schenk_a_web_m.jpg"
+    imageUrl="https://www.bitkom.org/sites/main/files/styles/400_x_533/public/2019-08/ariane_schenk_a_web_m.jpg?h=6ff6549d&itok=a2_2whot"
     text="Die Digitalisierung kann Seniorinnen und Senioren wertvolle Dienste leisten und in einer älter werdenden Gesellschaft auch der Schlüssel für ein langes Leben in den eigenen vier Wänden sein"
 />
 
-Genau deshalb haben auch *Emilia* entwickelt. Emilia ist eine digitale
+Genau deshalb haben auch *Melli* entwickelt. Melli ist eine digitale
 Seniorenassistenz, die einzigartige Vorteile bietet: Die KI nimmt ihre
 Nutzer an die Hand und gestaltet zusammen mit ihnen einen aktiven und
 abwechslungsreichen Alltag. Als digitale Seniorenbegleitung animiert
-Emilia beispielsweise zu Gesprächen, organisiert Seniorentreffen und
+Melli beispielsweise zu Gesprächen, organisiert Seniorentreffen und
 legt einen besonderen Fokus auf den regelmäßigen Austausch mit Freunden
 und Familie.
 
 <router-link to="/">
-Hier können Sie mehr über Emilia erfahren
+Hier können Sie mehr über Melli erfahren
 </router-link>
 
 Funktionen wie Drop-In Anrufe und automatische Notfallerkennung für eine
-erhöhte Sicherheit der Senioren bietet Emilia übrigens ebenfalls.
+erhöhte Sicherheit der Senioren bietet Melli übrigens ebenfalls.
 
 ## Schlusswort: Seniorengerechtes
 
 ### Wohnen bedeutet Mehrwert für alle
 
 Wohnen und Leben in der Silver Society geht über barrierefreie Konzepte
-hinaus. Digitale Assistenten und Tools wie *Emilia* können den Alltag
+hinaus. Digitale Assistenten und Tools wie *Melli* können den Alltag
 von Senioren vereinfachen und Angehörigen gleichzeitig Last von den
 Schultern nehmen. So ist seniorengerechtes Wohnen eine Win-Win-Situation
 und verbessert die Lebensqualität aller Beteiligten. Ob Senioren oder

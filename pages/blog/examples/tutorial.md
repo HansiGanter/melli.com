@@ -7,10 +7,10 @@ category:
     href: #
 author:
     name: Felix Andreas
-    imageUrl: https://meetap-it.gitlab.io/emilia/assets/team/felix-andreas.webp
+    imageUrl: https://assets.melli.com/images/team/felix-andreas.webp
 date: 2022-01-02T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://meetap-it.gitlab.io/emilia/assets/jobs/backend-developer.webp
+imageUrl: https://assets.melli.com/images/stock/jobs/backend-developer.webp
 ---
 
 ## Python 🚀
@@ -20,11 +20,11 @@ imageUrl: https://meetap-it.gitlab.io/emilia/assets/jobs/backend-developer.webp
 Here is how you create an AI assistant in Python:
 
 ```python
-class Emilia:
+class Melli:
     def __init__(self, lang):
         self.lang = lang
 
-emilia = Emlia(lang="de")
+melli = Emlia(lang="de")
 ```
 
 ### How to annoy your colleagues 😡

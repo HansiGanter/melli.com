@@ -1,3 +1,5 @@
 <template>
-  <img src="https://meetap-it.gitlab.io/emilia/assets/logo.svg" />
+  <router-link to="/">
+    <img src="https://assets.melli.com/logo.svg" alt="Melli Logo">
+  </router-link>
 </template>

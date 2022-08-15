@@ -1,12 +1,9 @@
-# Emilia Website
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ceb70686-1725-4137-b9ad-2b0d055ea0ac/deploy-status)](https://app.netlify.com/sites/clever-wing-ee1bc8/deploys)
+# melli.com
 
 The `flake.nix` provides a development environment with:
 
 * Node.js 16.x
 * pnpm
-* Cypress
 
 Activate development environment:
 
@@ -51,20 +48,37 @@ Based on [Vitesse template](https://github.com/antfu/vitesse)
   - [🗂 `vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
   - [📑 `vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
 - 🍍 [Pinia](https://pinia.esm.dev) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-- [🎨 Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of additional features!
-  - [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
-  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [🎨 UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+  - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 - [🧩 VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
   - [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 - [🌍 Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`vite-plugin-vue-i18n`](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
 - [📥 `unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 - [📦 `unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [😃 `unplugin-icons`](https://github.com/antfu/unplugin-icons) - use icons from any icon sets from [🔍 Icônes](https://icones.netlify.app/) as Vue components
 - [📱 `vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [🗒 `vite-plugin-md`](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+- [🗒 `vite-plugin-vue-markdown`](https://github.com/mdit-vue/vite-plugin-vue-markdown) - Compile Markdown to Vue component
   - [`markdown-it-prism`](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
   - [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
+
+### Font Pack
+
+- [✍️ Puffins](https://use.typekit.net/rfu4zbz.css) - Official font purchased from Adobe
+  - Install font:
+
+  ```sh
+  # Add this link to the HEAD tag of your index.html
+  <link rel="stylesheet" href="https://use.typekit.net/rfu4zbz.css">
+
+  OR
+
+  <style>
+  @import url("https://use.typekit.net/rfu4zbz.css");
+  </style>
+  
+  Then reference the style in css file
+  font-family: "puffin-display-soft", sans-serif;
+  ```
 
 ### Coding Style
 
@@ -75,11 +89,9 @@ Based on [Vitesse template](https://github.com/antfu/vitesse)
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/)
 - [⚙️ Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
-- [Cypress](https://cypress.io/) - E2E testing
 - [📦 pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [🖨 `vite-ssg`](https://github.com/antfu/vite-ssg) - Server-side generation
   - [🦔 critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [☁️ Netlify](https://www.netlify.com/) - zero-config deployment
 
 ### VS Code Extensions
 

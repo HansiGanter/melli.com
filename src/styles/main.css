@@ -1,8 +1,9 @@
-@import './markdown.css';
+@import "./markdown.css";
 
 html,
 body,
 #app {
+  font-family: "puffin-display-soft", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -13,8 +14,8 @@ html.dark {
 }
 
 .curly-1 {
-  -webkit-mask-image: url(https://meetap-it.gitlab.io/emilia/assets/shapes/curly-1.svg);
-  mask-image: url(https://meetap-it.gitlab.io/emilia/assets/shapes/curly-1.svg);
+  -webkit-mask-image: url(https://assets.melli.com/shapes/curly-1.svg);
+  mask-image: url(https://assets.melli.com/shapes/curly-1.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
@@ -51,4 +52,24 @@ html.dark {
     opacity-75 transition duration-200 ease-in-out
     hover:opacity-100 hover:text-primary-600;
   font-size: 0.9em;
+}
+
+input[type="radio"] {
+  @apply border-2 checked:border-6px border-gray-200 checked:border-primary-500 appearance-none w-6 h-6 rounded-full;
+}
+input[type="checkbox"] {
+  @apply appearance-none w-6 h-6 border rounded-md cursor-pointer focus:outline-none focus:border-primary-500 focus:ring-3 focus:ring-primary-300 bg-white checked:bg-primary-500  border-gray-200;
+}
+input[type="checkbox"] {
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  @apply w-4 h-4 i-carbon:checkmark color-white stroke-2;
+}
+
+input[type="checkbox"]:checked:disabled:before {
+  @apply color-gray-400;
 }

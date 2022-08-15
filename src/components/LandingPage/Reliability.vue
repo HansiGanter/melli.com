@@ -1,49 +1,38 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const incentives = [
-  {
-    name: 'Immer erreichbar.',
-    description: 'Emilia geht von alleine dran, wenn es wirklich wichtig ist',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-calendar-light.svg',
-  },
-  {
-    name: 'Immer im Einsatz.',
-    description: 'Emilia ist auch dann noch da, wenn andere schon längst Feierabend haben.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-returns-light.svg',
-  },
-  {
-    name: 'Immer zur Hilfe.',
-    description: 'Emilia benachrichtigt in Notfallsituationen nahestehende Kontakte.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-chat-light.svg',
-  },
-]
+const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
-    <div class="grid gap-4">
-      <h1 class="font-medium text-lg sm:text-2xl">{{ t('reliability.heading') }}</h1>
-      <h2>{{ t('reliability.text') }}</h2>
+  <div class="grid gap-8 lg:gap-16 mx-auto items-center">
+    <div class="grid gap-4 lg:gap-6 text-center max-w-2xl mx-auto justify-items-center">
+      <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
+        {{ t('reliability-section.heading') }}
+      </h1>
+      <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+        <span>alle Funktionen entdecken</span>
+      </button>
     </div>
-    <div
-      class="max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-3"
-    >
-      <div
-        v-for="incentive in incentives"
-        :key="incentive.name"
-        class="text-center sm:flex sm:text-left lg:block lg:text-center"
-      >
-        <div class="sm:flex-shrink-0">
-          <div class="flow-root">
-            <img class="w-28 h-24 mx-auto" :src="incentive.imageSrc" alt />
+    <div class="grid gap-16 bg-primary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
+      <div class="grid gap-14 w-full lg:w-2/3">
+        <p class="w-full lg:w-3/4 font-normal text-xl">
+          {{ t('reliability-section.text') }}
+        </p>
+        <div class="flex flex-col lg:flex-row items-center gap-8">
+          <div
+            v-for="(feature, index) in features"
+            :key="index"
+            class="text-gray-900 font-semibold text-base bg-green-900/10 py-3.5 px-6 rounded-lg"
+          >
+            {{ feature }}
           </div>
         </div>
-        <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-3 lg:ml-0">
-          <h3 class="text-sm font-medium">{{ incentive.name }}</h3>
-          <p class="mt-2 text-sm text-gray-500">{{ incentive.description }}</p>
-        </div>
       </div>
+    </div>
+    <div class="relative overflow-clip lg:max-w-6xl mx-auto rounded-2xl lg:-mt-72">
+      <img src="https://assets.melli.com/images/stock/582347195.webp" class="w-full">
+      <div class="i-heroicons-outline:play text-amber-200 text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

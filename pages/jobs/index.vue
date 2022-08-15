@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import VTypical from 'vue-typical'
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+import { breakpointsTailwind } from '@vueuse/core'
 
 const { t } = useI18n()
 
@@ -16,7 +16,7 @@ const smAndLarger = breakpoints.greater('md')
       v-if="smAndLarger"
       class="pt-8 pb-16 text-3xl sm:text-4xl tracking-wide flex items-center justify-center"
     >
-      <v-typical
+      <VTypical
         class="blink after:text-primary-500"
         :steps="[t('jobs.typing.text-1'), 1500, t('jobs.typing.text-2'), 1500, t('jobs.typing.text-3'), 1500]"
       />

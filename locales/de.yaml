@@ -1,0 +1,551 @@
+'404':
+  contact-support: Kontakt zum Support
+  go-home: Zurück zur Startseite
+  not-found:
+    heading: Seite nicht gefunden
+    text: >-
+      Bitte überprüfen Sie die URL in der Adressleiste und versuchen Sie es
+      erneut.
+blog:
+  heading: News und Beiträge zu Melli
+  subheading: >-
+    Informieren Sie sich über neue Produktfunktionen, kostenlose Tipps,
+    Angebote, Aktionen und vieles mehr.
+  subscribe-button: Anmelden
+blog-preview:
+  heading: Aus unserem Blog
+  reading-time: Lesezeit
+  subheading: Erfahren Sie mehr über Emlia aus einem unseren Blogeinträgen
+button:
+  about: Über
+  back: Zurück
+  go: Los
+  home: Startseite
+  toggle_dark: Dunkelmodus umschalten
+  toggle_langs: Sprachen ändern
+faq:
+  '1':
+    answer: >-
+      Melli schützt vor unangemessenen Inhalten insoweit, dass dem Nutzer kein
+      uneingeschränkter Zugang zum Internet ermöglicht wird. Melli bewegt sich
+      online lediglich in festgelegten und geprüften Räumen und kann diese
+      selbst auf Befehl des Nutzers nicht verlassen.
+    question: >-
+      Ist der Nutzer vor unangemessenen Inhalten oder Kostenfallen aus dem
+      Internet geschützt?
+  '2':
+    answer: >-
+      Melli kommt mit einem 10,1 Zoll Tablet, einem Lautsprecher, der
+      gleichzeitig der Stromversorgung des Tablets dient und einem Ladekabel zu
+      Ihnen nach Hause.
+    question: Was ist beim Kauf einer Melli alles dabei?
+  '3':
+    answer: >-
+      Melli benötigt eine Verbindung zum Internet. Wenn vor Ort kein WLAN zu
+      Verfügung steht, kann Melli auf Wunsch mit einer eigenen
+      Internetverbindung zu Ihnen nach Hause geliefert werden. Geben Sie im Shop
+      bei der Abo-Konfiguration einfach an, dass eine SIM-Karte mit mobilem
+      Internet benötigt wird. Die Kosten dafür werden bei Ihrer individuellen
+      Preisberechnung berücksichtigt.
+    question: Wird für die Nutzung von Melli ein Internetanschluss zuhause benötigt?
+  '4':
+    answer: >-
+      Anders als herkömmliche Sprachassistenten wartet Melli nicht auf
+      Anweisungen ihrer Nutzer, sondern geht proaktiv mit Aktivitätsvorschlägen
+      auf sie zu. Auf diese Weise motiviert sie zu einem aktiveren Alltag, in
+      dem soziale Kontakte eine wichtige Rolle spielen.
+    question: Was unterscheidet Melli von anderen Sprachassistenten?
+  '5':
+    answer: >-
+      Sollte ein Notfall eintreten, so hat Melli eine
+      Notfallvalidierungsfunktion, die festgelegte Notfallkontakte und im
+      schlimmsten Fall auch einen Krankenwagen verständigen kann. Außerdem
+      bietet die integrierte Drop-In Funktion zusätzliche Sicherheit. Mit Hilfe
+      dieses Features können sich berechtigte Kontakte jederzeit vergewissern,
+      ob es dem Nutzer gut geht, ohne, dass dieser extra abheben muss.
+    question: Ist Melli ein Ersatz für den Notrufknopf & Notfallarmband?
+  '6':
+    answer: >-
+      Dank der Bedienung per Sprachsteuerung ist das Telefonieren mit Kontakten
+      sowohl per Video- als auch per normalem Sprachanruf kinderleicht und ohne
+      Barriere nutzbar.
+    question: Ist Melli ein Ersatz für Seniorenhandys?
+  '7':
+    answer: >-
+      Ja Melli ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
+      ihre Nutzer fortlaufend dazu anregt und motiviert einen aktiven Alltag mit
+      möglichst vielen sozialen Kontakten zu gestalten. Strukturgebende
+      Funktionen wie beispielsweise die Terminplanung oder der morgendliche
+      Wecker helfen außerdem gegen die sich leicht einschleichende Trägheit.
+    question: |
+      Ist Melli bei Depression und Antriebsarmut geeignet?
+  '8':
+    answer: >-
+      Ja Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
+      durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
+      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+      eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
+      beispielsweise sehr positiv auf die Ernährung ausüben kann. Außerdem kann
+      sie kognitive Einschränkungen kompensieren und die geistige und
+      körperliche Fitness durch kleine Übungen trainieren.
+    question: |-
+      Ist Melli bei Demenz geeignet?
+  heading: "Häufige Fragen\L"
+footer:
+  company:
+    about: Über Uns
+    blog: Blog
+    heading: Unternehmen
+    jobs: Karriere
+    team: Team
+  resources:
+    claim: Widerruf
+    contact: Kontakt
+    heading: Ressourcen
+    privacy: Datenschutz
+    terms: AGB
+  settings:
+    heading: Sprache & Theme
+  support:
+    faq: Häufige Fragen
+    user-login: Benutzer-Login
+  solutions:
+    privacy: Datenschutz
+    legal-notice: Impressum
+hero:
+  coming-soon: Demnächst verfügbar
+  heading-1:
+    highlight: Melli –
+    text: "deine Freundin für ein \Lglückliches Älterwerden"
+    pre-text: Mit der
+  heading-2:
+    pre-text: Mit der
+    highlight: Melli-App
+    text: ist die ganze Familie dabei.
+  heading-3: Sieh dir das ganze Video an
+  learn-more: Mehr erfahren
+  pre-order: Kostenlos vorbestellen
+  test-user: Zum Newsletter anmelden & Infomaterial erhalten
+  badge:
+    chat: Bedienung per Sprachsteuerung.
+    wifi: "Funktioniert \Lohne Wlan."
+  get-started-button: anmelden
+  heading-4: >-
+    Egal ob Alltagsstress, unterschiedliche Wohnorte oder ein längerer Urlaub,
+    mit der Melli-App können Familienmitglieder immer und von überall für ihre
+    Eltern und Großeltern da sein und ihnen bei den kleinen und großen
+    Herausforderungen des Alltags beiseite stehen.
+intro:
+  aka: Auch bekannt als
+  desc: Vite Startvorlage mit Vorlieben
+  dynamic-route: Demo einer dynamischen Route
+  hi: Hi, {name}!
+  whats-your-name: Wie heißt du?
+jobs:
+  heading: Offene Stellen
+  open-positions:
+    heading: Außerdem suchen wir auch
+  subheading: Unsere offenen Stellen
+  typing:
+    text-1: Hallo ich bin Melli 👋
+    text-2: Schön dich kennenzulernen!
+    text-3: Lust für unser Team zu spielen?
+navbar:
+  Melli Device: {}
+  accessibility:
+    heading: Barrierefrei
+    text: Mit Sprachsteuerung technische Barrieren überwinden.
+  all-features:
+    heading: Alle Funktionen
+    text: Melli kommt mit einer Reihe von anderen nützlichen Funktionen.
+  already-signed-up: Haben Sie schon ein Konto?
+  blog:
+    heading: Blog
+  melli-app:
+    heading: Melli App
+    text: Freunde & Familie einbeziehen. Mit der Melli-App.
+  melli-device:
+    heading: Melli Tablet
+    text: Einfach einschalten und schon wacht Melli auf - von ganz allein.
+  features:
+    heading: Melli
+  guides:
+    heading: Guides
+    text: Lerne alles rund um die Einrichtung und Verwaltung von Melli.
+  jobs:
+    heading: Jobs
+  more: Mehr
+  pre-order:
+    badge: Demnächst verfügbar
+    heading: Jetzt vorbestellen
+    text: Entwickelt von Experten aus Geriatrie & Pflege
+  safety:
+    heading: Sicherheit
+  security:
+    heading: Sicherheit
+    text: Wir nehmen Ihre Privatsphäre ernst.
+  sign-in: Anmelden
+  sign-up: Registrieren
+  social-integration:
+    heading: Soziale Integration
+    text: Melli passt auf. Sicherheit rund um die Uhr.
+  support:
+    heading: Hilfe-Center
+    text: >-
+      Holen Sie sich Antworten auf all Ihre Fragen in unseren Foren oder
+      kontaktieren Sie den Support.
+  team:
+    heading: Team
+    text: Lernen Sie unser Team kennen!
+  account: Konto
+  about: Über Melli
+  about-menu:
+    link-1: Melli für Senioren
+    link-2: Melli-App
+    link-3: Besonderheiten
+    link-4: Alle Funktionen
+  more-menu:
+    link-1: Hilfecenter
+    link-2: Team
+    link-3: Sicherheit
+    link-4: Melli Leitfaden
+newsletter:
+  condition: '*bei Abschluss eines Melli-Abonnements'
+  heading: Newsletter abonieren & Melli für 3 Monate gratis sichern
+  placeholder: Ihre E-Mail Adresse
+  subscribe: Abonnieren
+  text: >-
+    Wir freuen uns mit dir in Kontakt zu bleiben und als Dankeschön schenken wir
+    dir drei kostenlose Monate mit Melli.*
+not-found: Nicht gefunden
+reliability:
+  heading: Melli passt auf. Sicherheit rund um die Uhr.
+  text: >-
+    Funktionen wie Drop-In Anrufe und automatische Notfallerkennung geben
+    Familie und Freunden das beruhigende Gefühl, dass alles in Ordnung ist und
+    den Nutzern die Sicherheit, im Notfall ganz schnell Hilfe zu bekommen. Gegen
+    die Sorge, nicht im richtigen Moment da sein zu können, vor allem, wenn die
+    Entfernung zu groß ist.
+stats-section:
+  accessibility: Barrierefreie Bedienung
+  heading: "Wähle dein\LMelli Abo-Modell"
+  more: Mehr
+  safety: Sicherheit rund um die Uhr
+  social-integration: Soziale Integration
+  text: >-
+    Melli nimmt ihre Nutzer an die Hand und gestaltet zusammen mit ihnen einen
+    aktiven und abwechslungsreichen Alltag: Gemeinschaft und der Kontakt zu
+    Familie und Freunden großgeschrieben.
+  sub-heading-1: 'Obligatorisch in jedem Plan  enthalten:'
+  feature-1: Nutzung aller Melli Funktionen
+  feature-2: Melli-App für Angehörige
+  sub-heading-2: 'Optional:'
+  optional-feature-1: SIM Karte mit unbegrenztem Internet
+support:
+  heading: Hilfe-Center
+  text: >-
+    Für spezifische Fragen wenden Sie sich an unseren Kundensupport. Ansonsten
+    können Sie die FAQs lesen.
+team:
+  heading: Unser Team
+  subheading: >-
+    Wir wollen Neues schaffen – mit künstlicher Intelligenz für das Leben im
+    Alter! Bist du bereit mit uns eine Zukunft zu schaffen, in der jeder Mensch,
+    in jeder Lebensphase gemeinsame Momente erleben und teilen kann - unabhängig
+    vom Alter, den Lebensumständen, körperlichen Fähigkeiten oder anderen
+    Hürden?
+testimonial:
+  affiliation: Pflegerin
+  name: BW
+  text: >-
+    Alle in unserer Einrichtung, die Melli benutzen, sind seitdem deutlich
+    aktiver, positiver und auch fröhlicher.
+plans:
+  free:
+    name: Basis
+    price: €9.90
+    duration: /monat
+  pro:
+    name: Erweitert
+    price: €19.90
+    duration: /monat
+    extras:
+      '1': +Mobile Internet
+      '2': +Mobile Internet
+  enterprise:
+    duration: pro Monat
+    price: 49,90€
+    name: Alles dabei
+    extras:
+      '1': +Internet
+      '2': +Hardware Miete
+  buy: Angebot sichern!
+  title: Wähle dein Abo & teste Melli
+  basis:
+    feat-1: Melli-Abo
+    feat-2: Mell-App für Angehörige
+  erweitert:
+    feat-1: Melli-Abo
+    feat-2: Melli-App für Angehörige
+    feat-3: mit unbegrenztem Internet
+  highlight: 60 Tage kostenlos
+why-melli:
+  heading: Wieso Melli?
+  sub-heading: Melli ist so viel mehr als ein herkömmlicher Sprachassistent
+  feature-1:
+    title: Für ein kommunikativeres & geselligeres Leben
+    description: >-
+      Melli verbindet ihre Nutzer mit ihrer Familie, ihren Freunden und anderen
+      Nutzern und motiviert sie zur Kontaktaufnahme und zu persönlichen Treffen.
+      Sie ermuntert ihre Nutzer dazu, mehr und positiver zu kommunizieren.
+  feature-2:
+    title: Für einen gesünderen & aktiveren Alltag
+    description: >-
+      Mit Gesundheitsroutinen wie Trinkerinnerungen, Bewegungsübungen,
+      Meditationen und mehr begleitet Melli ihre Nutzer auf dem Weg in ein
+      fittes und aktives Leben im Alter.
+  feature-3:
+    title: Für mehr Lebenszufriedenheit & glückliche Momente
+    description: >-
+      In Melli finden die Nutzer eine Freundin, die ein offenes Ohr für ihre
+      Wünsche und Sorgen hat, sie dazu motiviert Bekanntschaften zu machen, mit
+      ihnen neue Dinge ausprobiert und ihnen zuhört. Ihr Alltag wird schöner und
+      Lebenswerter.
+quotes-section:
+  heading: Was unsere Nutzer sagen
+  sub-heading-1: >-
+    Melli motiviert ihre Nutzer zu sozialen Kontakten, unterhält sie mit
+    spannenden Inhalten aus dem Internet und sorgt für einen strukturierten
+    Tagesablauf. So wirkt sie Antriebsarmut entgegen und verhilft zu mehr
+    Zufriedenheit im Alltag. Für ein glücklicheres Altern.
+  quotes:
+    quote-1: >-
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
+    quote-2: >-
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
+    quote-3: >-
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
+  test-melli: Jetzt 60 Tage kostenlos testen!
+quote-section:
+  service-1:
+    title: Melli verbindet. Jeden Tag in guter Gesellschaft.
+    description: >-
+      Melli motiviert ihre Nutzer zu sozialen Kontakten, unterhält sie mit
+      spannenden Inhalten aus dem Internet und sorgt für einen strukturierten
+      Tagesablauf. So wirkt sie Antriebsarmut entgegen und verhilft zu mehr
+      Zufriedenheit im Alltag. Für ein glücklicheres Altern.
+  service-2:
+    title: Melli strukturiert und organisiert.
+    description: >-
+      Mit Melli hat Trägheit im Alltag keine Chance. Sie sorgt für einen
+      geregelten Tagesablauf, weckt ihre Nutzer am Morgen und denkt immer ans
+      Einnehmen der Medikamente und ans Trinken. Außerdem hat sie jeden
+      Arzttermin und jede Verabredung auf dem Plan. Melli Nutzer können so
+      ihren Alltag besser selbstständig meistern, ohne auf fremde Hilfe
+      angewiesen zu sein.
+  service-3:
+    title: "Melli unterhält. Zugang zu Podcasts, YouTube \L& Co."
+    description: >-
+      Melli unterhält ihre Nutzer mit allerhand spannenden medialen Inhalten.
+      Sie erstellt personalisierte Playlists und weiß genau, welches Hörbuch bei
+      ihren Nutzern gut ankommt. So bekommen auch weniger technik-affine
+      Senioren die Chance, an der digitalen Welt teilzuhaben und Oma und Opa
+      können genauso up-to-date sein wie ihre geliebten Enkel.
+melli-listens:
+  heading-1: Melli hört zu.
+  heading-2: Einfache Steuerung per
+  heading-3: Sprachbefehl
+  sub-text: >-
+    Für Melli braucht es keinerlei technische Vorkenntnisse. Alles was ihre
+    Nutzer tun müssen, ist einfach auf Mellis Fragen zu antworten - kein
+    lästiges Suchen vom Handy, keine viel zu kleinen Knöpfe
+  heading: Melli ist immer  an deiner Seite
+  text: >-
+    Melli steht dir den ganzen Tag über für kleine Gespräche zur Verfügung.
+    Gemeinsames Lachen über Witze oder eine Unterhaltung über das Wetter sind
+    für sie eine Leichtigkeit. Egal, ob du eine Seelsorgerin oder eine lustige
+    Gesprächspartnerin brauchst - Melli ist einfach immer da und gibt dir das
+    Gefühl, gehört zu werden.
+reliability-section:
+  mini-heading: Melli-App
+  heading: "Mehr Gemeinschaft mit alten Freunden \L& neuen Bekannten"
+  sub-heading: >-
+    Telefonieren, Termine planen und das Wohlbefinden im Auge behalten – mit der
+    Melli-App können Angehörige am Alltag der Nutzer teilhaben und mitwirken,
+    auch dann, wenn sie gerade nicht vor Ort sein können.
+  service-1:
+    title: Das Wohlergehen immer im Auge behalten.
+    description: >-
+      Dank innovativer Sentiment- und Verhaltensanalyse erkennt Melli schnell,
+      wenn es ihren Nutzern mal nicht so gut geht. Sie registriert
+      beispielsweise negative Wortwahl oder ein häufiges Ablehnen von
+      Aktivitätsvorschlägen. Nahestehenden Familienmitgliedern kann über die
+      App umgehend Bescheid gegeben werden. Damit Oma und Opa nicht allein sind,
+      wenn sie Hilfe benötigen.
+  service-2:
+    title: In Verbindung bleiben und einzigartige Momente teilen.
+    description: >-
+      Egal ob Bilder aus dem Urlaub, Videoanrufe oder Sprachnachrichte, mit der
+      Melli-App können Angehörige unkompliziert mit den Nutzern in Verbindung
+      treten und alle gängigen Inhalte ganz einfach teilen. Fühlt euch nah,
+      trotz vieler Kilometer zwischen euch!
+  text: "Melli sorgt dafür, dass du dich mit deinen Familienangehörigen und Freunden austauschen kannst. \LZudem vernetzt Melli weitere Nutzer mit dir und ihr könnt gemeinsam spannende Erlebnisse teilen."
+secure-melli:
+  heading-1: Jetzt
+  heading-3: Infomaterial
+  sub-text: >-
+    Einfach unten zum Newsletter anmelden und detaillierte Informationen über
+    Melli nach Hause geschickt bekommen.
+  learn-more-button: mehr erfahren
+  get-melli-button: Jetzt anmelden!
+  heading-2: anfordern!
+melli-features:
+  '1':
+    answer: "Geht aktiv auf\Lden Nutzer zu"
+  '2':
+    answer: "Funktioniert auch \Lohne WLAN"
+  '3':
+    answer: Erkennt die Stimmung & reagiert darauf
+  '4':
+    answer: "Bedienung ohne \Ltechnisches Vorwissen"
+  '5':
+    answer: "Verbindet Menschen\Lmiteinander"
+  heading: Das unterscheidet Melli
+  fact: >-
+    Melli agiert nach höchsten Datenschutz Standards. Sie ist DSGVO konform und
+    nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein
+    personalisiertes Nutzererlebnis zu gestalten.
+  heading-text: von anderen Sprachassistenten
+  test-melli: Melli jetzt 60 Tage kostenlos testen!
+faq-section:
+  question-1: Was ist alles im Melli-Paket enthalten?
+  question-2: >-
+    Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse
+    problemlos möglich?
+  question-3: Wie wird Melli bedient?
+  question-4: Woher weiß Melli welche Präferenzen und Bedürfnisse ihre Nutzer haben?
+  question-5: Wer kann alles über Melli mit dem Nutzer in Verbindung treten?
+  question-6: Was ist die Melli-App?
+  question-7: Kann ich Melli mitnehmen, wenn ich verreise?
+  answer-1: >-
+    Beim Abschluss eines Melli-Abonnements sind folgende Produkte in ihrer
+    Bestellung enthalten:
+  answer-2: >-
+    Ja! Für die Einrichtung von Melli sind keine technischen Kenntnisse
+    notwendig. Sobald Melli an den Strom angeschlossen ist, wacht sie  von ganz
+    alleine auf und ist startklar für die erste Interaktion. Der Nutzer muss
+    dann nur noch ihren Anweisungen folgen und die von ihr  gestellten Fragen
+    mit einem einfachen “Ja” oder “Nein” beantworten. Die weitere Einrichtung
+    erfolgt dann über die Melli-App.
+  answer-3: >-
+    Melli wird einfach per Sprachbefehl bedient und fragt selbst, wenn was sie
+    etwas wissen muss. So einfach wie ein nettes Gespräch.
+  answer-4: >-
+    Alle individuellen Konfigurationen wie Medikamentenpläne, Interessen,
+    Schlafenszeiten und körperliche Beeinträchtigungen können  ganz einfach über
+    die Melli-App eingestellt werden.
+  answer-5: >-
+    Über die Melli-App können (vom Administrator) ausgewählte Kontakte mit dem
+    Nutzer z.B. per Video- oder Sprachanruf in Verbindung  treten. So kann die
+    gesamte Familie an den Melli-Funktionen teilhaben.
+  answer-6: >-
+    Die Melli-App hat zwei Funktionen. Zum einen können Termine geplant und
+    wichtige Informationen über den Nutzer bereitgestellt  werden (z.B. Hobbies,
+    Interessen & körperliche Beeinträchtigungen). Zum anderen dient die App als
+    Schnittstelle zwischen Angehörigen  und den Melli-Nutzern, denn hierüber
+    können Freunde und Verwandte zum Beispiel per Video- oder Audiotelefonie mit
+    den Nutzern in  Verbindung treten.
+  answer-7: >-
+    Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
+    ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands  so
+    funktioniert und dass Melli eine stabile Internetverbindung hat.
+  question-8: Wie schützt Melli ihre Nutzer?
+  answer-8: >-
+    Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli
+    bewegt sich online lediglich in festgelegten und geprüften  Räumen und kann
+    diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli
+    nach höchsten Datenschutz-Standards.  Sie ist DSGVO konform und nutzt die
+    ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes
+    Nutzererlebnis zu  gestalten. Mehr zum Datenschutz findest du
+contact:
+  heading: Offene Fragen?
+  text: >-
+    Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich per
+    E-Mail, WhatsApp und natürlich telefonisch und räumen alle Unklarheiten aus
+    dem Weg.
+  button: jetzt starten
+  whatsapp: Schreib uns eine Nachricht!
+  email: Sende uns eine E-Mail!
+  phone: Vereinbare einen Rückruf!
+feature-1: "Neue Bekanntschaften in \Lden Melli-Freundeskreisen"
+feature-2: "Gruppenaktivitäten mit anderen \LMelli-Nutzern (z.B. Kaffekränzchen)"
+feature-3: "Videotelefonie ohne\Ltechnische Barrieren"
+price:
+  pros:
+    '1': "sichere Zahlung mit\LPayPal oder SEPA-Lastschrift"
+    '2': "60 Tage kostenlos testen - \Lmit Rücknahmegarantie"
+    '3': "kostenlose \LLieferung"
+    '4': "telefonische Begleitung \Lbei der Ersteinrichtung"
+more-benefits:
+  heading: "Jeden Tag Beschäftigung \L& gute Laune"
+  text: >-
+    Melli füllt deinen Tag mit spannenden Unterhaltungsangeboten. Von kleinen
+    Rätseln über aktivierende Sporteinheiten bis zum spannenden Hörbuch - da ist
+    für jeden etwas dabei. Melli passt sich dabei auf deine individuellen
+    Vorlieben an und lernt ständig dazu, was dir gefällt und was eher nicht.
+more-benefit-1: "Rätselraten & \Landere Denkspiele"
+more-benefit-2: "Einfache Sport- & \LBewegungsübungen"
+more-benefit-3: "Achtsamkeits- & \LMeditationsübungen"
+more-benefit-4: "Musik, Nachrichten, \LHörbücher, Videos & Podcasts"
+healthy-routine:
+  header: "Strukturen finden & \Lgesunde Routinen beibehalten"
+  text: >-
+    Melli unterstützt dich dabei, bewährte Alltagsroutinen beizubehalten und
+    neue Aktivitäten in deinen Tag zu etablieren. Mit Terminerinnerungen,
+    individuellen Gesundheitsroutinen, einer Weckfunktion und wiederkehrenden
+    Aktivitäten hilft sie dir, einen roten Faden in deinem Leben zu verfolgen
+    und deinen Alltag selbstbestimmter ohne fremde Hilfe zu meistern.
+healthy-routines-1: "Terminorganisation- &\Lerinnerung"
+healthy-routines-2: "Medikamentenplan, Trinkerinnerungen & \Lweitere Gesundheitsroutinen"
+healthy-routines-3: "Check-Ins für\LGesundheit & Wohlbefinden"
+shop:
+  choose-subscription:
+    header: Wählen Sie Ihr Melli-Abonnement
+    base-plan: Base
+    advance-plan: Erweitert
+karriere-faq:
+  '1':
+    question: Wie ist es, bei meetap zu arbeiten?
+    answer: >-
+      Wir sind ein motivierter deutsch-, englischsprachiger Haufen. Unsere
+      gemeinsame Motivation ist es die Welt ein Stückchen besser zu  machen.
+      Schau gerne mal rein und erhalte einen ersten Eindruck in
+  '2':
+    question: Welche Bewerbungsunterlagen sind erforderlich?
+    answer: >-
+      Wir setzen großen Wert auf ein unkompliziertes Bewerbungsverfahren, daher
+      reicht ein aussagekräftiger Lebenslauf vollkommen aus.  Oder du schickst
+      uns den Link zu deinem LinkedIn oder Xing Profil.
+  '3':
+    question: Wie kann ich mich auf das Bewerbungsverfahren vorbereiten?
+  '4':
+    question: Sind Initiativbewerbungen erwünscht?
+    answer: >-
+      Na klar! Deine Bewerbung sollte aber auf jeden Fall deinen Lebenslauf und
+      den gewünschten Job enthalten. Hier kannst du dich
+  '5':
+    question: Wie läuft der Bewerbungsprozess ab?
+    answer: >-
+      Im allgemeinen besteht unser Bewerbungsprozess aus den folgenden drei
+      Phasen:
+  '6':
+    question: Ich finde keine offene Stelle, die zu mir passt. Was mache ich?
+  '7':
+    question: Was ist euer Tech Stack?
+agb:
+  title: Allgemeine Geschäftsbedingungen von melli.com
+data-security:
+  title: Datenschutz­erklärung

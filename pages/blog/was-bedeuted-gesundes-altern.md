@@ -7,13 +7,13 @@ category:
     href: #
 author:
     name: Franziska Lerch
-    imageUrl: https://meetap-it.gitlab.io/emilia/assets/team/franziska-lerch.webp
+    imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
 date: 2022-01-16T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://meetap-it.gitlab.io/emilia/assets/stock/sport-1.webp
+imageUrl: https://assets.melli.com/images/stock/387915860.webp
 ---
 
-![](https://meetap-it.gitlab.io/emilia/assets/stock/sport-1.webp)
+![](https://assets.melli.com/images/stock/387915860.webp)
 
 ## Klassische Maßnahmen zur Gesundheitsförderung
 
@@ -35,7 +35,7 @@ Der körperliche Abbau wird oftmals vehement geleugnet und es wird zwanghaft ver
 
 Das hat selbstinduzierten Stress zur Folge, der die Unzufriedenheit mit der eigenen Gesundheit noch größer machen kann. Das Rostocker Zentrum zur Erforschung des demografischen Wandels hat in einer Studie herausgefunden, dass die Unzufriedenheit mit der eigenen Gesundheit Frauen im Durchschnitt 11 und Männer 14 Lebensjahre kostet. Der Anti-Aging Wahn ist somit nicht nur psychisch belastend, sondern verkürzt sogar die Lebenserwartung.
 
-![](https://meetap-it.gitlab.io/emilia/assets/stock/2.webp)
+![](https://assets.melli.com/stock/2.webp)
 
 ## Erfülltes Sozialleben
 
@@ -47,7 +47,7 @@ Einsamkeit ist nicht zu unterschätzen. Diese kann gravierende Folgen für die p
 
 Bei älteren Personen entscheidet oftmals die zur Verfügung stehende Pension darüber ob gesundheitliche Angebote und Zusatzleistungen in Anspruch genommen werden können. Existenzängste aufgrund eines geringen Budgets für den Alltag und für das Leben, lösen Stress aus, der sich wiederum negativ auf die Gesundheit auswirkt.
 
-Digitale Lösungen wie Emilia können bei solchen Problemen Abhilfe schaffen. Teure Sportkurse, Theaterbesuche und luxuriöse Urlaube sind nicht für jedermann leistbar. Emilia ermöglicht es älteren Menschen ohne große Investitionen soziale Kontakt zu pflegen und hilft dabei sich geistig und körperlich zu betätigen.
+Digitale Lösungen wie Melli können bei solchen Problemen Abhilfe schaffen. Teure Sportkurse, Theaterbesuche und luxuriöse Urlaube sind nicht für jedermann leistbar. Melli ermöglicht es älteren Menschen ohne große Investitionen soziale Kontakt zu pflegen und hilft dabei sich geistig und körperlich zu betätigen.
 
 ## Gesund älter werden
 
@@ -57,10 +57,10 @@ Die verringerte Anzahl an Verpflichtungen in der Rente, bietet Senioren die Mög
 
 Sobald man die eigenen Schwächen erkannt hat und akzeptiert, kann man neue kreative Anpassungsstrategien entwickeln. Der stetige technische und wissenschaftliche Fortschritt ist beachtenswert. Sowohl passive als auch aktive Exoskelette können ältere Person bei mangelnder körperlicher Beweglichkeit unterstützen. Ambient Assisted Living Systeme können die Selbstständigkeit auch im hohen Alter fördern. Mithilfe modernster Techniken und digitalen Lösungen werden Senioren aktiv im Alltag entlastet und unterstützt.
 
-Die digitale Lösung Emilia sorgt für eine geregelte Tagesstruktur und übernimmt kleinere Alltagsaufgaben. Sie hilft Senioren ihre sozialen Kontakte zu pflegen und erleichtert es neue Freundschaften zu schließen. Glücklich und gesund älter zu werden, sorgt für einen stressfreieren Alltag in der Rente und dadurch für eine höhere Lebenserwartung.
+Die digitale Lösung Melli sorgt für eine geregelte Tagesstruktur und übernimmt kleinere Alltagsaufgaben. Sie hilft Senioren ihre sozialen Kontakte zu pflegen und erleichtert es neue Freundschaften zu schließen. Glücklich und gesund älter zu werden, sorgt für einen stressfreieren Alltag in der Rente und dadurch für eine höhere Lebenserwartung.
 
-Emilia fördert den aktiven Austausch über tagesaktuelle Themen. Das hilft älteren Personen geistig fit zu bleiben.
+Melli fördert den aktiven Austausch über tagesaktuelle Themen. Das hilft älteren Personen geistig fit zu bleiben.
 
 Das Zugehörigkeitsgefühl in der Gemeinschaft und der soziale Rückhalt sorgen im Alter für eine innere Zufriedenheit. Das dadurch gegebene Sicherheitsgefühl reduziert psychischen Stress deutlich.  
 
-Emilia unterstützt als digitale Lösung soziale Kontakte zu pflegen, aufzubauen und sich geistigen und körperlichen Aktivitäten zu widmen, die glücklich machen.
+Melli unterstützt als digitale Lösung soziale Kontakte zu pflegen, aufzubauen und sich geistigen und körperlichen Aktivitäten zu widmen, die glücklich machen.

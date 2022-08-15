@@ -1,0 +1,225 @@
+'404':
+  go-home: Go back home
+  not-found:
+    heading: Page not found
+    text: Please check the URL in the address bar and try again.
+blog-preview:
+  heading: From Our Blog
+  reading-time: read
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+footer:
+  settings:
+    heading: Language & Appearance
+intro:
+  aka: Also known as
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  whats-your-name: What's your name?
+navbar:
+  already-signed-up: Have an account?
+  more: More
+  pre-order:
+    badge: Cooming soon
+  sign-in: Sign in
+  sign-up: Sign up
+  support:
+    text: Get all of your questions answered in our forums or contact support.
+  blog:
+    heading: Blog
+  account: Account
+  about: About Melli
+newsletter:
+  heading: Subscribe to our newsletter
+  placeholder: Enter your email
+  subscribe: Subscribe
+  text: The latest news, articles, and resources, sent to your inbox weekly.
+not-found: Not found
+hero:
+  heading-1:
+    highlight: Melli
+    text: ', to make every day count among the good ones.'
+    pre-text: With the
+  heading-3: >-
+    Entertainment program, senior citizen meeting place and personal assistant -
+    Melli is all in one.  The voice-controlled companion takes her users by the
+    hand and motivates them to lead an active and varied everyday life -
+    community writ large.
+  test-user: Become a test user now and keep Melli for free!
+  badge:
+    chat: Operation by voice control.
+    wifi: Works without wifi.
+  get-started-button: Get started
+  heading-2:
+    highlight: Melli-App
+    text: the whole family is there.
+  heading-4: >-
+    No matter if everyday stress, different places of residence or a longer
+    vacation, with the Melli app family members can always be there for their
+    parents and grandparents from everywhere and assist them with the small and
+    big challenges of everyday life.
+stats-section:
+  heading: Choose your Melli subscription model
+  sub-heading-1: 'Mandatory included in every plan:'
+  feature-1: Use of all Melli features
+  feature-2: Melli app for relatives
+  sub-heading-2: 'Optional:'
+  optional-feature-1: SIM card with unlimited internet
+plans:
+  free:
+    name: Basic
+    price: €9.90
+    duration: per month
+  pro:
+    name: Advanced
+    price: €19.90
+    duration: per month
+    extras:
+      '1': +Internet
+  enterprise:
+    duration: per month
+    price: 49,90€
+    name: All included
+why-melli:
+  heading: Why Melli?
+  sub-heading: Melli is so much more than a conventional voice assistant
+  feature-1:
+    title: Melli ensures happier aging
+    description: >-
+      Melli motivates its users to socialize, entertains them with exciting
+      content from the Internet, and ensures a structured daily routine. In this
+      way, it counteracts a lack of drive and brings more satisfaction into
+      everyday life.
+  feature-2:
+    title: With the Melli app, friends and family can participate in everyday life
+    description: >-
+      Making phone calls, planning appointments and keeping an eye on their
+      well-being - the Melli app allows relatives to participate and contribute
+      to users' daily lives, even when they can't be there at the moment.
+  feature-3:
+    title: Developed with seniors for seniors
+    description: >-
+      Melli is more than a conventional voice assistant. The functions and
+      hardware of the everyday companion are specially adapted to the needs of
+      seniors and their relatives - in collaboration with seniors and experts
+      from geriatrics and nursing.
+quotes-section:
+  heading: What our users say
+  sub-heading-1: >-
+    Melli motivates its users to socialize, entertains them with exciting
+    content from the Internet, and ensures a structured daily routine. In this
+    way, it counteracts a lack of drive and helps people achieve more
+    satisfaction in their everyday lives. For happier aging.
+quote-section:
+  service-2:
+    title: Melli structures and organises.
+    description: >-
+      With Melli, laziness doesn't stand a chance in everyday life. She ensures
+      a regular daily routine, wakes her users in the morning and always
+      remembers to take their medication and drink. She also keeps track of
+      every doctor's appointment and every date. Melli users are thus better
+      able to manage their daily lives independently without having to rely on
+      outside help.
+  service-3:
+    title: Melli entertains. Access to podcasts, YouTube & Co.
+    description: >-
+      Melli entertains her users with all kinds of exciting media content. She
+      creates personalized playlists and knows exactly which audiobooks will go
+      down well with her users. This way, even less tech-savvy seniors get the
+      chance to participate in the digital world and grandma and grandpa can be
+      just as up-to-date as their beloved grandchildren.
+  service-1:
+    title: Melli connects. Every day in good company.
+    description: >-
+      Melli motivates its users to socialize, entertains them with exciting
+      content from the Internet, and ensures a structured daily routine. In this
+      way, it counteracts a lack of drive and helps people achieve more
+      satisfaction in their everyday lives. For happier aging.
+melli-listens:
+  heading-1: Melli listens.
+  heading-2: Simple control per
+  heading-3: Voice command
+  sub-text: >-
+    No prior technical knowledge is required for Melli. All her users have to
+    do is simply answer Melli's questions - no annoying searching from the cell
+    phone, no buttons that are far too small.
+reliability-section:
+  mini-heading: Melli-App
+  heading: More fellowship with old friends & new acquaintances
+  sub-heading: >-
+    Making phone calls, planning appointments and keeping an eye on their
+    well-being - the Melli app allows relatives to participate and contribute
+    to users' daily lives, even when they can't be there at the moment.
+  service-1:
+    title: Always keep the welfare in mind.
+    description: >-
+      Thanks to innovative sentiment and behavior analysis, Melli quickly
+      recognizes when its users are not doing so well. For example, it registers
+      negative word choices or frequent rejection of activity suggestions. Close
+      family members can be notified immediately via the app. So that grandma
+      and grandpa are not alone when they need help.
+  service-2:
+    title: Stay connected and share unique moments.
+    description: >-
+      Whether it's pictures from vacation, video calls, or voice messages, the
+      Melli app makes it easy for family members to connect with users and
+      share all common content. Feel close, despite many kilometers between you!
+secure-melli:
+  heading-1: Secure
+  heading-3: Melli a lifetime for free!
+  sub-text: >-
+    Apply now as a test user for yourself, your parents or grandparents. As a
+    thank you, we will give you a free Melli subscription for an unlimited
+    period of time.
+  learn-more-button: Learn more
+  get-melli-button: Get Melli
+melli-features:
+  '1':
+    answer: Proactively approaches their users instead of waiting for instructions.
+  '2':
+    answer: Works without internet connection thanks to integrated SIM card.
+  '3':
+    answer: Detects the mood of its users thanks to innovative sentiment analysis.
+  '4':
+    answer: Requires no prior technical knowledge thanks to voice control.
+  heading: This is what distinguishes Melli from other voice assistants
+  fact: >-
+    Melli operates according to the highest data protection standards. It is
+    DSGVO compliant and uses the data provided to it exclusively to design a
+    personalized user experience.
+  heading-text: from other voice assistants
+  test-melli: Test Melli now 60 days for free!
+faq:
+  heading: Frequently Asked Questions
+faq-section:
+  question-1: What is everything included in the Melli package?
+  question-2: Is it easy to set up Melli for people without technical knowledge?
+  question-3: How is Melli served?
+  question-4: How does Melli know what preferences and needs its users have?
+  question-5: Who all can contact the user through Melli?
+  question-6: What is the Melli app?
+  question-7: Can I take Melli with me when I travel?
+contact:
+  heading: Still have questions?
+  text: >-
+    Whether you have questions about the product or our test user campaign - we
+    will be happy to advise you by phone and clear up any uncertainties. Simply
+    arrange a callback and we will get back to you immediately.
+  button: Let’s talk
+shop:
+  choose-subscription:
+    header: Choose your Melli-Subscription
+agb:
+  title: Terms and Conditions
+blog:
+  subscribe-button: Subscribe
+  heading: News and articles about Melli
+  subheading: >-
+    Learn about new product features, free tips, offers, promotions and much
+    more.

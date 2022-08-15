@@ -1,12 +1,11 @@
-import { DateTimeFormatOptions } from '.pnpm/@intlify+core-base@9.1.9/node_modules/@intlify/core-base'
 import { createI18n } from 'vue-i18n'
-import type { UserModule } from '~/types'
+import { type UserModule } from '~/types'
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
 const messages = Object.fromEntries(
   Object.entries(
-    import.meta.globEager('../../locales/*.y(a)?ml'))
+    import.meta.glob<{ default: any }>('../../locales/*.y(a)?ml', { eager: true }))
     .map(([key, value]) => {
       const yaml = key.endsWith('.yaml')
       return [key.slice(14, yaml ? -5 : -4), value.default]
@@ -14,7 +13,7 @@ const messages = Object.fromEntries(
 )
 
 const longFormat: DateTimeFormatOptions = {
-  weekday: "long",
+  weekday: 'long',
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -26,9 +25,9 @@ export const install: UserModule = ({ app }) => {
     locale: 'de',
     messages,
     datetimeFormats: {
-      'en': { long: longFormat },
-      'de': { long: longFormat },
-    }
+      en: { long: longFormat },
+      de: { long: longFormat },
+    },
   })
 
   app.use(i18n)
