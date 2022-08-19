@@ -4,8 +4,8 @@ const { t } = useI18n()
 const isAnnual = ref(false)
 
 const subscriptions = [
-  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli subscription', 'Melli app'], payments: { annual: 'https://buy.stripe.com/test_eVafZ0dxqbAIaisdQT', monthly: 'https://buy.stripe.com/test_6oE8wy1OIawE62c7su' } },
-  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli subscription', 'Melli app', 'with unlimited mobile internet'], payments: { annual: 'https://buy.stripe.com/test_cN2dQSbpi2081LW5ko', monthly: 'https://buy.stripe.com/test_bIY8wyeBubAIfCM005' } },
+  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli subscription', 'Melli app'], payments: { annual: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145', monthly: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' } },
+  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli subscription', 'Melli app', 'with unlimited mobile internet'], payments: { annual: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv', monthly: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' } },
 ]
 
 const selectedSubscription = ref('')
