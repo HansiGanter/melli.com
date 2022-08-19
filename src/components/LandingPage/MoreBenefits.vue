@@ -11,9 +11,6 @@ const benefits = ref([t('more-benefit-1'), t('more-benefit-2'), t('more-benefit-
         <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
           {{ t('more-benefits.heading') }}
         </h1>
-        <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
-          <span>alle Funktionen entdecken</span>
-        </button>
       </div>
       <div class="grid gap-14">
         <div class="w-full lg:w-2/3">

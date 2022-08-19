@@ -10,9 +10,6 @@ const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
       <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
         {{ t('reliability-section.heading') }}
       </h1>
-      <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
-        <span>alle Funktionen entdecken</span>
-      </button>
     </div>
     <div class="grid gap-16 bg-primary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
       <div class="grid gap-14 w-full lg:w-2/3">

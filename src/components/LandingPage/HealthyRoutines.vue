@@ -14,9 +14,6 @@ const benefits = ref([
       <h1 class="font-semibold text-gray-900 text-4xl lg:text-5xl lg:w-1/2">
         {{ t('healthy-routine.header') }}
       </h1>
-      <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
-        <span>alle Funktionen entdecken</span>
-      </button>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
       <div class="relative overflow-clip rounded-2xl h-fit order-2 lg:order-1">
