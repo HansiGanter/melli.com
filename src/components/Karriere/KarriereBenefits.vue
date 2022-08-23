@@ -3,7 +3,7 @@ const benefits = [
   {
     icon: 'i-carbon:time',
     title: 'Flexible Arbeitszeiten,',
-    text: 'weil die Familie und das Leben außerhalb unserer Jobs uns sehr wichtig sind.',
+    text: 'es gibt ein Leben neben dem Beruf! Familie und das Leben außerhalb unserer Jobs sind uns sehr wichtig.',
   },
   {
     icon: 'i-heroicons-outline:fast-forward',
@@ -13,22 +13,22 @@ const benefits = [
   {
     icon: 'i-heroicons-outline:home',
     title: 'Home Office Option,',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+    text: 'bei uns sind die Arbeitstage in Home-Office und Office Tage aufgeteilt. Und wenn das Leben doch anders spielt als geplant, bleiben wir flexibel.',
   },
   {
     icon: 'i-heroicons-outline:heart',
     title: 'Soziale Sinnhaftigkeit,',
-    text: 'und die Chance, durch deine Arbeit das Leben unserer Nutzer und damit auch die Welt ein Stück besser zu machen',
+    text: 'und die Chance durch deine Arbeit das Leben unserer Nutzer und damit auch die Welt ein Stück besser zu machen.',
   },
   {
     icon: 'i-carbon:currency-dollar',
     title: 'Faire Vergütung,',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+    text: 'denn wir wollen ein großartiges Produkt zusammen erschaffen. Das geht nur mit qualifizierten Personen und daher zahlen wir die Gehälter anhand Erfahrung und Ausbildung.',
   },
   {
     icon: 'i-carbon:user-multiple',
     title: 'Niedrige Hierarchien & echter Teamspirit,',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+    text: 'nimm direkt Teil an Entscheidungen - deine Meinung zählt bei uns. Als Team motivieren und stärken wir uns gegenseitig.',
   },
 ]
 
@@ -59,10 +59,10 @@ const coreBenefits = [
           <h1 class="font-semibold text-gray-900 text-4xl lg:text-5xl">
             Das macht uns aus
           </h1>
-          <button class="text-medium text-base text-primary-500 hover:text-primary-600 w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+          <!-- <button class="text-medium text-base text-primary-500 hover:text-primary-600 w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
             <span>Lerne das Team kennen</span>
             <div class="i-carbon:arrow-right w-5 h-5" />
-          </button>
+          </button> -->
         </div>
         <div class="mx-auto grid gap-6 lg:gap-10 md:grid-cols-2 md:max-w-none lg:grid-cols-2">
           <div v-for="coreBenefit in coreBenefits" :key="coreBenefit.title" class="flex lg:flex-row flex-col gap-6 items-start">
@@ -83,23 +83,23 @@ const coreBenefits = [
               Deine Benefits
             </h1>
             <p class="font-medium text-xl lg:text-2xl text-black">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Was erwartet dich bei uns? Mach dir ein Bild von uns und lies selbst, ob unsere Benefits, Arbeitsatmosphäre und unser Teamspirit zu deinen Vorstellungen passen:
             </p>
-            <button class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+            <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
               <span>zu den Jobangeboten</span>
               <div class="i-carbon:arrow-right w-5 h-5" />
-            </button>
+            </router-link>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 content-start">
-            <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start lg:items-center gap-4 w-fit">
+            <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start gap-4 w-fit">
               <div :class="benefit.icon" class="text-amber-500 w-12 h-12" />
               <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title }}</strong> {{ benefit.text }}</span>
             </div>
           </div>
-          <button class="text-medium text-base text-primary-500 hover:text-primary-600 w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto">
+          <!-- <button class="text-medium text-base text-primary-500 hover:text-primary-600 w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto">
             <span>Mehr Beneifts entdecken</span>
             <div class="i-carbon:arrow-right w-5 h-5" />
-          </button>
+          </button> -->
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center">

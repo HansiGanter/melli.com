@@ -49,7 +49,7 @@ const currentFilter = ref(filters.value[0])
 </script>
 
 <template>
-  <Container class="py-12 lg:py-24">
+  <Container id="jobangebote" class="py-12 lg:py-24">
     <div class="grid gap-10 lg:gap-16 justify-items-center">
       <h1 class="font-semibold text-4xl lg:text-5xl text-black">
         Aktuelle Jobangebote
