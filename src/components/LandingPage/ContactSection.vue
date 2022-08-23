@@ -10,11 +10,8 @@ const socials = [
     icon: 'i-bxl:whatsapp',
     text: t('contact.whatsapp'),
   },
-  {
-    icon: 'i-carbon:phone',
-    text: t('contact.phone'),
-  },
 ]
+const callbackModalOpen = ref(false)
 </script>
 
 <template>
@@ -32,12 +29,21 @@ const socials = [
         <div class="flex flex-col lg:flex-row gap-8 items-center">
           <div v-for="social in socials" :key="social.text" class="grid gap-5 justify-items-center">
             <div class="text-4xl lg:text-5xl text-primary-500" :class="social.icon" />
-            <a href="#" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base">
+            <a :href="social.url" target="_blank" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base">
               {{ social.text }}
             </a>
+          </div>
+          <div class="grid gap-5 justify-items-center">
+            <div class="i-carbon:phone text-4xl lg:text-5xl text-primary-500" />
+            <button id="cta-contact-phone" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="callbackModalOpen = true">
+              <span class="mx-auto">{{ t('contact.phone') }}</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <Modal :show="callbackModalOpen" @close="callbackModalOpen = false">
+    <CallbackDialog />
+  </Modal>
 </template>

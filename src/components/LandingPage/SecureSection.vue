@@ -57,5 +57,4 @@ const close = () => {
       </div>
     </div>
   </section>
-  <SubscriptionDialog :is-open="isOpen" :close="close" :email="email" />
 </template>

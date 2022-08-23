@@ -5,15 +5,14 @@ function renderForm() {
     window.hbspt.forms.create({
       region: 'eu1',
       portalId: '25477854',
-      formId: 'd42f33cf-7752-406a-9304-8bf2ee7af932',
-      target: '#hubspotsubscribeform',
+      formId: '483328ec-f5e7-4562-9009-379771d7c954',
+      target: '#hubspotcallform',
     })
   }
   // hubspot form has some weird layout shifts while the form inserted into the DOM
   // so we wait for it to render completely
   setTimeout(() => isLoading.value = false, 500)
 }
-
 onMounted(async () => {
   if (!window.hbspt) {
     const script = document.createElement('script')
@@ -35,7 +34,7 @@ onMounted(async () => {
       Einen Moment bitte...
     </div>
     <div
-      id="hubspotsubscribeform"
+      id="hubspotcallform"
       :style="isLoading ? 'height: 0' : ''"
     />
   </Container>

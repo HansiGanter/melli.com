@@ -36,6 +36,7 @@ const open = () => {
 const close = () => {
   isOpen.value = false
 }
+const subscriptionModal = ref(false)
 </script>
 
 <template>
@@ -147,7 +148,9 @@ const close = () => {
       </div>
     </FormKit>
   </div>
-  <SubscriptionDialog :is-open="isOpen" :close="close" :email="email" />
+  <Modal :show="subscriptionModal" @close="subscriptionModal = false">
+    <SubscriptionDialog />
+  </Modal>
 </template>
 
 <style>

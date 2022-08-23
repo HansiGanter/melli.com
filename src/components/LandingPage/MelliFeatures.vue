@@ -8,6 +8,8 @@ const features = [
   { icon: 'i-carbon:wifi-off', text: t('melli-features.2.answer') },
   { icon: 'i-heroicons-outline:link', text: t('melli-features.5.answer') },
 ]
+
+const subscriptionModal = ref(false)
 </script>
 
 <template>
@@ -17,7 +19,7 @@ const features = [
         <h1 id="melli-features-heading" class="text-4xl lg:text-5xl font-semibold lg:font-medium text-white">
           <span class="text-primary-400 font-semibold lg:leading-[3.875rem]">{{ t('melli-features.heading') }}</span> <span class="lg:leading-[3.875rem]">{{ t('melli-features.heading-text') }}</span>
         </h1>
-        <button class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit">
+        <button class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit" @click="subscriptionModal = true">
           {{ t('melli-features.test-melli') }}
         </button>
       </div>
@@ -47,4 +49,7 @@ const features = [
       </div>
     </div>
   </section>
+  <Modal :show="subscriptionModal" @close="subscriptionModal = false">
+    <SubscriptionDialog />
+  </Modal>
 </template>
