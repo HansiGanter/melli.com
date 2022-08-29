@@ -18,7 +18,7 @@ const { t } = useI18n()
             </p>
           </div>
           <div class="lg:pr-16">
-            <img src="https://assets.melli.com/images/mockups/device-listening.webp" class="">
+            <img src="https://assets.melli.com/images/mockups/device-listening-1024.webp" class="">
           </div>
         </div>
       </div>

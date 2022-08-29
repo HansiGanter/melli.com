@@ -2,6 +2,19 @@
 const { t } = useI18n()
 
 const benefits = ref([t('more-benefit-1'), t('more-benefit-2'), t('more-benefit-3'), t('more-benefit-4')])
+
+const morebenefitsvideo = ref()
+const isPlaying = ref(false)
+const playVideo = () => {
+  if (morebenefitsvideo.value.paused) {
+    morebenefitsvideo.value.play()
+    isPlaying.value = true
+  }
+  else {
+    morebenefitsvideo.value.pause()
+    isPlaying.value = false
+  }
+}
 </script>
 
 <template>
@@ -29,9 +42,19 @@ const benefits = ref([t('more-benefit-1'), t('more-benefit-2'), t('more-benefit-
         </div>
       </div>
     </div>
-    <div class="relative overflow-clip lg:max-w-6xl rounded-2xl lg:-mt-72 lg:ml-auto lg:-mr-20">
-      <img src="https://assets.melli.com/images/stock/582347195.webp" class="w-full">
-      <div class="i-heroicons-outline:play text-amber-200 text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="playVideo">
+      <video
+        ref="morebenefitsvideo"
+        width="1024"
+        poster="https://assets.melli.com/images/stock/102477283-1024.webp"
+        playsinline
+      >
+        <source
+          src="https://videos.melli.com/commercial-entertainment.mp4"
+          type="video/mp4"
+        >
+      </video>
+      <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

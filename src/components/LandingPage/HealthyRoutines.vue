@@ -6,6 +6,19 @@ const benefits = ref([
   t('healthy-routines-2'),
   t('healthy-routines-3'),
 ])
+
+const healthyroutinesvideo = ref()
+const isPlaying = ref(false)
+const playVideo = () => {
+  if (healthyroutinesvideo.value.paused) {
+    healthyroutinesvideo.value.play()
+    isPlaying.value = true
+  }
+  else {
+    healthyroutinesvideo.value.pause()
+    isPlaying.value = false
+  }
+}
 </script>
 
 <template>
@@ -16,9 +29,20 @@ const benefits = ref([
       </h1>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-      <div class="relative overflow-clip rounded-2xl h-fit order-2 lg:order-1">
-        <img src="https://assets.melli.com/images/stock/582347195.webp" class="w-full">
-        <div class="i-heroicons-outline:play text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div class="relative overflow-clip rounded-2xl h-fit order-2 lg:order-1" @click="playVideo">
+        <video
+          ref="healthyroutinesvideo"
+          width="845"
+          height="475"
+          poster="https://assets.melli.com/images/stock/410923648-1024.webp"
+          playsinline
+        >
+          <source
+            src="https://videos.melli.com/commercial-struktur.mp4"
+            type="video/mp4"
+          >
+        </video>
+        <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
       </div>
       <div class="grid gap-10 lg:gap-20 order-1 lg:order-2">
         <span class="font-normal text-xl text-black">{{ t('healthy-routine.text') }}</span>

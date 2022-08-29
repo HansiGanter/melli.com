@@ -4,18 +4,18 @@ const { t } = useI18n()
 const quotes = [
   {
     quote: t('quotes-section.quotes.quote-1'),
-    name: 'Tochter von BW',
-    image: 'https://assets.melli.com/images/stock/357607827.webp',
+    name: 'Walter* (73 Jahre), Nutzer',
+    image: 'https://assets.melli.com/images/stock/435778544-1024.webp',
   },
   {
     quote: t('quotes-section.quotes.quote-2'),
-    name: 'GT',
-    image: 'https://assets.melli.com/images/stock/418724700.webp',
+    name: 'Irmgard* (69 Jahre), Nutzerin',
+    image: 'https://assets.melli.com/images/stock/377952865-1024.webp',
   },
   {
     quote: t('quotes-section.quotes.quote-3'),
-    name: 'MC',
-    image: 'https://assets.melli.com/images/stock/387915860.webp',
+    name: 'Stephanie S., Pflegedienstleiterin',
+    image: 'https://assets.melli.com/images/stock/464871173-1024.webp',
   },
 ]
 </script>
@@ -26,15 +26,15 @@ const quotes = [
       <h1 class="text-white font-semibold text-4xl lg:text-5xl">
         {{ t('quotes-section.heading') }}
       </h1>
-      <button class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit">
+      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit">
         {{ t('quotes-section.test-melli') }}
-      </button>
+      </router-link>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
       <div v-for="quote in quotes" :key="quote.name" class="bg-emerald-200/10 flex flex-col gap-5 rounded-3xl shadow-lg pb-6 overflow-clip">
-        <div class="flex-shrink-0 justify-center flex rounded-3xl overflow-hidden">
+        <div class="flex-shrink-0 justify-center flex rounded-3xl overflow-hidden h-64">
           <img
-            class="object-cover"
+            class="object-cover w-full"
             :src="quote.image"
           >
         </div>
@@ -50,13 +50,7 @@ const quotes = [
             </div>
           </div>
           <div class="flex items-center">
-            <router-link to="#" class="flex items-center gap-2 text-primary-400 text-center">
-              <span class="text-base font-normal">Nutzer-Geschichte ansehen</span>
-              <img
-                src="https://assets.melli.com/icons/arrow-circle.svg"
-                class="mx-auto -rotate-90 stroke-primary-400 w-6"
-              >
-            </router-link>
+            <span class="text-base font-normal text-primary-400">Nutzer-Geschichte ansehen</span>
           </div>
         </div>
       </div>

@@ -2,6 +2,19 @@
 const { t } = useI18n()
 
 const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
+
+const reliabilityvideo = ref()
+const isPlaying = ref(false)
+const playVideo = () => {
+  if (reliabilityvideo.value.paused) {
+    reliabilityvideo.value.play()
+    isPlaying.value = true
+  }
+  else {
+    reliabilityvideo.value.pause()
+    isPlaying.value = false
+  }
+}
 </script>
 
 <template>
@@ -27,9 +40,19 @@ const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
         </div>
       </div>
     </div>
-    <div class="relative overflow-clip lg:max-w-6xl mx-auto rounded-2xl lg:-mt-72">
-      <img src="https://assets.melli.com/images/stock/582347195.webp" class="w-full">
-      <div class="i-heroicons-outline:play text-amber-200 text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="playVideo">
+      <video
+        ref="reliabilityvideo"
+        width="1024"
+        poster="https://assets.melli.com/images/stock/584239506-1024.webp"
+        playsinline
+      >
+        <source
+          src="https://videos.melli.com/soziale-kontakte.mp4"
+          type="video/mp4"
+        >
+      </video>
+      <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

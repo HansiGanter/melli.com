@@ -12,17 +12,17 @@ interface Feature {
 
 const features: Ref<Feature[]> = ref([
   {
-    image: 'https://assets.melli.com/images/mockups/device-group-call.webp',
+    image: 'https://assets.melli.com/images/mockups/device-group-call-1024.webp',
     title: t('why-melli.feature-1.title'),
     description: t('why-melli.feature-1.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-sleeptime.webp',
+    image: 'https://assets.melli.com/images/mockups/device-sleeptime-1024.webp',
     title: t('why-melli.feature-2.title'),
     description: t('why-melli.feature-2.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-satisfaction.webp',
+    image: 'https://assets.melli.com/images/mockups/device-satisfaction-1024.webp',
     title: t('why-melli.feature-3.title'),
     description: t('why-melli.feature-3.description'),
   },
@@ -42,7 +42,7 @@ const open = () => {
 
 <template>
   <div class="grid gap-16 lg:gap-32">
-    <div class="grid gap-16 mx-auto items-center max-w-6xl -mt-28 px-10 md:px-0">
+    <div class="grid gap-16 mx-auto items-center max-w-6xl -mt-28 px-5 md:px-0">
       <div class="mx-auto grid gap-14 md:grid-cols-2 md:max-w-none xl:grid-cols-3">
         <div
           v-for="(feature, index) in features"
@@ -98,8 +98,10 @@ const open = () => {
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center">
-    <img src="https://assets.melli.com/images/team/matthias-weber-2.webp" class="w-1/2 lg:w-auto mx-auto rounded-full">
+  <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center py-10">
+    <div class="w-1/2 lg:w-44 lg:h-44 rounded-full mx-auto overflow-hidden">
+      <img src="https://assets.melli.com/images/team/matthias-weber-4-1024.webp" class="object-cover w-full h-full">
+    </div>
     <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-top lg:bg-center lg:py-20" style="background-image: url('https://assets.melli.com/shapes/bubble-bg.svg')">
       <h5 class="font-medium text-teal-900 text-xl lg:text-3xl lg:leading-10">
         “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln ins Gesicht zu zaubern.”
