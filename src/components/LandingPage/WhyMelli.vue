@@ -48,6 +48,7 @@ const subscriptionModal = ref(false)
           :key="feature.title"
           class="flip-card bg-transparent w-80 min-w-full h-96 min-h-full grid place-items-stretch overflow-visible cursor-pointer"
           @click="activeFeature = feature.title === activeFeature ? '' : feature.title"
+          @mouseenter="activeFeature = feature.title === activeFeature ? '' : feature.title"
         >
           <div
             class="flip-card-inner relative w-full h-full text-center overflow-visible"
