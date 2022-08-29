@@ -64,7 +64,7 @@ const pros = [
                   {{ !plan.wlan ? 'WLAN erforderlich' : 'Kein WLAN erforderlich' }}
                 </Badge>
                 <div class="grid mt-1">
-                  <span class="text-sm font-medium text-gray-900">From</span>
+                  <span class="text-sm font-medium text-gray-900">ab</span>
                   <h3 class="text-gray-900 font-medium text-3xl">
                     {{ plan.price }}<span class="font-normal text-lg">{{ plan.duration }}</span>
                   </h3>

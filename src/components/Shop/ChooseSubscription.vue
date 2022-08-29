@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const isAnnual = ref(false)
+const isAnnual = ref(true)
 
 const subscriptions = [
-  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli subscription', 'Melli app'], payments: { annual: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145', monthly: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' } },
-  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli subscription', 'Melli app', 'with unlimited mobile internet'], payments: { annual: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv', monthly: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' } },
+  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde'], payments: { annual: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145', monthly: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' } },
+  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'], payments: { annual: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv', monthly: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' } },
 ]
 
 const selectedSubscription = ref('')
@@ -38,11 +38,11 @@ const buyNow = () => {
     </h1>
     <div class="flex justify-center items-center gap-3">
       <div class="font-normal lg:font-medium text-base text-gray-700">
-        Monthly pricing
+        Monatlich zahlen
       </div>
       <Toggle v-model="isAnnual" />
       <div class="font-normal lg:font-medium text-base text-gray-700">
-        Annual Pricing* <span class="text-primary-600">(save 20%)</span>
+        Jährlich im Voraus zahlen* <span class="text-primary-600">(spare 20%)</span>
       </div>
     </div>
     <div>
@@ -52,10 +52,10 @@ const buyNow = () => {
             <div class="relative bg-white border-2 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in" :class="[checked ? 'border-primary-500' : 'border-gray-300', active ? 'ring-2 ring-primary-500' : '']">
               <div class="grid gap-2">
                 <Badge :class="subscription.id === 1 ? 'bg-pink-600' : 'bg-primary-600'">
-                  <span class="font-medium text-white text-sm">{{ subscription.id === 1 ? 'WLAN required' : 'No WLAN required' }}</span>
+                  <span class="font-medium text-white text-sm">{{ subscription.id === 1 ? 'WLAN erforderlich' : 'kein WLAN erforderlich' }}</span>
                 </Badge>
                 <RadioGroupLabel as="span" class="block text-lg font-normal" :class="checked ? 'text-primary-500' : 'text-gray-900'">
-                  <span class="font-medium text-3xl">€{{ isAnnual ? subscription.annual : subscription.monthly }}</span> /month
+                  <span class="font-medium text-3xl">€{{ isAnnual ? subscription.annual : subscription.monthly }}</span> /Monat
                 </RadioGroupLabel>
                 <transition
                   enter-active-class="transition-all duration-1000 ease-in-out"
@@ -63,7 +63,7 @@ const buyNow = () => {
                   leave-active-class="transition-all duration-300 ease-out"
                   leave-to-class="transform translate-x-5 opacity-0"
                 >
-                  <span v-if="isAnnual" class="font-medium text-base text-gray-500">€{{ isAnnual ? (subscription.annual * 12).toFixed(2) : (subscription.monthly * 12).toFixed(2) }}/year</span>
+                  <span v-if="isAnnual" class="font-medium text-base text-gray-500">€{{ isAnnual ? (subscription.annual * 12).toFixed(2) : (subscription.monthly * 12).toFixed(2) }}/Jahr</span>
                 </transition>
                 <RadioGroupDescription as="span" class="flex items-center font-normal text-xl text-gray-900">
                   {{ subscription.plan }}
@@ -95,11 +95,11 @@ const buyNow = () => {
       leave-to-class="transform -translate-y-5 opacity-0"
     >
       <p v-if="selectedSubscription" class="font-medium text-xl text-black">
-        <span class="text-primary-500">✓</span>  This plan offers a free test period of 1 month. After that month, your subscription will continue at € {{ yearlyPrice }} / year.
+        <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ yearlyPrice }} / Jahr fortgesetzt.
       </p>
     </transition>
     <button class="h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center" :disabled="!stripePayment" @click="buyNow">
-      Buy Now
+      Jetzt kaufen
     </button>
     <transition
       enter-active-class="transition-all duration-1000 ease-in-out"
@@ -109,7 +109,7 @@ const buyNow = () => {
     >
       <div v-if="isAnnual" class="grid gap-1 p-2.5">
         <p class="font-normal text-lg text-black">
-          *Annual plan requires a 12-month commitment. After 12 months, your subscription will automatically continue month-to-month, but you can cancel at any time.
+          *Die jährliche Zahlung beinhaltet eine 12-monatige Mindestvertragslaufzeit. Nach 12 Monaten wird das Abonnement automatisch von Monat zu Monat fortgesetzt. Das Abonnement kann nach Ablauf der Mindestlaufzeit monatlich gekündigt werden.
         </p>
       </div>
     </transition>
