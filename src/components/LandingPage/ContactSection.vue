@@ -5,10 +5,12 @@ const socials = [
   {
     icon: 'i-carbon:email',
     text: t('contact.email'),
+    url: 'mailto:hallo@melli.com',
   },
   {
     icon: 'i-bxl:whatsapp',
     text: t('contact.whatsapp'),
+    url: 'https://wa.me/message/RXR37YZAHSGKB1',
   },
 ]
 const callbackModalOpen = ref(false)

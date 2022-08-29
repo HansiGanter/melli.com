@@ -31,6 +31,16 @@ const navigation = {
       href: 'https://www.linkedin.com/company/mit-melli/',
       icon: 'i-carbon:logo-linkedin h-5 w-5',
     },
+    {
+      name: 'Github',
+      href: 'https://github.com/melli-labs',
+      icon: 'i-carbon:logo-github h-5 w-5',
+    },
+    {
+      name: 'YouTube',
+      href: 'https://www.youtube.com/channel/UC9kINIc7RSUKfMu8LXaWnTQ',
+      icon: 'i-carbon:logo-youtube h-5 w-5',
+    },
   ],
 }
 </script>
@@ -125,6 +135,7 @@ const navigation = {
           <li v-for="item in navigation.social" :key="item.name">
             <a
               :href="item.href"
+              target="_blank"
               class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center"
             >
               <div :class="item.icon" />
