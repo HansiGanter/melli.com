@@ -27,7 +27,7 @@ const stripePayment = computed(() => {
 })
 
 const buyNow = () => {
-  window.open(stripePayment.value, '_blank')
+  location.href = stripePayment.value
 }
 </script>
 

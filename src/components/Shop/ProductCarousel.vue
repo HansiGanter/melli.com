@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative fade bg-transparent h-fit w-full" data-carousel="static">
+  <div class="relative fade bg-transparent h-full w-full" data-carousel="static">
     <div class="absolute bottom-2 inset-x-0 z-1">
       <div class="flex justify-center items-center gap-4 mx-auto">
         <div
@@ -33,7 +33,7 @@ onMounted(() => {
     </div>
     <div class="carousel-inner relative overflow-hidden w-full">
       <div v-for="(img, index) in images" :id="`slide-${index}`" :key="img" :class="`${active === index ? 'active' : 'left-full'}`" class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out">
-        <img class="block w-full h-fit object-contain" :src="img" :alt="`Slide ${index + 1}`">
+        <img class="block w-full object-scale-down md:object-contain" :src="img" :alt="`Slide ${index + 1}`">
       </div>
     </div>
   </div>
