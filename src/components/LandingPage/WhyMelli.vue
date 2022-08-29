@@ -2,6 +2,7 @@
 import type { Ref } from 'vue'
 
 const { t } = useI18n()
+const router = useRouter()
 
 interface Feature {
   image: string
@@ -28,15 +29,15 @@ const features: Ref<Feature[]> = ref([
 ])
 
 const activeFeature = ref('')
-const isOpen = ref(false)
 const email = ref('')
-const open = () => {
-  isOpen.value = true
-}
-const close = () => {
-  isOpen.value = false
-}
 const subscriptionModal = ref(false)
+const open = () => {
+  router.replace({ query: { email: email.value } })
+  // we have to ensure the query params are set before the hubspot script loads
+  setTimeout(() => {
+    subscriptionModal.value = true
+  }, 0)
+}
 </script>
 
 <template>

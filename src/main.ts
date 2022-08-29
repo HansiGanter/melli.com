@@ -20,6 +20,8 @@ const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) => {
       behavior: 'smooth',
     }
   }
+  if (to.path === from.path)
+    return {}
   return savedPosition || { top: 0 }
 }
 

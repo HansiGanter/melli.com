@@ -1,14 +1,12 @@
 <script setup lang="ts">
 const isLoading = ref(true)
 function renderForm() {
-  if (window.hbspt) {
-    window.hbspt.forms.create({
-      region: 'eu1',
-      portalId: '25477854',
-      formId: 'd42f33cf-7752-406a-9304-8bf2ee7af932',
-      target: '#hubspotsubscribeform',
-    })
-  }
+  window.hbspt.forms.create({
+    region: 'eu1',
+    portalId: '25477854',
+    formId: 'd42f33cf-7752-406a-9304-8bf2ee7af932',
+    target: '#hubspotsubscribeform',
+  })
   // hubspot form has some weird layout shifts while the form inserted into the DOM
   // so we wait for it to render completely
   setTimeout(() => isLoading.value = false, 500)
