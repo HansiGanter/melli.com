@@ -5,7 +5,7 @@
     <WhyMelli />
   </Container>
 
-  <Container class="bg-teal-900 rounded-[30px] py-24">
+  <Container class="bg-teal-900 rounded-[30px] py-16">
     <MelliFeatures id="besonderheiten" />
   </Container>
 

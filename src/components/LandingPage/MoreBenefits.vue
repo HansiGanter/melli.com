@@ -31,14 +31,14 @@ const playVideo = () => {
             {{ t('more-benefits.text') }}
           </p>
         </div>
-        <div class="flex flex-col lg:flex-row items-center gap-8 w-full lg:w-9/12">
-          <div
-            v-for="(benefit, index) in benefits"
-            :key="index"
-            class="text-gray-900 font-semibold text-base text-center bg-amber-900/10 py-3.5 px-6 rounded-lg mr-auto"
-          >
-            {{ benefit }}
-          </div>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center gap-8 w-full lg:w-10/12">
+        <div
+          v-for="(benefit, index) in benefits"
+          :key="index"
+          class="text-gray-900 font-semibold text-base text-center bg-amber-900/10 py-3.5 px-6 h-full rounded-lg items-center flex"
+        >
+          <span>{{ benefit }}</span>
         </div>
       </div>
     </div>

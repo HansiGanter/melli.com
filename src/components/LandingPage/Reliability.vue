@@ -29,14 +29,14 @@ const playVideo = () => {
         <p class="w-full lg:w-3/4 font-normal text-xl">
           {{ t('reliability-section.text') }}
         </p>
-        <div class="flex flex-col lg:flex-row items-center gap-8">
-          <div
-            v-for="(feature, index) in features"
-            :key="index"
-            class="text-gray-900 font-semibold text-base bg-green-900/10 py-3.5 px-6 rounded-lg"
-          >
-            {{ feature }}
-          </div>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        <div
+          v-for="(feature, index) in features"
+          :key="index"
+          class="text-gray-900 font-semibold text-base bg-green-900/10 py-3.5 px-6 rounded-lg h-full flex items-center"
+        >
+          <span>{{ feature }}</span>
         </div>
       </div>
     </div>
