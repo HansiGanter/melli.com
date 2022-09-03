@@ -22,7 +22,9 @@ const showNav = ref(false)
           </div>
         </div>
         <div class="lg:flex hidden items-center gap-4">
-          <div class="i-carbon:user stroke-2 w-6 h-6" />
+          <a href="https://app.melli.com/" target="_blank">
+            <div class="i-carbon:user stroke-2 w-6 h-6" />
+          </a>
           <div class="i-carbon:shopping-cart stroke-2 w-6 h-6" />
           <router-link to="/shop" class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium">
             Jetzt kaufen
@@ -46,7 +48,7 @@ const showNav = ref(false)
           <a href="#" class="focus:outline-none focus:bg-gray-100 flex items-center justify-between w-full items-center rounded-md px-3 py-2 text-base font-medium text-gray-600">{{ t('navbar.blog.heading') }}</a>
         </div>
         <div class="grid gap-3 py-6 px-4">
-          <a class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
+          <a href="https://app.melli.com/login" target="_blank" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
             <span>Account</span>
             <div class="i-carbon:user stroke-2 w-5 h-5" />
           </a>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const route = useRoute()
 const { t } = useI18n()
 
 const isAnnual = ref(true)
@@ -9,6 +10,11 @@ const subscriptions = [
 ]
 
 const selectedSubscription = ref('')
+
+onMounted(() => {
+  if (route.query.id)
+    selectedSubscription.value = subscriptions.find(sub => route.query.id === sub.annual)
+})
 
 const yearlyPrice = computed(() => {
   if (isAnnual.value)
@@ -25,9 +31,13 @@ const stripePayment = computed(() => {
   else
     return selectedSubscription.value !== '' ? selectedSubscription.value.payments.monthly : ''
 })
-
+const error = ref('')
 const buyNow = () => {
-  location.href = stripePayment.value
+  if (!selectedSubscription.value)
+    error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
+
+  else
+    location.href = stripePayment.value
 }
 </script>
 
@@ -41,7 +51,7 @@ const buyNow = () => {
         Monatlich zahlen
       </div>
       <Toggle v-model="isAnnual" />
-      <div class="font-normal lg:font-medium text-base text-gray-700">
+      <div class="flex-1 font-normal lg:font-medium text-base text-gray-700">
         Jährlich im Voraus zahlen* <span class="text-primary-600">(spare 20%)</span>
       </div>
     </div>
@@ -87,6 +97,16 @@ const buyNow = () => {
           </RadioGroupOption>
         </div>
       </RadioGroup>
+      <transition
+        enter-active-class="transition-all duration-1000 ease-in-out"
+        enter-from-class="transform translate-y-5 opacity-0"
+        leave-active-class="transition-all duration-500 ease-in"
+        leave-to-class="transform -translate-y-5 opacity-0"
+      >
+        <p v-if="error && !selectedSubscription" class="font-medium text-xl text-red-500 mt-2">
+          {{ error }}
+        </p>
+      </transition>
     </div>
     <transition
       enter-active-class="transition-all duration-1000 ease-in-out"
@@ -98,7 +118,7 @@ const buyNow = () => {
         <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ yearlyPrice }} / Jahr fortgesetzt.
       </p>
     </transition>
-    <button class="h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center" :disabled="!stripePayment" @click="buyNow">
+    <button class="h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center" @click="buyNow">
       Jetzt kaufen
     </button>
     <transition

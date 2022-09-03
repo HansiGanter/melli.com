@@ -13,7 +13,9 @@
     <Reliability />
   </Container>
 
-  <MelliListensSection />
+  <Container class="py-12 lg:py-24">
+    <MelliListensSection />
+  </Container>
 
   <Container id="vernetzen" class="py-10 lg:py-20">
     <MoreBenefits />
@@ -31,7 +33,9 @@
     <StatsSection />
   </Container>
 
-  <SecureSection />
+  <Container class="bg-gray-50 lg:py-24">
+    <SecureSection />
+  </Container>
 
   <Container class="py-12 bg-gray-50">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mx-auto justify-center">
@@ -51,5 +55,7 @@
     <FaqSection />
   </Container>
 
-  <ContactSection />
+  <Container class="bg-teal-900 py-24">
+    <ContactSection />
+  </Container>
 </template>

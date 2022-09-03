@@ -2,6 +2,7 @@
 import type { Ref } from 'vue'
 
 const { t } = useI18n()
+const router = useRouter()
 
 interface Plan {
   name: string
@@ -10,6 +11,11 @@ interface Plan {
   extras?: string[]
   wlan: boolean
 }
+
+const subscriptions = [
+  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde'], payments: { annual: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145', monthly: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' } },
+  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'], payments: { annual: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv', monthly: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' } },
+]
 
 const plans: Ref<Plan[]> = [
   {
@@ -33,6 +39,7 @@ const pros = [
   {
     text: t('price.pros.1'),
     icon: 'i-bxl:paypal',
+
   },
   {
     text: t('price.pros.2'),
@@ -47,6 +54,11 @@ const pros = [
     icon: 'i-carbon:phone',
   },
 ]
+
+const goToShop = (price: string) => {
+  const selectedItem = subscriptions.find(item => price === `€${item.annual}`)
+  router.push({ path: '/shop', query: { id: selectedItem?.annual } })
+}
 </script>
 
 <template>
@@ -57,7 +69,7 @@ const pros = [
     <div class="grid gap-7 lg:gap-12">
       <div class="lg:w-8/12 lg:mx-auto">
         <div class="grid gap-5 grid-cols-1 lg:grid-cols-2 lg:mx-auto">
-          <router-link v-for="plan in plans" :key="plan.name" to="/shop" class="hover:border border-gray-200 hover:shadow-none transition-all ease-out delay-75 flex flex-col justify-between gap-6 items-center rounded-2xl shadow-lg px-3.5 py-5">
+          <div v-for="plan in plans" :key="plan.name" class="hover:border border-gray-200 hover:shadow-none transition-all ease-out delay-75 flex flex-col justify-between gap-6 items-center rounded-2xl shadow-lg px-3.5 py-5 cursor-pointer" @click="goToShop(plan.price)">
             <div class="flex flex-shrink-0 flex-col gap-3 w-full divide-y divide-gray-400">
               <div class="grid gap-2">
                 <Badge class="text-sm font-medium text-white" :class="!plan.wlan ? 'bg-pink-600' : 'bg-primary-600'">
@@ -78,11 +90,11 @@ const pros = [
               </ul>
             </div>
             <div class="flex flex-col justify-between">
-              <router-link to="/shop" class="flex-1 bg-primary-500 py-2.5 px-4 w-fit rounded-lg h-min">
+              <button class="flex-1 bg-primary-500 py-2.5 px-4 w-fit rounded-lg h-min">
                 <span class="text-base font-medium text-white">{{ t('plans.buy') }}</span>
-              </router-link>
+              </button>
             </div>
-          </router-link>
+          </div>
         </div>
       </div>
       <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">

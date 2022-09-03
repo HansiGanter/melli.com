@@ -9,8 +9,8 @@ const navigation = {
     { name: 'info@melli.com', href: 'mailto:info@melli.com', icon: 'i-carbon:email' },
   ],
   support: [
-    { name: t('footer.support.faq'), href: '#' },
-    { name: t('footer.support.user-login'), href: '#' },
+    { name: t('footer.support.faq'), href: '/faq' },
+    { name: t('footer.support.user-login'), href: 'https://app.melli.com/' },
   ],
   solutions: [
     { name: 'AGB', href: '/agb' },
