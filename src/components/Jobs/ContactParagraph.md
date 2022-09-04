@@ -1,3 +1,7 @@
-### Dein Interesse ist geweckt? 
+## Ansprechpartner 
 
-Dann kontaktiere uns einfach per E-Mail (karriere@meetap.de) oder rufe Sahar Zoheidi direkt an unter +49-1579-2451236 und besuche uns auf unserer Website www.melli.com Wir freuen uns darauf dich persönlich kennenzulernen. Wir möchten außerdem auf weitere Stellenangebote auf unserer LinkedIn Unternehmensseite hinweisen. Schau gerne vorbei unter https://www.linkedin.com/company/meetap-gmbh/jobs
+Ich könnte dir noch so viel mehr erzählen, aber am besten überzeugst du dich selbst! Bewirb dich direkt über unsere Website oder rufe Leonie, unsere Recruiting Managerin an +49 1579 2451235.
+
+Falls du einen Eindruck erhalten möchtest wie ich, Melli, aussehe schau hier vorbei
+
+Ich freue mich darauf dich persönlich kennenzulernen.

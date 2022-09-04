@@ -21,8 +21,11 @@ if (props.frontmatter.title) {
 
 <template>
   <!-- we wrap pages -->
-  <Container v-if="frontmatter.title" class="my-12">
-    <header class="m-auto text-center prose mb-12">
+  <div v-if="frontmatter.title">
+    <div v-if="frontmatter.category && frontmatter.category.href === 'jobs'">
+      <KarriereHeader :title="frontmatter.title" :period="frontmatter.period" />
+    </div>
+    <header v-else class="m-auto text-center prose mb-12">
       <h1>{{ frontmatter.title }}</h1>
       <p class="text-lg">
         {{ frontmatter.description }}
@@ -36,7 +39,7 @@ if (props.frontmatter.title) {
     <article class="m-auto prose">
       <slot />
     </article>
-  </Container>
+  </div>
   <!-- but leave components as is -->
   <slot v-else />
 </template>

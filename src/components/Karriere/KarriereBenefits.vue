@@ -52,7 +52,7 @@ const coreBenefits = [
 </script>
 
 <template>
-  <Container class="py-12 lg:py-24 bg-gray-50 rounded-[32px]">
+  <Container id="kultur" class="py-12 lg:py-24 bg-gray-50 rounded-[32px]">
     <div class="grid gap-24">
       <div class="grid gap-16">
         <div class="grid gap-6 justify-items-center mx-auto">

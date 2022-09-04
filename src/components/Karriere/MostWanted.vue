@@ -1,10 +1,16 @@
 <script setup lang="ts">
-const job = reactive(
-  {
-    title: 'Lead Engineer (m/f/d)',
-    text: 'We’re looking for an experienced engineering manager to join our team.',
-    period: 'Full-time',
-  })
+const router = useRouter()
+const routes = router.getRoutes()
+  .filter(
+    route => route.path.startsWith('/karriere')
+      && (route.meta.frontmatter) // todo: why is there a second route without frontmatter?
+      && (route.meta as any).frontmatter.date,
+  )
+  .sort((a, b) => +new Date((b.meta as any).frontmatter.date) - +new Date((a.meta as any).frontmatter.date))
+
+const job = computed(() => {
+  return routes.find(route => route.meta.frontmatter.category.name.toLowerCase() === 'software')
+})
 </script>
 
 <template>
@@ -13,7 +19,7 @@ const job = reactive(
       <h1 class="font-semibold text-gray-900 text-2xl lg:text-3xl text-center lg:text-left">
         Most wanted - Job der Woche
       </h1>
-      <JobCard job-type="software" :title="job.title" :text="job.text" :period="job.period" />
+      <JobCard job-type="software" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" />
       <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto">
         <span>mehr Jobangebote</span>
         <div class="i-carbon:arrow-right w-5 h-5" />

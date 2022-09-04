@@ -19,6 +19,9 @@ const showNav = ref(false)
             <router-link to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
               {{ t('navbar.blog.heading') }}
             </router-link>
+            <router-link to="/karriere" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
+              {{ t('navbar.karriere') }}
+            </router-link>
           </div>
         </div>
         <div class="lg:flex hidden items-center gap-4">

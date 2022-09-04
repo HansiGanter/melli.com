@@ -6,6 +6,14 @@ import {
 } from '@headlessui/vue'
 
 const { t } = useI18n()
+const jobAlertDialogOpen = ref(false)
+
+const openDialog = () => {
+  // we have to ensure the query params are set before the hubspot script loads
+  setTimeout(() => {
+    jobAlertDialogOpen.value = true
+  }, 0)
+}
 
 const faqs = [
   { question: t('karriere-faq.1.question'), answers: [t('karriere-faq.1.answer')], links: ['unsere Kultur.'] },
@@ -42,7 +50,7 @@ const faqs = [
               leave-to-class="transform scale-95 opacity-0"
             >
               <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>{{ t('karriere-faq.1.answer') }} <a href="https://melli.com/karriere/" target="_blank" class="underline decoration-1 decoration-solid underline-offset-1">unsere Kultur</a>.</span>
+                <span>{{ t('karriere-faq.1.answer') }} <a href="/karriere/#kultur" class="underline decoration-1 decoration-solid underline-offset-1">unsere Kultur</a>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
@@ -101,7 +109,7 @@ const faqs = [
               leave-to-class="transform scale-95 opacity-0"
             >
               <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>{{ t('karriere-faq.4.answer') }} <a href="https://melli.com/karriere/#" target="_blank" class="underline decoration-1 decoration-solid underline-offset-1">jetzt bewerben</a>.</span>
+                <span>{{ t('karriere-faq.4.answer') }} <a href="/karriere/initiativbewerbung" class="underline decoration-1 decoration-solid underline-offset-1">jetzt bewerben</a>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
@@ -143,7 +151,7 @@ const faqs = [
               leave-to-class="transform scale-95 opacity-0"
             >
               <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>Keine Sorge – schick uns gerne eine <a href="https://melli.com/karriere/#" target="_blank" class="underline decoration-1 decoration-solid underline-offset-1">Initiativbewerbung</a> oder bleib auf dem Laufenden mit unserem <a href="https://melli.com/karriere/#" target="_blank" class="underline decoration-1 decoration-solid underline-offset-1">Job Alert</a>.</span>
+                <span>Keine Sorge – schick uns gerne eine <a href="/karriere/initiativbewerbung" class="underline decoration-1 decoration-solid underline-offset-1">Initiativbewerbung</a> oder bleib auf dem Laufenden mit unserem <button class="cursor-pointer underline decoration-1 decoration-solid underline-offset-1" @click="openDialog">Job Alert</button>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
@@ -210,4 +218,7 @@ const faqs = [
       </div>
     </div>
   </Container>
+  <Modal :show="jobAlertDialogOpen" @close="jobAlertDialogOpen = false">
+    <JobAlertDialog />
+  </Modal>
 </template>
