@@ -1,14 +1,16 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const router = useRouter()
 
-const isOpen = ref(false)
+const newsletterDialogOpen = ref(false)
 const email = ref('')
 
 const open = () => {
-  isOpen.value = true
-}
-const close = () => {
-  isOpen.value = false
+  router.replace({ query: { email: email.value } })
+  // we have to ensure the query params are set before the hubspot script loads
+  setTimeout(() => {
+    newsletterDialogOpen.value = true
+  }, 0)
 }
 </script>
 
@@ -35,7 +37,7 @@ const close = () => {
             v-model="email"
             type="email"
             name="email"
-            placeholder="E-Mail-Adresse"
+            placeholder="Deine E-Mail-Adresse"
             validation="required|email"
             validation-visibility="submit"
             inner-class="w-full h-fit border border-primary-400 rounded-lg overflow-hidden focus:border-primary-500"
@@ -53,4 +55,7 @@ const close = () => {
       </FormKit>
     </div>
   </div>
+  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
+    <NewsletterDialog />
+  </Modal>
 </template>

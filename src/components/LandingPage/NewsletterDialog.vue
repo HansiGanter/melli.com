@@ -5,8 +5,8 @@ function renderForm() {
     window.hbspt.forms.create({
       region: 'eu1',
       portalId: '25477854',
-      formId: 'ae0c94da-8caf-460c-84e7-6307512f11eb',
-      target: '#hubspotcallform',
+      formId: '80a7c9ec-8044-43cd-b40b-00f1ad69a0ac',
+      target: '#hubspotnewsletterform',
     })
   }
   // hubspot form has some weird layout shifts while the form inserted into the DOM
@@ -34,7 +34,7 @@ onMounted(async () => {
       Einen Moment bitte...
     </div>
     <div
-      id="hubspotcallform"
+      id="hubspotnewsletterform"
       :style="isLoading ? 'height: 0' : ''"
     />
   </Container>

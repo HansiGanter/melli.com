@@ -30,12 +30,12 @@ const features: Ref<Feature[]> = ref([
 
 const activeFeature = ref('')
 const email = ref('')
-const subscriptionModal = ref(false)
+const newsletterDialogOpen = ref(false)
 const open = () => {
   router.replace({ query: { email: email.value } })
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
-    subscriptionModal.value = true
+    newsletterDialogOpen.value = true
   }, 0)
 }
 </script>
@@ -152,8 +152,8 @@ const open = () => {
       </div>
     </FormKit>
   </div>
-  <Modal :show="subscriptionModal" @close="subscriptionModal = false">
-    <SubscriptionDialog />
+  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
+    <NewsletterDialog />
   </Modal>
 </template>
 

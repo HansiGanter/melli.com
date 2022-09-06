@@ -1,13 +1,20 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const router = useRouter()
+
+const newsletterDialogOpen = ref(false)
+const email = ref('')
 
 const open = () => {
-  alert('opened')
+  router.replace({ query: { email: email.value } })
+  // we have to ensure the query params are set before the hubspot script loads
+  setTimeout(() => {
+    newsletterDialogOpen.value = true
+  }, 0)
 }
 
 const filters = ['Latest', 'Pricing', 'Product', 'Social']
 const currentFilter = ref('')
-const email = ref('')
 </script>
 
 <template>
@@ -73,4 +80,7 @@ const email = ref('')
       <PostPreview prefix="/blog" />
     </div>
   </Container>
+  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
+    <NewsletterDialog />
+  </Modal>
 </template>
