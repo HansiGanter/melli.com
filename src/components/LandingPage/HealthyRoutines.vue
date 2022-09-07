@@ -29,7 +29,7 @@ const playVideo = () => {
       </h1>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-      <div class="relative overflow-clip rounded-2xl h-fit order-2 lg:order-1" @click="playVideo">
+      <div class="relative overflow-hidden rounded-2xl h-fit order-2 lg:order-1" @click="playVideo">
         <video
           ref="healthyroutinesvideo"
           width="845"

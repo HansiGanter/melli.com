@@ -3,7 +3,7 @@
     class="max-h-fit min-h-96 bg-top bg-cover bg-no-repeat"
     style="background-image: url('https://assets.melli.com/images/backgrounds/career-1024.webp');"
   >
-    <div class="py-40">
+    <div class="py-44 lg:py-64">
       <div class="grid lg:grid-cols-2 h-full items-center max-w-screen-xl px-4 sm:px-6 lg:px-0">
         <div class="bg-gray-50/80 px-6 lg:px-12 py-8 lg:py-16 rounded-[32px] w-full lg:w-fit grid gap-6 content-start shadow-md">
           <h1 class="text-black font-semibold text-4xl lg:text-5xl">

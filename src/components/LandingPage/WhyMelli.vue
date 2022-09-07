@@ -57,8 +57,8 @@ const open = () => {
           >
             <div class="flip-card-front absolute w-full h-full bg-white rounded-3xl overflow-visible">
               <div class="bg-white dark:bg-gray-800 grid gap-4 rounded-3xl drop-shadow-xl px-6 pb-6 h-full overflow-visible">
-                <div class="flex-shrink-0 justify-center flex -mt-11 overflow-visible">
-                  <img class="object-contain" :src="feature.image" :class="index < 2 ? '-mt-4' : '-mt-2'">
+                <div class="flex-shrink-0 justify-center flex -mt-11 overflow-hidden">
+                  <img class="object-contain" :src="feature.image" :class="index < 2 ? 'mt-3' : 'mt-8'">
                 </div>
                 <div class="flex-1 flex flex-col gap-3 justify-between content-start">
                   <div class="flex-1 text-center">
@@ -112,10 +112,10 @@ const open = () => {
           Mit-Gründer von Melli & langjähriger Pflegeunternehmer der Ambulantis BSW GmbH
         </p>
       </div>
-      <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+      <!-- <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
         <span>Mehr erfahren</span>
         <div class="i-carbon:arrow-right w-5 h-5" />
-      </button>
+      </button> -->
     </div>
   </div>
   <div class="grid gap-2 lg:w-5/12 lg:mx-auto">

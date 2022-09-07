@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { OnClickOutside } from '@vueuse/components'
-
 const { t } = useI18n()
 
 const showNav = ref(false)
@@ -13,9 +11,9 @@ const showNav = ref(false)
         <div class="flex items-center gap-x-8">
           <Logo />
           <div class="lg:flex hidden items-center gap-x-4">
-            <span class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
+            <router-link to="/" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
               {{ t('navbar.about') }}
-            </span>
+            </router-link>
             <router-link to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
               {{ t('navbar.blog.heading') }}
             </router-link>

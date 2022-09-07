@@ -50,7 +50,7 @@ const quotes = [
             </div>
           </div>
           <div class="flex items-center">
-            <span class="text-base font-normal text-primary-400">Nutzer-Geschichte ansehen</span>
+            <span class="text-base font-normal text-primary-400">{{ quote.name }}</span>
           </div>
         </div>
       </div>
