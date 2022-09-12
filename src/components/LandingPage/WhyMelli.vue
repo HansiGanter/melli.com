@@ -112,10 +112,6 @@ const open = () => {
           Mit-Gründer von Melli & langjähriger Pflegeunternehmer der Ambulantis BSW GmbH
         </p>
       </div>
-      <!-- <button class="bg-teal-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
-        <span>Mehr erfahren</span>
-        <div class="i-carbon:arrow-right w-5 h-5" />
-      </button> -->
     </div>
   </div>
   <div class="grid gap-2 lg:w-5/12 lg:mx-auto">

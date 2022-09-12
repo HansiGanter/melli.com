@@ -55,5 +55,8 @@ const quotes = [
         </div>
       </div>
     </div>
+    <p class="lg:ml-auto text-white">
+      *Aus Datenschutzgründen haben wir den Namen unserer Testnutzer geändert.
+    </p>
   </div>
 </template>

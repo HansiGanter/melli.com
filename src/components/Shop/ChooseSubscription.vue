@@ -114,8 +114,18 @@ const buyNow = () => {
       leave-active-class="transition-all duration-500 ease-in"
       leave-to-class="transform -translate-y-5 opacity-0"
     >
-      <p v-if="selectedSubscription" class="font-medium text-xl text-black">
+      <p v-if="selectedSubscription && isAnnual" class="font-medium text-xl text-black">
         <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ yearlyPrice }} / Jahr fortgesetzt.
+      </p>
+    </transition>
+    <transition
+      enter-active-class="transition-all duration-1000 ease-in-out"
+      enter-from-class="transform translate-y-5 opacity-0"
+      leave-active-class="transition-all duration-500 ease-in"
+      leave-to-class="transform -translate-y-5 opacity-0"
+    >
+      <p v-if="selectedSubscription && !isAnnual" class="font-medium text-xl text-black">
+        <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ (yearlyPrice / 12).toFixed(2) }}/Monat fortgesetzt.
       </p>
     </transition>
     <button class="h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center" @click="buyNow">

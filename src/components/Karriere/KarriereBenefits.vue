@@ -6,17 +6,17 @@ const benefits = [
     text: 'es gibt ein Leben neben dem Beruf! Familie und das Leben außerhalb unserer Jobs sind uns sehr wichtig.',
   },
   {
-    icon: 'i-heroicons-outline:fast-forward',
+    icon: 'i-heroicons:forward',
     title: 'Dynamische Startup Atmosphäre,',
     text: 'kombiniert mit mehr als 10 Jahren unternehmerischer Erfahrung und Know-How.',
   },
   {
-    icon: 'i-heroicons-outline:home',
+    icon: 'i-heroicons:home',
     title: 'Home Office Option,',
     text: 'bei uns sind die Arbeitstage in Home-Office und Office Tage aufgeteilt. Und wenn das Leben doch anders spielt als geplant, bleiben wir flexibel.',
   },
   {
-    icon: 'i-heroicons-outline:heart',
+    icon: 'i-heroicons:heart',
     title: 'Soziale Sinnhaftigkeit,',
     text: 'und die Chance durch deine Arbeit das Leben unserer Nutzer und damit auch die Welt ein Stück besser zu machen.',
   },
@@ -103,10 +103,10 @@ const coreBenefits = [
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center">
-        <img src="https://assets.melli.com/images/team/leonie-krumbholz.webp" class="w-2/3 lg:w-auto mx-auto rounded-full">
+        <img src="https://assets.melli.com/images/team/leonie-krumbholz-1.webp" class="w-2/3 lg:w-auto mx-auto rounded-full">
         <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20" style="background-image: url('/assets/bubble_bg.png')">
           <h5 class="font-medium text-primary-900 text-2xl lg:text-3xl">
-            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter +49 1579 2451235.”
+            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter <span class="text-primary-400">+49 1579 2451235</span>.”
           </h5>
           <span class="font-semibold text-gray-500 text-base">Leonie Kumbholz | Recruiting Managerin</span>
         </div>

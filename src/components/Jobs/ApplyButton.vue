@@ -5,7 +5,7 @@ defineProps<{ apply: string }>()
 <template>
   <div class="w-full flex items-center justify-end">
     <a :href="apply" target="_blank" class="py-4 px-7 bg-primary-500 rounded-lg decoration-none">
-      <span class="text-white font-semibold text-base">Apply Now</span>
+      <span class="text-white font-semibold text-base">Jetzt bewerben</span>
     </a>
   </div>
 </template>

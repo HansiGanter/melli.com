@@ -1,7 +1,7 @@
 <template>
   <Container
     class="max-h-fit min-h-96 bg-top bg-cover bg-no-repeat"
-    style="background-image: url('https://assets.melli.com/images/backgrounds/career-1024.webp');"
+    style="background-image: url('https://assets.melli.com/images/backgrounds/career-2048.webp');"
   >
     <div class="py-44 lg:py-64">
       <div class="grid lg:grid-cols-2 h-full items-center max-w-screen-xl px-4 sm:px-6 lg:px-0">
