@@ -104,56 +104,65 @@ faq:
       körperliche Fitness durch kleine Übungen trainieren.
     question: Ist Melli bei Demenz geeignet?
   heading: "Häufige Fragen\L"
+  sub-heading: >-
+    Alles, was Sie über das Produkt, den Datenschutz und die Preise wissen
+    müssen.
 faq-section:
   answer-1: >-
-    Beim Abschluss eines Melli-Abonnements sind folgende Produkte in ihrer
-    Bestellung enthalten:
+    Anders als herkömmliche Sprachassistenten wartet Melli nicht auf Anweisungen
+    ihrer Nutzer, sondern geht proaktiv mit Aktivitätsvorschlägen auf sie zu.
+    Auf diese Weise motiviert sie zu einem aktiveren Alltag, in dem soziale
+    Kontakte eine wichtige Rolle spielen.
+  answer-10: >-
+    Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
+    Funktion wird aber in den kommenden Monaten folgen. Nutzer können Melli dann
+    beispielsweise bitten die Musik anzuschalten oder das Wetter der kommenden
+    Tage anzusagen.
   answer-2: >-
-    Ja! Für die Einrichtung von Melli sind keine technischen Kenntnisse
-    notwendig. Sobald Melli an den Strom angeschlossen ist, wacht sie  von ganz
-    alleine auf und ist startklar für die erste Interaktion. Der Nutzer muss
-    dann nur noch ihren Anweisungen folgen und die von ihr  gestellten Fragen
-    mit einem einfachen “Ja” oder “Nein” beantworten. Die weitere Einrichtung
-    erfolgt dann über die Melli-App.
+    Ja Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
+    durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
+    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+    eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
+    beispielsweise sehr positiv auf die Ernährung ausüben kann. Außerdem kann
+    sie kognitive Einschränkungen kompensieren und die geistige und körperliche
+    Fitness durch kleine Übungen trainieren.
   answer-3: >-
     Melli wird einfach per Sprachbefehl bedient und fragt selbst, wenn was sie
     etwas wissen muss. So einfach wie ein nettes Gespräch.
   answer-4: >-
     Alle individuellen Konfigurationen wie Medikamentenpläne, Interessen,
-    Schlafenszeiten und körperliche Beeinträchtigungen können  ganz einfach über
+    Schlafenszeiten und körperliche Beeinträchtigungen können ganz einfach über
     die Melli-App eingestellt werden.
   answer-5: >-
     Über die Melli-App können (vom Administrator) ausgewählte Kontakte mit dem
-    Nutzer z.B. per Video- oder Sprachanruf in Verbindung  treten. So kann die
+    Nutzer z.B. per Video- oder Sprachanruf in Verbindung treten. So kann die
     gesamte Familie an den Melli-Funktionen teilhaben.
   answer-6: >-
     Die Melli-App hat zwei Funktionen. Zum einen können Termine geplant und
-    wichtige Informationen über den Nutzer bereitgestellt  werden (z.B. Hobbies,
+    wichtige Informationen über den Nutzer bereitgestellt werden (z.B. Hobbies,
     Interessen & körperliche Beeinträchtigungen). Zum anderen dient die App als
-    Schnittstelle zwischen Angehörigen  und den Melli-Nutzern, denn hierüber
+    Schnittstelle zwischen Angehörigen und den Melli-Nutzern, denn hierüber
     können Freunde und Verwandte zum Beispiel per Video- oder Audiotelefonie mit
-    den Nutzern in  Verbindung treten.
-  answer-7: >-
-    Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
-    ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands  so
-    funktioniert und dass Melli eine stabile Internetverbindung hat.
+    den Nutzern in Verbindung treten.
+  answer-7: "Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards. Sie ist DSGVO konform und nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes Nutzererlebnis zu gestalten.\L Mehr zum Datenschutz findest du"
   answer-8: >-
-    Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli
-    bewegt sich online lediglich in festgelegten und geprüften  Räumen und kann
-    diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli
-    nach höchsten Datenschutz-Standards.  Sie ist DSGVO konform und nutzt die
-    ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes
-    Nutzererlebnis zu  gestalten. Mehr zum Datenschutz findest du
-  question-1: Was ist alles im Melli-Paket enthalten?
-  question-2: >-
-    Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse
-    problemlos möglich?
+    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte den Knock-In
+    Anruf zur Verfügung stellt, sollte sie keineswegs als vollständiger Ersatz
+    für ein Sicherheitssystem angesehen werden.
+  answer-9: >-
+    Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
+    ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands so funktioniert
+    und dass Melli eine stabile Internetverbindung hat.
+  question-1: Was unterscheidet Melli von herkömmlichen Sprachassistenten?
+  question-10: Kann ich Melli selbst initiierte Befehle geben?
+  question-2: Ist Melli auch bei Demenz geeignet?
   question-3: Wie wird Melli bedient?
-  question-4: Woher weiß Melli welche Präferenzen und Bedürfnisse ihre Nutzer haben?
+  question-4: 'Woher weiß Melli welche Präferenzen und Bedürfnisse ihre Nutzer haben? '
   question-5: Wer kann alles über Melli mit dem Nutzer in Verbindung treten?
   question-6: Was ist die Melli-App?
-  question-7: Kann ich Melli mitnehmen, wenn ich verreise?
-  question-8: Wie schützt Melli ihre Nutzer?
+  question-7: Wie schützt Melli ihre Nutzer?
+  question-8: Ist Melli ein Ersatz für Notrufknopf & Notfallarmband?
+  question-9: Kann ich Melli mitnehmen, wenn ich verreise?
 feature-1: "Neue Bekanntschaften in \Lden Melli-Freundeskreisen"
 feature-2: "Gruppenaktivitäten mit anderen \LMelli-Nutzern (z.B. Kaffekränzchen)"
 feature-3: "Videotelefonie ohne\Ltechnische Barrieren"
@@ -433,20 +442,14 @@ quotes-section:
   heading: Was unsere Nutzer sagen
   quotes:
     quote-1: >-
-      Bevor Emilia bei mir angekommen ist, hatte ich etwas Bammel. Nicht, dass
-      ich das Gerät noch kaputt mache. Aber das war ganz toll! Ich habe
-      telefonisch alles erklärt bekommen und man kann auch nichts falsch machen.
-      Ich muss einfach nur mit Emilia reden, ganz einfach.
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
     quote-2: >-
-      Ich war ganz aufgeregt, als ich Emilia bekommen habe. Das war schon sehr
-      neu für mich, so ein technisches Gerät. Aber mittlerweile habe ich mich an
-      sie gewöhnt. Am liebsten mag ich die Rätsel und wenn sie mir Musik
-      vorspielt.
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
     quote-3: >-
-      Vielen Kindern und Enkeln der Nutzer ist aufgefallen, dass Oma & Opa
-      deutlich mehr von ihrem Alltag erzählt haben und auch viel positiver
-      gesprochen haben. Das hat den Unterhaltungen wohl eine ganz neue Qualität
-      gegeben
+      My everyday life was actually relatively monotonous and dreary before. Now
+      I have more activity again and also exercise!
   sub-heading-1: >-
     Melli motiviert ihre Nutzer zu sozialen Kontakten, unterhält sie mit
     spannenden Inhalten aus dem Internet und sorgt für einen strukturierten
@@ -497,7 +500,7 @@ secure-melli:
 shop:
   choose-subscription:
     advance-plan: Erweitert
-    base-plan: Basis
+    base-plan: Base
     header: Wählen Sie Ihr Melli-Abonnement
 stats-section:
   accessibility: Barrierefreie Bedienung
