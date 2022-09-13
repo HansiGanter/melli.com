@@ -56,12 +56,12 @@ const open = () => {
             :class="{ flip: feature.title === activeFeature }"
           >
             <div class="flip-card-front absolute w-full h-full bg-white rounded-3xl overflow-visible">
-              <div class="bg-white dark:bg-gray-800 grid gap-4 rounded-3xl drop-shadow-xl px-6 pb-6 h-full overflow-visible">
-                <div class="flex-shrink-0 justify-center flex -mt-11 overflow-hidden">
-                  <img class="object-contain" :src="feature.image" :class="index < 2 ? 'mt-3' : 'mt-8'">
+              <div class="bg-white dark:bg-gray-800 flex flex-col gap-4 rounded-3xl drop-shadow-xl px-6 py-6 h-full overflow-visible">
+                <div class="grow justify-center overflow-hidden">
+                  <img class="object-contain w-full h-full" :src="feature.image">
                 </div>
-                <div class="flex-1 flex flex-col gap-3 justify-between content-start">
-                  <div class="flex-1 text-center">
+                <div class="flex flex-col h-fit mt-auto justify-end gap-3">
+                  <div class="text-center">
                     <div class="grid gap-1">
                       <h1 class="text-gray-900 text-xl lg:text-2xl font-semibold lg:font-medium">
                         {{ feature.title }}
