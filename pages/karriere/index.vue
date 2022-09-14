@@ -19,7 +19,7 @@ const open = () => {
   <Jobs />
   <KarriereFAQs />
   <Container id="job-alert" class="py-12 lg:py-24">
-    <div class="bg-amber-100 rounded-3xl py-8 lg:py-16 px-5 lg:px-24">
+    <div class="bg-tertiary-100 rounded-3xl py-8 lg:py-16 px-5 lg:px-24">
       <div class="grid gap-5 lg:gap-10 px-0 lg:px-20">
         <h2 class="font-semibold text-gray-900 text-3xl lg:text-4xl text-center">
           Nicht das richtige dabei? <br>Mit dem Job-Alert erfährst  du immer als erstes von

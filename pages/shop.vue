@@ -8,7 +8,7 @@
   <Container class="py-8">
     <ShoppingDetails />
   </Container>
-  <Container class="bg-amber-50 py-8 rounded-3xl">
+  <Container class="bg-tertiary-50 py-8 rounded-3xl">
     <FaqSection />
   </Container>
 </template>

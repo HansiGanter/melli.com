@@ -13,7 +13,7 @@ const typeClass = computed(() => {
   return {
     'bg-primary-50 text-primary-700 text-sm font-medium': jobTypes.value.indexOf(jobProps.jobType) === 0,
     'bg-blue-50 text-blue-700 text-sm font-medium': jobTypes.value.indexOf(jobProps.jobType) === 1,
-    'bg-amber-50 text-amber-700 text-sm font-medium': jobTypes.value.indexOf(jobProps.jobType) === 2,
+    'bg-tertiary-50 text-tertiary-700 text-sm font-medium': jobTypes.value.indexOf(jobProps.jobType) === 2,
     'bg-indigo-50 text-indigo-700 text-sm font-medium': jobTypes.value.indexOf(jobProps.jobType) === 3,
   }
 })

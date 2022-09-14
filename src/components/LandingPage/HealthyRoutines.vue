@@ -42,7 +42,7 @@ const playVideo = () => {
             type="video/mp4"
           >
         </video>
-        <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+        <div v-if="!isPlaying" class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
       </div>
       <div class="grid gap-10 lg:gap-20 order-1 lg:order-2">
         <span class="font-normal text-xl text-black">{{ t('healthy-routine.text') }}</span>
@@ -50,7 +50,7 @@ const playVideo = () => {
           <div
             v-for="(benefit, index) in benefits"
             :key="index"
-            class="text-gray-900 font-semibold text-base bg-amber-800/10 py-3.5 px-6 rounded-lg w-fit whitespace-pre-line"
+            class="text-gray-900 font-semibold text-base bg-tertiary-800/10 py-3.5 px-6 rounded-lg w-fit whitespace-pre-line"
           >
             <span>{{ benefit }}</span>
           </div>

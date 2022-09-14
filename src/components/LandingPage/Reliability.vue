@@ -34,7 +34,7 @@ const playVideo = () => {
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="text-gray-900 font-semibold text-base bg-green-900/10 py-3.5 px-6 rounded-lg h-full flex items-center"
+          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-6 rounded-lg h-full flex items-center"
         >
           <span>{{ feature }}</span>
         </div>
@@ -52,7 +52,7 @@ const playVideo = () => {
           type="video/mp4"
         >
       </video>
-      <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div v-if="!isPlaying" class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

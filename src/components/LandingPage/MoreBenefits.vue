@@ -19,7 +19,7 @@ const playVideo = () => {
 
 <template>
   <div class="grid gap-8 lg:gap-16 mx-auto items-center">
-    <div class="grid gap-16 bg-amber-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
+    <div class="grid gap-16 bg-tertiary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
       <div class="grid gap-4 lg:gap-6 text-center max-w-2xl mx-auto justify-items-center">
         <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
           {{ t('more-benefits.heading') }}
@@ -36,7 +36,7 @@ const playVideo = () => {
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="text-gray-900 font-semibold text-base text-center bg-amber-900/10 py-3.5 px-6 h-full rounded-lg items-center flex"
+          class="text-gray-900 font-semibold text-base text-center bg-tertiary-800/10 py-3.5 px-6 h-full rounded-lg items-center flex"
         >
           <span>{{ benefit }}</span>
         </div>
@@ -54,7 +54,7 @@ const playVideo = () => {
           type="video/mp4"
         >
       </video>
-      <div v-if="!isPlaying" class="i-carbon:play-outline text-amber-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div v-if="!isPlaying" class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

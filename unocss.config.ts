@@ -13,7 +13,18 @@ import { theme } from '@unocss/preset-wind'
 export default defineConfig({
   theme: {
     colors: {
-      primary: theme.colors.emerald,
+      primary: {
+        50: theme.colors.emerald[50],
+        100: theme.colors.emerald[100],
+        200: theme.colors.emerald[200],
+        300: theme.colors.emerald[300],
+        400: theme.colors.emerald[400],
+        500: theme.colors.emerald[500],
+        600: theme.colors.teal[600],
+        700: theme.colors.teal[700],
+        800: theme.colors.teal[800],
+        900: theme.colors.teal[900],
+      },
       secondary: theme.colors.lime,
       tertiary: theme.colors.yellow,
       danger: theme.colors.red,

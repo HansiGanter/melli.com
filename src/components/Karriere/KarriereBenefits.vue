@@ -76,7 +76,7 @@ const coreBenefits = [
           </div>
         </div>
       </div>
-      <div class="w-full bg-amber-100 py-12 lg:py-24 px-5 lg:px-16 grid gap-2.5">
+      <div class="w-full bg-tertiary-100 py-12 lg:py-24 px-5 lg:px-16 grid gap-2.5">
         <div class="grid gap-10 lg:gap-20">
           <div class="grid gap-6 lg:w-9/12">
             <h1 class="font-semibold text-gray-900 text-4xl lg:text-5xl">
@@ -92,7 +92,7 @@ const coreBenefits = [
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 content-start">
             <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start gap-4 w-fit">
-              <div :class="benefit.icon" class="text-amber-500 w-12 h-12" />
+              <div :class="benefit.icon" class="text-tertiary-500 w-12 h-12" />
               <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title }}</strong> {{ benefit.text }}</span>
             </div>
           </div>

@@ -78,7 +78,7 @@ const faqs = [
           </transition>
         </Disclosure>
       </div>
-      <router-link to="/faq" class="bg-teal-900 text-medium text-base text-white w-fit hidden lg:flex items-center py-2.5 px-4 rounded-full gap-2">
+      <router-link to="/faq" class="bg-primary-900 text-medium text-base text-white w-fit hidden lg:flex items-center py-2.5 px-4 rounded-full gap-2">
         <span>alle FAQs ansehen</span>
         <div class="i-carbon:arrow-right" />
       </router-link>

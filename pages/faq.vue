@@ -106,7 +106,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
       </p>
     </div>
   </Container>
-  <Container class="bg-amber-50 py-24">
+  <Container class="bg-tertiary-50 py-24">
     <div class="grid gap-9">
       <div class="grid gap-7">
         <div class="grid gap-5">
@@ -306,7 +306,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
   </Container>
   <section class="lg:py-24 h-full">
     <div class="lg:container h-full mx-auto lg:px-0">
-      <div class="bg-yellow-50 rounded-[32px] lg:rounded-[64px] px-6 py-16 lg:p-16 overflow-hidden">
+      <div class="bg-tertiary-50 rounded-[32px] lg:rounded-[64px] px-6 py-16 lg:p-16 overflow-hidden">
         <div class="grid gap-16 justify-items-center">
           <div class="grid gap-8 text-center lg:w-2/3">
             <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">

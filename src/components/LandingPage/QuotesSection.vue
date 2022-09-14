@@ -31,7 +31,7 @@ const quotes = [
       </router-link>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-      <div v-for="quote in quotes" :key="quote.name" class="bg-emerald-200/10 flex flex-col gap-5 rounded-3xl shadow-lg pb-6 overflow-clip">
+      <div v-for="quote in quotes" :key="quote.name" class="bg-primary-200/10 flex flex-col gap-5 rounded-3xl shadow-lg pb-6 overflow-clip">
         <div class="flex-shrink-0 justify-center flex rounded-3xl overflow-hidden h-64">
           <img
             class="object-cover w-full"

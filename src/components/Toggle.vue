@@ -12,7 +12,7 @@ const emit = defineEmits<{ (name: 'update:modelValue', v: boolean): void }>()
     :class="
       !disabled
         ? modelValue
-          ? 'bg-primary-500 border-green-600'
+          ? 'bg-primary-500 border-primary-600'
           : 'bg-gray-50 border-gray-200'
         : 'bg-gray-100 border-gray-200'"
     :model-value="modelValue"

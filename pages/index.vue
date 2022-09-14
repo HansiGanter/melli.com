@@ -5,7 +5,7 @@
     <WhyMelli />
   </Container>
 
-  <Container class="bg-teal-900 rounded-[30px] py-16">
+  <Container class="bg-primary-900 rounded-[30px] py-16">
     <MelliFeatures id="besonderheiten" />
   </Container>
 
@@ -25,7 +25,7 @@
     <HealthyRoutines />
   </Container>
 
-  <Container id="glücklicher" class="bg-teal-900 rounded-[30px] py-24">
+  <Container id="glücklicher" class="bg-primary-900 rounded-[30px] py-24">
     <QuotesSection />
   </Container>
 
@@ -39,7 +39,7 @@
 
   <Container class="py-12 bg-gray-50">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mx-auto justify-center">
-      <h2 class="text-teal-900 text-3xl lg:text-4xl font-semibold">
+      <h2 class="text-primary-900 text-3xl lg:text-4xl font-semibold">
         Folge uns auf:
       </h2>
       <div class="flex gap-5 items-center">
@@ -55,7 +55,7 @@
     <FaqSection />
   </Container>
 
-  <Container class="bg-teal-900 py-24">
+  <Container class="bg-primary-900 py-24">
     <ContactSection />
   </Container>
 </template>

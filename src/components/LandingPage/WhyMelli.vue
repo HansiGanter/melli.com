@@ -103,7 +103,7 @@ const open = () => {
       <img src="https://assets.melli.com/images/team/matthias-weber-4-1024.webp" class="object-cover w-full h-full">
     </div>
     <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-top lg:bg-center lg:py-20" style="background-image: url('https://assets.melli.com/shapes/bubble-bg.svg')">
-      <h5 class="font-medium text-teal-900 text-xl lg:text-3xl lg:leading-10">
+      <h5 class="font-medium text-primary-900 text-xl lg:text-3xl lg:leading-10">
         “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln ins Gesicht zu zaubern.”
       </h5>
       <div class="text-gray-500 text-base">
