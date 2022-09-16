@@ -2,7 +2,6 @@
 import type { Ref } from 'vue'
 
 const { t } = useI18n()
-const router = useRouter()
 
 interface Feature {
   image: string
@@ -32,7 +31,6 @@ const activeFeature = ref('')
 const email = ref('')
 const newsletterDialogOpen = ref(false)
 const open = () => {
-  router.replace({ query: { email: email.value } })
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     newsletterDialogOpen.value = true
@@ -149,7 +147,7 @@ const open = () => {
     </FormKit>
   </div>
   <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog />
+    <NewsletterDialog :email="email" />
   </Modal>
 </template>
 

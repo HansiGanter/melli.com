@@ -6,7 +6,6 @@ import {
 } from '@headlessui/vue'
 
 const { t } = useI18n()
-const router = useRouter()
 
 const email = ref('')
 
@@ -19,7 +18,6 @@ const open = () => {
   }, 0)
 }
 const openNews = () => {
-  router.replace({ query: { email: email.value } })
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     newsletterDialogOpen.value = true
@@ -352,6 +350,6 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
     <CallbackDialog />
   </Modal>
   <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog />
+    <NewsletterDialog :email="email" />
   </Modal>
 </template>

@@ -1,10 +1,8 @@
 <script setup lang="ts">
-const router = useRouter()
 const jobAlertDialogOpen = ref(false)
 const email = ref('')
 
 const open = () => {
-  router.replace({ query: { email: email.value } })
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     jobAlertDialogOpen.value = true
@@ -57,6 +55,6 @@ const open = () => {
     </div>
   </Container>
   <Modal :show="jobAlertDialogOpen" @close="jobAlertDialogOpen = false">
-    <JobAlertDialog />
+    <JobAlertDialog :email="email" />
   </Modal>
 </template>

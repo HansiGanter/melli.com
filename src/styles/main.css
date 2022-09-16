@@ -73,3 +73,11 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:checked:disabled:before {
   @apply color-gray-400;
 }
+
+.cr_form-input {
+  @apply block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm placeholder-slate-400 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition delay-150 duration-300 ease-in
+}
+
+.cr_button {
+  @apply flex-1 bg-primary-500 py-2.5 px-4 w-fit rounded-lg h-min text-base font-medium text-white
+}
