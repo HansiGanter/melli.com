@@ -1,44 +1,58 @@
 <script setup lang="ts">
+import { useStripeAxios } from '~/composables/useStripeAxios'
+import type { SubscriptionInfo } from '~/stores/checkout'
+import { useCheckoutStore, useSubscriptionsData } from '~/stores/checkout'
+import { displayPrice } from '~/utils/common'
+
+const checkout = useCheckoutStore()
 const route = useRoute()
 const { t } = useI18n()
 
+const subscriptions = useSubscriptionsData()
+
+const selectedSubscription = ref<SubscriptionInfo>()
 const isAnnual = ref(true)
 
-const subscriptions = [
-  { id: 1, plan: t('shop.choose-subscription.base-plan'), annual: '9.90', monthly: '14.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde'], payments: { annual: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145', monthly: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' } },
-  { id: 2, plan: t('shop.choose-subscription.advance-plan'), annual: '19.90', monthly: '24.90', features: ['Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'], payments: { annual: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv', monthly: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' } },
-]
+const getPaymentInfo = (sub: SubscriptionInfo) => isAnnual.value ? sub.annualPayment : sub.monthlyPayment
 
-const selectedSubscription = ref('')
+const displayMonthlyPrice = (sub: SubscriptionInfo) => displayPrice(getPaymentInfo(sub).cost)
+const displayYearlyPrice = (sub: SubscriptionInfo) => displayPrice(getPaymentInfo(sub).cost * 12)
+const displayPriceWithTime = (sub: SubscriptionInfo) => isAnnual.value ? `${displayYearlyPrice(sub)} / Jahr` : `${displayMonthlyPrice(sub)} / Monat`
+
+const isLoading = ref(false)
+const error = ref<String>()
+const isNewsletterAccepted = ref(false)
+const isAgbAccepted = ref(false)
+
+const buyNow = () => {
+  if (!selectedSubscription.value) {
+    error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
+  }
+  else if (!isAgbAccepted.value) {
+    error.value = 'Bitte akzeptieren Sie die allgemeinen Geschäftsbedingungen'
+  }
+  else {
+    isLoading.value = true
+    useStripeAxios.post('/checkout-session', { items: [{ price_id: getPaymentInfo(selectedSubscription.value).priceId, quantity: 1 }], wantsNewsletter: isNewsletterAccepted.value })
+      .then(response => location.href = response.data.checkout_session_url)
+      .finally(() => isLoading.value = false)
+  }
+}
+
+watch([selectedSubscription, isAgbAccepted], () => {
+  error.value = undefined
+  checkout.$patch({
+    selectedSubscriptionId: selectedSubscription.value?.id,
+    accepedAgb: isAgbAccepted.value,
+  })
+})
 
 onMounted(() => {
   if (route.query.id)
-    selectedSubscription.value = subscriptions.find(sub => route.query.id === sub.annual)
+    selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)
+  else if (checkout.selectedSubscriptionId)
+    selectedSubscription.value = subscriptions.find(sub => sub.id === checkout.selectedSubscriptionId)
 })
-
-const yearlyPrice = computed(() => {
-  if (isAnnual.value)
-    return selectedSubscription.value !== '' ? (selectedSubscription.value.annual * 12).toFixed(2) : false
-
-  else
-    return selectedSubscription.value !== '' ? (selectedSubscription.value.monthly * 12).toFixed(2) : false
-})
-
-const stripePayment = computed(() => {
-  if (isAnnual.value)
-    return selectedSubscription.value !== '' ? selectedSubscription.value.payments.annual : ''
-
-  else
-    return selectedSubscription.value !== '' ? selectedSubscription.value.payments.monthly : ''
-})
-const error = ref('')
-const buyNow = () => {
-  if (!selectedSubscription.value)
-    error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
-
-  else
-    location.href = stripePayment.value
-}
 </script>
 
 <template>
@@ -58,14 +72,30 @@ const buyNow = () => {
     <div>
       <RadioGroup v-model="selectedSubscription">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
-          <RadioGroupOption v-for="subscription in subscriptions" :key="subscription.id" v-slot="{ checked, active }" as="template" :value="subscription">
-            <div class="relative bg-white border-2 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in" :class="[checked ? 'border-primary-500' : 'border-gray-300', active ? 'ring-2 ring-primary-500' : '']">
+          <RadioGroupOption
+            v-for="subscription in subscriptions"
+            :key="subscription.id"
+            v-slot="{ checked }"
+            as="template"
+            :value="subscription"
+          >
+            <div
+              class="relative bg-white border-1 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in"
+              :class="[checked ? 'ring-3 ring-primary-500' : 'border-gray-300']"
+            >
               <div class="grid gap-2">
-                <Badge :class="subscription.id === 1 ? 'bg-pink-600' : 'bg-primary-600'">
-                  <span class="font-medium text-white text-sm">{{ subscription.id === 1 ? 'WLAN erforderlich' : 'kein WLAN erforderlich' }}</span>
+                <Badge class="mb-2" :class="subscription.id === 'base' ? 'bg-pink-600' : 'bg-primary-600'">
+                  <span class="font-medium text-white text-sm">
+                    {{ subscription.tag }}
+                  </span>
                 </Badge>
-                <RadioGroupLabel as="span" class="block text-lg font-normal" :class="checked ? 'text-primary-500' : 'text-gray-900'">
-                  <span class="font-medium text-3xl">€{{ isAnnual ? subscription.annual : subscription.monthly }}</span> /Monat
+                <RadioGroupLabel
+                  as="span"
+                  class="block text-lg font-normal transition-all transition-duration-500"
+                  :class="checked ? 'text-primary-500' : 'text-gray-900'"
+                >
+                  <span class="font-medium text-3xl">{{ displayMonthlyPrice(subscription) }}</span>
+                  / Monat
                 </RadioGroupLabel>
                 <transition
                   enter-active-class="transition-all duration-1000 ease-in-out"
@@ -73,75 +103,102 @@ const buyNow = () => {
                   leave-active-class="transition-all duration-300 ease-out"
                   leave-to-class="transform translate-x-5 opacity-0"
                 >
-                  <span v-if="isAnnual" class="font-medium text-base text-gray-500">€{{ isAnnual ? (subscription.annual * 12).toFixed(2) : (subscription.monthly * 12).toFixed(2) }}/Jahr</span>
+                  <span v-if="isAnnual" class="font-medium text-base text-gray-500">{{ displayYearlyPrice(subscription)
+                  }} / Jahr</span>
                 </transition>
                 <RadioGroupDescription as="span" class="flex items-center font-normal text-xl text-gray-900">
-                  {{ subscription.plan }}
+                  {{ subscription.name }}
                 </RadioGroupDescription>
               </div>
-              <transition-group
-                enter-active-class="transition-all duration-100 ease-in-out"
-                enter-from-class="transform translate-x-2 opacity-0"
-                leave-active-class="transition-all duration-300 ease-out"
-                leave-to-class="transform -translate-y-2 opacity-0"
-              >
-                <hr class="w-full border-gray-400">
-                <ul class="list-inside list-disc">
-                  <li v-for="(feature, n) in subscription.features" :key="n">
-                    {{ feature }}
-                  </li>
-                </ul>
-              </transition-group>
-              <div class="absolute -inset-px rounded-lg pointer-events-none" :class="checked ? 'border-primary-500' : 'border-transparent'" aria-hidden="true" />
+              <hr key="1" class="w-full border-gray-400">
+              <ul class="list-disc pl-4">
+                <li v-for="(feature, n) in subscription.features" :key="n">
+                  {{ feature }}
+                </li>
+              </ul>
+              <div
+                class="absolute -inset-px rounded-lg pointer-events-none"
+                :class="checked ? 'border-primary-500' : 'border-transparent'"
+                aria-hidden="true"
+              />
             </div>
           </RadioGroupOption>
         </div>
       </RadioGroup>
-      <transition
-        enter-active-class="transition-all duration-1000 ease-in-out"
-        enter-from-class="transform translate-y-5 opacity-0"
-        leave-active-class="transition-all duration-500 ease-in"
-        leave-to-class="transform -translate-y-5 opacity-0"
-      >
-        <p v-if="error && !selectedSubscription" class="font-medium text-xl text-red-500 mt-2">
-          {{ error }}
-        </p>
-      </transition>
+      <p v-if="error" class="animation-shake font-medium text-xl text-red-500 mt-4">
+        {{ error }}
+      </p>
     </div>
     <transition
       enter-active-class="transition-all duration-1000 ease-in-out"
-      enter-from-class="transform translate-y-5 opacity-0"
-      leave-active-class="transition-all duration-500 ease-in"
-      leave-to-class="transform -translate-y-5 opacity-0"
+      enter-from-class="transform translate-x-5 opacity-0"
+      leave-active-class="transition-all duration-300 ease-out"
+      leave-to-class="transform translate-x-5 opacity-0"
     >
-      <p v-if="selectedSubscription && isAnnual" class="font-medium text-xl text-black">
-        <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ yearlyPrice }} / Jahr fortgesetzt.
-      </p>
+      <div v-if="selectedSubscription" class="flex gap-4 font-medium text-xl text-black">
+        <div class="text-primary-500 flex-shrink-0 w-6 pl-1 text-2xl">
+          ✓
+        </div>
+        Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für
+        {{ displayPriceWithTime(selectedSubscription) }} fortgesetzt.
+      </div>
     </transition>
-    <transition
-      enter-active-class="transition-all duration-1000 ease-in-out"
-      enter-from-class="transform translate-y-5 opacity-0"
-      leave-active-class="transition-all duration-500 ease-in"
-      leave-to-class="transform -translate-y-5 opacity-0"
+
+    <div class="flex gap-4">
+      <input id="agb-checkbox" v-model="isAgbAccepted" type="checkbox" class="flex-shrink-0">
+      <label for="agb-checkbox">Mit dem Kauf akzeptiere ich die <RouterLink to="/agb" class="underline">allgemeinen Geschäftsbedingungen</RouterLink></label>
+    </div>
+    <div class="flex gap-4">
+      <input id="newsletter-checkbox" v-model="isNewsletterAccepted" type="checkbox" class="flex-shrink-0">
+      <label for="newsletter-checkbox">Ich möchte über Neuigkeiten rund um Melli per E-Mail auf dem laufenden gehalten werden</label>
+    </div>
+
+    <button
+      class="flex items-center justify-center gap-2 h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center"
+      @click="buyNow"
     >
-      <p v-if="selectedSubscription && !isAnnual" class="font-medium text-xl text-black">
-        <span class="text-primary-500">✓</span>  Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für € {{ (yearlyPrice / 12).toFixed(2) }}/Monat fortgesetzt.
-      </p>
-    </transition>
-    <button class="h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center" @click="buyNow">
-      Jetzt kaufen
+      <svg
+        v-if="isLoading"
+        class="animate-spin h-5 w-5 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        />
+      </svg>
+      <span>{{ !isLoading ? 'Jetzt kaufen' : 'Einen Moment bitte' }}</span>
     </button>
     <transition
       enter-active-class="transition-all duration-1000 ease-in-out"
       enter-from-class="transform translate-y-5 opacity-0"
-      leave-active-class="transition-all duration-500 ease-in"
-      leave-to-class="transform -translate-y-5 opacity-0"
+      leave-active-class="transition-all duration-300 ease-out"
+      leave-to-class="transform translate-y-5 opacity-0"
     >
-      <div v-if="isAnnual" class="grid gap-1 p-2.5">
-        <p class="font-normal text-lg text-black">
-          *Die jährliche Zahlung beinhaltet eine 12-monatige Mindestvertragslaufzeit. Nach 12 Monaten wird das Abonnement automatisch von Monat zu Monat fortgesetzt. Das Abonnement kann nach Ablauf der Mindestlaufzeit monatlich gekündigt werden.
-        </p>
+      <div v-if="isAnnual" class="flex gap-2 p-2.5 font-normal text-lg text-black">
+        <div>*</div>
+        Die jährliche Zahlung beinhaltet eine 12-monatige Mindestvertragslaufzeit. Nach 12 Monaten wird das
+        Abonnement automatisch von Monat zu Monat fortgesetzt. Das Abonnement kann nach Ablauf der Mindestlaufzeit
+        monatlich gekündigt werden.
       </div>
     </transition>
   </div>
 </template>
+
+<style>
+.animation-shake {
+  animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+</style>

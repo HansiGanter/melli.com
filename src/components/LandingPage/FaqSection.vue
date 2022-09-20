@@ -40,7 +40,7 @@ const faqs = [
   {
     question: t('faq-section.question-8'),
     answer: t('faq-section.answer-8'),
-    link: 'https://melli.com/datenschutz/',
+    link: '/datenschutz',
   },
 ]
 </script>

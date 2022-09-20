@@ -86,8 +86,8 @@ const open = () => {
                   type="button"
                   class="flex items-center gap-2 text-gray-900 text-center outline-none px-8 py-2 cursor-pointer"
                 >
+                  <div class="i-carbon:previous-outline stroke-gray-900 w-6 h-6" />
                   <span class="text-base font-normal">zurück</span>
-                  <div class="i-carbon:next-outline stroke-gray-900 w-6 h-6" />
                 </button>
               </div>
             </div>
