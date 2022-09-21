@@ -11,17 +11,17 @@ interface Feature {
 
 const features: Ref<Feature[]> = ref([
   {
-    image: 'https://assets.melli.com/images/mockups/device-group-call-1024.webp',
+    image: 'https://assets.melli.com/images/mockups/device-group-call.webp',
     title: t('why-melli.feature-1.title'),
     description: t('why-melli.feature-1.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-sleeptime-1024.webp',
+    image: 'https://assets.melli.com/images/mockups/device-sleeptime.webp',
     title: t('why-melli.feature-2.title'),
     description: t('why-melli.feature-2.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-satisfaction-1024.webp',
+    image: 'https://assets.melli.com/images/mockups/device-satisfaction.webp',
     title: t('why-melli.feature-3.title'),
     description: t('why-melli.feature-3.description'),
   },
