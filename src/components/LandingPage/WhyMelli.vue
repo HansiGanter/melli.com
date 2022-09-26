@@ -43,7 +43,7 @@ const open = () => {
     <div class="grid gap-16 mx-auto items-center max-w-6xl -mt-28 px-5 md:px-0">
       <div class="mx-auto grid gap-14 md:grid-cols-2 md:max-w-none xl:grid-cols-3">
         <div
-          v-for="(feature, index) in features"
+          v-for="feature in features"
           :key="feature.title"
           class="flip-card bg-transparent w-80 min-w-full h-96 min-h-full grid place-items-stretch overflow-visible cursor-pointer"
           @click="activeFeature = feature.title === activeFeature ? '' : feature.title"
@@ -132,8 +132,8 @@ const open = () => {
           wrapper-class="h-fill"
           validation="required|email"
           validation-visibility="submit"
+          message-class="text-red-500 mt-1"
           inner-class="w-full h-fill border border-primary-400 rounded-l-lg overflow-hidden"
-          message-class="mt-1"
           input-class="w-full h-13 lg:h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 focus:outline-none"
         />
         <FormKit

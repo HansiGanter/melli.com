@@ -39,6 +39,7 @@ const open = () => {
             placeholder="Deine E-Mail-Adresse"
             validation="required|email"
             validation-visibility="submit"
+            message-class="text-red-500 mt-1"
             inner-class="w-full h-fit border border-primary-400 rounded-lg overflow-hidden focus:border-primary-500"
             input-class="w-full h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 outline-none"
           />

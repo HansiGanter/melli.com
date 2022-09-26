@@ -11,14 +11,7 @@ const email = ref('')
 
 const callbackModalOpen = ref(false)
 const newsletterDialogOpen = ref(false)
-const open = () => {
-  // we have to ensure the query params are set before the hubspot script loads
-  setTimeout(() => {
-    callbackModalOpen.value = true
-  }, 0)
-}
 const openNews = () => {
-  // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     newsletterDialogOpen.value = true
   }, 0)
@@ -330,6 +323,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 placeholder="E-Mail-Adresse"
                 validation="required|email"
                 validation-visibility="submit"
+                message-class="text-red-500 mt-1"
                 inner-class="w-full h-fit border border-primary-400 rounded-lg overflow-hidden focus:border-primary-500"
                 input-class="w-full h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 outline-none"
               />

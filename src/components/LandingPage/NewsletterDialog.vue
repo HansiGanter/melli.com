@@ -26,6 +26,7 @@ const isDSGVO = ref(false)
         type="email"
         name="email"
         label="E-Mail-Adresse*"
+        validation-label="E-Mail-Adresse"
         message-class="text-red-500 mt-1"
         input-class="cr_form-input"
         validation="required|email"
@@ -37,6 +38,7 @@ const isDSGVO = ref(false)
         type="text"
         name="1011268"
         label="Vorname*"
+        validation-label="Vorname"
         message-class="text-red-500 mt-1"
         input-class="cr_form-input"
         validation="required|email"
@@ -48,6 +50,7 @@ const isDSGVO = ref(false)
         type="text"
         name="1011269"
         label="Nachname*"
+        validation-label="Nachname"
         message-class="text-red-500 mt-1"
         input-class="cr_form-input"
         validation="required|email"
@@ -59,7 +62,6 @@ const isDSGVO = ref(false)
         type="text"
         name="1011270"
         label="Telefonnummer"
-        message-class="text-red-500 mt-1"
         input-class="cr_form-input"
       />
       <FormKit
@@ -76,14 +78,14 @@ const isDSGVO = ref(false)
         message-class="text-red-500 mt-1"
       >
         <template #label="context">
-          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere  <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.</span>
+          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere  <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.*</span>
         </template>
       </FormKit>
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button"
       >
-        <span>Einsenden</span>
+        <span>Jetzt anmelden</span>
       </FormKit>
     </FormKit>
   </Container>
