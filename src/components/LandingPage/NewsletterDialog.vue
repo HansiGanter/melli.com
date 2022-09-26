@@ -66,16 +66,19 @@ const isDSGVO = ref(false)
         id="17539429"
         v-model="isDSGVO"
         type="checkbox"
-        label="Ich bin damit einverstanden, dass die meetap GmbH mir Informationen über Neuigkeiten, Promotions und Angebote zur Information über das Produkt und zum Abschluss eines Abonnements von Melli z.B. per E-Mail gemäß der Einwilligungserklärung zusendet und*"
         label-class="text-gray-700 text-sm flex-1"
         wrapper-class="flex items-start gap-3"
         name="1011271[]"
         input-class="cr_form-checkbox"
         validation-label="DSGVO"
-        message-class="text-red-500 mt-1"
         validation="required|accepted"
         validation-visibility="submit"
-      />
+        message-class="text-red-500 mt-1"
+      >
+        <template #label="context">
+          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere  <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.</span>
+        </template>
+      </FormKit>
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button"
