@@ -144,35 +144,51 @@ onMounted(() => {
       </div>
     </transition>
 
-    <div class="flex gap-4">
-      <input id="agb-checkbox" v-model="isAgbAccepted" type="checkbox" class="flex-shrink-0">
-      <label for="agb-checkbox">Mit dem Kauf akzeptiere ich die <RouterLink to="/agb" class="underline">allgemeinen Geschäftsbedingungen</RouterLink></label>
-    </div>
-    <div class="flex gap-4">
-      <input id="newsletter-checkbox" v-model="isNewsletterAccepted" type="checkbox" class="flex-shrink-0">
-      <label for="newsletter-checkbox">Ich möchte über Neuigkeiten rund um Melli per E-Mail auf dem laufenden gehalten werden</label>
-    </div>
-
-    <button
-      class="flex items-center justify-center gap-2 h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center"
-      @click="buyNow"
+    <FormKit
+      type="form"
+      form-class="grid gap-4"
+      :actions="false"
+      :incomplete-message="false"
+      @submit="buyNow"
     >
-      <svg
-        v-if="isLoading"
-        class="animate-spin h-5 w-5 text-white"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
+      <FormKit
+        v-model="isAgbAccepted"
+        type="checkbox"
+        label-class="text-sm flex-1"
+        wrapper-class="flex items-start gap-3"
+        input-class="cr_form-checkbox cr_ipe_checkbox bg-primary-500 rounded-md text-primary-500 outline-none transition duration-300 ease-in mt-1"
+        validation-label="AGBs"
+        message-class="text-red-500 mt-1"
+        validation="required|accepted"
+        validation-visibility="submit"
       >
-        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-        <path
-          class="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-        />
-      </svg>
-      <span>{{ !isLoading ? 'Jetzt kaufen' : 'Einen Moment bitte' }}</span>
-    </button>
+        <template #label="context">
+          <span :class="context.classes.label">Ich habe die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Allgemeinen Geschäftsbedingungen</router-link>, die <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmung</router-link> und die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Widerrufsbelehrung</router-link> gelesen und akzeptiert.*</span>
+        </template>
+      </FormKit>
+      <FormKit
+        v-model="isNewsletterAccepted"
+        type="checkbox"
+        label-class="text-sm flex-1"
+        wrapper-class="flex items-start gap-3"
+        input-class="cr_form-checkbox cr_ipe_checkbox bg-primary-500 rounded-md text-primary-500 outline-none transition duration-300 ease-in mt-1"
+      >
+        <template #label="context">
+          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.</span>
+        </template>
+      </FormKit>
+      <FormKit
+        id="7539405"
+        type="submit"
+        input-class="flex items-center justify-center gap-2 h-fit py-4 w-full text-white font-medium text-base bg-primary-500 disabled:bg-gray-500/30 transition-all ease-out delay-150 rounded-lg text-center"
+      >
+        <svg v-if="isLoading" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+        </svg>
+        <span>{{ !isLoading ? 'Jetzt kaufen' : 'Einen Moment bitte' }}</span>
+      </FormKit>
+    </FormKit>
     <transition
       enter-active-class="transition-all duration-1000 ease-in-out"
       enter-from-class="transform translate-y-5 opacity-0"

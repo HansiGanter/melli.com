@@ -3,7 +3,6 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 export interface PricingInfo {
   cost: number
   priceId: string
-  paymentLink: string
 }
 
 export interface SubscriptionInfo {
@@ -23,16 +22,16 @@ export const useSubscriptionsData = () => {
     name: t('shop.choose-subscription.base-plan'),
     tag: 'WLAN erforderlich',
     features: ['Melli-Abo', 'Melli-App für Familie & Freunde'],
-    monthlyPayment: { cost: 9.90, priceId: 'price_1LhtgKCwdXQVYry9Q3GMZdHW', paymentLink: 'https://buy.stripe.com/test_6oE8xmc0T5fN20U7ss' },
-    annualPayment: { cost: 14.90, priceId: 'price_1LhtgKCwdXQVYry9yjYRJcRa', paymentLink: 'https://buy.stripe.com/test_6oEeVK0ibcIfcFy145' },
+    annualPayment: { cost: 9.90, priceId: 'price_1LhtgKCwdXQVYry9yjYRJcRa' },
+    monthlyPayment: { cost: 14.90, priceId: 'price_1LhtgKCwdXQVYry9Q3GMZdHW' },
   },
   {
     id: 'advanced',
     name: t('shop.choose-subscription.advance-plan'),
     tag: 'kein WLAN erforderlich',
     features: ['Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'],
-    monthlyPayment: { cost: 19.90, priceId: 'price_1LhtiACwdXQVYry9Qow3iz3x', paymentLink: 'https://buy.stripe.com/test_5kAdRG7KD37F9tm4gi' },
-    annualPayment: { cost: 24.90, priceId: 'price_1LhtiACwdXQVYry97b3Q6Adb', paymentLink: 'https://buy.stripe.com/test_28ocNC0ib7nV0WQ7sv' },
+    annualPayment: { cost: 19.90, priceId: 'price_1LhtiACwdXQVYry97b3Q6Adb' },
+    monthlyPayment: { cost: 24.90, priceId: 'price_1LhtiACwdXQVYry9Qow3iz3x' },
   },
   ]
   return subscriptions
