@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireOpenPositionEvent } from '~/google-tag-manager'
 const benefits = [
   {
     icon: 'i-carbon:time',
@@ -85,7 +86,7 @@ const coreBenefits = [
             <p class="font-medium text-xl lg:text-2xl text-black">
               Was erwartet dich bei uns? Mach dir ein Bild von uns und lies selbst, ob unsere Benefits, Arbeitsatmosphäre und unser Teamspirit zu deinen Vorstellungen passen:
             </p>
-            <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+            <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2" @click="fireOpenPositionEvent()">
               <span>zu den Jobangeboten</span>
               <div class="i-carbon:arrow-right w-5 h-5" />
             </router-link>

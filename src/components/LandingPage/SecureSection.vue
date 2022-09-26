@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireNewsletterEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const newsletterDialogOpen = ref(false)
@@ -47,6 +48,7 @@ const open = () => {
             <FormKit
               type="submit"
               input-class="flex w-full lg:w-fit items-center justify-center px-7 py-4 bg-primary-500 rounded-lg text-white font-medium text-base"
+              @click="fireNewsletterEvent"
             >
               {{ t('secure-melli.get-melli-button') }}
             </FormKit>

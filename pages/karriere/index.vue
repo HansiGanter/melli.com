@@ -47,6 +47,7 @@ const open = () => {
               type="submit"
               input-class="flex w-full lg:w-fit items-center justify-center px-6 py-3.5 bg-primary-500 rounded-lg text-white font-medium text-base"
               wrapper-class="grow"
+              @click="fireJobAlertEvent"
             >
               Jetzt anmelden
             </FormKit>

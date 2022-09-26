@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireOpenPositionEvent } from '~/google-tag-manager'
 const router = useRouter()
 const routes = router.getRoutes()
   .filter(
@@ -19,8 +20,8 @@ const job = computed(() => {
       <h1 class="font-semibold text-gray-900 text-2xl lg:text-3xl text-center lg:text-left">
         Most wanted - Job der Woche
       </h1>
-      <JobCard job-type="software" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" />
-      <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto">
+      <JobCard job-type="software" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" @click="fireOpenPositionEvent(job.meta.frontmatter.title)" />
+      <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto" @click="fireOpenPositionEvent()">
         <span>mehr Jobangebote</span>
         <div class="i-carbon:arrow-right w-5 h-5" />
       </router-link>

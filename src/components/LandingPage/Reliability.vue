@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
@@ -14,6 +15,11 @@ const playVideo = () => {
     reliabilityvideo.value.pause()
     isPlaying.value = false
   }
+}
+
+const openVideo = () => {
+  fireVideoEvent('gemeinschaft')
+  playVideo()
 }
 </script>
 
@@ -40,7 +46,7 @@ const playVideo = () => {
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="playVideo">
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="openVideo">
       <video
         ref="reliabilityvideo"
         width="1024"

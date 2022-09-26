@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { fireCartEvent, fireShopEvent } from '~/google-tag-manager'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
-
 const { t } = useI18n()
 
 const showNav = ref(false)
@@ -29,13 +29,22 @@ const showNav = ref(false)
           <a href="https://app.melli.com/" target="_blank">
             <div class="i-carbon:user stroke-2 w-6 h-6" />
           </a>
-          <RouterLink v-if="checkout.selectedSubscriptionId" to="/shop" class="relative inline-flex">
+          <RouterLink
+            v-if="checkout.selectedSubscriptionId"
+            to="/shop"
+            class="relative inline-flex"
+            @click="fireCartEvent"
+          >
             <div class="i-carbon:shopping-cart stroke-2 w-6 h-6" />
             <span class="flex absolute h-2.5 w-2.5 top-0 right-0 -mr-0.5">
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
           </RouterLink>
-          <RouterLink to="/shop" class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium">
+          <RouterLink
+            to="/shop"
+            class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"
+            @click="fireShopEvent"
+          >
             Jetzt kaufen
           </RouterLink>
         </div>
@@ -67,7 +76,11 @@ const showNav = ref(false)
             <span>Account</span>
           </RouterLink> -->
         </div>
-        <RouterLink to="/shop" class="py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium">
+        <RouterLink
+          to="/shop"
+          class="py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
+          @click="fireShopEvent"
+        >
           <span>Jetzt kaufen</span>
         </RouterLink>
       </div>

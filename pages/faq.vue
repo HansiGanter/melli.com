@@ -4,6 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
+import { fireCallbackEvent, fireFAQEvent, fireNewsletterEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
@@ -105,7 +106,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Alles über Melli
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvet(faq.question)">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ faq.question }}</span>
@@ -130,7 +131,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Technische Details
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(detail, index) in technicalDetails" :key="index" v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-for="(detail, index) in technicalDetails" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent(detail.question)">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ detail.question }}</span>
@@ -288,7 +289,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
               Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich gerne und räumen alle Unklarheiten aus dem Weg. Vereinbare einfach einen Rückruf mit uns und wir melden uns umgehend bei dir.
             </p>
           </div>
-          <button id="cta-contact-phone" class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="callbackModalOpen = true">
+          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="[open(), fireCallbackEvent()]">
             <span class="font-medium text-base">Rückruf vereinbaren</span>
           </button>
         </div>
@@ -331,6 +332,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 <FormKit
                   type="submit"
                   input-class="flex w-full lg:w-fit items-center justify-center px-7 py-4 bg-primary-500 rounded-lg text-white font-medium text-base"
+                  @click="fireNewsletterEvent"
                 >
                   {{ t('secure-melli.get-melli-button') }}
                 </FormKit>

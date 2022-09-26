@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireShopEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const features = [
@@ -16,7 +17,7 @@ const features = [
       <h1 id="melli-features-heading" class="text-4xl lg:text-5xl font-semibold lg:font-medium text-white">
         <span class="text-primary-400 font-semibold lg:leading-[3.875rem]">{{ t('melli-features.heading') }}</span> <span class="lg:leading-[3.875rem]">{{ t('melli-features.heading-text') }}</span>
       </h1>
-      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit">
+      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit" @click="fireShopEvent">
         {{ t('melli-features.test-melli') }}
       </router-link>
     </div>

@@ -4,6 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
+import { fireFAQEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
@@ -55,7 +56,7 @@ const faqs = [
     <div>
       <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
         <Disclosure v-for="(faq, index) in faqs" :key="index" v-slot="{ open }" as="div" class="py-2">
-          <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+          <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900" @click="fireFAQEvent(faq.question)">
             <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
             <span class="text-left order-1 lg:order-2">{{ faq.question }}</span>
           </DisclosureButton>
@@ -78,7 +79,7 @@ const faqs = [
           </transition>
         </Disclosure>
       </div>
-      <router-link to="/faq" class="bg-primary-900 text-medium text-base text-white w-fit hidden lg:flex items-center py-2.5 px-4 rounded-full gap-2">
+      <router-link to="/faq" class="bg-primary-900 text-medium text-base text-white w-fit hidden lg:flex items-center py-2.5 px-4 rounded-full gap-2" @click="fireFAQEvent()">
         <span>alle FAQs ansehen</span>
         <div class="i-carbon:arrow-right" />
       </router-link>

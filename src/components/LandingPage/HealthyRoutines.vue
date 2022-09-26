@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const benefits = ref([
@@ -29,7 +30,7 @@ const playVideo = () => {
       </h1>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-      <div class="relative overflow-hidden rounded-2xl h-fit order-2 lg:order-1" @click="playVideo">
+      <div class="relative overflow-hidden rounded-2xl h-fit order-2 lg:order-1" @click="[playVideo(), fireVideoEvent('routinen')]">
         <video
           ref="healthyroutinesvideo"
           width="845"

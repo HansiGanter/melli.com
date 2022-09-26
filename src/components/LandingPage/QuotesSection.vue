@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireShopEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const quotes = [
@@ -26,7 +27,7 @@ const quotes = [
       <h1 class="text-white font-semibold text-4xl lg:text-5xl">
         {{ t('quotes-section.heading') }}
       </h1>
-      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit">
+      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit" @click="fireShopEvent">
         {{ t('quotes-section.test-melli') }}
       </router-link>
     </div>

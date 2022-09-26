@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireCallbackEvent, fireContactEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const socials = [
@@ -6,11 +7,13 @@ const socials = [
     icon: 'i-carbon:email',
     text: t('contact.email'),
     url: 'mailto:hallo@melli.com',
+    desc: 'mail',
   },
   {
     icon: 'i-bxl:whatsapp',
     text: t('contact.whatsapp'),
     url: 'https://wa.me/message/RXR37YZAHSGKB1',
+    desc: 'whatsapp',
   },
 ]
 const callbackModalOpen = ref(false)
@@ -29,13 +32,13 @@ const callbackModalOpen = ref(false)
     <div class="flex flex-col lg:flex-row gap-8 items-center">
       <div v-for="social in socials" :key="social.text" class="grid gap-5 justify-items-center">
         <div class="text-4xl lg:text-5xl text-primary-500" :class="social.icon" />
-        <a :href="social.url" target="_blank" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base">
+        <a :href="social.url" target="_blank" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="fireContactEvent(social.desc)">
           {{ social.text }}
         </a>
       </div>
       <div class="grid gap-5 justify-items-center">
         <div class="i-carbon:phone text-4xl lg:text-5xl text-primary-500" />
-        <button id="cta-contact-phone" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="callbackModalOpen = true">
+        <button class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="[callbackModalOpen = true, fireCallbackEvent()]">
           <span class="mx-auto">{{ t('contact.phone') }}</span>
         </button>
       </div>

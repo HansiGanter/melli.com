@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireNewsletterEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const newsletterDialogOpen = ref(false)
@@ -53,6 +54,7 @@ const currentFilter = ref('')
               type="submit"
               input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-400 rounded-r-lg text-white"
               wrapper-class="grow"
+              @click="fireNewsletterEvent"
             >
               <span>{{ t('blog.subscribe-button') }}</span>
               <div class="i-carbon:chevron-right" />

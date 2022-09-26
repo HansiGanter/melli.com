@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const hero = {
@@ -12,6 +13,11 @@ const hero = {
 
 const heroVideo = ref<HTMLElement | null>(null)
 const { toggle, isFullscreen } = useFullscreen(heroVideo)
+
+const openVideo = () => {
+  fireVideoEvent('hero-video')
+  toggle()
+}
 </script>
 
 <template>
@@ -27,9 +33,8 @@ const { toggle, isFullscreen } = useFullscreen(heroVideo)
               <span class="text-primary-400">{{ hero.title.highlight }}</span> {{ hero.title.text }}
             </h1>
             <button
-              id="hero-video"
               class="flex md:justify-center gap-2.5 items-center text-primary-300 font-medium text-lg mr-auto md:mx-auto outline-none"
-              @click="toggle"
+              @click="openVideo"
             >
               <span>Sieh dir das ganze Video an</span>
               <img

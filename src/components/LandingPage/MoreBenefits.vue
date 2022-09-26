@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const benefits = ref([t('more-benefit-1'), t('more-benefit-2'), t('more-benefit-3'), t('more-benefit-4')])
@@ -42,7 +43,7 @@ const playVideo = () => {
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="playVideo">
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="[playVideo(), fireVideoEvent('beschäftigung')]">
       <video
         ref="morebenefitsvideo"
         width="1024"
