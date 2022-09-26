@@ -15,7 +15,7 @@ const quotes = [
   {
     quote: t('quotes-section.quotes.quote-3'),
     name: 'Stephanie S., Pflegedienstleiterin',
-    image: 'https://assets.melli.com/images/stock/464871173-1024.webp',
+    image: 'https://assets.melli.com/images/stock/464871173.webp',
   },
 ]
 </script>
