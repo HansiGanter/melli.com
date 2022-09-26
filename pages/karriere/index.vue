@@ -24,6 +24,7 @@ const open = () => {
           neuen Jobangeboten.
         </h2>
         <FormKit
+          id="karriere-job-alert-section-form-open"
           class="w-full lg:w-1/2"
           type="form"
           :actions="false"

@@ -24,6 +24,7 @@ const open = () => {
         </p>
       </div>
       <FormKit
+        id="lp-newsletter-section-form-open"
         form-class="w-full lg:w-1/2"
         type="form"
         :actions="false"

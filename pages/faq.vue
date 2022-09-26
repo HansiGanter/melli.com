@@ -315,6 +315,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             </p>
           </div>
           <FormKit
+            id="faq-newsletter-section-form-open"
             form-class="w-full lg:w-1/2"
             type="form"
             :actions="false"

@@ -28,6 +28,7 @@ const currentFilter = ref('')
       </div>
       <div class="grid gap-2 w-full lg:w-6/12 lg:mx-auto">
         <FormKit
+          id="blog-newsletter-form-open"
           class="flex items-stretch h-fit"
           type="form"
           :actions="false"

@@ -115,6 +115,7 @@ const open = () => {
   <div class="grid gap-2 lg:w-5/12 lg:mx-auto">
     <span class="block text-lg lg:text-xl font-medium text-primary-800 text-left lg:text-center">{{ t('hero.test-user') }}</span>
     <FormKit
+      id="landingpage-newsletter-form-open"
       class="flex items-stretch h-fit"
       type="form"
       :actions="false"
