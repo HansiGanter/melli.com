@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { displayPrice } from '~/utils/common'
 import { firePlanEvent } from '~/google-tag-manager'
-import { useSubscriptionsData } from '~/stores/checkout'
+import { useCheckoutStore, useSubscriptionsData } from '~/stores/checkout'
 
 const { t } = useI18n()
 const router = useRouter()
+const checkout = useCheckoutStore()
 
 const subscriptions = useSubscriptionsData()
 
@@ -31,6 +32,7 @@ const pros = [
 const goToShop = (id: string, name: string) => {
   firePlanEvent(name)
   const selectedItem = subscriptions.find(item => id === item.id)
+  checkout.$patch({ selectedSubscriptionId: selectedItem?.id })
   router.push({ path: '/shop', query: { id: selectedItem?.id } })
 }
 </script>
