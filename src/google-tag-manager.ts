@@ -123,3 +123,12 @@ export const fireVideoEvent = (video: string) => {
     formPosition: 'Footer',
   })
 }
+
+export const fireCallEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-testuser-callback-sent',
+    // ignore params for now
+    formType: 'Callback',
+    formPosition: 'TestContact',
+  })
+}
