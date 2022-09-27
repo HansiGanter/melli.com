@@ -36,7 +36,14 @@ if (props.frontmatter.title) {
       </div>
       <hr class="mx-auto mt-8 prose">
     </header>
-    <article class="m-auto prose">
+    <div v-if="frontmatter.category && frontmatter.category.href === 'jobs'" class="relative grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-10">
+      <div class="order-2 lg:order-1" />
+      <article class="m-auto prose order-3 lg:order-2 px-5 sm:px-6 lg:px-8">
+        <slot />
+      </article>
+      <BlockSummary class="order-1 lg:order-3" :apply="frontmatter.apply" :date-posted="d(frontmatter.date, 'long')" :experience="frontmatter.experience" location="Berlin" :period="frontmatter.period" />
+    </div>
+    <article v-else class="m-auto prose">
       <slot />
     </article>
   </div>

@@ -6,6 +6,7 @@ category:
     href: jobs
 date: 2022-01-05T16:00:00.000+00:00
 period: Part-time
+experience: Intern
 apply: https://short.sg/a/21414145
 ---
 

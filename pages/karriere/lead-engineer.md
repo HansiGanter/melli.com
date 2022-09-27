@@ -6,6 +6,7 @@ category:
     href: jobs
 date: 2022-01-05T16:00:00.000+00:00
 period: Full-time, Part-time
+experience: Senior
 apply: https://short.sg/a/21411604
 ---
 
