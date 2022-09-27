@@ -51,7 +51,7 @@ const playVideo = () => {
         playsinline
       >
         <source
-          src="https://videos.melli.com/commercial-entertainment.mp4"
+          src="https://videos.melli.com/entertainment.mp4"
           type="video/mp4"
         >
       </video>

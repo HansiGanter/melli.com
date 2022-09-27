@@ -50,7 +50,7 @@ export const useCheckoutStore = defineStore('checkout', {
       ]),
       firstname: ref(''),
       lastname: ref(''),
-      selectedSubscriptionId: ref<string>(),
+      selectedSubscriptionId: ref(''),
       accepedAgb: ref<boolean>(false),
     }
   },

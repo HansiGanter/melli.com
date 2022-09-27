@@ -10,8 +10,14 @@ const { t } = useI18n()
 
 const subscriptions = useSubscriptionsData()
 
-const selectedSubscription = ref<SubscriptionInfo>()
+const selectedSubscription = ref('')
 const isAnnual = ref(true)
+
+const setCart = () => {
+  checkout.$patch({
+    selectedSubscriptionId: selectedSubscription.value,
+  })
+}
 
 const getPaymentInfo = (sub: SubscriptionInfo) => isAnnual.value ? sub.annualPayment : sub.monthlyPayment
 
@@ -20,16 +26,13 @@ const displayYearlyPrice = (sub: SubscriptionInfo) => displayPrice(getPaymentInf
 const displayPriceWithTime = (sub: SubscriptionInfo) => isAnnual.value ? `${displayYearlyPrice(sub)} / Jahr` : `${displayMonthlyPrice(sub)} / Monat`
 
 const isLoading = ref(false)
-const error = ref<String>()
+const error = ref('')
 const isNewsletterAccepted = ref(false)
 const isAgbAccepted = ref(false)
 
 const buyNow = () => {
   if (!selectedSubscription.value) {
     error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
-  }
-  else if (!isAgbAccepted.value) {
-    error.value = 'Bitte akzeptieren Sie die allgemeinen Geschäftsbedingungen'
   }
   else {
     isLoading.value = true
@@ -39,19 +42,24 @@ const buyNow = () => {
   }
 }
 
-watch([selectedSubscription, isAgbAccepted], () => {
-  error.value = undefined
-  checkout.$patch({
-    selectedSubscriptionId: selectedSubscription.value?.id,
-    accepedAgb: isAgbAccepted.value,
-  })
-})
+// watch([selectedSubscription, isAgbAccepted], () => {
+//   error.value = undefined
+//   checkout.$patch({
+//     selectedSubscriptionId: selectedSubscription.value?.id,
+//     accepedAgb: isAgbAccepted.value,
+//   })
+// })
 
 onMounted(() => {
-  if (route.query.id)
+  // if (route.query.id)
+  //   selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)
+  // else if (checkout.selectedSubscriptionId)
+  //   selectedSubscription.value = subscriptions.find(sub => sub.id === checkout.selectedSubscriptionId)
+  selectedSubscription.value = checkout.selectedSubscriptionId
+  if (route.query.id) {
     selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)
-  else if (checkout.selectedSubscriptionId)
-    selectedSubscription.value = subscriptions.find(sub => sub.id === checkout.selectedSubscriptionId)
+    setCart()
+  }
 })
 </script>
 
@@ -78,6 +86,7 @@ onMounted(() => {
             v-slot="{ checked }"
             as="template"
             :value="subscription"
+            @click="setCart"
           >
             <div
               class="relative bg-white border-1 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in"
