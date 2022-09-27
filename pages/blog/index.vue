@@ -18,7 +18,7 @@ const currentFilter = ref('')
 
 <template>
   <Container class="py-8 lg:py-16 overflow-hidden">
-    <div class="grid gap-8">
+    <div class="grid gap-8 justify-items-center">
       <div class="grid gap-3 sm:gap-4 md:max-w-xl lg:max-w-3xl xl:max-w-none text-center">
         <h2 class="text-2xl font-semibold lg:text-5xl text-gray-900">
           {{ t('blog.heading') }}
