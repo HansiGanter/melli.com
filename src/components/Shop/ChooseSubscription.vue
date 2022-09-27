@@ -172,7 +172,7 @@ onMounted(() => {
         validation-visibility="submit"
       >
         <template #label="context">
-          <span :class="context.classes.label">Ich habe die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Allgemeinen Geschäftsbedingungen</router-link>, die <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmung</router-link> und die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Widerrufsbelehrung</router-link> gelesen und akzeptiert.*</span>
+          <span :class="context.classes.label">Ich habe die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Allgemeinen Geschäftsbedingungen</router-link>, die <router-link to="/datenschutz" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmung</router-link> und die <router-link to="/agb" class="underline underline-primary-500 text-primary-500">Widerrufsbelehrung</router-link> gelesen und akzeptiert.*</span>
         </template>
       </FormKit>
       <FormKit
@@ -183,7 +183,7 @@ onMounted(() => {
         input-class="cr_form-checkbox cr_ipe_checkbox bg-primary-500 rounded-md text-primary-500 outline-none transition duration-300 ease-in mt-1"
       >
         <template #label="context">
-          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere <router-link to="/datenschutzerklaerung" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.</span>
+          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere <router-link to="/datenschutz" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.</span>
         </template>
       </FormKit>
       <FormKit
