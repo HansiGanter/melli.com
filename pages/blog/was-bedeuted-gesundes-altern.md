@@ -10,10 +10,10 @@ author:
     imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
 date: 2022-01-16T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/387915860.webp
+imageUrl: https://assets.melli.com/images/stock/woman-yoga.webp
 ---
 
-![](https://assets.melli.com/images/stock/387915860.webp)
+![](https://assets.melli.com/images/stock/woman-yoga.webp)
 
 ## Klassische Maßnahmen zur Gesundheitsförderung
 

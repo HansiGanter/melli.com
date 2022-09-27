@@ -31,7 +31,7 @@ const openVideo = () => {
       autoplay
       :loop="!isFullscreen"
       :muted="!isFullscreen"
-      poster="https://assets.melli.com/images/stock/584239506-1536.webp"
+      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
     >
       <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
     </video>

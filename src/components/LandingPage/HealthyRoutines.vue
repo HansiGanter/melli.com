@@ -35,7 +35,7 @@ const playVideo = () => {
           ref="healthyroutinesvideo"
           class="lg:w-[845px] w-full"
           height="475"
-          poster="https://assets.melli.com/images/stock/410923648-1024.webp"
+          poster="https://assets.melli.com/images/stock/man-livingroom-1024.webp"
           playsinline
         >
           <source

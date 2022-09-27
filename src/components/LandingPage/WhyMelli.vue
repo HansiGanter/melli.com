@@ -99,7 +99,7 @@ const open = () => {
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center py-10">
     <div class="w-44 h-44 rounded-full mx-auto overflow-hidden">
-      <img src="https://assets.melli.com/images/team/matthias-weber-4-1024.webp" class="object-cover w-full h-full">
+      <img src="https://assets.melli.com/images/team/matthias-weber-4.webp" class="object-cover w-full h-full">
     </div>
     <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-top lg:bg-center lg:py-20" style="background-image: url('https://assets.melli.com/shapes/bubble-bg.svg')">
       <h5 class="font-medium text-primary-900 text-xl lg:text-3xl lg:leading-10">

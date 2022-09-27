@@ -10,10 +10,10 @@ author:
     imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
 date: 2022-01-12T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/584239506.webp
+imageUrl: https://assets.melli.com/images/stock/red-hair-greeting.webp
 ---
 
-![](https://assets.melli.com/images/stock/584239506.webp)
+![](https://assets.melli.com/images/stock/red-hair-greeting.webp)
 
 ## Willkommen in der Silver Society
 

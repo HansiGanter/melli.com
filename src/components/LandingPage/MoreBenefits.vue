@@ -50,7 +50,7 @@ const playVideo = () => {
       <video
         ref="morebenefitsvideo"
         width="1024"
-        poster="https://assets.melli.com/images/stock/102477283-1024.webp"
+        poster="https://assets.melli.com/images/stock/man-reading-1024.webp"
         playsinline
       >
         <source

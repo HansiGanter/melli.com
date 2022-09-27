@@ -6,17 +6,17 @@ const quotes = [
   {
     quote: t('quotes-section.quotes.quote-1'),
     name: 'Walter* (73 Jahre), Nutzer',
-    image: 'https://assets.melli.com/images/stock/435778544-1024.webp',
+    image: 'https://assets.melli.com/images/stock/walter-portrait.webp',
   },
   {
     quote: t('quotes-section.quotes.quote-2'),
     name: 'Irmgard* (69 Jahre), Nutzerin',
-    image: 'https://assets.melli.com/images/stock/377952865-1024.webp',
+    image: 'https://assets.melli.com/images/stock/irmgard-portrait.webp',
   },
   {
     quote: t('quotes-section.quotes.quote-3'),
     name: 'Stephanie S., Pflegedienstleiterin',
-    image: 'https://assets.melli.com/images/stock/464871173.webp',
+    image: 'https://assets.melli.com/images/stock/stephanie-portrait.webp',
   },
 ]
 </script>

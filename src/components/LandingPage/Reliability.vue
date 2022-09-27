@@ -50,7 +50,7 @@ const openVideo = () => {
       <video
         ref="reliabilityvideo"
         width="1024"
-        poster="https://assets.melli.com/images/stock/584239506-1024.webp"
+        poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
         playsinline
       >
         <source
