@@ -14,6 +14,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import matter from 'gray-matter'
+import generateSitemap from 'vite-ssg-sitemap'
 
 export default defineConfig({
   resolve: {
@@ -133,6 +134,13 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    onFinished() {
+      generateSitemap({
+        hostname: 'https://melli.com/',
+        readable: true,
+        extensions: ['html', 'md'],
+      })
+    },
   },
 
   ssr: {
