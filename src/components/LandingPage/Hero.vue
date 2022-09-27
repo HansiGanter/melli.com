@@ -22,14 +22,24 @@ const openVideo = () => {
 
 <template>
   <header class="relative h-screen backdrop-contrast-75 bg-no-repeat bg-cover bg-center lg:bg-top-right bg-black" role="banner">
-    <video id="heroVideo" ref="heroVideo" :class=" isFullscreen ? 'object-contain' : 'object-cover'" class="lg:object-cover w-full h-full" autoplay :loop="!isFullscreen" :muted="!isFullscreen" poster="https://assets.melli.com/images/stock/584239506-1024.webp">
+    <video
+      id="heroVideo"
+      ref="heroVideo"
+      :class=" isFullscreen ? 'object-contain' : 'object-cover'"
+      class="lg:object-cover w-full h-full"
+      playsInline
+      autoplay
+      :loop="!isFullscreen"
+      :muted="!isFullscreen"
+      poster="https://assets.melli.com/images/stock/584239506-1536.webp"
+    >
       <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
     </video>
     <div class="absolute top-0 w-full h-full bg-gray-900/40">
       <div class="absolute top-0 left-0 right-0 inset-x-0 container max-w-screen-xl h-full mx-auto p-5 sm:px-6 lg:px-8 grid">
         <div class="h-full w-full lg:w-2/3 lg:mx-auto py-40 sm:py-16 lg:py-72 flex flex-col justify-center">
           <div class="filter-none grid gap-5 lg:gap-9 lg:mx-auto md:text-center font-semibold text-white w-full">
-            <h1 class="font-semibold text-4xl md:text-5xl text-white">
+            <h1 class="font-semibold text-4xl md:text-5xl leading-tight lg:leading-none text-white">
               <span class="text-primary-400">{{ hero.title.highlight }}</span> {{ hero.title.text }}
             </h1>
             <button

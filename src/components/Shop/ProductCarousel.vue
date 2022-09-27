@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 const images = [
   'https://assets.melli.com/images/mockups/product-image-01-1024.webp',
   'https://assets.melli.com/images/mockups/product-image-02-1024.webp',
@@ -14,6 +16,9 @@ onMounted(() => {
 </script>
 
 <template>
+  <h1 class="font-semibold text-3xl lg:text-4xl text-gray-900 block lg:hidden">
+    {{ t('shop.choose-subscription.header') }}
+  </h1>
   <div class="relative grid gap-4">
     <div class="relative overflow-hidden max-w-1/2 mx-auto lg:max-w-unset">
       <div class="flex transition-all transition-duration-500 ease-in-out" :style="{ transform: `translate3d(calc(${active} * -100%), 0, 0)` }">

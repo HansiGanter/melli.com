@@ -36,11 +36,11 @@ const openVideo = () => {
           {{ t('reliability-section.text') }}
         </p>
       </div>
-      <div class="flex flex-col lg:flex-row items-center gap-8">
+      <div class="flex flex-wrap lg:flex-nowrap justify-center gap-3">
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-6 rounded-lg h-full flex items-center"
+          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-6 rounded-lg lg:h-full flex items-center"
         >
           <span>{{ feature }}</span>
         </div>

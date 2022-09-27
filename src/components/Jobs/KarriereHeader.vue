@@ -8,7 +8,7 @@ defineProps<HeaderProps>()
 
 <template>
   <Container class="bg-primary-900 max-h-fit rounded-b-3xl">
-    <div class="grid gap-16 py-16">
+    <div class="grid gap-16 py-8 lg:py-16">
       <router-link to="/karriere" class="inline-flex items-center py-2.5 px-4 gap-2 filter-none">
         <div class="i-carbon:arrow-left bg-white h-6 w-6" />
         <span class="text-white font-medium text-base">zurück</span>

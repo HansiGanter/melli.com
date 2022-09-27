@@ -23,7 +23,7 @@ const playVideo = () => {
 </script>
 
 <template>
-  <div class="grid gap-20">
+  <div class="grid gap-10 lg:gap-20">
     <div class="grid gap-7">
       <h1 class="font-semibold text-gray-900 text-4xl lg:text-5xl lg:w-1/2">
         {{ t('healthy-routine.header') }}
@@ -33,7 +33,7 @@ const playVideo = () => {
       <div class="relative overflow-hidden rounded-2xl h-fit order-2 lg:order-1" @click="[playVideo(), fireVideoEvent('routinen')]">
         <video
           ref="healthyroutinesvideo"
-          width="845"
+          class="lg:w-[845px] w-full"
           height="475"
           poster="https://assets.melli.com/images/stock/410923648-1024.webp"
           playsinline
@@ -47,7 +47,7 @@ const playVideo = () => {
       </div>
       <div class="grid gap-10 lg:gap-20 order-1 lg:order-2">
         <span class="font-normal text-xl text-black">{{ t('healthy-routine.text') }}</span>
-        <div class="flex flex-col lg:flex-row flex-wrap items-center gap-8">
+        <div class="flex lg:flex-nowrap lg:flex-col flex-wrap justify-center gap-3">
           <div
             v-for="(benefit, index) in benefits"
             :key="index"

@@ -97,14 +97,12 @@ const coreBenefits = [
               <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title }}</strong> {{ benefit.text }}</span>
             </div>
           </div>
-          <!-- <button class="text-medium text-base text-primary-500 hover:text-primary-600 w-fit flex items-center py-2.5 px-4 rounded-full gap-2 ml-auto">
-            <span>Mehr Beneifts entdecken</span>
-            <div class="i-carbon:arrow-right w-5 h-5" />
-          </button> -->
         </div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-6 gap-11 items-center">
-        <img src="https://assets.melli.com/images/team/leonie-krumbholz-1.webp" class="w-2/3 lg:w-auto mx-auto rounded-full">
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 lg:gap-11 items-center">
+        <div class="w-44 h-44 rounded-full mx-auto overflow-hidden">
+          <img src="https://assets.melli.com/images/team/leonie-krumbholz-3.webp" class="object-cover h-44 w-44">
+        </div>
         <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20" style="background-image: url('/assets/bubble_bg.png')">
           <h5 class="font-medium text-primary-900 text-2xl lg:text-3xl">
             “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter <span class="text-primary-400">+49 1579 2451235</span>.”

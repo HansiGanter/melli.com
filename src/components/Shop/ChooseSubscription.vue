@@ -65,7 +65,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full grid gap-8 content-start">
-    <h1 class="font-semibold text-3xl lg:text-4xl text-gray-900">
+    <h1 class="font-semibold text-3xl lg:text-4xl text-gray-900 hidden lg:block">
       {{ t('shop.choose-subscription.header') }}
     </h1>
     <div class="flex justify-center items-center gap-3">
