@@ -20,9 +20,9 @@ onMounted(() => {
     {{ t('shop.choose-subscription.header') }}
   </h1>
   <div class="relative grid gap-4">
-    <div class="relative overflow-hidden max-w-1/2 mx-auto lg:max-w-unset">
+    <div class="relative overflow-hidden max-w-96 mx-auto lg:max-w-96">
       <div class="flex transition-all transition-duration-500 ease-in-out" :style="{ transform: `translate3d(calc(${active} * -100%), 0, 0)` }">
-        <img v-for="(img, index) in images" :id="`slide-${index}`" :key="img" class="block w-full object-scale-down md:object-contain" :src="img" :alt="`Slide ${index + 1}`">
+        <img v-for="(img, index) in images" :id="`slide-${index}`" :key="img" class="block w-96 object-scale-down md:object-contain" :src="img" :alt="`Slide ${index + 1}`">
       </div>
     </div>
     <div class="inset-x-0 z-1">

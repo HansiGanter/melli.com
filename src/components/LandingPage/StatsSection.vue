@@ -32,7 +32,7 @@ const pros = [
 const goToShop = (id: string, name: string) => {
   firePlanEvent(name)
   const selectedItem = subscriptions.find(item => id === item.id)
-  checkout.$patch({ selectedSubscriptionId: selectedItem?.id })
+  checkout.$patch({ selectedSubscription: selectedItem })
   router.push({ path: '/shop', query: { id: selectedItem?.id } })
 }
 </script>

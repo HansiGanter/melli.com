@@ -11,14 +11,8 @@ const { t } = useI18n()
 
 const subscriptions = useSubscriptionsData()
 
-const selectedSubscription = ref('')
+const selectedSubscription = ref<SubscriptionInfo>()
 const isAnnual = ref(true)
-
-const setCart = () => {
-  checkout.$patch({
-    selectedSubscriptionId: selectedSubscription.value,
-  })
-}
 
 const getPaymentInfo = (sub: SubscriptionInfo) => isAnnual.value ? sub.annualPayment : sub.monthlyPayment
 
@@ -30,6 +24,13 @@ const isLoading = ref(false)
 const error = ref('')
 const isNewsletterAccepted = ref(false)
 const isAgbAccepted = ref(false)
+
+const setCart = () => {
+  checkout.$patch({
+    selectedSubscription: selectedSubscription.value,
+  })
+  error.value = ''
+}
 
 const buyNow = () => {
   if (!selectedSubscription.value) {
@@ -80,7 +81,7 @@ onMounted(() => {
           >
             <div
               class="relative bg-white border-1 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in"
-              :class="[checked ? 'ring-3 ring-primary-500' : 'border-gray-300']"
+              :class="[subscription.id === checkout.selectedSubscription?.id ? 'ring-3 ring-primary-500' : 'border-gray-300']"
             >
               <div class="grid gap-2">
                 <Badge class="mb-2" :class="subscription.id === 'base' ? 'bg-pink-600' : 'bg-primary-600'">

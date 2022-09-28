@@ -30,7 +30,7 @@ const showNav = ref(false)
             <div class="i-carbon:user stroke-2 w-6 h-6" />
           </a>
           <RouterLink
-            v-if="checkout.selectedSubscriptionId"
+            v-if="checkout.selectedSubscription"
             to="/shop"
             class="relative inline-flex"
             @click="fireCartEvent"
@@ -40,13 +40,13 @@ const showNav = ref(false)
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
           </RouterLink>
-          <RouterLink
+          <!-- <RouterLink
             to="/shop"
             class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"
             @click="fireShopEvent"
           >
             Jetzt kaufen
-          </RouterLink>
+          </RouterLink> -->
         </div>
         <button type="button" class="lg:hidden block p-2" @click="showNav = !showNav">
           <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />
@@ -76,13 +76,13 @@ const showNav = ref(false)
             <span>Account</span>
           </RouterLink> -->
         </div>
-        <RouterLink
+        <!-- <RouterLink
           to="/shop"
           class="py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
           @click="fireShopEvent"
         >
           <span>Jetzt kaufen</span>
-        </RouterLink>
+        </RouterLink> -->
       </div>
     </transition>
   </nav>

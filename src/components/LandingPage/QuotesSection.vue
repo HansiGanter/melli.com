@@ -27,9 +27,9 @@ const quotes = [
       <h1 class="text-white font-semibold text-4xl lg:text-5xl">
         {{ t('quotes-section.heading') }}
       </h1>
-      <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit" @click="fireShopEvent">
+      <!-- <router-link to="/shop" class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit" @click="fireShopEvent">
         {{ t('quotes-section.test-melli') }}
-      </router-link>
+      </router-link> -->
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
       <div v-for="quote in quotes" :key="quote.name" class="bg-primary-200/10 flex flex-col gap-5 rounded-3xl shadow-lg pb-6 overflow-clip">

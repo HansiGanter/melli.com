@@ -33,9 +33,9 @@ import { fireSocialEvent } from '~/google-tag-manager'
     <QuotesSection />
   </Container>
 
-  <Container class="py-8 bg-gray-50">
+  <!-- <Container class="py-8 bg-gray-50">
     <StatsSection />
-  </Container>
+  </Container> -->
 
   <Container class="bg-gray-50 lg:py-24">
     <SecureSection />
