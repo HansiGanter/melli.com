@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { firePaymentSuccess } from '~/google-tag-manager'
 import { useStripeAxios } from '~/composables/useStripeAxios'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
@@ -12,6 +13,8 @@ const queryStripe = () => {
   isLoading.value = true
   useStripeAxios.get(`/checkout-session/${route.query.session_id}`).then((res) => {
     isLoading.value = false
+    // check if checkout was successfull is missing
+    firePaymentSuccess()
     customerEmail.value = res.data.checkout_session_data.customer_details.email
   }).catch((err) => {
     isLoading.value = false

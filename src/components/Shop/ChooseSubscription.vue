@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireBuyEvent } from '~/google-tag-manager'
 import { useStripeAxios } from '~/composables/useStripeAxios'
 import type { SubscriptionInfo } from '~/stores/checkout'
 import { useCheckoutStore, useSubscriptionsData } from '~/stores/checkout'
@@ -35,6 +36,7 @@ const buyNow = () => {
     error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
   }
   else {
+    fireBuyEvent()
     isLoading.value = true
     useStripeAxios.post('/checkout-session', { items: [{ price_id: getPaymentInfo(selectedSubscription.value).priceId, quantity: 1 }], wantsNewsletter: isNewsletterAccepted.value })
       .then(response => location.href = response.data.checkout_session_url)
@@ -42,19 +44,7 @@ const buyNow = () => {
   }
 }
 
-// watch([selectedSubscription, isAgbAccepted], () => {
-//   error.value = undefined
-//   checkout.$patch({
-//     selectedSubscriptionId: selectedSubscription.value?.id,
-//     accepedAgb: isAgbAccepted.value,
-//   })
-// })
-
 onMounted(() => {
-  // if (route.query.id)
-  //   selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)
-  // else if (checkout.selectedSubscriptionId)
-  //   selectedSubscription.value = subscriptions.find(sub => sub.id === checkout.selectedSubscriptionId)
   selectedSubscription.value = checkout.selectedSubscriptionId
   if (route.query.id) {
     selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)

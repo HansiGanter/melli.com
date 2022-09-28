@@ -7,6 +7,24 @@ export const fireShopEvent = () => {
   })
 }
 
+export const fireBuyEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-buy',
+    // ignore params for now
+    formType: 'Shop',
+    formPosition: 'Shop',
+  })
+}
+
+export const firePaymentSuccess = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-payment-success',
+    // ignore params for now
+    formType: 'Shop',
+    formPosition: 'Shop',
+  })
+}
+
 export const fireCartEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-cart',
@@ -70,6 +88,15 @@ export const fireNewsletterEvent = () => {
   })
 }
 
+export const fireNewsletterSentEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-newsletter-sent',
+    // ignore params for now
+    formType: 'Newsletter',
+    formPosition: 'Footer',
+  })
+}
+
 export const fireFAQEvent = (description?: string) => {
   window.dataLayer.push({
     event: !description ? 'melli-cta-faq' : `melli-cta-faq-${description}`,
@@ -126,9 +153,36 @@ export const fireVideoEvent = (video: string) => {
 
 export const fireCallEvent = () => {
   window.dataLayer.push({
-    event: 'melli-cta-testuser-callback-sent',
+    event: 'melli-cta-callback-sent',
     // ignore params for now
     formType: 'Callback',
     formPosition: 'TestContact',
+  })
+}
+
+export const fireLoginEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-app-login',
+    // ignore params for now
+    formType: 'Login',
+    formPosition: 'Header',
+  })
+}
+
+export const fireBlogEvent = (blog?: string) => {
+  window.dataLayer.push({
+    event: !blog ? 'melli-cta-blog' : `melli-blog-${blog}`,
+    // ignore params for now
+    formType: 'NavBar',
+    formPosition: 'NavBar',
+  })
+}
+
+export const fireKarriereEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-karriere',
+    // ignore params for now
+    formType: 'NavBar',
+    formPosition: 'NavBar',
   })
 }

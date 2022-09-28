@@ -107,7 +107,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Alles über Melli
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvet(faq.question)">
+            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent(faq.question)">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ faq.question }}</span>
@@ -157,7 +157,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Inbetriebnahme
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse problemlos möglich?')">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse problemlos möglich?</span>
@@ -175,7 +175,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Kann ich Unterstützung bei der Einrichtung von Melli bekommen?')">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Kann ich Unterstützung bei der Einrichtung von Melli bekommen?</span>
@@ -218,7 +218,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Abo & Bestellung
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Was ist alles im Melli-Paket enthalten?')">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Was ist alles im Melli-Paket enthalten?</span>
@@ -241,7 +241,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Wird Melli von der Pflege- oder Krankenkasse bezahlt?')">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Wird Melli von der Pflege- oder Krankenkasse bezahlt?</span>
@@ -259,7 +259,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2">
+            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Kann die Hardware auch monatlich finanziert werden?')">
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Kann die Hardware auch monatlich finanziert werden?</span>
@@ -290,7 +290,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
               Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich gerne und räumen alle Unklarheiten aus dem Weg. Vereinbare einfach einen Rückruf mit uns und wir melden uns umgehend bei dir.
             </p>
           </div>
-          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="fireCallbackEvent()">
+          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="[callbackModalOpen = true, fireCallbackEvent()]">
             <span class="font-medium text-base">Rückruf vereinbaren</span>
           </button>
         </div>

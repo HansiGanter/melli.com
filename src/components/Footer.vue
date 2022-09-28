@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireContactEvent } from '~/google-tag-manager'
 // todo: add system option
 
 const { t } = useI18n()
@@ -132,7 +133,7 @@ const navigation = {
           Folge uns!
         </h3>
         <ul role="list" class="mt-4 space-y-2">
-          <li v-for="item in navigation.social" :key="item.name">
+          <li v-for="item in navigation.social" :key="item.name" @click="fireContactEvent(item.name)">
             <a
               :href="item.href"
               target="_blank"

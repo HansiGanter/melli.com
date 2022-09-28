@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireBlogEvent } from '~/google-tag-manager'
 const props = withDefaults(
   defineProps<{ prefix: string; nPosts?: number }>(),
   { nPosts: 16 },
@@ -20,6 +21,6 @@ const routes = router.getRoutes()
 
 <template>
   <div class="max-w-lg mx-auto grid gap-8 lg:gap-x-8 lg:gap-y-10 md:grid-cols-2 md:max-w-none xl:grid-cols-3">
-    <PostPreviewItem v-for="route in routes" :key="route.path" :route="route" />
+    <PostPreviewItem v-for="route in routes" :key="route.path" :route="route" @click="fireBlogEvent(route.meta.frontmatter.title)" />
   </div>
 </template>

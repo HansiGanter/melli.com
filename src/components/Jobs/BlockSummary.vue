@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireJobApplyEvent } from '~/google-tag-manager'
 interface Props {
   apply: string
   datePosted: string
@@ -43,7 +44,7 @@ defineProps<Props>()
         </h2>
         <span class="text-base">{{ experience }}</span>
       </div>
-      <a :href="apply" target="_blank" class="py-4 px-7 bg-primary-500 rounded-lg decoration-none w-fit">
+      <a :href="apply" target="_blank" class="py-4 px-7 bg-primary-500 rounded-lg decoration-none w-fit" @click="fireJobApplyEvent">
         <span class="text-white font-semibold text-base">Jetzt bewerben</span>
       </a>
     </div>

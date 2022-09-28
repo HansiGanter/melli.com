@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireNewsletterSentEvent } from '~/google-tag-manager'
 const newsletterProps = defineProps<{ email?: string }>()
 
 const userEmail = ref(newsletterProps.email)
@@ -41,7 +42,7 @@ const isDSGVO = ref(false)
         validation-label="Vorname"
         message-class="text-red-500 mt-1"
         input-class="cr_form-input"
-        validation="required|email"
+        validation="required"
         validation-visibility="submit"
       />
       <FormKit
@@ -53,7 +54,7 @@ const isDSGVO = ref(false)
         validation-label="Nachname"
         message-class="text-red-500 mt-1"
         input-class="cr_form-input"
-        validation="required|email"
+        validation="required"
         validation-visibility="submit"
       />
       <FormKit
@@ -84,6 +85,7 @@ const isDSGVO = ref(false)
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button"
+        @click="fireNewsletterSentEvent"
       >
         <span>Jetzt anmelden</span>
       </FormKit>
