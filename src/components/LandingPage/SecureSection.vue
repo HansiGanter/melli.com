@@ -1,16 +1,5 @@
 <script setup lang="ts">
-import { fireNewsletterEvent } from '~/google-tag-manager'
 const { t } = useI18n()
-
-const newsletterDialogOpen = ref(false)
-const email = ref('')
-
-const open = () => {
-  // we have to ensure the query params are set before the hubspot script loads
-  setTimeout(() => {
-    newsletterDialogOpen.value = true
-  }, 0)
-}
 </script>
 
 <template>
@@ -24,40 +13,9 @@ const open = () => {
           {{ t('secure-melli.sub-text') }}
         </p>
       </div>
-      <FormKit
-        id="lp-newsletter-section-form-open"
-        form-class="w-full lg:w-1/2"
-        type="form"
-        :actions="false"
-        :incomplete-message="false"
-        @submit="open"
-      >
-        <div class="grid gap-5 lg:w-full">
-          <FormKit
-            v-model="email"
-            type="email"
-            name="email"
-            placeholder="Deine E-Mail-Adresse"
-            validation="required|email"
-            validation-visibility="submit"
-            message-class="text-red-500 mt-1"
-            inner-class="w-full h-fit border border-primary-400 rounded-lg overflow-hidden focus:border-primary-500"
-            input-class="w-full h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 outline-none"
-          />
-          <div class="flex flex-col items-stretch lg:flex-row gap-3 items-center w-fit mx-auto">
-            <FormKit
-              type="submit"
-              input-class="flex w-full lg:w-fit items-center justify-center px-7 py-4 bg-primary-500 rounded-lg text-white font-medium text-base"
-              @click="fireNewsletterEvent"
-            >
-              {{ t('secure-melli.get-melli-button') }}
-            </FormKit>
-          </div>
-        </div>
-      </FormKit>
+      <div class="grid gap-2 lg:w-6/12 lg:mx-auto">
+        <NewsletterOpen />
+      </div>
     </div>
   </div>
-  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog :email="email" />
-  </Modal>
 </template>

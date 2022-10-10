@@ -1,16 +1,5 @@
 <script setup lang="ts">
-import { fireNewsletterEvent } from '~/google-tag-manager'
 const { t } = useI18n()
-
-const newsletterDialogOpen = ref(false)
-const email = ref('')
-
-const open = () => {
-  // we have to ensure the query params are set before the hubspot script loads
-  setTimeout(() => {
-    newsletterDialogOpen.value = true
-  }, 0)
-}
 
 const filters = ['Latest', 'Pricing', 'Product', 'Social']
 const currentFilter = ref('')
@@ -28,39 +17,7 @@ const currentFilter = ref('')
         </p>
       </div>
       <div class="grid gap-2 w-full lg:w-6/12 lg:mx-auto">
-        <FormKit
-          id="blog-newsletter-form-open"
-          class="flex items-stretch h-fit"
-          type="form"
-          :actions="false"
-          :incomplete-message="false"
-          @submit="open"
-        >
-          <div class="flex items-stretch h-fit">
-            <FormKit
-              v-model="email"
-              type="email"
-              name="email"
-              placeholder="Email-Adresse"
-              outer-class="grow"
-              wrapper-class="h-fill"
-              validation="required|email"
-              validation-visibility="submit"
-              inner-class="w-full h-fill border border-primary-400 rounded-l-lg overflow-hidden"
-              message-class="text-red mt-1"
-              input-class="w-full h-13 lg:h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-            />
-            <FormKit
-              type="submit"
-              input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-400 rounded-r-lg text-white"
-              wrapper-class="grow"
-              @click="fireNewsletterEvent"
-            >
-              <span>{{ t('blog.subscribe-button') }}</span>
-              <div class="i-carbon:chevron-right" />
-            </FormKit>
-          </div>
-        </FormKit>
+        <NewsletterOpen />
       </div>
     </div>
   </Container>
@@ -81,7 +38,4 @@ const currentFilter = ref('')
       <PostPreview prefix="/blog" />
     </div>
   </Container>
-  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog :email="email" />
-  </Modal>
 </template>

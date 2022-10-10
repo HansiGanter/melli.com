@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireOpenJobAlertEvent } from '~/google-tag-manager'
 const jobAlertDialogOpen = ref(false)
 const email = ref('')
 
@@ -37,6 +38,8 @@ const open = () => {
               type="email"
               name="email"
               placeholder="Deine E-Mail-Adresse"
+              message-class="text-red-500 mt-1"
+              validation-label="E-Mail"
               outer-class="w-full grow"
               wrapper-class="grid gap-1.5 h-fill"
               validation="required|email"
@@ -47,7 +50,7 @@ const open = () => {
               type="submit"
               input-class="flex w-full lg:w-fit items-center justify-center px-6 py-3.5 bg-primary-500 rounded-lg text-white font-medium text-base"
               wrapper-class="grow"
-              @click="fireJobAlertEvent"
+              @click="fireOpenJobAlertEvent"
             >
               Jetzt anmelden
             </FormKit>

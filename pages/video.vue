@@ -1,10 +1,9 @@
 <script setup lang="ts">
-    const route=useRoute()
-    const router=useRouter()
-    onMounted(() => {
-      if (!route.query.video_name) {
-      router.push({path: "/notFound"})        
-      }
+const route = useRoute()
+const router = useRouter()
+onMounted(() => {
+  if (!route.query.video_name)
+    router.push({ path: '/notFound' })
 })
 </script>
 

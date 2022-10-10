@@ -51,10 +51,18 @@ export const fireCallbackEvent = () => {
     formPosition: 'Footer',
   })
 }
+export const fireOpenJobAlertEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-job-alert-open',
+    // ignore params for now
+    formType: 'JobAlert',
+    formPosition: 'Footer',
+  })
+}
 
 export const fireJobAlertEvent = () => {
   window.dataLayer.push({
-    event: 'melli-cta-job-alert-open',
+    event: 'melli-cta-job-alert-sent',
     // ignore params for now
     formType: 'JobAlert',
     formPosition: 'Footer',
@@ -79,7 +87,7 @@ export const fireSocialEvent = (social: string) => {
   })
 }
 
-export const fireNewsletterEvent = () => {
+export const fireNewsletterOpenEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-newsletter-open',
     // ignore params for now

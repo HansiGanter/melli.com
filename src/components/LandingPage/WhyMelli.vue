@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import { fireFlipCardEvent, fireNewsletterEvent } from '~/google-tag-manager'
+import { fireFlipCardEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
@@ -29,14 +29,6 @@ const features: Ref<Feature[]> = ref([
 ])
 
 const activeFeature = ref('')
-const email = ref('')
-const newsletterDialogOpen = ref(false)
-const open = () => {
-  // we have to ensure the query params are set before the hubspot script loads
-  setTimeout(() => {
-    newsletterDialogOpen.value = true
-  }, 0)
-}
 </script>
 
 <template>
@@ -115,43 +107,8 @@ const open = () => {
   </div>
   <div class="grid gap-2 lg:w-5/12 lg:mx-auto">
     <span class="block text-lg lg:text-xl font-medium text-primary-800 text-left lg:text-center">{{ t('hero.test-user') }}</span>
-    <FormKit
-      id="landingpage-newsletter-form-open"
-      class="flex items-stretch h-fit"
-      type="form"
-      :actions="false"
-      :incomplete-message="false"
-      @submit="open"
-    >
-      <div class="flex items-stretch h-fit">
-        <FormKit
-          v-model="email"
-          type="email"
-          name="email"
-          placeholder="E-Mail-Adresse"
-          outer-class="grow"
-          wrapper-class="h-fill"
-          validation="required|email"
-          validation-visibility="submit"
-          message-class="text-red-500 mt-1"
-          inner-class="w-full h-fill border border-primary-400 rounded-l-lg overflow-hidden"
-          input-class="w-full h-13 lg:h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-        />
-        <FormKit
-          type="submit"
-          input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-400 rounded-r-lg text-white"
-          wrapper-class="grow"
-          @click="fireNewsletterEvent"
-        >
-          <span>{{ t('hero.get-started-button') }}</span>
-          <div class="i-carbon:chevron-right" />
-        </FormKit>
-      </div>
-    </FormKit>
+    <NewsletterOpen />
   </div>
-  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog :email="email" />
-  </Modal>
 </template>
 
 <style>

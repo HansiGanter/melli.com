@@ -4,7 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
-import { fireCallbackEvent, fireFAQEvent, fireNewsletterEvent } from '~/google-tag-manager'
+import { fireCallbackEvent, fireFAQEvent, fireNewsletterSentEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
@@ -13,7 +13,7 @@ const email = ref('')
 const callbackModalOpen = ref(false)
 const newsletterDialogOpen = ref(false)
 const openNews = () => {
-  fireNewsletterEvent()
+  fireNewsletterSentEvent()
   setTimeout(() => {
     newsletterDialogOpen.value = true
   }, 0)
@@ -107,7 +107,14 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Alles über Melli
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent(faq.question)">
+            <Disclosure
+              v-for="(faq, index) in aboutMelli"
+              :key="index"
+              v-slot="{ open }"
+              as="div"
+              class="py-2"
+              @click="fireFAQEvent(faq.question)"
+            >
               <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
                 <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ faq.question }}</span>

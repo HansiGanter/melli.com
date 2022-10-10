@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { fireNewsletterSentEvent } from '~/google-tag-manager'
-const newsletterProps = defineProps<{ email?: string }>()
+const newsletterProps = defineProps<{ email?: string; dsgvo?: boolean }>()
 
 const userEmail = ref(newsletterProps.email)
 const vorname = ref('')
 const nachname = ref('')
 const phone = ref('')
-const isDSGVO = ref(false)
+const userIsDSGVO = ref(newsletterProps.dsgvo)
 </script>
 
 <template>
@@ -22,7 +22,7 @@ const isDSGVO = ref(false)
       :incomplete-message="false"
     >
       <FormKit
-        id="text7539403"
+        id="7539403"
         v-model="userEmail"
         type="email"
         name="email"
@@ -34,7 +34,7 @@ const isDSGVO = ref(false)
         validation-visibility="submit"
       />
       <FormKit
-        id="cr_form-input--text7539407"
+        id="7539407"
         v-model="vorname"
         type="text"
         name="1011268"
@@ -46,7 +46,7 @@ const isDSGVO = ref(false)
         validation-visibility="submit"
       />
       <FormKit
-        id="cr_form-input--text7539408"
+        id="7539408"
         v-model="nachname"
         type="text"
         name="1011269"
@@ -58,7 +58,7 @@ const isDSGVO = ref(false)
         validation-visibility="submit"
       />
       <FormKit
-        id="cr_form-input--text7539409"
+        id="7539409"
         v-model="phone"
         type="text"
         name="1011270"
@@ -66,20 +66,23 @@ const isDSGVO = ref(false)
         input-class="cr_form-input"
       />
       <FormKit
-        id="17539429"
-        v-model="isDSGVO"
-        type="checkbox"
+        id="7545650"
+        v-model="userIsDSGVO"
+        type="hidden"
         label-class="text-gray-700 text-sm flex-1"
-        wrapper-class="flex items-start gap-3"
-        name="1011271[]"
-        input-class="cr_form-checkbox"
-        validation-label="DSGVO"
+        wrapper-class="flex items-start gap-3 hidden"
+        name="1015693[]"
+        input-class="cr_form-checkbox hidden"
+        validation-label="Datenschutzbestimmungen"
         validation="required|accepted"
         validation-visibility="submit"
         message-class="text-red-500 mt-1"
       >
         <template #label="context">
-          <span :class="context.classes.label">Ich möchte Emails mit Promotion & Produktupdates erhalten. Es gelten unsere  <router-link to="/datenschutz" class="underline underline-primary-500 text-primary-500">Datenschutzbestimmungen</router-link>. Die Einwilligung kann jeder Zeit mit Wirkung für die Zukunft z.B. per E-Mail an [info@meetap.de] widerrufen werden.*</span>
+          <span :class="context.classes.label">Ich akzeptiere die <router-link
+            to="/datenschutz"
+            class="underline underline-primary-500 text-primary-500"
+          >Datenschutzbestimmungen</router-link>.</span>
         </template>
       </FormKit>
       <FormKit
