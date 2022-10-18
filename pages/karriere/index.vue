@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import { fireOpenJobAlertEvent } from '~/google-tag-manager'
+useHead({
+  title: 'Melli',
+  meta: [
+    { name: 'description', content: 'Dein neues WHY! Werde Teil des meetap Teams & hilf uns dabei eine Zukunft zu schaffen, in der jeder Mensch in jeder Lebensphase Momente gemeinsam erleben und teilen kann - unabhängig von Alter, Lebensumständen, körperlichen Fähigkeiten oder anderen Hindernissen.' },
+  ],
+})
 const jobAlertDialogOpen = ref(false)
 const email = ref('')
 

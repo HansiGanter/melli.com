@@ -105,7 +105,8 @@ const coreBenefits = [
         </div>
         <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20" style="background-image: url('/assets/bubble_bg.png')">
           <h5 class="font-medium text-primary-900 text-2xl lg:text-3xl">
-            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter <span class="text-primary-400">+49 1579 2451235</span>.”
+            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter
+            <span class="text-primary-400">+49 1579 2451235</span>.”
           </h5>
           <span class="font-semibold text-gray-500 text-base">Leonie Kumbholz | Recruiting Managerin</span>
         </div>

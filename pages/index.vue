@@ -1,12 +1,35 @@
 <script setup lang="ts">
 import { fireSocialEvent } from '~/google-tag-manager'
+const { t } = useI18n()
+useHead({
+  title: 'Melli',
+  meta: [
+    { name: 'description', content: 'Melli - deine Freundin für ein glückliches Älterwerden. Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln ins Gesicht zu zaubern.' },
+  ],
+})
 </script>
 
 <template>
   <Hero />
 
-  <Container class="pt-24 pb-12 lg:py-24">
-    <WhyMelli />
+  <Container>
+    <FlipCards class="-mt-8 mb-16 lg:mb-24" />
+  </Container>
+
+  <Container>
+    <Quote
+      class="my-20"
+      :quote="t('citation.matthias.quote')"
+      :source="t('citation.matthias.source')"
+      :source-description="t('citation.matthias.source-description')"
+      portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
+    />
+  </Container>
+  <Container class="mb-16 lg:mb-24">
+    <div class="grid gap-2 lg:w-5/12 lg:mx-auto">
+      <span class="block text-lg lg:text-xl font-medium text-primary-800 text-center">{{ t('hero.test-user') }}</span>
+      <NewsletterOpen />
+    </div>
   </Container>
 
   <Container class="bg-primary-900 rounded-[30px] py-16">
@@ -29,19 +52,20 @@ import { fireSocialEvent } from '~/google-tag-manager'
     <HealthyRoutines />
   </Container>
 
-  <Container id="glücklicher" class="bg-primary-900 rounded-[30px] py-24">
+  <Container id="glücklicher" class="bg-primary-900 rounded-[30px] py-12 lg:py-20">
     <QuotesSection />
   </Container>
 
+  <!-- Commented Out Until Shop Ready -->
   <!-- <Container class="py-8 bg-gray-50">
     <StatsSection />
   </Container> -->
 
-  <Container class="bg-gray-50 lg:py-24">
+  <Container class="bg-gray-50 py-12 lg:py-24">
     <SecureSection />
   </Container>
 
-  <Container class="py-12 bg-gray-50">
+  <Container class="pb-12 lg:pb-24 bg-gray-50">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mx-auto justify-center">
       <h2 class="text-primary-900 text-3xl lg:text-4xl font-semibold">
         Folge uns auf:

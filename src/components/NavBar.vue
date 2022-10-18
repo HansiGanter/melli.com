@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { fireBlogEvent, fireCartEvent, fireKarriereEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
+/* TODO: Fire Shop-Events when Shop is ready */
+import { fireBlogEvent, fireCartEvent, fireKarriereEvent, fireLoginEvent } from '~/google-tag-manager'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
 const { t } = useI18n()
@@ -40,6 +41,7 @@ const showNav = ref(false)
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
           </RouterLink>
+          <!-- Commented out until shop is ready -->
           <!-- <RouterLink
             to="/shop"
             class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"
@@ -61,14 +63,14 @@ const showNav = ref(false)
       leave-to-class="transform -translate-y-5 opacity-0"
     >
       <div v-if="showNav" class="container mx-auto px-4 lg:px-0 lg:hidden" :class="showNav ? 'grid' : 'hidden'">
-        <div class="grid gap-2 my-6">
-          <RouterLink to="/" class="focus:outline-none focus:bg-gray-100 flex items-center justify-between w-full items-center rounded-md px-3 py-2 text-base font-medium text-gray-600">
+        <div class="grid gap-2 ">
+          <RouterLink to="/" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2">
             {{ t('navbar.about') }}
           </RouterLink>
-          <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 flex items-center justify-between w-full items-center rounded-md px-3 py-2 text-base font-medium text-gray-600" @click="fireBlogEvent">
+          <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
-          <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 flex items-center justify-between w-full items-center rounded-md px-3 py-2 text-base font-medium text-gray-600">
+          <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2">
             {{ t('navbar.karriere') }}
           </RouterLink>
           <!-- <RouterLink to="/login" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">

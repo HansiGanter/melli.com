@@ -61,7 +61,7 @@ const navigation = {
               Sie brauchen Hilfe?
             </h3>
             <ul role="list" class="mt-4 space-y-2 flex-wrap">
-              <li class="text-lg font-semibold">
+              <li class="text-lg font-semibold text-gray-500">
                 Lassen Sie sich kostenlos beraten!
               </li>
               <li v-for="item in navigation.resources" :key="item.name">

@@ -1,5 +1,5 @@
 <template>
   <div class="flex gap-3 items-center">
-    <LogoMark />
+    <img src="https://assets.melli.com/logo.svg" alt="Melli Logo">
   </div>
 </template>

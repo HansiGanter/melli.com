@@ -37,6 +37,7 @@ const openVideo = () => {
     </video>
     <div class="absolute top-0 w-full h-full bg-gray-900/40">
       <div class="absolute top-0 left-0 right-0 inset-x-0 container max-w-screen-xl h-full mx-auto p-5 sm:px-6 lg:px-8 grid">
+        <slot />
         <div class="h-full w-full lg:w-2/3 lg:mx-auto py-40 sm:py-16 lg:py-72 flex flex-col justify-center">
           <div class="filter-none grid gap-5 lg:gap-9 lg:mx-auto md:text-center font-semibold text-white w-full">
             <h1 class="font-semibold text-4xl md:text-5xl leading-tight lg:leading-none text-white">

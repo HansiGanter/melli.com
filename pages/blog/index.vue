@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const { t } = useI18n()
+useHead({
+  title: 'Melli',
+  meta: [
+    { name: 'description', content: 'News und Beiträge zu Melli. Informieren Sie sich über neue Produktfunktionen, kostenlose Tipps, Angebote, Aktionen und vieles mehr.' },
+  ],
+})
 
 const filters = ['Latest', 'Pricing', 'Product', 'Social']
 const currentFilter = ref('')

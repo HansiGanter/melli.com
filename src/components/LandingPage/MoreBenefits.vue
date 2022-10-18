@@ -40,7 +40,7 @@ const playVideo = () => {
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="text-gray-900 font-semibold text-base text-center bg-tertiary-800/10 py-3.5 px-6 lg:h-full rounded-lg items-center flex"
+          class="text-gray-900 font-semibold text-base bg-tertiary-800/10 py-3.5 px-6 lg:h-full rounded-lg items-center flex"
         >
           <span>{{ benefit }}</span>
         </div>

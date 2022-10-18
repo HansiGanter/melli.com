@@ -25,6 +25,17 @@ button:
   home: Startseite
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
+citation:
+  matthias:
+    quote: >-
+      “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die
+      Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag
+      über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln
+      ins Gesicht zu zaubern.”
+    source: Dr. Matthias Weber
+    source-description: >-
+      Mit-Gründer von Melli & langjähriger Pflegeunternehmer der Ambulantis BSW
+      GmbH
 contact:
   button: jetzt starten
   email: Sende uns eine E-Mail!
@@ -536,6 +547,212 @@ team:
     in jeder Lebensphase gemeinsame Momente erleben und teilen kann - unabhängig
     vom Alter, den Lebensumständen, körperlichen Fähigkeiten oder anderen
     Hürden?
+test-faq:
+  answer-1: >-
+    Nein, die Teilnahme am Testnutzerprogramm ist kostenfrei. Wir freuen uns
+    aber natürlich über regelmäßiges Feedback und  Verbesserungsvorschläge.
+  answer-10: >-
+    Termine und Erinnerungen sollen zukünftig über die Melli-App eingestellt
+    werden können. Die App befindet sich derzeit noch in der  Entwicklungsphase
+    und wird den Nutzern zu einem späteren Zeitpunkt zur Verfügung gestellt.
+    Hier sollen zum Beispiel auch Interessen,  Schlafenszeiten und
+    Medikamentenpläne eingepflegt werden können. Damit sich Melli bestmöglich an
+    die Bedürfnisse ihrer Nutzer  anpassen kann.
+  answer-2: Die Testphase dauert in der Regel drei Monate.
+  answer-3: >-
+    Aktuell kann Melli nicht mit WLAN genutzt werden. Um eine stabile
+    Internetverbindung während des Tests zu gewährleisten ist Melli  mit einer
+    SIM-Karte mit unbegrenztem mobilen Internet ausgestattet. Später wird Melli
+    auch mit dem eigenen WLAN verbunden werden  können.
+  answer-4: Nein, das Datenvolumen ist nicht begerenzt.
+  answer-5: >-
+    Aktuell ist über Melli noch keine Telefonie möglich. Diese soll aber in den
+    kommenden Wochen und Monaten implementiert werden. Es  wird dann möglich
+    sein, über Melli Kontakte oder andere Melli-Nutzer anzurufen und ausgewählte
+    Kontakte werden Melli anrufen  können.
+  answer-6: >-
+    Vorerst wird das nicht möglich sein. Mit unseren mitgelieferten Geräten
+    möchten wir einen gewissen Qualitätsstandard für die Nutzer  gewährleisten.
+    Das bedeutet, dass wir sicher gehen wollen, dass Melli durch ein gutes
+    Mikrofon bestmöglich verstehen kann, was der  Nutzer sagt und sie mit einem
+    Lautsprecher ausgestattet ist, der eine angemessene Lautstärke erzielen
+    kann.
+  answer-7: >-
+    Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
+    ist lediglich, dass die SIM-Karte nur innerhalb  Deutschlands so
+    funktioniert und dass Melli eine stabile Internetverbindung hat.
+  answer-8: >-
+    Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
+    Funktion wird aber in den kommenden Monaten folgen.  Nutzer können Melli
+    dann beispielsweise bitten die Musik anzuschalten oder das Wetter der
+    kommenden Tage anzusagen.
+  answer-9: >-
+    Melli muss nicht immer am Strom angeschlossen sein, aber es sollte dafür
+    gesorgt sein, dass sich das Tablet nicht aus Versehen  ausschaltet. Man kann
+    Melli durchaus aus der Docking-Station entnehmen und sich so mit ihr
+    unterhalten.
+  heading: Häufig gestelle Fragen
+  question-1: Kostet es mich etwas, Testnutzer zu werden?
+  question-10: Kann man Melli Termine mitteilen und Erinnerungen einstellen?
+  question-2: Wie lange dauert die Testphase?
+  question-3: Kann ich das Gerät auch mit WLAN nutzen?
+  question-4: Ist das Datenvolumen auf der SIM-Karte begrenzt?
+  question-5: Kann ich mit Melli telefonieren?
+  question-6: >-
+    Ich habe bereits ein Tablet. Kann ich Melli auch auf meinem eigenen Gerät
+    benutzen?
+  question-7: Kann ich Melli mitnehmen, wenn ich verreise?
+  question-8: Kann ich Melli selbst initiierte Befehle geben?
+  question-9: Muss Melli immer am Strom angeschlossen bleiben?
+test-features:
+  '1':
+    answer: Geht aktiv auf den Nutzer zu
+  '2':
+    answer: Funktioniert auch ohne WLAN
+  '3':
+    answer: Erkennt die Stimmung & reagiert darauf
+  '4':
+    answer: Bedienung ohne technisches Vorwissen
+  '5':
+    answer: Verbindet Menschen miteinander
+  heading: Das unterscheidet Melli
+  heading-text: von anderen Sprachassistenten
+  test-melli: Jetzt Melli kostenlos sichern!
+test-hero:
+  heading-1:
+    highlight: Melli –
+    text: "deine Freundin \Lfür ein glückliches Älterwerden"
+  heading-3: null
+test-journey-section:
+  heading: Werde Teil der Melli-Journey!
+  text: >-
+    Melli befindet sich momentan in der Entwicklung, was bedeutet, dass sie noch
+    nicht alle Funktionen einwandfrei beherrscht. Das ist der Grund, warum wir
+    auf deine Hilfe & dein Feedback als Testnutzer angewiesen sind. Damit du
+    weißt, welche Funktionen du erwarten kannst und welche noch in der
+    Entwicklung stecken, findest du hier eine Auflistung:
+test-mission:
+  feature-1:
+    back-text: >-
+      Melli verbindet ihre Nutzer mit ihrer Familie, ihren Freunden und anderen
+      Nutzern und motiviert sie zur Kontaktaufnahme und zu persönlichen Treffen.
+      Sie ermuntert ihre Nutzer dazu, mehr und positiver zu kommunizieren.
+    description: >-
+      Melli verbindet ihre Nutzer mit ihrer Familie, ihren Freunden und anderen
+      Nutzern und motiviert sie zur Kontaktaufnahme und zu persönlichen Treffen.
+      Sie ermuntert ihre Nutzer dazu, mehr und positiver zu kommunizieren.
+    title: Für ein kommunikativeres & geselligeres Leben
+  feature-2:
+    back-text: >-
+      Mit Gesundheitsroutinen wie Trinkerinnerungen, Bewegungsübungen,
+      Meditationen und mehr begleitet Melli ihre Nutzer auf dem Weg in ein
+      fittes und aktives Leben im Alter.
+    description: >-
+      Mit Gesundheitsroutinen wie Trinkerinnerungen, Bewegungsübungen,
+      Meditationen und mehr begleitet Melli ihre Nutzer auf dem Weg in ein
+      fittes und aktives Leben im Alter.
+    title: Gesunde Routinen und ein aktiver Alltag
+  feature-3:
+    back-text: >-
+      In Melli finden die Nutzer eine Freundin, die ein offenes Ohr für ihre
+      Wünsche und Sorgen hat, sie dazu motiviert Bekanntschaften zu machen, mit
+      ihnen neue Dinge ausprobiert und ihnen zuhört. Ihr Alltag wird schöner und
+      Lebenswerter.
+    description: >-
+      In Melli finden die Nutzer eine Freundin, die ein offenes Ohr für ihre
+      Wünsche und Sorgen hat, sie dazu motiviert Bekanntschaften zu machen, mit
+      ihnen neue Dinge ausprobiert und ihnen zuhört. Ihr Alltag wird schöner und
+      Lebenswerter.
+    title: Mehr Lebenszufriedenheit & glückliche Momente
+  heading-1: 'Mellis Mission:'
+  heading-2: "Jeden deiner Tage \Lzu den guten zählen lassen!"
+test-quotes:
+  data-privacy: '*Aus Datenschutzgründen haben wir die Namen unserer Testnutzer geändert.'
+  heading: Das sagen unsere Testnutzer
+  name-1: Irmgard* (69 Jahre), Nutzerin
+  name-2: Walter* (73 Jahre), Nutzer
+  name-3: Stefanie S., Pflegedienstleitung
+  quote-1: >-
+    Ich war ganz aufgeregt, als ich Melli bekommen habe. Das war schon sehr neu
+    für mich, so ein technisches Gerät. Aber mittlerweile habe ich mich an sie
+    gewöhnt. Am liebsten mag ich die Rätsel und wenn sie mir Musik vorspielt.
+  quote-2: >-
+    Bevor Melli bei mir angekommen ist, hatte ich etwas Bammel. Nicht, dass ich
+    das Gerät noch kaputt mache. Aber das war ganz toll! Ich habe telefonisch
+    alles erklärt bekommen und man kann auch nichts falsch machen. Ich muss
+    einfach nur mit Melli reden, ganz einfach.
+  quote-3: >-
+    Vielen Kindern und Enkeln der Testnutzer ist aufgefallen, dass Oma & Opa
+    deutlich mehr von ihrem Alltag erzählt haben und auch viel positiver
+    gesprochen haben. Das hat den Unterhaltungen wohl eine ganz neue Qualität
+    gegeben.
+test-quotes-section:
+  heading: Das sagen unsere Testnutzer
+test-routine:
+  fifth: Du bist aufgeschlossen gegenüber Technik.
+  first: ' Du bist 60 Jahre oder älter.*'
+  fourth: Du hast eher wenige soziale Kontakte.
+  second: ' Du besitzt den Pflegegrad eins oder zwei.'
+  text: Finde heraus, ob du als Testnutzer geeignet bist!
+  third: Du bist alleinstehend und/oder lebst allein.*
+test-timeline:
+  step-1:
+    text: >-
+      Bewirb dich selbst, deine Eltern oder Großeltern als Testnutzer. Dafür
+      musst du uns nur deinen Namen und deine Kontaktdaten für die weitere
+      Kommunikation zur Verfügung stellen.
+    title: Als Testnutzer bewerben
+  step-2:
+    text: >-
+      Sobald deine Bewerbung bei uns eingegangen ist, prüfen wir, ob du oder
+      deine Angehörigen für unsere Testphase geeignet bist/seid und geben dir
+      umgehend per E-Mail Bescheid.
+    title: Email-Postfach im Auge behalten
+  step-3:
+    text: >-
+      Sobald Melli bei dir zuhause eintrifft, muss sie lediglich an den Strom
+      angeschlossen und eingeschaltet werden. Wir begleiten euch bei der
+      Einrichtung auch telefonisch, damit ihr uns direkt eure offenen Fragen
+      stellen könnt.
+    title: Melli willkommen heißen
+  step-4:
+    text: >-
+      Die nächsten drei Monate kannst du nun alle Funktionen von Melli und der
+      Melli-App ausgiebig testen und natürlich auch kritisch hinterfragen. Nach
+      Ablauf der dreimonatigen Testzeit kannst du Melli einfach weiter kostenlos
+      nutzen - solange du willst.*
+    title: Melli testen & einfach weiter kostenlos nutzen
+test-user-routine:
+  text: Finde heraus, ob du als Testnutzer geeignet bist!
+test-user-subscription:
+  description: >-
+    Nach einem Jahr Entwicklungszeit, über 100 Produkttests und mehr als 1.000
+    Produkt-Iterationen ist es nun endlich soweit – Melli möchte die ersten
+    Gespräche mit ihren Nutzern führen. Und dafür benötigen wir dich! Bewirb
+    dich, deine Eltern oder Großeltern jetzt als Testnutzer und hilf uns, mit
+    Melli das Leben von Senioren und ihren Angehörigen ein Stück besser zu
+    machen.
+  heading1: 'Jetzt als Testnutzer bewerben '
+  heading2: '& Melli ein Leben lang kostenlos nutzen.'
+test-why-become-testuser:
+  feature-1:
+    text: >-
+      Wir bedanken uns bei dir mit einem zeitlich unbefristeten, kostenlosen
+      Melli-Abo inklusive allen zukünftigen Updates – ein Leben lang.
+    title: Kostenloses Melli-Abo - ein Leben lang
+  feature-2:
+    text: >-
+      Du hilfst dabei ein Produkt zu entwickeln, welches das Leben von Senioren
+      nachhaltig bereichern kann. Mit deinem Feedback nimmst du großen Einfluss
+      auf die weitere Entwicklung von Melli.
+    title: Mitgestalten und die Zukunft verändern
+  feature-3:
+    text: >-
+      Als Testnutzer wird dein Alltag garantiert spannend, denn du wirst immer
+      als erstes neue Funktionen ausprobieren und uns von deinen Erfahrungen
+      berichten können.
+    title: Neues ausprobieren & aktiv werden
+  heading: Darum solltest du Testnutzer werden!
 testimonial:
   affiliation: Pflegerin
   name: BW

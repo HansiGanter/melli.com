@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { fireShopEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const quotes = [
@@ -22,7 +21,7 @@ const quotes = [
 </script>
 
 <template>
-  <div class="grid gap-16 mx-auto items-center">
+  <div class="grid gap-8 lg:gap-16 mx-auto items-center">
     <div class="grid gap-4 lg:gap-6 text-center max-w-6xl mx-auto justify-items-center">
       <h1 class="text-white font-semibold text-4xl lg:text-5xl">
         {{ t('quotes-section.heading') }}
@@ -33,7 +32,7 @@ const quotes = [
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
       <div v-for="quote in quotes" :key="quote.name" class="bg-primary-200/10 flex flex-col gap-5 rounded-3xl shadow-lg pb-6 overflow-clip">
-        <div class="flex-shrink-0 justify-center flex rounded-3xl overflow-hidden h-64">
+        <div class="flex-shrink-0 justify-center flex rounded-t-3xl overflow-hidden h-64">
           <img
             class="object-cover w-full"
             :src="quote.image"
