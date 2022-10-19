@@ -44,7 +44,7 @@ const open = () => {
       </div>
     </div>
     <p class="lg:text-right font-normal text-sm text-gray-900">
-      *Bei Weiternutzung fällt eine einmalige Gebühr für die Hardware in Höhe von 149€ an.
+      {{ t('test-timeline.note') }}
     </p>
   </div>
   <Modal :show="subscriptionModal" @close="subscriptionModal = false">

@@ -10,7 +10,7 @@
           to="/test-user"
         >
           <span class="sr-only">Melli</span>
-          <logo />
+          <Logo />
         </router-link>
       </div>
     </div>

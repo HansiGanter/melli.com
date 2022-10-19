@@ -517,7 +517,7 @@ secure-melli:
 shop:
   choose-subscription:
     advance-plan: Erweitert
-    base-plan: Base
+    base-plan: Basis
     header: Wählen Sie Ihr Melli-Abonnement
 stats-section:
   accessibility: Barrierefreie Bedienung
@@ -696,6 +696,9 @@ test-routine:
   text: Finde heraus, ob du als Testnutzer geeignet bist!
   third: Du bist alleinstehend und/oder lebst allein.*
 test-timeline:
+  note: >-
+    *Bei Weiternutzung fällt eine einmalige Gebühr für die Hardware in Höhe von
+    149€ an.
   step-1:
     text: >-
       Bewirb dich selbst, deine Eltern oder Großeltern als Testnutzer. Dafür

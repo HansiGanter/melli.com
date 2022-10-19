@@ -13,7 +13,9 @@ const showNav = ref(false)
     <div class="container mx-auto px-4 lg:px-0">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-x-8">
-          <Logo />
+          <RouterLink to="/">
+            <Logo />
+          </RouterLink>
           <div class="lg:flex hidden items-center gap-x-4">
             <RouterLink to="/" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
               {{ t('navbar.about') }}
@@ -70,7 +72,7 @@ const showNav = ref(false)
           <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
-          <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2">
+          <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireKarriereEvent">
             {{ t('navbar.karriere') }}
           </RouterLink>
           <!-- <RouterLink to="/login" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">

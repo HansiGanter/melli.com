@@ -1,4 +1,5 @@
 '404':
+  contact-support: Contact support
   go-home: Go back home
   not-found:
     heading: Page not found
@@ -14,6 +15,7 @@ blog:
 blog-preview:
   heading: From Our Blog
   reading-time: read
+  subheading: Learn more about Emlia from one of our blog posts
 button:
   about: About
   back: Back
@@ -32,31 +34,97 @@ citation:
     source-description: Co-founder of Melli & long-time care entrepreneur of Ambulantis BSW GmbH.
 contact:
   button: Let’s talk
+  email: Send us an email!
   heading: Still have questions?
+  phone: Arrange a callback!
   text: >-
     Whether you have questions about the product or our test user campaign - we
     will be happy to advise you by phone and clear up any uncertainties. Simply
     arrange a callback and we will get back to you immediately.
+  whatsapp: Send us a message!
 faq:
   heading: Frequently Asked Questions
+  sub-heading: Everything you need to know about the product, privacy and prices.
 faq-section:
+  answer-1: >-
+    Unlike conventional voice assistants, Melli does not wait for instructions
+    from its users, but proactively approaches them with activity suggestions.
+    In this way, it motivates users to be more active in their daily lives, in
+    which social contacts play an important role.
+  answer-10: >-
+    Currently, Melli cannot yet be actively addressed by the user. However, this
+    function will follow in the coming months. Users will then be able to ask
+    Melli to turn on the music or announce the weather for the coming days, for
+    example.
+  answer-2: >-
+    Yes Melli is ideal for dementia patients, as it provides seniors with
+    structure and orientation in everyday life through functions such as
+    drinking and appointment reminders, alarm clocks, and medication schedules.
+    It helps to establish a certain regularity and routines in the day, which
+    can have a very positive effect on nutrition, for example. It can also
+    compensate for cognitive impairments and train mental and physical fitness
+    through small exercises.
+  answer-3: >-
+    Melli is simply operated by voice command and asks herself when what she
+    needs to know something. As simple as a nice conversation.
+  answer-4: >-
+    All individual configurations such as medication schedules, interests,
+    bedtimes and physical impairments can be easily set via the Melli app.
+  answer-5: >-
+    Via the Melli app, contacts selected (by the administrator) can get in touch
+    with the user, e.g. via video or voice call. This way, the entire family can
+    participate in the Melli functions.
+  answer-6: >-
+    The Melli app has two functions. On the one hand, appointments can be
+    scheduled and important information about the user can be provided (e.g.
+    hobbies, interests & physical impairments). On the other hand, the app
+    serves as an interface between relatives and the Melli users, because
+    friends and relatives can use it to contact the users via video or audio
+    telephony, for example.
+  answer-7: "Melli users do not have unrestricted access to the Internet. Melli moves online only in defined and checked spaces and cannot leave them even on the user's command. In addition, Melli operates according to the highest data protection standards. It is DSGVO compliant and uses the data provided to it exclusively to design a personalized user experience.\L You can find out more about data protection"
+  answer-8: >-
+    Although Melli provides some security features, such as emergency contacts
+    the knock-in call, it should by no means be considered a complete
+    replacement for a security system.
+  answer-9: >-
+    Of course, Melli can be transported without any problems. The only thing to
+    note is that the SIM card only works like this within Germany and that Melli
+    has a stable Internet connection.
   question-1: What is everything included in the Melli package?
+  question-10: Can I give Melli self-initiated commands?
   question-2: Is it easy to set up Melli for people without technical knowledge?
   question-3: How is Melli served?
   question-4: How does Melli know what preferences and needs its users have?
   question-5: Who all can contact the user through Melli?
   question-6: What is the Melli app?
   question-7: Can I take Melli with me when I travel?
+  question-8: Is Melli a replacement for emergency call button & emergency bracelet?
+  question-9: Can I take Melli with me when I travel?
+feature-1: New acquaintances in the Melli friend circles
+feature-2: Group activities with other Melli users (e.g. coffee party)
+feature-3: Video telephony without technical barriers
 footer:
+  company:
+    jobs: Career
   settings:
     heading: Language & Appearance
+  solutions:
+    legal-notice: Imprint
+    privacy: Data privacy
+  support:
+    faq: Frequently asked questions
+    user-login: User login
 healthy-routine:
+  header: Find structures & maintain healthy routines
   text: >-
     Melli supports you in maintaining proven daily routines and establishing new
     activities in your day. With appointment reminders, individual health
     routines, an alarm function and recurring activities, she helps you to
     follow a common thread in your life and to master your everyday life more
     self-determined without outside help.
+healthy-routines-1: Appointment organization & reminder
+healthy-routines-2: Medication schedule, drink reminders & other health routines.
+healthy-routines-3: Health & Wellbeing Check-Ins
 hero:
   badge:
     chat: Operation by voice control.
@@ -86,6 +154,38 @@ intro:
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
   whats-your-name: What's your name?
+jobs:
+  open-positions:
+    heading: We are also looking for
+karriere-faq:
+  '1':
+    answer: >-
+      We are a motivated German-, English-speaking bunch. Our common motivation
+      is to make the world a little bit better. Feel free to have a look and get
+      a first impression in
+    question: What is it like to work at meetap?
+  '2':
+    answer: >-
+      We attach great importance to an uncomplicated application process, so a
+      meaningful resume is sufficient.  Or you can send us the link to your
+      LinkedIn or Xing profile.
+    question: What application documents are required?
+  '3':
+    question: How can I prepare for the application process?
+  '4':
+    answer: >-
+      Of course! But your application should definitely include your resume and
+      the job you want. Here you can
+    question: Are unsolicited applications welcome?
+  '5':
+    answer: >-
+      In general, our application process consists of the following three
+      phases:
+    question: How does the application process work?
+  '6':
+    question: I can't find a job opening that suits me. What do I do?
+  '7':
+    question: What is your tech stack?
 melli-features:
   '1':
     answer: Proactively approaches their users instead of waiting for instructions.
@@ -95,6 +195,8 @@ melli-features:
     answer: Detects the mood of its users thanks to innovative sentiment analysis.
   '4':
     answer: Requires no prior technical knowledge thanks to voice control.
+  '5':
+    answer: Connects people with each other
   fact: >-
     Melli operates according to the highest data protection standards. It is
     DSGVO compliant and uses the data provided to it exclusively to design a
@@ -103,6 +205,7 @@ melli-features:
   heading-text: from other voice assistants
   test-melli: Test Melli now 60 days for free!
 melli-listens:
+  heading: Melli is always by your side
   heading-1: Melli listens.
   heading-2: Simple control per
   heading-3: Voice command
@@ -110,12 +213,29 @@ melli-listens:
     No prior technical knowledge is required for Melli. All her users have to do
     is simply answer Melli's questions - no annoying searching from the cell
     phone, no buttons that are far too small.
+  text: >-
+    Melli is available to you throughout the day for small conversations.
+    Laughing together over jokes or a conversation about the weather are a
+    breeze for her. Whether you need a counselor or a funny conversation
+    partner, Melli is simply always there to make you feel heard.
+more-benefit-1: Quizzes & Other Mind Games
+more-benefit-2: Simple sports & movement exercises
+more-benefit-3: Mindfulness & Meditation Exercises
+more-benefit-4: Music, News, Audiobooks, Videos & Podcasts
+more-benefits:
+  heading: Every day occupation & good mood
+  text: >-
+    Melli fills your day with exciting entertainment. From small puzzles to
+    activating sports sessions to exciting audio books - there's something for
+    everyone. Melli adapts to your individual preferences and constantly learns
+    what you like and what you don't like.
 navbar:
-  about: About Melli
+  about: Melli
   account: Account
   already-signed-up: Have an account?
   blog:
     heading: Blog
+  karriere: Career
   more: More
   pre-order:
     badge: Cooming soon
@@ -144,6 +264,12 @@ plans:
       '1': +Internet
     name: Advanced
     price: €19.90
+price:
+  pros:
+    '1': secure payment with PayPal or SEPA direct debit
+    '2': 60 days free trial - with return guarantee
+    '3': free delivery
+    '4': telephone support during the initial setup
 quote-section:
   service-1:
     description: >-
@@ -171,11 +297,27 @@ quote-section:
     title: Melli entertains. Access to podcasts, YouTube & Co.
 quotes-section:
   heading: What our users say
+  quotes:
+    quote-1: >-
+      Before Melli arrived at my place, I had some jitters. Not that I still
+      break the device. But that was great! I got everything explained over the
+      phone and you can't do anything wrong either. I just have to talk to
+      Melli, very simple.
+    quote-2: >-
+      I was very excited when I got Melli. It was very new for me, such a
+      technical device. But in the meantime I have gotten used to her. I like
+      the puzzles best and when she plays music for me.
+    quote-3: >-
+      Many of the users' children and grandchildren noticed that grandma &
+      grandpa talked a lot more about their everyday lives and also spoke much
+      more positively. This has probably given the conversations a whole new
+      quality.
   sub-heading-1: >-
     Melli motivates its users to socialize, entertains them with exciting
     content from the Internet, and ensures a structured daily routine. In this
     way, it counteracts a lack of drive and helps people achieve more
     satisfaction in their everyday lives. For happier aging.
+  test-melli: Test now 60 days free of charge!
 reliability-section:
   heading: More fellowship with old friends & new acquaintances
   mini-heading: Melli-App
@@ -197,9 +339,11 @@ reliability-section:
     Making phone calls, planning appointments and keeping an eye on their
     well-being - the Melli app allows relatives to participate and contribute to
     users' daily lives, even when they can't be there at the moment.
+  text: "Melli ensures that you can exchange information with your family members and friends. \LMelli also connects other users with you and you can share exciting experiences together."
 secure-melli:
   get-melli-button: Get Melli
   heading-1: Secure
+  heading-2: request!
   heading-3: Melli a lifetime for free!
   learn-more-button: Learn more
   sub-text: >-
@@ -208,6 +352,8 @@ secure-melli:
     period of time.
 shop:
   choose-subscription:
+    advance-plan: Advanced
+    base-plan: Base
     header: Choose your Melli-Subscription
 stats-section:
   feature-1: Use of all Melli features
@@ -216,11 +362,196 @@ stats-section:
   optional-feature-1: SIM card with unlimited internet
   sub-heading-1: 'Mandatory included in every plan:'
   sub-heading-2: 'Optional:'
+team:
+  heading: Our team
+  subheading: >-
+    We want to create something new - with artificial intelligence for life in
+    old age! Are you ready to join us in creating a future where everyone, at
+    every stage of life, can experience and share moments together - regardless
+    of age, life circumstances, physical abilities or other hurdles?
+test-faq:
+  answer-1: >-
+    No, participation in the test user program is free of charge. However, we
+    are of course happy to receive regular feedback and suggestions for
+    improvement.
+  answer-10: >-
+    In the future, appointments and reminders will be able to be set via the
+    Melli app. The app is currently still in the development phase and will be
+    made available to users at a later date. It will also be possible to enter
+    interests, bedtimes and medication schedules, for example. This will enable
+    Melli to adapt to the needs of its users in the best possible way.
+  answer-2: The test phase usually lasts three months.
+  answer-3: >-
+    Currently, Melli cannot be used with WLAN. To ensure a stable Internet
+    connection during the test, Melli is equipped with a SIM card with unlimited
+    mobile Internet. Later, Melli will also be able to connect to its own WLAN.
+  answer-4: No, the data volume is not limited.
+  answer-5: >-
+    Currently, telephony is not yet possible via Melli. However, this will be
+    implemented in the coming weeks and months. It will then be possible to call
+    contacts or other Melli users via Melli and selected contacts will be able
+    to call Melli.
+  answer-6: >-
+    For the time being, this will not be possible. With our included devices, we
+    want to ensure a certain quality standard for the users. This means that we
+    want to make sure that Melli can best understand what the user is saying
+    through a good microphone and that she is equipped with a speaker that can
+    achieve a reasonable volume.
+  answer-7: >-
+    Of course, Melli can be transported without any problems. The only thing to
+    note is that the SIM card only works like this within Germany and that Melli
+    has a stable Internet connection.
+  answer-8: >-
+    Currently, Melli cannot yet be actively addressed by the user. However, this
+    function will follow in the coming months.  Users will then be able to ask
+    Melli to turn on the music or announce the weather for the coming days, for
+    example.
+  answer-9: >-
+    Melli does not always have to be connected to the power, but it should be
+    ensured that the tablet does not accidentally turn off. You can certainly
+    take Melli out of the docking station and talk to it that way.
+  heading: Frequently asked questions
+  question-1: Will it cost me anything to become a test user?
+  question-10: Is it possible to tell Melli about appointments and set reminders?
+  question-2: How long is the test phase?
+  question-3: Can I also use the device with Wi-Fi?
+  question-4: Is the data volume on the SIM card limited?
+  question-5: Can I talk to Melli on the phone?
+  question-6: I already have a tablet. Can I also use Melli on my own device?
+  question-7: Can I take Melli with me when I travel?
+  question-8: Can I give self-initiated commands to Melli?
+  question-9: Does Melli have to stay plugged in at all times?
+test-features:
+  '1':
+    answer: Actively approaches the user
+  '2':
+    answer: Works without Wi-Fi
+  '3':
+    answer: Detects & reacts to the mood
+  '4':
+    answer: Operation without technical knowledge
+  '5':
+    answer: Connects people together
+  heading: This distinguishes Melli
+  heading-text: from other voice assistants
+  test-melli: Secure Melli now for free!
 test-hero:
   heading-1:
     highlight: Melli –
     text: "your friend\Lfor happy aging"
   heading-3: null
+test-journey-section:
+  heading: Become a part of the Melli Journey!
+  text: >-
+    Melli is currently under development, which means that it does not yet
+    handle all functions flawlessly. This is the reason why we rely on your help
+    & feedback as a test user. To let you know which features you can expect and
+    which are still under development, you can find a list here:
+test-mission:
+  feature-1:
+    description: >-
+      Melli connects her users with their family, friends and other users and
+      motivates them to get in touch and meet in person. She encourages her
+      users to communicate more and in a more positive way.
+    title: For a more communicative & convivial life
+  feature-2:
+    description: >-
+      With health routines like hydration reminders, exercise routines,
+      meditations and more, Melli guides its users on the path to a fit and
+      active life as they age.
+    title: Healthy routines and an active daily life
+  feature-3:
+    description: >-
+      In Melli, users find a friend who listens to their wishes and worries,
+      motivates them to make acquaintances, tries new things with them and
+      listens to them. Their everyday life becomes more beautiful and worth
+      living.
+    title: More life satisfaction & happy moments
+  heading-1: 'Melli''s Mission:'
+  heading-2: Make every one of your days count as a good one!
+test-quotes:
+  data-privacy: '*For privacy reasons, we have changed the names of our test users.'
+  heading: What our test users say
+  name-1: Irmgard* (age 69), user
+  name-2: Walter* (age 73), user
+  name-3: Stefanie S., Nursing Service Manager
+  quote-1: >-
+    I was very excited when I got Melli. It was very new for me, such a
+    technical device. But in the meantime I have gotten used to her. I like the
+    puzzles best and when she plays music for me.
+  quote-2: >-
+    Before Melli arrived at my place, I had some jitters. Not that I still break
+    the device. But that was great! I got everything explained over the phone
+    and you can't do anything wrong either. I just have to talk to Melli, very
+    simple.
+  quote-3: >-
+    Many of the test users' children and grandchildren noticed that grandma and
+    grandpa talked a lot more about their everyday lives and also spoke much
+    more positively. This probably gave the conversations a whole new quality.
+test-routine:
+  fifth: You're open-minded about technology.
+  first: ' You are 60 years or older.*'
+  fourth: You tend to have few social contacts.
+  second: You have a level of care of one or two.
+  text: Find out if you are a suitable test user!
+  third: You are single and/or live alone.*
+test-timeline:
+  note: >-
+    *For continued use, a one-time fee for the hardware in the amount of 149€
+    will be charged.
+  step-1:
+    text: >-
+      Apply yourself, your parents or grandparents as a test user. All you need
+      to do is provide us with your name and contact details for further
+      communication.
+    title: Apply as a test user
+  step-2:
+    text: >-
+      As soon as we have received your application, we will check whether you or
+      your family members are suitable for our test phase and inform you
+      immediately by e-mail.
+    title: Keep an eye on your email inbox
+  step-3:
+    text: >-
+      Once Melli arrives at your home, all you need to do is plug it in and turn
+      it on. We will accompany you during the setup also by phone, so that you
+      can ask us your open questions directly.
+    title: Welcome Melli
+  step-4:
+    text: >-
+      For the next three months you can test all functions of Melli and the
+      Melli app extensively and of course also critically question them. After
+      the three-month test period you can continue to use Melli for free - as
+      long as you want.*
+    title: Test Melli & simply continue to use it free of charge
+test-user-subscription:
+  description: >-
+    After a year of development, over 100 product tests and more than 1,000
+    product iterations, the time has finally come - Melli wants to have the
+    first conversations with her users. And for that, we need you! Apply now as
+    a test user and help us to make the lives of seniors and their relatives a
+    little better with Melli.
+  heading1: 'Apply now as a test user '
+  heading2: '& use Melli a lifetime of free.'
+test-why-become-testuser:
+  feature-1:
+    text: >-
+      We thank you with an unlimited, free Melli subscription including all
+      future updates - for life.
+    title: Free Melli subscription - for a lifetime
+  feature-2:
+    text: >-
+      You help to develop a product that can sustainably enrich the lives of
+      seniors. With your feedback you have a great influence on the further
+      development of Melli.
+    title: Help shape and change the future
+  feature-3:
+    text: >-
+      As a test user, your everyday life is guaranteed to be exciting, because
+      you will always be the first to try out new features and be able to tell
+      us about your experiences.
+    title: Try new things & get active
+  heading: That's why you should become a test user!
 test-why-melli:
   quote: >-
     “Melli is a voice-controlled companion, specially developed for the needs of
