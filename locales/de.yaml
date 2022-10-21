@@ -560,16 +560,15 @@ test-faq:
     die Bedürfnisse ihrer Nutzer  anpassen kann.
   answer-2: Die Testphase dauert in der Regel drei Monate.
   answer-3: >-
-    Aktuell kann Melli nicht mit WLAN genutzt werden. Um eine stabile
-    Internetverbindung während des Tests zu gewährleisten ist Melli  mit einer
-    SIM-Karte mit unbegrenztem mobilen Internet ausgestattet. Später wird Melli
-    auch mit dem eigenen WLAN verbunden werden  können.
+    Um eine stabile Internetverbindung während des Tests zu gewährleisten ist
+    Melli mit einer SIM-Karte mit unbegrenztem mobilen Internet ausgestattet.
+    Bei Bedarf kann man Melli aber auch mit dem eigenen WLAN verbinden.
   answer-4: Nein, das Datenvolumen ist nicht begerenzt.
   answer-5: >-
-    Aktuell ist über Melli noch keine Telefonie möglich. Diese soll aber in den
-    kommenden Wochen und Monaten implementiert werden. Es  wird dann möglich
-    sein, über Melli Kontakte oder andere Melli-Nutzer anzurufen und ausgewählte
-    Kontakte werden Melli anrufen  können.
+    Ausgewählte Angehörige können mittels der Melli-App ihre zugewiesenen
+    Melli-Nutzer anrufen. Außerdem kann man, wenn man sich dafür anmeldet, an
+    einigen Gruppenaktivitäten teilnehmen bei denen verschiedene Melli-Nutzer
+    per Video-Call miteinander verbunden werden.
   answer-6: >-
     Vorerst wird das nicht möglich sein. Mit unseren mitgelieferten Geräten
     möchten wir einen gewissen Qualitätsstandard für die Nutzer  gewährleisten.
