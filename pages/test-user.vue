@@ -5,7 +5,7 @@ const { t } = useI18n()
 <template>
   <!-- Hero -->
   <Hero>
-    <TestNavBar />
+    <TestNavBar class="w-full lg:w-2/3 justify-right" />
   </Hero>
 
   <!-- Why Melli -->

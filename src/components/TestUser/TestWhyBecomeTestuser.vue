@@ -41,8 +41,8 @@ const features = ref([
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl mx-auto rounded-2xl lg:-mt-60">
-      <img src="https://assets.melli.com/images/stock/granny-with-dog.webp" class="w-full">
+    <div class="relative overflow-hidden lg:max-w-5xl mx-auto rounded-2xl lg:-mt-60">
+      <img src="https://assets.melli.com/images/stock/granny-with-dog-1024.webp" class="w-full">
     </div>
   </div>
 </template>

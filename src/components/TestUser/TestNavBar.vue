@@ -3,17 +3,10 @@
 </script>
 
 <template>
-  <nav class="bg-transparent py-8 z-24 fixed top-0  ">
-    <div class="container mx-auto px-5 lg:px-0">
-      <div class="flex">
-        <router-link
-          to="/test-user"
-        >
-          <span class="sr-only">Melli</span>
-          <Logo />
-        </router-link>
-      </div>
-    </div>
+  <nav class="">
+    <router-link to="/test-user">
+      <Logo />
+    </router-link>
   </nav>
 </template>
 
