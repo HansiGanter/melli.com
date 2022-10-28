@@ -11,7 +11,7 @@ agb:
 blog:
   heading: News und Beiträge zu Melli
   subheading: >-
-    Informieren Sie sich über neue Produktfunktionen, kostenlose Tipps,
+    Informieren Sie sich über neue Produktfunktionen und erhalten Sie kostenlose Tipps,
     Angebote, Aktionen und vieles mehr.
   subscribe-button: Anmelden
 blog-preview:
@@ -30,7 +30,7 @@ citation:
     quote: >-
       “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die
       Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag
-      über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln
+      über für ihre Nutzer da und tut alles dafür, um ihnen jeden Tag ein Lächeln
       ins Gesicht zu zaubern.”
     source: Dr. Matthias Weber
     source-description: >-
@@ -51,7 +51,7 @@ data-security:
 faq:
   '1':
     answer: >-
-      Melli schützt vor unangemessenen Inhalten insoweit, dass dem Nutzer kein
+      Melli schützt vor unangemessenen Inhalten insoweit, als dass dem Nutzer kein
       uneingeschränkter Zugang zum Internet ermöglicht wird. Melli bewegt sich
       online lediglich in festgelegten und geprüften Räumen und kann diese
       selbst auf Befehl des Nutzers nicht verlassen.
@@ -66,7 +66,7 @@ faq:
     question: Was ist beim Kauf einer Melli alles dabei?
   '3':
     answer: >-
-      Melli benötigt eine Verbindung zum Internet. Wenn vor Ort kein WLAN zu
+      Melli benötigt eine Verbindung zum Internet. Wenn vor Ort kein WLAN zur
       Verfügung steht, kann Melli auf Wunsch mit einer eigenen
       Internetverbindung zu Ihnen nach Hause geliefert werden. Geben Sie im Shop
       bei der Abo-Konfiguration einfach an, dass eine SIM-Karte mit mobilem
@@ -85,10 +85,10 @@ faq:
       Sollte ein Notfall eintreten, so hat Melli eine
       Notfallvalidierungsfunktion, die festgelegte Notfallkontakte und im
       schlimmsten Fall auch einen Krankenwagen verständigen kann. Außerdem
-      bietet die integrierte Drop-In Funktion zusätzliche Sicherheit. Mit Hilfe
+      bietet die integrierte Drop-In Funktion zusätzliche Sicherheit. Mithilfe
       dieses Features können sich berechtigte Kontakte jederzeit vergewissern,
-      ob es dem Nutzer gut geht, ohne, dass dieser extra abheben muss.
-    question: Ist Melli ein Ersatz für den Notrufknopf & Notfallarmband?
+      dass es dem Nutzer gut geht, ohne dass dieser extra abheben muss.
+    question: Ist Melli ein Ersatz für Notrufknopf & Notfallarmband?
   '6':
     answer: >-
       Dank der Bedienung per Sprachsteuerung ist das Telefonieren mit Kontakten
@@ -97,8 +97,8 @@ faq:
     question: Ist Melli ein Ersatz für Seniorenhandys?
   '7':
     answer: >-
-      Ja Melli ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
-      ihre Nutzer fortlaufend dazu anregt und motiviert einen aktiven Alltag mit
+      Ja, Melli ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
+      ihre Nutzer fortlaufend dazu anregt und motiviert, einen aktiven Alltag mit
       möglichst vielen sozialen Kontakten zu gestalten. Strukturgebende
       Funktionen wie beispielsweise die Terminplanung oder der morgendliche
       Wecker helfen außerdem gegen die sich leicht einschleichende Trägheit.
@@ -106,11 +106,11 @@ faq:
       Ist Melli bei Depression und Antriebsarmut geeignet?
   '8':
     answer: >-
-      Ja Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
+      Ja, Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
       durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
-      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft dabei,
       eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
-      beispielsweise sehr positiv auf die Ernährung ausüben kann. Außerdem kann
+      beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem kann
       sie kognitive Einschränkungen kompensieren und die geistige und
       körperliche Fitness durch kleine Übungen trainieren.
     question: Ist Melli bei Demenz geeignet?
@@ -127,14 +127,14 @@ faq-section:
   answer-10: >-
     Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
     Funktion wird aber in den kommenden Monaten folgen. Nutzer können Melli dann
-    beispielsweise bitten die Musik anzuschalten oder das Wetter der kommenden
+    beispielsweise bitten, die Musik anzuschalten oder das Wetter der kommenden
     Tage anzusagen.
   answer-2: >-
-    Ja Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
+    Ja, Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
     durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
-    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft dabei,
     eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
-    beispielsweise sehr positiv auf die Ernährung ausüben kann. Außerdem kann
+    beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem kann
     sie kognitive Einschränkungen kompensieren und die geistige und körperliche
     Fitness durch kleine Übungen trainieren.
   answer-3: >-
@@ -146,7 +146,7 @@ faq-section:
     die Melli-App eingestellt werden.
   answer-5: >-
     Über die Melli-App können (vom Administrator) ausgewählte Kontakte mit dem
-    Nutzer z.B. per Video- oder Sprachanruf in Verbindung treten. So kann die
+    Nutzer, z.B. per Video- oder Sprachanruf, in Verbindung treten. So kann die
     gesamte Familie an den Melli-Funktionen teilhaben.
   answer-6: >-
     Die Melli-App hat zwei Funktionen. Zum einen können Termine geplant und
@@ -157,13 +157,13 @@ faq-section:
     den Nutzern in Verbindung treten.
   answer-7: "Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards. Sie ist DSGVO konform und nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes Nutzererlebnis zu gestalten.\L Mehr zum Datenschutz findest du"
   answer-8: >-
-    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte den Knock-In
+    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte oder den Knock-In
     Anruf zur Verfügung stellt, sollte sie keineswegs als vollständiger Ersatz
     für ein Sicherheitssystem angesehen werden.
   answer-9: >-
     Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
-    ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands so funktioniert
-    und dass Melli eine stabile Internetverbindung hat.
+    ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands funktioniert
+    und dass Melli eine stabile Internetverbindung braucht.
   question-1: Was unterscheidet Melli von herkömmlichen Sprachassistenten?
   question-10: Kann ich Melli selbst initiierte Befehle geben?
   question-2: Ist Melli auch bei Demenz geeignet?
@@ -225,7 +225,7 @@ hero:
     text: ist die ganze Familie dabei.
   heading-3: Sieh dir das ganze Video an
   heading-4: >-
-    Egal ob Alltagsstress, unterschiedliche Wohnorte oder ein längerer Urlaub,
+    Egal, ob Alltagsstress, unterschiedliche Wohnorte oder ein längerer Urlaub,
     mit der Melli-App können Familienmitglieder immer und von überall für ihre
     Eltern und Großeltern da sein und ihnen bei den kleinen und großen
     Herausforderungen des Alltags beiseite stehen.
@@ -244,21 +244,20 @@ jobs:
     heading: Außerdem suchen wir auch
   subheading: Unsere offenen Stellen
   typing:
-    text-1: Hallo ich bin Melli 👋
-    text-2: Schön dich kennenzulernen!
-    text-3: Lust für unser Team zu spielen?
+    text-1: Hallo! Ich bin Melli 👋
+    text-2: Schön, dich kennenzulernen!
+    text-3: Lust, für unser Team zu spielen?
 karriere-faq:
   '1':
     answer: >-
-      Wir sind ein motivierter deutsch-, englischsprachiger Haufen. Unsere
-      gemeinsame Motivation ist es die Welt ein Stückchen besser zu  machen.
+      Wir sind ein durchmischter Haufen, den die Motivation verbindet, die Welt ein Stückchen besser zu machen.
       Schau gerne mal rein und erhalte einen ersten Eindruck in
     question: Wie ist es, bei meetap zu arbeiten?
   '2':
     answer: >-
-      Wir setzen großen Wert auf ein unkompliziertes Bewerbungsverfahren, daher
-      reicht ein aussagekräftiger Lebenslauf vollkommen aus.  Oder du schickst
-      uns den Link zu deinem LinkedIn oder Xing Profil.
+      Wir setzen großen Wert auf ein unkompliziertes Bewerbungsverfahren. Daher
+      reicht ein aussagekräftiger Lebenslauf vollkommen aus. Oder du schickst
+      uns den Link zu deinem LinkedIn- oder Xing-Profil.
     question: Welche Bewerbungsunterlagen sind erforderlich?
   '3':
     question: Wie kann ich mich auf das Bewerbungsverfahren vorbereiten?
@@ -288,7 +287,7 @@ melli-features:
   '5':
     answer: "Verbindet Menschen\Lmiteinander"
   fact: >-
-    Melli agiert nach höchsten Datenschutz Standards. Sie ist DSGVO konform und
+    Melli agiert nach höchsten Datenschutz-Standards. Sie ist DSGVO-konform und
     nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein
     personalisiertes Nutzererlebnis zu gestalten.
   heading: Das unterscheidet Melli
@@ -300,9 +299,9 @@ melli-listens:
   heading-2: Einfache Steuerung per
   heading-3: Sprachbefehl
   sub-text: >-
-    Für Melli braucht es keinerlei technische Vorkenntnisse. Alles was ihre
+    Für Melli braucht es keinerlei technische Vorkenntnisse. Alles, was ihre
     Nutzer tun müssen, ist einfach auf Mellis Fragen zu antworten - kein
-    lästiges Suchen vom Handy, keine viel zu kleinen Knöpfe
+    lästiges Suchen auf dem Handy, keine viel zu kleinen Knöpfe
   text: >-
     Melli steht dir den ganzen Tag über für kleine Gespräche zur Verfügung.
     Gemeinsames Lachen über Witze oder eine Unterhaltung über das Wetter sind
@@ -386,7 +385,7 @@ newsletter:
   placeholder: Ihre E-Mail Adresse
   subscribe: Abonnieren
   text: >-
-    Wir freuen uns mit dir in Kontakt zu bleiben und als Dankeschön schenken wir
+    Wir freuen uns, mit dir in Kontakt zu bleiben, und als Dankeschön schenken wir
     dir drei kostenlose Monate mit Melli.*
 not-found: Nicht gefunden
 plans:
@@ -578,7 +577,7 @@ test-faq:
     kann.
   answer-7: >-
     Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
-    ist lediglich, dass die SIM-Karte nur innerhalb  Deutschlands so
+    ist lediglich, dass die SIM-Karte nur innerhalb  Deutschlands
     funktioniert und dass Melli eine stabile Internetverbindung hat.
   answer-8: >-
     Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
@@ -782,4 +781,4 @@ why-melli:
       Lebenswerter.
     title: Für mehr Lebenszufriedenheit & glückliche Momente
   heading: Wieso Melli?
-  sub-heading: Melli ist so viel mehr als ein herkömmlicher Sprachassistent
+  sub-heading: Melli ist so viel mehr als eine herkömmlicher Sprachassistenz
