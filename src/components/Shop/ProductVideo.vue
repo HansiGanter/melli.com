@@ -6,7 +6,7 @@
       muted
       playsinline
       class="object-cover w-screen object-bottom"
-      style="max-height: calc(100vh - 80px);"
+      style="height: calc(100vh - 80px);"
     >
       <source src="https://videos.melli.com/christmas-video-green-screen-2-3.mp4" type="video/mp4">
     </video>

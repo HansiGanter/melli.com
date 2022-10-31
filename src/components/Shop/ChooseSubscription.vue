@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { breakpointsTailwind } from '@vueuse/core'
 import { fireBuyEvent } from '~/google-tag-manager'
 import { useStripeAxios } from '~/composables/useStripeAxios'
 import type { SubscriptionInfo } from '~/stores/checkout'
@@ -53,6 +54,8 @@ onMounted(() => {
     setCart()
   }
 })
+
+const betweenLgXl = useBreakpoints(breakpointsTailwind).between('lg', 'xl')
 </script>
 
 <template>
@@ -60,6 +63,9 @@ onMounted(() => {
     <!-- <h1 class="font-semibold text-3xl lg:text-4xl text-gray-900 hidden lg:block">
       {{ t('shop.choose-subscription.header') }}
     </h1> -->
+    <p v-if="!betweenLgXl" class="font-medium text-xl">
+      Wähle eine Abo-Option um deinen kostenlosen Test zu starten. Dir werden für die ersten 60 Tage keinerlei Kosten berechnet. Nach Ablauf der 60 Tage beginnt dein Abo, zu den von dir ausgewählten Konditionen. Du kannst dein Abo vor Ablauf der 60 Tage kündigen, sodass keinerlei Kosten anfallen, sollte Melli nicht zu dir passen.
+    </p>
     <div class="flex justify-center items-center gap-3">
       <span class="font-normal lg:font-medium text-gray-700 text-right">
         Monatlich zahlen
@@ -183,7 +189,7 @@ onMounted(() => {
             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
           />
         </svg>
-        <span>{{ !isLoading ? 'Jetzt kaufen' : 'Einen Moment bitte' }}</span>
+        <span>{{ !isLoading ? 'Testabo starten' : 'Einen Moment bitte' }}</span>
       </FormKit>
       <FormKit
         v-model="isAgbAccepted"
