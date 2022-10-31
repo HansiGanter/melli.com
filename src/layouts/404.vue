@@ -45,7 +45,7 @@ const { t } = useI18n()
           </div>
         </div>
       </Container>
-      <Container>
+      <Container class="px-5 ">
         <Footer />
       </Container>
     </div>

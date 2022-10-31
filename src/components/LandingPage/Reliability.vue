@@ -40,7 +40,7 @@ const openVideo = () => {
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-6 rounded-lg lg:h-full flex items-center"
+          class="text-gray-900 font-semibold text-base bg-primary-900/10 w-full sm:w-fit py-3.5 px-6 rounded-lg lg:h-full flex items-center"
         >
           <span>{{ feature }}</span>
         </div>

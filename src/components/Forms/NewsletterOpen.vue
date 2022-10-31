@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { fireNewsletterOpenEvent } from '~/google-tag-manager'
 
-const { t } = useI18n()
-
 const email = ref('')
 const newsletterDialogOpen = ref(false)
 const isDSGVO = ref(false)
@@ -35,17 +33,15 @@ const open = () => {
         validation="required|email"
         validation-visibility="submit"
         message-class="text-red-500 mt-1"
-        inner-class="w-full h-fill border border-primary-400 rounded-l-lg overflow-hidden"
+        inner-class="w-full h-fill border border-gray-900 rounded-l-3xl overflow-hidden"
         input-class="w-full h-13 lg:h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 focus:outline-none"
       />
       <FormKit
         type="submit"
-        input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-400 rounded-r-lg text-white"
-        wrapper-class="grow"
+        input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-gray-900 rounded-r-3xl text-white"
         @click="fireNewsletterOpenEvent"
       >
-        <span>{{ t('hero.get-started-button') }}</span>
-        <div class="i-carbon:chevron-right" />
+        <div class="i-heroicons:arrow-small-right w-6 h-6" />
       </FormKit>
     </div>
     <FormKit
@@ -62,8 +58,8 @@ const open = () => {
       <template #label="context">
         <span :class="context.classes.label">Ich akzeptiere die <router-link
           to="/datenschutz"
-          class="underline underline-primary-500 text-primary-500"
-        >Datenschutzbestimmungen</router-link>.</span>
+          class="underline underline-gray-700 text-gray-700"
+        >Datenschutzbestimmungen</router-link>.*</span>
       </template>
     </FormKit>
   </FormKit>

@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Container>
+  <Container class="px-5">
     <div v-if="customerEmail" class="grid gap-4 content-center items-stretch justify-items-center py-8">
       <div class="h-96 overflow-hidden">
         <img src="https://assets.melli.com/illustrations/avatar/Sprechen.svg" class="h-full object-cover">

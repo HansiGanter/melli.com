@@ -4,17 +4,17 @@ const features = ref([
   {
     title: t('test-why-become-testuser.feature-1.title'),
     text: t('test-why-become-testuser.feature-1.text'),
-    src: '/assets/award.png',
+    src: 'https://assets.melli.com/pictograms/award.svg',
   },
   {
     title: t('test-why-become-testuser.feature-2.title'),
     text: t('test-why-become-testuser.feature-2.text'),
-    src: '/assets/heart.png',
+    src: 'https://assets.melli.com/pictograms/heart.svg',
   },
   {
     title: t('test-why-become-testuser.feature-3.title'),
     text: t('test-why-become-testuser.feature-3.text'),
-    src: '/assets/next.png',
+    src: 'https://assets.melli.com/pictograms/next.svg',
   },
 ])
 </script>

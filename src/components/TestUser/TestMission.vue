@@ -84,7 +84,7 @@ const playVideo = () => {
         />
       </div>
     </div>
-    <div class="grid gap-20 justify-items-center lg:max-w-6xl mx-auto overflow-hidden">
+    <div class=" px-5 grid gap-20 justify-items-center lg:max-w-6xl mx-auto overflow-hidden">
       <div
         v-for="(mission, index) in missions"
         :key="mission.title"

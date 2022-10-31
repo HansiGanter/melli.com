@@ -2,10 +2,10 @@
 import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 const steps = [
-  { name: 'Step 1', title: t('test-timeline.step-1.title'), text: t('test-timeline.step-1.text'), status: 'complete', image: '/assets/pen.png' },
-  { name: 'Step 2', title: t('test-timeline.step-2.title'), text: t('test-timeline.step-2.text'), status: 'complete', image: '/assets/mail.png' },
-  { name: 'Step 3', title: t('test-timeline.step-3.title'), text: t('test-timeline.step-3.text'), status: 'complete', image: '/assets/smiley.png' },
-  { name: 'Step 4', title: t('test-timeline.step-4.title'), text: t('test-timeline.step-4.text'), status: 'complete', image: '/assets/schedule.png' },
+  { name: 'Step 1', title: t('test-timeline.step-1.title'), text: t('test-timeline.step-1.text'), status: 'complete', image: 'https://assets.melli.com/pictograms/pen.svg' },
+  { name: 'Step 2', title: t('test-timeline.step-2.title'), text: t('test-timeline.step-2.text'), status: 'complete', image: 'https://assets.melli.com/pictograms/mail.svg' },
+  { name: 'Step 3', title: t('test-timeline.step-3.title'), text: t('test-timeline.step-3.text'), status: 'complete', image: 'https://assets.melli.com/pictograms/smiley.svg' },
+  { name: 'Step 4', title: t('test-timeline.step-4.title'), text: t('test-timeline.step-4.text'), status: 'complete', image: 'https://assets.melli.com/pictograms/schedule.svg' },
 ]
 const subscriptionModal = ref(false)
 

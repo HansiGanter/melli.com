@@ -10,7 +10,7 @@
     </div>
     <div class="grid gap-2.5 content-start">
       <div class="i-carbon:delivery-parcel mx-auto text-3xl font-extrabold text-primary-500" />
-      <span class="text-black font-medium text-xl text-center">Enthält alle künftigen Produktupdates <span class="font-normal text-base">(während der Abolaufzeit)</span>
+      <span class="text-black font-medium text-xl text-center">Enthält alle künftigen Produktupdates <span class="font-normal text-base"><br>(während der Abolaufzeit)</span>
       </span>
     </div>
     <div class="grid gap-2.5 content-start">

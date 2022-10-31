@@ -42,6 +42,11 @@ contact:
     will be happy to advise you by phone and clear up any uncertainties. Simply
     arrange a callback and we will get back to you immediately.
   whatsapp: Send us a message!
+donation-banner:
+  header: 'Support our Christmas campaign: '
+  text: >-
+    You test Melli 60 days for free - we donate 10€ to the "Wege aus der
+    Einsamkeit e.V."
 faq:
   heading: Frequently Asked Questions
   sub-heading: Everything you need to know about the product, privacy and prices.
@@ -342,14 +347,14 @@ reliability-section:
   text: "Melli ensures that you can exchange information with your family members and friends. \LMelli also connects other users with you and you can share exciting experiences together."
 secure-melli:
   get-melli-button: Get Melli
-  heading-1: Secure
+  heading: Receive info material now!
+  heading-1: Request info material now!
   heading-2: request!
   heading-3: Melli a lifetime for free!
   learn-more-button: Learn more
   sub-text: >-
-    Apply now as a test user for yourself, your parents or grandparents. As a
-    thank you, we will give you a free Melli subscription for an unlimited
-    period of time.
+    Simply subscribe to the newsletter below and download or receive the Melli
+    info folder.
 shop:
   choose-subscription:
     advance-plan: Advanced

@@ -5,17 +5,14 @@ const quotes = [
   {
     quote: t('test-quotes.quote-1'),
     name: t('test-quotes.name-1'),
-    image: '/assets/pen.png',
   },
   {
     quote: t('test-quotes.quote-2'),
     name: t('test-quotes.name-2'),
-    image: '/assets/pen.png',
   },
   {
     quote: t('test-quotes.quote-3'),
     name: t('test-quotes.name-3'),
-    image: '/assets/pen.png',
   },
 ]
 const subscriptionModal = ref(false)

@@ -9,7 +9,7 @@ const { t } = useI18n()
   </Hero>
 
   <!-- Why Melli -->
-  <Container class="pt-24 pb-24 md:py-32 lg:py-40">
+  <Container class="pt-24 pb-24 md:py-32 lg:py-40 px-5">
     <Quote
       id="test-why-melli"
       :quote="t('citation.matthias.quote')"
@@ -25,37 +25,37 @@ const { t } = useI18n()
   </Container>
 
   <!-- Testuser Subscription -->
-  <Container id="testuser-subsription" class="bg-primary-900 rounded-[30px] py-24">
+  <Container id="testuser-subsription" class="bg-primary-900 rounded-[30px] py-24 px-5">
     <TestUserSubscription />
   </Container>
 
-  <Container id="why-become-testuser" class="py-10 lg:py-20">
+  <Container id="why-become-testuser" class="py-10 lg:py-20 px-5">
     <TestWhyBecomeTestuser />
   </Container>
 
   <TestRoutine />
 
-  <Container id="test-user-timeline" class="py-12 lg:py-24">
+  <Container id="test-user-timeline" class="py-12 lg:py-24 px-5">
     <TestTimeline />
   </Container>
 
-  <Container class="bg-tertiary-100 rounded-[48px] py-10 lg:py-20">
+  <Container class="bg-tertiary-100 rounded-[48px] py-10 lg:py-20 px-5">
     <TestJourney />
   </Container>
 
-  <Container class="py-10 lg:py-20">
+  <Container class="py-10 lg:py-20 px-5">
     <TestQuotes />
   </Container>
 
-  <Container class="bg-primary-900 rounded-[30px] py-16">
+  <Container class="bg-primary-900 rounded-[30px] py-16 px-5">
     <TestFeatures id="besonderheiten" />
   </Container>
 
-  <Container class="py-8 bg-gray-50 dark:from-gray-900 dark:to-gray-800">
+  <Container class="py-8 bg-gray-50 dark:from-gray-900 dark:to-gray-800 px-5">
     <TestFAQ />
   </Container>
 
-  <Container id="test-contact" class="bg-primary-900 py-24">
+  <Container id="test-contact" class="bg-primary-900 py-24 px-5">
     <ContactSection />
   </Container>
 </template>

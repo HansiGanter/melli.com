@@ -77,7 +77,7 @@ const people: Array<Person> = [
 </script>
 
 <template>
-  <Container class="py-16 overflow-hidden">
+  <Container class="py-16 px-5 overflow-hidden">
     <div class="grid gap-12">
       <div class="grid gap-2 sm:gap-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
