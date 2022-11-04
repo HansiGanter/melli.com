@@ -9,7 +9,7 @@ const { t } = useI18n()
   </Hero>
 
   <!-- Why Melli -->
-  <Container class="pt-24 pb-24 md:py-32 lg:py-40 px-5">
+  <Container class="my-12 md:my-24 px-5">
     <Quote
       id="test-why-melli"
       :quote="t('citation.matthias.quote')"
@@ -20,7 +20,7 @@ const { t } = useI18n()
   </Container>
 
   <!-- Melli Mission -->
-  <Container class="pt-24 pb-12 lg:py-24 bg-gray-50 rounded-t-3xl">
+  <Container class="my-12 lg:my-24 bg-gray-50 rounded-t-3xl px-5">
     <TestMission />
   </Container>
 

@@ -5,8 +5,8 @@
       loop
       muted
       playsinline
-      class="object-cover w-screen object-bottom"
-      style="height: calc(100vh - 80px);"
+      class="object-cover object-bottom w-screen lg:h-full lg:min-h-unset!"
+      style="min-height: calc(100vh - 80px);"
     >
       <source src="https://videos.melli.com/christmas-video-green-screen-2-3.mp4" type="video/mp4">
     </video>

@@ -8,7 +8,6 @@ import { displayPrice } from '~/utils/common'
 
 const checkout = useCheckoutStore()
 const route = useRoute()
-const { t } = useI18n()
 
 const subscriptions = useSubscriptionsData()
 
@@ -19,7 +18,7 @@ const getPaymentInfo = (sub: SubscriptionInfo) => isAnnual.value ? sub.annualPay
 
 const displayMonthlyPrice = (sub: SubscriptionInfo) => displayPrice(getPaymentInfo(sub).cost)
 const displayYearlyPrice = (sub: SubscriptionInfo) => displayPrice(getPaymentInfo(sub).cost * 12)
-const displayPriceWithTime = (sub: SubscriptionInfo) => isAnnual.value ? `${displayYearlyPrice(sub)} / Jahr` : `${displayMonthlyPrice(sub)} / Monat`
+// const displayPriceWithTime = (sub: SubscriptionInfo) => isAnnual.value ? `${displayYearlyPrice(sub)} / Jahr` : `${displayMonthlyPrice(sub)} / Monat`
 
 const isLoading = ref(false)
 const error = ref('')
@@ -35,6 +34,7 @@ const setCart = () => {
 }
 
 const buyNow = () => {
+  // preselect advanced subscription
   if (!selectedSubscription.value) {
     error.value = 'Bitte wählen Sie eins der beiden Abo-Modelle aus'
   }
@@ -48,6 +48,11 @@ const buyNow = () => {
 }
 
 onMounted(() => {
+  if (!checkout.selectedSubscription) {
+    checkout.selectedSubscription = subscriptions.find(sub => sub.id === 'advanced')
+    setCart()
+  }
+
   selectedSubscription.value = checkout.selectedSubscription
   if (route.query.id) {
     selectedSubscription.value = subscriptions.find(sub => sub.id === route.query.id)
@@ -97,8 +102,8 @@ const betweenLgXl = useBreakpoints(breakpointsTailwind).between('lg', 'xl')
             @click="setCart"
           >
             <div
-              class="relative bg-white border-1 rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in"
-              :class="[subscription.id === checkout.selectedSubscription?.id ? 'ring-3 ring-primary-500' : 'border-gray-300']"
+              class="relative bg-white rounded-lg shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in"
+              :class="checked ? 'border-3 border-primary-500' : 'border-1 border-gray-300'"
             >
               <div class="grid gap-2">
                 <div class="w-20 h-20 bg-tertiary-500 pt-2 absolute top-2 right-2 rounded-full text-center">
@@ -141,11 +146,6 @@ const betweenLgXl = useBreakpoints(breakpointsTailwind).between('lg', 'xl')
                   {{ feature }}
                 </li>
               </ul>
-              <div
-                class="absolute -inset-px rounded-lg pointer-events-none"
-                :class="checked ? 'border-primary-500' : 'border-transparent'"
-                aria-hidden="true"
-              />
             </div>
           </RadioGroupOption>
         </div>
@@ -154,20 +154,6 @@ const betweenLgXl = useBreakpoints(breakpointsTailwind).between('lg', 'xl')
         {{ error }}
       </p>
     </div>
-    <transition
-      enter-active-class="transition-all duration-1000 ease-in-out"
-      enter-from-class="transform translate-x-5 opacity-0"
-      leave-active-class="transition-all duration-300 ease-out"
-      leave-to-class="transform translate-x-5 opacity-0"
-    >
-      <div v-if="selectedSubscription" class="flex gap-4 font-medium text-xl text-black">
-        <div class="text-primary-500 flex-shrink-0 w-6 pl-1 text-2xl">
-          ✓
-        </div>
-        Dieser Plan beinhaltet eine kostenlose Testphase von 60 Tagen. Nach diesem Zeitraum wird Ihr Abonnement für
-        {{ displayPriceWithTime(selectedSubscription) }} fortgesetzt.
-      </div>
-    </transition>
 
     <FormKit type="form" form-class="grid gap-4" :actions="false" :incomplete-message="false" @submit="buyNow">
       <FormKit

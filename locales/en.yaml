@@ -564,23 +564,26 @@ test-why-melli:
 why-melli:
   feature-1:
     description: >-
-      Melli motivates its users to socialize, entertains them with exciting
-      content from the Internet, and ensures a structured daily routine. In this
-      way, it counteracts a lack of drive and brings more satisfaction into
-      everyday life.
-    title: Melli ensures happier aging
+      Melli connects its users with their family, friends and other users. This
+      and the exchange with Melli provides exciting conversation and new ideas.
+      They are encouraged to be more communicative and accessible to those
+      around them, and their confidence in sharing with others is strengthened.
+    title: Melli provides more company.
   feature-2:
     description: >-
-      Making phone calls, planning appointments and keeping an eye on their
-      well-being - the Melli app allows relatives to participate and contribute
-      to users' daily lives, even when they can't be there at the moment.
-    title: With the Melli app, friends and family can participate in everyday life
+      Melli spurs its users on to various activities every day. This can be
+      motivation to go for a walk, guessing together with other Melli users or a
+      meditation exercise. These regularly recurring activities provide
+      structure and variety at the same time. This keeps users physically and
+      mentally fit.
+    title: Melli motivates to a healthy & active everyday life.
   feature-3:
     description: >-
-      Melli is more than a conventional voice assistant. The functions and
-      hardware of the everyday companion are specially adapted to the needs of
-      seniors and their relatives - in collaboration with seniors and experts
-      from geriatrics and nursing.
-    title: Developed with seniors for seniors
+      Melli helps its users to achieve a more positive mood. By making new
+      acquaintances, experiencing exciting things every day, and trying out new
+      things, they feel that their everyday lives are more beautiful and more
+      worth living. In Melli they find a friend who is by their side every day
+      and at any time of day.
+    title: Melli makes you feel like living.
   heading: Why Melli?
   sub-heading: Melli is so much more than a conventional voice assistant

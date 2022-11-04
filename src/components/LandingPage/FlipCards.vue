@@ -27,7 +27,7 @@ const features: Ref<Feature[]> = ref([
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center">
+  <div id="flipcards" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center">
     <div
       v-for="feature in features"
       :key="feature.title"
@@ -53,7 +53,7 @@ const features: Ref<Feature[]> = ref([
         </div>
         <!-- Back-Side of Card -->
         <div class="flip-card-back absolute p-6 grid gap-4 w-full h-full  bg-white drop-shadow-xl rounded-3xl">
-          <p class="text-gray-900 font-medium text-lg pt-8">
+          <p class="text-gray-900 font-medium text-lg my-auto">
             {{ feature.description }}
           </p>
         </div>

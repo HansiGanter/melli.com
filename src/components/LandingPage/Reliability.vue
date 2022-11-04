@@ -25,12 +25,12 @@ const openVideo = () => {
 
 <template>
   <div class="grid gap-8 lg:gap-16 mx-auto items-center">
-    <div class="grid gap-4 lg:gap-6 text-center max-w-2xl mx-auto justify-items-center">
+    <div class="grid gap-4 lg:gap-6 sm:text-center max-w-2xl mx-auto justify-items-center">
       <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
         {{ t('reliability-section.heading') }}
       </h1>
     </div>
-    <div class="grid gap-16 bg-primary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
+    <div class="grid gap-16 order-2 lg:order-1  bg-primary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
       <div class="grid gap-14 w-full lg:w-2/3">
         <p class="w-full lg:w-3/4 font-normal text-xl">
           {{ t('reliability-section.text') }}
@@ -46,7 +46,7 @@ const openVideo = () => {
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="openVideo">
+    <div class="relative order-1 lg:order-2 overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto" @click="openVideo">
       <video
         ref="reliabilityvideo"
         width="1024"

@@ -2,32 +2,23 @@
 import { displayPrice } from '~/utils/common'
 import { firePlanEvent } from '~/google-tag-manager'
 import { useCheckoutStore, useSubscriptionsData } from '~/stores/checkout'
+import type { SubscriptionInfo } from '~/stores/checkout'
 
-const { t } = useI18n()
 const router = useRouter()
 const checkout = useCheckoutStore()
 
 const subscriptions = useSubscriptionsData()
 
-const pros = [
-  {
-    text: t('price.pros.1'),
-    icon: 'i-bxl:paypal',
+const selectedSubscription = ref<SubscriptionInfo>()
 
-  },
-  {
-    text: t('price.pros.2'),
-    icon: 'i-carbon:badge',
-  },
-  {
-    text: t('price.pros.3'),
-    icon: 'i-carbon:delivery-truck',
-  },
-  {
-    text: t('price.pros.4'),
-    icon: 'i-carbon:phone',
-  },
-]
+const displayMonthlyPrice = (sub: SubscriptionInfo) => displayPrice(sub.annualPayment.cost)
+const displayYearlyPrice = (sub: SubscriptionInfo) => displayPrice(sub.annualPayment.cost * 12)
+
+const setCart = () => {
+  checkout.$patch({
+    selectedSubscription: selectedSubscription.value,
+  })
+}
 
 const goToShop = (id: string, name: string) => {
   firePlanEvent(name)
@@ -38,51 +29,51 @@ const goToShop = (id: string, name: string) => {
 </script>
 
 <template>
-  <div class="grid gap-14 pb-10 lg:pb-20 pt-12 lg:pt-24">
-    <h1 class="font-semibold text-4xl lg:text-5xl lg:text-center text-gray-900">
-      {{ t('plans.title') }}<br><span class="text-primary-400">{{ t('plans.highlight') }}</span>
-    </h1>
-    <div class="grid gap-7 lg:gap-12">
-      <div class="lg:w-8/12 lg:mx-auto">
-        <div class="grid gap-5 grid-cols-1 lg:grid-cols-2 lg:mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div
+      v-for="subscription in subscriptions"
+      :key="subscription.id"
+      @click="[setCart(), goToShop(subscription.id, subscription.name)]"
+    >
+      <div
+        class="relative bg-white border-2 rounded-xl shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in md:h-90 border-gray-300 hover:border-primary-500"
+      >
+        <div class="grid gap-2">
+          <div class="w-20 h-20 lg:w-32 lg:h-32 bg-tertiary-500 pt-2 lg:pt-5 absolute top-2 right-2 rounded-full text-center">
+            <p class="font-bold lg:text-2xl">
+              10€
+            </p>
+            <p class="text-[10px] lg:text-base leading-3 lg:leading-5">
+              für "Wege aus<br>der Einsamkeit<br>e.V."
+            </p>
+          </div>
+          <Badge class="mb-2" :class="subscription.id === 'base' ? 'bg-pink-600' : 'bg-primary-600'">
+            <span class="font-medium text-white text-sm">
+              {{ subscription.tag }}
+            </span>
+          </Badge>
           <div
-            v-for="sub in subscriptions"
-            :key="sub.name"
-            class="border-1 border-transparent hover:border-gray-200 hover:shadow-none transition-all ease-out delay-75 flex flex-col justify-between gap-6 items-center rounded-2xl shadow-lg px-3.5 py-5 cursor-pointer"
-            @click="goToShop(sub.id, sub.name)"
+            as="span"
+            class="block text-lg font-normal transition-all transition-duration-500"
           >
-            <div class="flex flex-shrink-0 flex-col gap-3 w-full divide-y divide-gray-400">
-              <div class="grid gap-2">
-                <Badge class="text-sm font-medium text-white" :class="sub.id === 'base' ? 'bg-pink-600' : 'bg-primary-600'">
-                  {{ sub.tag }}
-                </Badge>
-                <div class="grid mt-1">
-                  <span class="text-sm font-medium text-gray-900">ab</span>
-                  <h3 class="text-gray-900 font-medium text-3xl">
-                    {{ displayPrice(sub.annualPayment.cost) }}<span class="font-normal text-lg"> / Monat</span>
-                  </h3>
-                </div>
-                <span class="text-xl text-gray-900 font-normal">{{ sub.name }}</span>
-              </div>
-              <ul class="list-disc list-inside pt-3">
-                <li v-for="(feat, i) in sub.features" :key="i" class="text-base text-gray-800 font-normal">
-                  {{ feat }}
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col justify-between">
-              <button class="flex-1 bg-primary-500 py-2.5 px-4 w-fit rounded-lg h-min">
-                <span class="text-base font-medium text-white">{{ t('plans.buy') }}</span>
-              </button>
-            </div>
+            <span class="font-medium text-3xl">{{ displayMonthlyPrice(subscription) }}</span>
+            / Monat
+          </div>
+          <span class="font-medium text-base text-gray-500">{{ displayYearlyPrice(subscription)
+          }} / Jahr</span>
+          <div as="span" class="flex items-center font-normal text-xl text-gray-900">
+            {{ subscription.name }}
           </div>
         </div>
-      </div>
-      <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-        <div v-for="pro in pros" :key="pro.text" class="grid gap-1 text-center justify-items-center">
-          <div class="text-3xl text-primary-400" :class="pro.icon" />
-          <span class="font-medium text-xl text-black">{{ pro.text }}</span>
-        </div>
+        <hr key="1" class="w-full border-gray-300">
+        <ul class="list-disc pl-4">
+          <li v-for="(feature, n) in subscription.features" :key="n">
+            {{ feature }}
+          </li>
+        </ul>
+        <button class="bg-primary-500 text-white w-fit p-4 rounded-lg" :class="subscription.id === 'base' ? 'mt-6' : ''">
+          Jetzt kostenlos testen
+        </button>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
 </script>
 
 <template>
-  <Container class="py-5 sm:py-6 lg:py-8">
+  <Container class="py-5 px-5 sm:px-0 sm:py-6 lg:py-8">
     <FormKit
       id="landingpage-newsletter-form-dialog"
       form-class="grid gap-3 layout_form cr_form cr_font max-w-lg"

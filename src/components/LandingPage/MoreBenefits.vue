@@ -46,11 +46,11 @@ const playVideo = () => {
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-72 mx-auto" @click="[playVideo(), fireVideoEvent('beschäftigung')]">
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto" @click="[playVideo(), fireVideoEvent('beschäftigung')]">
       <video
         ref="morebenefitsvideo"
         width="1024"
-        poster="https://assets.melli.com/images/stock/man-reading-1024.webp"
+        poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3-1024.webp"
         playsinline
       >
         <source

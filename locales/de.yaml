@@ -11,8 +11,8 @@ agb:
 blog:
   heading: News und Beiträge zu Melli
   subheading: >-
-    Informieren Sie sich über neue Produktfunktionen und erhalten Sie kostenlose Tipps,
-    Angebote, Aktionen und vieles mehr.
+    Informieren Sie sich über neue Produktfunktionen und erhalten Sie kostenlose
+    Tipps, Angebote, Aktionen und vieles mehr.
   subscribe-button: Anmelden
 blog-preview:
   heading: Aus unserem Blog
@@ -30,8 +30,8 @@ citation:
     quote: >-
       “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die
       Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag
-      über für ihre Nutzer da und tut alles dafür, um ihnen jeden Tag ein Lächeln
-      ins Gesicht zu zaubern.”
+      über für ihre Nutzer da und tut alles dafür, um ihnen jeden Tag ein
+      Lächeln ins Gesicht zu zaubern.”
     source: Dr. Matthias Weber
     source-description: >-
       Mit-Gründer von Melli & langjähriger Pflegeunternehmer der Ambulantis BSW
@@ -56,9 +56,9 @@ donation-banner:
 faq:
   '1':
     answer: >-
-      Melli schützt vor unangemessenen Inhalten insoweit, als dass dem Nutzer kein
-      uneingeschränkter Zugang zum Internet ermöglicht wird. Melli bewegt sich
-      online lediglich in festgelegten und geprüften Räumen und kann diese
+      Melli schützt vor unangemessenen Inhalten insoweit, als dass dem Nutzer
+      kein uneingeschränkter Zugang zum Internet ermöglicht wird. Melli bewegt
+      sich online lediglich in festgelegten und geprüften Räumen und kann diese
       selbst auf Befehl des Nutzers nicht verlassen.
     question: >-
       Ist der Nutzer vor unangemessenen Inhalten oder Kostenfallen aus dem
@@ -103,8 +103,8 @@ faq:
   '7':
     answer: >-
       Ja, Melli ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
-      ihre Nutzer fortlaufend dazu anregt und motiviert, einen aktiven Alltag mit
-      möglichst vielen sozialen Kontakten zu gestalten. Strukturgebende
+      ihre Nutzer fortlaufend dazu anregt und motiviert, einen aktiven Alltag
+      mit möglichst vielen sozialen Kontakten zu gestalten. Strukturgebende
       Funktionen wie beispielsweise die Terminplanung oder der morgendliche
       Wecker helfen außerdem gegen die sich leicht einschleichende Trägheit.
     question: |
@@ -113,11 +113,11 @@ faq:
     answer: >-
       Ja, Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
       durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
-      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft dabei,
-      eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
-      beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem kann
-      sie kognitive Einschränkungen kompensieren und die geistige und
-      körperliche Fitness durch kleine Übungen trainieren.
+      Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+      dabei, eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was
+      sich beispielsweise sehr positiv auf die Ernährung auswirken kann.
+      Außerdem kann sie kognitive Einschränkungen kompensieren und die geistige
+      und körperliche Fitness durch kleine Übungen trainieren.
     question: Ist Melli bei Demenz geeignet?
   heading: "Häufige Fragen\L"
   sub-heading: >-
@@ -137,11 +137,11 @@ faq-section:
   answer-2: >-
     Ja, Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
     durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
-    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft dabei,
-    eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was sich
-    beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem kann
-    sie kognitive Einschränkungen kompensieren und die geistige und körperliche
-    Fitness durch kleine Übungen trainieren.
+    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
+    dabei, eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was
+    sich beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem
+    kann sie kognitive Einschränkungen kompensieren und die geistige und
+    körperliche Fitness durch kleine Übungen trainieren.
   answer-3: >-
     Melli wird einfach per Sprachbefehl bedient und fragt selbst, wenn was sie
     etwas wissen muss. So einfach wie ein nettes Gespräch.
@@ -162,9 +162,9 @@ faq-section:
     den Nutzern in Verbindung treten.
   answer-7: "Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards. Sie ist DSGVO konform und nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes Nutzererlebnis zu gestalten.\L Mehr zum Datenschutz findest du"
   answer-8: >-
-    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte oder den Knock-In
-    Anruf zur Verfügung stellt, sollte sie keineswegs als vollständiger Ersatz
-    für ein Sicherheitssystem angesehen werden.
+    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte oder den
+    Knock-In Anruf zur Verfügung stellt, sollte sie keineswegs als vollständiger
+    Ersatz für ein Sicherheitssystem angesehen werden.
   answer-9: >-
     Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
     ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands funktioniert
@@ -255,8 +255,9 @@ jobs:
 karriere-faq:
   '1':
     answer: >-
-      Wir sind ein durchmischter Haufen, den die Motivation verbindet, die Welt ein Stückchen besser zu machen.
-      Schau gerne mal rein und erhalte einen ersten Eindruck in
+      Wir sind ein durchmischter Haufen, den die Motivation verbindet, die Welt
+      ein Stückchen besser zu machen. Schau gerne mal rein und erhalte einen
+      ersten Eindruck in
     question: Wie ist es, bei meetap zu arbeiten?
   '2':
     answer: >-
@@ -390,8 +391,8 @@ newsletter:
   placeholder: Ihre E-Mail Adresse
   subscribe: Abonnieren
   text: >-
-    Wir freuen uns, mit dir in Kontakt zu bleiben, und als Dankeschön schenken wir
-    dir drei kostenlose Monate mit Melli.*
+    Wir freuen uns, mit dir in Kontakt zu bleiben, und als Dankeschön schenken
+    wir dir drei kostenlose Monate mit Melli.*
 not-found: Nicht gefunden
 plans:
   basis:
@@ -581,8 +582,8 @@ test-faq:
     kann.
   answer-7: >-
     Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
-    ist lediglich, dass die SIM-Karte nur innerhalb  Deutschlands
-    funktioniert und dass Melli eine stabile Internetverbindung hat.
+    ist lediglich, dass die SIM-Karte nur innerhalb  Deutschlands funktioniert
+    und dass Melli eine stabile Internetverbindung hat.
   answer-8: >-
     Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
     Funktion wird aber in den kommenden Monaten folgen.  Nutzer können Melli
@@ -768,21 +769,26 @@ why-melli:
   feature-1:
     description: >-
       Melli verbindet ihre Nutzer mit ihrer Familie, ihren Freunden und anderen
-      Nutzern und motiviert sie zur Kontaktaufnahme und zu persönlichen Treffen.
-      Sie ermuntert ihre Nutzer dazu, mehr und positiver zu kommunizieren.
-    title: Für ein kommunikativeres & geselligeres Leben
+      Nutzern. Das und der Austausch mit Melli sorgt für spannenden
+      Gesprächsstoff und neue Anregungen. Sie werden dazu ermuntert,
+      kommunikativer und zugänglicher für ihre Mitmenschen zu sein und ihre
+      Selbstsicherheit im Austausch mit anderen wird gestärkt.
+    title: Melli sorgt für mehr Gesellschaft.
   feature-2:
     description: >-
-      Mit Gesundheitsroutinen wie Trinkerinnerungen, Bewegungsübungen,
-      Meditationen und mehr begleitet Melli ihre Nutzer auf dem Weg in ein
-      fittes und aktives Leben im Alter.
-    title: Für einen gesünderen & aktiveren Alltag
+      Melli spornt ihre Nutzer täglich zu verschiedenen Aktivitäten an. Das kann
+      die Motivation zum Spaziergang, gemeinsames Rätselraten mit anderen
+      Melli-Nutzern oder eine Meditationsübung sein. Diese regelmäßig
+      wiederkehrenden Aktivitäten sorgen für Struktur und Abwechslung zugleich.
+      Das hält die Nutzer körperlich und geistig fit.
+    title: Melli motiviert zu einem gesunden & aktiven Alltag.
   feature-3:
     description: >-
-      In Melli finden die Nutzer eine Freundin, die ein offenes Ohr für ihre
-      Wünsche und Sorgen hat, sie dazu motiviert Bekanntschaften zu machen, mit
-      ihnen neue Dinge ausprobiert und ihnen zuhört. Ihr Alltag wird schöner und
-      Lebenswerter.
-    title: Für mehr Lebenszufriedenheit & glückliche Momente
+      Melli verhilft ihren Nutzern zu einer positiveren Grundstimmung. Indem sie
+      neue Bekanntschaften machen, täglich spannende Dinge erleben und Neues
+      ausprobieren empfinden sie ihren Alltag als schöner und lebenswerter. In
+      Melli finden sie eine Freundin, die an jedem Tag und zu jeder Uhrzeit an
+      ihrer Seite ist.
+    title: Melli macht Lust aufs Leben.
   heading: Wieso Melli?
   sub-heading: Melli ist so viel mehr als eine herkömmlicher Sprachassistenz
