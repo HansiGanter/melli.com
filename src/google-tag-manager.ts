@@ -168,3 +168,17 @@ export const fireTestuserSubscriptionEvent = (email?: string) => {
   console.log('melli-cta-testuser-subscription-sent')
   console.log(md5(email))
 }
+
+export const fireLiveDemoOpenEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-live-demo-open',
+  })
+  console.log('melli-cta-live-demo-open')
+}
+
+export const fireLiveDemoSentEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-live-demo-sent',
+  })
+  console.log('melli-cta-live-demo-sent')
+}
