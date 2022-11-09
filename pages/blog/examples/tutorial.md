@@ -197,18 +197,18 @@ Beliebig viele neue Absätze können hinzugefügt werden, indem man das p-Tag ko
 </InfoBox>
 ```
 
-## Quote
+## BlogQuote
 
-Nutze `Quote` um ein Zitat hinzuzufügen.
+Nutze `BlogQuote` um ein Zitat hinzuzufügen.
 
 Dabei ist die Quelle (optional) und Zitat veränderbar.
 
 ### Beispiel
 
 <TutorialWrapper>
-    <Quote source="Name, Vorname (Quelle)">
+    <BlogQuote source="Name, Vorname (Quelle)">
         Wenn soziale Beziehungen im Leben fehlen, ist das über einen längeren Zeitraum ähnlich gefährlich wie übermäßiger Alkoholkonsum, Nikotin, schlechte Ernährung oder ständiger Bewegungsmangel.
-    </Quote>
+    </BlogQuote>
 </TutorialWrapper>
 
 ### Code
