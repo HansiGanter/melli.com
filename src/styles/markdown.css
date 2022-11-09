@@ -2,7 +2,7 @@
 @import 'prism-theme-vars/base.css';
 
 .prose {
-  --prism-font-family: 'Input Mono', monospace;
+  --prism-font-family: "puffin-display-soft", sans-serif;
 }
 
 .prose img {

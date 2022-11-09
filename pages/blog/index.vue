@@ -8,7 +8,7 @@ useHead({
 })
 
 const filters = ['Latest', 'Pricing', 'Product', 'Social']
-const currentFilter = ref('')
+const currentFilter = ref(filters[0])
 </script>
 
 <template>

@@ -6,7 +6,7 @@ description: |
     Clone 👯 the repository and try to get the tests running in your local environment. If you manage to make all tests pass, we would love to interview you 😍! Therefore, create a pull request, which triggers a GitHub action, verifying that you solved the challenge correctly 🏆.
 category:
     name: Hiring
-    href: #
+    href: blogs
 author:
     name: Hans Ganter
     imageUrl: https://assets.melli.com/images/team/hans-ganter.webp
