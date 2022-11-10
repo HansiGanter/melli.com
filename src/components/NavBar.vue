@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* TODO: Fire Shop-Events when Shop is ready */
-import { fireBlogEvent, fireCartEvent, fireKarriereEvent, fireLoginEvent } from '~/google-tag-manager'
+import { fireBlogEvent, fireCartEvent, fireGoToInfoPackageEvent, fireGoToLiveDemoEvent, fireKarriereEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
 const { t } = useI18n()
@@ -23,13 +23,19 @@ const showNav = ref(false)
             <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireBlogEvent">
               {{ t('navbar.blog.heading') }}
             </RouterLink>
+            <RouterLink to="/live-demo" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToLiveDemoEvent">
+              {{ t('navbar.live-demo') }}
+            </RouterLink>
+            <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToInfoPackageEvent">
+              {{ t('navbar.infopackage') }}
+            </RouterLink>
             <RouterLink to="/karriere" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireKarriereEvent">
               {{ t('navbar.karriere') }}
             </RouterLink>
           </div>
         </div>
         <div class="lg:flex hidden items-center gap-4">
-          <a href="https://app.melli.com/" target="_blank" @click="fireLoginEvent">
+          <a href="https://app.melli.com/" target="_blank" title="Login" @click="fireLoginEvent">
             <div class="i-carbon:user stroke-2 w-6 h-6" />
           </a>
           <RouterLink
@@ -43,14 +49,13 @@ const showNav = ref(false)
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
           </RouterLink>
-          <!-- Commented out until shop is ready -->
-          <!-- <RouterLink
+          <RouterLink
             to="/shop"
             class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"
             @click="fireShopEvent"
           >
             Jetzt kaufen
-          </RouterLink> -->
+          </RouterLink>
         </div>
         <button type="button" class="lg:hidden block p-2" @click="showNav = !showNav">
           <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />
@@ -72,21 +77,27 @@ const showNav = ref(false)
           <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
+          <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireGoToLiveDemoEvent">
+            {{ t('navbar.live-demo') }}
+          </RouterLink>
+          <RouterLink to="/infopaket" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireGoToInfoPackageEvent">
+            {{ t('navbar.infopackage') }}
+          </RouterLink>
           <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireKarriereEvent">
             {{ t('navbar.karriere') }}
           </RouterLink>
-          <!-- <RouterLink to="/login" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
+          <a href="https://app.melli.com/" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
             <div class="i-carbon:user stroke-2 w-5 h-5" />
             <span>Account</span>
-          </RouterLink> -->
+          </a>
         </div>
-        <!-- <RouterLink
+        <RouterLink
           to="/shop"
           class="py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
           @click="fireShopEvent"
         >
           <span>Jetzt kaufen</span>
-        </RouterLink> -->
+        </RouterLink>
       </div>
     </transition>
   </nav>

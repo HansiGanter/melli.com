@@ -348,9 +348,11 @@ navbar:
   guides:
     heading: Guides
     text: Lerne alles rund um die Einrichtung und Verwaltung von Melli.
+  infopackage: Infopaket
   jobs:
     heading: Jobs
   karriere: Karriere
+  live-demo: Live-Demo
   melli-app:
     heading: Melli App
     text: Freunde & Familie einbeziehen. Mit der Melli-App.

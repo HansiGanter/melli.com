@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { fireSocialEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 useHead({
   title: 'Melli',
@@ -9,7 +10,7 @@ useHead({
 </script>
 
 <template>
-  <Hero />
+  <ChristmasHero />
 
   <Container>
     <FlipCards class="-mt-8" />
@@ -24,15 +25,9 @@ useHead({
       portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
     />
   </Container>
-  <Container class="my-16 lg:my-24 px-5">
-    <div class="grid gap-2 lg:w-5/12 lg:mx-auto">
-      <span class="block text-lg lg:text-xl font-medium text-primary-800 text-center">{{ t('hero.test-user') }}</span>
-      <NewsletterOpen />
-    </div>
-  </Container>
 
-  <Container class="bg-primary-900 rounded-[30px] px-5 py-16 my-12">
-    <MelliFeatures id="besonderheiten" />
+  <Container class="bg-primary-900 rounded-[30px] px-5 py-16 my-16 lg:my-24 ">
+    <PromoComponentIcon />
   </Container>
 
   <Container class="py-10 lg:py-20 px-5 ">
@@ -55,17 +50,43 @@ useHead({
     <QuotesSection />
   </Container>
 
-  <!-- Commented Out Until Shop Ready -->
-  <!-- <Container class="py-8 bg-gray-50">
+  <Container class="py-8 bg-gray-50 px-5">
+    <div class="my-4">
+      <h1 class="color-gray-900 text-4xl lg:text-5xl font-semibold md:text-center">
+        Teste Melli jetzt
+      </h1>
+      <h1 class="color-primary-400 text-4xl lg:text-5xl font-semibold md:text-center">
+        60 Tage kostenlos
+      </h1>
+    </div>
+    <p class="color-gray-900 text-lg py-6">
+      Wähle eine Abo-Option um deinen kostenlosen Test zu starten. Dir werden für die ersten 60 Tage keinerlei Kosten berechnet. Nach Ablauf der 60 Tage beginnt dein Abo, zu den von dir ausgewählten Konditionen. Du kannst dein Abo vor Ablauf der 60 Tage kündigen, sodass keinerlei Kosten anfallen, sollte Melli nicht zu dir passen.
+    </p>
     <StatsSection />
-  </Container> -->
+  </Container>
+
+  <Container class="bg-gray-50">
+    <ShoppingDetails />
+  </Container>
 
   <Container class="bg-gray-50 py-12 lg:py-24">
     <SecureSection />
   </Container>
 
   <Container class="pb-12 lg:pb-24 bg-gray-50">
-    <SocialMedia />
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mx-auto justify-center">
+      <h2 class="text-primary-900 text-3xl lg:text-4xl font-semibold">
+        Folge uns auf:
+      </h2>
+      <div class="flex gap-5 items-center">
+        <a href="https://www.youtube.com/channel/UC9kINIc7RSUKfMu8LXaWnTQ" target="_blank">
+          <div class="i-carbon:logo-youtube text-4xl text-primary-400" @click="fireSocialEvent('youtube')" />
+        </a>
+        <a href="https://www.facebook.com/deine.melli" target="_blank"><div class="i-bxl:facebook text-4xl text-primary-400" @click="fireSocialEvent('facebook')" /></a>
+        <!-- <div class="i-bxl:instagram-alt text-4xl text-primary-400" /> -->
+        <a href="https://www.linkedin.com/company/mit-melli/" target="_blank"><div class="i-bxl:linkedin text-4xl text-primary-400" @click="fireSocialEvent('linkedin')" /></a>
+      </div>
+    </div>
   </Container>
 
   <Container class="px-5 py-8 bg-tertiary-50 dark:from-gray-900 dark:to-gray-800">

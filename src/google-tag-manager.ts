@@ -169,6 +169,13 @@ export const fireTestuserSubscriptionEvent = (email?: string) => {
   console.log(md5(email))
 }
 
+export const fireGoToLiveDemoEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-go-to-live-demo',
+  })
+  console.log('melli-cta-go-to-live-demo')
+}
+
 export const fireLiveDemoOpenEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-live-demo-open',
@@ -181,4 +188,25 @@ export const fireLiveDemoSentEvent = () => {
     event: 'melli-cta-live-demo-sent',
   })
   console.log('melli-cta-live-demo-sent')
+}
+
+export const fireGoToInfoPackageEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-go-to-info-package',
+  })
+  console.log('melli-cta-go-to-info-package')
+}
+
+export const fireInfoPackageOpenEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-info-package-open',
+  })
+  console.log('melli-cta-info-package-open')
+}
+
+export const fireInfoPackageSentEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-info-package-sent',
+  })
+  console.log('melli-cta-info-package-sent')
 }
