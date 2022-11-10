@@ -16,7 +16,7 @@ onKeyStroke('Escape', (e) => {
         @click.self="emit('close')"
       >
         <div
-          class="modal-container m-2 bg-white rounded-xl shadow-lg sm:min-w-md"
+          class="modal-container max-h-90vh m-2 bg-white rounded-xl shadow-lg sm:min-w-md overflow-y-auto"
         >
           <slot />
         </div>

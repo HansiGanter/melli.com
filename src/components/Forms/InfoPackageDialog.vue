@@ -6,7 +6,9 @@ const userEmail = ref(newsletterProps.email)
 const vorname = ref('')
 const nachname = ref('')
 const phone = ref('')
-const notes = ref('')
+const street = ref('')
+const postalcode = ref('')
+const city = ref('')
 const userIsDSGVO = ref(newsletterProps.dsgvo)
 </script>
 
@@ -24,31 +26,9 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
       @submit="fireLiveDemoSentEvent"
     >
       <h1 class="font-medium text-2xl">
-        Anmeldung zur Melli Live-Demo
+        Bekomme dein Melli-Infopaket direkt nach Hause geschickt
       </h1>
       <hr>
-      <FormKit
-        type="radio"
-        name="live-demo-dates"
-        label="Wähle einen Termin*"
-        options-class=""
-        option-class="bg-primary-50 my-3 rounded-xl"
-        wrapper-class="flex  gap-4 p-4"
-        inner-class="flex"
-        input-class=""
-        label-class=""
-        :validation-messages="{
-          required: 'Bitte wählen Sie einen Termin aus.',
-        }"
-        message-class="text-red-500 mt-1"
-        validation="required"
-        validation-visibility="submit"
-        :options="{
-          date1: '28. September, 13:30 - 14:00 Uhr',
-          date2: '28. September, 13:30 - 14:00 Uhr',
-          date3: '28. September, 13:30 - 14:00 Uhr',
-        }"
-      />
       <FormKit
         id="7539407"
         v-model="vorname"
@@ -99,11 +79,41 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
       />
       <FormKit
         id="7539407"
-        v-model="notes"
-        type="textarea"
+        v-model="street"
+        type="text"
         name="1011268"
-        label="Anmerkung"
-        placeholder="Anmerkungen oder Fragen zu deiner Anmeldung"
+        label="Straße, Hausnummer*"
+        placeholder="Musterstraße, 1"
+        validation-label="Straße"
+        message-class="text-red-500 mt-1"
+        validation="required"
+        validation-visibility="submit"
+        input-class="cr_form-input"
+      />
+      <FormKit
+        id="7539407"
+        v-model="postalcode"
+        type="text"
+        name="1011268"
+        label="PLZ*"
+        placeholder="12345"
+        validation-label="Postleitzahl"
+        message-class="text-red-500 mt-1"
+        validation="required"
+        validation-visibility="submit"
+        input-class="cr_form-input"
+      />
+      <FormKit
+        id="7539407"
+        v-model="city"
+        type="text"
+        name="1011268"
+        label="Stadt*"
+        placeholder="Berlin"
+        validation-label="Stadt"
+        message-class="text-red-500 mt-1"
+        validation="required"
+        validation-visibility="submit"
         input-class="cr_form-input"
       />
       <FormKit
@@ -128,7 +138,7 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
       </FormKit>
       <FormKit
         type="submit"
-        label="Anmelden"
+        label="Per Post zugeschickt bekommen"
         input-class="cr_form-block cr_button"
       />
     </FormKit>
