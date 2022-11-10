@@ -4,7 +4,7 @@ description: |
     Sprachassistenten haben im Haushalt von Senioren längst Einzug gehalten.  Die digitalen Assistenten können vielfältig eingesetzt werden und bei alltäglichen Aufgaben helfen. Dabei erleichtern Sprachassistenten die Kommunikation mit ihren Angehörigen und vermitteln ein Gefühlt der Sicherheit.
 category:
     name: Blog
-    href: #
+    href: blogs
 author:
     name: Philip Krech
     imageUrl: https://assets.melli.com/images/team/philip-krech.webp
@@ -12,8 +12,6 @@ date: 2022-01-18T16:00:00.000+00:00
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/stock/father-daughter.webp
 ---
-
-![](https://assets.melli.com/images/stock/father-daughter.webp)
 
 ## Digitale Assistenten -- der Mehrwert für Senioren
 

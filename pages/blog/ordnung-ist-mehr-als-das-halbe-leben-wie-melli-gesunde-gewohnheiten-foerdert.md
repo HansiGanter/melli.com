@@ -17,13 +17,17 @@ imageUrl: https://melli.com/wp-content/uploads/2022/06/EmiliaBlog_Header_ValueSt
 <intro-section text="In der Wissenschaft gibt es sogar einen Begriff für die Zeit direkt nach dem Renteneintritt: die “Flitterwochenphase”. Warum die Wissenschaftler diese Bezeichnung gewählt haben? “Zu Beginn erfreuen sich Rentnerinnen und Rentner an neu gewonnener Freizeit und neuen Freiheiten. Danach tritt die Ernüchterungsphase […] ein, in der die Individuen enttäuscht feststellen, dass ihre Erwartungen nicht der Realität entsprechen.” (Ponomarenko, 2020)" />
 <br>
 
-<quote author="(Ponomarenko, 2020)" quote="Im Zuge eines regulären Renteneintritts verlassen Individuen ihre berufliche Stellung und damit einhergehend auch ihr soziales Umfeld sowie ihre täglichen Gewohnheiten. Dies kann sich unmittelbar auf ihre Lebensqualität und die Bewertung ihrer Lebenszufriedenheit auswirken."></quote>
+<BlogQuote source="(Ponomarenko, 2020)">
+    Im Zuge eines regulären Renteneintritts verlassen Individuen ihre berufliche Stellung und damit einhergehend auch ihr soziales Umfeld sowie ihre täglichen Gewohnheiten. Dies kann sich unmittelbar auf ihre Lebensqualität und die Bewertung ihrer Lebenszufriedenheit auswirken.
+</BlogQuote>
 
 ## **Vom Schreibtisch an den Wohnzimmertisch**
 
 Plötzlich fehlen die täglichen Meetings mit den Kollegen, die gemeinsame Mittagspause, sogar der Weg zur Arbeit – alles was bisher immer so viel Ordnung ins Leben gebracht hat.
 
-<quote quote="Werde ich überhaupt noch gebraucht? Was fange ich mit meiner Freizeit an? Habe ich noch Ziele? Bin ich nun abhängig von anderen? Besteht mein Alltag jetzt nur noch aus Arztterminen und ausgedehnten Mittagessen?"></quote>
+<BlogQuote>
+    Werde ich überhaupt noch gebraucht? Was fange ich mit meiner Freizeit an? Habe ich noch Ziele? Bin ich nun abhängig von anderen? Besteht mein Alltag jetzt nur noch aus Arztterminen und ausgedehnten Mittagessen?
+</BlogQuote>
 
 Das sind Fragen, die sich nun stellen. Bleiben diese unbeantwortet, fühlen die Betroffenen sich ziellos und es fällt ihnen schwer, Motivation für den Tag aufzubringen. Der eigene Alltag erscheint plötzlich eintönig und im schlimmsten Falle steigt das Risiko für depressive Verstimmungen.
 In diesem Artikel zeigen wir dir, wie Melli Senioren dabei unterstützt bewährte Alltagsroutinen beizubehalten und neue Aktivitäten in ihrem Tag zu etablieren. Mit Terminerinnerungen, individuellen Gesundheitsroutinen, einer Weckfunktion und wiederkehrenden Aktivitäten hilft sie ihren Nutzern dabei einen roten Faden in ihren Leben zu finden und ihren Alltag besser ohne fremde Hilfe zu meistern.

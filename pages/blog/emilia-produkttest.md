@@ -6,7 +6,6 @@ category:
     href: blogs
 author:
     name: Matthias Weber
-    imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
 date: 2022-01-12T16:00:00.000+00:00
 readingTime: 7min
 imageUrl: https://melli.com/wp-content/uploads/2020/02/AdobeStock_444452747_v3.jpg
@@ -20,12 +19,26 @@ imageUrl: https://melli.com/wp-content/uploads/2020/02/AdobeStock_444452747_v3.j
     <span class="font-semibold text-lg text-primary-800">Jetzt bewerben</span>
 </button>
 
-<info-box heading="Melli sorgt für mehr Lebenszufriedheit bei Senioren und lässt ihre Liebsten daran teilhaben." text="Als digitale, sprachgesteuerte Alltagsbegleiterin motiviert Melli Senioren zu sozialen Kontakten, Beschäftigung und mehr Struktur im Alltag. Sie bringt ihre Nutzer zusammen und erhöht so spürbar die Zufriedenheit im Leben der Senioren.
-Gleichzeitig gibt Melli Freunden und Angehörigen über die Smartphone-App die Möglichkeit am Leben ihrer Eltern oder Großeltern teilzuhaben: über das Teilen von Bildern oder Videos, über sprachgesteuerte Videoanrufe oder indem Melli ein update über das Wohlbefinden gibt." />
+<InfoBox heading="Melli sorgt für mehr Lebenszufriedheit bei Senioren und lässt ihre Liebsten daran teilhaben.">
+    <p class="text-primary-900 text-lg">
+        Als digitale, sprachgesteuerte Alltagsbegleiterin motiviert Melli Senioren zu sozialen Kontakten, Beschäftigung und mehr Struktur im Alltag. Sie bringt ihre Nutzer zusammen und erhöht so spürbar die Zufriedenheit im Leben der Senioren.
+    </p>
+    <p class="text-primary-900 text-lg">
+        Gleichzeitig gibt Melli Freunden und Angehörigen über die Smartphone-App die Möglichkeit am Leben ihrer Eltern oder Großeltern teilzuhaben: über das Teilen von Bildern oder Videos, über sprachgesteuerte Videoanrufe oder indem Melli ein update über das Wohlbefinden gibt.
+    </p>
+</InfoBox>
 
 ## **Darum solltest du an unserem Produkttest teilnehmen.**
 
-<check-list :items="['Du hilfst dabei ein Produkt zu entwickeln, welches das Leben von Senioren nachhaltig bereichern kann.', 'Du kannst Melli kostenlos nutzen und zukünftige Funktionen nach deinen Vorstellungen mitgestalten.', 'Wir bedanken uns bei dir mit einem zeitlich unbefristeten, kostenlosen Melli-Abo – quasi ein Leben lang.']" />
+<CheckList icon='i-carbon:checkmark'>
+        Du hilfst dabei ein Produkt zu entwickeln, welches das Leben von Senioren nachhaltig bereichern kann.
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Du kannst Melli kostenlos nutzen und zukünftige Funktionen nach deinen Vorstellungen mitgestalten.
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Wir bedanken uns bei dir mit einem zeitlich unbefristeten, kostenlosen Melli-Abo – quasi ein Leben lang.
+</CheckList>
 
 ## **So funktioniert der Produkttest.**
 
@@ -67,7 +80,21 @@ Nach Ablauf der 3 monatigen Testzeit könnt ihr Melli einfach weiter kostenlos n
 
 Wir haben ein paar Kriterien definiert für die Auswahl der idealen Test-Teilnehmer. Solltest du dich, bzw. das Familienmitglied für das du die Bewerbung einreichst, in einigen der unten aufgelisteten Punkte wieder finden, hast du sehr gute Chancen als Testnutzer ausgewählt zu werden. Aber keine Sorge nicht alle der Kriterien sind zwingend notwendig für die Teilnahme.
 
-<check-list :items="['Du oder das Familienmitglied welches Melli testet ist 60 Jahre oder älter*', 'Der/die TesterIn besitzt den Pflegegrad 1 oder 2', 'Der/die TesterIn ist alleinstehend und/oder lebt allein*', 'Der/die TesterIn umgibt sich eher selten mit sozialen Kontakten', 'Der/die TesterIn muss nicht technikaffin sein, aber aufgeschlossen gegenüber Technik']" />
+<CheckList icon='i-carbon:checkmark'>
+        Du oder das Familienmitglied welches Melli testet ist 60 Jahre oder älter*
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Der/die TesterIn besitzt den Pflegegrad 1 oder 2
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Der/die TesterIn ist alleinstehend und/oder lebt allein*
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Der/die TesterIn umgibt sich eher selten mit sozialen Kontakten
+</CheckList>
+<CheckList icon='i-carbon:checkmark'>
+        Der/die TesterIn muss nicht technikaffin sein, aber aufgeschlossen gegenüber Technik
+</CheckList>
 
 _*obligatorisch_
 

@@ -16,6 +16,8 @@ Nutze `Blog-Header` um einen Blog-Header sowie eine Vorschaukarte auf der vorher
 
 Hier passe den Titel, die Beschreibung, den Namen  (das grüne Tag) unter Category, den Namen des Autors, das Datum und das Bild (durch Image URL) an.
 
+Unter category im href schreibe immer blogs!
+
 ### Code
 
 ```yaml
@@ -214,11 +216,11 @@ Dabei ist die Quelle (optional) und Zitat veränderbar.
 ### Code
 
 ```html
-<Quote source="Name, Vorname (Quelle)">
+<BlogQuote source="Name, Vorname (Quelle)">
   Wenn soziale Beziehungen im Leben fehlen, ist das über einen längeren Zeitraum
   ähnlich gefährlich wie übermäßiger Alkoholkonsum, Nikotin, schlechte Ernährung
   oder ständiger Bewegungsmangel.
-</Quote>
+</BlogQuote>
 ```
 
 ## CheckList
@@ -308,15 +310,11 @@ Nutze `IconColumn` um ...
   </IconColumn>
 ```
 
-
 ## PromoComponentIcon
 
 Nutze `PromoComponentIcon` um ...
 
-### Beispiel
-
-<TutorialWrapper>
-  <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
+<div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
     <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
     <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
       Mellis Tipp für Weihnachten:
@@ -327,10 +325,7 @@ Nutze `PromoComponentIcon` um ...
     <RouterLink to="/shop" class="bg-primary-500 text-white text-base sm:text-lg py-4 px-8 rounded-lg w-fit mx-auto my-4">
       Jetzt 60 Tage kostenlos ausprobieren!
     </RouterLink>
-  </div>
-</TutorialWrapper>
-
-### Code
+</div>
 
 ```html    
   <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
@@ -346,3 +341,29 @@ Nutze `PromoComponentIcon` um ...
     </RouterLink>
   </div>
 ```
+
+## intro-section
+
+Nutze `intro-section` um ein header und text als Intro (eine andere Schriftart) zu schreiben.
+
+Dabei müssen die verschiedene Absätze durch ein &lt;br&gt;-Tag getrennt werden.
+
+Der Teil besteht aus einer Überschrift und einem Text, die beide optional sind.
+
+### Beispiel
+
+<TutorialWrapper>
+  <intro-section header="Melli erwacht zum Leben." text="Nach 10 Monaten Entwicklungszeit, über 100 Produkttests und mehr als 1000 Produkt-Iterationen ist es nun endlich soweit – Melli möchte die ersten Gespräche mit ihren Nutzern führen." />
+  <br>
+  <intro-section text="Als Dankeschön schenken wir allen Teilnehmer eine lebenslange kostenfreie Nutzung von Melli." />
+</TutorialWrapper>
+
+### Code
+
+```html
+  <intro-section header="Melli erwacht zum Leben." 
+  text="Nach 10 Monaten Entwicklungszeit, über 100 Produkttests und mehr als 1000 Produkt-Iterationen ist es nun endlich soweit – Melli möchte die ersten Gespräche mit ihren Nutzern führen." />
+  <br>
+  <intro-section text="Als Dankeschön schenken wir allen Teilnehmer eine lebenslange kostenfreie Nutzung von Melli." />
+```
+

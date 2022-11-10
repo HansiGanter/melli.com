@@ -21,7 +21,9 @@ imageUrl: https://melli.com/wp-content/uploads/2022/06/EmiliaBlog_Header_ValueKo
 
 ## **Emilia hat es sich zur Aufgabe gemacht genau an diesem Punkt anzusetzen. Mit der Mission, jedem Menschen mindestens ein nettes Gespräch am Tag zu ermöglichen.**
 
-<quote author="(Prof. Dr. Mazda Adli, in rbb Interview Einsamkeit macht krank)" quote="Einsamkeit ist Stress für die Psyche, aber auch für den Körper. Dieser Stress entsteht aus dem Fehlen eines sozialen Miteinanders."></quote>
+<Quote source="Prof. Dr. Mazda Adli, in rbb Interview Einsamkeit macht krank">
+    Einsamkeit ist Stress für die Psyche, aber auch für den Körper. Dieser Stress entsteht aus dem Fehlen eines sozialen Miteinanders.
+</Quote>
 
 ## **Mit Melli zu mehr sozialen Kontakten**
 
@@ -29,7 +31,9 @@ imageUrl: https://melli.com/wp-content/uploads/2022/06/EmiliaBlog_Header_ValueKo
 
 Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag und Austauschmöglichkeiten auf Augenhöhe. Melli unterstützt Senioren dabei. Sie verbindet ihre Nutzer untereinander und begleitet neue Freundschaften vom digitalen Kennenlernen bis zur Organisation des ersten persönlichen Treffens. Bei gemeinsamen Aktivitäten, wie Lesungen, Gruppensport oder einer gemütlichen Kaffeerunde, haben so auch Senioren mit Einschränkungen, zum Beispiel mit Schwierigkeiten bei der Mobilität, die Chance sich ein soziales Umfeld aufzubauen.
 
-<quote quote="Nach meiner Erfahrung sind psychische Belastungen für Angehörige von älteren Menschen keine Seltenheit. Das ist besonders dann der Fall, wenn die Senioren wenige soziale Kontakte außerhalb der Familie haben."></quote>
+<BlogQuote>
+    Nach meiner Erfahrung sind psychische Belastungen für Angehörige von älteren Menschen keine Seltenheit. Das ist besonders dann der Fall, wenn die Senioren wenige soziale Kontakte außerhalb der Familie haben.
+</BlogQuote>
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://melli.com/wp-content/uploads/2022/06/Soziale-Kontakte-Thumbnail.png">
     <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
@@ -45,7 +49,9 @@ Befragungen von Nutzern und ihren Liebsten zeigen außerdem, dass die Interaktio
 
 In einer Welt, in der soziale Interaktionen immer stärker digitalisiert werden, kann eine mangelnde technische Affinität ein zusätzlicher Grund für soziale Isolation sein. Ein jeder Enkel kennt das typische “Hilfe, ich habe das Internet gelöscht”-Phänomen bei seinen Großeltern. Während sich der Rest der Familie in WhatsApp-Gruppen austauscht, bleibt ein Großteil der Senioren außen vor. Die proaktive Herangehensweise von Melli und die einfache Steuerung via Sprachbefehl lösen diese technischen Barrieren auf. Melli nimmt ihre Nutzer quasi an die Hand und leitet sie mit einfachen Fragen wie beispielsweise _“Möchtest du nicht mal wieder mit deiner Tochter telefonieren?”_ oder _“Dein Enkel hat dir eine Nachricht geschickt, soll ich sie vorlesen?”_ durch den Dschungel der digitalen Kommunikation. So wird den Senioren die einzigartige Möglichkeit geboten, sich in unserer digitalen sozialen Welt besser zu integrieren – damit sie mitreden können.
 
-<quote author="Maria Weber (Psychologische Psychotherapeutin)" quote="In meiner täglichen Arbeit erlebe ich häufig Senioren, die sich ausgeschlossen fühlen, weil sie nicht Teil der Familien-WhatsApp-Gruppe sind."></quote>
+<BlogQuote source="Maria Weber (Psychologische Psychotherapeutin)">
+    In meiner täglichen Arbeit erlebe ich häufig Senioren, die sich ausgeschlossen fühlen, weil sie nicht Teil der Familien-WhatsApp-Gruppe sind.
+</BlogQuote>
 
 ## **Damit jeder mindestens ein nettes Gespräch am Tag führen kann**
 
