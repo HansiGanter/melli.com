@@ -8,7 +8,7 @@ category:
 author:
   name: Name des Autors
 date: 2022-08-08T16:00:00.000+00:00
-imageUrl: https://assets.melli.com/images/stock/red-hair-greeting-1024.webp
+imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1.webp
 ---
 
 ## Blog-Header
@@ -290,13 +290,15 @@ Nutze `IconColumn` um ...
 - Bei heading gebe die Unterschrift
 - Bei text gebe der Inhalt unter die Überschrift
 - Jeder IconColumn Tag enthält 2 Coloumns 
+- Icons findest du unter: https://icones.js.org
 
 ### Beispiel
 
 <TutorialWrapper>
-    <IconColumn :items="[{icon: 'i-carbon:star', heading: 'Neue Freunde finden ist keine Sache des Alters', text:'Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag.' },
+    <IconColumn :items="[{icon: 'i-carbon:phone', heading: 'Neue Freunde finden ist keine Sache des Alters', text:'Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag.' },
     {icon: 'i-carbon:star', heading: 'Neue Freunde finden ist keine Sache des Alters', text:'Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag.' },]">
     </IconColumn> 
+    <br>
     <IconColumn :items="[{icon: 'i-carbon:star', heading: 'Neue Freunde finden ist keine Sache des Alters', text:'Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag.' }   ,{icon: 'i-carbon:star', heading: 'Neue Freunde finden ist keine Sache des Alters', text:'Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder Großeltern. Das kann ganz schön viel Druck erzeugen und erfahrungsgemäß ein Herd für Konflikte sein. Eigene Freunde und nahestehende Bekannte stellen für Angehörige nicht nur eine Entlastung vom immerwährenden Verantwortungsgefühl dar, sondern bieten Senioren auch mehr Abwechslung im Alltag.' },]"></IconColumn>
 </TutorialWrapper>
 
