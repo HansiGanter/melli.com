@@ -46,7 +46,7 @@ const blogs = router.getRoutes()
         </div>
         <hr class="mx-auto mt-8 prose">
       </header> -->
-      <article v-if="frontmatter.category && frontmatter.category.href === 'blogs'" class="m-auto prose text-lg max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
+      <article v-if="frontmatter.category && frontmatter.category.href === 'blogs'" class="m-auto prose text-lg max-w-screen-[920px] px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
         <slot />
       </article>
       <article v-else class="m-auto prose">
