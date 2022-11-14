@@ -29,9 +29,9 @@ const showNav = ref(false)
             <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToInfoPackageEvent">
               {{ t('navbar.infopackage') }}
             </RouterLink>
-            <RouterLink to="/karriere" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireKarriereEvent">
+            <!-- <RouterLink to="/karriere" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireKarriereEvent">
               {{ t('navbar.karriere') }}
-            </RouterLink>
+            </RouterLink> -->
           </div>
         </div>
         <div class="lg:flex hidden items-center gap-4">
@@ -42,7 +42,7 @@ const showNav = ref(false)
             v-if="checkout.selectedSubscription"
             to="/shop"
             class="relative inline-flex"
-            @click="fireCartEvent"
+            @click="[fireCartEvent(), fireShopEvent()]"
           >
             <div class="i-carbon:shopping-cart stroke-2 w-6 h-6" />
             <span class="flex absolute h-2.5 w-2.5 top-0 right-0 -mr-0.5">
@@ -71,21 +71,21 @@ const showNav = ref(false)
     >
       <div v-if="showNav" class="container mx-auto px-4 lg:px-0 lg:hidden" :class="showNav ? 'grid' : 'hidden'">
         <div class="grid gap-2 ">
-          <RouterLink to="/" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2">
+          <RouterLink to="/" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2">
             {{ t('navbar.about') }}
           </RouterLink>
-          <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireBlogEvent">
+          <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
-          <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireGoToLiveDemoEvent">
+          <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToLiveDemoEvent">
             {{ t('navbar.live-demo') }}
           </RouterLink>
-          <RouterLink to="/infopaket" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireGoToInfoPackageEvent">
+          <RouterLink to="/infopaket" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToInfoPackageEvent">
             {{ t('navbar.infopackage') }}
           </RouterLink>
-          <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-right p-2 my-2" @click="fireKarriereEvent">
+          <!-- <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireKarriereEvent">
             {{ t('navbar.karriere') }}
-          </RouterLink>
+          </RouterLink> -->
           <a href="https://app.melli.com/" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
             <div class="i-carbon:user stroke-2 w-5 h-5" />
             <span>Account</span>

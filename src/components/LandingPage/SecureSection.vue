@@ -15,7 +15,7 @@ const { t } = useI18n()
         </p>
       </div>
       <span>
-        <NewsletterOpen />
+        <InfoPackageDialogOpen />
       </span>
     </div>
   </div>

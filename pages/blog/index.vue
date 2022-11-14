@@ -7,8 +7,8 @@ useHead({
   ],
 })
 
-const filters = ['Latest', 'Pricing', 'Product', 'Social']
-const currentFilter = ref(filters[0])
+// const filters = ['Latest', 'Pricing', 'Product', 'Social']
+// const currentFilter = ref(filters[0])
 </script>
 
 <template>
@@ -23,13 +23,13 @@ const currentFilter = ref(filters[0])
         </p>
       </div>
       <div class="grid gap-2 w-full lg:w-6/12 lg:mx-auto">
-        <NewsletterOpen />
+        <InfoPackageDialogOpen />
       </div>
     </div>
   </Container>
   <Container class="pb-20 lg:pb-28 px-5">
     <div class="grid gap-8">
-      <div class="flex items-center justify-center gap-3">
+      <!-- <div class="flex items-center justify-center gap-3">
         <button
           v-for="filter in filters"
           :key="filter"
@@ -40,7 +40,7 @@ const currentFilter = ref(filters[0])
         >
           {{ filter }}
         </button>
-      </div>
+      </div> -->
       <PostPreview prefix="/blog" />
     </div>
   </Container>

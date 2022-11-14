@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core'
+import { fireShopEvent } from '~/google-tag-manager'
 const heroVideo = ref<HTMLElement | null>(null)
 
 const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
@@ -32,7 +33,7 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
         <h2 class="text-white font-semibold text-2xl sm:text-3xl leading-normal mb-2">
           Schenke Oma nicht nur ein Gesellschaftsspiel, sondern die Spielfreunde gleich mit.
         </h2>
-        <RouterLink to="/shop" class="bg-primary-500 text-white py-3 px-2 sm:py-4 sm:px-8 w-full sm:w-fit rounded-lg mx-auto">
+        <RouterLink to="/shop" class="bg-primary-500 text-white py-3 px-2 sm:py-4 sm:px-8 w-full sm:w-fit rounded-lg mx-auto" @click="fireShopEvent">
           Jetzt 60 Tage kostenlos ausprobieren!
         </RouterLink>
       </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { displayPrice } from '~/utils/common'
-import { firePlanEvent } from '~/google-tag-manager'
+import { firePlanEvent, fireShopEvent } from '~/google-tag-manager'
 import { useCheckoutStore, useSubscriptionsData } from '~/stores/checkout'
 import type { SubscriptionInfo } from '~/stores/checkout'
 
@@ -22,6 +22,7 @@ const setCart = () => {
 
 const goToShop = (id: string, name: string) => {
   firePlanEvent(name)
+  fireShopEvent()
   const selectedItem = subscriptions.find(item => id === item.id)
   checkout.$patch({ selectedSubscription: selectedItem })
   router.push({ path: '/shop', query: { id: selectedItem?.id } })
@@ -36,7 +37,7 @@ const goToShop = (id: string, name: string) => {
       @click="[setCart(), goToShop(subscription.id, subscription.name)]"
     >
       <div
-        class="relative bg-white border-2 rounded-xl shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in md:h-90 border-gray-300 hover:border-primary-500"
+        class="relative bg-white border-2 rounded-xl shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in md:h-90 border-gray-300 hover:border-primary-500 hover:border-4"
       >
         <div class="grid gap-2">
           <div class="w-20 h-20 lg:w-32 lg:h-32 bg-tertiary-500 pt-2 lg:pt-5 absolute top-2 right-2 rounded-full text-center">

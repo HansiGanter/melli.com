@@ -10,6 +10,7 @@ const newsletter = ref(false)
   <div class="p-5">
     <FormKit
       id="testuser-subscribe-form"
+      v-slot="{ state: { valid } }"
       form-class="grid gap-3"
       type="form"
       action="https://seu2.cleverreach.com/f/329911-335570/wcs/"
@@ -66,7 +67,7 @@ const newsletter = ref(false)
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button bg-primary-500 font-medium text-base text-white px-4 py-2 rounded-lg"
-        @click="fireTestuserSubscriptionEvent(userEmail)"
+        @click="valid ? fireTestuserSubscriptionEvent(userEmail) : ''"
       >
         <span>Anmelden</span>
       </FormKit>

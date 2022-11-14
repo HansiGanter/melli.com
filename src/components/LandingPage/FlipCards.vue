@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
+import { fireFlipCardEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 interface Feature {
   image: string
@@ -35,7 +36,7 @@ const features: Ref<Feature[]> = ref([
     >
       <div class="flip-card-inner h-full">
         <!-- Front-Side of Card -->
-        <div class="flip-card-front absolute p-6 flex flex-col gap-4 justify-between w-full h-full bg-white drop-shadow-xl rounded-3xl">
+        <div class="flip-card-front absolute p-6 flex flex-col gap-4 justify-between w-full h-full bg-white drop-shadow-xl rounded-3xl" @click="fireFlipCardEvent(feature.title)">
           <div class=" overflow-hidden">
             <img class="object-contain w-full h-full" :src="feature.image">
           </div>

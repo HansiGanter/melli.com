@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import { fireNewsletterSentEvent } from '~/google-tag-manager'
-const newsletterProps = defineProps<{ email?: string; dsgvo?: boolean }>()
+import { fireInfoPackageSentEvent } from '~/google-tag-manager'
+const newsletterProps = defineProps<{ email?: string; dsgvo?: boolean; download?: boolean }>()
 
 const userEmail = ref(newsletterProps.email)
 const vorname = ref('')
 const nachname = ref('')
 const phone = ref('')
 const userIsDSGVO = ref(newsletterProps.dsgvo)
+const isDownload = ref(newsletterProps.download ? 'Ich möchte das Infopaket downloaden' : '')
 </script>
 
 <template>
   <Container class="py-5 px-5 sm:px-0 sm:py-6 lg:py-8">
     <FormKit
-      id="landingpage-newsletter-form-dialog"
+      id="infopackage-download-form-dialog"
+      v-slot="{ state: { valid } }"
       form-class="grid gap-3 layout_form cr_form cr_font max-w-lg"
       type="form"
       action="https://eu2.cleverreach.com/f/329911-336275/wcs/"
@@ -20,7 +22,6 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
       target="_blank"
       :actions="false"
       :incomplete-message="false"
-      @submit="fireNewsletterSentEvent"
     >
       <FormKit
         id="7539403"
@@ -67,6 +68,12 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
         input-class="cr_form-input"
       />
       <FormKit
+        id="Ich möchte das Infopaket downloaden7641665"
+        v-model="isDownload"
+        type="hidden"
+        name="1027445[]"
+      />
+      <FormKit
         id="7545650"
         v-model="userIsDSGVO"
         type="hidden"
@@ -87,11 +94,12 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
         </template>
       </FormKit>
       <FormKit
+        id="7539405"
         type="submit"
         input-class="cr_form-block cr_button"
-        @click="fireNewsletterSentEvent"
+        @click="valid ? fireInfoPackageSentEvent(userEmail) : ''"
       >
-        <span>Jetzt anmelden</span>
+        <span class="mx-auto flex gap-2 bg-primary-500 rounded-lg text-white w-fit">Downloaden <div class="i-carbon:download inline-block align-middle w-6 h-6 shrink-0" /></span>
       </FormKit>
     </FormKit>
   </Container>

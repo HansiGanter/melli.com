@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireCallEvent } from '~/google-tag-manager'
+import { fireCallbackSentEvent } from '~/google-tag-manager'
 const firstname = ref('')
 const lastname = ref('')
 const phone = ref('')
@@ -100,7 +100,7 @@ const newsletter = ref(false)
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button bg-primary-500 font-medium text-base text-white px-4 py-2 rounded-lg"
-        @click="fireCallEvent"
+        @click="fireCallbackSentEvent"
       >
         <span>Rückruf anfordern</span>
       </FormKit>

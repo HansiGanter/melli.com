@@ -18,9 +18,9 @@ const navigation = {
     { name: t('footer.solutions.privacy'), href: '/datenschutz' },
     { name: t('footer.solutions.legal-notice'), href: '/impressum' },
   ],
-  company: [
-    { name: t('footer.company.jobs'), href: '/karriere' },
-  ],
+  // company: [
+  //   { name: t('footer.company.jobs'), href: '/karriere' },
+  // ],
   social: [
     {
       name: 'Facebook',
@@ -51,7 +51,7 @@ const navigation = {
     <h2 id="footer-heading" class="sr-only">
       Footer
     </h2>
-    <div class="pb-8 grid grid-cols-1 xl:grid-cols-5 gap-8">
+    <div class="pb-8 grid grid-cols-1 xl:grid-cols-4 gap-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-4">
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
           <div>
@@ -107,7 +107,7 @@ const navigation = {
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0">
+          <!-- <div class="mt-12 md:mt-0">
             <h3
               class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase"
             >
@@ -123,27 +123,27 @@ const navigation = {
                 </router-link>
               </li>
             </ul>
+          </div> -->
+          <div class=" lg:mt-0">
+            <h3
+              class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase"
+            >
+              Folge uns!
+            </h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li v-for="item in navigation.social" :key="item.name" @click="fireContactEvent(item.name)">
+                <a
+                  :href="item.href"
+                  target="_blank"
+                  class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center"
+                >
+                  <div :class="item.icon" />
+                  <span>{{ item.name }}</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class=" lg:mt-0">
-        <h3
-          class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase"
-        >
-          Folge uns!
-        </h3>
-        <ul role="list" class="mt-4 space-y-2">
-          <li v-for="item in navigation.social" :key="item.name" @click="fireContactEvent(item.name)">
-            <a
-              :href="item.href"
-              target="_blank"
-              class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center"
-            >
-              <div :class="item.icon" />
-              <span>{{ item.name }}</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
     <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">

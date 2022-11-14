@@ -2,9 +2,9 @@ import md5 from 'md5'
 
 export const fireShopEvent = () => {
   window.dataLayer.push({
-    event: 'melli-cta-shop',
+    event: 'melli-cta-go-to-shop',
   })
-  console.log('melli-cta-shop')
+  console.log('melli-cta-go-to-shop')
 }
 
 export const fireBuyEvent = () => {
@@ -35,7 +35,7 @@ export const firePlanEvent = (description: string) => {
   console.log(`melli-plan-${description}`)
 }
 
-export const fireCallbackEvent = () => {
+export const fireCallbackOpenEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-callback-open',
   })
@@ -125,7 +125,7 @@ export const fireVideoEvent = (video: string) => {
   console.log(`melli-cta-video-${video}`)
 }
 
-export const fireCallEvent = () => {
+export const fireCallbackSentEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-callback-sent',
   })
@@ -204,9 +204,12 @@ export const fireInfoPackageOpenEvent = () => {
   console.log('melli-cta-info-package-open')
 }
 
-export const fireInfoPackageSentEvent = () => {
+export const fireInfoPackageSentEvent = (email?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-info-package-sent',
+    emailhash: md5(email),
   })
   console.log('melli-cta-info-package-sent')
+
+  console.log(md5(email))
 }

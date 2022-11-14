@@ -4,7 +4,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
-import { fireCallbackEvent, fireFAQEvent, fireNewsletterSentEvent } from '~/google-tag-manager'
+import { fireCallbackOpenEvent, fireFAQEvent, fireNewsletterSentEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
@@ -297,7 +297,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
               Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich gerne und räumen alle Unklarheiten aus dem Weg. Vereinbare einfach einen Rückruf mit uns und wir melden uns umgehend bei dir.
             </p>
           </div>
-          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="[callbackModalOpen = true, fireCallbackEvent()]">
+          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
             <span class="font-medium text-base">Rückruf vereinbaren</span>
           </button>
         </div>
@@ -305,51 +305,9 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
     </div>
   </Container>
   <Container class="py-12 lg:py-24 px-5 h-full">
-    <div class="bg-tertiary-50 rounded-[32px] lg:rounded-[64px] px-6 py-16 lg:p-16 overflow-hidden">
-      <div class="grid gap-16 justify-items-center">
-        <div class="grid gap-8 text-center lg:w-2/3">
-          <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
-            {{ t('secure-melli.heading-1') }}
-          </h1>
-          <p class="text-gray-900 font-normal text-xl lg:text-2xl">
-            {{ t('secure-melli.sub-text') }}
-          </p>
-        </div>
-        <FormKit
-          form-class="w-full lg:w-1/2"
-          type="form"
-          :actions="false"
-          :incomplete-message="false"
-          @submit="openNews"
-        >
-          <div class="grid gap-5 lg:w-full">
-            <FormKit
-              v-model="email"
-              type="email"
-              name="email"
-              placeholder="E-Mail-Adresse"
-              validation="required|email"
-              validation-visibility="submit"
-              inner-class="w-full h-fit border border-primary-400 rounded-lg overflow-hidden focus:border-primary-500"
-              input-class="w-full h-11 px-3 border-none text-base text-gray-700 placeholder-gray-400 outline-none"
-            />
-            <div class="flex flex-col items-stretch lg:flex-row gap-3 items-center w-fit mx-auto">
-              <FormKit
-                type="submit"
-                input-class="flex w-full lg:w-fit items-center justify-center px-7 py-4 bg-primary-500 rounded-lg text-white font-medium text-base"
-              >
-                {{ t('secure-melli.get-melli-button') }}
-              </FormKit>
-            </div>
-          </div>
-        </FormKit>
-      </div>
-    </div>
+    <SecureSection />
   </Container>
   <Modal :show="callbackModalOpen" @close="callbackModalOpen = false">
     <CallbackDialog />
-  </Modal>
-  <Modal :show="newsletterDialogOpen" @close="newsletterDialogOpen = false">
-    <NewsletterDialog :email="email" />
   </Modal>
 </template>

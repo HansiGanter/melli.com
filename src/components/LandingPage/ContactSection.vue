@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireCallbackEvent, fireContactEvent } from '~/google-tag-manager'
+import { fireCallbackOpenEvent, fireContactEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const socials = [
@@ -29,7 +29,7 @@ const callbackModalOpen = ref(false)
         {{ t('contact.text') }}
       </p>
     </div>
-    <div class="flex flex-col lg:flex-row gap-8 items-center">
+    <div class="flex flex-col sm:flex-row gap-8 items-center">
       <div v-for="social in socials" :key="social.text" class="grid gap-5 justify-items-center">
         <div class="text-4xl lg:text-5xl text-primary-500" :class="social.icon" />
         <a :href="social.url" target="_blank" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="fireContactEvent(social.desc)">
@@ -38,7 +38,7 @@ const callbackModalOpen = ref(false)
       </div>
       <div class="grid gap-5 justify-items-center">
         <div class="i-carbon:phone text-4xl lg:text-5xl text-primary-500" />
-        <button class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="[callbackModalOpen = true, fireCallbackEvent()]">
+        <button class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
           <span class="mx-auto">{{ t('contact.phone') }}</span>
         </button>
       </div>
