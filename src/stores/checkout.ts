@@ -22,16 +22,16 @@ export const useSubscriptionsData = () => {
     name: t('shop.choose-subscription.base-plan'),
     tag: 'WLAN erforderlich',
     features: ['60 Tage kostenlos testen', 'Melli-Abo', 'Melli-App für Familie & Freunde'],
-    annualPayment: { cost: 9.90, priceId: 'price_1LiJRUCwdXQVYry9QhVhMTc3' },
-    monthlyPayment: { cost: 14.90, priceId: 'price_1LiJRUCwdXQVYry9QhVhMTc3' },
+    annualPayment: { cost: 9.90, priceId: 'price_1LhtgKCwdXQVYry9yjYRJcRa' },
+    monthlyPayment: { cost: 14.90, priceId: 'price_1LhtgKCwdXQVYry9Q3GMZdHW' },
   },
   {
     id: 'advanced',
     name: t('shop.choose-subscription.advance-plan'),
     tag: 'kein WLAN erforderlich',
     features: ['60 Tage kostenlos testen', 'Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'],
-    annualPayment: { cost: 19.90, priceId: 'price_1LiJRUCwdXQVYry9QhVhMTc3' },
-    monthlyPayment: { cost: 24.90, priceId: 'price_1LiJRUCwdXQVYry9QhVhMTc3' },
+    annualPayment: { cost: 19.90, priceId: 'price_1LhtiACwdXQVYry97b3Q6Adb' },
+    monthlyPayment: { cost: 24.90, priceId: 'price_1LhtiACwdXQVYry9Qow3iz3x' },
   },
   ]
   return subscriptions
