@@ -4,20 +4,11 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
-import { fireCallbackOpenEvent, fireFAQEvent, fireNewsletterSentEvent } from '~/google-tag-manager'
+import { fireCallbackOpenEvent, fireFAQEvent } from '~/google-tag-manager'
 
 const { t } = useI18n()
 
-const email = ref('')
-
 const callbackModalOpen = ref(false)
-const newsletterDialogOpen = ref(false)
-const openNews = () => {
-  fireNewsletterSentEvent()
-  setTimeout(() => {
-    newsletterDialogOpen.value = true
-  }, 0)
-}
 
 const aboutMelli = [
   {
