@@ -1,5 +1,7 @@
 ---
 title: Allgemeine Geschäftsbedingungen von **melli.com**
+category:
+    href: legal
 ---
 
 Diese AGB sind anwendbar auf
