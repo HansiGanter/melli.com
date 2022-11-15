@@ -30,7 +30,7 @@ export const useSubscriptionsData = () => {
     name: t('shop.choose-subscription.advance-plan'),
     tag: 'kein WLAN erforderlich',
     features: ['60 Tage kostenlos testen', 'Melli-Abo', 'Melli-App für Familie & Freunde', 'Mit unbegrenztem mobilen Internet'],
-    annualPayment: { cost: 19.90, priceId: 'price_1LhtiACwdXQVYry97b3Q6Adb' },
+    annualPayment: { cost: 19.90, priceId: 'price_1M4S5bCwdXQVYry9pYWn9IRq' },
     monthlyPayment: { cost: 24.90, priceId: 'price_1LhtiACwdXQVYry9Qow3iz3x' },
   },
   ]
