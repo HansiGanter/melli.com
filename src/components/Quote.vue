@@ -11,7 +11,7 @@ const props = defineProps({
   <div class="md:flex items-center">
     <img
       :src="portrait"
-      class="p-4 lg:p-8 rounded-full w-52 lg:w-64 aspect-sqaure m-auto"
+      class="p-4 lg:p-8 rounded-full w-52 lg:w-64 aspect-square m-auto object-cover"
     >
     <div>
       <p class="my-4 font-medium text-primary-900 text-xl md:text-2xl lg:text-3xl">

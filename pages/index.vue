@@ -21,7 +21,7 @@ useHead({
       :quote="t('citation.matthias.quote')"
       :source="t('citation.matthias.source')"
       :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
+      portrait="https://assets.melli.com/images/images/team/melli_team_matthias-01-1024.webp"
     />
   </Container>
 
