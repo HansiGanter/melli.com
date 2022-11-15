@@ -56,6 +56,12 @@ if (props.frontmatter.title) {
       <!-- <ContactSection v-if="frontmatter.category && frontmatter.category.href === 'blogs'" /> -->
     </div>
     <!-- but leave components as is -->
+
+    <div v-if="frontmatter.category && frontmatter.category.href === 'legal'">
+      <article class="m-auto prose text-lg max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
+        <slot />
+      </article>
+    </div>
     <slot v-else />
   </div>
 </template>
