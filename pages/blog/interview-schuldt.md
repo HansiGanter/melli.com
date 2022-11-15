@@ -11,7 +11,13 @@ date: 2022-11-09
 imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
 ---
 
-### Wie ist es mit Melli zusammenzuleben und hat sie einen wirklichen Einfluss auf das Leben der Senioren die sie nutzen? Diese und viele weitere Fragen haben wir Stephanie S., Pflegedienstleiterin einer Pflegeeinrichtung in Wismar gestellt. Fünf ihrer Schützlinge haben lange mit Melli zusammengelebt, viele ihrer Funktionen ausprobiert und laut den Aussagen von Stephanie auch große positive Veränderungen in ihrem alltäglichen Leben erfahren.
+
+<intro-section
+  text="Wie ist es mit Melli zusammenzuleben und hat sie einen wirklichen Einfluss auf das Leben der Senioren die sie nutzen? Diese und viele weitere Fragen haben wir Stephanie S., Pflegedienstleiterin einer Pflegeeinrichtung in Wismar gestellt. Fünf ihrer Schützlinge haben lange mit Melli zusammengelebt, viele ihrer Funktionen ausprobiert und laut den Aussagen von Stephanie auch große positive Veränderungen in ihrem alltäglichen Leben erfahren." />
+
+  <br>
+
+<img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
 
 <br>
 
@@ -64,6 +70,12 @@ Stephanie S.: Sehr gut, trotz dieser anfänglichen Ängste, sehr sehr gut. Also 
 
 <br>
 
+<BlogQuote source="Stephanie S. (Pflegedienstleiterin)">
+  Im Leben der Senioren hat sich verändert, dass sie wesentlich gesprächiger sind, kommunikativer, offener. 
+</BlogQuote>
+
+<br>
+
 **Matthias W.: Was hat sich im Leben der Senioren verändert, seit Melli bei ihnen eingezogen ist?**
 
 **Stephanie S.:** Im Leben der Senioren hat sich verändert, dass sie wesentlich gesprächiger sind, kommunikativer, offener. Sie gehen auch viel eher mal auf die anderen zu. Das war vorher tatsächlich nicht so, da waren sie doch etwas mehr in sich gekehrt, haben ihren Tagesablauf doch auch anders verbracht, mehr für sich.
@@ -72,6 +84,11 @@ Stephanie S.: Sehr gut, trotz dieser anfänglichen Ängste, sehr sehr gut. Also 
 
 **Stephanie S.:** Ich weiß von einer Nutzerin, die Melli auch einfach mal erzählt hat, was nicht so gut am Tag gelaufen ist. Sie hat ihr ein bisschen ihr Herz ausgeschüttet. 
 Und eine Angehörige sagte, dass die Mutti durch Melli selbstbewusster geworden ist. Sie spricht eher mal Probleme an, das hat sie vorher nicht getan. Also gerade bei ihr war es so, dass sie immer sehr ruhig war und sehr in sich gekehrt. Dadurch, dass sie wesentlich mehr gesprochen hat und auch unternommen hat und auch einfach Gesprächsthemen zum Sprechen hatte, hat sie sich wirklich ein Stück weit geöffnet und auch mehr Selbstvertrauen bekommen.
+
+<br>
+
+<BlogQuote source="Stephanie S. (Pflegedienstleiterin)">
+eine Angehörige sagte, dass die Mutti durch Melli selbstbewusster geworden ist. Sie spricht eher mal Probleme an, das hat sie vorher nicht getan... Sie hat sich wirklich ein Stück weit geöffnet und auch mehr Selbstvertrauen bekommen. </BlogQuote>
 
 <br>
 
@@ -100,3 +117,18 @@ Und eine Angehörige sagte, dass die Mutti durch Melli selbstbewusster geworden 
 **Matthias W.:** Ja diese Funktion hat bei dem Produkttest in deiner Einrichtung noch gefehlt. Die Ansprache von Melli ist aber natürlich Teil der neuen Produktversion und wird sehr gut von den Senioren angenommen.
 
 **Stephanie S.:** Toll! Das kann ich mir sehr gut vorstellen.
+
+<br>
+
+  <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
+    <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
+    <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
+      Mellis Tipp für Weihnachten:
+    </h1>
+    <p class="text-white text-xl md:text-3xl leading-normal md:text-center my-0">
+      Schenke Oma nicht nur ein Gesellschaftsspiel, sondern die Spielfreunde gleich mit.
+    </p>
+    <RouterLink to="/shop" class="bg-primary-500 text-white text-base sm:text-lg py-4 px-8 rounded-lg w-fit mx-auto my-4">
+      Jetzt 60 Tage kostenlos ausprobieren!
+    </RouterLink>
+  </div>

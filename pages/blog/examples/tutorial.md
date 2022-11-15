@@ -261,8 +261,20 @@ Hier sind die Icons auch anpassbar, aber wenn nicht angegeben, wird das Standard
     </CheckList>
 ```
 
+## Image1 (with rounded corners)
 
-## Image (with rounded corners)
+### Beispiel
+
+<TutorialWrapper>
+  <img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
+</TutorialWrapper>
+
+### Code
+```html
+  <img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
+```
+
+## Image2 (with rounded corners)
 
 Nutze `<img>` um ...
 - src für ein anderes Bild ändern
