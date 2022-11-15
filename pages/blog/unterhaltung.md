@@ -3,11 +3,11 @@ title: Mit Melli zu einem gesunden und aktiven Lebensabend
 description: |
   Mehr Freizeit bedeutet nicht unbedingt mehr Zufriedenheit - besonders im Alter fehlt es häufig an Möglichkeiten die freie Zeit mit spannden Inhalten und Aktivitäten zu füllen. Wir zeigen, wie Melli dabei helfen kann.
 category:
-  name: Mellis Funktionen; Unterhaltung
+  name: ["Funktionen", "Unterhaltung"]
   href: blogs
 author:
   name: Dr. Matthias Weber
-date: 2022-10-08T16:00:00.000+00:00
+date: 2022-10-08
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3_komprimiert.jpg
 ---
 
@@ -78,13 +78,15 @@ Neben der Selbstbeschäftigung unterhält Melli ihre Nutzer außerdem über den 
     Sie stärken das Selbstvertrauen der Betroffenen, denn sie haben das Gefühl, noch etwas zu können, etwas wert zu sein.
 </CheckList>
 
-_Flöer, Claudia: Beschäftigung und Spiele für Demenzerkrankte, 2018, in: Pflege.de, www.pflege.de/krankheiten/demenz/beschaeftigung-spiele (Zugriff am 05.07.2022)_
+<p class="text-sm italic leading-5">
+Flöer, Claudia: Beschäftigung und Spiele für Demenzerkrankte, 2018, in: Pflege.de, www.pflege.de/krankheiten/demenz/beschaeftigung-spiele (Zugriff am 05.07.2022)
+</p>
 
 ## Das Problem der Antriebslosigkeit
 
 Für einen abwechslungsreichen Alltag bedarf es neben dem Angebot an Beschäftigungsmöglichkeiten jedoch auch der Motivation dazu, aktiv zu werden. Gerade wenn es sich um neue Beschäftigungsformen wie Online-Inhalte handelt, stoßen Senioren häufig an ihre Grenzen. Aus diesem Grund ist Melli eine proaktive Alltagsbegleiterin. Sie wartet nicht nur auf Anweisungen ihrer Nutzer, wie zum Beispiel, dass sie Musik anschalten oder ein Rätselspiel starten soll. Sie geht in regelmäßigen Abständen mit Aktivitätsvorschlägen auf ihre Nutzer zu, angepasst auf deren Alltagsablauf. Sie motiviert die Senioren tätig zu werden und versucht es bei Ablehnung ihrer Anregungen einfach mit neuen Vorschlägen. Damit nicht jeder Tag aufs Neue vor dem Fernseher beginnt und endet.
 
-<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://melli.com/wp-content/uploads/2022/06/Soziale-Kontakte-Thumbnail.png">
+<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
     <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
 </video>
 

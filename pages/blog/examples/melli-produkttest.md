@@ -3,18 +3,18 @@ title: Jetzt als Testnutzer bewerben und Melli ein Leben lang gratis nutzen.
 description: |
     Nach 10 Monaten Entwicklungszeit ist es nun endlich soweit – Melli möchte die ersten Gespräche mit ihren Nutzern führen. Und dafür benötigen wir euch! Bewirb dich, deine Eltern oder Großeltern jetzt als Testnutzer!
 category:
-    name: Produkttest
-    href: blogs
+  name: [Produkttest]
+  href: blogs
 author:
-    name: Dr. Matthias Weber
-    imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
-date: 2022-07-12T16:00:00.000+00:00
-readingTime: 7min
-imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
+  name: Dr. Matthias Weber
+date: 2022-07-12
+imageUrl: "https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp"
 ---
 
 <intro-section text="Nach 10 Monaten Entwicklungszeit, über 100 Produkttests und mehr als 1000 Produkt-Iterationen ist es nun endlich soweit – Melli möchte die ersten Gespräche mit ihren Nutzern führen. Und dafür benötigen wir euch! Bewirb dich, deine Eltern oder Großeltern jetzt als Testnutzer und hilf uns, mit Melli das Leben von Senioren und ihren Angehörigen ein Stück besser zu machen." />
+
 <br>
+
 <intro-section text="Als Dankeschön schenken wir allen Teilnehmer eine lebenslange kostenfreie Nutzung von Melli. Alles was ihr dafür tun müsst, ist Melli für drei Monate auf Herz und Nieren zu testen und uns anschließend ein paar Fragen zu euren Erfahrungen zu beantworten." />
 
 <button class="my-5 py-4 px-8 bg-amber-200 rounded-lg decoration-none w-fit">
@@ -23,16 +23,14 @@ imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screensho
 
 <br>
 
-<InfoBox
-  icon="i-carbon:information"
-  heading="Melli sorgt für mehr Lebenszufriedheit bei Senioren und lässt ihre Liebsten daran teilhaben.">
-  <p class="text-primary-900 text-lg">
+<InfoBox icon="i-carbon:information" heading="Melli sorgt für mehr Lebenszufriedheit bei Senioren und lässt ihre Liebsten daran teilhaben.">
+    <p class="text-primary-900 text-lg">
     Als digitale, sprachgesteuerte Alltagsbegleiterin motiviert Melli Senioren zu sozialen Kontakten, Beschäftigung und mehr Struktur im Alltag. Sie bringt ihre Nutzer zusammen und erhöht so spürbar die Zufriedenheit im Leben der Senioren.
     Gleichzeitig gibt Melli Freunden und Angehörigen über die Smartphone-App die Möglichkeit am Leben ihrer Eltern oder Großeltern teilzuhaben: über das Teilen von Bildern oder Videos, über sprachgesteuerte Videoanrufe oder indem Melli ein update über das Wohlbefinden gibt.
-  </p>
-</InfoBox>
+    </p>
+    </InfoBox>
 
-## Darum solltest du an unserem Produkttest teilnehmen.
+    ## Darum solltest du an unserem Produkttest teilnehmen.
 
 <CheckList icon='i-carbon:checkmark'>
         Du hilfst dabei ein Produkt zu entwickeln, welches das Leben von Senioren nachhaltig bereichern kann.

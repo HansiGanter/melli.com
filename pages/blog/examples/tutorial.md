@@ -1,9 +1,9 @@
 ---
-title: Das sagt Pflege-Expertin Stephanie S. zu Melli
+title: Tutorial
 description: |
-  Stephanie ist Pflegedienstleiterin einer Pflegeeinrichtung in Wismar. Fünf ihrer Schützlinge haben Melli getestet, das ist ihr Resümee.
+  Hier findest du Komponenten, die du zur Erstellung eines Blogartikels verwenden kannst.
 category:
-  name: Seniortech
+  name: [Seniortech]
   href: blogs
 author:
   name: Name des Autors

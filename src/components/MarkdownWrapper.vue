@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 const props = defineProps<{ frontmatter?: any }>()
 
 const { d } = useI18n()
-const router = useRouter()
+// const router = useRouter()
 
 // convention: if the frontmatter defines a title, we assume the component it is a page
 if (props.frontmatter.title) {
@@ -18,12 +18,12 @@ if (props.frontmatter.title) {
     }],
   })
 }
-const blogs = router.getRoutes()
-  .filter(
-    route => route.path.startsWith('/blog')
-      && (route.meta.frontmatter) // todo: why is there a second route without frontmatter?
-      && (route.meta as any).frontmatter.title,
-  ).splice(0, 3)
+// const blogs = router.getRoutes()
+//   .filter(
+//     route => route.path.startsWith('/blog')
+//       && (route.meta.frontmatter) // todo: why is there a second route without frontmatter?
+//       && (route.meta as any).frontmatter.title,
+//   ).splice(0, 3)
 </script>
 
 <template>
