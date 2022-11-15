@@ -62,6 +62,5 @@ if (props.frontmatter.title) {
         <slot />
       </article>
     </div>
-    <slot v-else />
   </div>
 </template>
