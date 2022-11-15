@@ -3,11 +3,11 @@ title: Das sagt Pflege-Expertin Stephanie S. zu Melli
 description: |
   Stephanie ist Pflegedienstleiterin einer Pflegeeinrichtung in Wismar. Fünf ihrer Schützlinge haben Melli getestet, das ist ihr Resümee.
 category:
-  name: Experten Meinung
+  name: ["Experten Meinung", "Meinung 2", "TEST3"]
   href: blogs
 author:
   name: Dr. Matthias Weber (CPO Meetap GmbH)
-date: 2022-11-09T16:00:00.000+00:00
+date: 2022-11-09
 imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
 ---
 

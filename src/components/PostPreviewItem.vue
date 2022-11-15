@@ -22,7 +22,7 @@ const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatt
       <div class="flex-1 flex flex-col justify-between">
         <div class="flex-1">
           <span class="text-sm font-normal text-gray-500">
-            07 July 2020
+            {{ frontmatter.date }}
           </span>
           <div class="flex-col gap-3 mt-3">
             <div class="flex items-center justify-between gap-4">
@@ -36,13 +36,18 @@ const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatt
             </p>
           </div>
         </div>
-        <div class="mt-6 flex items-center">
+        <!-- <div class="mt-6 flex items-center">
           <p class="text-sm font-medium bg-primary-50 rounded-md inline px-2 py-1 text-primary-700">
             <a
               :href="frontmatter.category.href"
               class="hover:underline"
             >{{ frontmatter.category.name }}</a>
           </p>
+        </div> -->
+        <div class="flex gap-2">
+          <Badge v-for="cat in frontmatter.category.name" :key="cat" class="bg-primary-50">
+            <span class="text-primary-700 font-medium text-sm">{{ cat }}</span>
+          </Badge>
         </div>
       </div>
     </div>
