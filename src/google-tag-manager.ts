@@ -139,11 +139,18 @@ export const fireLoginEvent = () => {
   console.log('melli-cta-app-login')
 }
 
+export const fireGoToBlogEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-go-to-blog',
+  })
+  console.log('melli-cta-go-to-blog')
+}
+
 export const fireBlogEvent = (blog?: string) => {
   window.dataLayer.push({
-    event: !blog ? 'melli-cta-blog' : `melli-blog-${blog}`,
+    event: `melli-blog-${blog}`,
   })
-  console.log(!blog ? 'melli-cta-blog' : `melli-blog-${blog}`)
+  console.log(`melli-blog-${blog}`)
 }
 
 export const fireKarriereEvent = () => {

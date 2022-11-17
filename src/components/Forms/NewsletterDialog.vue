@@ -8,18 +8,48 @@ const nachname = ref('')
 const phone = ref('')
 const userIsDSGVO = ref(newsletterProps.dsgvo)
 const isDownload = ref(newsletterProps.download ? 'Ich möchte das Infopaket downloaden' : '')
+
+const eventListener = () => {
+  setTimeout(() => {
+    if (![vorname.value, nachname.value, userEmail.value].includes('')) {
+      fetch('https://assets.melli.com/files/melli-infobroschuere.pdf')
+        .then(resp => resp.blob())
+        .then((blob) => {
+          const url = window.URL.createObjectURL(blob)
+          const a = document.createElement('a')
+          a.style.display = 'none'
+          a.href = url
+          a.download = 'melli-infobroschuere.pdf'
+          document.body.appendChild(a)
+          a.click()
+          window.URL.revokeObjectURL(url)
+          a.remove()
+        })
+      fireInfoPackageSentEvent()
+    }
+  }, 500)
+}
+
+onMounted(() => {
+  const form = document.getElementById('infopackage-download-form-dialog')
+  form?.addEventListener('submit', eventListener)
+})
+
+onUnmounted(() => {
+  const form = document.getElementById('infopackage-download-form-dialog')
+  form?.removeEventListener('submit', eventListener)
+})
 </script>
 
 <template>
   <Container class="py-5 px-5 sm:px-0 sm:py-6 lg:py-8">
     <FormKit
       id="infopackage-download-form-dialog"
-      v-slot="{ state: { valid } }"
+      action="https://eu2.cleverreach.com/f/329911-336275/wcs/"
+      target="_blank"
+      method="post"
       form-class="grid gap-3 layout_form cr_form cr_font max-w-lg"
       type="form"
-      action="https://eu2.cleverreach.com/f/329911-336275/wcs/"
-      method="post"
-      target="_blank"
       :actions="false"
       :incomplete-message="false"
     >
@@ -97,7 +127,6 @@ const isDownload = ref(newsletterProps.download ? 'Ich möchte das Infopaket dow
         id="7539405"
         type="submit"
         input-class="cr_form-block cr_button"
-        @click="valid ? fireInfoPackageSentEvent(userEmail) : ''"
       >
         <span class="mx-auto flex gap-2 bg-primary-500 rounded-lg text-white w-fit">Downloaden <div class="i-carbon:download inline-block align-middle w-6 h-6 shrink-0" /></span>
       </FormKit>

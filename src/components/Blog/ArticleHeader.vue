@@ -24,7 +24,7 @@ const articleHeaderProps = defineProps<{
           </Badge>
         </div>
         <div class="grid gap-6 md:max-w-lg md:break-words">
-          <h1 class="text-black font-semibold text-4xl lg:text-5xl">
+          <h1 class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14">
             {{ heading }}
           </h1>
           <p v-if="description" class="font-medium text-lg lg:text-2xl text-black">
