@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
+// import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 const quotes = [
   {
@@ -17,7 +17,7 @@ const quotes = [
 ]
 const subscriptionModal = ref(false)
 const open = () => {
-  fireTestuserOpenSubscriptionEvent()
+  // fireTestuserOpenSubscriptionEvent()
   subscriptionModal.value = true
 }
 </script>

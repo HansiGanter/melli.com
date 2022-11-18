@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* TODO: Fire Shop-Events when Shop is ready */
-import { fireCartEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireGoToLiveDemoEvent, fireKarriereEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
+import { fireCartEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireGoToLiveDemoEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
 const { t } = useI18n()

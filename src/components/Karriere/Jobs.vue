@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireJobFilterEvent, fireOpenPositionEvent } from '~/google-tag-manager'
+// import { fireJobFilterEvent, fireOpenPositionEvent } from '~/google-tag-manager'
 const router = useRouter()
 const routes = router.getRoutes()
   .filter(
@@ -39,10 +39,10 @@ const currentFilter = ref('All')
         Aktuelle Jobangebote
       </h1>
       <div class="flex flex-wrap items-center gap-3 lg:gap-6">
-        <button type="button" class="py-2.5 px-4 inline font-medium text-sm rounded-full transition delay-150 ease-in-out" :class="currentFilter === 'All' ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'" @click="[currentFilter = 'All', fireJobFilterEvent('all')]">
+        <button type="button" class="py-2.5 px-4 inline font-medium text-sm rounded-full transition delay-150 ease-in-out" :class="currentFilter === 'All' ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'" @click="currentFilter = 'All'">
           All
         </button>
-        <button v-for="filter in filters" :key="filter" type="button" class="py-2.5 px-4 inline font-medium text-sm rounded-full transition delay-150 ease-in-out" :class="currentFilter === filter ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'" @click="[currentFilter = filter, fireJobFilterEvent(filter)]">
+        <button v-for="filter in filters" :key="filter" type="button" class="py-2.5 px-4 inline font-medium text-sm rounded-full transition delay-150 ease-in-out" :class="currentFilter === filter ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'" @click="currentFilter = filter">
           {{ filter }}
         </button>
       </div>
@@ -51,19 +51,19 @@ const currentFilter = ref('All')
           <h3 class="font-medium text-gray-900 text-xl lg:text-2xl">
             Software Development 💻
           </h3>
-          <JobCard v-for="(job, n) in softwareJobs" :key="n" job-type="software" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" @click="fireOpenPositionEvent(job.meta.frontmatter.title)" />
+          <JobCard v-for="(job, n) in softwareJobs" :key="n" job-type="software" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" />
         </div>
         <div v-if="(currentFilter === 'Design' || currentFilter === 'All') && designJobs.length > 0" class="grid gap-6">
           <h3 class="font-medium text-gray-900 text-xl lg:text-2xl">
             Design  🎨
           </h3>
-          <JobCard v-for="(job, d) in designJobs" :key="d" job-type="design" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" @click="fireOpenPositionEvent(job.meta.frontmatter.title)" />
+          <JobCard v-for="(job, d) in designJobs" :key="d" job-type="design" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" />
         </div>
         <div v-if="(currentFilter === 'Product' || currentFilter === 'All') && productJobs.length > 0" class="grid gap-6">
           <h3 class="font-medium text-gray-900 text-xl lg:text-2xl">
             Product  🚀
           </h3>
-          <JobCard v-for="(job, p) in productJobs" :key="p" job-type="product" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" @click="fireOpenPositionEvent(job.meta.frontmatter.title)" />
+          <JobCard v-for="(job, p) in productJobs" :key="p" job-type="product" :title="job.meta.frontmatter.title" :text="job.meta.frontmatter.description" :period="job.meta.frontmatter.period" :path="job.path" />
         </div>
         <div v-if="(currentFilter === 'Other' || currentFilter === 'All') && otherJobs.length > 0" class="grid gap-6">
           <h3 class="font-medium text-gray-900 text-xl lg:text-2xl">
@@ -78,7 +78,6 @@ const currentFilter = ref('All')
             :text="job.meta.frontmatter.description"
             :period="job.meta.frontmatter.period"
             :path="job.path"
-            @click="fireOpenPositionEvent(job.meta.frontmatter.title)"
           />
         </div>
       </div>

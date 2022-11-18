@@ -100,7 +100,7 @@ const newsletter = ref(false)
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button bg-primary-500 font-medium text-base text-white px-4 py-2 rounded-lg"
-        @click="fireCallbackSentEvent"
+        @click="fireCallbackSentEvent(email, phone, firstname, lastname)"
       >
         <span>Rückruf anfordern</span>
       </FormKit>

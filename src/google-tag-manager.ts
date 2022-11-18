@@ -1,4 +1,5 @@
 import md5 from 'md5'
+import { sha256 } from 'js-sha256'
 
 export const fireShopEvent = () => {
   window.dataLayer.push({
@@ -41,19 +42,20 @@ export const fireCallbackOpenEvent = () => {
   })
   console.log('melli-cta-callback-open')
 }
-export const fireOpenJobAlertEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-job-alert-open',
-  })
-  console.log('melli-cta-job-alert-open')
-}
 
-export const fireJobAlertEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-job-alert-sent',
-  })
-  console.log('melli-cta-job-alert-sent')
-}
+// export const fireOpenJobAlertEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-job-alert-open',
+//   })
+//   console.log('melli-cta-job-alert-open')
+// }
+
+// export const fireJobAlertEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-job-alert-sent',
+//   })
+//   console.log('melli-cta-job-alert-sent')
+// }
 
 export const fireContactEvent = (contact: string) => {
   window.dataLayer.push({
@@ -69,19 +71,19 @@ export const fireSocialEvent = (social: string) => {
   console.log(`melli-social-${social}`)
 }
 
-export const fireNewsletterOpenEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-newsletter-open',
-  })
-  console.log('melli-cta-newsletter-open')
-}
+// export const fireNewsletterOpenEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-newsletter-open',
+//   })
+//   console.log('melli-cta-newsletter-open')
+// }
 
-export const fireNewsletterSentEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-newsletter-sent',
-  })
-  console.log('melli-cta-newsletter-sent')
-}
+// export const fireNewsletterSentEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-newsletter-sent',
+//   })
+//   console.log('melli-cta-newsletter-sent')
+// }
 
 export const fireFAQEvent = (description?: string) => {
   window.dataLayer.push({
@@ -97,26 +99,26 @@ export const fireFlipCardEvent = (card: string) => {
   console.log(`melli-flip-card-${card}`)
 }
 
-export const fireOpenPositionEvent = (job?: string) => {
-  window.dataLayer.push({
-    event: !job ? 'melli-cta-karriere-jobangebote' : `melli-karriere-${job}`,
-  })
-  console.log(!job ? 'melli-cta-karriere-jobangebote' : `melli-karriere-${job}`)
-}
+// export const fireOpenPositionEvent = (job?: string) => {
+//   window.dataLayer.push({
+//     event: !job ? 'melli-cta-karriere-jobangebote' : `melli-karriere-${job}`,
+//   })
+//   console.log(!job ? 'melli-cta-karriere-jobangebote' : `melli-karriere-${job}`)
+// }
 
-export const fireJobFilterEvent = (filter: string) => {
-  window.dataLayer.push({
-    event: `melli-karriere-filter-${filter}`,
-  })
-  console.log(`melli-karriere-filter-${filter}`)
-}
+// export const fireJobFilterEvent = (filter: string) => {
+//   window.dataLayer.push({
+//     event: `melli-karriere-filter-${filter}`,
+//   })
+//   console.log(`melli-karriere-filter-${filter}`)
+// }
 
-export const fireJobApplyEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-karriere-apply',
-  })
-  console.log('melli-cta-karriere-apply')
-}
+// export const fireJobApplyEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-karriere-apply',
+//   })
+//   console.log('melli-cta-karriere-apply')
+// }
 
 export const fireVideoEvent = (video: string) => {
   window.dataLayer.push({
@@ -125,9 +127,13 @@ export const fireVideoEvent = (video: string) => {
   console.log(`melli-cta-video-${video}`)
 }
 
-export const fireCallbackSentEvent = () => {
+export const fireCallbackSentEvent = (email?: string, phone?: string, firstName?: string, LastName?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-callback-sent',
+    em: email ? sha256(email?.toLowerCase()) : '',
+    ph: phone ? sha256(phone?.replace(/[\(\)\-\s]+/g, '')) : '',
+    fn: firstName ? sha256(firstName?.toLowerCase()) : '',
+    ln: LastName ? sha256(LastName?.toLowerCase()) : '',
   })
   console.log('melli-cta-callback-sent')
 }
@@ -153,28 +159,28 @@ export const fireBlogEvent = (blog?: string) => {
   console.log(`melli-blog-${blog}`)
 }
 
-export const fireKarriereEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-karriere',
-  })
-  console.log('melli-cta-karriere')
-}
+// export const fireKarriereEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-karriere',
+//   })
+//   console.log('melli-cta-karriere')
+// }
 
-export const fireTestuserOpenSubscriptionEvent = () => {
-  window.dataLayer.push({
-    event: 'melli-cta-testuser-subscription-form-open',
-  })
-  console.log('melli-cta-testuser-subscription-form-open')
-}
+// export const fireTestuserOpenSubscriptionEvent = () => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-testuser-subscription-form-open',
+//   })
+//   console.log('melli-cta-testuser-subscription-form-open')
+// }
 
-export const fireTestuserSubscriptionEvent = (email?: string) => {
-  window.dataLayer.push({
-    event: 'melli-cta-testuser-subscription-sent',
-    emailhash: md5(email),
-  })
-  console.log('melli-cta-testuser-subscription-sent')
-  console.log(md5(email))
-}
+// export const fireTestuserSubscriptionEvent = (email?: string) => {
+//   window.dataLayer.push({
+//     event: 'melli-cta-testuser-subscription-sent',
+//     em: md5(email),
+//   })
+//   console.log('melli-cta-testuser-subscription-sent')
+//   console.log(md5(email))
+// }
 
 export const fireGoToLiveDemoEvent = () => {
   window.dataLayer.push({
@@ -183,16 +189,21 @@ export const fireGoToLiveDemoEvent = () => {
   console.log('melli-cta-go-to-live-demo')
 }
 
-export const fireLiveDemoOpenEvent = () => {
+export const fireLiveDemoOpenEvent = (email?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-live-demo-open',
+    em: email ? sha256(email?.toLowerCase()) : '',
   })
   console.log('melli-cta-live-demo-open')
 }
 
-export const fireLiveDemoSentEvent = () => {
+export const fireLiveDemoSentEvent = (email?: string, phone?: string, firstName?: string, LastName?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-live-demo-sent',
+    em: email ? sha256(email?.toLowerCase()) : '',
+    ph: phone ? sha256(phone?.replace(/[\(\)\-\s]+/g, '')) : '',
+    fn: firstName ? sha256(firstName?.toLowerCase()) : '',
+    ln: LastName ? sha256(LastName?.toLowerCase()) : '',
   })
   console.log('melli-cta-live-demo-sent')
 }
@@ -204,19 +215,21 @@ export const fireGoToInfoPackageEvent = () => {
   console.log('melli-cta-go-to-info-package')
 }
 
-export const fireInfoPackageOpenEvent = () => {
+export const fireInfoPackageOpenEvent = (email?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-info-package-open',
+    em: email ? sha256(email?.toLowerCase()) : '',
   })
   console.log('melli-cta-info-package-open')
 }
 
-export const fireInfoPackageSentEvent = (email?: string) => {
+export const fireInfoPackageSentEvent = (email?: string, phone?: string, firstName?: string, LastName?: string) => {
   window.dataLayer.push({
     event: 'melli-cta-info-package-sent',
-    emailhash: md5(email),
+    em: email ? sha256(email?.toLowerCase()) : '',
+    ph: phone ? sha256(phone?.replace(/[\(\)\-\s]+/g, '')) : '',
+    fn: firstName ? sha256(firstName?.toLowerCase()) : '',
+    ln: LastName ? sha256(LastName?.toLowerCase()) : '',
   })
   console.log('melli-cta-info-package-sent')
-
-  console.log(md5(email))
 }

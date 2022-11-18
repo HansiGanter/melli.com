@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireJobAlertEvent } from '~/google-tag-manager'
+// import { fireJobAlertEvent } from '~/google-tag-manager'
 const props = defineProps<{ email?: string }>()
 const firstname = ref('')
 const lastname = ref('')
@@ -78,7 +78,6 @@ const isDSGVO = ref(false)
       <FormKit
         type="submit"
         input-class="cr_form-block cr_button bg-primary-500 font-medium text-base text-white px-4 py-2 rounded-lg"
-        @click="fireJobAlertEvent"
       >
         <span>Einsenden</span>
       </FormKit>

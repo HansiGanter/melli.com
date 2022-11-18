@@ -5,7 +5,7 @@ const email = ref('')
 const liveDemoDialogOpen = ref(false)
 const isDSGVO = ref(false)
 const open = () => {
-  fireLiveDemoOpenEvent()
+  fireLiveDemoOpenEvent(email.value)
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     liveDemoDialogOpen.value = true

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireOpenPositionEvent } from '~/google-tag-manager'
+// import { fireOpenPositionEvent } from '~/google-tag-manager'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import { fireOpenPositionEvent } from '~/google-tag-manager'
           <p class="max-w-md font-medium text-lg lg:text-xl text-black">
             Werde Teil des meetap Teams & hilf uns dabei eine Zukunft zu schaffen, in der jeder Mensch in jeder Lebensphase Momente gemeinsam erleben und teilen kann - unabhängig von Alter, Lebensumständen, körperlichen Fähigkeiten oder anderen Hindernissen.
           </p>
-          <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2" @click="fireOpenPositionEvent()">
+          <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
             <span>zu den Jobangeboten</span>
             <div class="i-carbon:arrow-right w-5 h-5" />
           </router-link>

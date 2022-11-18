@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { fireNewsletterOpenEvent } from '~/google-tag-manager'
+// import { fireNewsletterOpenEvent } from '~/google-tag-manager'
 
 const email = ref('')
 const newsletterDialogOpen = ref(false)
 const isDSGVO = ref(false)
 const open = () => {
-  fireNewsletterOpenEvent()
+  // fireNewsletterOpenEvent()
   // we have to ensure the query params are set before the hubspot script loads
   setTimeout(() => {
     newsletterDialogOpen.value = true
@@ -39,7 +39,6 @@ const open = () => {
       <FormKit
         type="submit"
         input-class="flex items-center w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-gray-900 rounded-r-3xl text-white"
-        @click="fireNewsletterOpenEvent"
       >
         <div class="i-heroicons:arrow-small-right w-6 h-6" />
       </FormKit>

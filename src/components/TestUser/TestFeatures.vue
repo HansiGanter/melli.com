@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
+// import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 const features = [
   { icon: 'i-heroicons-outline:chat-alt', text: t('test-features.4.answer') },
@@ -10,7 +10,7 @@ const features = [
 ]
 const subscriptionModal = ref(false)
 const open = () => {
-  fireTestuserOpenSubscriptionEvent()
+  // fireTestuserOpenSubscriptionEvent()
   subscriptionModal.value = true
 }
 </script>

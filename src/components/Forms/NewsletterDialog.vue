@@ -25,7 +25,7 @@ const eventListener = () => {
           window.URL.revokeObjectURL(url)
           a.remove()
         })
-      fireInfoPackageSentEvent()
+      fireInfoPackageSentEvent(userEmail, phone, vorname, nachname)
     }
   }, 500)
 }

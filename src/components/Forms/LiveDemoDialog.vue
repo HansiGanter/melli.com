@@ -143,7 +143,7 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
         type="submit"
         label="Anmelden"
         input-class="cr_form-block cr_button"
-        @click="valid ? fireLiveDemoSentEvent() : ''"
+        @click="valid ? fireLiveDemoSentEvent(userEmail, phone, vorname, nachname) : ''"
       />
     </FormKit>
   </Container>

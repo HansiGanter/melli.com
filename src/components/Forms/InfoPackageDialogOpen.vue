@@ -7,11 +7,11 @@ const infoPackageDownloadDialogOpen = ref(false)
 
 const openPostDialog = () => {
   infoPackagePostDialogOpen.value = true
-  fireInfoPackageOpenEvent()
+  fireInfoPackageOpenEvent(email.value)
 }
 const openDownloadDialog = () => {
   infoPackageDownloadDialogOpen.value = true
-  fireInfoPackageOpenEvent()
+  fireInfoPackageOpenEvent(email.value)
 }
 </script>
 

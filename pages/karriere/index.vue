@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireOpenJobAlertEvent } from '~/google-tag-manager'
+// import { fireOpenJobAlertEvent } from '~/google-tag-manager'
 useHead({
   title: 'Melli',
   meta: [
@@ -56,7 +56,6 @@ const open = () => {
               type="submit"
               input-class="flex w-full lg:w-fit items-center justify-center px-6 py-3.5 bg-primary-500 rounded-lg text-white font-medium text-base"
               wrapper-class="grow"
-              @click="fireOpenJobAlertEvent"
             >
               Jetzt anmelden
             </FormKit>

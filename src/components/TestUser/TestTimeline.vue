@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
+// import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 const steps = [
   { name: 'Step 1', title: t('test-timeline.step-1.title'), text: t('test-timeline.step-1.text'), status: 'complete', image: 'https://assets.melli.com/pictograms/pen.svg' },
@@ -10,7 +10,7 @@ const steps = [
 const subscriptionModal = ref(false)
 
 const open = () => {
-  fireTestuserOpenSubscriptionEvent()
+  // fireTestuserOpenSubscriptionEvent()
   subscriptionModal.value = true
 }
 </script>

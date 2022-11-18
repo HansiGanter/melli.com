@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireTestuserSubscriptionEvent } from '~/google-tag-manager'
+// import { fireTestuserSubscriptionEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 const email = ref('')
 const isDSGVO = ref(false)
@@ -24,7 +24,6 @@ const newsletter = ref(false)
     <div class="grid gap-2 w-full lg:w-1/2 lg:mx-auto">
       <FormKit
         id="testuser-subscribe-form"
-        v-slot="{ state: { valid } }"
         type="form"
         action="https://seu2.cleverreach.com/f/329911-335570/wcs/"
         target="_blank"
@@ -52,7 +51,6 @@ const newsletter = ref(false)
             type="submit"
             input-class="flex items-center mx-auto w-fit gap-2 px-4 pb-3.5 pt-4 lg:px-5 lg:pb-2.5 lg:pt-3 bg-primary-500 rounded-l-lg lg:rounded-l-0 rounded-r-lg text-white"
             wrapper-class="grow"
-            @click="valid ? fireTestuserSubscriptionEvent(email) : ''"
           >
             <span>Jetzt Melli kostenlos sichern!</span>
             <div class="i-carbon:chevron-right" />
