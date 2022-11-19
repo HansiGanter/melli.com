@@ -31,10 +31,10 @@ const isPost = ref(newsletterProps.post ? 'Ich möchte das Infopkate per Post zu
       </h1>
       <hr>
       <FormKit
-        id="7539407"
+        id="7684475"
         v-model="vorname"
         type="text"
-        name="1011268"
+        name="1031854"
         label="Vorname*"
         placeholder="Vorname"
         validation-label="Vorname"
@@ -44,10 +44,10 @@ const isPost = ref(newsletterProps.post ? 'Ich möchte das Infopkate per Post zu
         validation-visibility="submit"
       />
       <FormKit
-        id="7539408"
+        id="7684476"
         v-model="nachname"
         type="text"
-        name="1011269"
+        name="1031855"
         label="Nachname*"
         placeholder="Nachname"
         validation-label="Nachname"
@@ -70,10 +70,10 @@ const isPost = ref(newsletterProps.post ? 'Ich möchte das Infopkate per Post zu
         input-class="cr_form-input"
       />
       <FormKit
-        id="7539409"
+        id="7684477"
         v-model="phone"
         type="text"
-        name="1011270"
+        name="1031856"
         label="Telefonnummer"
         placeholder="+49 123 456789"
         input-class="cr_form-input"

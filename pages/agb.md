@@ -398,6 +398,16 @@ Rabatt zeitlich begrenzt ist, beziehen sich die Zeitangaben, sofern
 nicht anders angegeben, auf die Zeitzone des Anbieters. Diese ist den
 entsprechenden Angaben des Anbieters in diesem Dokument zu entnehmen.
 
+### Kostenfreie Überlassung Hardware – Angebot zwischen 16. November und 31. Dezemeber 2022
+
+Das Angebot zur kostenfreien Überlassung der für das Produkt notwendigen Hardware für bis zu 50 Bestellungen ist zeitlich befristet gültig bis zum 31. Dezember 2022. 
+
+Das Angebot umfasst die kostenfreie Überlassung eines Lenovo Tablets für 60 Tage der kostenfreien Nutzung sowie darüber hinaus. Wird das abgeschlossene Abonnement vor Ablauf von 14 Monaten (60 Tage kostenfreie Testphase zzgl. 12 Monate kostenpflichtiges Abonnement) beendet, gleich von welcher Partei, so ist das Tablet zurückzuschicken.
+
+Ist das Tablet beschädigt oder nicht weiter nutzbar, so wird dem Nutzer der Neupreis des Tablets in Rechnung gestellt. 
+
+Ist das Abonnement nach Ablauf von 14 Monaten (60 Tage kostenfreie Testphase zzgl. 12 Monate kostenpflichtiges Abonnement) ungekündigt, so geht das zur Nutzung überlassene Tablet in das Eigentum des Nutzers über.
+
 ### Coupons
 
 Angebote oder Rabatte können auf Coupons basieren.

@@ -45,7 +45,7 @@ onUnmounted(() => {
   <Container class="py-5 px-5 sm:px-0 sm:py-6 lg:py-8">
     <FormKit
       id="infopackage-download-form-dialog"
-      action="https://eu2.cleverreach.com/f/329911-336275/wcs/"
+      action="https://newsletter.melli.com/f/329911-336275/wcs/"
       target="_blank"
       method="post"
       form-class="grid gap-3 layout_form cr_form cr_font max-w-lg"
@@ -66,10 +66,10 @@ onUnmounted(() => {
         validation-visibility="submit"
       />
       <FormKit
-        id="7539407"
+        id="7684475"
         v-model="vorname"
         type="text"
-        name="1011268"
+        name="1031854"
         label="Vorname*"
         validation-label="Vorname"
         message-class="text-red-500 mt-1"
@@ -78,10 +78,10 @@ onUnmounted(() => {
         validation-visibility="submit"
       />
       <FormKit
-        id="7539408"
+        id="7684476"
         v-model="nachname"
         type="text"
-        name="1011269"
+        name="1031855"
         label="Nachname*"
         validation-label="Nachname"
         message-class="text-red-500 mt-1"
@@ -90,10 +90,10 @@ onUnmounted(() => {
         validation-visibility="submit"
       />
       <FormKit
-        id="7539409"
+        id="7684477"
         v-model="phone"
         type="text"
-        name="1011270"
+        name="1031856"
         label="Telefonnummer"
         input-class="cr_form-input"
       />
