@@ -41,15 +41,15 @@ function openModal(video: string) {
   isOpen.value = true
 }
 
-const emiliavideo = ref()
+const mellivideo = ref()
 const isPlaying = ref(false)
 const playVideo = () => {
-  if (emiliavideo.value.paused) {
-    emiliavideo.value.play()
+  if (mellivideo.value.paused) {
+    mellivideo.value.play()
     isPlaying.value = true
   }
   else {
-    emiliavideo.value.pause()
+    mellivideo.value.pause()
     isPlaying.value = false
   }
 }
@@ -70,7 +70,7 @@ const playVideo = () => {
         @click="[playVideo(), fireVideoEvent('mission')]"
       >
         <video
-          ref="emiliavideo"
+          ref="mellivideo"
           width="875"
           height="375"
           poster="https://assets.melli.com/images/stock/daughter-mother-in-call-1024.webp"

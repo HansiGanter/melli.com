@@ -168,12 +168,12 @@ Beliebig viele neue Absätze können hinzugefügt werden, indem man das p-Tag ko
 ### Beispiel
 
 <TutorialWrapper>
-    <InfoBox icon="i-carbon:information" heading="Emilia ensures that seniors are more satisfied with life and lets their loved ones participate.">
+    <InfoBox icon="i-carbon:information" heading="Melli ensures that seniors are more satisfied with life and lets their loved ones participate.">
     <p class="text-primary-900 text-lg">
-    As a digital, voice-controlled everyday companion, Emilia motivates seniors to social contacts, employment and more structure in everyday life. It brings its users together and thus noticeably increases the satisfaction in the lives of senior citizens.
+    As a digital, voice-controlled everyday companion, Melli motivates seniors to social contacts, employment and more structure in everyday life. It brings its users together and thus noticeably increases the satisfaction in the lives of senior citizens.
     </p>
     <p class="text-primary-900 text-lg">
-    At the same time, Emilia gives friends and relatives the opportunity to participate in the lives of their parents or grandparents via the smartphone app: by sharing pictures or videos, via voice-controlled video calls or by giving Emilia an update on their well-being.
+    At the same time, Melli gives friends and relatives the opportunity to participate in the lives of their parents or grandparents via the smartphone app: by sharing pictures or videos, via voice-controlled video calls or by giving Melli an update on their well-being.
     </p>
     </InfoBox>
 </TutorialWrapper>
@@ -183,18 +183,18 @@ Beliebig viele neue Absätze können hinzugefügt werden, indem man das p-Tag ko
 ```html
 <InfoBox
   icon="i-carbon:information"
-  heading="Emilia ensures that seniors are more satisfied with life and lets their loved ones participate.">
+  heading="Melli ensures that seniors are more satisfied with life and lets their loved ones participate.">
   <p class="text-primary-900 text-lg">
-    As a digital, voice-controlled everyday companion, Emilia motivates seniors
+    As a digital, voice-controlled everyday companion, Melli motivates seniors
     to social contacts, employment and more structure in everyday life. It
     brings its users together and thus noticeably increases the satisfaction in
     the lives of senior citizens.
   </p>
   <p class="text-primary-900 text-lg">
-    At the same time, Emilia gives friends and relatives the opportunity to
+    At the same time, Melli gives friends and relatives the opportunity to
     participate in the lives of their parents or grandparents via the smartphone
     app: by sharing pictures or videos, via voice-controlled video calls or by
-    giving Emilia an update on their well-being.
+    giving Melli an update on their well-being.
   </p>
 </InfoBox>
 ```
@@ -236,10 +236,10 @@ Hier sind die Icons auch anpassbar, aber wenn nicht angegeben, wird das Standard
         You help to develop a product that can sustainably enrich the lives of seniors.
     </CheckList>
     <CheckList icon='i-carbon:checkmark'>
-        You can use Emilia for free and help design future functions according to your ideas.
+        You can use Melli for free and help design future functions according to your ideas.
     </CheckList>
     <CheckList >
-        We would like to thank you with an unlimited, free Emilia subscription - practically for a lifetime.
+        We would like to thank you with an unlimited, free Melli subscription - practically for a lifetime.
     </CheckList>
     <CheckList>
         You help to develop a product that can sustainably enrich the lives of seniors.
@@ -253,9 +253,9 @@ Hier sind die Icons auch anpassbar, aber wenn nicht angegeben, wird das Standard
     <CheckList icon='i-carbon:phone'>
         You help to develop a product that can sustainably enrich the lives of seniors.
     </CheckList>
-    <CheckList icon='i-carbon:checkmark'>You can use Emilia for free and help design future functions according to your ideas.
+    <CheckList icon='i-carbon:checkmark'>You can use Melli for free and help design future functions according to your ideas.
     </CheckList>
-    <CheckList >We would like to thank you with an unlimited, free Emilia subscription - practically for a lifetime.
+    <CheckList >We would like to thank you with an unlimited, free Melli subscription - practically for a lifetime.
     </CheckList>
     <CheckList>You help to develop a product that can sustainably enrich the lives of seniors.
     </CheckList>

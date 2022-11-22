@@ -74,10 +74,6 @@ Die nächsten drei Monate könnt ihr nun alle Funktionen von Melli und der Melli
 
 Nach Ablauf der 3 monatigen Testzeit könnt ihr Melli einfach weiter kostenlos nutzen, alle Updates und Produktneuerungen eingeschlossen & das wortwörtlich so lange wie ihr wollt. Lediglich die Hardwarekosten müssen bei einer Weiternutzung von euch getragen werden. Diese belaufen sich auf 285,60€ und können auch finanziert werden.
 
-<div class="my-10 rounded-10 overflow-hidden">
-    <img src="https://melli.com/wp-content/uploads/2020/02/Emilia_Header_1920x1080px_v3-1200x675.jpg">
-</div>
-
 ## Ihr findet euch hier wieder? Dann seid ihr die idealen Testnutzer.
 
 Wir haben ein paar Kriterien definiert für die Auswahl der idealen Test-Teilnehmer. Solltest du dich, bzw. das Familienmitglied für das du die Bewerbung einreichst, in einigen der unten aufgelisteten Punkte wieder finden, hast du sehr gute Chancen als Testnutzer ausgewählt zu werden. Aber keine Sorge nicht alle der Kriterien sind zwingend notwendig für die Teilnahme.
