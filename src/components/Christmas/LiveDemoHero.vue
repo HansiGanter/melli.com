@@ -29,7 +29,7 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
         <h1 class="text-white font-semibold text-4xl sm:text-5xl leading-tight">
           Melli Live-Demo
         </h1>
-        <h2 class="text-white font-medium sm:font-semibold text-2xl sm:text-3xl leading-normal mb-2">
+        <h2 class="text-white font-medium font-medium text-2xl sm:text-3xl leading-normal mb-2">
           Wir erklären dir in einer online Live-Demonstration, was Melli alles kann und beantworten deine Fragen.<br>Melde dich jetzt an!
         </h2>
         <LiveDemoDialogOpen />

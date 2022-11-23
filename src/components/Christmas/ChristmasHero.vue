@@ -30,7 +30,7 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
         <h1 class="text-white font-semibold text-4xl sm:text-5xl leading-tight">
           Mellis Tipp für Weihnachten:
         </h1>
-        <h2 class="text-white font-semibold text-2xl sm:text-3xl leading-normal mb-2">
+        <h2 class="text-white font-medium text-2xl sm:text-3xl leading-normal mb-2">
           Schenke Oma nicht nur ein Gesellschaftsspiel, sondern die Spielfreunde gleich mit.
         </h2>
         <RouterLink to="/shop" class="bg-primary-500 text-white py-3 px-2 sm:py-4 sm:px-8 w-full sm:w-fit rounded-lg mx-auto" @click="fireShopEvent">
