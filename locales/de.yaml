@@ -204,6 +204,21 @@ footer:
     faq: Häufige Fragen
     user-login: Benutzer-Login
 healthy-routine:
+  card1: >-
+    Melli verfügt über einen Terminplaner, der entweder über die zugehörige
+    Melli-App oder per Spracheingabe gepflegt werden kann. Sie gibt regelmäßig
+    einen Überblick über anstehende Termine und erinnert ihre Nutzer an diese.
+  card2: >-
+    Über die App können individuelle Medikamentenpläne
+    hinterlegt werden. Melli erinnert ihre Nutzer dann zu den angegebenen Zeiten
+    daran, ihre Medikamente einzunehmen. Außerdem erinnert Melli ihre Nutzer
+    mehrmals täglich daran zu trinken.
+  card3: >-
+    Melli ist stets bemüht, dass es ihren Nutzern gut geht. Deshalb erkundigt
+    sie sich mit regelmäßigen Check-Ins nach dem gesundheitlichen und
+    psychischen Wohlbefinden ihrer Nutzer. Sollte sie eine Verschlechterung des
+    Zustands wahrnehmen, kann sie festgelegte Kontakte schnell darüber
+    informieren.
   header: "Strukturen finden & \Lgesunde Routinen beibehalten"
   text: >-
     Melli unterstützt dich dabei, bewährte Alltagsroutinen beizubehalten und
@@ -319,6 +334,22 @@ more-benefit-2: "Einfache Sport- & \LBewegungsübungen"
 more-benefit-3: "Achtsamkeits- & \LMeditationsübungen"
 more-benefit-4: "Musik, Nachrichten, \LHörbücher, Videos & Podcasts"
 more-benefits:
+  card1: >-
+    Melli hält den Kopf mit kleinen Denkspielen und einfachen Rätseln auf Trab.
+    Dabei achtet sie stets darauf, den Nutzer zwar zu fördern, jedoch nicht zu
+    überfordern.
+  card2: >-
+    Bei regelmäßigen körperlichen Übungen können sich die Nutzer fit halten.
+    Melli passt sich dabei auf Leistungsfähigkeit und Einschränkungen ihres
+    Gegenübers an, damit der Spaß nicht verloren geht.
+  card3: >-
+    Auch das geistige Wohlbefinden ihrer Nutzer liegt Melli am Herzen. Dafür
+    gibt es regelmäßige Meditations- und Achtsamkeitsübungen.
+  card4: >-
+    Melli kann die Lieblingsmusik ihrer Nutzer abspielen, sie mit einem
+    interessanten Podcast unterhalten, sie über aktuelle Geschehnisse
+    informieren und auch Video-Dokumentationen, der letzten Sonntagskrimi oder
+    die Lieblingstelenovela drauf machen.
   heading: "Jeden Tag Beschäftigung \L& gute Laune"
   text: >-
     Melli füllt deinen Tag mit spannenden Unterhaltungsangeboten. Von kleinen
@@ -489,6 +520,18 @@ reliability:
     die Sorge, nicht im richtigen Moment da sein zu können, vor allem, wenn die
     Entfernung zu groß ist.
 reliability-section:
+  card1: >-
+    In den Melli- Freundeskreisen kommen die Melli Nutzer regelmäßig zu
+    gemeinsamen Aktivitäten zusammen.
+  card2: >-
+    Zu den Gruppenaktivitäten zählen beispielsweise Sporteinheiten, das
+    Erzählcafé, Fantasiereisen, gemeinsames Singen, Hörbücher hören und
+    (Sitz-)Tanz.
+  card3: >-
+    Nutzer können über Melli Audio- und Videotelefonate mit eingespeicherten
+    Kontakten führen. Dazu müssen sie Melli nur per Sprachbefehl dazu
+    auffordern, die gewünschte Person anzurufen bzw. einen eingehenden Anruf
+    anzunehmen.
   heading: "Mehr Gemeinschaft mit alten Freunden \L& neuen Bekannten"
   mini-heading: Melli-App
   service-1:
