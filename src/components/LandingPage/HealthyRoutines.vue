@@ -7,6 +7,9 @@ const benefits = ref([
   t('healthy-routines-2'),
   t('healthy-routines-3'),
 ])
+const showInformation = ref(-1)
+const textToShow = [t('healthy-routine.card1'), t('healthy-routine.card2'), t('healthy-routine.card3')]
+const iconsSources = ['https://assets.melli.com/bubble-icons/bubble-icon_bell-thick-yellow.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_pill-thick-yellow.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_heart-thick-yellow.svg']
 
 const healthyroutinesvideo = ref()
 const isPlaying = ref(false)
@@ -51,9 +54,28 @@ const playVideo = () => {
           <div
             v-for="(benefit, index) in benefits"
             :key="index"
-            class="text-gray-900 font-semibold text-base bg-tertiary-800/10 py-3.5 px-6 rounded-lg w-full sm:w-fit whitespace-pre-line"
+            class="text-gray-900 font-semibold text-base bg-tertiary-800/10 py-3.5 px-4 rounded-lg w-full sm:w-fit whitespace-pre-line"
           >
-            <span>{{ benefit }}</span>
+            <ul class="p-0" @click="showInformation = index">
+              <li class="flex gap-2 mx-auto items-center">
+                <img :src="iconsSources[index]" class="flex justify-center w-10 h-10 pr-1 shrink-0 object-fit object-center">
+                <div class="text-base">
+                  {{ benefit }}
+                </div>
+              </li>
+            </ul>
+
+            <Modal :show="showInformation === index" @close="showInformation = -1">
+              <Container class="p-6 max-w-3xl">
+                <img :src="iconsSources[index]" class="color-primary-900 w-14 h-14">
+                <div class="font-bold pt-4 py-2 text-xl">
+                  {{ benefit }}
+                </div>
+                <div class="text-xl">
+                  {{ textToShow[index] }}
+                </div>
+              </Container>
+            </Modal>
           </div>
         </div>
       </div>

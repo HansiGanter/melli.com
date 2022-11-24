@@ -120,6 +120,19 @@ footer:
     faq: Frequently asked questions
     user-login: User login
 healthy-routine:
+  card1: >-
+    Melli has an appointment planner that can be maintained either via the
+    associated Melli app or by voice input. It regularly provides an overview of
+    upcoming appointments and reminds its users of them.
+  card2: >-
+    Individual medication schedules can be stored via the app. Melli then
+    reminds its users to take their medication at the specified times. Melli
+    also reminds its users to drink several times a day.
+  card3: >-
+    Melli always tries to ensure that her users are well. Therefore, she
+    inquires about the health and mental well-being of her users with regular
+    check-ins. If she notices a degradation in their condition, she can quickly
+    inform designated contacts.
   header: Find structures & maintain healthy routines
   text: >-
     Melli supports you in maintaining proven daily routines and establishing new
@@ -228,6 +241,19 @@ more-benefit-2: Simple sports & movement exercises
 more-benefit-3: Mindfulness & Meditation Exercises
 more-benefit-4: Music, News, Audiobooks, Videos & Podcasts
 more-benefits:
+  card1: >-
+    Melli keeps the mind busy with little brain games and simple puzzles. She
+    always takes care to encourage the user but not to overwhelm them.
+  card2: >-
+    Users can keep fit with regular physical exercises. Melli adapts to the
+    ability and limitations of her counterpart so that the fun is not lost.
+  card3: >-
+    The mental well-being of her users is also close to Melli's heart. For this,
+    there are regular meditation and mindfulness exercises.
+  card4: >-
+    Melli can play the favourite music of her users, entertain them with
+    interesting podcasts, inform them about current events and also put video
+    documentaries, the latest Sunday thriller or the favourite telenovela on it.
   heading: Every day occupation & good mood
   text: >-
     Melli fills your day with exciting entertainment. From small puzzles to
@@ -326,6 +352,17 @@ quotes-section:
     satisfaction in their everyday lives. For happier aging.
   test-melli: Test now 60 days free of charge!
 reliability-section:
+  card1: >-
+    Melli users regularly come together for joint activities in the Melli
+    Friendcircles.
+  card2: >-
+    Group activities include, for example, sports sessions, the storytelling
+    café, fantasy journeys, singing together, listening to audio books and (sit)
+    dance.
+  card3: >-
+    Users can use Melli to make audio and video calls to saved contacts. To do
+    so, they only have to request Melli by voice command to call the desired
+    person or to accept an incoming call.
   heading: More fellowship with old friends & new acquaintances
   mini-heading: Melli-App
   service-1:

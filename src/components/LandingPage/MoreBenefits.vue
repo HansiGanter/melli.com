@@ -3,6 +3,9 @@ import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const benefits = ref([t('more-benefit-1'), t('more-benefit-2'), t('more-benefit-3'), t('more-benefit-4')])
+const showInformation = ref(-1)
+const textToShow = [t('more-benefits.card1'), t('more-benefits.card2'), t('more-benefits.card3'), t('more-benefits.card4')]
+const iconsSources = ['https://assets.melli.com/bubble-icons/bubble-icon_brain-thick-yellow.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_dribble-thick-yellow.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_smile-thick-yellow.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_music-thick-yellow.svg']
 
 const morebenefitsvideo = ref()
 const isPlaying = ref(false)
@@ -40,9 +43,29 @@ const playVideo = () => {
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="text-gray-900 font-semibold text-base bg-tertiary-800/10 w-full sm:w-fit py-3.5 px-6 lg:h-full rounded-lg items-center flex"
+
+          class="text-gray-900 font-semibold text-base bg-tertiary-800/10 w-full sm:w-fit py-3.5 px-4 lg:h-full rounded-lg items-center flex"
         >
-          <span>{{ benefit }}</span>
+          <ul class="p-0" @click="showInformation = index">
+            <li class="flex gap-2 mx-auto items-center">
+              <img :src="iconsSources[index]" class="flex justify-center w-10 h-10 pr-1 shrink-0 object-fit object-center">
+              <div class="text-base">
+                {{ benefit }}
+              </div>
+            </li>
+          </ul>
+
+          <Modal :show="showInformation === index" @close="showInformation = -1">
+            <Container class="p-6 max-w-3xl">
+              <img :src="iconsSources[index]" class="color-primary-900 w-14 h-14">
+              <div class="font-bold pt-4 py-2 text-xl">
+                {{ benefit }}
+              </div>
+              <div class="text-xl">
+                {{ textToShow[index] }}
+              </div>
+            </Container>
+          </Modal>
         </div>
       </div>
     </div>
