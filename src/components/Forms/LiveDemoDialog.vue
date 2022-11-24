@@ -49,6 +49,7 @@ const userIsDSGVO = ref(newsletterProps.dsgvo)
         validation-visibility="submit"
         :options="[
           '29.11. | 17:00 Uhr',
+          '02.12. | 15:00 Uhr',
           '08.12. | 15:00 Uhr',
         ]"
       />
