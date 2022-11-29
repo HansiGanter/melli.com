@@ -1,7 +1,6 @@
 <script setup lang="ts">
 interface InfoSectionProps {
   header?: string
-  text: string
 }
 
 defineProps<InfoSectionProps>()
@@ -13,7 +12,7 @@ defineProps<InfoSectionProps>()
       {{ header }}
     </h3>
     <p class="font-medium text-xl lg:text-2xl m-0">
-      {{ text }}
+      <slot />
     </p>
   </div>
 </template>

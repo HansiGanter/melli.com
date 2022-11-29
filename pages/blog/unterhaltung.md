@@ -11,7 +11,9 @@ date: 2022-10-08
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3_komprimiert.jpg
 ---
 
-<intro-section text="Die Schließung von kulturellen Einrichtungen und die Beschränkungen von Kontaktmöglichkeiten während der Corona-Pandemie haben einem Großteil der Bevölkerung einen Einblick in jenen Alltag gegeben, der bei vielen älteren Menschen zur Normalität zählt: häufig mangelt es an Angeboten, die Freizeit zu gestalten. Zum Teil können bestehende Angebote aufgrund körperlicher Einschränkungen nicht wahrgenommen werden. In jedem Fall gehören Strukturlosigkeit, Langeweile und in manchen Fällen sogar Depression zu den Folgen mangelnden Inhalts im Alltag." />
+<intro-section>
+Die Schließung von kulturellen Einrichtungen und die Beschränkungen von Kontaktmöglichkeiten während der Corona-Pandemie haben einem Großteil der Bevölkerung einen Einblick in jenen Alltag gegeben, der bei vielen älteren Menschen zur Normalität zählt: häufig mangelt es an Angeboten, die Freizeit zu gestalten. Zum Teil können bestehende Angebote aufgrund körperlicher Einschränkungen nicht wahrgenommen werden. In jedem Fall gehören Strukturlosigkeit, Langeweile und in manchen Fällen sogar Depression zu den Folgen mangelnden Inhalts im Alltag.
+</intro-section>
 
 <br>
 

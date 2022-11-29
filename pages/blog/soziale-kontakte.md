@@ -12,9 +12,11 @@ readingTime: 7min
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
 ---
 
-<intro-section
-  text="Das Bild des Älterwerdens ist immer noch stark geprägt von negativen Assoziationen. Wir stellen uns Oma und Opa alleine im Wohnzimmer vor dem Fernseher sitzend vor, während sie vergeblich auf den Anruf ihrer Kinder oder Enkel warten. Traurigerweise zeichnet die Realität ein ähnliches Bild: rund acht Millionen Menschen in Deutschland im Alter zwischen 60 und 99 Jahren sind teilweise von Einsamkeit oder Isolation betroffen. Knapp 40 Prozent der Menschen über 85 erleben sogar zeitweise intensive Einsamkeitsgefühle (Deutsche Alterssurvey (DEAS), Februar 2014, in Alterseinsamkeit in Deutschland). Die Gründe dafür sind vielschichtig und die angebotenen Lösungen rar. Gerade was digitale Lösungen für soziale Interaktionen angeht, werden Senioren nicht miteinbezogen. Vorgeschoben werden technische Barrieren und mangelnder Adaptionswille unserer älteren Mitmenschen. Melli hat es sich zur Aufgabe gemacht genau an diesem Punkt anzusetzen. Mit der Mission, jedem Menschen mindestens ein nettes Gespräch am Tag zu ermöglichen" />
-  <br>
+<intro-section>
+  Das Bild des Älterwerdens ist immer noch stark geprägt von negativen Assoziationen. Wir stellen uns Oma und Opa alleine im Wohnzimmer vor dem Fernseher sitzend vor, während sie vergeblich auf den Anruf ihrer Kinder oder Enkel warten. Traurigerweise zeichnet die Realität ein ähnliches Bild: rund acht Millionen Menschen in Deutschland im Alter zwischen 60 und 99 Jahren sind teilweise von Einsamkeit oder Isolation betroffen. Knapp 40 Prozent der Menschen über 85 erleben sogar zeitweise intensive Einsamkeitsgefühle (Deutsche Alterssurvey (DEAS), Februar 2014, in Alterseinsamkeit in Deutschland). Die Gründe dafür sind vielschichtig und die angebotenen Lösungen rar. Gerade was digitale Lösungen für soziale Interaktionen angeht, werden Senioren nicht miteinbezogen. Vorgeschoben werden technische Barrieren und mangelnder Adaptionswille unserer älteren Mitmenschen. Melli hat es sich zur Aufgabe gemacht genau an diesem Punkt anzusetzen. Mit der Mission, jedem Menschen mindestens ein nettes Gespräch am Tag zu ermöglichen.
+</intro-section>
+
+<br>
 
 <BlogQuote source="Prof. Dr. Mazda Adli (rbb Interview Einsamkeit macht krank)">
   Einsamkeit ist Stress für die Psyche, aber auch für den Körper. Dieser Stress entsteht aus dem Fehlen eines sozialen Miteinanders.

@@ -11,9 +11,11 @@ date: 2022-11-14
 imageUrl: https://assets.melli.com/images/team/gruender/melli_gruender-02-1536.webp
 ---
 
-<intro-section
-  text="Hallo, ich bin Matthias. Zusammen mit Hans, Stefan und Benjamin bin ich einer der Gründer von Melli und außerdem langjähriger Pflegeunternehmer. Schon lange vor unserer Idee zu Melli habe ich gemeinsam mit Stefan, einem der Melli-Gründungsmitglieder, als Geschäftsführer der Ambulantis BSW GmbH mit und für ältere Menschen gearbeitet. Ambulantis ist eine Gruppe ambulanter Pflegeeinrichtungen mit ca. 500 Mitarbeitern, etwa 1500 Pflegekunden und Standorten in Nord- und Ostdeutschland." />
-  <br>
+<intro-section>
+Hallo, ich bin Matthias. Zusammen mit Hans, Stefan und Benjamin bin ich einer der Gründer von Melli und außerdem langjähriger Pflegeunternehmer. Schon lange vor unserer Idee zu Melli habe ich gemeinsam mit Stefan, einem der Melli-Gründungsmitglieder, als Geschäftsführer der Ambulantis BSW GmbH mit und für ältere Menschen gearbeitet. Ambulantis ist eine Gruppe ambulanter Pflegeeinrichtungen mit ca. 500 Mitarbeitern, etwa 1500 Pflegekunden und Standorten in Nord- und Ostdeutschland.
+</intro-section>
+
+<br>
 
 ## Das Problem mit der Einsamkeit im Alter
 

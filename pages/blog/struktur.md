@@ -12,9 +12,11 @@ readingTime: 7min
 imageUrl: https://assets.melli.com/images/mockups/02_interior/device_interior_scheduler-2048.webp
 ---
 
-<intro-section
-  text="Mit dem Eintritt ins Rentenalter verändert sich die jahrelang angewöhnte Tagesstruktur von Oma und Opa schlagartig. Die eigene Identität und Gewohnheiten formen sich neu. Es gilt nun, einen neuen Rhythmus zu finden. Das fällt den meisten nicht leicht, schließlich wird ein Ablauf, der jahrelang erprobt und eingespielt war, einfach über den Haufen geworfen. Die entstehende Strukturlosigkeit kann sich auf die Bewertung der eigenen Lebenszufriedenheit auswirken und damit große Folgen für die geistige und körperliche Gesundheit mit sich brigen." />
-  <br>
+<intro-section>
+  Mit dem Eintritt ins Rentenalter verändert sich die jahrelang angewöhnte Tagesstruktur von Oma und Opa schlagartig. Die eigene Identität und Gewohnheiten formen sich neu. Es gilt nun, einen neuen Rhythmus zu finden. Das fällt den meisten nicht leicht, schließlich wird ein Ablauf, der jahrelang erprobt und eingespielt war, einfach über den Haufen geworfen. Die entstehende Strukturlosigkeit kann sich auf die Bewertung der eigenen Lebenszufriedenheit auswirken und damit große Folgen für die geistige und körperliche Gesundheit mit sich brigen.
+</intro-section>
+
+<br>
 
 
 <BlogQuote source="(Ponomarenko, 2020)">

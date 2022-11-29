@@ -11,11 +11,11 @@ date: 2022-11-09
 imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
 ---
 
+<intro-section>
+  Wie ist es mit Melli zusammenzuleben und hat sie einen wirklichen Einfluss auf das Leben der Senioren die sie nutzen? Diese und viele weitere Fragen haben wir Stephanie S., Pflegedienstleiterin einer Pflegeeinrichtung in Wismar gestellt. Fünf ihrer Schützlinge haben lange mit Melli zusammengelebt, viele ihrer Funktionen ausprobiert und laut den Aussagen von Stephanie auch große positive Veränderungen in ihrem alltäglichen Leben erfahren.
+</intro-section>
 
-<intro-section
-  text="Wie ist es mit Melli zusammenzuleben und hat sie einen wirklichen Einfluss auf das Leben der Senioren die sie nutzen? Diese und viele weitere Fragen haben wir Stephanie S., Pflegedienstleiterin einer Pflegeeinrichtung in Wismar gestellt. Fünf ihrer Schützlinge haben lange mit Melli zusammengelebt, viele ihrer Funktionen ausprobiert und laut den Aussagen von Stephanie auch große positive Veränderungen in ihrem alltäglichen Leben erfahren." />
-
-  <br>
+<br>
 
 <img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
 
