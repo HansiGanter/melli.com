@@ -1,5 +1,10 @@
-import md5 from 'md5'
+/* eslint-disable no-console */
 import { sha256 } from 'js-sha256'
+
+declare global {
+  interface Window { dataLayer: any[] }
+}
+window.dataLayer = window.dataLayer || {}
 
 export const fireShopEvent = () => {
   window.dataLayer.push({
