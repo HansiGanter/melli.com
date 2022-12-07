@@ -40,7 +40,7 @@ const steps = [
 <template>
   <!-- <div v-if="customerEmail" class="flex flex-col gap-8 text-center my-12 sm:my-32 "> -->
   <div id="success-message-bg" class="w-full" style="">
-    <div v-if="true" class="flex flex-col gap-8 text-center py-12 sm:py-32 max-w-5xl mx-auto px-5">
+    <div v-if="customerEmail" class="flex flex-col gap-8 text-center py-12 sm:py-32 max-w-5xl mx-auto px-5">
       <img class="mx-auto" src="https://assets.melli.com/bubble-icons/bubble-icon_heart_3-yellow.svg">
       <h1 class="text-4xl font-semibold">
         Vielen Dank für dein Vertrauen
