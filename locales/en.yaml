@@ -406,6 +406,12 @@ stats-section:
   optional-feature-1: SIM card with unlimited internet
   sub-heading-1: 'Mandatory included in every plan:'
   sub-heading-2: 'Optional:'
+success:
+  nextsteps:
+    email: Open the email we just sent you on your smartphone.
+    enjoy: Set up, plug in and enjoy!
+    package: Welcome Melli to your home.
+    register: Click on the link and register in the Melli app.
 team:
   heading: Our team
   subheading: >-

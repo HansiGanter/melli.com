@@ -209,10 +209,10 @@ healthy-routine:
     Melli-App oder per Spracheingabe gepflegt werden kann. Sie gibt regelmäßig
     einen Überblick über anstehende Termine und erinnert ihre Nutzer an diese.
   card2: >-
-    Über die App können individuelle Medikamentenpläne
-    hinterlegt werden. Melli erinnert ihre Nutzer dann zu den angegebenen Zeiten
-    daran, ihre Medikamente einzunehmen. Außerdem erinnert Melli ihre Nutzer
-    mehrmals täglich daran zu trinken.
+    Über die App können individuelle Medikamentenpläne hinterlegt werden. Melli
+    erinnert ihre Nutzer dann zu den angegebenen Zeiten daran, ihre Medikamente
+    einzunehmen. Außerdem erinnert Melli ihre Nutzer mehrmals täglich daran zu
+    trinken.
   card3: >-
     Melli ist stets bemüht, dass es ihren Nutzern gut geht. Deshalb erkundigt
     sie sich mit regelmäßigen Check-Ins nach dem gesundheitlichen und
@@ -583,6 +583,14 @@ stats-section:
     Melli nimmt ihre Nutzer an die Hand und gestaltet zusammen mit ihnen einen
     aktiven und abwechslungsreichen Alltag: Gemeinschaft und der Kontakt zu
     Familie und Freunden großgeschrieben.
+success:
+  nextsteps:
+    email: >-
+      Öffne die E-Mail, die wir dir soeben zugesendet haben auf deinem
+      Smartphone.
+    enjoy: Aufbauen, anstecken und loslegen!
+    package: Heiße Melli in deinem Zuhause willkommen.
+    register: Klicke auf den Link und registriere dich in der Melli-App.
 support:
   heading: Hilfe-Center
   text: >-
