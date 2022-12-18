@@ -31,6 +31,8 @@ function calculateChristmasCountdown() {
 
   // Get the difference in seconds between the two days.
   let diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000)
+  if (diffSeconds <= 0)
+    diffSeconds = 0
 
   // Don't calculate the time left if it is Christmas day.
   if (currentMonth !== 12 || (currentMonth === 12 && currentDay !== 25)) {
@@ -85,7 +87,7 @@ calculateChristmasCountdown()
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ days }}
+                  {{ days < 10 ? `0${days}` : days }}
                 </p><p class="font-thin text-sm">
                   Tage
                 </p>
@@ -94,7 +96,7 @@ calculateChristmasCountdown()
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ hours }}
+                  {{ hours < 10 ? `0${hours}` : hours }}
                 </p><p class="font-thin text-sm">
                   Stunden
                 </p>
@@ -103,7 +105,7 @@ calculateChristmasCountdown()
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ minutes }}
+                  {{ minutes < 10 ? `0${minutes}` : minutes }}
                 </p><p class="font-thin text-sm">
                   Minuten
                 </p>
@@ -112,7 +114,7 @@ calculateChristmasCountdown()
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ seconds }}
+                  {{ seconds < 10 ? `0${seconds}` : seconds }}
                 </p><p class="font-thin text-sm">
                   Sekunden
                 </p>
