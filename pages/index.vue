@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <ChristmasHero />
+  <Hero />
 
   <Container>
     <FlipCards class="-mt-8" />
