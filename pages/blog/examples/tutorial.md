@@ -380,4 +380,13 @@ Der Teil besteht aus einer Überschrift und einem Text, die beide optional sind.
   <br>
   <intro-section text="Als Dankeschön schenken wir allen Teilnehmer eine lebenslange kostenfreie Nutzung von Melli." />
 ```
+<p> <ArticleNav /> </p>
+
+<br>
+
+<ArticleRecommendations :articles="['/blog/gruenderstory', '/blog/struktur', '/blog/soziale-kontakte']" />
+
+<br>
+
+<BlogPromo/>
 

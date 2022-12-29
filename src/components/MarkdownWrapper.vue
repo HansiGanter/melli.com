@@ -33,12 +33,24 @@ if (props.frontmatter.title) {
     <div v-if="frontmatter.category && frontmatter.category.href === 'blogs'">
       <ArticleHeader v-if="frontmatter.title" :hero-url="frontmatter.imageUrl" :category="frontmatter.category.name" :heading="frontmatter.title" :description="frontmatter.description" />
       <ArticleAuthor v-if="frontmatter.author" :author="frontmatter.author.name" :date="d(frontmatter.date, 'long')" />
-      <article v-if="frontmatter.category && frontmatter.category.href === 'blogs'" class="m-auto prose text-lg max-w-screen-[920px] px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
+      <article class="m-auto prose text-lg max-w-[920px] px-4 sm:px-6 lg:px-8 pb-8 lg:pb-12">
         <slot />
       </article>
-      <article v-else class="m-auto prose">
-        <slot />
-      </article>
+      <ArticleNav />
+      <div class="max-w-[920px] mx-auto mx-8 my-8 px-4">
+        <div class="rounded-3xl bg-yellow-50 px-4">
+          <SocialMedia class="pt-12" />
+          <div class=" mx-auto py-8">
+            <h1 class="mx-auto my-4 w-fit text-primary-900 text-2xl text-center font-medium">
+              Zum Newsletter anmelden & Infomaterial erhalten
+            </h1>
+            <div class="max-w-md mx-auto">
+              <NewsletterOpen />
+            </div>
+          </div>
+        </div>
+      </div>
+      <ArticleRecommendations v-if="frontmatter.articleRecommendations" :articles="frontmatter.articleRecommendations" />
     </div>
     <!-- Legal -->
     <div v-if="frontmatter.category && frontmatter.category.href === 'legal'">

@@ -9,6 +9,7 @@ author:
   name: Dr. Matthias Weber (CPO Meetap GmbH)
 date: 2022-11-09
 imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
+articleRecommendations: ['/blog/gruenderstory', '/blog/wege-aus-der-einsamkeit', '/blog/struktur']
 ---
 
 <intro-section>
@@ -117,7 +118,3 @@ eine Angehörige sagte, dass die Mutti durch Melli selbstbewusster geworden ist.
 **Matthias W.:** Ja diese Funktion hat bei dem Produkttest in deiner Einrichtung noch gefehlt. Die Ansprache von Melli ist aber natürlich Teil der neuen Produktversion und wird sehr gut von den Senioren angenommen.
 
 **Stephanie S.:** Toll! Das kann ich mir sehr gut vorstellen.
-
-<br>
-
-<BlogPromo/>

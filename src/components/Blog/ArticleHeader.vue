@@ -9,7 +9,9 @@ const articleHeaderProps = defineProps<{
 
 <template>
   <Container
-    class="py-10 max-h-fit min-h-96 bg-top bg-cover bg-no-repeat"
+    lang="de"
+    class="py-10 max-h-fit min-h-96 bg-top bg-cover bg-no-repeat break-words overflow-hidden"
+    style="hyphens: auto;"
     :style="{ backgroundImage: `url('${articleHeaderProps.heroUrl}')` }"
   >
     <router-link to="/blog" class="inline-flex items-center py-2.5 px-4 gap-2 filter-none">
@@ -24,7 +26,7 @@ const articleHeaderProps = defineProps<{
           </Badge>
         </div>
         <div class="grid gap-6 md:max-w-lg md:break-words">
-          <h1 class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14">
+          <h1 id="blog-heading" class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14">
             {{ heading }}
           </h1>
           <p v-if="description" class="font-medium text-lg lg:text-2xl text-black">

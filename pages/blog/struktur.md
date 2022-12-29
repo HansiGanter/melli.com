@@ -10,6 +10,7 @@ author:
 date: 2022-10-09
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/mockups/02_interior/device_interior_scheduler-2048.webp
+articleRecommendations: ['/blog/soziale-kontakte', '/blog/unterhaltung', '/blog/wege-aus-der-einsamkeit']
 ---
 
 <intro-section>
@@ -63,9 +64,3 @@ Mit zunehmenden Alter wird häufig auch die Hilfe von Außen immer wichtiger, be
 Wir freuen uns mit Melli Senioren und Seniorinnen ein Werkzeug an die Hand geben zu können, sich diesen Wunsch zu erfüllen. Melli bietet ihren Nutzer die Möglichkeit ihren Alltag selbstständig zu planen und Strukturen zu etablieren. Und das über ein digitales Hilfsmittel. Digital und Senioren, das passt nicht zusammen? Eine Annahme die mit Melli, der Vergangenheit angehören soll, denn ihre einfache Bedienung per Sprachsteuerung in Kombination mit einer proaktiven Herangehensweise ermöglicht nun auch weniger Technik-affinen Senioren am digitalen Zeitalter teilzuhaben. So sollen zukünftig auch Angehörige entlastet und die Sorge ums Wohlergehen von Oma und Opa etwas gemildert werden.
 
 So soll es sowohl Oma und Opa als auch der Familie leichter fallen, sich gegenseitig den benötigten Freiraum zugestehen – damit das nächste Zusammenkommen gleich noch schöner und entspannter wird.
-
-<br>
-
-<BlogPromo/>
-
-  <br>

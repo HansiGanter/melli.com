@@ -1,38 +1,44 @@
 <script setup lang="ts">
-interface Recommendations {
-  articles: Array<any>
-}
-defineProps<Recommendations>()
+const props = defineProps<{
+  articles: Array<string>
+}>()
+
+const router = useRouter()
+const routes: any = []
+for (const article of props.articles)
+  routes.push(router.getRoutes().filter(r => r.path === article))
 </script>
 
 <template>
-  <Container class="bg-primary-100 py-24">
-    <div class="grid gap-8">
+  <Container class="bg-primary-100 py-10 md:py-24 px-4 lg:px-0 mx-auto">
+    <div class="grid gap-12">
       <div class="flex items-center justify-between">
-        <h2 class="text-gray-900 font-semibold text-5xl my-0">
+        <h2 class="text-gray-900 font-semibold sm:text-2xl md:text-4xl my-0">
           Auch interessant
         </h2>
-        <router-link to="/blog" class="inline-flex gap-3 items-center">
-          <span class="font-medium text-lg text-black">mehr Artikel</span>
+        <router-link to="/blog" class="inline-flex gap-3 items-center px-4">
+          <span class="font-medium sm:text-base md:text-lg text-black">mehr Artikel</span>
           <div class="i-carbon:arrow-right bg-gray-700 h-6 w-6" />
         </router-link>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <div v-for="article in articles" :key="article" class="grid content-start">
-          <img :src="article.meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
-          <div class="grid py-4 gap-4">
-            <Badge class="bg-primary-50">
-              <span class="text-primary-700 font-medium text-sm">{{ article.meta.frontmatter.category.name }}</span>
-            </Badge>
-            <div class="grid gap-3 text-black">
-              <h4 class="font-semibold text-xl">
-                {{ article.meta.frontmatter.title }}
-              </h4>
-              <p class="font-normal text-base">
-                {{ article.meta.frontmatter.description }}
-              </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div v-for="route in routes" :key="route" class="grid content-start cursor-pointer rounded-3xl hover:shadow-md p-2">
+          <router-link :to="route[0].path">
+            <img :src="route[0].meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
+            <div class="flex flex-wrap py-4 gap-2">
+              <Badge v-for="singName in route[0].meta.frontmatter.category.name" :key="singName" class="bg-primary-50">
+                <span class="text-primary-700 font-medium text-sm">{{ singName }}</span>
+              </Badge>
+              <div class="text-black">
+                <h4 class="font-semibold text-xl">
+                  {{ route[0].meta.frontmatter.title }}
+                </h4>
+                <div class="font-normal text-base">
+                  {{ route[0].meta.frontmatter.description }}
+                </div>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>

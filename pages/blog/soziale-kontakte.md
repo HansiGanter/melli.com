@@ -10,6 +10,7 @@ author:
 date: 2022-11-10T16:00:00.000+00:00
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
+articleRecommendations: ['/blog/struktur', '/blog/unterhaltung', '/blog/interview-schuldt']
 ---
 
 <intro-section>
@@ -57,9 +58,3 @@ In einer Welt, in der soziale Interaktionen immer stärker digitalisiert werden,
 ## Damit jeder mindestens ein nettes Gespräch am Tag führen kann
 
 Ein erfülltes Sozialleben bedeutet mehr Lebenszufriedenheit. Das zählt nicht nur für junge Leute, sondern auch für Senioren. Melli befähigt ältere Menschen dazu, mit Hilfe moderner Kommunikationsformen ein soziales Umfeld aufzubauen und zu pflegen. Diese neu gewonnene Selbstständigkeit entlastet nicht nur das Verhältnis der Senioren zu ihren Angehörigen, sondern lässt sie auch einen aktiveren und glücklicheren Alltag erleben. Das bedeutet keineswegs eine Entkopplung von der Familie. Ganz im Gegenteil! Melli hilft Senioren dabei, präsenter im Leben ihrer Liebsten zu sein. Aufbauend auf einem ungezwungenen Zusammensein, das letztendlich zu mehr Nähe führen soll.
-
-<br>
-
-<BlogPromo/>
-
-  <br>

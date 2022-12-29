@@ -9,6 +9,7 @@ author:
   name: Franziska Lerch
 date: 2022-11-29
 imageUrl: https://assets.melli.com/images/images/stock/melli-stock-senior-group-2048.webp
+articleRecommendations: ['/blog/gruenderstory', '/blog/interview-schuldt', '/blog/soziale-kontakte']
 ---
 
 <intro-section> 
@@ -54,9 +55,3 @@ Besonders wichtig ist Frau Hirche, dass die Senioren ihr Alter nicht als Last an
 ## Einfach, sicher und intuitiv - Melli erleichtert den Schritt ins digitale Zeitalter
 
 Damit verfolgen der Verein [“Wege aus der Einsamkeit e.V.”](https://www.wegeausdereinsamkeit.de) und Melli ganz ähnliche Ziele - Wir möchten den Zugang zur digitalen Welt sicher und einfach machen und die Nutzung des Internets zu einem positiven Erlebnis werden lassen. Der Rege Austausch mit Frau Hirche als Melli noch nur eine Idee war, hat uns bei der Entwicklung stark beeinflusst und inspiriert. Dafür möchten wir danke sagen, indem wir bei jeder Bestellung bis zum 15.12.2022 zehn Euro dem Verein zugute kommen lassen möchten, um dessen außergewöhnliches Engagement für die ältere Generation zu unterstützen.
-
-<br>
-
-<br>
-
-<BlogPromo/>

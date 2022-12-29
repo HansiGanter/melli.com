@@ -9,6 +9,7 @@ author:
   name: Dr. Matthias Weber
 date: 2022-10-08
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3_komprimiert.jpg
+articleRecommendations: ['/blog/soziale-kontakte', '/blog/struktur', '/blog/interview-schuldt']
 ---
 
 <intro-section>
@@ -101,9 +102,3 @@ Für einen abwechslungsreichen Alltag bedarf es neben dem Angebot an Beschäftig
 <br>
 
 Die meisten Erwerbstätigen sehnen sich nach ihrer Rente und der damit verbundenen Zeit für sich und ihre Hobbys. Bei vielen wird die vorher lange ersehnte und jetzt unausgefüllte Freizeit jedoch zu einem Problemfaktor und die eigentlich lang ersehnte Ruhe schwingt in Langeweile und Strukturlosigkeit um. Wer sich nicht zu beschäftigen weiß, droht in einen Zustand der Antriebsarmut und häufig auch in Depressionen zu verfallen. Dem muss zwingend entgegengewirkt werden. Melli bietet hier eine ebenso einfache wie auch effektive Lösung den Alltag strukturiert, abwechslungsreich und aktiv zu gestalten. Sie kann fehlende Motivation ausgleichen und gibt Langeweile durch ihre proaktive Ansprache keine Chance. Sie eröffnet vielen Senioren eine ganz neue Möglichkeit, ihren Tag zu gestalten.
-
-<br>
-
-<BlogPromo/>
-
-  <br>

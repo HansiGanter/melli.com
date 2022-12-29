@@ -3,7 +3,7 @@ import { fireShopEvent } from '~/google-tag-manager'
 </script>
 
 <template>
-  <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
+  <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 text-center mx-auto">
     <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
     <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
       Mellis Tipp für Weihnachten:
