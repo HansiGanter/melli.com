@@ -26,7 +26,7 @@ useHead({
   </Container>
 
   <Container class="bg-primary-900 rounded-[30px] px-5 py-16 my-16 lg:my-24 ">
-    <PromoComponentIcon />
+    <PromoKPIs />
   </Container>
 
   <Container class="py-10 lg:py-20 px-5 ">
