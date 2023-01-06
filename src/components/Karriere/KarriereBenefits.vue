@@ -101,14 +101,14 @@ const coreBenefits = [
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 lg:gap-11 items-center">
         <div class="w-44 h-44 rounded-full mx-auto overflow-hidden">
-          <img src="https://assets.melli.com/images/team/leonie-krumbholz-3.webp" class="object-cover h-44 w-44">
+          <img src="https://assets.melli.com/images/images/team/melli_team_sherin-02-1024.webp" class="object-cover h-44 w-44">
         </div>
         <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20" style="background-image: url('/assets/bubble_bg.png')">
           <h5 class="font-medium text-primary-900 text-2xl lg:text-3xl">
-            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugen sich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter
+            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugst dich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter
             <span class="text-primary-400">+49 1579 2451235</span>.”
           </h5>
-          <span class="font-semibold text-gray-500 text-base">Leonie Kumbholz | Recruiting Managerin</span>
+          <span class="font-semibold text-gray-500 text-base">Sherin Berdatz</span>
         </div>
       </div>
     </div>

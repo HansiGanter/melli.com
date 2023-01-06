@@ -57,14 +57,14 @@ const people: Array<Person> = [
       linkedin: 'https://www.linkedin.com/in/johanna-d%C3%B6ller-51a9481b3/',
     },
   },
-  {
-    name: 'Leonie Krumbholz',
-    role: 'Recruiting',
-    imageUrl: 'https://assets.melli.com/images/team/leonie-krumbholz.webp',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/leonie-krumbholz-92311481/',
-    },
-  },
+  // {
+  //   name: 'Leonie Krumbholz',
+  //   role: 'Recruiting',
+  //   imageUrl: 'https://assets.melli.com/images/team/leonie-krumbholz.webp',
+  //   social: {
+  //     linkedin: 'https://www.linkedin.com/in/leonie-krumbholz-92311481/',
+  //   },
+  // },
   {
     name: 'Felix Andreas',
     role: 'Senior Engineer',
