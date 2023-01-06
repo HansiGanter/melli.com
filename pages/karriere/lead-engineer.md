@@ -59,7 +59,7 @@ At Melli, we not only express our values, we also clearly live them every day:
 
 ## Kontakte 
 
-I could tell you so much more, but it's best to see it for yourself! Simply apply directly or call Leonie, our recruiting manager, on +49 1579 2451235.
+I could tell you so much more, but it's best to see it for yourself! Simply apply directly or call Wiebke, our recruiting manager, on +49 1579 2451235.
 
 If you want to get an impression of what I, Melli, look like, visit https://melli.com.
 

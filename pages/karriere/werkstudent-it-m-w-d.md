@@ -56,7 +56,7 @@ Unsere Werte sprechen wir bei Melli nicht nur aus sondern leben diese auch deutl
 
 ## Kontakte 
 
-Ich könnte dir noch so viel mehr erzählen, aber am besten überzeugst du dich selbst! Bewirb dich direkt oder rufe Leonie, unsere Recruiting Managerin an +49 1579 2451235.
+Ich könnte dir noch so viel mehr erzählen, aber am besten überzeugst du dich selbst! Bewirb dich direkt oder rufe Wiebke, unsere Recruiting Managerin an +49 1579 2451235.
 
 ---
 
