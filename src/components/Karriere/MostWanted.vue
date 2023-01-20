@@ -10,7 +10,7 @@ const routes = router.getRoutes()
   .sort((a, b) => +new Date((b.meta as any).frontmatter.date) - +new Date((a.meta as any).frontmatter.date))
 
 const job = computed(() => {
-  return routes.find(route => route.meta.frontmatter.category.name.toLowerCase() === 'software')
+  return routes.find(route => (route.meta as any).frontmatter.categories.includes('Software'))
 })
 </script>
 

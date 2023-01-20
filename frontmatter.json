@@ -17,6 +17,16 @@
           "type": "string"
         },
         {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "Href",
+          "name": "href",
+          "type": "string"
+        },
+        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
@@ -37,11 +47,6 @@
           "title": "Tags",
           "name": "tags",
           "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
         }
       ]
     }

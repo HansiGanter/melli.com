@@ -10,19 +10,19 @@ const routes = router.getRoutes()
   .sort((a, b) => +new Date((b.meta as any).frontmatter.date) - +new Date((a.meta as any).frontmatter.date))
 
 const softwareJobs = computed(() => {
-  return routes.filter(route => route.meta.frontmatter.category.name.toLowerCase() === 'software')
+  return routes.filter(route => (route.meta as any).frontmatter.categories.includes('Software'))
 })
 
 const designJobs = computed(() => {
-  return routes.filter(route => route.meta.frontmatter.category.name.toLowerCase() === 'design')
+  return routes.filter(route => (route.meta as any).frontmatter.categories.includes('Design'))
 })
 
 const productJobs = computed(() => {
-  return routes.filter(route => route.meta.frontmatter.category.name.toLowerCase() === 'product')
+  return routes.filter(route => (route.meta as any).frontmatter.categories.includes('Product'))
 })
 
 const otherJobs = computed(() => {
-  return routes.filter(route => route.meta.frontmatter.category.name.toLowerCase() === 'other')
+  return routes.filter(route => (route.meta as any).frontmatter.categories.includes('Other'))
 })
 
 const items = ref([softwareJobs.value.length > 0 ? 'Software Development' : '', designJobs.value.length > 0 ? 'Design' : '', productJobs.value.length > 0 ? 'Product' : '', otherJobs.value.length > 0 ? 'Other' : ''])

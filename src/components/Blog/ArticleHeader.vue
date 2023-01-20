@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const articleHeaderProps = defineProps<{
   heroUrl: string
-  category?: string[]
+  categories?: string[]
   heading: string
   description?: string
 }>()
@@ -21,16 +21,16 @@ const articleHeaderProps = defineProps<{
     <div class="py-30 mx-4 grid h-full items-center max-w-screen-2xl">
       <div class="bg-gray-50/80 p-6 lg:p-12 rounded-[32px] w-full md:w-fit grid gap-2.5 content-start shadow-md">
         <div class="flex flex-wrap gap-2">
-          <Badge v-for="cat in category" :key="cat" class="bg-primary-50">
-            <span class="text-primary-700 font-medium text-sm">{{ cat }}</span>
+          <Badge v-for="category in articleHeaderProps.categories" :key="category" class="bg-primary-50">
+            <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
           </Badge>
         </div>
         <div class="grid gap-6 md:max-w-lg md:break-words">
           <h1 id="blog-heading" class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14">
-            {{ heading }}
+            {{ articleHeaderProps.heading }}
           </h1>
           <p v-if="description" class="font-medium text-lg lg:text-2xl text-black">
-            {{ description }}
+            {{ articleHeaderProps.description }}
           </p>
         </div>
       </div>

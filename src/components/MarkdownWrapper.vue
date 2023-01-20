@@ -18,20 +18,14 @@ if (props.frontmatter.title) {
     }],
   })
 }
-// const blogs = router.getRoutes()
-//   .filter(
-//     route => route.path.startsWith('/blog')
-//       && (route.meta.frontmatter) // todo: why is there a second route without frontmatter?
-//       && (route.meta as any).frontmatter.title,
-//   ).splice(0, 3)
 </script>
 
 <template>
   <!-- we wrap pages -->
   <div v-if="frontmatter.title">
     <!-- Blogs -->
-    <div v-if="frontmatter.category && frontmatter.category.href === 'blogs'">
-      <ArticleHeader v-if="frontmatter.title" :hero-url="frontmatter.imageUrl" :category="frontmatter.category.name" :heading="frontmatter.title" :description="frontmatter.description" />
+    <div v-if="frontmatter.categories && frontmatter.href === 'blogs'">
+      <ArticleHeader v-if="frontmatter.title" :hero-url="frontmatter.imageUrl" :categories="frontmatter.categories" :heading="frontmatter.title" :description="frontmatter.description" :href="frontmatter.href" />
       <ArticleAuthor v-if="frontmatter.author" :author="frontmatter.author.name" :date="d(frontmatter.date, 'long')" />
       <article class="m-auto prose text-lg max-w-[920px] px-4 sm:px-6 lg:px-8 pb-8 lg:pb-12">
         <slot />
@@ -53,13 +47,13 @@ if (props.frontmatter.title) {
       <ArticleRecommendations v-if="frontmatter.articleRecommendations" :articles="frontmatter.articleRecommendations" />
     </div>
     <!-- Legal -->
-    <div v-if="frontmatter.category && frontmatter.category.href === 'legal'">
+    <div v-if="frontmatter.href === 'legal'">
       <article class="m-auto prose text-lg max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
         <slot />
       </article>
     </div>
     <!-- Jobs -->
-    <div v-if="frontmatter.category && frontmatter.category.href === 'jobs'">
+    <div v-if="frontmatter.categories && frontmatter.href === 'jobs'">
       <KarriereHeader :title="frontmatter.title" :period="frontmatter.period" />
       <article class="m-auto prose text-lg max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-12 lg:pb-24">
         <slot />

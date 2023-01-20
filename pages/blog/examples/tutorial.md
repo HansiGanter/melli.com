@@ -2,9 +2,8 @@
 title: Tutorial
 description: |
   Hier findest du Komponenten, die du zur Erstellung eines Blogartikels verwenden kannst.
-category:
-  name: [Seniortech]
-  href: blogs
+categories: ["Seniortech"]
+href: blogs
 author:
   name: Name des Autors
 date: 2022-08-08T16:00:00.000+00:00
@@ -25,7 +24,7 @@ Unter category im href schreibe immer blogs!
 title: Das sagt Pflege-Expertin Stephanie S. zu Melli
 description: |
   Stephanie ist Pflegedienstleiterin einer Pflegeeinrichtung in Wismar. Fünf ihrer Schützlinge haben Melli getestet, das ist ihr Resümee.
-category:
+categories:
   name: Seniortech
   href: blogs
 author:

@@ -26,8 +26,8 @@ for (const article of props.articles)
           <router-link :to="route[0].path">
             <img :src="route[0].meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
             <div class="flex flex-wrap py-4 gap-2">
-              <Badge v-for="singName in route[0].meta.frontmatter.category.name" :key="singName" class="bg-primary-50">
-                <span class="text-primary-700 font-medium text-sm">{{ singName }}</span>
+              <Badge v-for="category in route[0].meta.frontmatter.categories" :key="category" class="bg-primary-50">
+                <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
               </Badge>
               <div class="text-black">
                 <h4 class="font-semibold text-xl">

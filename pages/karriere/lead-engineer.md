@@ -1,9 +1,8 @@
 ---
 title: Lead Engineer (m/f/d)
 description: We’re looking for an experienced engineering manager to join our team.
-category:
-  name: Software
-  href: jobs
+categories: ["Software"]
+href: jobs
 date: 2022-01-05T16:00:00.000+00:00
 period: Full-time, Part-time
 experience: Senior

@@ -1,7 +1,6 @@
 ---
 title: Datenschutz­erklärung
-category:
-    href: legal
+href: legal
 ---
 
 # **Datenschutz­erklärung**

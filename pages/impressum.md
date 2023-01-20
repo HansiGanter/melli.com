@@ -1,7 +1,7 @@
 ---
 title: Impressum
-category:
-    href: legal
+href: legal
+    
 ---
 
 ## Angaben gemäß § 5 TMG

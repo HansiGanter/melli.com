@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const isProduction = import.meta.env.PROD
 useHead({
   title: 'Melli',
   meta: [
@@ -7,8 +8,20 @@ useHead({
   ],
 })
 
-// const filters = ['Latest', 'Pricing', 'Product', 'Social']
-// const currentFilter = ref(filters[0])
+const router = useRouter()
+const categories = [...new Set(router.getRoutes()
+  .filter(
+    route =>
+      route.path.startsWith('/blog/')
+      && (route.meta.frontmatter)
+      && (!isProduction || !route.path.startsWith('/blog/examples'))
+      && (route.meta as any).frontmatter.categories,
+  ).map(route => (route.meta as any).frontmatter.categories)
+  .flat())]
+categories.sort()
+categories.unshift('Alle')
+
+const currentFilter = ref(categories[0])
 </script>
 
 <template>
@@ -29,19 +42,19 @@ useHead({
   </Container>
   <Container class="pb-20 lg:pb-28 px-5">
     <div class="grid gap-8">
-      <!-- <div class="flex items-center justify-center gap-3">
+      <div class="flex items-center justify-center gap-3 flex-wrap">
         <button
-          v-for="filter in filters"
-          :key="filter"
+          v-for="categorie in categories"
+          :key="categorie"
           type="button"
-          class="py-2.5 px-4 font-medium text-sm inline rounded-full transition delay-150 ease-in-out"
-          :class="currentFilter === filter ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'"
-          @click="currentFilter = filter"
+          class="py-2.5 px-4 font-medium text-sm inline rounded-full transition delay-150 ease-in-out cursor-pointer hover:bg-primary-50 hover:text-primary-700"
+          :class="currentFilter === categorie ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'"
+          @click="currentFilter = categorie"
         >
-          {{ filter }}
+          {{ categorie }}
         </button>
-      </div> -->
-      <PostPreview prefix="/blog" />
+      </div>
+      <PostPreview :current-filter="currentFilter" prefix="/blog" />
     </div>
   </Container>
 </template>

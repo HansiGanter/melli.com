@@ -2,9 +2,7 @@
 title: Jetzt als Testnutzer bewerben und Melli ein Leben lang gratis nutzen.
 description: |
     Nach 10 Monaten Entwicklungszeit ist es nun endlich soweit – Melli möchte die ersten Gespräche mit ihren Nutzern führen. Und dafür benötigen wir euch! Bewirb dich, deine Eltern oder Großeltern jetzt als Testnutzer!
-category:
-  name: [Produkttest]
-  href: blogs
+
 author:
   name: Dr. Matthias Weber
 date: 2022-07-12

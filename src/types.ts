@@ -7,15 +7,11 @@ export interface PostAuthor {
   imageUrl: string
 }
 
-export interface PostCategory {
-  name: string
-  href: string
-}
-
 export interface PostItem {
   title: string
   description: string
-  category: PostCategory
+  categories: Array<string>
+  href: string
   author: PostAuthor
   date: string
   readingTime: string

@@ -1,9 +1,8 @@
 ---
 title: Werkstudent IT (m/w/d)
 description: We’re looking for a student intern to join our team.
-category:
-    name: Software
-    href: jobs
+categories: ["Software"]
+href: jobs
 date: 2022-01-05T16:00:00.000+00:00
 period: Part-time
 experience: Intern
