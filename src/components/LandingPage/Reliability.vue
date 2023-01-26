@@ -2,10 +2,31 @@
 import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
-const features = ref([t('feature-1'), t('feature-2'), t('feature-3')])
-const showInformation = ref(-1)
-const textToShow = [t('reliability-section.card1'), t('reliability-section.card2'), t('reliability-section.card3')]
-const iconsSources = ['https://assets.melli.com/bubble-icons/bubble-icon_users-thick.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_activity-thick.svg', 'https://assets.melli.com/bubble-icons/bubble-icon_phone-call-thick.svg']
+interface ReliabilityFeatures {
+  pilltext: string
+  modaltext: string
+  icon: string
+}
+
+const features: ReliabilityFeatures[] = [
+  {
+    pilltext: t('feature-1'),
+    modaltext: t('reliability-section.card1'),
+    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_users-thick.svg',
+  },
+  {
+    pilltext: t('feature-2'),
+    modaltext: t('reliability-section.card2'),
+    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_activity-thick.svg',
+  },
+  {
+    pilltext: t('feature-3'),
+    modaltext: t('reliability-section.card3'),
+    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_phone-call-thick.svg',
+  },
+]
+
+const showFeaturesCards = ref<ReliabilityFeatures>()
 
 const reliabilityvideo = ref()
 const isPlaying = ref(false)
@@ -40,30 +61,25 @@ const openVideo = () => {
           {{ t('reliability-section.text') }}
         </p>
       </div>
-      <div class="flex flex-wrap lg:flex-nowrap justify-center gap-3">
+      <div class="flex flex-wrap lg:flex-nowrap gap-3">
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="text-gray-900 font-semibold text-base bg-primary-900/10 w-full sm:w-fit py-3.5 px-4 rounded-lg lg:h-full flex items-center"
+          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-4 rounded-lg w-full sm:w-fit whitespace-pre-line flex gap-2.5 items-center cursor-pointer"
+          @click="showFeaturesCards = feature"
         >
-          <ul class="p-0" @click="showInformation = index">
-            <li class="flex gap-2 mx-auto items-center">
-              <img :src="iconsSources[index]" class="flex justify-center w-9 h-9 pr-1 shrink-0 object-fit object-center">
-              <div class="text-base">
-                {{ feature }}
-              </div>
-            </li>
-          </ul>
+          <img :src="feature.icon" class="w-9 h-9">
+          <span>{{ feature.pilltext }}</span>
 
-          <Modal :show="showInformation === index" @close="showInformation = -1">
-            <Container class="p-6 max-w-3xl">
-              <img :src="iconsSources[index]" class="color-primary-900 w-14 h-14 w-full md:w-auto">
-              <div class="font-bold pt-4 py-2 text-xl">
-                {{ feature }}
-              </div>
-              <div class="text-xl">
-                {{ textToShow[index] }}
-              </div>
+          <Modal :show="!!showFeaturesCards" @close="showFeaturesCards = undefined">
+            <Container v-if="showFeaturesCards" class="p-6 max-w-3xl">
+              <img :src="showFeaturesCards.icon" class="color-primary-900 w-14 h-14 w-full md:w-auto">
+              <p class="font-bold pt-4 py-2 text-xl">
+                {{ showFeaturesCards.pilltext }}
+              </p>
+              <p class="text-xl">
+                {{ showFeaturesCards.modaltext }}
+              </p>
             </Container>
           </Modal>
         </div>
