@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 const socials = [
   {
-    icon: 'i-carbon:email',
+    icon: 'i-lucide:mail',
     text: t('contact.email'),
     url: 'mailto:hallo@melli.com',
     desc: 'mail',
@@ -20,26 +20,26 @@ const callbackModalOpen = ref(false)
 </script>
 
 <template>
-  <div class="max-w-screen-2xl mx-auto overflow-hidden grid content-start gap-8">
-    <div class="grid gap-8 lg:pr-0">
-      <h2 class="text-3xl text-primary-400 font-extrabold sm:text-4xl">
+  <div class="flex flex-col gap-8 sm:items-center">
+    <div class="flex flex-col gap-6 max-w-200">
+      <h3 class="text-4xl text-primary-300 font-semibold sm:text-center">
         {{ t('contact.heading') }}
-      </h2>
-      <p class="font-medium text-2xl text-white">
+      </h3>
+      <p class="font-medium text-xl text-white sm:text-center">
         {{ t('contact.text') }}
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-8 items-center">
-      <div v-for="social in socials" :key="social.text" class="grid gap-5 justify-items-center">
-        <div class="text-4xl lg:text-5xl text-primary-500" :class="social.icon" />
-        <a :href="social.url" target="_blank" class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="fireContactEvent(social.desc)">
+      <div v-for="social in socials" :key="social.text" class="flex flex-col gap-5 items-center">
+        <div class="w-12 h-12 shrink-0 text-primary-300" :class="social.icon" />
+        <a :href="social.url" target="_blank" class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center" @click="fireContactEvent(social.desc)">
           {{ social.text }}
         </a>
       </div>
-      <div class="grid gap-5 justify-items-center">
-        <div class="i-carbon:phone text-4xl lg:text-5xl text-primary-500" />
-        <button class="bg-primary-500 rounded-md shadow py-2.5 lg:py-4 px-4 lg:px-7 inline-flex items-center font-medium text-white text-base" @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
-          <span class="mx-auto">{{ t('contact.phone') }}</span>
+      <div class="flex flex-col gap-5 items-center">
+        <div class="i-lucide:phone-call w-12 h-12 shrink-0 text-primary-300" />
+        <button class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center" @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
+          {{ t('contact.phone') }}
         </button>
       </div>
     </div>

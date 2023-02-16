@@ -10,8 +10,7 @@ const articleHeaderProps = defineProps<{
 <template>
   <Container
     lang="de"
-    class="py-10 max-h-fit min-h-96 bg-top bg-cover bg-no-repeat break-words overflow-hidden"
-    style="hyphens: auto;"
+    class="py-10 max-h-fit min-h-96 bg-top bg-cover bg-no-repeat overflow-hidden"
     :style="{ backgroundImage: `url('${articleHeaderProps.heroUrl}')` }"
   >
     <router-link to="/blog" class="inline-flex items-center py-2.5 px-4 gap-2 filter-none">
@@ -25,8 +24,8 @@ const articleHeaderProps = defineProps<{
             <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
           </Badge>
         </div>
-        <div class="grid gap-6 md:max-w-lg md:break-words">
-          <h1 id="blog-heading" class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14">
+        <div class="grid gap-6 md:max-w-lg ">
+          <h1 class="text-black font-semibold text-4xl lg:text-5xl md:leading-10 lg:!leading-14" style="hyphens: auto;">
             {{ articleHeaderProps.heading }}
           </h1>
           <p v-if="description" class="font-medium text-lg lg:text-2xl text-black">
@@ -37,7 +36,3 @@ const articleHeaderProps = defineProps<{
     </div>
   </Container>
 </template>
-
-<style scoped>
-
-</style>

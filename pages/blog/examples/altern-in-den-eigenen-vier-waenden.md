@@ -2,13 +2,15 @@
 title: Altern in den eigenen vier Wänden - Warum seniorengerechtes Wohnen ein Trend mit Zukunft ist
 description: |
     Es ist kein Geheimnis: Die meisten Menschen möchten in den eigenen vier Wänden alt werden und nicht im Alten- oder Pflegeheim. In unserem Artikel verraten wir, was dieser Trend für unsere Gesellschaft bedeutet und wie Technologie das seniorengerechte Wohnen schon heute vereinfachen kann.
-
+categories: ["examples"]
 author:
     name: Matthias Weber
     imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
 date: 2022-01-12T16:00:00.000+00:00
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/stock/red-hair-greeting.webp
+articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
+
 ---
 
 ## Willkommen in der Silver Society

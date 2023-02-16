@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireVideoEvent } from '~/google-tag-manager'
+// import { fireVideoEvent } from '~/google-tag-manager'
 
 const heroVideo = ref<HTMLElement | null>(null)
 
@@ -12,10 +12,10 @@ function closeModal() {
   isOpen.value = false
   activeVideo.value = ''
 }
-function openModal(video: string) {
-  activeVideo.value = video
-  isOpen.value = true
-}
+// function openModal(video: string) {
+//   activeVideo.value = video
+//   isOpen.value = true
+// }
 </script>
 
 <template>
@@ -31,23 +31,37 @@ function openModal(video: string) {
       playsinline
       poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
     >
-      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+      <source src="https://videos.melli.com/header-app.webm" type="video/webm">
     </video>
 
     <!-- Heading & link to Video -->
-    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col md:items-center p-8">
+    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col">
       <slot />
-      <div class="my-auto grid gap-4 lg:w-200">
-        <h1 class="font-semibold text-4xl md:text-5xl leading-tight md:text-center">
-          <span class="text-primary-300">Melli - </span><span class="text-white">deine Freundin für ein glückliches Älterwerden</span>
+      <div class="flex flex-col gap-5 sm:gap-9 py-12 sm:my-auto px-5">
+        <h1 class="font-semibold text-4xl sm:text-5xl sm:text-center">
+          <span class="text-white leading-tight">
+            Auf Knopfdruck verbunden:
+          </span><br>
+          <span class="text-primary-300 leading-tight">
+            die Melli App für Familie & Freunde
+          </span>
         </h1>
-        <button class="font-semibold text-lg text-primary-300 flex gap-3 w-fit md:m-auto" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
-          <span class="m-auto">Sieh dir das ganze Video an</span><img
-            src="https://assets.melli.com/icons/arrow-circle.svg"
-            class="mx-auto stroke-primary-300 w-6 h-6 m-auto"
-          >
-        </button>
+        <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
+          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
+            <div class="i-lucide:smartphone w-6 h-6" /><span>App kostenlos ausprobieren</span>
+          </RouterLink>
+          <!-- <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
+            <span>ganzes Video ansehen</span><div class="i-lucide:arrow-right w-6 h-6" />
+          </button> -->
+        </div>
       </div>
+      <RouterLink to="#appoverview" class="absolute bottom-6 font-normal text-lg text-white flex flex-col gap-2 w-full mx-auto items-center">
+        mehr erfahren
+        <img
+          src="https://assets.melli.com/icons/arrow-down-circle-white.svg"
+          class="mx-auto w-12 h-12"
+        >
+      </RouterLink>
     </div>
   </header>
   <TransitionRoot appear :show="isOpen" as="template">

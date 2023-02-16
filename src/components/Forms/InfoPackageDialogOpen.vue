@@ -42,17 +42,17 @@ const openDownloadDialog = () => {
           type="checkbox"
           label-class="text-gray-900"
           outer-class="max-w-140 mx-auto w-full"
-          wrapper-class="flex gap-2"
+          wrapper-class="flex gap-2 items-center"
           validation-label="Datenschutzbestimmungen"
           validation="required|accepted"
           validation-visibility="submit"
           message-class="text-red-500 mt-1"
         >
           <template #label="context">
-            <span :class="context.classes.label">Ich akzeptiere die <router-link
+            <span :class="context.classes.label" class="text-xs">Ich akzeptiere die <router-link
               to="/datenschutz"
               class="underline underline-primary-500 text-primary-500"
-            >Datenschutzbestimmungen</router-link>.</span>
+            >Datenschutzbestimmungen</router-link>.*</span>
           </template>
         </FormKit>
       </div>
@@ -63,7 +63,7 @@ const openDownloadDialog = () => {
           wrapper-class="mx-auto w-fit"
           @click="valid ? openPostDialog() : ''"
         >
-          <span class="mx-auto flex gap-2 bg-primary-500 p-2 rounded-lg text-white w-fit px-4">Per Post zugeschickt bekommen <div class="i-carbon:email inline-block align-middle w-6 h-6 shrink-0" /></span>
+          <span class="mx-auto flex gap-2 items-center bg-primary-500 p-2 rounded-lg text-white w-fit px-4">Per Post zugeschickt bekommen <div class="i-carbon:email inline-block align-middle w-6 h-6 shrink-0" /></span>
         </FormKit>
         <FormKit
           type="submit"

@@ -126,13 +126,13 @@ calculateChristmasCountdown()
           </RouterLink>
         </div>
       </div>
-      <!-- <RouterLink v-if="greaterSm" to="#flipcards" class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
+      <RouterLink v-if="greaterSm" to="#flipcards" class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
         <span class="m-auto">Erfahre mehr über Melli</span>
         <img
           src="https://assets.melli.com/icons/arrow-down-circle.svg"
           class="mx-auto stroke-primary-300 w-8 h-8 m-auto"
         >
-      </RouterLink> -->
+      </RouterLink>
     </div>
   </header>
 </template>

@@ -2,6 +2,7 @@
 title: Was bedeutet gesundes Altern?
 description: |
     Um im hohen Alter körperlich fit und gesund zu sein, ist ein ganzheitlich gesunder Lebensstil sehr wichtig. Sport und regelmäßige Bewegung an der frischen Luft sind für die Muskelaktivität essenziell. Eine gesunde und ausgewogene Ernährung mit reichlich Gemüse, Ballaststoffen, Mineralstoffen und Obst ist für ein starkes Immunsystem notwendig. Wenn auf Zigaretten und Alkohol gänzlich verzichtet wird, ist das zusätzlich vorteilhaft.
+categories: ["examples"]
 author:
     name: Franziska Lerch
     imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp

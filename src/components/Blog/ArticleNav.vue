@@ -1,7 +1,13 @@
 <script setup lang="ts">
+const isProduction = import.meta.env.PROD
 const router = useRouter()
-const routes = router.getRoutes().filter(route => route.path.startsWith('/blog/') && !route.path.startsWith('/blog/examples') && (route.meta.frontmatter)).map(route => route.path)
+
+const routes = router.getRoutes().filter(route => route.path.startsWith('/blog/')
+&& (!isProduction || !route.path.startsWith('/blog/examples'))
+&& (route.meta.frontmatter)).map(route => route.path)
+
 const currentIndex = routes.indexOf(router.currentRoute.value.path)
+
 const prevRoute = currentIndex === 0 ? routes[routes.length - 1] : routes[(currentIndex - 1) % routes.length]
 const nexRoute = routes[(currentIndex + 1) % routes.length]
 </script>

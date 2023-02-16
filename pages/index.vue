@@ -72,15 +72,11 @@ useHead({
     <SecureSection />
   </Container>
 
-  <Container class="pb-12 lg:pb-24 bg-gray-50">
-    <SocialMedia />
-  </Container>
-
-  <Container class="px-5 py-8 bg-tertiary-50 dark:from-gray-900 dark:to-gray-800">
+  <Container class="px-5 py-12 bg-gray-50 dark:from-gray-900 dark:to-gray-800">
     <FaqSection />
   </Container>
 
-  <Container class="bg-primary-900 py-24 px-5 ">
+  <Container class="bg-primary-900 py-12 px-5 ">
     <ContactSection />
   </Container>
 </template>

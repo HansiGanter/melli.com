@@ -149,7 +149,7 @@ const isPost = ref(newsletterProps.post ? 'Ich möchte das Infopkate per Post zu
         input-class="cr_form-block cr_button"
         @click="valid ? fireInfoPackageSentEvent(userEmail, phone, vorname, nachname) : ''"
       >
-        <span class="mx-auto flex gap-2 bg-primary-500 rounded-lg text-white w-fit">Per Post zugeschickt bekommen <div class="i-carbon:email inline-block align-middle w-6 h-6 shrink-0" /></span>
+        <span class="mx-auto flex gap-2 items-center bg-primary-500 rounded-lg text-white w-fit">Per Post zugeschickt bekommen <div class="i-carbon:email inline-block align-middle w-6 h-6 shrink-0" /></span>
       </FormKit>
     </FormKit>
   </Container>

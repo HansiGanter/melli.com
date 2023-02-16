@@ -38,7 +38,7 @@ const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatt
             </p>
           </div>
         </div>
-        <div class="flex gap-2 mt-6">
+        <div class="flex flex-wrap gap-2 mt-6">
           <Badge v-for="(category, index) in frontmatter.categories" :key="index" class="bg-primary-50">
             <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
           </Badge>

@@ -4,13 +4,15 @@ description: |
     The `melli.py` contains a simple backend written in FastAPI, which does not pass our tests ❌. The challenge is to make the tests pass without modifying the `test_melli.py` file ✔️!
 
     Clone 👯 the repository and try to get the tests running in your local environment. If you manage to make all tests pass, we would love to interview you 😍! Therefore, create a pull request, which triggers a GitHub action, verifying that you solved the challenge correctly 🏆.
-
+categories: ["examples"]
 author:
     name: Hans Ganter
     imageUrl: https://assets.melli.com/images/team/hans-ganter.webp
 date: 2022-01-05T16:00:00.000+00:00
 readingTime: 15min
 imageUrl: https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
+
 ---
 
 # Melli Hiring 👩‍💻

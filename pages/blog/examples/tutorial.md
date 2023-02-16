@@ -8,6 +8,7 @@ author:
   name: Name des Autors
 date: 2022-08-08T16:00:00.000+00:00
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1.webp
+articleRecommendations: ['/blog/struktur', '/blog/unterhaltung', '/blog/interview-schuldt']
 ---
 
 ## Blog-Header

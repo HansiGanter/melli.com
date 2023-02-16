@@ -8,6 +8,125 @@
       erneut.
 agb:
   title: Allgemeine Geschäftsbedingungen von melli.com
+app-faq-section:
+  answer-1: >-
+    Die Melli-App ist wie eine Fernbedienung für Melli. Über die App können
+    Einstellungen an Melli vorgenommen werden, zum Beispiel wann sie an
+    Medikamente erinnern soll oder welche Hörbuch-Themen, die Nutzer am meisten
+    interessieren. Außerdem findet die gesamte Kommunikation mit dem Nutzer über
+    die App statt.
+  answer-2: >-
+    Die Melli-App ist Teil des Melli-Abos und verursacht keine weiteren Kosten -
+    egal wie viele Familienmitglieder sie nutzen.
+  answer-3: >-
+    Unter https://www.melli.com/app kannst du die Melli-App herunterladen und
+    dich registrieren.
+  answer-4: >-
+    Die Melli-App ist für jede Familiengröße geeignet. Es gibt keine
+    Beschränkungen, was die Anzahl der App-Nutzer angeht.
+  answer-5: >-
+    Jede Bestellung enthält einen Einladungscode, mit dem Familienmitglieder
+    oder Freunde zur Melli-App eingeladen werden können. Der Code kann einfach
+    mit einer präferierten Messenger-App an weitere Kontakte geschickt werden
+    und schon können diese der Melli-Familie beitreten. Sollte der Code einmal
+    verloren gehen, kann die Einladung auch über die App versendet werden.
+  answer-6: >-
+    Nein. Es gibt mehrere Sicherheitsmaßnahmen, die verhindern, dass Fremde
+    ungewollt die Senioren kontaktieren können. Nur Kontakte mit passendem
+    Einladungscode können der jeweiligen Melli-Familie beitreten. Da auch der
+    Code in falsche Hände geraten könnte, müssen die Kontakte bei Eintritt in
+    die App zusätzlich vom Administrator bestätigt und freigeschalten werden.
+  answer-7: >-
+    Ja die Melli-App funktioniert auch auf Tablet und kann sogar auch über einen
+    Computer aufgerufen werden.
+  question-1: "Warum brauche ich die \LMelli-App?"
+  question-2: Ist die Melli-App kostenlos?
+  question-3: Wo kann ich die Melli-App herunterladen?
+  question-4: Wie viele Kontakte können die Melli-App nutzen?
+  question-5: Wie kann ich andere Familienmitglieder zur Melli-App einladen?
+  question-6: Kann jeder, der die Melli-App hat, mit den Senioren in Verbindung treten?
+  question-7: Kann die Melli-App auch auf dem Tablet installiert werden?
+appCommunicationFeature1:
+  modaltext: >-
+    Über die Melli-App können Familienangehörige und Freunde die Senioren ganz
+    einfach erreichen. Sie können entscheiden, ob sie einfach nur telefonieren
+    möchten, oder sich dabei per Video sehen möchten.
+  pilltext: Audio- & Videotelefonie
+appCommunicationFeature2:
+  modaltext: >-
+    Die ganze Familie möchte Oma zum Geburtstag gratulieren? Kein Problem, über
+    die Melli-App können mehrere Nutzer zu einem Video- oder Audiotelefonat
+    hinzugefügt werden.
+  pilltext: Gruppenanruf mit anderen Familienmitgliedern
+appCommunicationFeature3:
+  modaltext: >-
+    Melli erkundigt sich regelmäßig nach dem Wohlbefinden ihrer Nutzer.
+    Ausgewählte Personen bekommen in der Melli-App bescheid, wenn es dem Nutzer
+    mal nicht so gut gehen sollte.
+  pilltext: Updates über Gesundheit & Wohlbefinden
+appCommunicationFeature4:
+  modaltext: >-
+    Text- und Sprachnachrichten können einfach in der Melli-App eingegeben
+    werden. Melli liest diese den Nutzern  gerne vor bzw. spielt sie ab.
+  pilltext: 'Text- & Sprachnachrichten versenden '
+appCommunicationFeature5:
+  modaltext: >-
+    Mit der Melli-App können Angehörige und Freunde bald Bilder und Videos mit
+    den Senioren teilen. So bleiben die Nutzer immer auf dem Laufenden, was im
+    Leben ihrer Liebsten passiert.
+  pilltext: Bilder & Videos teilen
+appCommunicationFeature6:
+  modaltext: >-
+    Nachrichten, Bilder und Videos können nicht nur mit Oma & Opa, sondern auch
+    mit der gesamten Familie geteilt werden. So sind alle auf dem Laufenden und
+    können sich mit Oma über aktuelle Familienneuigkeiten unterhalten.
+  pilltext: Familien-Newsfeed
+appConfigurationFeature1:
+  modaltext: >-
+    In der Melli-App kann eingestellt werden, was den Nutzer interessiert und
+    was sie oder er gar nicht mag. Videos, Hörbücher und andere Inhalte werden
+    entsprechend dieser Angaben ausgewählt.
+  pilltext: Interessen konfigurieren
+appConfigurationFeature2:
+  modaltext: '            In der App können anstehende Termine schnell und einfach in einen Kalender eingetragen werden. Melli erinnert ihre Nutzer dann an die eingetragenen Termine und die Familie weiß immer was gerade ansteht.'
+  pilltext: Medikamentenplan erstellen
+appConfigurationFeature3:
+  modaltext: >-
+    Andere Familienmitglieder können ganz einfach zur Melli-App hinzugefügt
+    werden. Sie bekommen einfach einen Einladungslink per Mail, SMS oder
+    WhatsApp zugeschickt und können dem Familienbereich beitreten.
+  pilltext: "Angehörige zu Melli \Leinladen"
+appConfigurationFeature4:
+  modaltext: >-
+    Technik kann manchmal ganz schön verwirrend sein. Mit der
+    Lautstärkesteuerung über die Melli-App können Angehörige die Senioren ein
+    wenig unterstützen, wenn Melli ausversehen zu leise oder zu laut gestellt
+    wurde.
+  pilltext: "Lautstärkesteuerung des \LMelli Device"
+appConfigurationFeature5:
+  modaltext: >-
+    Routinen vermeiden Stress und vermitteln ein Gefühl von Souveränität und
+    Selbstbestimmtheit. In der Melli-App können Routinen, wie das morgendliche
+    Vorlesen der aktuellen Nachrichten oder die Entspannungsmusik zum
+    Einschlafen eingestellt werden.
+  pilltext: Tagesroutinen festlegen
+appConfigurationFeature6:
+  modaltext: >-
+    Melli trifft leider nicht den Musikgeschmack? In der Melli-App kann selbst
+    Hand angelegt werden um dem Nutzer die Lieblingsmusik zusammenzustellen.
+  pilltext: Musik-Playlists erstellen
+appScheduleFeature1:
+  modaltext: >-
+    In der App können anstehende Termine schnell und einfach in einen Kalender
+    eingetragen werden. Melli erinnert ihre Nutzer dann an die eingetragenen
+    Termine und die Familie weiß immer was gerade ansteht.
+  pilltext: "Termine & Erinnerungen\Leinstellen"
+appScheduleFeature2:
+  modaltext: >-
+    Die Melli-App bietet eine Funktion zur Erstellung eines Medikamentenplans.
+    Hier wird festgelegt, zu welchen Tageszeiten Melli den Nutzer ans Einnehmen
+    der Medikamente erinnern soll.
+  pilltext: Medikamentenplan erstellen
 blog:
   heading: News und Beiträge zu Melli
   subheading: >-

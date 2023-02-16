@@ -2,7 +2,7 @@
 title: Sprachassistenten für Senioren
 description: |
     Sprachassistenten haben im Haushalt von Senioren längst Einzug gehalten.  Die digitalen Assistenten können vielfältig eingesetzt werden und bei alltäglichen Aufgaben helfen. Dabei erleichtern Sprachassistenten die Kommunikation mit ihren Angehörigen und vermitteln ein Gefühlt der Sicherheit.
-
+categories: ["examples"]
 author:
     name: Philip Krech
     imageUrl: https://assets.melli.com/images/team/philip-krech.webp

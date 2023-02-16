@@ -48,6 +48,11 @@ const navigation = {
 
 <template>
   <footer aria-labelledby="footer-heading" class="py-12 lg:py-16">
+    <div class="mb-12">
+      <hr>
+      <SocialMedia class="py-8" />
+      <hr>
+    </div>
     <h2 id="footer-heading" class="sr-only">
       Footer
     </h2>
