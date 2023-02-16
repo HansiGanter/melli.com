@@ -92,7 +92,7 @@ const communicationFeaturesComingSoon: CommunicationFeature[] = [
       </h2>
       <div class="flex flex-col gap-6">
         <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
-          <div class="i-lucide:smartphone w-6 h-6" /><span>App kostenlos ausprobieren</span>
+          <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
         </RouterLink>
         <p>Die Melli-App bietet deinen Liebsten verschiedene Möglichkeiten mit dir in Verbindung zu treten. Sie können dich einfach per Sprachanruf erreichen oder ihr könnt euch mit Videoanruf sehen. Die App hält sie auf dem Laufenden, wie es dir gerade geht und die ganze Familie hat die Möglichkeit, Teil deines Alltags zu sein - egal wo sie sind oder was sie gerade machen.</p>
       </div>

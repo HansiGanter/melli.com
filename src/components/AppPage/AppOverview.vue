@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const features = [
   { text: 'Kommunikation', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_communication_front-2phones-bubble-2048.webp' },
-  { text: 'Sicherheit', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_settings_front-2phones-bubble-2048.webp' },
+  { text: 'Sicherheit', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_safety_front-2phones-bubble-2048.webp' },
   { text: 'Organisation', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_organisation_front-2phones-bubble-2048.webp' },
-  { text: 'Einstellungen', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_safety_front-2phones-bubble-2048.webp' },
+  { text: 'Einstellungen', img: 'https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_settings_front-2phones-bubble-2048.webp' },
 ]
 
 const selected = ref(features[0])

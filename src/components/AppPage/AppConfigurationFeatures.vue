@@ -71,7 +71,7 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
           Oma mag Krimigeschichten überhaupt nicht? Kein Problem! In der App lässt sich das sofort einstellen. Aber Technik liegt ihr eigentlich nicht so? Genauso kein Problem! Die Familie kann das übernehmen! Die ganze Familie und Freunde können die App nutzen und sich gegenseitig dazu einladen. Oma muss sich also um nichts kümmern!
         </p>
         <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
-          <div class="i-lucide:smartphone w-6 h-6" /><span>App kostenlos ausprobieren</span>
+          <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
         </RouterLink>
       </div>
       <div v-if="!greaterLg" class="max-w-120 mx-auto">

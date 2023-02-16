@@ -48,7 +48,7 @@ function closeModal() {
         </h1>
         <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
           <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
-            <div class="i-lucide:smartphone w-6 h-6" /><span>App kostenlos ausprobieren</span>
+            <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
           </RouterLink>
           <!-- <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
             <span>ganzes Video ansehen</span><div class="i-lucide:arrow-right w-6 h-6" />
