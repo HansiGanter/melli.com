@@ -81,8 +81,8 @@ useHead({
   </Container>
 </template>
 
-<route lang="yaml">
+<!-- <route lang="yaml">
 meta:
   layout: donationbanner
-        </route>
+</route> -->
 
