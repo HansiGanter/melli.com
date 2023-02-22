@@ -491,6 +491,7 @@ navbar:
     heading: Alle Funktionen
     text: Melli kommt mit einer Reihe von anderen nützlichen Funktionen.
   already-signed-up: Haben Sie schon ein Konto?
+  app: App
   blog:
     heading: Blog
   features:

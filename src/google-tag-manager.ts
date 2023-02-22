@@ -157,6 +157,13 @@ export const fireGoToBlogEvent = () => {
   console.log('melli-cta-go-to-blog')
 }
 
+export const fireGoToAppEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-go-to-app',
+  })
+  console.log('melli-cta-go-to-app')
+}
+
 export const fireBlogEvent = (blog?: string) => {
   window.dataLayer.push({
     event: `melli-blog-${blog}`,

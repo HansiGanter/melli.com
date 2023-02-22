@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /* TODO: Fire Shop-Events when Shop is ready */
-import { fireCartEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireGoToLiveDemoEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
+import { fireCartEvent, fireGoToAppEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
 import { useCheckoutStore } from '~/stores/checkout'
 const checkout = useCheckoutStore()
 const { t } = useI18n()
@@ -23,8 +23,11 @@ const showNav = ref(false)
             <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToBlogEvent">
               {{ t('navbar.blog.heading') }}
             </RouterLink>
-            <RouterLink to="/live-demo" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToLiveDemoEvent">
+            <!-- <RouterLink to="/live-demo" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToLiveDemoEvent">
               {{ t('navbar.live-demo') }}
+            </RouterLink> -->
+            <RouterLink to="/app" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToAppEvent">
+              {{ t('navbar.app') }}
             </RouterLink>
             <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToInfoPackageEvent">
               {{ t('navbar.infopackage') }}
@@ -77,8 +80,11 @@ const showNav = ref(false)
           <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
-          <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToLiveDemoEvent">
+          <!-- <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToLiveDemoEvent">
             {{ t('navbar.live-demo') }}
+          </RouterLink> -->
+          <RouterLink to="/app" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToAppEvent">
+            {{ t('navbar.app') }}
           </RouterLink>
           <RouterLink to="/infopaket" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToInfoPackageEvent">
             {{ t('navbar.infopackage') }}

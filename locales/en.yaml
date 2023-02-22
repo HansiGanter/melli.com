@@ -264,6 +264,7 @@ navbar:
   about: Melli
   account: Account
   already-signed-up: Have an account?
+  app: App
   blog:
     heading: Blog
   infopackage: Info Package

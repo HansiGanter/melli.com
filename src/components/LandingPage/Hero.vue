@@ -35,19 +35,33 @@ function openModal(video: string) {
     </video>
 
     <!-- Heading & link to Video -->
-    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col md:items-center p-8">
+    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col">
       <slot />
-      <div class="my-auto grid gap-4 lg:w-200">
-        <h1 class="font-semibold text-4xl md:text-5xl leading-tight md:text-center">
-          <span class="text-primary-300">Melli - </span><span class="text-white">deine Freundin für ein glückliches Älterwerden</span>
+      <div class="flex flex-col gap-5 sm:gap-9 py-12 my-auto px-5 max-w-200 mx-auto">
+        <h1 class="font-semibold text-4xl sm:text-5xl sm:text-center">
+          <span class="text-primary-300 leading-tight">
+            Melli -
+          </span>
+          <span class="text-white leading-tight">
+            deine Freundin für ein glückliches Älterwerden
+          </span>
         </h1>
-        <button class="font-semibold text-lg text-primary-300 flex gap-3 w-fit md:m-auto" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
-          <span class="m-auto">Sieh dir das ganze Video an</span><img
-            src="https://assets.melli.com/icons/arrow-circle.svg"
-            class="mx-auto stroke-primary-300 w-6 h-6 m-auto"
-          >
-        </button>
+        <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
+          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
+            <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
+          </RouterLink>
+          <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
+            <span>ganzes Video ansehen</span><div class="i-lucide:arrow-right w-6 h-6" />
+          </button>
+        </div>
       </div>
+      <!-- <RouterLink to="#appoverview" class="absolute bottom-6 font-normal text-lg text-white flex flex-col gap-2 w-full mx-auto items-center">
+        mehr erfahren
+        <img
+          src="https://assets.melli.com/icons/arrow-down-circle-white.svg"
+          class="mx-auto w-12 h-12"
+        >
+      </RouterLink> -->
     </div>
   </header>
   <TransitionRoot appear :show="isOpen" as="template">
