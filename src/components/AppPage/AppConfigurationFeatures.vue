@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core'
+import { fireShopEvent } from '~/google-tag-manager';
 
 const { t } = useI18n()
 
@@ -70,7 +71,7 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
         <p class="text-lg font-normal">
           Oma mag Krimigeschichten überhaupt nicht? Kein Problem! In der App lässt sich das sofort einstellen. Aber Technik liegt ihr eigentlich nicht so? Genauso kein Problem! Die Familie kann das übernehmen! Die ganze Familie und Freunde können die App nutzen und sich gegenseitig dazu einladen. Oma muss sich also um nichts kümmern!
         </p>
-        <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
+        <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="fireShopEvent()">
           <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
         </RouterLink>
       </div>

@@ -3,6 +3,7 @@
 html,
 body,
 #app {
+  scroll-behavior: smooth;
   font-family: "puffin-display-soft", sans-serif;
   height: 100%;
   margin: 0;

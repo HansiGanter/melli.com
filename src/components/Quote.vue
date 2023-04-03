@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   quote: String,
+  quoteMessage: String,
   source: String,
   sourceDescription: String,
   portrait: String,
@@ -14,13 +15,17 @@ const props = defineProps({
       class="p-4 lg:p-8 rounded-full w-52 lg:w-64 aspect-square m-auto object-cover"
     >
     <div>
-      <p class="my-4 font-medium text-primary-900 text-xl md:text-2xl lg:text-3xl">
-        {{ props.quote }}
+      <p class="my-4 font-medium text-primary-900 text-xl md:text-2xl lg:text-3xl text-center md:text-left">
+        {{ quote }}<br>
+        <sapn class="my-4 font-semibold text-primary-900 text-xl md:text-2xl lg:text-3xl text-center md:text-left">
+          {{ quoteMessage }}
+        </sapn>
       </p>
-      <p class="text-gray-500 font-semibold lg:text-xl">
+
+      <p class="text-gray-500 font-semibold lg:text-xl text-center md:text-left">
         {{ source }}
       </p>
-      <p class="text-gray-500 ">
+      <p class="text-gray-500 text-center md:text-left">
         {{ sourceDescription }}
         <br>
       </p>

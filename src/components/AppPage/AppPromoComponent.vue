@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { fireContactEvent, fireShopEvent } from '~/google-tag-manager';
+</script>
+
 <template>
   <div class="flex flex-col gap-12 py-12 px-6 sm:px-16 rounded-3xl bg-primary-100">
     <div class="flex flex-col gap-6">
@@ -12,10 +16,10 @@
       </p>
     </div>
     <div class="flex flex-col md:flex-row md:justify-center gap-3">
-      <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white font-medium py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center">
+      <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white font-medium py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center" @click="fireShopEvent()">
         <div class="i-lucide:gift w-6 h-6" /><span>30 Tage kostenlos testen</span>
       </RouterLink>
-      <a href="tel:030555703440" class="rounded-lg border-gray-900 font-medium border-2 text-gray-900 py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center">
+      <a href="tel:030555703440" class="rounded-lg border-gray-900 font-medium border-2 text-gray-900 py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center" @click="fireContactEvent('call')">
         <div class="i-lucide:phone-call w-6 h-6" /><span>Kostenlose Beratung</span>
       </a>
     </div>

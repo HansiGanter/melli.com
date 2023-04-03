@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { fireBlogEvent } from '~/google-tag-manager';
+
 const isProduction = import.meta.env.PROD
 const router = useRouter()
 const routes = computed(() => router.getRoutes()
@@ -16,7 +18,7 @@ const routes = computed(() => router.getRoutes()
     Mehr über Melli erfahren
   </h2>
   <div class="snap-mandatory snap-x flex gap-6 overflow-x-auto py-12">
-    <RouterLink v-for="(r, index) in routes" :key="index" :to="r.path" class="snap-center shrink-0 w-70 h-100 sm:w-100 sm:h-140" :class="index === 0 ? 'ml-6 sm:ml-24' : index === routes.length - 1 ? 'mr-20' : ''">
+    <RouterLink v-for="(r, index) in routes" :key="index" :to="r.path" class="snap-center shrink-0 w-70 h-100 sm:w-100 sm:h-140" :class="index === 0 ? 'ml-6 sm:ml-24' : index === routes.length - 1 ? 'mr-20' : ''" @click="fireBlogEvent()">
       <img v-if="r.meta.frontmatter" :src="r.meta.frontmatter.imageUrl" class="h-50 sm:h-70 w-full object-cover rounded-t-3xl">
       <div class="h-50 sm:h-70 flex flex-col gap-4 justify-between items-center bg-gray-50 rounded-b-3xl px-2 sm:px-8 py-4 sm:py-12">
         <h3 class="text-center font-semibold text-xl sm:text-2xl">

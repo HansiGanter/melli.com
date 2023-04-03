@@ -1,8 +1,8 @@
 <script setup lang="ts">
 /* TODO: Fire Shop-Events when Shop is ready */
-import { fireCartEvent, fireGoToAppEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
-import { useCheckoutStore } from '~/stores/checkout'
-const checkout = useCheckoutStore()
+import { fireGoToAppEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager'
+// import { useCheckoutStore } from '~/stores/checkout'
+// const checkout = useCheckoutStore()
 const { t } = useI18n()
 
 const showNav = ref(false)
@@ -41,7 +41,7 @@ const showNav = ref(false)
           <a href="https://app.melli.com/" target="_blank" title="Login" @click="fireLoginEvent">
             <div class="i-carbon:user stroke-2 w-6 h-6" />
           </a>
-          <RouterLink
+          <!-- <RouterLink
             v-if="checkout.selectedSubscription"
             to="/shop"
             class="relative inline-flex"
@@ -51,7 +51,7 @@ const showNav = ref(false)
             <span class="flex absolute h-2.5 w-2.5 top-0 right-0 -mr-0.5">
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
-          </RouterLink>
+          </RouterLink> -->
           <RouterLink
             to="/shop"
             class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"

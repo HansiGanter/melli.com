@@ -1,31 +1,31 @@
 <template>
   <AppHero />
 
-  <Container id="appoverview" class="py-12 lg:py-24 px-5">
+  <Container id="appoverview" class="py-12 lg:py-24 px-6">
     <AppIntroText />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-5">
+  <Container class="my-12 lg:my-24 px-6">
     <AppOverview />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-5 bg-gray-50">
+  <Container class="py-12 lg:py-24 px-6 bg-gray-50">
     <AppCommunicationFeatures />
   </Container>
 
-  <Container id="app-safety-features" class="py-12 lg:py-24 px-5">
+  <Container id="app-safety-features" class="py-12 lg:py-24 px-6">
     <AppSafetyFeatures />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-5">
+  <Container class="my-12 lg:my-24 px-6">
     <AppConfigurationFeatures />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-5 bg-gray-50">
+  <Container class="py-12 lg:py-24 px-6 bg-gray-50">
     <AppScheduleFeatures />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-5">
+  <Container class="my-12 lg:my-24 px-6">
     <AppPromoComponent />
   </container>
 
@@ -33,11 +33,11 @@
     <SecureSection />
   </Container>
 
-  <Container class="px-5 my-12 lg:my-24">
+  <Container class="px-6 my-12 lg:my-24">
     <AppFaqSection />
   </Container>
 
-  <Container class="bg-primary-900 py-24 px-5 lg:my-24">
+  <Container class="bg-primary-900 py-24 px-6 lg:my-24">
     <ContactSection />
   </Container>
 

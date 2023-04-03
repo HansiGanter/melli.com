@@ -68,7 +68,7 @@ const technicalDetails = [
   },
   {
     question: 'Kann ich das Gerät auch mit WLAN nutzen?',
-    answer: 'Aktuell kann Melli nicht mit WLAN genutzt werden. Um eine stabile Internetverbindung während des Tests zu gewährleisten ist Melli mit einer SIM-Karte mit unbegrenztem mobilen Internet ausgestattet. Später wird Melli auch mit dem eigenen WLAN verbunden werden können.',
+    answer: 'Sie können Melli auch mit Ihrem WLAN verbinden. Dazu müssen Sie einmalig Ihr WLAN-Passwort eingeben und Melli verbindet sich automatisch. Wenn Sie Hilfe benötigen, rufen Sie bitte unsere Service Team unter der Nummer 030555703440 an. Dort erreichen Sie uns von Montags bis Freitags.',
   },
   {
     question: 'Ist das Datenvolumen auf der SIM-Karte begrenzt?',

@@ -22,7 +22,7 @@ const selected = ref(features[0])
               <div
                 :class="checked ? 'bg-primary-200 border-none' : 'bg-white border-black'"
                 class="rounded-full border-2 w-fit px-4 py-2 h-12 flex cursor-pointer"
-              >
+                >
                 <RadioGroupLabel class="my-auto font-semibold text-gray-900 cursor-pointer">
                   {{ feature.text }}
                 </RadioGroupLabel>

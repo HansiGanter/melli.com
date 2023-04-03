@@ -145,6 +145,13 @@ button:
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
 citation:
+  dipa:
+    matthias:
+      quote: >-
+        Toll, dass du dich für Melli interessierst! Ich bin Matthias, einer der
+        vier Gründer von Melli. Melli soll als sprachgesteuerte Begleiterin
+        ältere Menschen zu einem glücklicheren Alltag verhelfen. 
+      quote-message: Viel Spaß beim Kennenlernen!
   matthias:
     quote: >-
       “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die
@@ -167,6 +174,31 @@ contact:
   whatsapp: Schreib uns eine Nachricht!
 data-security:
   title: Datenschutz­erklärung
+dipa-faq-section:
+  answer-1: Der Testzeitraum beträgt genau drei Monate und startet Anfang Juni 2023.
+  answer-2: Nein, die Teilnahme am Melli-Test ist komplett kostenfrei.
+  answer-3: >-
+    Klicke auf einen der "werde Melli-Tester" Buttons, um zum Bewerbungsformular
+    zu gelangen.
+  answer-4: "Die Melli-App ist die Brücke zwischen den Nutzer und ihrer Familie oder Freunden. Angehörige können die App ganz einfach auf ihrem Smartphone installieren und sind in nur wenigen Schritten mit der Melli ihrer Mutter, ihres Vaters, ihrer Oma oder ihres Opas verbunden. \n\LDie App ist wie eine Fernbedienung für Melli. Mit ihr kann Melli an den Nutzer angepasst werden. So kann zum Beispiel eingestellt werden, wann Melli an Medikamente erinnern soll oder welche Hörbuch-Themen die Nutzer am meisten interessieren. Zudem findet die gesamte Kommunikation mit dem Nutzer über die App statt."
+  answer-5: >-
+    Bei der Ersteinrichtung und allen Fragen rund um Melli steht unser
+    Support-Team unterstützend zur Seite. Wir betreuen dich gerne Montags bis
+    Freitags zwischen 08:00 und 16:00 telefonisch. Du erreichst uns unter der
+    Telefonnummer 030555703440.
+  answer-6: >-
+    Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli
+    bewegt sich online lediglich in festgelegten und geprüften Räumen und kann
+    diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli
+    nach höchsten Datenschutz-Standards. Sie ist DSGVO-konform und nutzt die ihr
+    zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes
+    Nutzererlebnis zu gestalten. Mehr zum Datenschutz findest du hier.
+  question-1: Wie lang ist der Testzeitraum?
+  question-2: Kostet es mich etwas, Melli-Tester zu werden?
+  question-3: Wie kann ich mich bzw. einen Angehörigen als Melli-Tester bewerben.
+  question-4: Wozu gibt es die Melli-App?
+  question-5: Wie wird Melli eingerichtet?
+  question-6: Ist die Nutzung von Melli sicher?
 donation-banner:
   header: 'Unterstütze unsere Neujahrsaktion:  '
   text: >-

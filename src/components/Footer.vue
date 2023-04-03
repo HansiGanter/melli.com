@@ -7,7 +7,7 @@ const { t } = useI18n()
 const navigation = {
   resources: [
     { name: '030-555703440', href: 'tel:030555703440', icon: 'i-carbon:phone' },
-    { name: 'info@melli.com', href: 'mailto:info@melli.com', icon: 'i-carbon:email' },
+    { name: 'support@melli.com', href: 'mailto:support@melli.com', icon: 'i-carbon:email' },
   ],
   support: [
     { name: t('footer.support.faq'), href: '/faq' },
@@ -73,7 +73,7 @@ const navigation = {
                 <a
                   :href="item.href"
                   class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center"
-                >
+                  @click="fireContactEvent(item.name)">
                   <div :class="item.icon" />
                   <span>{{ item.name }}</span>
                 </a>

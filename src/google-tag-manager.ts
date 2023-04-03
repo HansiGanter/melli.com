@@ -194,6 +194,29 @@ export const fireBlogEvent = (blog?: string) => {
 //   console.log(md5(email))
 // }
 
+export const fireScrollToDipaEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-dipa-scroll-to-dipa'
+  })
+  console.log('melli-cta-dipa-scroll-to-dipa')
+}
+
+export const fireDipaFormOpenEvent = (email?: string) => {
+  window.dataLayer.push({
+    event: 'melli-cta-dipa-form-open',
+    em: email ? sha256(email?.toLowerCase()) : '',
+  })
+  console.log('melli-cta-dipa-form-open')
+}
+
+export const fireDipaFormSentEvent = (email?: string) => {
+  window.dataLayer.push({
+    event: 'melli-cta-dipa-form-sent',
+    em: email ? sha256(email?.toLowerCase()) : '',
+  })
+  console.log('melli-cta-dipa-form-sent')
+}
+
 export const fireGoToLiveDemoEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-go-to-live-demo',
@@ -244,4 +267,18 @@ export const fireInfoPackageSentEvent = (email?: string, phone?: string, firstNa
     ln: LastName ? sha256(LastName?.toLowerCase()) : '',
   })
   console.log('melli-cta-info-package-sent')
+}
+
+export const firePillEvent = (name?: string) => {
+  window.dataLayer.push({
+    event: `melli-pill-${name}`
+  })
+  console.log(`melli-pill-${name}`)
+}
+
+export const fireChatShopEvent = (name?: string) => {
+  window.dataLayer.push({
+    event: `melli-abo-chat-${name}`
+  })
+  console.log(`melli-abo-chat-${name}`)
 }

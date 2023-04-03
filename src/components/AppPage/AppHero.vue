@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import { fireVideoEvent } from '~/google-tag-manager'
+import { fireShopEvent } from '~/google-tag-manager';
 
 const heroVideo = ref<HTMLElement | null>(null)
 
@@ -12,10 +12,6 @@ function closeModal() {
   isOpen.value = false
   activeVideo.value = ''
 }
-// function openModal(video: string) {
-//   activeVideo.value = video
-//   isOpen.value = true
-// }
 </script>
 
 <template>
@@ -47,12 +43,9 @@ function closeModal() {
           </span>
         </h1>
         <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
-          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
+          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="fireShopEvent()">
             <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
           </RouterLink>
-          <!-- <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="[openModal('https://videos.melli.com/soziale-kontakte.mp4'), fireVideoEvent('hero-video')]">
-            <span>ganzes Video ansehen</span><div class="i-lucide:arrow-right w-6 h-6" />
-          </button> -->
         </div>
       </div>
       <RouterLink to="#appoverview" class="absolute bottom-6 font-normal text-lg text-white flex flex-col gap-2 w-full mx-auto items-center">

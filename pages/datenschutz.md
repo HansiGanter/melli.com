@@ -316,19 +316,21 @@ Im Rahmen der vorgenannten Leistungen können über Instant-Formulare übermitte
 
 Weitere Informationen zu Datenverarbeitungen über Facebook Lead Ads finden Sie in der Datenrichtlinie von Facebook unter https://de-de.facebook.com/privacy/explanation.
 
-  11.5. **Hubspot**
+  11.5. **Pipedrive**
 
-Wir verwenden auf unsere Website HubSpot für Marketingaktivitäten. HubSpot ist ein US-amerikanisches Unternehmen mit einer Niederlassung in Deutschland, Am Postbahnhof 17, 10243 Berlin („HubSpot"). Die integrierte Software-Lösung von HubSpot verwenden wir für unser eigenes Marketing, den Leadgenerierungs-, -qualifizierungs- und -management-Prozess. Hierzu zählen unter anderem das E-Mail-Marketing, welches den Versand von automatisierten, individualisierten Mailings regelt, Social Media Publishing und Reporting, Kontaktmanagement wie die Nutzersegmentierung und CRM, Landing Pages und Kontaktformulare. Unsere Kontaktformulare ermöglichen es Ihnen als Besucher unserer Website, mehr über unser Unternehmen zu erfahren, Inhalte herunterzuladen und uns Ihre Kontaktinformationen zur Verfügung zu stellen. Diese Informationen sowie die Inhalte unserer Website werden auf Servern von HubSpot in Europa gespeichert. Wir nutzen diese Informationen, um mit Ihnen in Kontakt zu treten. Bevor wir Ihre Daten zu den in diesem Abschnitt genannten Zwecken verarbeiten, holen wir Ihre Einwilligung ein. Sie können diese Einwilligung jederzeit für die Zukunft gemäß Art. 7 Abs. 3 DSGVO widerrufen. Wenn Sie uns über ein Kontaktformular eine Einwilligung zur Kontaktaufnahme per E-Mail gestattet haben, enthält jede E-Mail einen Abmelde-Link.
+Wir verwenden in unserem Unternehmen das integriere Management und Marketing System „Pipedrive“. Pipedrive ist eine webbasierte Software-Lösung der Pipedrive Inc, 460 Park Ave South, New York, NY 10016, USA, die in Europa von der Pipedrive OÜ, Mustamäe tee 3a, 10615 Tallinn, Estland angeboten wird. Pipedrive bietet die folgenden Funktionen:
+•	CRM (Customer Relation Management)
+•	Kontaktformulare
+•	Tracking und Analyse
+Wir verwenden die Funktionalitäten von Pipedrive zur Verwaltung von Nutzer- und Kundendaten sowie zur Erkennung und Erfassung neuer Nutzer auf unserer Webseite Webseite und zur Anleitung unserer Nutzer durch automatisierte Vertriebsprozesse. Wir verwenden Pipedrive als CRM-System schwerpunktmäßig zur Verarbeitung und Speicherung von Kontaktdaten sowie zur Steuerung und Realisierung von Vertriebs- und Marketingaktivitäten. Die von uns eingepflegten Informationen werden auf Servern von Pipedrive gespeichert. Die durch Pipedrive verarbeiteten Daten können von uns genutzt werden, um detailliertere Einblicke in die Art und Weise der Nutzung unserer Angebote und deren Nutzung zu erhalten, um mit Kunden und Interessenten oder Geschäftspartnern in Kontakt zu treten.
 
-Wir nehmen Erfolgsmessungen von E-Mail-Inhalten vor, die wir über HubSpot an Sie versenden, um Ihre Lesegewohnheiten aufgrund der Öffnungen der E-Mail, Öffnungszeiten und der angeklickten Links zu erkennen, um ihnen dadurch interessensbasierte und nützliche Inhalte erstellen und versenden zu können. Ihre Einwilligung in die Datenverarbeitung umfasst die Erfolgsmessung. Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. a) DSGVO. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Sie können hierzu z.B. den Abmeldelink in jeder E-Mail nutzen oder sich an uns wenden. Ein getrennter Widerruf der Erfolgsmessung ist leider nicht möglich, in diesem Fall muss die Einwilligung zum Erhalt von E-Mails insgesamt widerrufen werden.
+Wir haben mit Pipedrive eine Vereinbarung zur Verarbeitung von Daten im Auftrag nach Art. 28 DSGVO zur Gewährleistung eines datenschutzkonformen Umgangs mit unseren Daten abgeschlossen. Datenschutzhinweise von Pipedrive können unter https://www.pipedrive.com/en/privacy eingesehen werden.
 
-HubSpot verwendet Cookies. HubSpot erhebt und speichert Nutzungsdaten in pseudonymen Profilen, um interessenorientierte Werbung zu ermöglichen. Außerdem wertet HubSpot im Auftrag von uns erhobene Informationen aus, damit wir Reports über den Besuch und die besuchten Seiten generieren können. Sie können die Speicherung von Daten durch HubSpot in Cookies und die damit verbundene Aufzeichnung ihres Nutzerverhaltens deaktivieren, indem Sie die Speicherung von Cookies jederzeit durch Ihre Browsereinstellungen entsprechend verhindern und/oder bestehende Cookies löschen.
+Wir nutzen Pipedrive und alle in Pipedrive erfassten Informationen auf Basis unseres Berechtigten Interessen an der Optimierung unserer internen Verwaltungsprozesse (effiziente und schnelle Bearbeitung von Nutzeranfragen, Bestandskundenmanagement, Neukundengeschäft) sowie unseres Marketings und an der Analyse der Benutzung unserer Onlinepräsenzen sowie deren stetigen Optimierung und nutzerfreundlichen Ausgestaltung (Art. 6 Abs. 1 lit. f DSGVO). Des Weiteren nutzen wir personenbezogenen Daten auf selbiger Grundlage um unsere Nutzer und Kunden zielgerichteter informieren zu können. Verwenden wir Pipedrive zur Abwicklung der Kommunikation im Rahmen einer Kontaktaufnahme die auf den Abschluss oder die Durchführung eines Vertrages abzielt, so gilt als Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO.
 
-Wir verwenden HubSpot zur Optimierung der Werbung und Kundenansprache. Nur wenn Sie uns eine Einwilligung hierzu erteilt haben, können wir die pseudonymen Daten auch mit personenbezogenen Angaben aus Ihrem CRM-Profil zusammenführen, um Sie optimal anzusprechen und interessengerecht zu betreuen.
+Soweit im Zusammenhang mit Pipedrive Cookies auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt werden, haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Hierfür können Sie auch das auf unserer Webseite eingebundene Cookie-Consent-Tool verwenden. Werden Cookies für unsere Webseite deaktiviert, können möglicherweise nicht mehr alle Funktionen der Webseite vollumfänglich genutzt werden.
 
-Ihren Daten werden von HubSpot in Europa gespeichert. HubSpot setzt allerdings Unterverarbeiter in den USA ein, u.a, HubSpot Inc. Es kann nicht ausgeschlossen werden, dass diese insbesondere zu Supportzwecken Zugang zu Daten haben. Bei Zugriffen aus Drittländern handelt es sich um Datenübermittlungen im Sinne der DSGVO. Die von Ihnen erteilten Einwilligung bezieht sich auch auf Datenübermittlungen in die USA. Die USA bietet kein der Europäischen Union vergleichbares Datenschutzniveau. In bestimmten Fällen sind US-Unternehmen dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht ausgeschlossen werden, dass US-Behörden (z.B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese Verarbeitungstätigkeiten keinen Einfluss_._ HubSpot Inc. ist allerdings mit den EU-Standardvertragsklauseln auf eine datenschutzkonforme Verarbeitung vertraglich verpflichtet.
-
-Nähere Informationen zur Datenverarbeitung durch HubSpot finden Sie auf der [Website von HubSpot](https://www.hubspot.de/data-privacy/gdpr).
+Im Übrigen werden Ihre Daten aus unserem CRM-Tool Pipedrive gelöscht, wenn der jeweilige Zweck der Speicherung (z.B. Bearbeitung einer Anfrage, Beendigung einer Kundenbeziehung) entfallen ist sowie keine anderweitigen entgegenstehenden gesetzlichen Ausnahmen vorliegen. Sie können sich jederzeit bei uns über die zu Ihrer Person gespeicherten Daten informieren.
 
 12. **Zapier**
 
@@ -342,19 +344,22 @@ Wenn Sie unseren Newsletter beziehen wollen, erfolgt die Datenverarbeitung auf G
 
 Sie können den Newsletter jederzeit abbestellen. Eine Möglichkeit zur Erklärung des Widerrufs finden Sie in jedem Newsletter, die wir Ihnen senden.
 
-**CleverReach**
+**Sendinblue**
 
-Diese Website nutzt die Dienste der CleverReach GmbH & Co. KG, Schafjückenweg 2, 26180 Rastede, Deutschland für den Versand und die Analyse von Newslettern.
+Wir bieten Ihnen die Möglichkeit an, sich bei uns über unseren Internetauftritt für unsere kostenlosen Newsletter anmelden zu können.
 
-CleverReach ist ein Dienst, mit dem u.a. der Versand von Newslettern organisiert und analysiert werden kann. Wenn Sie Daten zum Zwecke des Newsletterbezugs eingeben (z. B. E-Mail-Adresse), werden diese ausschließlich auf den Servern in Europa gespeichert.
+Zum Newsletterversand setzen wir Sendinblue ein. Bei Sendinblue handelt es sich um einen Dienst der Firma Sendinblue GmbH, Köpenicker Str. 126, 10179 Berlin, nachfolgend nur „Sendinblue “ genannt.
 
-Mit Hilfe von CleverReach können wir unsere Newsletterkampagnen analysieren. Wenn Sie eine mit CleverReach versandte E-Mail öffnen, verbindet sich eine in der E-Mail enthaltene Datei (sog. web-beacon) mit den Servern von CleverReach. So kann festgestellt werden, ob eine Newsletter-Nachricht geöffnet und welche Links ggf. angeklickt wurden. Außerdem werden technische Informationen erfasst (z. B. Zeitpunkt des Abrufs, IP-Adresse, Browsertyp und Betriebssystem). Diese Informationen können nicht dem jeweiligen Newsletter-Empfänger zugeordnet werden. Sie dienen ausschließlich der statistischen Analyse von Newsletterkampagnen. Die Ergebnisse dieser Analysen können genutzt werden, um künftige Newsletter besser an die Interessen der Empfänger anzupassen.
+Falls Sie sich zu unserem Newsletter-Versand anmelden, werden die während des Anmeldevorgangs abgefragten Daten (Ihre E-Mail-Adresse) durch Sendinblue verarbeitet. Zudem werden Ihre IP-Adresse sowie das Datum Ihrer Anmeldung nebst Uhrzeit gespeichert. Im Rahmen des weiteren Anmeldevorgangs wird Ihre Einwilligung in die Übersendung des Newsletters eingeholt, der Inhalt konkret beschreiben und auf diese Datenschutzerklärung verwiesen.
 
-Wenn Sie keine Analyse durch CleverReach wollen, müssen Sie den Newsletter abbestellen. Hierfür stellen wir in jeder Newsletternachricht einen entsprechenden Link zur Verfügung.
+Zudem bietet Sendinblue unter
+https://de.sendinblue.com/legal/privacypolicy/
+https://de.sendinblue.com/informationen-newsletter-empfaenger/?rtype=n2go
+weitergehende Datenschutzinformationen an.
 
-Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a) DSGVO). Sie können diese Einwilligung jederzeit widerrufen, indem Sie den Newsletter abbestellen. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
-
-Weitere Informationen zum Datenschutz bei CleverReach finden Sie unter: [https://www.cleverreach.com/de-de/datenschutz/](https://www.cleverreach.com/de-de/datenschutz/).
+Die von Sendinblue versandten Newsletter enthalten Technologien anhand derer wir in den Analysen erkennen können, ob und wann eine E-Mail geöffnet sowie ob und welchen in dem Newsletter etwaig enthaltenen Links gefolgt worden ist. Diese Daten speichern wir neben den technischen Daten (Systemdaten und IP-Adresse), damit der jeweilige Newsletter optimal auf Ihre Wünsche und Interessen ausgerichtet werden kann. Die somit erhobenen Daten werden also genutzt, um die Qualität unserer Newsletter ständig zu steigern.
+Rechtsgrundlage für den Newsletterversand und die Analyse ist Art. 6 Abs. 1 lit. a.) DSGVO.
+Die Einwilligung in den Newsletter-Versand können Sie gemäß Art. 7 Abs. 3 DSGVO jederzeit mit Wirkung für die Zukunft widerrufen. Hierzu müssen Sie uns lediglich über Ihren Widerruf in Kenntnis setzen oder den in jedem Newsletter enthaltenen Abmeldelink betätigen.
 
 **Auftragsverarbeitung**
 
