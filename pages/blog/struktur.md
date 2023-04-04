@@ -53,7 +53,7 @@ Wir alle sind uns über die Bedeutung einer gesunden Lebensweise im klaren – b
 Von der Organisation von Verabredungen mit Freund und Verwandten, über kleine Meditationsübungen, bis hin zum virtuellen Kaffeekränzchen mit anderen Melli-Nutzern – die Möglichkeiten zur Gestaltung eines individuellen und abwechslungsreichen Tagesablaufs mit Melli sind vielzählig. Die Alltagsbegleiterin sorgt jeden Tag aufs neue dafür, dass der kommende Morgen mit Bedeutung gefüllt wird und ihre Nutzer die nächste Aktivität bereits sehnsüchtig erwarten. So können sich Familienangehörige getrost von der Angst verabschieden, dass Oma und Opa vor dem langweiligen Fernsehprogramm versumpfen könnten.
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_structure-4-1536.webp">
-    <source src="https://videos.melli.com/struktur.mp4" type="video/mp4">
+    <source src="https://videos.melli.com/struktur.webm" type="video/webm">
 </video>
 
 ## Melli – Das Altern der Zukunft

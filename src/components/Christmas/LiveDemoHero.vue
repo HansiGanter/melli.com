@@ -18,7 +18,7 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
       playsinline
       poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
     >
-      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+      <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
     </video>
 
     <!-- Heading & link to Video -->

@@ -13,13 +13,13 @@ const missions = [
     device: 'https://assets.melli.com/images/mockups/device-group-call.webp',
     title: t('test-mission.feature-1.title'),
     description: t('test-mission.feature-1.description'),
-    video: 'https://videos.melli.com/communication.mp4',
+    video: 'https://videos.melli.com/communication.webm',
   },
   {
     image: 'https://assets.melli.com/images/mockups/image-meeting-bubble.webp',
     title: t('test-mission.feature-2.title'),
     description: t('test-mission.feature-2.description'),
-    video: 'https://videos.melli.com/struktur.mp4',
+    video: 'https://videos.melli.com/struktur.webm',
   },
   {
     image: 'https://assets.melli.com/images/stock/man-portrait.webp',
@@ -76,7 +76,7 @@ const playVideo = () => {
           poster="https://assets.melli.com/images/stock/daughter-mother-in-call-1024.webp"
           playsinline
         >
-          <source src="https://videos.melli.com/fuersorge.mp4" type="video/mp4">
+          <source src="https://videos.melli.com/fuersorge.webm" type="video/webm">
         </video>
         <div
           v-if="!isPlaying"

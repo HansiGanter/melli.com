@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireDipaFormOpenEvent, fireScrollToDipaEvent } from '~/google-tag-manager';
+import { fireDipaFormOpenEvent, fireDipaFormSentEvent, fireScrollToDipaEvent } from '~/google-tag-manager';
 
 const email = ref('')
 const showForm = ref(false)
@@ -25,7 +25,7 @@ const submitFunction = async () => {
           <!-- <span class="text-primary-300">Als Dankeschön gibts 100€</span> -->
         </h2>
         <p class="text-center text-lg font-normal text-white">
-          Melli gos DiPA (digitale Pflegeanwendung). Melli könnte bald für viele Senioren kostenlos zur Verfügung stehen. Dafür brauchen wir dich! Bewirb jetzt deine Oma, Opa, Mutter, Vater als Melli-Tester und nehmt an unserer DiPA-Studie teil.
+          Melli goes DiPA (digitale Pflegeanwendung). Melli könnte bald für viele Senioren kostenlos zur Verfügung stehen. Dafür brauchen wir dich! Bewirb jetzt deine Oma, Opa, Mutter, Vater als Melli-Tester und nehmt an unserer DiPA-Studie teil.
         </p>
       </div>
       <div>
@@ -77,7 +77,7 @@ const submitFunction = async () => {
               </div>
               <div />
               <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-                <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAJIrrYVnlhqvAjpgthkCAte0mILPuCzmO06dj-910Lx_0iW8v7Pv3B3pI89YkyBgWnpMBHfB685CoILZCPnVTqkgNe2Q_d2SxI3sBLKtF6gA6KVGYxDpgUOMOQDb6JkKTawv9OaEtO1jHSPSYAqSFWRpkTqrv4Am-wEKx-4mDrn4cnAH1SBdNjo7AbzmPIoJjVAyauI5Iis7" data-type="subscription">
+                <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAJIrrYVnlhqvAjpgthkCAte0mILPuCzmO06dj-910Lx_0iW8v7Pv3B3pI89YkyBgWnpMBHfB685CoILZCPnVTqkgNe2Q_d2SxI3sBLKtF6gA6KVGYxDpgUOMOQDb6JkKTawv9OaEtO1jHSPSYAqSFWRpkTqrv4Am-wEKx-4mDrn4cnAH1SBdNjo7AbzmPIoJjVAyauI5Iis7" data-type="subscription" @submit="fireDipaFormSentEvent()">
                   <div style="padding: 8px 0;">
                     <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
                       <p>Werde jetzt Melli-Tester!</p>

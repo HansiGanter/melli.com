@@ -89,7 +89,7 @@ Flöer, Claudia: Beschäftigung und Spiele für Demenzerkrankte, 2018, in: Pfleg
 Für einen abwechslungsreichen Alltag bedarf es neben dem Angebot an Beschäftigungsmöglichkeiten jedoch auch der Motivation dazu, aktiv zu werden. Gerade wenn es sich um neue Beschäftigungsformen wie Online-Inhalte handelt, stoßen Senioren häufig an ihre Grenzen. Aus diesem Grund ist Melli eine proaktive Alltagsbegleiterin. Sie wartet nicht nur auf Anweisungen ihrer Nutzer, wie zum Beispiel, dass sie Musik anschalten oder ein Rätselspiel starten soll. Sie geht in regelmäßigen Abständen mit Aktivitätsvorschlägen auf ihre Nutzer zu, angepasst auf deren Alltagsablauf. Sie motiviert die Senioren tätig zu werden und versucht es bei Ablehnung ihrer Anregungen einfach mit neuen Vorschlägen. Damit nicht jeder Tag aufs Neue vor dem Fernseher beginnt und endet.
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
-    <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
+    <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
 </video>
 
 ## Das Wichtigste in Kürze

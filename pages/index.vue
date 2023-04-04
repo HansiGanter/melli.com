@@ -15,7 +15,7 @@ useHead({
     <FlipCards class="-mt-8" />
   </Container>
 
-  <Container class="px-5">
+  <Container class="px-6 lg:px-24">
     <Quote
       class="my-12"
       :quote="t('citation.matthias.quote')"
@@ -25,31 +25,31 @@ useHead({
     />
   </Container>
 
-  <Container class="bg-primary-900 rounded-[30px] px-5 py-16 my-16 lg:my-24 ">
+  <Container class="bg-primary-900 rounded-[30px] px-6 lg:px-24 py-16 my-16 lg:my-24 ">
     <PromoKPIs />
   </Container>
 
-  <Container class="py-10 lg:py-20 px-5 ">
+  <Container class="py-10 lg:py-20 px-6">
     <Reliability />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-5 ">
+  <Container class="py-12 lg:py-24 px-6 lg:px-24">
     <MelliListensSection />
   </Container>
 
-  <Container id="vernetzen" class="py-10 lg:py-20 px-5 ">
+  <Container id="vernetzen" class="py-10 lg:py-20 px-6">
     <MoreBenefits />
   </Container>
 
-  <Container class="py-10 lg:py-20 px-5 ">
+  <Container class="py-10 lg:py-20 px-6 lg:px-24 ">
     <HealthyRoutines />
   </Container>
 
-  <Container id="glücklicher" class="bg-primary-900 rounded-t-[32px] py-12 lg:py-20 px-5 ">
+  <Container id="glücklicher" class="bg-primary-900 rounded-t-[32px] py-12 lg:py-20 px-6">
     <QuotesSection />
   </Container>
 
-  <Container class="py-8 bg-gray-50 px-5">
+  <!-- <Container class="py-8 bg-gray-50 px-6 lg:px-24">
     <div class="my-4">
       <h1 class="color-gray-900 text-4xl lg:text-5xl font-semibold md:text-center">
         Teste Melli jetzt
@@ -62,7 +62,7 @@ useHead({
       Wähle eine Abo-Option um deinen kostenlosen Test zu starten. Dir werden für die ersten 60 Tage keinerlei Kosten berechnet. Nach Ablauf der 60 Tage beginnt dein Abo, zu den von dir ausgewählten Konditionen. Du kannst dein Abo vor Ablauf der 60 Tage kündigen, sodass keinerlei Kosten anfallen, sollte Melli nicht zu dir passen.
     </p>
     <StatsSection />
-  </Container>
+  </Container> -->
 
   <Container class="bg-gray-50">
     <ShoppingDetails />
@@ -72,11 +72,11 @@ useHead({
     <SecureSection />
   </Container>
 
-  <Container class="px-5 py-12 bg-gray-50 dark:from-gray-900 dark:to-gray-800">
+  <Container class="px-6 lg:px-24 py-12 bg-gray-50 dark:from-gray-900 dark:to-gray-800">
     <FaqSection />
   </Container>
 
-  <Container class="bg-primary-900 py-12 px-5 ">
+  <Container class="bg-primary-900 py-12 px-6 lg:px-24 ">
     <ContactSection />
   </Container>
 </template>

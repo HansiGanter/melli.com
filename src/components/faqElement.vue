@@ -12,7 +12,7 @@ defineProps<{
   <Disclosure v-slot="{ open }">
     <DisclosureButton class="w-full"
     >
-    <div class="flex justify-between w-full gap-4 font-semibold text-left my-6 items-center text-xl" @click="fireFAQEvent()">
+    <div class="flex justify-between w-full gap-4 font-semibold text-left my-6 items-center text-xl" @click="fireFAQEvent(question)">
       <span>{{ question }}</span>
       <div
         :class="open ? 'rotate-180 transform duration-300 i-lucide:minus' : 'i-lucide:plus rotate-90 transform duration-300'"

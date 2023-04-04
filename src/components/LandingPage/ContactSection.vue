@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireCallbackOpenEvent, fireContactEvent } from '~/google-tag-manager'
+import { fireCallbackOpenEvent, fireCallbackSentEvent, fireContactEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const socials = [
@@ -72,7 +72,7 @@ const callbackModalOpen = ref(false)
         </div>
         <div />
         <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-          <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAL3l5-FytLZ2MAonfnwnT33ih4jXcwYFJ0D4EK9EmgK_-_BjyuRJ4gJveKQ-ES-hTAdOzVx-2tr5FEobA_oTjLNUcVVG8_fNlm5YqbCe9D5qjDtVDRiyiymxs2bvE177aSjKSSkJxEt7PEoXmpnSXjwyTYn1g35LqARCIr-nJbVWlHsqDvWGwX6vYC6VSWJBd1yfTi8xmfvk" data-type="subscription">
+          <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAL3l5-FytLZ2MAonfnwnT33ih4jXcwYFJ0D4EK9EmgK_-_BjyuRJ4gJveKQ-ES-hTAdOzVx-2tr5FEobA_oTjLNUcVVG8_fNlm5YqbCe9D5qjDtVDRiyiymxs2bvE177aSjKSSkJxEt7PEoXmpnSXjwyTYn1g35LqARCIr-nJbVWlHsqDvWGwX6vYC6VSWJBd1yfTi8xmfvk" data-type="subscription" @submit="fireCallbackSentEvent()">
             <div style="padding: 8px 0;">
               <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
                 <p>Vereinbare einen Rückruf!</p>

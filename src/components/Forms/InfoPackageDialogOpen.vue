@@ -1,4 +1,4 @@
-<script setup lang="ts">import { fireInfoPackageOpenEvent } from '~/google-tag-manager';
+<script setup lang="ts">import { fireInfoPackageOpenEvent, fireInfoPackageSentEvent } from '~/google-tag-manager';
 
 const email = ref('')
 const showForm = ref(false)
@@ -78,7 +78,7 @@ const submitFunction = async (e: SubmitEvent) => {
         </div>
         <div />
         <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:24px; border-width:0px; border-color:#c1cdda; border-style:solid; direction:ltr">
-          <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAMtcwBoDSajeVyAFqcXanXXX_5DYtIBkCd8OHYnKn08yNzKkRmHqPa0R2_5qRo95ez3A_p53gcZ_lTZt0kitu4Or72Q-TVKRO7DnSpeG7jl1yMYJEfBwsyyx7crgaU6K3S3J32rP2D8-61wdaY7whnGk00ssJt3PwttbHvBDkbgXDnuBgute0z6QGrLEswRDd2V7MpINp6Be" data-type="subscription">
+          <form id="sib-form" method="POST" action="https://ccfae1fd.sibforms.com/serve/MUIEAMtcwBoDSajeVyAFqcXanXXX_5DYtIBkCd8OHYnKn08yNzKkRmHqPa0R2_5qRo95ez3A_p53gcZ_lTZt0kitu4Or72Q-TVKRO7DnSpeG7jl1yMYJEfBwsyyx7crgaU6K3S3J32rP2D8-61wdaY7whnGk00ssJt3PwttbHvBDkbgXDnuBgute0z6QGrLEswRDd2V7MpINp6Be" data-type="subscription" @submit="fireInfoPackageSentEvent()">
             <div style="padding: 8px 0;">
               <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
                 <p>Melde dich zum Newsletter an um dein Infopaket zu erhalten.</p>

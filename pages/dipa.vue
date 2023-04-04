@@ -44,7 +44,7 @@ const { t } = useI18n()
     <SecureSection />
   </Container>
 
-  <Container class="px-6 my-12 lg:my-24">
+  <Container class="px-6 lg:px-24 my-12 lg:my-24">
     <DipaFaqSection />
   </Container>
 
