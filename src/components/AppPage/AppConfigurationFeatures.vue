@@ -69,50 +69,41 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
       </h2>
       <div class="flex flex-col gap-6">
         <p class="text-lg font-normal">
-          Oma mag Krimigeschichten überhaupt nicht? Kein Problem! In der App lässt sich das sofort einstellen. Aber Technik liegt ihr eigentlich nicht so? Genauso kein Problem! Die Familie kann das übernehmen! Die ganze Familie und Freunde können die App nutzen und sich gegenseitig dazu einladen. Oma muss sich also um nichts kümmern!
+          Oma mag Krimigeschichten überhaupt nicht? Kein Problem! In der App lässt sich das sofort einstellen. Aber
+          Technik liegt ihr eigentlich nicht so? Genauso kein Problem! Die Familie kann das übernehmen! Die ganze Familie
+          und Freunde können die App nutzen und sich gegenseitig dazu einladen. Oma muss sich also um nichts kümmern!
         </p>
-        <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center" @click="fireShopEvent()">
+        <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center"
+          @click="fireShopEvent()">
           <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
         </RouterLink>
       </div>
       <div v-if="!greaterLg" class="max-w-120 mx-auto">
-        <img class="object-contain" src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-1536.webp">
+        <img class="object-contain"
+          src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-1536.webp">
       </div>
       <div class="flex flex-col sm:flex-row gap-6">
         <div class="flex flex-col gap-4">
           <!-- Current Features -->
-          <span class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-xs font-semibold w-fit">released</span>
-          <Pill
-            v-for="(feature, index) in configurationFeatures"
-            :key="index"
-            :pilltext="feature.pilltext"
-            :modaltext="feature.modaltext"
-            :bubbletype="feature.bubbletype"
-            :bubble="feature.bubble"
-            :iconmodal="feature.iconmodal"
-            :iconpill="feature.iconpill"
-            pill="bg-primary-50 text-gray-900"
-          />
+          <span
+            class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-xs font-semibold w-fit">released</span>
+          <Pill v-for="(feature, index) in configurationFeatures" :key="index" :pilltext="feature.pilltext"
+            :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
+            :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-primary-50 text-gray-900" />
         </div>
         <div class="flex flex-col gap-4">
           <!-- Features Coming Soon -->
-          <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-xs font-semibold w-fit">bald verfügbar</span>
-          <Pill
-            v-for="(feature, index) in configurationFeaturesComingSoon"
-            :key="index"
-            :pilltext="feature.pilltext"
-            :modaltext="feature.modaltext"
-            :bubbletype="feature.bubbletype"
-            :bubble="feature.bubble"
-            :iconmodal="feature.iconmodal"
-            :iconpill="feature.iconpill"
-            pill="bg-amber-100 text-gray-900"
-          />
+          <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-xs font-semibold w-fit">bald
+            verfügbar</span>
+          <Pill v-for="(feature, index) in configurationFeaturesComingSoon" :key="index" :pilltext="feature.pilltext"
+            :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
+            :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-amber-100 text-gray-900" />
         </div>
       </div>
     </div>
-    <div>
-      <img v-if="greaterLg" class="object-contain" src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-2048.webp">
+    <div class="h-full max-w-120">
+      <img v-if="greaterLg" class="object-contain"
+        src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-2048.webp">
     </div>
   </div>
 </template>

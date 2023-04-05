@@ -62,19 +62,16 @@ const openVideo = () => {
         </p>
       </div>
       <div class="flex flex-wrap lg:flex-nowrap gap-3">
-        <div
-          v-for="(feature, index) in features"
-          :key="index"
+        <div v-for="(feature, index) in features" :key="index"
           class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-4 rounded-lg w-full sm:w-fit whitespace-pre-line flex gap-2.5 items-center cursor-pointer"
-          @click="showFeaturesCards = feature"
-        >
+          @click="showFeaturesCards = feature">
           <img :src="feature.icon" class="w-9 h-9">
           <span>{{ feature.pilltext }}</span>
 
           <Modal :show="!!showFeaturesCards" @close="showFeaturesCards = undefined">
             <Container v-if="showFeaturesCards" class="p-6 max-w-3xl">
               <img :src="showFeaturesCards.icon" class="color-primary-900 w-14 h-14 w-full md:w-auto">
-              <p class="font-bold pt-4 py-2 text-xl">
+              <p class="font-semibold pt-4 py-2 text-xl">
                 {{ showFeaturesCards.pilltext }}
               </p>
               <p class="text-xl">
@@ -85,22 +82,14 @@ const openVideo = () => {
         </div>
       </div>
     </div>
-    <div
-      class="relative order-1 lg:order-2 overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto"
-      @click="openVideo"
-    >
-      <video
-        ref="reliabilityvideo"
-        width="1024"
-        poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
-        playsinline
-      >
-        <source
-          src="https://videos.melli.com/soziale-kontakte.webm"
-          type="video/webm"
-        >
+    <div class="relative order-1 lg:order-2 overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto"
+      @click="openVideo">
+      <video ref="reliabilityvideo" width="1024"
+        poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp" playsinline>
+        <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
       </video>
-      <div v-if="!isPlaying" class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div v-if="!isPlaying"
+        class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>

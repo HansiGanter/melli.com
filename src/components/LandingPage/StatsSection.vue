@@ -31,17 +31,14 @@ const goToShop = (id: string, name: string) => {
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <div
-      v-for="subscription in subscriptions"
-      :key="subscription.id"
-      @click="[setCart(), goToShop(subscription.id, subscription.name)]"
-    >
+    <div v-for="subscription in subscriptions" :key="subscription.id"
+      @click="[setCart(), goToShop(subscription.id, subscription.name)]">
       <div
-        class="relative bg-white border-2 rounded-xl shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in md:h-90 border-gray-300 hover:border-primary-500 hover:border-4"
-      >
+        class="relative bg-white border-2 rounded-xl shadow-sm p-3 gap-3 grid content-start cursor-pointer focus:outline-none transition delay-150 ease-in md:h-90 border-gray-300 hover:border-primary-500 hover:border-4">
         <div class="grid gap-2">
-          <div class="w-20 h-20 lg:w-32 lg:h-32 bg-tertiary-500 pt-2 lg:pt-5 absolute top-2 right-2 rounded-full text-center">
-            <p class="font-bold lg:text-2xl">
+          <div
+            class="w-20 h-20 lg:w-32 lg:h-32 bg-tertiary-500 pt-2 lg:pt-5 absolute top-2 right-2 rounded-full text-center">
+            <p class="font-semibold lg:text-2xl">
               10€
             </p>
             <p class="text-[10px] lg:text-base leading-3 lg:leading-5">
@@ -53,10 +50,7 @@ const goToShop = (id: string, name: string) => {
               {{ subscription.tag }}
             </span>
           </Badge>
-          <div
-            as="span"
-            class="block text-lg font-normal transition-all transition-duration-500"
-          >
+          <div as="span" class="block text-lg font-normal transition-all transition-duration-500">
             <span class="font-medium text-3xl">{{ displayMonthlyPrice(subscription) }}</span>
             / Monat
           </div>

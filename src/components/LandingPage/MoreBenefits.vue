@@ -66,19 +66,16 @@ const playVideo = () => {
       </div>
 
       <div class="flex flex-wrap lg:flex-nowrap justify-center gap-3">
-        <div
-          v-for="(benefit, index) in benefits"
-          :key="index"
+        <div v-for="(benefit, index) in benefits" :key="index"
           class="text-gray-900 font-semibold text-base bg-tertiary-800/10 py-3.5 px-4 rounded-lg w-full sm:w-fit whitespace-pre-line flex gap-2.5 items-center cursor-pointer"
-          @click="showbenefitsCards = benefit"
-        >
+          @click="showbenefitsCards = benefit">
           <img :src="benefit.icon" class="w-9 h-9">
           <span>{{ benefit.pilltext }}</span>
 
           <Modal :show="!!showbenefitsCards" @close="showbenefitsCards = undefined">
             <Container v-if="showbenefitsCards" class="p-6 max-w-3xl">
               <img :src="showbenefitsCards.icon" class="color-primary-900 w-14 h-14 w-full md:w-auto">
-              <p class="font-bold pt-4 py-2 text-xl">
+              <p class="font-semibold pt-4 py-2 text-xl">
                 {{ showbenefitsCards.pilltext }}
               </p>
               <p class="text-xl">
@@ -89,19 +86,15 @@ const playVideo = () => {
         </div>
       </div>
     </div>
-    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto" @click="[playVideo(), fireVideoEvent('beschäftigung')]">
-      <video
-        ref="morebenefitsvideo"
-        width="1024"
+    <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto"
+      @click="[playVideo(), fireVideoEvent('beschäftigung')]">
+      <video ref="morebenefitsvideo" width="1024"
         poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3-1024.webp"
-        playsinline
-      >
-        <source
-          src="https://videos.melli.com/entertainment.webm"
-          type="video/webm"
-        >
+        playsinline>
+        <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
       </video>
-      <div v-if="!isPlaying" class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div v-if="!isPlaying"
+        class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
   </div>
 </template>
