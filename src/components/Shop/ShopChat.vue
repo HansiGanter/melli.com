@@ -87,26 +87,16 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
 
 <template>
   <div class="flex flex-col lg:flex-row gap-12 justify-between">
-    <div id="shopchat" ref="target" class="flex flex-col gap-3 sm:gap-6 bg-primary-100 w-full min-h-100 rounded-3xl px-6 pt-6 pb-12 sm:px-12 sm:py-24">
-      <ChatQuestion
-        v-for="item, idx in questions"
-        :key="item.question"
-        :uid="item.uid"
-        :question="item.question"
-        :show-question="(idx === 0 && showFirstQuestion) || (idx > 0 && answers[idx - 1] !== '')"
-      >
-        <ChatButton
-          v-for="option in item.options"
-          :key="option.label"
-          :is-active="answers[idx] === option.value"
-          :value="option.value"
-          :label1="option.label"
-          :label2="option.label2"
-          :on-click="item.onPick"
-        />
+    <div id="shopchat" ref="target"
+      class="flex flex-col gap-3 sm:gap-6 bg-primary-100 w-full min-h-100 rounded-3xl px-6 pt-6 pb-12 sm:px-12 sm:py-24">
+      <ChatQuestion v-for="item, idx in questions" :key="item.question" :uid="item.uid" :question="item.question"
+        :show-question="(idx === 0 && showFirstQuestion) || (idx > 0 && answers[idx - 1] !== '')">
+        <ChatButton v-for="option in item.options" :key="option.label" :is-active="answers[idx] === option.value"
+          :value="option.value" :label1="option.label" :label2="option.label2" :on-click="item.onPick" />
       </ChatQuestion>
     </div>
-    <div id="priceSummary" class="bg-gray-50 sm:min-w-90 h-fit lg:sticky lg:top-12 rounded-3xl shadow-lg p-6 flex flex-col gap-4">
+    <div id="priceSummary"
+      class="bg-gray-50 sm:min-w-90 h-fit lg:sticky lg:top-12 rounded-3xl shadow-lg p-6 flex flex-col gap-4">
       <div class="flex flex-col gap-2">
         <Badge v-if="answers[1] !== 'SIM'" class="bg-pink-600 text-white">
           WLAN erforderlich
@@ -127,16 +117,15 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
       <ul class="list-disc ml-6">
         <li>30 Tage kostenlos testen</li>
         <li>Melli-Abo</li>
-        <li>Melli-App für amilie und Freunde</li>
+        <li>Melli-App für Familie und Freunde</li>
         <li v-if="answers[1] === 'SIM'">
           SIM mit unbegrenztem Internet
         </li>
       </ul>
-      <transition
-        enter-from-class="opacity-0 scale-50"
-        enter-active-class="transition duration-500"
-      >
-        <a v-show="!answers.includes('')" target="_blank" :href="options[priceIndex].stripeId" class="transition bg-primary-400 text-center text-white px-2 py-4 rounded-lg disabled:bg-gray-200 disableappeard:text-gray-400 " @click="fireBuyEvent()">
+      <transition enter-from-class="opacity-0 scale-50" enter-active-class="transition duration-500">
+        <a v-show="!answers.includes('')" target="_blank" :href="options[priceIndex].stripeId"
+          class="transition bg-primary-400 text-center text-white px-2 py-4 rounded-lg disabled:bg-gray-200 disableappeard:text-gray-400 "
+          @click="fireBuyEvent()">
           30 Tage kostenlos testen
         </a>
       </transition>
