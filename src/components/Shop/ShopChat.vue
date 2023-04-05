@@ -23,7 +23,7 @@ const options = [
   { price: 52.90, wlan: false, onetime: false, stripeId: 'https://buy.stripe.com/6oE14pb1qaph3za6oy' },
 ]
 
-const priceIndex = ref(0)
+const priceIndex = ref(2)
 const showFirstQuestion = ref(false)
 const answers = ref(['', '', ''])
 
@@ -98,7 +98,7 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
     <div id="priceSummary"
       class="bg-gray-50 sm:min-w-90 h-fit lg:sticky lg:top-12 rounded-3xl shadow-lg p-6 flex flex-col gap-4">
       <div class="flex flex-col gap-2">
-        <Badge v-if="answers[1] !== 'SIM'" class="bg-pink-600 text-white">
+        <Badge v-if="answers[1] === 'WIFI'" class="bg-pink-600 text-white">
           WLAN erforderlich
         </Badge>
         <div class="flex flex-col">
