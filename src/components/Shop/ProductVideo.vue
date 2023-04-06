@@ -14,9 +14,9 @@
       <div class="max-w-100 md:max-w-120">
         <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20">
         <h1 class=" text-3xl sm:text-5xl font-semibold pt-4 pb-12">
-          <sapn class="text-white">
+          <span class="text-white">
             Melli Neujahrs-Aktion:
-          </sapn><br><span class="text-primary-300">60 Tage kostenlos ausprobieren</span>
+          </span><br><span class="text-primary-300">60 Tage kostenlos ausprobieren</span>
         </h1>
         <router-link to="#choose-subscription" class="bg-white w-fit p-3 rounded-full font-semibold">
           wähle deine Melli-Option <div class="i-carbon:arrow-right align-middle inline-block w-6 h-6" />
