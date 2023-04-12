@@ -17,9 +17,9 @@ defineProps({
     <div>
       <p class="my-4 font-medium text-primary-900 text-xl md:text-2xl lg:text-3xl text-center md:text-left">
         {{ quote }}<br>
-        <sapn class="my-4 font-semibold text-primary-900 text-xl md:text-2xl lg:text-3xl text-center md:text-left">
+        <span class="my-4 font-semibold text-primary-900 text-xl md:text-2xl lg:text-3xl text-center md:text-left">
           {{ quoteMessage }}
-        </sapn>
+        </span>
       </p>
 
       <p class="text-gray-500 font-semibold lg:text-xl text-center md:text-left">

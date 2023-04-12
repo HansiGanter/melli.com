@@ -50,7 +50,7 @@ const submitFunction = async (e: SubmitEvent) => {
     </div>
   </form>
 
-  <Modal class="z-2" :show="showForm" @close="showForm = false">
+  <Modal :show="showForm" @close="showForm = false">
     <!-- Begin Sendinblue Form -->
     <!-- START - We recommend to place the below code where you want the form in your website html  -->
     <div class="sib-form" style="text-align: center; background-color: #ffffff;">
