@@ -55,6 +55,10 @@ const submitFunction = async () => {
 
   const emailInput = document.querySelector('#EMAIL');
   (emailInput as HTMLInputElement).value = email.value
+  const formSubmit = document.querySelector('#sib-form');
+  formSubmit?.addEventListener('submit', () => {
+    fireDipaFormSentEvent(email.value);
+  })
   fireDipaFormOpenEvent(email.value)
 }
 
@@ -82,7 +86,7 @@ function openModal(video: string) {
         DiPA-Studie teil.
       </p>
       <form class="flex flex-col gap-8 bg-primary-900 text-gray-900" method="get" @submit.prevent="submitFunction()">
-        <input id="email" v-model="email" class="w-100 border-2 rounded-full w-full max-w-112 px-4 py-2.5 mx-auto"
+        <input id="emailinput" v-model="email" class="w-100 border-2 rounded-full w-full max-w-112 px-4 py-2.5 mx-auto"
           placeholder="name@email.de" type="email" name="email" required>
         <button type="submit"
           class="text-white bg-primary-400 flex gap-2 items-center mx-auto px-4 py-2.5 rounded-lg w-fit text-center">
@@ -134,9 +138,8 @@ function openModal(video: string) {
           <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
             enter-to="opacity-100 scale-100" leave="duration-200 ease-in" leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95">
-            <video id="commercialVideo" ref="commercialVideo"
-              :class="isFullscreen ? 'lg:object-contain' : 'object-cover'" class="lg:object-cover h-screen" autoplay
-              controls :loop="!isFullscreen">
+            <video id="commercialVideo" ref="commercialVideo" :class="isFullscreen ? 'lg:object-contain' : 'object-cover'"
+              class="lg:object-cover h-screen" autoplay controls :loop="!isFullscreen">
               <source :src="activeVideo" type="video/mp4">
             </video>
           </TransitionChild>
@@ -162,7 +165,7 @@ function openModal(video: string) {
             </span>
           </div>
         </div>
-        <div />
+        <div></div>
         <div id="success-message" class="sib-form-message-panel"
           style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
           <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
@@ -175,12 +178,12 @@ function openModal(video: string) {
             </span>
           </div>
         </div>
-        <div />
+        <div></div>
         <div id="sib-container" class="sib-container--large sib-container--vertical"
           style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
           <form id="sib-form" method="POST"
-            action="https://ccfae1fd.sibforms.com/serve/MUIEAJIrrYVnlhqvAjpgthkCAte0mILPuCzmO06dj-910Lx_0iW8v7Pv3B3pI89YkyBgWnpMBHfB685CoILZCPnVTqkgNe2Q_d2SxI3sBLKtF6gA6KVGYxDpgUOMOQDb6JkKTawv9OaEtO1jHSPSYAqSFWRpkTqrv4Am-wEKx-4mDrn4cnAH1SBdNjo7AbzmPIoJjVAyauI5Iis7"
-            data-type="subscription" @submit="fireDipaFormSentEvent()">
+            action="https://ccfae1fd.sibforms.com/serve/MUIEANNZJdar9tgFioJRv0XogMyDtOQfKsvk0hwqvnxzoWYiGMaqksmRpo576iCkytn128i0tl-Fn5mRyA85Jk3hRd2XKrSt-bS8FHrKtiF1tIts9c72V7olus3IqsNMsUVHpC1qUlHOvHnalzA5LovnUcJwaENXdodMWKsUyYZtlN6uhb3Dvpg1LhQTPKhXtCh62sD-ixT0dz9b"
+            data-type="subscription">
             <div style="padding: 8px 0;">
               <div class="sib-form-block"
                 style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
@@ -205,13 +208,14 @@ function openModal(video: string) {
                       for="VORNAME" data-required="*">Vorname</label>
 
                     <div class="entry__field">
-                      <input id="VORNAME" class="input " maxlength="200" type="text" name="VORNAME" autocomplete="off"
-                        placeholder="Max" data-required="true" required>
+                      <input class="input " maxlength="200" type="text" id="VORNAME" name="VORNAME" autocomplete="off"
+                        placeholder="Max" data-required="true" required />
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -224,13 +228,14 @@ function openModal(video: string) {
                       for="NACHNAME" data-required="*">Nachname</label>
 
                     <div class="entry__field">
-                      <input id="NACHNAME" class="input " maxlength="200" type="text" name="NACHNAME" autocomplete="off"
-                        placeholder="Mustermann" data-required="true" required>
+                      <input class="input " maxlength="200" type="text" id="NACHNAME" name="NACHNAME" autocomplete="off"
+                        placeholder="Mustermann" data-required="true" required />
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -243,16 +248,13 @@ function openModal(video: string) {
                       for="EMAIL" data-required="*">Email-Adresse</label>
 
                     <div class="entry__field">
-                      <input id="EMAIL" class="input " type="text" name="EMAIL" autocomplete="off"
-                        placeholder="max.mustermann@mail.de" data-required="true" required>
+                      <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off"
+                        placeholder="max.mustermann@mail.de" data-required="true" required />
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
-                  <label class="entry__specification"
-                    style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
-                    Geben Sie bitte Ihre E-Mail-Adresse für die Anmeldung an, z. B. abc@xyz.com.
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                   </label>
                 </div>
               </div>
@@ -263,16 +265,17 @@ function openModal(video: string) {
                   <div class="form__label-row ">
                     <label class="entry__label"
                       style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="TELEFONNUMMER">Telefonummer</label>
+                      for="TELEFONNUMMER" data-required="*">Telefonummer</label>
 
                     <div class="entry__field">
-                      <input id="TELEFONNUMMER" class="input " maxlength="200" type="text" name="TELEFONNUMMER"
-                        autocomplete="off" placeholder="+49 170 12345678">
+                      <input class="input " maxlength="200" type="text" id="TELEFONNUMMER" name="TELEFONNUMMER"
+                        autocomplete="off" placeholder="+49 170 12345678" data-required="true" required />
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -287,21 +290,22 @@ function openModal(video: string) {
                       <div class="entry__choice" style="">
                         <label>
                           <input type="radio" name="QUESTION_ROLE" class="input_replaced" value="1" required>
-                          <span class="radio-button" style="margin-left: " /><span
+                          <span class="radio-button" style="margin-left: "></span><span
                             style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">mich
                             selbst</span> </label>
                       </div>
                       <div class="entry__choice" style="">
                         <label>
                           <input type="radio" name="QUESTION_ROLE" class="input_replaced" value="2" required>
-                          <span class="radio-button" style="margin-left: " /><span
+                          <span class="radio-button" style="margin-left: "></span><span
                             style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">einen
                             Angehörigen</span> </label>
                       </div>
                     </div>
                   </div>
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -311,17 +315,18 @@ function openModal(video: string) {
                   <div class="form__label-row ">
                     <div class="entry__choice" style="">
                       <label>
-                        <input id="OPT_IN" type="checkbox" class="input_replaced" value="1" name="OPT_IN" required>
-                        <span class="checkbox checkbox_tick_positive" style="margin-left:" /><span
+                        <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                        <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
                           style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
-                          <p>Ich möchte zum Zwecke meiner Bewerbung als Melli-Tester kontaktiert werden, z.B. per Email
-                            und akzeptiere die Datenschutzbestimmungen.</p><span data-required="*"
-                            style="display: inline;" class="entry__label entry__label_optin" />
+                          <p>Ich möchte zum Zwecke meiner Bewerbung als Melli-Tester kontaktiert werden, z.B. per
+                            Email und akzeptiere die Datenschutzbestimmungen.</p><span data-required="*"
+                            style="display: inline;" class="entry__label entry__label_optin"></span>
                         </span> </label>
                     </div>
                   </div>
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -334,17 +339,18 @@ function openModal(video: string) {
                         <label class="checkbox__label">
                           <input type="checkbox" class="input_replaced" name="lists_32[]"
                             data-value="Ich möchte über Neuigkeiten, Angebote und weitere Themen rund um Melli auf dem Laufenden gehalten werden und stimme zu, dass die meetap GmbH mich zu diesem zwecke z.B. per Email kontaktieren darf. Es gelten die Datenschutzbestimmungen."
-                            value="7">
-                          <span class="checkbox checkbox_tick_positive" style="margin-left:" /><span
+                            value="7" />
+                          <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
                             style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">Ich
-                            möchte über Neuigkeiten, Angebote und weitere Themen rund um Melli auf dem Laufenden gehalten
-                            werden und stimme zu, dass die meetap GmbH mich zu diesem zwecke z.B. per Email kontaktieren
-                            darf. Es gelten die Datenschutzbestimmungen.</span> </label>
+                            möchte über Neuigkeiten, Angebote und weitere Themen rund um Melli auf dem Laufenden
+                            gehalten werden und stimme zu, dass die meetap GmbH mich zu diesem zwecke z.B. per Email
+                            kontaktieren darf. Es gelten die Datenschutzbestimmungen.</span> </label>
                       </div>
                     </div>
                   </div>
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
                 </div>
               </div>
             </div>
@@ -369,5 +375,6 @@ function openModal(video: string) {
       </div>
     </div>
     <!-- END - We recommend to place the below code where you want the form in your website html  -->
-  <!-- End Sendinblue Form -->
-</Modal></template>
+    <!-- End Sendinblue Form -->
+  </Modal>
+</template>

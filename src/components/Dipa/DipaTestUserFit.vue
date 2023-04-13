@@ -9,13 +9,13 @@ const criteria = [
   '55 Jahre oder älter.*',
   'Pflegegrad nachgewiesen.*',
   'Alleinstehend und/oder lebt allein.*',
-  'Eher wenige sozialen Kontakte.',
+  'Eher wenige soziale Kontakte.',
   'Aufgeschlossen gegenüber Technik.',
   'Keine schweren kognitiven Einschränkungen.*',
   'Keine schwerwiegenden Sprachstörungen.*',
 ]
 
-function openForm(){
+function openForm() {
   showForm.value = true
   fireDipaFormOpenEvent()
 }
@@ -32,10 +32,13 @@ function openForm(){
       </button>
     </div>
     <div class="grid md:grid-cols-2 gap-6 lg:gap-17">
-      <BubbleImage class="mx-auto my-auto" image="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp" bubble1-color="fill-primary-800" bubble2-color="fill-primary-700" svgclass="scale-120" />
+      <BubbleImage class="mx-auto my-auto"
+        image="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp"
+        bubble1-color="fill-primary-800" bubble2-color="fill-primary-700" svgclass="scale-120" />
 
       <div class="flex flex-col gap-3 relative">
-        <div v-for="crit in criteria" :key="crit" class="flex gap-2.5 px-6 py-3 bg-primary-600 text-white text-lg leading-7 items-center w-fit rounded-xl">
+        <div v-for="crit in criteria" :key="crit"
+          class="flex gap-2.5 px-6 py-3 bg-primary-600 text-white text-lg leading-7 items-center w-fit rounded-xl">
           <div class="i-lucide:check-circle w-6 h-6 shrink-0" />
           <span> {{ crit }} </span>
         </div>
@@ -52,7 +55,8 @@ function openForm(){
         <p class="text-base leading-6 text-center">
           Bewirb dich selbst, deine Eltern oder Großeltern jetzt als Testnutzer.
         </p>
-        <button class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex items-center w-fit gap-2" @click="openForm()">
+        <button class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex items-center w-fit gap-2"
+          @click="openForm()">
           <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
         </button>
       </div>
@@ -63,7 +67,8 @@ function openForm(){
           Fragebogen ausfüllen
         </h3>
         <p class="text-base leading-6 text-center">
-          Beantworte uns ein paar Fragen über dich bzw. deinen Angehörigen um herauszufinden, ob ihr euch als Melli-Tester eignet.
+          Beantworte uns ein paar Fragen über dich bzw. deinen Angehörigen um herauszufinden, ob ihr euch als Melli-Tester
+          eignet.
         </p>
       </div>
       <div class="flex flex-col gap-6 text-white sm:border-t-2 sm:border-t-white items-center px-6">
@@ -90,6 +95,5 @@ function openForm(){
   </div>
 
   <Modal :show="showForm" @close="showForm = false">
-    <DipaTestUserForm />
-  </Modal>
-</template>
+  <DipaTestUserForm />
+</Modal></template>
