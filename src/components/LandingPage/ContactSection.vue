@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireCallbackOpenEvent, fireCallbackSentEvent, fireContactEvent } from '~/google-tag-manager'
+import { fireCallbackOpenEvent, fireContactEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
 const socials = [
@@ -17,56 +17,56 @@ const socials = [
   },
 ]
 
-const submitFunction = async () => {
-  callbackModalOpen.value = true
-  await nextTick()
+// const submitFunction = async () => {
+//   callbackModalOpen.value = true
+//   await nextTick()
 
-  const formSubmit = document.querySelector('#sib-form');
-  formSubmit?.addEventListener('submit', () => {
-    const emailvalue = (document.querySelector('#EMAIL') as HTMLInputElement).value;
-    const telvalue = (document.querySelector('#TELEFONNUMMER') as HTMLInputElement).value;
-    const firstnamevalue = (document.querySelector('#VORNAME') as HTMLInputElement).value;
-    const lastnamevalue = (document.querySelector('#NACHNAME') as HTMLInputElement).value;
-    fireCallbackSentEvent(emailvalue, telvalue, firstnamevalue, lastnamevalue);
-  })
-  fireCallbackOpenEvent()
-}
-const callbackModalOpen = ref(false)
+//   const formSubmit = document.querySelector('#sib-form');
+//   formSubmit?.addEventListener('submit', () => {
+//     const emailvalue = (document.querySelector('#EMAIL') as HTMLInputElement).value;
+//     const telvalue = (document.querySelector('#TELEFONNUMMER') as HTMLInputElement).value;
+//     const firstnamevalue = (document.querySelector('#VORNAME') as HTMLInputElement).value;
+//     const lastnamevalue = (document.querySelector('#NACHNAME') as HTMLInputElement).value;
+//     fireCallbackSentEvent(emailvalue, telvalue, firstnamevalue, lastnamevalue);
+//   })
+//   fireCallbackOpenEvent()
+// }
+// const callbackModalOpen = ref(false)
 </script>
 
 <template>
   <div class="flex flex-col gap-8 sm:items-center">
-    <div class="flex flex-col gap-6 max-w-200">
-      <h3 class="text-4xl text-primary-300 font-semibold sm:text-center">
-        {{ t('contact.heading') }}
-      </h3>
-      <p class="font-medium text-xl text-white sm:text-center">
-        {{ t('contact.text') }}
-      </p>
+  <div class="flex flex-col gap-6 max-w-200">
+    <h3 class="text-4xl text-primary-300 font-semibold sm:text-center">
+      {{ t('contact.heading') }}
+    </h3>
+    <p class="font-medium text-xl text-white sm:text-center">
+      {{ t('contact.text') }}
+    </p>
+  </div>
+  <div class="flex flex-col sm:flex-row gap-8 items-center">
+    <div v-for="social in socials" :key="social.text" class="flex flex-col gap-5 items-center">
+      <div class="w-12 h-12 shrink-0 text-primary-300" :class="social.icon" />
+      <a :href="social.url" target="_blank"
+        class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center"
+        @click="fireContactEvent(social.desc)">
+        {{ social.text }}
+      </a>
     </div>
-    <div class="flex flex-col sm:flex-row gap-8 items-center">
-      <div v-for="social in socials" :key="social.text" class="flex flex-col gap-5 items-center">
-        <div class="w-12 h-12 shrink-0 text-primary-300" :class="social.icon" />
-        <a :href="social.url" target="_blank"
-          class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center"
-          @click="fireContactEvent(social.desc)">
-          {{ social.text }}
-        </a>
-      </div>
-      <div class="flex flex-col gap-5 items-center">
-        <div class="i-lucide:phone-call w-12 h-12 shrink-0 text-primary-300" />
-        <button class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center"
-          @click="submitFunction()">
-          {{ t('contact.phone') }}
-        </button>
-      </div>
+    <div class="flex flex-col gap-5 items-center">
+      <div class="i-lucide:phone-call w-12 h-12 shrink-0 text-primary-300" />
+      <a href="https://meetap.pipedrive.com/scheduler/zXR9mdCQ/termin-fur-ruckruf" target="_blank"
+        class="bg-primary-400 rounded-lg py-2.5 px-4 w-fit font-medium text-white text-base text-center"
+        @click="fireCallbackOpenEvent()">
+        {{ t('contact.phone') }}
+      </a>
     </div>
   </div>
-  <Modal :show="callbackModalOpen" @close="callbackModalOpen = false">
-    <!-- Begin Sendinblue Form -->
-    <!-- START - We recommend to place the below code where you want the form in your website html  -->
-    <div class="sib-form" style="text-align: center;
-             background-color: #ffffff;                                 ">
+</div>
+<!-- <Modal :show="callbackModalOpen" @close="callbackModalOpen = false"> -->
+<!-- Begin Sendinblue Form -->
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<!-- <div class="sib-form" style="text-align: center; background-color: #ffffff;">
       <div id="sib-form-container" class="sib-form-container">
         <div id="error-message" class="sib-form-message-panel"
           style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -241,43 +241,43 @@ const callbackModalOpen = ref(false)
                     <div style="">
                       <div class="entry__choice">
                         <label class="checkbox__label">
-                          <input type="checkbox" class="input_replaced" name="lists_32[]"
-                            data-value="Ich möchte den Newsletter von Melli.com erhalten und akzeptiere die Datenschutzbestimmungen."
-                            value="7" />
-                          <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
-                            style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">Ich
-                            möchte den Newsletter von Melli.com erhalten und akzeptiere die
-                            Datenschutzbestimmungen.</span> </label>
+                                    <input type="checkbox" class="input_replaced" name="lists_32[]"
+                                      data-value="Ich möchte den Newsletter von Melli.com erhalten und akzeptiere die Datenschutzbestimmungen."
+                                      value="7" />
+                                    <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
+                                      style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">Ich
+                                      möchte den Newsletter von Melli.com erhalten und akzeptiere die
+                                      Datenschutzbestimmungen.</span> </label>
+                                </div>
+                              </div>
+                            </div>
+                            <label class="entry__error entry__error--primary"
+                              style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                            </label>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-form-block" style="text-align: left">
-                <button class="sib-form-block__button sib-form-block__button-with-loader"
-                  style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;"
-                  form="sib-form" type="submit">
-                  <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                    <path
-                      d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                  </svg>
-                  Rückrufbitte abschicken
-                </button>
-              </div>
-            </div>
+                      <div style="padding: 8px 0;">
+                        <div class="sib-form-block" style="text-align: left">
+                          <button class="sib-form-block__button sib-form-block__button-with-loader"
+                            style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;"
+                            form="sib-form" type="submit">
+                            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                              <path
+                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                            </svg>
+                            Rückrufbitte abschicken
+                          </button>
+                        </div>
+                      </div>
 
-            <input type="text" name="email_address_check" value="" class="input--hidden">
-            <input type="hidden" name="locale" value="de">
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- END - We recommend to place the below code where you want the form in your website html  -->
-    <!-- End Sendinblue Form -->
-  </Modal>
+                      <input type="text" name="email_address_check" value="" class="input--hidden">
+                      <input type="hidden" name="locale" value="de">
+                    </form>
+                  </div>
+                </div>
+              </div> -->
+  <!-- END - We recommend to place the below code where you want the form in your website html  -->
+  <!-- End Sendinblue Form -->
+  <!-- </Modal> -->
 </template>
