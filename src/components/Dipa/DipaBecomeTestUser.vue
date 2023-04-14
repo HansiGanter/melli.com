@@ -43,12 +43,6 @@ const benefits: DipaBenefits[] = [
 const email = ref('')
 const showForm = ref(false)
 
-const commercialVideo = ref<HTMLElement | null>(null)
-const { isFullscreen } = useFullscreen(commercialVideo)
-
-const isOpen = ref(false)
-const activeVideo = ref('')
-
 const submitFunction = async () => {
   showForm.value = true
   await nextTick()
@@ -62,16 +56,30 @@ const submitFunction = async () => {
   fireDipaFormOpenEvent(email.value)
 }
 
-function closeModal() {
-  isOpen.value = false
-  activeVideo.value = ''
+
+const showVideo = ref(false)
+const el = ref<HTMLMediaElement | null>(null)
+const activeVideoWebm = ref('')
+const activeVideoMp4 = ref('')
+
+const { enter } = useFullscreen(el)
+
+const playVideo = async (video: string) => {
+  showVideo.value = true
+  activeVideoWebm.value = `${video}.webm`
+  activeVideoMp4.value = `${video}.mp4`
+  await nextTick()
+  if (el.value) {
+    enter()
+    el.value.play()
+    fireVideoEvent(activeVideoWebm.value)
+  }
 }
-function openModal(video: string) {
-  // activeVideo.value = video
-  // isOpen.value = true
-  fireVideoEvent(video)
-  window.open(video, '_blank')
-}
+// for iOS on iPhone
+// @ts-ignore
+useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen)
+// for everything else
+useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement)
 </script>
 
 <template>
@@ -107,7 +115,7 @@ function openModal(video: string) {
       <div
         class="flex flex-col md:flex-row gap-6 lg:gap-15 bg-primary-800 rounded-3xl shadow-xl p-12 border-2 border-primary-300 sm:max-w-80% mx-auto items-center mt-12 sm:-mt-24">
         <div class="w-50 h-50 shrink-0 relative cursor-pointer"
-          @click="openModal('https://videos.melli.com/testimonial-gertrud-group.webm')">
+          @click="playVideo('https://videos.melli.com/testimonial-gertrud-group')">
           <img class="aspect-square rounded-full object-cover"
             src="https://assets.melli.com/images/images/commercials/portrait-oma-gertrud.webp">
           <div class="absolute flex gap-1.5 text-white items-center justify-center top-0 left-0 bottom-0 right-0">
@@ -119,34 +127,13 @@ function openModal(video: string) {
             Oma Gertrud (91) ist bereits Melli-Testerin. Sieh dir an, wie ihr die Melli-Gruppenstunde so gefällt.
           </p>
           <button class="text-primary-300 font-medium flex gap-2 w-fit items-center mx-auto sm:mx-0"
-            @click="openModal('https://videos.melli.com/testimonial-gertrud-group.webm')">
+            @click="playVideo('https://videos.melli.com/testimonial-gertrud-group')">
             <div class="i-lucide:arrow-right w-6 h-6" />Video ansehen
           </button>
         </div>
       </div>
     </div>
   </div>
-  <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" class="relative z-10" @close="closeModal">
-      <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0" enter-to="opacity-100"
-        leave="duration-200 ease-in" leave-from="opacity-100" leave-to="opacity-0">
-        <div class="fixed inset-0 bg-black" />
-      </TransitionChild>
-
-      <div class="fixed inset-0 overflow-y-auto">
-        <div class="flex min-h-full items-center justify-center py-4 text-center" @click="closeModal">
-          <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100" leave="duration-200 ease-in" leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95">
-            <video id="commercialVideo" ref="commercialVideo" :class="isFullscreen ? 'lg:object-contain' : 'object-cover'"
-              class="lg:object-cover h-screen" autoplay controls :loop="!isFullscreen">
-              <source :src="activeVideo" type="video/mp4">
-            </video>
-          </TransitionChild>
-        </div>
-      </div>
-    </Dialog>
-  </TransitionRoot>
 
   <Modal :show="showForm" @close="showForm = false">
     <!-- Begin Sendinblue Form -->
@@ -377,4 +364,9 @@ function openModal(video: string) {
     <!-- END - We recommend to place the below code where you want the form in your website html  -->
     <!-- End Sendinblue Form -->
   </Modal>
+
+  <video v-if="showVideo" ref="el" controls>
+    <source :src="activeVideoWebm" type="video/webm">
+    <source :src="activeVideoMp4" type="video/mp4">
+  </video>
 </template>

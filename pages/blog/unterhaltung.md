@@ -90,6 +90,7 @@ Für einen abwechslungsreichen Alltag bedarf es neben dem Angebot an Beschäftig
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
     <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
+    <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
 </video>
 
 ## Das Wichtigste in Kürze

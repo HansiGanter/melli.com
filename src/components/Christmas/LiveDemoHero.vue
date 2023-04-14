@@ -8,17 +8,10 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
 <template>
   <header class="relative bg-black" style="height: calc(100vh - 80px)">
     <!-- The video -->
-    <video
-      id="heroVideo"
-      ref="heroVideo"
-      class="w-full h-full object-cover"
-      autoplay
-      loop
-      muted
-      playsinline
-      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
-    >
+    <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
+      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp">
       <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
+      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
     </video>
 
     <!-- Heading & link to Video -->
@@ -30,16 +23,15 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
           Melli Live-Demo
         </h1>
         <h2 class="text-white font-medium font-medium text-2xl sm:text-3xl leading-normal mb-2">
-          Wir erklären dir in einer online Live-Demonstration, was Melli alles kann und beantworten deine Fragen.<br>Melde dich jetzt an!
+          Wir erklären dir in einer online Live-Demonstration, was Melli alles kann und beantworten deine Fragen.<br>Melde
+          dich jetzt an!
         </h2>
         <LiveDemoDialogOpen />
       </div>
-      <RouterLink v-if="greaterSm" to="#flipcards" class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
+      <RouterLink v-if="greaterSm" to="#flipcards"
+        class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
         <span class="m-auto">Erfahre mehr über Melli</span>
-        <img
-          src="https://assets.melli.com/icons/arrow-down-circle.svg"
-          class="mx-auto stroke-primary-300 w-8 h-8 m-auto"
-        >
+        <img src="https://assets.melli.com/icons/arrow-down-circle.svg" class="mx-auto stroke-primary-300 w-8 h-8 m-auto">
       </RouterLink>
     </div>
   </header>

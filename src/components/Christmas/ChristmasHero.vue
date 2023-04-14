@@ -56,17 +56,10 @@ calculateChristmasCountdown()
 <template>
   <header class="relative bg-black" style="height: calc(100vh - 80px)">
     <!-- The video -->
-    <video
-      id="heroVideo"
-      ref="heroVideo"
-      class="w-full h-full object-cover"
-      autoplay
-      loop
-      muted
-      playsinline
-      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp"
-    >
+    <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
+      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp">
       <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
+      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
     </video>
 
     <!-- Heading & link to Video -->
@@ -87,51 +80,50 @@ calculateChristmasCountdown()
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ days < 10 ? `0${days}` : days }}
-                </p><p class="font-thin text-sm">
-                  Tage
-                </p>
+                  {{ days < 10 ? `0${days}` : days }} </p>
+                    <p class="font-thin text-sm">
+                      Tage
+                    </p>
               </div>
             </div>
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ hours < 10 ? `0${hours}` : hours }}
-                </p><p class="font-thin text-sm">
-                  Stunden
-                </p>
+                  {{ hours < 10 ? `0${hours}` : hours }} </p>
+                    <p class="font-thin text-sm">
+                      Stunden
+                    </p>
               </div>
             </div>
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ minutes < 10 ? `0${minutes}` : minutes }}
-                </p><p class="font-thin text-sm">
-                  Minuten
-                </p>
+                  {{ minutes < 10 ? `0${minutes}` : minutes }} </p>
+                    <p class="font-thin text-sm">
+                      Minuten
+                    </p>
               </div>
             </div>
             <div class="bg-white rounded-lg w-18 h-18 sm:w-24 sm:h-24 text-primary-400 grid items-center">
               <div>
                 <p class="font-semibold tracking-tighter text-3xl sm:text-4xl">
-                  {{ seconds < 10 ? `0${seconds}` : seconds }}
-                </p><p class="font-thin text-sm">
-                  Sekunden
-                </p>
+                  {{ seconds < 10 ? `0${seconds}` : seconds }} </p>
+                    <p class="font-thin text-sm">
+                      Sekunden
+                    </p>
               </div>
             </div>
           </div>
-          <RouterLink to="/shop" class="bg-primary-900 text-white text-xl py-4 px-8 w-fit rounded-lg mx-auto" @click="fireShopEvent">
+          <RouterLink to="/shop" class="bg-primary-900 text-white text-xl py-4 px-8 w-fit rounded-lg mx-auto"
+            @click="fireShopEvent">
             mehr erfahren
           </RouterLink>
         </div>
       </div>
-      <RouterLink v-if="greaterSm" to="#flipcards" class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
+      <RouterLink v-if="greaterSm" to="#flipcards"
+        class="font-semibold text-lg text-primary-300 grid gap-2 w-fit mt-auto mx-auto">
         <span class="m-auto">Erfahre mehr über Melli</span>
-        <img
-          src="https://assets.melli.com/icons/arrow-down-circle.svg"
-          class="mx-auto stroke-primary-300 w-8 h-8 m-auto"
-        >
+        <img src="https://assets.melli.com/icons/arrow-down-circle.svg" class="mx-auto stroke-primary-300 w-8 h-8 m-auto">
       </RouterLink>
     </div>
   </header>

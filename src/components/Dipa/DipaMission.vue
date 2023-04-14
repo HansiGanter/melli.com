@@ -3,27 +3,37 @@ import { breakpointsTailwind } from '@vueuse/core'
 import { fireDipaFormOpenEvent, fireVideoEvent } from '~/google-tag-manager';
 const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg')
 
-const commercialVideo = ref<HTMLElement | null>(null)
 const showForm = ref(false)
-
-const { isFullscreen } = useFullscreen(commercialVideo)
-
-const isOpen = ref(false)
-const activeVideo = ref('')
-
-function closeModal() {
-  isOpen.value = false
-  activeVideo.value = ''
-}
-function openModal(video: string) {
-  fireVideoEvent(video)
-  window.open(video, '_blank')
-}
 
 function openForm() {
   showForm.value = true
   fireDipaFormOpenEvent()
 }
+
+
+const showVideo = ref(false)
+const el = ref<HTMLMediaElement | null>(null)
+const activeVideoWebm = ref('')
+const activeVideoMp4 = ref('')
+
+const { enter } = useFullscreen(el)
+
+const playVideo = async (video: string) => {
+  showVideo.value = true
+  activeVideoWebm.value = `${video}.webm`
+  activeVideoMp4.value = `${video}.mp4`
+  await nextTick()
+  if (el.value) {
+    enter()
+    el.value.play()
+    fireVideoEvent(activeVideoWebm.value)
+  }
+}
+// for iOS on iPhone
+// @ts-ignore
+useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen)
+// for everything else
+useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement)
 </script>
 
 <template>
@@ -58,7 +68,7 @@ function openForm() {
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="openModal('https://videos.melli.com/communication.webm')">
+            @click="playVideo('https://videos.melli.com/communication')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>
@@ -83,7 +93,7 @@ function openForm() {
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="openModal('https://videos.melli.com/soziale-kontakte.webm')">
+            @click="playVideo('https://videos.melli.com/soziale-kontakte')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>
@@ -108,7 +118,7 @@ function openForm() {
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="openModal('https://videos.melli.com/fuersorge.webm')">
+            @click="playVideo('https://videos.melli.com/fuersorge')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>
@@ -141,27 +151,10 @@ function openForm() {
     </div>
   </div>
 
-  <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" class="relative z-10" @close="closeModal">
-      <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0" enter-to="opacity-100"
-        leave="duration-200 ease-in" leave-from="opacity-100" leave-to="opacity-0">
-        <div class="fixed inset-0 bg-black" />
-      </TransitionChild>
-
-      <div class="fixed inset-0 overflow-y-auto">
-        <div class="flex min-h-full items-center justify-center py-4 text-center" @click="closeModal">
-          <TransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100" leave="duration-200 ease-in" leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95">
-            <video id="commercialVideo" ref="commercialVideo" :class="isFullscreen ? 'lg:object-contain' : 'object-cover'"
-              class="lg:object-cover w-full h-full" autoplay controls :loop="!isFullscreen">
-              <source src="https://videos.melli.com/fuersorge.webm">
-            </video>
-          </TransitionChild>
-        </div>
-      </div>
-    </Dialog>
-  </TransitionRoot>
+  <video v-if="showVideo" ref="el" controls>
+    <source :src="activeVideoWebm" type="video/webm">
+    <source :src="activeVideoMp4" type="video/mp4">
+  </video>
 
   <Modal :show="showForm" @close="showForm = false">
     <DipaTestUserForm />

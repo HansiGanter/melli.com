@@ -86,7 +86,8 @@ const openVideo = () => {
       @click="openVideo">
       <video ref="reliabilityvideo" width="1024"
         poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp" playsinline>
-        <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
+        <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
+        <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
       </video>
       <div v-if="!isPlaying"
         class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

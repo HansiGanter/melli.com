@@ -54,6 +54,7 @@ Von der Organisation von Verabredungen mit Freund und Verwandten, über kleine M
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_structure-4-1536.webp">
     <source src="https://videos.melli.com/struktur.webm" type="video/webm">
+    <source src="https://videos.melli.com/struktur.mp4" type="video/mp4">
 </video>
 
 ## Melli – Das Altern der Zukunft
