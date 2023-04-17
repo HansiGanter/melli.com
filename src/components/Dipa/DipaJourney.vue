@@ -33,7 +33,7 @@ const nextFeatures = [
 ]
 
 const showCurrent = ref(5)
-const showNext = ref(4)
+const showNext = ref(3)
 </script>
 
 <template>
@@ -44,7 +44,9 @@ const showNext = ref(4)
         Werde Teil der Melli-Journey!
       </h1>
       <p class="text-xl sm:text-2xl max-w-200 text-center">
-        Melli befindet sich momentan in der Entwicklung, was bedeutet, dass sie noch nicht alle Funktionen einwandfrei beherrscht. Das ist der Grund, warum wir auf deine Hilfe und dein Feedback angewiesen sind. Damit du weißt, welche Funktionen du erwarten kannst und welche noch in der Entwicklung stecken, findest du hier eine Auflistung:
+        Melli befindet sich momentan in der Entwicklung, was bedeutet, dass sie noch nicht alle Funktionen einwandfrei
+        beherrscht. Das ist der Grund, warum wir auf deine Hilfe und dein Feedback angewiesen sind. Damit du weißt, welche
+        Funktionen du erwarten kannst und welche noch in der Entwicklung stecken, findest du hier eine Auflistung:
       </p>
     </div>
     <div class="grid lg:grid-cols-2 gap-12">
@@ -53,11 +55,13 @@ const showNext = ref(4)
           Das kann Melli schon alles
         </h2>
         <div class="flex flex-wrap gap-3 justify-center items-center">
-          <div v-for="index in showCurrent" :key="index" class="w-fit rounded-lg bg-primary-900/20 px-6 py-2.5 font-semibold text-center">
+          <div v-for="index in showCurrent" :key="index"
+            class="w-fit rounded-lg bg-primary-900/20 px-6 py-2.5 font-semibold text-center">
             {{ currentFeatures[index] }}
           </div>
         </div>
-        <button class="mx-auto" :class="showCurrent === currentFeatures.length - 1 ? 'hidden' : ''" @click="showCurrent = currentFeatures.length - 1">
+        <button class="mx-auto" :class="showCurrent === currentFeatures.length - 1 ? 'hidden' : ''"
+          @click="showCurrent = currentFeatures.length - 1">
           <div class="flex gap-2 font-medium">
             <div class="i-lucide:plus w-6 h-6 shrink-0" />mehr ansehen
           </div>
@@ -68,16 +72,17 @@ const showNext = ref(4)
           Diese Funktionen kommen bald
         </h2>
         <div class="flex flex-wrap gap-3 justify-center items-center">
-          <div v-for="index in showNext" :key="index" class="w-fit rounded-lg bg-primary-900/20 px-6 py-2.5 font-semibold text-center">
+          <div v-for="index in showNext" :key="index"
+            class="w-fit rounded-lg bg-primary-900/20 px-6 py-2.5 font-semibold text-center">
             {{ nextFeatures[index] }}
           </div>
         </div>
-        <button class="mx-auto" :class="showNext === nextFeatures.length - 1 ? 'hidden' : ''" @click="showNext = nextFeatures.length - 1">
+        <button class="mx-auto" :class="showNext === nextFeatures.length - 1 ? 'hidden' : ''"
+          @click="showNext = nextFeatures.length - 1">
           <div class="flex gap-2 font-medium">
             <div class="i-lucide:plus w-6 h-6 shrink-0" />mehr ansehen
           </div>
         </button>
-      </div>
     </div>
   </div>
-</template>
+</div></template>

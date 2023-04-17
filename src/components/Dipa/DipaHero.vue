@@ -27,7 +27,7 @@ function openForm() {
       <div class="my-auto flex flex-col gap-5 sm:gap-9 py-12 px-5 max-w-160 mx-auto">
         <h1 class="font-semibold text-4xl sm:text-5xl sm:text-center">
           <span class="text-white leading-tight">
-            Melli macht Omas & Opas Alltag glücklicher
+            Melli macht den Alltag für Oma & Opa glücklicher
           </span>
         </h1>
         <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
