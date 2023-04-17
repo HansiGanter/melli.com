@@ -29,17 +29,16 @@ const show = ref(false)
           + €149,00 Tablet (einmalig)
         </p>
       </div>
-      <transition
-        enter-from-class="opacity-0 scale-50"
-        enter-active-class="transition duration-500"
-      >
-        <a v-if="show" target="_blank" :href="price.stripeId" class="transition text-center text-white bg-primary-400 w-full h-full rounded-lg px-2.5 py-4 flex items-center justify-center" @click="fireBuyEvent()">
+      <transition enter-from-class="opacity-0 scale-50" enter-active-class="transition duration-500">
+        <a v-if="show" target="_blank" :href="price.stripeId"
+          class="transition text-center text-white bg-primary-400 w-full h-full rounded-lg px-2.5 py-4 flex items-center justify-center"
+          @click="fireBuyEvent()">
           30 Tage kostenlos testen
         </a>
       </transition>
     </div>
   </Container>
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 relative">
+  <Container class="py-12 lg:py-24 px-6 lg:px-24 relative overflow-hidden">
     <ShopIntro />
   </Container>
 

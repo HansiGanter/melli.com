@@ -5,13 +5,9 @@ const { t } = useI18n()
 <template>
   <DipaHero />
   <Container id="dipa-quote" class="py-12 lg:py-24 px-6 lg:px-24">
-    <Quote
-      :quote="t('citation.dipa.matthias.quote')"
-      :quote-message="t('citation.dipa.matthias.quote-message')"
-      :source="t('citation.matthias.source')"
-      :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/images/team/melli_team_matthias-01-1024.webp"
-    />
+    <Quote :quote="t('citation.dipa.matthias.quote')" :quote-message="t('citation.dipa.matthias.quote-message')"
+      :source="t('citation.matthias.source')" :source-description="t('citation.matthias.source-description')"
+      portrait="https://assets.melli.com/images/images/team/melli_team_matthias-01-1024.webp" />
   </Container>
 
   <Container class="my-12 lg:my-24 px-6 lg:px-24">
@@ -30,7 +26,7 @@ const { t } = useI18n()
     <DipaBecomeTestUser />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 bg-primary-900 relative">
+  <Container class="py-12 lg:py-24 px-6 lg:px-24 bg-primary-900 relative overflow-hidden">
     <DipaTestUserFit />
   </Container>
 
