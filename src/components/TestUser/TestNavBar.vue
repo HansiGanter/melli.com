@@ -3,13 +3,11 @@
 </script>
 
 <template>
-  <nav class="">
-    <router-link to="/test-user">
+  <div class="flex">
+    <router-link to="/dipa">
       <Logo />
     </router-link>
-  </nav>
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
