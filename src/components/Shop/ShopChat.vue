@@ -32,7 +32,12 @@ watchEffect(() => {
     const n = choices[idx].findIndex(choice => choice === answer)
     return acc + (n !== -1 ? n : 0) * (2 ** (2 - idx))
   }, 0)
-  props.setPrice(options[priceIndex.value])
+  if (answers.value[0] === '') {
+    props.setPrice({ price: 0, wlan: false, onetime: false, stripeId: '' })
+  } else {
+    props.setPrice(options[priceIndex.value])
+
+  }
   props.showBuyBotton(!answers.value.includes(''))
 })
 
@@ -83,6 +88,16 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
     showFirstQuestion.value = true
 }, { threshold: 1.0 },
 )
+
+const showErrorMessage = ref(false)
+
+function submitBuy() {
+  showErrorMessage.value = true
+  if (!answers.value.includes('')) {
+    window.open(options[priceIndex.value].stripeId, '_blank');
+  }
+  fireBuyEvent()
+}
 </script>
 
 <template>
@@ -103,7 +118,7 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
         </Badge>
         <div class="flex flex-col">
           <p class="text-3xl font-medium">
-            €{{ options[priceIndex].price.toFixed(2) }}<span class="text-lg"> / Monat</span>
+            €{{ answers[0] === '' ? '0,00' : options[priceIndex].price.toFixed(2) }}<span class="text-lg"> / Monat</span>
           </p>
           <p v-if="answers[0] === 'yearly'" class="text-gray-400 text-xs font-light">
             jährlich abgerechnet mit €{{ (Math.round(options[priceIndex].price * 12 * 100) / 100).toFixed(2) }}/Jahr
@@ -113,8 +128,8 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
           + €149,00 Tablet / einmalig
         </p>
       </div>
-      <hr>
-      <ul class="list-disc ml-6">
+      <hr v-if="answers[0] !== ''">
+      <ul v-if="answers[0] !== ''" class="list-disc ml-6">
         <li>30 Tage kostenlos testen</li>
         <li>Melli-Abo</li>
         <li>Melli-App für Familie und Freunde</li>
@@ -122,13 +137,14 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
           SIM mit unbegrenztem Internet
         </li>
       </ul>
-      <transition enter-from-class="opacity-0 scale-50" enter-active-class="transition duration-500">
-        <a v-show="!answers.includes('')" target="_blank" :href="options[priceIndex].stripeId"
-          class="transition bg-primary-400 text-center text-white px-2 py-4 rounded-lg disabled:bg-gray-200 disableappeard:text-gray-400 "
-          @click="fireBuyEvent()">
-          30 Tage kostenlos testen
-        </a>
-      </transition>
+      <button id="button-test"
+        :class="answers.includes('') ? 'bg-gray-300 !cursor-not-allowed' : 'bg-primary-400 cursor-pointer'"
+        class="text-center text-white w-full h-full px-2 py-4 rounded-lg" @click="submitBuy">
+        30 Tage kostenlos testen
+      </button>
+      <span class="flex gap-1.5 text-sm items-center text-danger-500" v-if="answers.includes('') && showErrorMessage">
+        <div class="i-lucide:info w-6 h-6"></div>Konfiguriere zuerst dein Melli-Abo im Chat
+      </span>
     </div>
   </div>
 </template>
