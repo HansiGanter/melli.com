@@ -63,7 +63,7 @@ calculateChristmasCountdown()
     </video>
 
     <!-- Heading & link to Video -->
-    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col items-center p-4 pb-12 sm:pb-20">
+    <div class="absolute top-0 w-full h-full bg-black/20 flex flex-col items-center p-4 pb-12 sm:pb-20">
       <slot />
       <div class=" grid gap-2 sm:gap-6 lg:max-w-200 text-center my-auto ">
         <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20 mx-auto">

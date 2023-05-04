@@ -22,7 +22,7 @@ function openForm() {
     </video>
 
     <!-- Heading & link to Video -->
-    <div class="absolute top-0 w-full h-full bg-black/50 flex flex-col">
+    <div class="absolute top-0 w-full h-full bg-black/20 flex flex-col">
       <slot />
       <div class="my-auto flex flex-col gap-5 sm:gap-9 py-12 px-5 max-w-160 mx-auto">
         <h1 class="font-semibold text-4xl sm:text-5xl sm:text-center">

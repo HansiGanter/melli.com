@@ -36,7 +36,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
     </video>
 
     <!-- Heading & link to Video -->
-    <div class="absolute top-0 h-full w-full bg-black/70">
+    <div class="absolute top-0 h-full w-full bg-black/20">
       <slot />
       <div class="h-full px-5 mx-auto max-w-160 flex flex-col">
         <div class="my-auto flex flex-col gap-9 max-w-200 mx-auto">
