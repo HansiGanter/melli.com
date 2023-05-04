@@ -9,13 +9,22 @@ const { d } = useI18n()
 // convention: if the frontmatter defines a title, we assume the component it is a page
 if (props.frontmatter.title) {
   useHead({
-    meta: [{
-      property: 'og:image',
-      content: computed(
-        () => props.frontmatter.cover
-          ? props.frontmatter.cover
-          : 'https://assets.melli.com/https://assets.melli.com/logo.svg'),
-    }],
+    meta: [
+      {
+        property: 'og:image',
+        content: computed(
+          () => props.frontmatter.cover
+            ? props.frontmatter.cover
+            : 'https://assets.melli.com/https://assets.melli.com/logo.svg'),
+      },
+      {
+        property: 'og:description',
+        content: 'Melli sorgt für mehr soziale Kontakte, motiviert zu einem aktiven Alltag und etabliert gesunde Routinen im Leben von Senioren.',
+      },
+      {
+        property: 'og:title',
+        content: 'Melli - die Sprachassistentin für ein glückliches Älterwerden.',
+      }],
   })
 }
 </script>
