@@ -14,7 +14,7 @@ if (props.frontmatter.title) {
       content: computed(
         () => props.frontmatter.cover
           ? props.frontmatter.cover
-          : 'https://assets.melli.com/images/mockups/device-group-call.webp'),
+          : 'https://assets.melli.com/https://assets.melli.com/logo.svg'),
     }],
   })
 }
@@ -25,7 +25,8 @@ if (props.frontmatter.title) {
   <div v-if="frontmatter.title">
     <!-- Blogs -->
     <div v-if="frontmatter.categories && frontmatter.href === 'blogs'">
-      <ArticleHeader v-if="frontmatter.title" :hero-url="frontmatter.imageUrl" :categories="frontmatter.categories" :heading="frontmatter.title" :description="frontmatter.description" :href="frontmatter.href" />
+      <ArticleHeader v-if="frontmatter.title" :hero-url="frontmatter.imageUrl" :categories="frontmatter.categories"
+        :heading="frontmatter.title" :description="frontmatter.description" :href="frontmatter.href" />
       <ArticleAuthor v-if="frontmatter.author" :author="frontmatter.author.name" :date="d(frontmatter.date, 'long')" />
       <article class="m-auto prose text-lg max-w-[920px] px-4 sm:px-6 lg:px-8 pb-8 lg:pb-12">
         <slot />
