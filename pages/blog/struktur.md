@@ -18,7 +18,6 @@ articleRecommendations: ['/blog/soziale-kontakte', '/blog/unterhaltung', '/blog/
 
 <br>
 
-
 <BlogQuote source="(Ponomarenko, 2020)">
     Im Zuge eines regulären Renteneintritts verlassen Individuen ihre berufliche Stellung und damit einhergehend auch ihr soziales Umfeld sowie ihre täglichen Gewohnheiten. Dies kann sich unmittelbar auf ihre Lebensqualität und die Bewertung ihrer Lebenszufriedenheit auswirken.
 </BlogQuote>
@@ -36,6 +35,7 @@ Plötzlich fehlen die täglichen Meetings mit den Kollegen, die gemeinsame Mitta
 <br>
 
 Das sind Fragen, die sich nun stellen. Bleiben diese unbeantwortet, fühlen die Betroffenen sich ziellos und es fällt ihnen schwer, Motivation für den Tag aufzubringen. Der eigene Alltag erscheint plötzlich eintönig und im schlimmsten Falle steigt das Risiko für depressive Verstimmungen.
+
 In diesem Artikel zeigen wir dir, wie Melli Senioren dabei unterstützt bewährte Alltagsroutinen beizubehalten und neue Aktivitäten in ihrem Tag zu etablieren. Mit Terminerinnerungen, individuellen Gesundheitsroutinen, einer Weckfunktion und wiederkehrenden Aktivitäten hilft sie ihren Nutzern dabei einen roten Faden in ihren Leben zu finden und ihren Alltag besser ohne fremde Hilfe zu meistern.
 
 ## Diese Melli-Funktionen helfen Senioren dabei die Herausforderungen des Alltags zu bewältigen

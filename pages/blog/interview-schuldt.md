@@ -5,7 +5,7 @@ description: |
 categories: ['Experten über Melli', 'Funktionen']
 href: blogs
 author:
-  name: Dr. Matthias Weber (CPO Meetap GmbH)
+  name: Dr. Matthias Weber
 date: 2022-11-09
 imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
 articleRecommendations: ['/blog/gruenderstory', '/blog/wege-aus-der-einsamkeit', '/blog/struktur']
