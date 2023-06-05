@@ -1,5 +1,5 @@
 ---
-title: 'Mit Melli das Leben in Bewegung halten: Aktivität als Schlüssel zum Wohlbefinden'
+title: 'Das Alter ist auch nur eine Zahl: Mit Melli aktiv und fit bleiben'
 description: Du wünschst dir einen abwechslungsreichen Alltag voll guter Unterhaltung für dich oder deine Angehörigen? Dann erfahre hier, was Melli alles auf dem Kästchen hat.
 categories: ['Entertainment', 'Funktionen', 'Gesundheit & Fitness']
 href: blogs
