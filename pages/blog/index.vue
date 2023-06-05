@@ -4,7 +4,7 @@ const isProduction = import.meta.env.PROD
 useHead({
   title: 'Melli',
   meta: [
-    { name: 'description', content: 'News und Beiträge zu Melli. Informieren Sie sich über neue Produktfunktionen, kostenlose Tipps, Angebote, Aktionen und vieles mehr.' },
+    { name: 'description', content: 'News und Beiträge zu Melli. Informiere dich über neue Produktfunktionen, kostenlose Tipps, Angebote, Aktionen und vieles mehr.' },
   ],
 })
 
@@ -43,14 +43,10 @@ const currentFilter = ref(categories[0])
   <Container class="pb-20 lg:pb-28 px-5">
     <div class="grid gap-8">
       <div class="flex items-center justify-center gap-3 flex-wrap">
-        <button
-          v-for="categorie in categories"
-          :key="categorie"
-          type="button"
+        <button v-for="categorie in categories" :key="categorie" type="button"
           class="py-2.5 px-4 font-medium text-sm inline rounded-full transition delay-150 ease-in-out cursor-pointer hover:bg-primary-50 hover:text-primary-700"
           :class="currentFilter === categorie ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'"
-          @click="currentFilter = categorie"
-        >
+          @click="currentFilter = categorie">
           {{ categorie }}
         </button>
       </div>

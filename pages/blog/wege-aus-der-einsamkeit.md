@@ -2,7 +2,7 @@
 title: Senioren müssen leider draußen bleiben - Wir möchten das ändern
 description: |
   Der Verein “Wege aus der Einsamkeit e.V.” setzt sich dafür ein, die digitale Welt endlich auch für Senioren erlebbar und zugänglich zu machen. Das möchten wir mit unserer Weihnachtsspendenaktion unterstützen!
-categories: ['Einsamkeit', 'Neuigkeiten']
+categories: ['Einsamkeit im Alter', 'News']
 href: blogs
 author:
   name: Franziska Lerch

@@ -2,7 +2,7 @@
 title: "Vom Pflegeunternehmen zum Age-Tech-Startup: So entstand die Idee von Melli"
 description: |
   Unsere Vision ist es eine Zukunft zu schaffen in der jeder Mensch gemeinsame Momente erleben und teilen kann unabhängig vom Alter, den Lebensumständen, körperlichen Fähigkeiten oder anderen Hürden. - Dr. Matthias Weber
-categories: ['Gründer', 'Neuigkeiten']
+categories: ['Das Melli-Team', 'News']
 href: blogs
 author:
   name: Dr. Matthias Weber

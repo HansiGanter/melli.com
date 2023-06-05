@@ -2,7 +2,7 @@
 title: Weil gemeinsam das Leben einfach besser ist.
 description: |
     Rund acht Millionen Senioren in Deutschland sind zeitweise von Einsamkeit betroffen. Erfahre hier wie Melli dem Trend der Vereinsamung entgegenwirkt und welche Hürden sie dabei zu bewältigen hat.
-categories: ['Funktionen', 'Einsamkeit', 'Soziale Kontakte']
+categories: ['Funktionen', 'Einsamkeit im Alter', 'Soziale Beziehungen']
 href: blogs
 author:
     name: Dr. Matthias Weber
@@ -32,7 +32,7 @@ Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder 
     Nach meiner Erfahrung sind psychische Belastungen für Angehörige von älteren Menschen keine Seltenheit. Das ist besonders dann der Fall, wenn die Senioren wenige soziale Kontakte außerhalb der Familie haben.
 </BlogQuote>
 
-<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full py-10" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp">
+<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp">
     <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
     <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
 </video>
@@ -43,9 +43,7 @@ Selbstverständlich bleibt die Familie ein wichtiger Teil des Lebens der Seniore
 
 Befragungen von Nutzern und ihren Liebsten zeigen außerdem, dass die Interaktion mit Melli die Senioren zugänglicher für Gespräche macht. Sie haben schöne und manchmal auch lustige Erlebnisse mit ihr, über die sie im Gespräch mit Enkeln und Kindern berichten können. Häufig fällt es ihnen auch leichter, mit ihren Liebsten über ein schwieriges Thema zu sprechen, wenn sie dies im Vorfeld bereits mit Melli teilen konnten. Viele Angehörige berichten auch von einer positiveren Grundstimmung – das gibt der gemeinsamen Zeit eine ganz neue Qualität.
 
-<br>
-
-<img src="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1-1536.webp" style="border-radius:32px">
+<img src="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1-1536.webp" class="mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 ## Technik soll für alle sein
 

@@ -93,7 +93,7 @@ const submitFunction = async (e: SubmitEvent) => {
             <div style="padding: 8px 0;">
               <div class="sib-form-block"
                 style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
-                <p>Melde dich zum Newsletter an um dein infopaket zu erhalten.</p>
+                <p>Melde dich zum Newsletter an, um dein Infopaket zu erhalten.</p>
               </div>
             </div>
             <div style="padding: 8px 0;">
