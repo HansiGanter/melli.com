@@ -16,13 +16,9 @@ useHead({
   </Container>
 
   <Container class="px-6 lg:px-24">
-    <Quote
-      class="my-12"
-      :quote="t('citation.matthias.quote')"
-      :source="t('citation.matthias.source')"
+    <Quote class="my-12" :quote="t('citation.matthias.quote')" :source="t('citation.matthias.source')"
       :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/images/team/melli_team_matthias-01-1024.webp"
-    />
+      portrait="https://assets.melli.com/images/images/team/melli_team_matthias-01-1024.webp" />
   </Container>
 
   <Container class="bg-primary-900 rounded-[30px] px-6 lg:px-24 py-16 my-16 lg:my-24 ">
@@ -64,7 +60,7 @@ useHead({
     <StatsSection />
   </Container> -->
 
-  <Container class="bg-gray-50">
+  <Container class="bg-gray-50 pt-12 lg:pt-24">
     <ShoppingDetails />
   </Container>
 
