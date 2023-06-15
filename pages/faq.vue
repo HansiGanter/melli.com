@@ -98,28 +98,23 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Alles über Melli
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure
-              v-for="(faq, index) in aboutMelli"
-              :key="index"
-              v-slot="{ open }"
-              as="div"
-              class="py-2"
-              @click="fireFAQEvent(faq.question)"
-            >
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent(faq.question)">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ faq.question }}</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>{{ faq.answer }} <router-link v-if="faq.link" :to="faq.link.url" target="_blank" class="underline decoration-1 decoration-solid underline-offset-1">{{ faq.link.text }}.</router-link></span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>{{ faq.answer }} <router-link v-if="faq.link" :to="faq.link.url" target="_blank"
+                      class="underline decoration-1 decoration-solid underline-offset-1">{{ faq.link.text
+                      }}.</router-link></span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>
@@ -130,20 +125,20 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Technische Details
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(detail, index) in technicalDetails" :key="index" v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent(detail.question)">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <Disclosure v-for="(detail, index) in technicalDetails" :key="index" v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent(detail.question)">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">{{ detail.question }}</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                   <span>{{ detail.answer }} </span>
                 </DisclosurePanel>
               </transition>
@@ -155,39 +150,48 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Inbetriebnahme
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse problemlos möglich?')">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
-                <span class="text-left order-1 lg:order-2">Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse problemlos möglich?</span>
+            <Disclosure v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent('Ist die Einrichtung von Melli auch für Personen ohne technische Kenntnisse problemlos möglich?')">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+                <span class="text-left order-1 lg:order-2">Ist die Einrichtung von Melli auch für Personen ohne technische
+                  Kenntnisse problemlos möglich?</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>Ja! Für die Einrichtung von Melli sind keine technischen Kenntnisse notwendig. Sobald Melli an den Strom angeschlossen ist, wacht sie von ganz alleine auf und ist startklar für die erste Interaktion. Der Nutzer muss dann nur noch ihren Anweisungen folgen und die von ihr gestellten Fragen mit einem einfachen “Ja” oder “Nein” beantworten. Die weitere Einrichtung erfolgt dann über die Melli-App.</span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>Ja! Für die Einrichtung von Melli sind keine technischen Kenntnisse notwendig. Sobald Melli an den
+                    Strom angeschlossen ist, wacht sie von ganz alleine auf und ist startklar für die erste Interaktion.
+                    Der Nutzer muss dann nur noch ihren Anweisungen folgen und die von ihr gestellten Fragen mit einem
+                    einfachen “Ja” oder “Nein” beantworten. Die weitere Einrichtung erfolgt dann über die
+                    Melli-App.</span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Kann ich Unterstützung bei der Einrichtung von Melli bekommen?')">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
-                <span class="text-left order-1 lg:order-2">Kann ich Unterstützung bei der Einrichtung von Melli bekommen?</span>
+            <Disclosure v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent('Kann ich Unterstützung bei der Einrichtung von Melli bekommen?')">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+                <span class="text-left order-1 lg:order-2">Kann ich Unterstützung bei der Einrichtung von Melli
+                  bekommen?</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>Ja, unser Service-Team steht Ihnen bei der Inbetriebnahme und Erst-Einrichtung telefonisch zur Seite. Sie erreichen uns von Montag bis Freitag von 08:00 bis 17:00 unter der Nummer <a href="tel:030555703440" class="underline decoration-1 decoration-solid underline-offset-1">030-555703440</a>.</span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>Ja, unser Service-Team steht Ihnen bei der Inbetriebnahme und Erst-Einrichtung telefonisch zur
+                    Seite. Sie erreichen uns von Montag bis Freitag von 08:00 bis 17:00 unter der Nummer <a
+                      href="tel:030555703440"
+                      class="underline decoration-1 decoration-solid underline-offset-1">030-555703440</a>.</span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>
@@ -216,21 +220,22 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Abo & Bestellung
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Was ist alles im Melli-Paket enthalten?')">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <Disclosure v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent('Was ist alles im Melli-Paket enthalten?')">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Was ist alles im Melli-Paket enthalten?</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>Beim Abschluss eines Melli-Abonnements sind folgende Produkte in ihrer Bestellung enthalten:</span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>Beim Abschluss eines Melli-Abonnements sind folgende Produkte in ihrer Bestellung
+                    enthalten:</span>
                   <ul class="list-disc list-inside">
                     <li v-for="item in items" :key="item">
                       {{ item }}
@@ -239,39 +244,46 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Wird Melli von der Pflege- oder Krankenkasse bezahlt?')">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <Disclosure v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent('Wird Melli von der Pflege- oder Krankenkasse bezahlt?')">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
                 <span class="text-left order-1 lg:order-2">Wird Melli von der Pflege- oder Krankenkasse bezahlt?</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>Der Gesetzgeber bereitet gerade den Weg für die Zulassung von digitalen Pflegeanwendungen (DiPA). Sobald die entsprechenden Verordnungen verabschiedet sind, wird die entsprechende Zulassung beantragt. Die Pflegekasse oder Krankenkasse kann dann einen Teil der Kosten für pflegebedürftige Nutzer tragen.</span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>Der Gesetzgeber bereitet gerade den Weg für die Zulassung von digitalen Pflegeanwendungen (DiPA).
+                    Sobald die entsprechenden Verordnungen verabschiedet sind, wird die entsprechende Zulassung beantragt.
+                    Die Pflegekasse oder Krankenkasse kann dann einen Teil der Kosten für pflegebedürftige Nutzer
+                    tragen.</span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>
-            <Disclosure v-slot="{ open }" as="div" class="py-2" @click="fireFAQEvent('Kann die Hardware auch monatlich finanziert werden?')">
-              <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-                <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
-                <span class="text-left order-1 lg:order-2">Kann die Hardware auch monatlich finanziert werden?</span>
+            <Disclosure v-slot="{ open }" as="div" class="py-2"
+              @click="fireFAQEvent('Kann das Melli-Tablet gemietet werden?')">
+              <DisclosureButton
+                class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+                <div :class="open ? 'transform rotate-90' : ''"
+                  class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+                <span class="text-left order-1 lg:order-2">Kann das Melli-Tablet gemietet werden?</span>
               </DisclosureButton>
-              <transition
-                enter-active-class="transition duration-100 ease-in"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-out"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <DisclosurePanel class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>Ja, wir bieten einen Finanzierungsplan für die Hardware (Melli-Tablet + Docking-Station) an. Dieser beläuft sich auf <span class="text-primary-500">7€ / Monat über 24 Monate</span>, unabhängig vom gewählten Abo-Modell. Mehr Informationen dazu finden Sie in unseren <a href="/agb" class="underline decoration-1 decoration-solid underline-offset-1">AGB.</a></span>
+              <transition enter-active-class="transition duration-100 ease-in"
+                enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+                leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+                leave-to-class="transform scale-95 opacity-0">
+                <DisclosurePanel
+                  class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                  <span>Ja, wir bieten eine Option zum Mieten des Melli-Tablets an. Diese Option kannst du ganz einfach
+                    bei der Konfiguration deines Melli-Abos <a href="/agb"
+                      class="underline decoration-1 decoration-solid underline-offset-1">in unserem Shop</a>
+                    auswählen. Der Mietpreis beträgt gerade einmal 8€/Monat. Die Mietdauer richtet sich nach der Laufzeit
+                    deines Melli-Abos.</span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>
@@ -285,10 +297,12 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
               Offene Fragen?
             </h1>
             <p class="font-medium text-2xl">
-              Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich gerne und räumen alle Unklarheiten aus dem Weg. Vereinbare einfach einen Rückruf mit uns und wir melden uns umgehend bei dir.
+              Egal, ob Fragen zum Produkt oder zum Bestellprozess – wir beraten dich gerne und räumen alle Unklarheiten
+              aus dem Weg. Vereinbare einfach einen Rückruf mit uns und wir melden uns umgehend bei dir.
             </p>
           </div>
-          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center" @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
+          <button class="bg-primary-500 py-4 px-7 rounded-lg text-center"
+            @click="[callbackModalOpen = true, fireCallbackOpenEvent()]">
             <span class="font-medium text-base">Rückruf vereinbaren</span>
           </button>
         </div>
