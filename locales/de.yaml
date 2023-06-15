@@ -204,6 +204,9 @@ donation-banner:
   text: >-
     Du testest Melli 60 Tage kostenlos - wir spenden 10€ an den “Wege aus der
     Einsamkeit e.V.”
+group-session-banner:
+  heading: 'Jetzt neu: '
+  text: 'Melli-Gruppen mit professionellen Betreuungskräften inklusive'
 faq:
   '1':
     answer: >-

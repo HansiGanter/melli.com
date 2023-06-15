@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { fireShopEvent } from '~/google-tag-manager'
 
+defineProps<{
+  heading?: string, //'donation-banner.header'
+  text: string // 'donation-banner.text'
+}>()
+
 const { t } = useI18n()
 const showBanner = ref(true)
 </script>
@@ -10,10 +15,11 @@ const showBanner = ref(true)
     <RouterLink to="/shop" class="flex gap-2 lg:gap-4 mx-auto" @click="fireShopEvent">
       <img src="https://assets.melli.com/bubble-icons/bubble-icon_heart_3.svg" class="h-12 lg:h-16 my-auto">
       <div class="my-auto text-sm lg:text-base">
-        <p class="font-semibold">
-          {{ t('donation-banner.header') }}
-        </p><p>
-          {{ t('donation-banner.text') }}
+        <p v-if="heading" class="font-semibold">
+          {{ t('group-session-banner.heading') }}
+        </p>
+        <p>
+          {{ t(text) }}
         </p>
       </div>
     </RouterLink>

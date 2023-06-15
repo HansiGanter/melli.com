@@ -60,7 +60,7 @@ function submitBuy() {
   </Container>
 
   <Container class="py-12 lg:py-24 px-6 lg:px-24 relative">
-    <ShopChat :set-price="setPrice" :show-buy-botton="(s) => show = s" />
+    <ShopChat :set-price="setPrice" :show-buy-botton="(s: any) => show = s" />
   </Container>
 
   <Container class="py-12 lg:py-24 px-6">
@@ -74,6 +74,9 @@ function submitBuy() {
   <Container class="py-12 lg:py-24 px-6">
     <FaqSection />
   </Container>
-
-  <!-- </div> -->
 </template>
+
+<route lang="yaml">
+meta:
+  layout: donationbanner
+</route>

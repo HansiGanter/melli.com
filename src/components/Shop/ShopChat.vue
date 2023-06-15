@@ -133,6 +133,7 @@ function submitBuy() {
         <li>30 Tage kostenlos testen</li>
         <li>Melli-Abo</li>
         <li>Melli-App für Familie und Freunde</li>
+        <li>Melli-Gruppen mit professionellen Betreuungskräften</li>
         <li v-if="answers[1] === 'SIM'">
           SIM mit unbegrenztem Internet
         </li>

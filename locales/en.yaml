@@ -43,10 +43,13 @@ contact:
     arrange a callback and we will get back to you immediately.
   whatsapp: Send us a message!
 donation-banner:
-  header: 'Support our New Years campaign: '
+  heading: 'Support our New Years campaign: '
   text: >-
     You test Melli 60 days for free - we donate 10€ to the "Wege aus der
     Einsamkeit e.V."
+group-session-banner:
+  heading: 'Out now: '
+  text: 'Melli groups with professional caregivers included'
 faq:
   heading: Frequently Asked Questions
   sub-heading: Everything you need to know about the product, privacy and prices.
