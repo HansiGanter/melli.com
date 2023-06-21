@@ -271,7 +271,7 @@ export const fireInfoPackageSentEvent = (email?: string, phone?: string, firstNa
 
 export const firePillEvent = (name?: string) => {
   window.dataLayer.push({
-    event: `melli-pill-${name}`
+    event: !name ? 'melli-pill' : `melli-pill-${name}`,
   })
   console.log(`melli-pill-${name}`)
 }
