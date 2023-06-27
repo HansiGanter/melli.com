@@ -9,7 +9,6 @@ import generatedRoutes from '~pages'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
-import './styles/cookie.css'
 import 'uno.css'
 
 const routes = setupLayouts(generatedRoutes)
