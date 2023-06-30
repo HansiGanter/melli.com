@@ -16,7 +16,8 @@ const navigation = {
   solutions: [
     { name: 'AGB', href: '/agb' },
     { name: t('footer.solutions.privacy'), href: '/datenschutz' },
-    { name: t('footer.solutions.legal-notice'), href: '/impressum' },
+    { name: t('footer.solutions.privacy-melli'), href: '/datenschutz-melli' },
+    { name: t('footer.solutions.legal-notice'), href: '/impressum-' },
   ],
   // company: [
   //   { name: t('footer.company.jobs'), href: '/karriere' },
@@ -54,22 +55,22 @@ const navigation = {
 <template>
   <footer aria-labelledby="footer-heading" class="py-12 lg:py-16">
     <div class="mb-12">
-    <hr>
-    <SocialMedia class="py-8" />
-    <hr>
-  </div>
-  <h2 id="footer-heading" class="sr-only">
-    Footer
-  </h2>
-  <div class="pb-8 grid grid-cols-1 xl:grid-cols-4 gap-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-        <div>
-          <h3 class="text-sm font-semibold text-primary-400 dark:text-white dark:text-white tracking-wider uppercase">
-            Sie brauchen Hilfe?
-          </h3>
-          <ul role="list" class="mt-4 space-y-2 flex-wrap">
-            <li class="text-lg font-semibold text-gray-500">
+      <hr>
+      <SocialMedia class="py-8" />
+      <hr>
+    </div>
+    <h2 id="footer-heading" class="sr-only">
+      Footer
+    </h2>
+    <div class="pb-8 grid grid-cols-1 xl:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-primary-400 dark:text-white dark:text-white tracking-wider uppercase">
+              Sie brauchen Hilfe?
+            </h3>
+            <ul role="list" class="mt-4 space-y-2 flex-wrap">
+              <li class="text-lg font-semibold text-gray-500">
                 Lassen Sie sich kostenlos beraten!
               </li>
               <li v-for="item in navigation.resources" :key="item.name">

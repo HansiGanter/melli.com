@@ -204,9 +204,6 @@ donation-banner:
   text: >-
     Du testest Melli 60 Tage kostenlos - wir spenden 10€ an den “Wege aus der
     Einsamkeit e.V.”
-group-session-banner:
-  heading: 'Jetzt neu: '
-  text: 'Melli-Gruppen mit professionellen Betreuungskräften inklusive'
 faq:
   '1':
     answer: >-
@@ -289,12 +286,13 @@ faq-section:
     beispielsweise bitten, die Musik anzuschalten oder das Wetter der kommenden
     Tage anzusagen.
   answer-2: >-
-    Ja, Melli eignet sich hervorragend bei leichter und mittlerer Demenz, da sie betroffenen Senioren
-    durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
-    Medikamentenpläne Struktur und Orientierung im Alltag liefert. Sie hilft
-    dabei, eine gewisse Regelmäßigkeit und Routinen im Tag zu etablieren, was
-    sich beispielsweise sehr positiv auf die Ernährung auswirken kann. Außerdem
-    trainiert sie die geistige und körperliche Fitness durch kleine Übungen.
+    Ja, Melli eignet sich hervorragend bei leichter und mittlerer Demenz, da sie
+    betroffenen Senioren durch Funktionen wie Trink- und Terminerinnerung,
+    Wecker oder Medikamentenpläne Struktur und Orientierung im Alltag liefert.
+    Sie hilft dabei, eine gewisse Regelmäßigkeit und Routinen im Tag zu
+    etablieren, was sich beispielsweise sehr positiv auf die Ernährung auswirken
+    kann. Außerdem trainiert sie die geistige und körperliche Fitness durch
+    kleine Übungen.
   answer-3: >-
     Melli wird einfach per Sprachbefehl bedient und fragt selbst, wenn was sie
     etwas wissen muss. So einfach wie ein nettes Gespräch.
@@ -353,9 +351,13 @@ footer:
   solutions:
     legal-notice: Impressum
     privacy: Datenschutz
+    privacy-melli: Datenschutz Melli
   support:
     faq: Häufige Fragen
     user-login: Benutzer-Login
+group-session-banner:
+  heading: 'Jetzt neu: '
+  text: Melli-Gruppen mit professionellen Betreuungskräften inklusive
 healthy-routine:
   card1: >-
     Melli verfügt über einen Terminplaner, der entweder über die zugehörige

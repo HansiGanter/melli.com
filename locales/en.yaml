@@ -47,9 +47,6 @@ donation-banner:
   text: >-
     You test Melli 60 days for free - we donate 10€ to the "Wege aus der
     Einsamkeit e.V."
-group-session-banner:
-  heading: 'Out now: '
-  text: 'Melli groups with professional caregivers included'
 faq:
   heading: Frequently Asked Questions
   sub-heading: Everything you need to know about the product, privacy and prices.
@@ -65,7 +62,13 @@ faq-section:
     Melli to turn on the music or announce the weather for the coming days, for
     example.
   answer-2: >-
-    Yes, Melli is ideal for mild and moderate dementia, as it helps affected seniors by functions such as drinking and appointment reminders, alarm clocks and medication schedules, it provides structure and orientation in everyday life. It helps establish a certain regularity and routines in the day, which can have a very which can have a very positive effect on nutrition, for example. In addition, it trains mental and physical fitness through small exercises.
+    Yes, Melli is ideal for mild and moderate dementia, as it helps affected
+    seniors by functions such as drinking and appointment reminders, alarm
+    clocks and medication schedules, it provides structure and orientation in
+    everyday life. It helps establish a certain regularity and routines in the
+    day, which can have a very which can have a very positive effect on
+    nutrition, for example. In addition, it trains mental and physical fitness
+    through small exercises.
   answer-3: >-
     Melli is simply operated by voice command and asks herself when what she
     needs to know something. As simple as a nice conversation.
@@ -113,9 +116,13 @@ footer:
   solutions:
     legal-notice: Imprint
     privacy: Data privacy
+    privacy-melli: Data privacy Melli
   support:
     faq: Frequently asked questions
     user-login: User login
+group-session-banner:
+  heading: 'Out now: '
+  text: Melli groups with professional caregivers included
 healthy-routine:
   card1: >-
     Melli has an appointment planner that can be maintained either via the
