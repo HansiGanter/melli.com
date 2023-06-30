@@ -17,7 +17,7 @@ const navigation = {
     { name: 'AGB', href: '/agb' },
     { name: t('footer.solutions.privacy'), href: '/datenschutz' },
     { name: t('footer.solutions.privacy-melli'), href: '/datenschutz-melli' },
-    { name: t('footer.solutions.legal-notice'), href: '/impressum-' },
+    { name: t('footer.solutions.legal-notice'), href: '/impressum' },
   ],
   // company: [
   //   { name: t('footer.company.jobs'), href: '/karriere' },

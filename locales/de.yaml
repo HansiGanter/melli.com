@@ -1,4 +1,4 @@
-'404':
+"404":
   contact-support: Kontakt zum Support
   go-home: Zurück zur Startseite
   not-found:
@@ -68,7 +68,7 @@ appCommunicationFeature4:
   modaltext: >-
     Text- und Sprachnachrichten können einfach in der Melli-App eingegeben
     werden. Melli liest diese den Nutzern  gerne vor bzw. spielt sie ab.
-  pilltext: 'Text- & Sprachnachrichten versenden '
+  pilltext: "Text- & Sprachnachrichten versenden "
 appCommunicationFeature5:
   modaltext: >-
     Mit der Melli-App können Angehörige und Freunde bald Bilder und Videos mit
@@ -88,7 +88,7 @@ appConfigurationFeature1:
     entsprechend dieser Angaben ausgewählt.
   pilltext: Interessen konfigurieren
 appConfigurationFeature2:
-  modaltext: '            In der App können anstehende Termine schnell und einfach in einen Kalender eingetragen werden. Melli erinnert ihre Nutzer dann an die eingetragenen Termine und die Familie weiß immer was gerade ansteht.'
+  modaltext: "            In der App können anstehende Termine schnell und einfach in einen Kalender eingetragen werden. Melli erinnert ihre Nutzer dann an die eingetragenen Termine und die Familie weiß immer was gerade ansteht."
   pilltext: Medikamentenplan erstellen
 appConfigurationFeature3:
   modaltext: >-
@@ -150,7 +150,7 @@ citation:
       quote: >-
         Toll, dass du dich für Melli interessierst! Ich bin Matthias, einer der
         vier Gründer von Melli. Melli soll als sprachgesteuerte Begleiterin
-        ältere Menschen zu einem glücklicheren Alltag verhelfen. 
+        ältere Menschen zu einem glücklicheren Alltag verhelfen.
       quote-message: Viel Spaß beim Kennenlernen!
   matthias:
     quote: >-
@@ -200,12 +200,12 @@ dipa-faq-section:
   question-5: Wie wird Melli eingerichtet?
   question-6: Ist die Nutzung von Melli sicher?
 donation-banner:
-  header: 'Unterstütze unsere Neujahrsaktion:  '
+  header: "Unterstütze unsere Neujahrsaktion:  "
   text: >-
     Du testest Melli 60 Tage kostenlos - wir spenden 10€ an den “Wege aus der
     Einsamkeit e.V.”
 faq:
-  '1':
+  "1":
     answer: >-
       Melli schützt vor unangemessenen Inhalten insoweit, als dass dem Nutzer
       kein uneingeschränkter Zugang zum Internet ermöglicht wird. Melli bewegt
@@ -214,13 +214,13 @@ faq:
     question: >-
       Ist der Nutzer vor unangemessenen Inhalten oder Kostenfallen aus dem
       Internet geschützt?
-  '2':
+  "2":
     answer: >-
       Melli kommt mit einem 10,1 Zoll Tablet, einem Lautsprecher, der
       gleichzeitig der Stromversorgung des Tablets dient und einem Ladekabel zu
       Ihnen nach Hause.
     question: Was ist beim Kauf einer Melli alles dabei?
-  '3':
+  "3":
     answer: >-
       Melli benötigt eine Verbindung zum Internet. Wenn vor Ort kein WLAN zur
       Verfügung steht, kann Melli auf Wunsch mit einer eigenen
@@ -229,14 +229,14 @@ faq:
       Internet benötigt wird. Die Kosten dafür werden bei Ihrer individuellen
       Preisberechnung berücksichtigt.
     question: Wird für die Nutzung von Melli ein Internetanschluss zuhause benötigt?
-  '4':
+  "4":
     answer: >-
       Anders als herkömmliche Sprachassistenten wartet Melli nicht auf
       Anweisungen ihrer Nutzer, sondern geht proaktiv mit Aktivitätsvorschlägen
       auf sie zu. Auf diese Weise motiviert sie zu einem aktiveren Alltag, in
       dem soziale Kontakte eine wichtige Rolle spielen.
     question: Was unterscheidet Melli von anderen Sprachassistenten?
-  '5':
+  "5":
     answer: >-
       Sollte ein Notfall eintreten, so hat Melli eine
       Notfallvalidierungsfunktion, die festgelegte Notfallkontakte und im
@@ -245,13 +245,13 @@ faq:
       dieses Features können sich berechtigte Kontakte jederzeit vergewissern,
       dass es dem Nutzer gut geht, ohne dass dieser extra abheben muss.
     question: Ist Melli ein Ersatz für Notrufknopf & Notfallarmband?
-  '6':
+  "6":
     answer: >-
       Dank der Bedienung per Sprachsteuerung ist das Telefonieren mit Kontakten
       sowohl per Video- als auch per normalem Sprachanruf kinderleicht und ohne
       Barriere nutzbar.
     question: Ist Melli ein Ersatz für Seniorenhandys?
-  '7':
+  "7":
     answer: >-
       Ja, Melli ist sehr gut bei Depressionen & Antriebsarmut geeignet, da sie
       ihre Nutzer fortlaufend dazu anregt und motiviert, einen aktiven Alltag
@@ -260,7 +260,7 @@ faq:
       Wecker helfen außerdem gegen die sich leicht einschleichende Trägheit.
     question: |
       Ist Melli bei Depression und Antriebsarmut geeignet?
-  '8':
+  "8":
     answer: >-
       Ja, Melli eignet sich hervorragend bei Demenz, da sie betroffenen Senioren
       durch Funktionen wie Trink- und Terminerinnerung, Wecker oder
@@ -324,7 +324,7 @@ faq-section:
   question-10: Kann ich Melli selbst initiierte Befehle geben?
   question-2: Ist Melli auch bei Demenz geeignet?
   question-3: Wie wird Melli bedient?
-  question-4: 'Woher weiß Melli welche Präferenzen und Bedürfnisse ihre Nutzer haben? '
+  question-4: "Woher weiß Melli welche Präferenzen und Bedürfnisse ihre Nutzer haben? "
   question-5: Wer kann alles über Melli mit dem Nutzer in Verbindung treten?
   question-6: Was ist die Melli-App?
   question-7: Wie schützt Melli ihre Nutzer?
@@ -350,13 +350,13 @@ footer:
     heading: Sprache & Theme
   solutions:
     legal-notice: Impressum
-    privacy: Datenschutz
+    privacy: Datenschutz Website
     privacy-melli: Datenschutz Melli
   support:
     faq: Häufige Fragen
     user-login: Benutzer-Login
 group-session-banner:
-  heading: 'Jetzt neu: '
+  heading: "Jetzt neu: "
   text: Melli-Gruppen mit professionellen Betreuungskräften inklusive
 healthy-routine:
   card1: >-
@@ -423,44 +423,44 @@ jobs:
     text-2: Schön, dich kennenzulernen!
     text-3: Lust, für unser Team zu spielen?
 karriere-faq:
-  '1':
+  "1":
     answer: >-
       Wir sind ein durchmischter Haufen, den die Motivation verbindet, die Welt
       ein Stückchen besser zu machen. Schau gerne mal rein und erhalte einen
       ersten Eindruck in
     question: Wie ist es, bei meetap zu arbeiten?
-  '2':
+  "2":
     answer: >-
       Wir setzen großen Wert auf ein unkompliziertes Bewerbungsverfahren. Daher
       reicht ein aussagekräftiger Lebenslauf vollkommen aus. Oder du schickst
       uns den Link zu deinem LinkedIn- oder Xing-Profil.
     question: Welche Bewerbungsunterlagen sind erforderlich?
-  '3':
+  "3":
     question: Wie kann ich mich auf das Bewerbungsverfahren vorbereiten?
-  '4':
+  "4":
     answer: >-
       Na klar! Deine Bewerbung sollte aber auf jeden Fall deinen Lebenslauf und
       den gewünschten Job enthalten. Hier kannst du dich
     question: Sind Initiativbewerbungen erwünscht?
-  '5':
+  "5":
     answer: >-
       Im allgemeinen besteht unser Bewerbungsprozess aus den folgenden drei
       Phasen:
     question: Wie läuft der Bewerbungsprozess ab?
-  '6':
+  "6":
     question: Ich finde keine offene Stelle, die zu mir passt. Was mache ich?
-  '7':
+  "7":
     question: Was ist euer Tech Stack?
 melli-features:
-  '1':
+  "1":
     answer: "Geht aktiv auf\Lden Nutzer zu"
-  '2':
+  "2":
     answer: "Funktioniert auch \Lohne WLAN"
-  '3':
+  "3":
     answer: Erkennt die Stimmung & reagiert darauf
-  '4':
+  "4":
     answer: "Bedienung ohne \Ltechnisches Vorwissen"
-  '5':
+  "5":
     answer: "Verbindet Menschen\Lmiteinander"
   fact: >-
     Melli agiert nach höchsten Datenschutz-Standards. Sie ist DSGVO-konform und
@@ -575,7 +575,7 @@ navbar:
     heading: Team
     text: Lernen Sie unser Team kennen!
 newsletter:
-  condition: '*bei Abschluss eines Melli-Abonnements'
+  condition: "*bei Abschluss eines Melli-Abonnements"
   heading: Newsletter abonieren & Melli für 3 Monate gratis sichern
   placeholder: Ihre E-Mail Adresse
   subscribe: Abonnieren
@@ -591,8 +591,8 @@ plans:
   enterprise:
     duration: pro Monat
     extras:
-      '1': +Internet
-      '2': +Hardware Miete
+      "1": +Internet
+      "2": +Hardware Miete
     name: Alles dabei
     price: 49,90€
   erweitert:
@@ -607,17 +607,17 @@ plans:
   pro:
     duration: /monat
     extras:
-      '1': +Mobile Internet
-      '2': +Mobile Internet
+      "1": +Mobile Internet
+      "2": +Mobile Internet
     name: Erweitert
     price: €19.90
   title: Wähle dein Abo & teste Melli
 price:
   pros:
-    '1': "sichere Zahlung mit\LPayPal oder SEPA-Lastschrift"
-    '2': "60 Tage kostenlos testen - \Lmit Rücknahmegarantie"
-    '3': "kostenlose \LLieferung"
-    '4': "telefonische Begleitung \Lbei der Ersteinrichtung"
+    "1": "sichere Zahlung mit\LPayPal oder SEPA-Lastschrift"
+    "2": "60 Tage kostenlos testen - \Lmit Rücknahmegarantie"
+    "3": "kostenlose \LLieferung"
+    "4": "telefonische Begleitung \Lbei der Ersteinrichtung"
 quote-section:
   service-1:
     description: >-
@@ -733,8 +733,8 @@ stats-section:
   optional-feature-1: SIM Karte mit unbegrenztem Internet
   safety: Sicherheit rund um die Uhr
   social-integration: Soziale Integration
-  sub-heading-1: 'Obligatorisch in jedem Plan  enthalten:'
-  sub-heading-2: 'Optional:'
+  sub-heading-1: "Obligatorisch in jedem Plan  enthalten:"
+  sub-heading-2: "Optional:"
   text: >-
     Melli nimmt ihre Nutzer an die Hand und gestaltet zusammen mit ihnen einen
     aktiven und abwechslungsreichen Alltag: Gemeinschaft und der Kontakt zu
@@ -817,15 +817,15 @@ test-faq:
   question-8: Kann ich Melli selbst initiierte Befehle geben?
   question-9: Muss Melli immer am Strom angeschlossen bleiben?
 test-features:
-  '1':
+  "1":
     answer: Geht aktiv auf den Nutzer zu
-  '2':
+  "2":
     answer: Funktioniert auch ohne WLAN
-  '3':
+  "3":
     answer: Erkennt die Stimmung & reagiert darauf
-  '4':
+  "4":
     answer: Bedienung ohne technisches Vorwissen
-  '5':
+  "5":
     answer: Verbindet Menschen miteinander
   heading: Das unterscheidet Melli
   heading-text: von anderen Sprachassistenten
@@ -876,10 +876,10 @@ test-mission:
       ihnen neue Dinge ausprobiert und ihnen zuhört. Ihr Alltag wird schöner und
       Lebenswerter.
     title: Mehr Lebenszufriedenheit & glückliche Momente
-  heading-1: 'Mellis Mission:'
+  heading-1: "Mellis Mission:"
   heading-2: "Jeden deiner Tage \Lzu den guten zählen lassen!"
 test-quotes:
-  data-privacy: '*Aus Datenschutzgründen haben wir die Namen unserer Testnutzer geändert.'
+  data-privacy: "*Aus Datenschutzgründen haben wir die Namen unserer Testnutzer geändert."
   heading: Das sagen unsere Testnutzer
   name-1: Irmgard* (69 Jahre), Nutzerin
   name-2: Walter* (73 Jahre), Nutzer
@@ -902,9 +902,9 @@ test-quotes-section:
   heading: Das sagen unsere Testnutzer
 test-routine:
   fifth: Du bist aufgeschlossen gegenüber Technik.
-  first: ' Du bist 60 Jahre oder älter.*'
+  first: " Du bist 60 Jahre oder älter.*"
   fourth: Du hast eher wenige soziale Kontakte.
-  second: ' Du besitzt den Pflegegrad eins oder zwei.'
+  second: " Du besitzt den Pflegegrad eins oder zwei."
   text: Finde heraus, ob du als Testnutzer geeignet bist!
   third: Du bist alleinstehend und/oder lebst allein.*
 test-timeline:
@@ -947,8 +947,8 @@ test-user-subscription:
     dich, deine Eltern oder Großeltern jetzt als Testnutzer und hilf uns, mit
     Melli das Leben von Senioren und ihren Angehörigen ein Stück besser zu
     machen.
-  heading1: 'Jetzt als Testnutzer bewerben '
-  heading2: '& Melli ein Leben lang kostenlos nutzen.'
+  heading1: "Jetzt als Testnutzer bewerben "
+  heading2: "& Melli ein Leben lang kostenlos nutzen."
 test-why-become-testuser:
   feature-1:
     text: >-
