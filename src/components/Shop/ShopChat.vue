@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core'
-import { fireBuyEvent, fireChatShopEvent } from '~/google-tag-manager';
+import { fireBuyEvent, fireChatShopEvent } from '~/google-tag-manager'
 const props = defineProps<{ setPrice: (price: StripePrice) => void; showBuyBotton: (show: boolean) => void }>()
 
 const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg')
@@ -32,12 +32,12 @@ watchEffect(() => {
     const n = choices[idx].findIndex(choice => choice === answer)
     return acc + (n !== -1 ? n : 0) * (2 ** (2 - idx))
   }, 0)
-  if (answers.value[0] === '') {
+  if (answers.value[0] === '')
     props.setPrice({ price: 0, wlan: false, onetime: false, stripeId: '' })
-  } else {
+
+  else
     props.setPrice(options[priceIndex.value])
 
-  }
   props.showBuyBotton(!answers.value.includes(''))
 })
 
@@ -63,7 +63,7 @@ const questions = [
   {
     question: 'Zu Melli gehört ein Tablet. Möchtest du das Gerät mieten oder einmalig kaufen?',
     options: [
-      { label: 'Einmalig kaufen', value: 'onetime', label2: '149,00€' },
+      { label: 'Einmalig kaufen', value: 'onetime', label2: '175,00€' },
       { label: 'Monatlich mieten', value: 'installments', label2: '+8€/Monat' },
     ],
     onPick: (h: 'onetime' | 'installments') => onPick(h, 2),
@@ -93,9 +93,9 @@ const showErrorMessage = ref(false)
 
 function submitBuy() {
   showErrorMessage.value = true
-  if (!answers.value.includes('')) {
-    window.open(options[priceIndex.value].stripeId, '_blank');
-  }
+  if (!answers.value.includes(''))
+    window.open(options[priceIndex.value].stripeId, '_blank')
+
   fireBuyEvent()
 }
 </script>
@@ -125,7 +125,7 @@ function submitBuy() {
           </p>
         </div>
         <p v-if="answers[2] === 'onetime'" class="font-medium">
-          + €149,00 Tablet / einmalig
+          + €175,00 Tablet / einmalig
         </p>
       </div>
       <hr v-if="answers[0] !== ''">
@@ -143,8 +143,8 @@ function submitBuy() {
         class="text-center text-white w-full h-full px-2 py-4 rounded-lg" @click="submitBuy">
         30 Tage kostenlos testen
       </button>
-      <span class="flex gap-1.5 text-sm items-center text-danger-500" v-if="answers.includes('') && showErrorMessage">
-        <div class="i-lucide:info w-6 h-6"></div>Konfiguriere zuerst dein Melli-Abo im Chat
+      <span v-if="answers.includes('') && showErrorMessage" class="flex gap-1.5 text-sm items-center text-danger-500">
+        <div class="i-lucide:info w-6 h-6" />Konfiguriere zuerst dein Melli-Abo im Chat
       </span>
     </div>
   </div>

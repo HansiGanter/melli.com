@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { breakpointsTailwind } from '@vueuse/core'
-import { fireBuyEvent } from '~/google-tag-manager';
+import { fireBuyEvent } from '~/google-tag-manager'
 const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg')
 
 interface StripePrice { price: number; wlan: boolean; onetime: boolean; stripeId: string }
@@ -17,9 +17,9 @@ const showErrorMessage = ref(false)
 
 function submitBuy() {
   showErrorMessage.value = true
-  if (show.value) {
-    window.open(price.value.stripeId, '_blank');
-  }
+  if (show.value)
+    window.open(price.value.stripeId, '_blank')
+
   fireBuyEvent()
 }
 </script>
@@ -37,7 +37,7 @@ function submitBuy() {
             <span class="text-xs font-medium">/ Monat</span>
           </p>
           <p v-if="price.onetime" class=" text-xs font-medium">
-            + €149,00 Tablet (einmalig)
+            + €175,00 Tablet (einmalig)
           </p>
         </div>
         <!-- <a v-if="show" target="_blank" :href="price.stripeId"
@@ -50,8 +50,8 @@ function submitBuy() {
           30 Tage kostenlos testen
         </button>
       </div>
-      <span class="flex gap-1.5 text-sm items-center text-danger-500" v-if="!show && showErrorMessage">
-        <div class="i-lucide:info w-6 h-6"></div>Konfiguriere zuerst dein Melli-Abo im Chat
+      <span v-if="!show && showErrorMessage" class="flex gap-1.5 text-sm items-center text-danger-500">
+        <div class="i-lucide:info w-6 h-6" />Konfiguriere zuerst dein Melli-Abo im Chat
       </span>
     </div>
   </Container>
