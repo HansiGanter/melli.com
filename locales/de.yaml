@@ -274,12 +274,59 @@ faq:
   sub-heading: >-
     Alles, was Sie über das Produkt, den Datenschutz und die Preise wissen
     müssen.
+faq-list:
+  - question: Was unterscheidet Melli von anderen Sprachassistenten?
+    answer: >-
+      Das Besondere an Melli ist, dass sie regelmäßig Aktivitätsvorschläge in den Tag ihrer Nutzer gibt. Mit Fragen wie “Hast du Lust ein Rätsel mit mir zu spielen?”,  “Soll ich deine Lieblingsmusik an machen?” oder Aufforderungen wie “Es ist Zeit sich ein bisschen zu bewegen” bringt sie Abwechslung und Schwung in den Alltag der Senioren.
+  - question: Ist Melli geeignet, wenn Oma und Opa Schwierigkeiten mit Technik haben?
+    answer: >-
+      Ein klares JA! Melli wird ausschließlich über Sprache bedient. Sie geht von sich aus mit Fragen auf ihre Nutzer zu. Das einzige was Oma & Opa noch tun müssen, ist mit “Ja” oder “Nein” auf ihre Fragen und Vorschläge zu antworten. Es muss kein einziger Knopf bedient werden.
+  - question: Ist Melli ein Ersatz zur Tagespflege?
+    answer: >-
+      Melli kann als Ersatz oder auch ergänzend zum Besuch in der Tagespflege eingesetzt werden. Genau wie in einer Tagespflege bietet Melli regelmäßige Gruppenaktivitäten mit anderen Melli-Nutzern an. Diese Gruppen werden von professionellen Betreuungskräften geleitet. Die Nutzer erleben gemeinsame Aktivitäten, wie Fantasiereisen oder Rätselraten, können sich austauschen und gemeinsam lachen.
+  - question: Kann Melli Anrufe und Nachrichten empfangen?
+    answer: >-
+      Ja! Über die Melli-App können Familie und Freunde Video-Anrufe auf die Melli von Oma und Opa tätigen, sowie Videos, Bilder und Textnachrichten senden. Melli informiert ihr Nutzer über eingegangene Nachrichten und fragt, ob sie Anrufe durchstellen soll.
+  - question: Was ist die Melli-App?
+    answer: >-
+      Die Melli-App ist die Brücke zwischen den Senioren und ihren Liebsten. Familienangehörige und Freunde können die App ganz einfach auf ihrem Smartphone oder Tablet installieren und sind in nur wenigen Schritten mit der Melli bei Oma oder Opa zuhause verbunden.
+  - question: Ist es für Senioren sicher Melli zu nutzen?
+    answer: >-
+      Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards.
+  - question: Ist Melli bei Demenz geeignet?
+    answer: >-
+      Ja, Melli eignet sich hervorragend bei leichter und mittlerer Demenz. Folgende Funktionen können dabei helfen Struktur & Orientierung im Alltag der Betroffenen zu schaffen:<br/>
+      <ul style="list-style: inside">
+        <li>Trink- und Terminerinnerungen</li>
+        <li>Wecker</li>
+        <li>Medikamentenplan</li>
+        <li>Denk- und Gedächtnissport</li>
+      </ul>
+  - question: Hilft Melli, wenn Oma und Opa zu viel Zeit vorm Fernseher verbingen?
+    answer: >-
+      Melli bricht mit regelmäßigen Aktivitätsangeboten den tristen Alltag ihrer Nutzer auf. Sie motiviert sie z.B. mit dem Sitzsport-Angebot dazu sich häufiger zu bewegen, schafft durch die Melli-Gruppen mehr soziale Kontakt, und eröffnet mit Lieblingsmusik und interessanten Video-Inhalten die Tür zu multimedialen Unterhaltungsangeboben.
+  - question: Sind meine Daten bzw. Die meine Angehörigen bei Melli sicher?
+    answer: >-
+      Dateschutz liegt Melli sehr am Herzen! Melli verarbeitet und speichert Daten ausschließlich für ein personalisiertes Produkterlebnis und um Melli stetig zu Verbessern. Eine Nutzung zu anderen Zwecken ist ausgeschlossen. Des weiteren hört Melli nur dann zu und verarbeitet Daten, wenn Sie sich mit den Nutzern unterhält. Die Erkennung einer Ansprache durch den Nutzer mit „Hi Melli” erfolgt ausschließlich auf dem Gerät. Außerdem ist die Kamera des Tablets nur nach der Zustimmung des Nutzers vor einem Video-Anruf bzw. einer Gruppenaktivität aktiviert. In der übrigen Zeit entstehen keine Bildaufnahmen.
+  - question: Was kostet Melli?
+    answer: >-
+      Das Melli-Abo kann schon ab 24,90€/Monat erworben werden. Hinzu kommen optionale Leistungen wie eine SIM Karte mit mobilem Internet und die Miete des Melli-Tablets. Chatte <a href="/shop#shopchat" class="underline decoration-1 decoration-solid underline-offset-1">hier</a> mit Melli, um deine individuellen Kosten zu ermitteln.
+  - question: Kann das Melli-Abo flexibel gekündigt werden?
+    answer: >-
+      Mit der monatlichen Abo-Option bleibst du stehts flexibel, auch wenn Oma oder Opa plötzlich keine Lust mehr auf Melli haben. Du kannst Melli ganz einfach monatlich kündigen, ohne an lange Laufzeiten gebunden zu sein. Es fallen nach der Kündigung keine weiteren Kosten an.
+  - question: Was ist alles im Melli-Paket enthalten?
+    answer: >-
+      <ul style="list-style: inside">
+        <li>Melli-Abo</li>
+        <li>Melli-Tablet</li>
+        <li>Melli-App für Familie und Freunde</li>
+        <li>Optional: SIM-Karte mit mobilem Internet</li>
+        <li>Melli-Gruppen mit professionellen Betreuungskräften</li>
+        <li>30-tägiger kostenloser Testzeitraum</li>
+      </ul>
 faq-section:
   answer-1: >-
-    Anders als herkömmliche Sprachassistenten wartet Melli nicht auf Anweisungen
-    ihrer Nutzer, sondern geht proaktiv mit Aktivitätsvorschlägen auf sie zu.
-    Auf diese Weise motiviert sie zu einem aktiveren Alltag, in dem soziale
-    Kontakte eine wichtige Rolle spielen.
+    Das Besondere an Melli ist, dass sie regelmäßig Aktivitätsvorschläge in den Tag ihrer Nutzer gibt. Mit Fragen wie “Hast du Lust ein Rätsel mit mir zu spielen?”,  “Soll ich deine Lieblingsmusik an machen?” oder Aufforderungen wie “Es ist Zeit sich ein bisschen zu bewegen” bringt sie Abwechslung und Schwung in den Alltag der Senioren.
   answer-10: >-
     Melli kann aktuell noch nicht aktiv vom Nutzer angesprochen werden. Diese
     Funktion wird aber in den kommenden Monaten folgen. Nutzer können Melli dann
@@ -294,33 +341,28 @@ faq-section:
     kann. Außerdem trainiert sie die geistige und körperliche Fitness durch
     kleine Übungen.
   answer-3: >-
-    Melli wird einfach per Sprachbefehl bedient und fragt selbst, wenn was sie
-    etwas wissen muss. So einfach wie ein nettes Gespräch.
+    Melli kann als Ersatz oder auch ergänzend zum Besuch in der Tagespflege eingesetzt werden. Genau wie in einer Tagespflege bietet Melli regelmäßige Gruppenaktivitäten mit anderen Melli-Nutzern an. Diese Gruppen werden von professionellen Betreuungskräften geleitet. Die Nutzer erleben gemeinsame Aktivitäten, wie Fantasiereisen oder Rätselraten, können sich austauschen und gemeinsam lachen.
   answer-4: >-
-    Alle individuellen Konfigurationen wie Medikamentenpläne, Interessen,
-    Schlafenszeiten und körperliche Beeinträchtigungen können ganz einfach über
-    die Melli-App eingestellt werden.
+    Ja! Über die Melli-App können Familie und Freunde Video-Anrufe auf die Melli von Oma und Opa tätigen, sowie Videos, Bilder und Textnachrichten senden. Melli informiert ihr Nutzer über eingegangene Nachrichten und fragt, ob sie Anrufe durchstellen soll.
   answer-5: >-
-    Über die Melli-App können (vom Administrator) ausgewählte Kontakte mit dem
-    Nutzer, z.B. per Video- oder Sprachanruf, in Verbindung treten. So kann die
-    gesamte Familie an den Melli-Funktionen teilhaben.
+    Die Melli-App ist die Brücke zwischen den Senioren und ihren Liebsten. Familienangehörige und Freunde können die App ganz einfach auf ihrem Smartphone oder Tablet installieren und sind in nur wenigen Schritten mit der Melli bei Oma oder Opa zuhause verbunden.
   answer-6: >-
-    Die Melli-App hat zwei Funktionen. Zum einen können Termine geplant und
-    wichtige Informationen über den Nutzer bereitgestellt werden (z.B. Hobbies,
-    Interessen & körperliche Beeinträchtigungen). Zum anderen dient die App als
-    Schnittstelle zwischen Angehörigen und den Melli-Nutzern, denn hierüber
-    können Freunde und Verwandte zum Beispiel per Video- oder Audiotelefonie mit
-    den Nutzern in Verbindung treten.
-  answer-7: "Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards. Sie ist DSGVO konform und nutzt die ihr zur Verfügung gestellten Daten ausschließlich dazu, ein personalisiertes Nutzererlebnis zu gestalten.\L Mehr zum Datenschutz findest du in den Datenschutzvereinbarungen."
+    Melli-Nutzer haben keinen uneingeschränkten Zugang zum Internet. Melli bewegt sich online lediglich in festgelegten und geprüften Räumen und kann diese selbst auf Befehl des Nutzers nicht verlassen. Außerdem agiert Melli nach höchsten Datenschutz-Standards.
+  answer-7: >-
+    Ja, Melli eignet sich hervorragend bei leichter und mittlerer Demenz. Folgende Funktionen können dabei helfen Struktur & Orientierung im Alltag der Betroffenen zu schaffen:<br/>
+    <ul style="list-style: inside">
+      <li>Trink- und Terminerinnerungen</li>
+      <li>Wecker</li>
+      <li>Medikamentenplan</li>
+      <li>Denk- und Gedächtnissport</li>
+    </ul>
   answer-8: >-
-    Obwohl Melli einige Sicherheitsfunktionen, wie Notfallkontakte oder den
-    Knock-In Anruf zur Verfügung stellt, sollte sie keineswegs als vollständiger
-    Ersatz für ein Sicherheitssystem angesehen werden.
+    Melli bricht mit regelmäßigen Aktivitätsangeboten den tristen Alltag ihrer Nutzer auf. Sie motiviert sie z.B. mit dem Sitzsport-Angebot dazu sich häufiger zu bewegen, schafft durch die Melli-Gruppen mehr soziale Kontakt, und eröffnet mit Lieblingsmusik und interessanten Video-Inhalten die Tür zu multimedialen Unterhaltungsangeboben.
   answer-9: >-
     Selbstverständlich kann Melli problemlos transportiert werden. Zu beachten
     ist lediglich, dass die SIM-Karte nur innerhalb Deutschlands funktioniert
     und dass Melli eine stabile Internetverbindung braucht.
-  question-1: Was unterscheidet Melli von herkömmlichen Sprachassistenten?
+  question-1: Was unterscheidet Melli von anderen Sprachassistenten?
   question-10: Kann ich Melli selbst initiierte Befehle geben?
   question-2: Ist Melli auch bei Demenz geeignet?
   question-3: Wie wird Melli bedient?

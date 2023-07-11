@@ -6,56 +6,19 @@ import {
 } from '@headlessui/vue'
 import { fireCallbackOpenEvent, fireFAQEvent } from '~/google-tag-manager'
 
-const { t } = useI18n()
-
+const { t, te } = useI18n()
 const callbackModalOpen = ref(false)
 
-const aboutMelli = [
-  {
-    question: t('faq-section.question-1'),
-    answer: t('faq-section.answer-1'),
-  },
-  {
-    question: t('faq-section.question-2'),
-    answer: t('faq-section.answer-2'),
-  },
-  {
-    question: t('faq-section.question-3'),
-    answer: t('faq-section.answer-3'),
-  },
-  {
-    question: t('faq-section.question-4'),
-    answer: t('faq-section.answer-4'),
-  },
-  {
-    question: t('faq-section.question-5'),
-    answer: t('faq-section.answer-5'),
-  },
-  {
-    question: t('faq-section.question-6'),
-    answer: t('faq-section.answer-6'),
-  },
-  {
-    question: t('faq-section.question-7'),
-    answer: t('faq-section.answer-7'),
-    link: {
-      text: 'hier',
-      url: '/datenschutz',
-    },
-  },
-  {
-    question: t('faq-section.question-8'),
-    answer: t('faq-section.answer-8'),
-  },
-  {
-    question: t('faq-section.question-9'),
-    answer: t('faq-section.answer-9'),
-  },
-  {
-    question: t('faq-section.question-10'),
-    answer: t('faq-section.answer-10'),
-  },
-]
+const faqs: { question: string; answer: string }[] = []
+for (let i = 0; i < 99; i++) {
+  const key_question = `faq-list.${i}.question`
+  const key_answer = `faq-list.${i}.answer`
+
+  if (te(key_question) && te(key_answer))
+    faqs.push({ question: t(key_question), answer: t(key_answer) })
+  else
+    continue
+}
 
 const technicalDetails = [
   {
@@ -98,7 +61,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
             Alles über Melli
           </h3>
           <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
-            <Disclosure v-for="(faq, index) in aboutMelli" :key="index" v-slot="{ open }" as="div" class="py-2"
+            <Disclosure v-for="(faq, index) in faqs" :key="index" v-slot="{ open }" as="div" class="py-2"
               @click="fireFAQEvent(faq.question)">
               <DisclosureButton
                 class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
@@ -112,9 +75,7 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                 leave-to-class="transform scale-95 opacity-0">
                 <DisclosurePanel
                   class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                  <span>{{ faq.answer }} <router-link v-if="faq.link" :to="faq.link.url" target="_blank"
-                      class="underline decoration-1 decoration-solid underline-offset-1">{{ faq.link.text
-                      }}.</router-link></span>
+                  <span v-html="faq.answer" />
                 </DisclosurePanel>
               </transition>
             </Disclosure>

@@ -1,40 +1,16 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, te } = useI18n()
 
-const faqs = [
-  {
-    question: t('faq-section.question-1'),
-    answer: t('faq-section.answer-1'),
-  },
-  {
-    question: t('faq-section.question-2'),
-    answer: t('faq-section.answer-2'),
-  },
-  {
-    question: t('faq-section.question-3'),
-    answer: t('faq-section.answer-3'),
-  },
-  {
-    question: t('faq-section.question-4'),
-    answer: t('faq-section.answer-4'),
-  },
-  {
-    question: t('faq-section.question-5'),
-    answer: t('faq-section.answer-5'),
-  },
-  {
-    question: t('faq-section.question-6'),
-    answer: t('faq-section.answer-6'),
-  },
-  {
-    question: t('faq-section.question-7'),
-    answer: t('faq-section.answer-7'),
-  },
-  {
-    question: t('faq-section.question-8'),
-    answer: t('faq-section.answer-8'),
-  },
-]
+const faqs: { question: string; answer: string }[] = []
+for (let i = 0; i < 99; i++) {
+  const key_question = `faq-list.${i}.question`
+  const key_answer = `faq-list.${i}.answer`
+
+  if (te(key_question) && te(key_answer))
+    faqs.push({ question: t(key_question), answer: t(key_answer) })
+  else
+    continue
+}
 </script>
 
 <template>
@@ -46,7 +22,8 @@ const faqs = [
     </div>
     <div>
       <div v-for="(faq, index) in faqs" :key="index">
-        <FaqElement :question="faq.question" :answer="faq.answer" /><hr v-if="index !== faqs.length - 1">
+        <FaqElement :question="faq.question" :answer="faq.answer" />
+        <hr v-if="index !== faqs.length - 1">
       </div>
     </div>
   </div>
