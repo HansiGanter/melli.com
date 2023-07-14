@@ -54,7 +54,7 @@ const coreBenefits = [
 
 <template>
   <Container id="kultur" class="py-12 lg:py-24 bg-gray-50 rounded-[32px]">
-    <div class="grid gap-24">
+    <div class="grid gap-24 px-6 sm:px-0">
       <div class="grid gap-16">
         <div class="grid gap-6 justify-items-center mx-auto">
           <h1 class="font-semibold text-gray-900 text-4xl lg:text-5xl">
@@ -66,7 +66,8 @@ const coreBenefits = [
           </button> -->
         </div>
         <div class="mx-auto grid gap-6 lg:gap-10 md:grid-cols-2 md:max-w-none lg:grid-cols-2">
-          <div v-for="coreBenefit in coreBenefits" :key="coreBenefit.title" class="flex lg:flex-row flex-col gap-6 items-start">
+          <div v-for="coreBenefit in coreBenefits" :key="coreBenefit.title"
+            class="flex lg:flex-row flex-col gap-6 items-start">
             <img :src="coreBenefit.image" class="w-12 lg:w-24 h-12 lg:h-24">
             <div class="grid gap-1 text-black text-xl">
               <h5 class="font-semibold">
@@ -84,9 +85,11 @@ const coreBenefits = [
               Deine Benefits
             </h1>
             <p class="font-medium text-xl lg:text-2xl text-black">
-              Was erwartet dich bei uns? Mach dir ein Bild von uns und lies selbst, ob unsere Benefits, Arbeitsatmosphäre und unser Teamspirit zu deinen Vorstellungen passen:
+              Was erwartet dich bei uns? Mach dir ein Bild von uns und lies selbst, ob unsere Benefits, Arbeitsatmosphäre
+              und unser Teamspirit zu deinen Vorstellungen passen:
             </p>
-            <router-link to="#jobangebote" class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
+            <router-link to="#jobangebote"
+              class="bg-primary-900 text-medium text-base text-white w-fit flex items-center py-2.5 px-4 rounded-full gap-2">
               <span>zu den Jobangeboten</span>
               <div class="i-carbon:arrow-right w-5 h-5" />
             </router-link>
@@ -94,21 +97,24 @@ const coreBenefits = [
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 content-start">
             <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start gap-4 w-fit">
               <div :class="benefit.icon" class="text-tertiary-500 w-12 h-12" />
-              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title }}</strong> {{ benefit.text }}</span>
+              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title
+              }}</strong> {{ benefit.text }}</span>
             </div>
           </div>
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 lg:gap-11 items-center">
         <div class="w-44 h-44 rounded-full mx-auto overflow-hidden">
-          <img src="https://assets.melli.com/images/images/team/melli_team_sherin-02-1024.webp" class="object-cover h-44 w-44">
+          <img src="https://assets.melli.com/images/team/matthias-weber-circle-1024.webp" class="object-cover h-44 w-44">
         </div>
-        <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20" style="background-image: url('/assets/bubble_bg.png')">
+        <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20"
+          style="background-image: url('/assets/bubble_bg.png')">
           <h5 class="font-medium text-primary-900 text-2xl lg:text-3xl">
-            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugst dich selbst davon! Bewirb dich einfach direkt oder ruf mich an unter
-            <span class="text-primary-400">+49 1579 2451235</span>.”
+            “Ich könnte dir noch so viel mehr über Melli und das Team erzählen, aber am besten du überzeugst dich selbst
+            davon! Bewirb dich einfach direkt oder ruf uns an unter
+            <a href="tel:+4915792451235" class="text-primary-400 hover:underline">+49&nbsp;1579&nbsp;2451235</a>.”
           </h5>
-          <span class="font-semibold text-gray-500 text-base">Sherin Berdatz</span>
+          <span class="font-semibold text-gray-500 text-base">Matthias Weber</span>
         </div>
       </div>
     </div>
@@ -119,18 +125,22 @@ const coreBenefits = [
 .flip-card {
   perspective: 1000px;
 }
+
 .flip-card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .flip {
   transform: rotateY(180deg);
 }
+
 .flip-card-front,
 .flip-card-back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .flip-card-back {
   transform: rotateY(180deg);
 }

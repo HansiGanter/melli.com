@@ -28,7 +28,7 @@ const faqs = [
 
 <template>
   <Container class="py-12 lg:py-24 bg-primary-100">
-    <div class="grid gap-8 lg:gap-16 mx-auto items-center">
+    <div class="grid gap-8 lg:gap-16 mx-auto items-center px-6 sm:px-0">
       <div class="grid gap-4 lg:gap-6">
         <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
           {{ t('faq.heading') }}
@@ -37,58 +37,57 @@ const faqs = [
       <div>
         <div class="grid grid-cols-1 divide-y divide-gray-300 mb-2">
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.1.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>{{ t('karriere-faq.1.answer') }} <a href="/karriere/#kultur" class="underline decoration-1 decoration-solid underline-offset-1">unsere Kultur</a>.</span>
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                <span>{{ t('karriere-faq.1.answer') }} <a href="/karriere/#kultur"
+                    class="underline decoration-1 decoration-solid underline-offset-1">unsere Kultur</a>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.2.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                 <span>{{ t('karriere-faq.2.answer') }}</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.3.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                 <span>Zwei Punkte sind uns wichtig:</span>
                 <p>
-                  Es hört sich einfacher an, als getan: Sei du selbst! Uns ist es wichtig, dass wir ein Bild von dir als Person, deinem Charakter und
+                  Es hört sich einfacher an, als getan: Sei du selbst! Uns ist es wichtig, dass wir ein Bild von dir als
+                  Person, deinem Charakter und
                   Fähigkeiten erhalten. Und das geht am Besten wenn du DU SELBST bist.
                 </p>
                 <p>Was möchtest du mit uns und bei uns bewirken?</p>
@@ -96,41 +95,42 @@ const faqs = [
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.4.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>{{ t('karriere-faq.4.answer') }} <a href="/karriere/initiativbewerbung" class="underline decoration-1 decoration-solid underline-offset-1">jetzt bewerben</a>.</span>
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                <span>{{ t('karriere-faq.4.answer') }} <a href="/karriere/initiativbewerbung"
+                    class="underline decoration-1 decoration-solid underline-offset-1">jetzt bewerben</a>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.5.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                 <span>{{ t('karriere-faq.5.answer') }}</span>
                 <ul class="list-alpha list-inside">
                   <li>Telefoninterview – mit unserem Recruiting-Team</li>
-                  <li>Videointerview und ein kleiner Case den es zu lösen gilt – mit den Teamleads der jeweilien Abteilung</li>
+                  <li>
+                    Videointerview und ein kleiner Case den es zu lösen gilt – mit den Teamleads der jeweilien Abteilung
+                  </li>
                   <li>Abschließendes Videointerview – mit den Geschäftsführern</li>
                 </ul>
                 <p>Je nach Position kann dieser Ablauf aber auch variieren.</p>
@@ -138,37 +138,39 @@ const faqs = [
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.6.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
-                <span>Keine Sorge – schick uns gerne eine <a href="/karriere/initiativbewerbung" class="underline decoration-1 decoration-solid underline-offset-1">Initiativbewerbung</a> oder bleib auf dem Laufenden mit unserem <button class="cursor-pointer underline decoration-1 decoration-solid underline-offset-1" @click="openDialog">Job Alert</button>.</span>
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+                <span>Keine Sorge – schick uns gerne eine <a href="/karriere/initiativbewerbung"
+                    class="underline decoration-1 decoration-solid underline-offset-1">Initiativbewerbung</a> oder bleib
+                  auf dem Laufenden mit unserem <button
+                    class="cursor-pointer underline decoration-1 decoration-solid underline-offset-1"
+                    @click="openDialog">Job Alert</button>.</span>
               </DisclosurePanel>
             </transition>
           </Disclosure>
           <Disclosure v-slot="{ open }" as="div" class="py-2">
-            <DisclosureButton class="font-medium text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
-              <div :class="open ? 'transform rotate-90' : ''" class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
+            <DisclosureButton
+              class="font-medium text-lg sm:text-2xl w-full flex lg:items-center justify-between lg:justify-start items-start gap-2.5 py-2 text-gray-900">
+              <div :class="open ? 'transform rotate-90' : ''"
+                class="i-carbon:chevron-right text-primary-400 transition ease-in min-h-8 min-w-8 order-2 lg:order-1" />
               <span class="text-left order-1 lg:order-2">{{ t('karriere-faq.7.question') }}</span>
             </DisclosureButton>
-            <transition
-              enter-active-class="transition duration-100 ease-in"
-              enter-from-class="transform scale-95 opacity-0"
-              enter-to-class="transform scale-100 opacity-100"
-              leave-active-class="transition duration-75 ease-out"
-              leave-from-class="transform scale-100 opacity-100"
-              leave-to-class="transform scale-95 opacity-0"
-            >
-              <DisclosurePanel v-if="open" class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
+            <transition enter-active-class="transition duration-100 ease-in"
+              enter-from-class="transform scale-95 opacity-0" enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-out" leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0">
+              <DisclosurePanel v-if="open"
+                class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                 <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                   <div class="grid gap-1 content-start">
                     <span class="font-semibold text-gray-600">Frontend</span>
