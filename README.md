@@ -36,6 +36,26 @@ Build bundled app:
 ```
 pnpm build
 ```
+
+## Data privacy
+
+Gregor generates a `datenschutz.html` using [AdSimple](https://www.adsimple.de/).
+
+You can convert the generated `html` to `md` using pandoc:
+
+```
+cat << EOF > datenschutz.md
+---
+title: Datenschutz­erklärung
+href: legal
+---
+
+EOF
+sed -r 's/ class="[^"]*"//g' datenschutz.html | pandoc -f markdown-auto_identifiers -f html -t markdown >> datenschutz.md
+```
+
+Don't forget to include the header tag and search the diff for manual changes.
+
 ## Used Technologies
 
 Based on [Vitesse template](https://github.com/antfu/vitesse)

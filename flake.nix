@@ -17,6 +17,7 @@
           buildInputs = [
             nodejs-16_x
             nodePackages.pnpm
+            pandoc # convert generated datenschutz-melli.html to md
           ];
         };
         packages.container =
