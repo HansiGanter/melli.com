@@ -12,12 +12,23 @@
     flake-utils.lib.eachDefaultSystem (system:
       with nixpkgs.legacyPackages.${system};
       {
-        devShell = mkShell {
+        devShells.default = mkShell {
           nativeBuildInputs = [ bashInteractive ];
           buildInputs = [
             nodejs-16_x
             nodePackages.pnpm
-            pandoc # convert generated datenschutz-melli.html to md
+            pandoc # convert generated datenschutz-melli.html to markdown
+          ];
+        };
+        devShells.nextcloud = mkShell {
+          nativeBuildInputs = [ bashInteractive ];
+          buildInputs = [
+            (writeShellScriptBin "pnpm" ''
+              echo -e "\e[31mYOU ARE IN THE NEXTCLOUD - CANNOT USE \e[1mpnpm\e[0m\e[31m HERE\e[0m"
+            '')
+            (writeShellScriptBin "npm" ''
+              echo -e "\e[31mNO HANSI, PLEASE ALSO NOT USE \e[1mnpm\e[0m\e[31m HERE\e[0m"
+            '')
           ];
         };
         packages.container =
