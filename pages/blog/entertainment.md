@@ -8,7 +8,7 @@ author:
     imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
 date: 2023-06-02
 readingTime: 8min
-imageUrl: https://assets.melli.com/images/own-content/melli-image-testimonial-gisla-2-2048.webp
+imageUrl: https://assets.melli.com/images/testimonials/gisla-2-2048.webp
 articleRecommendations: ['/blog/unterhaltung', '/blog/struktur', '/blog/soziale-kontakte']
 ---
 

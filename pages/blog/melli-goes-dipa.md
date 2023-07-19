@@ -8,7 +8,7 @@ author:
     imageUrl: https://assets.melli.com/images/team/stefan-buchkremer-2.webp
 date: 2023-05-15
 readingTime: 9min
-imageUrl: https://assets.melli.com/images/own-content/melli-image-testimonial-helga-7-v2-2048.webp
+imageUrl: https://assets.melli.com/images/testimonials/helga-7-v2-2048.webp
 articleRecommendations: ['/blog/struktur', '/blog/interview-schuldt', '/blog/unterhaltung']
 ---
 
