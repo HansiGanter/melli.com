@@ -9,6 +9,9 @@ const submitFunction = async (e: SubmitEvent) => {
 
   await nextTick()
 
+  const utmUrlInput = document.querySelector('#UTM_URL');
+  (utmUrlInput as HTMLInputElement).value = window.location.href
+
   const emailInput = document.querySelector('#EMAIL');
   (emailInput as HTMLInputElement).value = email.value
   if (e.submitter?.id === 'perPost') {
@@ -55,9 +58,15 @@ const submitFunction = async (e: SubmitEvent) => {
   </form>
 
   <Modal :show="showForm" @close="showForm = false">
-    <!-- Begin Sendinblue Form -->
+    <!-- Begin Brevo Form -->
+    <!-- START - We recommend to place the below code in head tag of your website html  -->
+
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <!--  END - We recommend to place the above code in head tag of your website html -->
+
     <!-- START - We recommend to place the below code where you want the form in your website html  -->
-    <div class="sib-form" style="text-align: center; background-color: #ffffff;">
+    <div class="sib-form" style="text-align: center;
+         background-color: #ffffff;                                 ">
       <div id="sib-form-container" class="sib-form-container">
         <div id="error-message" class="sib-form-message-panel"
           style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -86,28 +95,30 @@ const submitFunction = async (e: SubmitEvent) => {
         </div>
         <div></div>
         <div id="sib-container" class="sib-container--large sib-container--vertical"
-          style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:24px; border-width:0px; border-color:#c1cdda; border-style:solid; direction:ltr">
+          style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
           <form id="sib-form" method="POST"
-            action="https://ccfae1fd.sibforms.com/serve/MUIEANuQCNrO-OHEtOrTnbGWKLqX6XytMdvy4aSnV8PB93DQNj7qL89HZ98hsBxgAfKseq717O3-poFD5OJLGlHhE4oVCrN1BjzVMsxCTlq4_Eps0dd5H5O9UT4XIxFqVc-Zn-3lO5dOKOWd-auHryd0GT0I3XfCnKKZcf0_rayTTEzUpWnfZjb5ETssDwgdRSv7Fog5TCMoFpAL"
+            action="https://ccfae1fd.sibforms.com/serve/MUIFABV9SJTvUEsBggc8ZtHONafw6Z3TNDsG4MdET0yqBBxlzCQsyhw2KFhT8QfanNsarJeT_eGEb_EyoJpfTCXobvD-Q4wIX90cuqGPgK7wwuaew7IyBdr4H2Wo_pzGgcNWmWQEjrZF0ByKRKQmXShvQ_bLefNzhuRnbIPGLx74Ap7GtqExWtfCVKjsLkazQkTghgZFffYCmrXL"
             data-type="subscription">
             <div style="padding: 8px 0;">
               <div class="sib-form-block"
                 style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
-                <p>Melde dich zum Newsletter an, um dein Infopaket zu erhalten.</p>
+                <p>Lass dir dein Melli-Infopaket zuschicken!</p>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-form-block"
+                style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                <div class="sib-text-form-block">
+                  <p>Melde dich zu unserem Melli-Newsletter an, um dein Infopaket zu erhalten.</p>
+                </div>
               </div>
             </div>
             <div style="padding: 8px 0;">
               <div class="sib-input sib-form-block">
                 <div class="form__entry entry_block">
                   <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="EMAIL" data-required="*">Email-Adresse</label>
-
-                    <div class="entry__field">
-                      <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off"
-                        placeholder="max.mustermann@mail.de" data-required="true" required />
-                    </div>
+                    <input class="input " maxlength="200" type="text" id="UTM_URL" name="UTM_URL" autocomplete="off"
+                      placeholder="UTM_URL" hidden />
                   </div>
 
                   <label class="entry__error entry__error--primary"
@@ -162,101 +173,31 @@ const submitFunction = async (e: SubmitEvent) => {
                   <div class="form__label-row ">
                     <label class="entry__label"
                       style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="TELEFONNUMMER">Telefonnummer</label>
+                      for="EMAIL" data-required="*">Email-Adresse</label>
+
+                    <div class="entry__field">
+                      <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off"
+                        placeholder="max.mustermann@mail.de" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary"
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label"
+                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
+                      for="TELEFONNUMMER" data-required="*">Telefonnummer</label>
 
                     <div class="entry__field">
                       <input class="input " maxlength="200" type="text" id="TELEFONNUMMER" name="TELEFONNUMMER"
-                        autocomplete="off" placeholder="+49 170 12345678" />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div id="INFOPAKET_DIV" style="padding: 8px 0;">
-              <div class="sib-radiobutton-group sib-form-block" data-required="true">
-                <div class="form__entry entry_mcq">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="INFOPAKET" data-required="*">Wie möchtest du das Infopaket erhalten?</label>
-                    <div>
-                      <div class="entry__choice" style="">
-                        <label>
-                          <input type="radio" name="INFOPAKET" class="input_replaced" value="1" required>
-                          <span class="radio-button" style="margin-left: "></span><span
-                            style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">per
-                            Email</span> </label>
-                      </div>
-                      <div class="entry__choice" style="">
-                        <label>
-                          <input type="radio" name="INFOPAKET" class="input_replaced" value="2" required>
-                          <span class="radio-button" style="margin-left: "></span><span
-                            style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">per
-                            Post</span> </label>
-                      </div>
-                    </div>
-                  </div>
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div id="STRASSE_HAUSNUMMER_DIV" style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="STRASSE_HAUSNUMMER"><span>Straße, Hausnummer</span><span class="text-#FF4949">*</span></label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="STRASSE_HAUSNUMMER" name="STRASSE_HAUSNUMMER"
-                        autocomplete="off" placeholder="Musterstraße 1" />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div id="PLZ_DIV" style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="PLZ"><span>PLZ</span><span class="text-#FF4949">*</span></label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="PLZ" name="PLZ" autocomplete="off"
-                        placeholder="10101" />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div id="STADT_DIV" style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="STADT"><span>Ort</span><span class="text-#FF4949">*</span></label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="STADT" name="STADT" autocomplete="off"
-                        placeholder="Musterstadt" />
+                        autocomplete="off" placeholder="+49 170 12345678" data-required="true" required />
                     </div>
                   </div>
 
@@ -297,6 +238,80 @@ const submitFunction = async (e: SubmitEvent) => {
               </div>
             </div>
             <div style="padding: 8px 0;">
+              <div class="sib-form-block sib-divider-form-block">
+                <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-form-block"
+                style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#6d737b; background-color:transparent; text-align:left">
+                <div class="sib-text-form-block">
+                  <p>Fast geschafft! Jetzt benötigen wir nur noch deine Adresse, damit sich dein Infopaket auf den weg
+                    machen kann.</p>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label"
+                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
+                      for="STRASSE_HAUSNUMMER" data-required="*">Straße, Hausnummer</label>
+
+                    <div class="entry__field">
+                      <input class="input " maxlength="200" type="text" id="STRASSE_HAUSNUMMER" name="STRASSE_HAUSNUMMER"
+                        autocomplete="off" placeholder="Musterstraße 6" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary"
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label"
+                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
+                      for="PLZ" data-required="*">PLZ</label>
+
+                    <div class="entry__field">
+                      <input class="input " maxlength="200" type="text" id="PLZ" name="PLZ" autocomplete="off"
+                        placeholder="12101" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary"
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label"
+                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
+                      for="STADT" data-required="*">Stadt</label>
+
+                    <div class="entry__field">
+                      <input class="input " maxlength="200" type="text" id="STADT" name="STADT" autocomplete="off"
+                        placeholder="Berlin" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary"
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 8px 0;">
               <div class="sib-optin sib-form-block" data-required="true">
                 <div class="form__entry entry_mcq">
                   <div class="form__label-row ">
@@ -329,7 +344,7 @@ const submitFunction = async (e: SubmitEvent) => {
                     <path
                       d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
                   </svg>
-                  ANMELDEN
+                  Infopaket anfordern
                 </button>
               </div>
             </div>
@@ -340,8 +355,46 @@ const submitFunction = async (e: SubmitEvent) => {
         </div>
       </div>
     </div>
-
-    <!-- END - We recommend to place the below code where you want the form in your website html  -->
-    <!-- End Sendinblue Form -->
+    <!-- End Brevo Form -->
   </Modal>
 </template>
+
+<style scoped>
+@font-face {
+  font-display: block;
+  font-family: Roboto;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+#sib-container input:-ms-input-placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container textarea::placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+</style>
