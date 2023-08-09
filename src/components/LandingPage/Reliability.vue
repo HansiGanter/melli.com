@@ -2,95 +2,98 @@
 import { fireVideoEvent } from '~/google-tag-manager'
 const { t } = useI18n()
 
-interface ReliabilityFeatures {
-  pilltext: string
-  modaltext: string
-  icon: string
-}
-
-const features: ReliabilityFeatures[] = [
+const features = [
   {
-    pilltext: t('feature-1'),
-    modaltext: t('reliability-section.card1'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_users-thick.svg',
+    iconClass: 'i-lucide:video',
+    pilltext: 'Einfaches Videotelefonieren',
+    modaltext: 'Nutzer können über Melli Audio- und Videotelefonate mit eingespeicherten Kontakten führen. Dazu müssen sie Melli nur per Sprachbefehl dazu auffordern, die gewünschte Person anzurufen bzw. einen eingehenden Anruf anzunehmen.',
   },
   {
-    pilltext: t('feature-2'),
-    modaltext: t('reliability-section.card2'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_activity-thick.svg',
+    iconClass: 'i-lucide:image',
+    pilltext: 'Bilder & Videos teilen',
+    modaltext: 'Mit der Melli-App können Bilder und Videos auf die Melli bei Oma zuhause gesendet werden. So können Oma & Opa live beim Familienurlaub oder den ersten Schritten des Enkels dabei sein.',
   },
   {
-    pilltext: t('feature-3'),
-    modaltext: t('reliability-section.card3'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_phone-call-thick.svg',
+    iconClass: 'i-lucide:mail',
+    pilltext: 'Sprach- und Textnachrichten versenden',
+    modaltext: 'Oma & Opa kommen mit Whatsapp & Co. nicht klar? Mit Melli können sie nun auch ganz einfach Text- & Sprachnachrichten empfangen. Melli liest ihnen die Nachricht einfach vor.',
   },
 ]
 
-const showFeaturesCards = ref<ReliabilityFeatures>()
+const featureToShowDetails = ref<(typeof features)[number]>()
 
-const reliabilityvideo = ref()
-const isPlaying = ref(false)
-const playVideo = () => {
-  if (reliabilityvideo.value.paused) {
-    reliabilityvideo.value.play()
-    isPlaying.value = true
-  }
-  else {
-    reliabilityvideo.value.pause()
-    isPlaying.value = false
-  }
-}
+const videoElement = ref()
+const startedVideo = ref(false)
 
-const openVideo = () => {
-  fireVideoEvent('gemeinschaft')
-  playVideo()
+const startVideo = (event: Event) => {
+  if (!startedVideo.value) {
+    fireVideoEvent('gemeinschaft')
+    startedVideo.value = true
+    videoElement.value.play()
+    event.preventDefault()
+  }
 }
 </script>
 
 <template>
-  <!-- Add green color here if necessary -->
-  <div class="grid gap-8 lg:gap-16 mx-auto items-center">
-    <div class="grid gap-4 lg:gap-6 sm:text-center max-w-2xl mx-auto justify-items-center">
-      <h1 class="text-gray-900 font-semibold text-4xl lg:text-5xl">
-        {{ t('reliability-section.heading') }}
-      </h1>
-    </div>
-    <div class="grid gap-8 order-2 lg:order-1  bg-primary-100 px-6 lg:px-16 pt-10 lg:pt-16 pb-16 lg:pb-96">
-      <div class="grid gap-14 w-full lg:w-2/3">
-        <p class="w-full lg:w-3/4 font-normal text-xl">
+  <Modal :show="!!featureToShowDetails" @close="featureToShowDetails = undefined">
+    <Container v-if="featureToShowDetails" class="py-8 max-w-3xl shadow-md">
+      <div class="w-8 h-8">
+        <svg class="absolute w-8 h-8" width="95" height="79" viewBox="0 0 95 79" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M78.2681 77.7424C63.4915 82.3205 58.1262 73.5713 43.3495 64.822C17.1384 49.3024 -5.99372 48.1372 1.39451 25.7554C6.18247 11.2507 16.9627 11.9193 38.424 8.1551C59.8853 4.39087 61.2046 -3.03585 72.551 1.3388C83.8973 5.71344 78.2681 16.0905 89.6144 35.2168C100.961 54.3432 93.0447 73.1643 78.2681 77.7424Z"
+            fill="amber-400" />
+        </svg>
+        <div :class="featureToShowDetails.iconClass" class="w-8 h-8" />
+      </div>
+      <p class="font-semibold pt-4 py-2 text-xl">
+        {{ featureToShowDetails.pilltext }}
+      </p>
+      <p class="text-xl">
+        {{ featureToShowDetails.modaltext }}
+      </p>
+    </Container>
+  </Modal>
+
+  <div class="grid gap-16 mx-auto items-center my-12">
+    <h1 class="text-gray-900 text-center font-semibold text-4xl lg:text-5xl max-w-xl mx-auto">
+      {{ t('reliability-section.heading') }}
+    </h1>
+    <div>
+      <div class="bg-primary-100 p-8 md:pb-56 lg:p-16 lg:pb-56">
+        <p class="md:max-w-1/2 font-normal text-lg mb-4 md:mb-16 md:text-xl">
           {{ t('reliability-section.text') }}
         </p>
-      </div>
-      <div class="flex flex-wrap lg:flex-nowrap gap-3">
-        <div v-for="(feature, index) in features" :key="index"
-          class="text-gray-900 font-semibold text-base bg-primary-900/10 py-3.5 px-4 rounded-lg w-full sm:w-fit whitespace-pre-line flex gap-2.5 items-center cursor-pointer"
-          @click="showFeaturesCards = feature">
-          <img :src="feature.icon" class="w-9 h-9">
-          <span>{{ feature.pilltext }}</span>
+        <div class="flex flex-wrap justify-around md:max-w-8/10 gap-4 lg:gap-8 md:mb-8">
+          <div v-for="(feature, index) in features" :key="index"
+            class="bg-teal-700 rounded-xl p-4 text-white w-full md:w-1 md:max-w-1/3 grow flex flex-col gap-2 cursor-pointer"
+            @click="featureToShowDetails = feature">
+            <div class="w-8 h-8">
+              <svg class="absolute w-8 h-8" width="95" height="79" viewBox="0 0 95 79" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M78.2681 77.7424C63.4915 82.3205 58.1262 73.5713 43.3495 64.822C17.1384 49.3024 -5.99372 48.1372 1.39451 25.7554C6.18247 11.2507 16.9627 11.9193 38.424 8.1551C59.8853 4.39087 61.2046 -3.03585 72.551 1.3388C83.8973 5.71344 78.2681 16.0905 89.6144 35.2168C100.961 54.3432 93.0447 73.1643 78.2681 77.7424Z"
+                  fill="teal-600" />
+              </svg>
 
-          <Modal :show="!!showFeaturesCards" @close="showFeaturesCards = undefined">
-            <Container v-if="showFeaturesCards" class="p-6 max-w-3xl">
-              <img :src="showFeaturesCards.icon" class="color-primary-900 w-14 h-14 w-full md:w-auto">
-              <p class="font-semibold pt-4 py-2 text-xl">
-                {{ showFeaturesCards.pilltext }}
-              </p>
-              <p class="text-xl">
-                {{ showFeaturesCards.modaltext }}
-              </p>
-            </Container>
-          </Modal>
+              <div :class="feature.iconClass" class="text-amber-400 w-8 h-8" />
+            </div>
+            <span class="grow font-medium">{{ feature.pilltext }}</span>
+            <div class="font-inter text-xs flex gap-2 items-center mt-auto">
+              <div class="i-lucide:arrow-right w-3 h-3 lg:w-3" />
+              mehr erfahren
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="relative order-1 lg:order-2 overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto"
-      @click="openVideo">
-      <video ref="reliabilityvideo" width="1024"
-        poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp" playsinline>
-        <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
-        <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
-      </video>
-      <div v-if="!isPlaying"
-        class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      <div class="mt-8 md:mt--50 md:w-7/10 mx-auto rounded-3xl overflow-hidden relative"
+        :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
+        <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false">
+          <source src="https://videos.melli.com/communication.webm" type="video/webm">
+          <source src="https://videos.melli.com/communication.mp4" type="video/mp4">
+        </video>
+        <div v-if="!startedVideo"
+          class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+      </div>
     </div>
   </div>
 </template>

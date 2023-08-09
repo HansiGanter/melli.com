@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
+import { fireInfoPackageOpenEvent } from '~/google-tag-manager'
+
 const isProduction = import.meta.env.PROD
 useHead({
   title: 'Melli',
@@ -22,9 +24,26 @@ categories.sort()
 categories.unshift('Alle')
 
 const currentFilter = ref(categories[0])
+
+const showNewsletterModal = ref(false)
+const newsletterEmail = ref()
+
+const openNewsletterModal = (email?: string) => {
+  fireInfoPackageOpenEvent(email)
+  newsletterEmail.value = email
+  showNewsletterModal.value = true
+}
+
+const onEmailFormSubmit = (e: Event) => {
+  const formData = new FormData(e.target as HTMLFormElement)
+  const email = formData.get('email') as string
+  openNewsletterModal(email)
+}
 </script>
 
 <template>
+  <InfoPackageModal :show="showNewsletterModal" :email="newsletterEmail" @close="showNewsletterModal = false" />
+
   <Container class="py-8 lg:py-16 overflow-hidden px-5 ">
     <div class="grid gap-8 justify-items-center">
       <div class="grid gap-3 sm:gap-4 md:max-w-xl lg:max-w-3xl xl:max-w-none text-center">
@@ -36,7 +55,17 @@ const currentFilter = ref(categories[0])
         </p>
       </div>
       <div class="grid gap-2 w-full lg:w-6/12 lg:mx-auto">
-        <InfoPackageDialogOpen />
+        <form class="flex flex-wrap gap-4 justify-center" @submit.prevent="onEmailFormSubmit">
+          <input class="border-2 rounded-full w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de"
+            type="email" name="email" required>
+          <div class="flex gap-3">
+            <button type="submit"
+              class="text-white bg-primary-400 flex gap-0.5 items-center px-7 py-3 rounded-lg w-fit font-medium">
+              Infopaket&nbsp;bestellen
+              <div class="i-lucide:arrow-right w-6 h-6 shrink-0" />
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </Container>

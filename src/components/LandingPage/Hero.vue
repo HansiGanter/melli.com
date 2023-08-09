@@ -1,27 +1,17 @@
 <script setup lang="ts">
-import { fireVideoEvent } from '~/google-tag-manager'
-
+const emit = defineEmits<{
+  (event: 'newsletterButtonClicked', email?: string): void
+}>()
 
 const showVideo = ref(false)
 const el = ref<HTMLMediaElement | null>(null)
 const activeVideoWebm = ref('')
 const activeVideoMp4 = ref('')
 
-const { enter } = useFullscreen(el)
+const email = ref('')
 
-const playVideo = async (video: string) => {
-  showVideo.value = true
-  activeVideoWebm.value = `${video}.webm`
-  activeVideoMp4.value = `${video}.mp4`
-  await nextTick()
-  if (el.value) {
-    enter()
-    el.value.play()
-    fireVideoEvent(activeVideoWebm.value)
-  }
-}
 // for iOS on iPhone
-// @ts-ignore
+// @ts-expect-error webkitIsFullScreen is only defined on iOS
 useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen)
 // for everything else
 useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement)
@@ -40,7 +30,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
     <div class="absolute top-0 w-full h-full bg-black/20 flex flex-col">
       <slot />
       <div class="flex flex-col gap-5 sm:gap-9 py-12 my-auto px-5 max-w-200 mx-auto">
-        <h1 class="font-semibold text-4xl sm:text-5xl sm:text-center">
+        <h1 class="font-semibold text-4xl sm:text-5xl text-center">
           <span class="text-primary-300 leading-tight">
             Melli -
           </span>
@@ -48,16 +38,17 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
             deine Freundin für ein glückliches Älterwerden
           </span>
         </h1>
-        <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
-          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center">
-            <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
-          </RouterLink>
-          <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center"
-            @click="playVideo('https://videos.melli.com/soziale-kontakte')">
-            <span>ganzes Video ansehen</span>
-            <div class="i-lucide:arrow-right w-6 h-6" />
-          </button>
-        </div>
+        <form class="flex flex-wrap gap-4 justify-center" @submit.prevent="() => emit('newsletterButtonClicked', email)">
+          <input v-model="email" class="border-2 rounded-full w-full min-w-48 max-w-100 px-4 py-2.5"
+            placeholder="name@email.de" type="email" name="email" required>
+          <div class="flex gap-3">
+            <button type="submit"
+              class="text-white bg-primary-400 flex gap-0.5 items-center px-7 py-3 rounded-lg w-fit font-medium">
+              Infopaket&nbsp;bestellen
+              <div class="i-lucide:arrow-right w-6 h-6 shrink-0" />
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </header>

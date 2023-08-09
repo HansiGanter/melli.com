@@ -1,5 +1,5 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ show: boolean; closeOnEsc?: boolean }>(), { closeOnEsc: true })
+withDefaults(defineProps<{ show: boolean; closeOnEsc?: boolean; containerClass?: string }>(), { closeOnEsc: true, containerClass: '' })
 const emit = defineEmits<{ (event: 'close'): void }>()
 onKeyStroke('Escape', (e) => {
   e.preventDefault()
@@ -10,14 +10,11 @@ onKeyStroke('Escape', (e) => {
 <template>
   <Teleport to="body">
     <Transition name="modal">
-      <div
-        v-if="show"
+      <div v-if="show"
         class="bg-gray-900 bg-opacity-50 grid transition-opacity inset-0 z-100 duration-200 fixed items-end sm:place-items-center"
-        @click.self="emit('close')"
-      >
-        <div
-          class="modal-container max-h-90vh m-2 bg-white rounded-xl shadow-lg sm:min-w-md overflow-y-auto"
-        >
+        @click.self="emit('close')">
+        <div class="modal-container max-h-90% m-2 bg-white rounded-xl shadow-lg sm:min-w-md overflow-y-auto"
+          :class="containerClass">
           <slot />
         </div>
       </div>
@@ -34,17 +31,22 @@ onKeyStroke('Escape', (e) => {
 .modal-enter-from {
   opacity: 0;
 }
+
 .modal-leave-to {
   opacity: 0;
 }
+
 .modal-container {
   transition: transform 200ms ease-out;
 }
+
 .modal-enter-from .modal-container,
 .modal-leave-to .modal-container {
   transform: translateY(100%);
 }
+
 @media (min-width: 640px) {
+
   .modal-enter-from .modal-container,
   .modal-leave-to .modal-container {
     -webkit-transform: scale(1.05);

@@ -154,10 +154,9 @@ citation:
       quote-message: Viel Spaß beim Kennenlernen!
   matthias:
     quote: >-
-      “Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die
-      Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag
-      über für ihre Nutzer da und tut alles dafür, um ihnen jeden Tag ein
-      Lächeln ins Gesicht zu zaubern.”
+      Melli zu nutzen, ist wie ein nettes Gespräch mit einer Freundin zu
+      führen. Anstatt Knöpfe bedienen und die Technik dahinter verstehen
+      zu müssen, können die Senioren Melli einfach mit ihrer Stimme steuern.
     source: Dr. Matthias Weber
     source-description: >-
       Mit-Gründer von Melli & langjähriger Pflegeunternehmer der Ambulantis BSW
@@ -730,7 +729,7 @@ reliability-section:
     Kontakten führen. Dazu müssen sie Melli nur per Sprachbefehl dazu
     auffordern, die gewünschte Person anzurufen bzw. einen eingehenden Anruf
     anzunehmen.
-  heading: "Mehr Gemeinschaft mit alten Freunden \L& neuen Bekannten"
+  heading: "Ganz einfach mit der Familie verbunden"
   mini-heading: Melli-App
   service-1:
     description: >-
@@ -752,15 +751,16 @@ reliability-section:
     Telefonieren, Termine planen und das Wohlbefinden im Auge behalten – mit der
     Melli-App können Angehörige am Alltag der Nutzer teilhaben und mitwirken,
     auch dann, wenn sie gerade nicht vor Ort sein können.
-  text: "Melli sorgt dafür, dass du dich mit deinen Familienangehörigen und Freunden austauschen kannst. \LZudem vernetzt Melli weitere Nutzer mit dir und ihr könnt gemeinsam spannende Erlebnisse teilen."
+  text: "Melli ermöglicht Nutzern eine einfache Verbindung mit der ganzen Familie. So können sie am Leben ihrer Liebsten teilhaben auch wenn diese viele Kilometer entfernt wohnen."
 secure-melli:
   get-melli-button: Jetzt anmelden
-  heading: Jetzt Infomaterial erhalten!
+  heading: Jetzt Infopaket bestellen!
   heading-1: Jetzt Infomaterial anfordern!
   learn-more-button: mehr erfahren
   sub-text: >-
-    Einfach unten zum Newsletter anmelden und detaillierte Informationen über
-    Melli nach Hause geschickt bekommen.
+    Oma & Opa verstehen nicht was Melli ist? Meld 
+    dich zum Newsletter an und erhalte unser 
+    kostenloses Melli-Infopaket.
 shop:
   choose-subscription:
     advance-plan: Erweitert
@@ -866,8 +866,6 @@ test-features:
   "3":
     answer: Erkennt die Stimmung & reagiert darauf
   "4":
-    answer: Bedienung ohne technisches Vorwissen
-  "5":
     answer: Verbindet Menschen miteinander
   heading: Das unterscheidet Melli
   heading-text: von anderen Sprachassistenten

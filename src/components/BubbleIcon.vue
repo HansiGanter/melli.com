@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  bubbleType: 0 | 1 | 2 | 3
+  bubbleType: '0' | '1' | '2' | '3'
   bubble: string
   icon: string
 }>()

@@ -1,50 +1,73 @@
 <script setup lang="ts">
-// import { fireTestuserOpenSubscriptionEvent } from '~/google-tag-manager'
+
 const { t } = useI18n()
-const features = [
-  { icon: 'i-heroicons-outline:chat-alt', text: t('test-features.4.answer') },
-  { icon: 'i-carbon:rocket', text: t('test-features.1.answer') },
-  { text: t('test-features.3.answer') },
-  { icon: 'i-carbon:wifi-off', text: t('test-features.2.answer') },
-  { icon: 'i-heroicons-outline:link', text: t('test-features.5.answer') },
-]
+
 </script>
 
 <template>
-  <!-- <section class="bg-primary-900 rounded-[30px] py-16">
-    <div class="container max-w-screen-xl h-full mx-auto px-4 sm:px-6 lg:px-8"> -->
-  <div class="grid gap-8 lg:gap-32 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-start">
-    <div class="grid gap-6 content-start">
+  <div class="flex flex-wrap md:flex-nowrap justify-between items-start self-stretch gap-4">
+    <div class="flex items-start flex-col flex-1 gap-6">
       <h1 id="melli-features-heading" class="text-4xl lg:text-5xl font-semibold lg:font-medium text-white">
-        <span class="text-primary-400 font-semibold lg:leading-[3.875rem]">{{ t('test-features.heading') }}</span> <span class="lg:leading-[3.875rem]">{{ t('test-features.heading-text') }}</span>
+        <span class="text-amber-400 font-semibold text-start lg:leading-[3.875rem]">
+          {{ t('test-features.heading') }}&nbsp;
+        </span>
+        <span class="text-white lg:leading-[3.875rem]">
+          {{ t('test-features.heading-text') }}
+        </span>
       </h1>
-      <RouterLink
-        to="/shop"
-        class="bg-primary-500 py-4 px-7 rounded-lg text-white text-base font-medium w-fit"
-      >
-        {{ t('test-features.test-melli') }}
-      </RouterLink>
+
+      <p class="text-white lg:max-w-9/10">
+        Du hast weitere Fragen zu Melli? Lass uns telefonieren und wir erklären dir alle Besonderheiten der digitalen Begleiterin im Detail!
+      </p>
+
+      <CallOrPipedrive iconClass="color-primary-300" textClass="text-white" />
     </div>
-    <div class="lg:col-span-2">
-      <div class="grid gap-9">
-        <div class="flex md:justify-end justify-start gap-x-5 gap-y-7 flex-wrap lg:basis-5/12 w-fit">
-          <div
-            v-for="(feature, index) in features"
-            :key="index"
-            class="flex items-center w-auto bg-primary-50 px-4 py-2 gap-2.5 rounded-2xl drop-shadow-xl"
-          >
-            <div class="text-base font-medium text-primary-400">
-              <div v-if="feature.icon" :class="feature.icon" class="w-10 lg:w-12 h-10 lg:h-12" />
-              <img
-                v-else
-                src="https://assets.melli.com/icons/sentiment.svg"
-                :class="feature.icon"
-                class="w-10 lg:w-12 h-10 lg:h-12"
-              >
-            </div>
-            <span class="text-xl font-normal text-gray-900 flex-1">
-              {{ feature.text }}
-            </span>
+
+    <div class="flex flex-col gap-6 items-center flex-1 mt-4">
+      <!-- first elem -->
+      <div
+        class="flex flex-col items-start self-stretch gap-2.5 lg:gap-3 px-6 py-3.5 lg:py-6 rounded-[0.9375rem] bg-amber-300 shadow-md">
+        <div class="flex self-stretch justify-center items-center gap-3">
+          <div class="i-lucide:message-square w-12 h-12" />
+          <span class="flex-1 text-gray-900 font-medium text-lg lg:text-2xl ">Einfache Bedienung per Sprachbefehl</span>
+        </div>
+        <p class="self-stretch">
+          Die Bedienung von Melli ist so einfach wie ein nettes Gespräch.
+          Melli fragt -
+          der Nutzer antwortet mit “Ja” oder “Nein”. Kein lästiges Knöpfe-Drücken, keine Gefahr etwas falsch zu machen.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 w-full">
+        <div class="flex gap-2 rounded-xl items-center px-4 py-4 md:py-2 bg-emerald-50 shadow-md md:ml-8">
+          <div class="i-ph:rocket w-12 h-12 xl:w-24 xl:h-22 color-primary-600" />
+          <div class="lg:text-lg">
+            Geht aktiv auf den Nutzer zu
+          </div>
+        </div>
+        <div class="flex gap-2 rounded-xl items-center px-4 py-4 md:py-2 bg-emerald-50 shadow-md md:mr-8">
+          <div class="i-ph:heartbeat w-12 h-12 xl:w-24 xl:h-22 color-primary-600" />
+          <div class="lg:text-lg">
+            Professionell betreute Gruppen
+          </div>
+        </div>
+        <div class="flex gap-2 rounded-xl items-center px-4 py-4 md:py-2 bg-emerald-50 shadow-md">
+          <div class="i-ph:wifi-slash w-12 h-12 xl:w-24 xl:h-22 color-primary-600" />
+          <div class="lg:text-lg">
+            Funktioniert auch ohne WLAN
+          </div>
+        </div>
+        <div class="flex gap-2 rounded-xl items-center px-4 py-4 md:py-2 bg-emerald-50 shadow-md">
+          <div class="i-ph:users w-12 h-12 xl:w-24 xl:h-22 color-primary-600" />
+          <div class="lg:text-lg">
+            Sorgt für mehr soziale Kontakte
+          </div>
+        </div>
+        <div
+          class="md:col-span-2 md:max-w-1/2 md:mx-auto flex gap-2 rounded-xl items-center px-4 py-4 md:py-2 bg-emerald-50 shadow-md">
+          <div class="i-ph:floppy-disk w-12 h-12 xl:w-24 xl:h-22 color-primary-600" />
+          <div class="lg:text-lg">
+            Höchste Datenschutz Standards
           </div>
         </div>
       </div>

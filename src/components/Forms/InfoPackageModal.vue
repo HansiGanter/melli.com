@@ -1,66 +1,93 @@
 <script setup lang="ts">
-import { fireInfoPackageOpenEvent, fireInfoPackageSentEvent } from '~/google-tag-manager';
+import { fireInfoPackageSentEvent } from '~/google-tag-manager'
 
-const email = ref('')
-const showForm = ref(false)
+const props = defineProps<{
+  show: boolean
+  email?: string
+}>()
+const emit = defineEmits<{
+  (event: 'close'): void
+}>()
 
-const submitFunction = async (e: SubmitEvent) => {
-  showForm.value = true
+const onFormSubmit = async (e: Event) => {
+  // reset messages
+  const errorMsgElement = document.getElementById('error-message')
+  if (errorMsgElement)
+    errorMsgElement.style.display = 'none'
 
+  const successMsgElement = document.getElementById('success-message')
+  if (successMsgElement)
+    successMsgElement.style.display = 'none'
+
+  // track submit
+  const emailvalue = (document.querySelector('#EMAIL') as HTMLInputElement).value
+  const telvalue = (document.querySelector('#TELEFONNUMMER') as HTMLInputElement).value
+  const firstnamevalue = (document.querySelector('#VORNAME') as HTMLInputElement).value
+  const lastnamevalue = (document.querySelector('#NACHNAME') as HTMLInputElement).value
+  fireInfoPackageSentEvent(emailvalue, telvalue, firstnamevalue, lastnamevalue)
+
+  // send data
+  const formElement = e.target as HTMLFormElement
+  const formData = new FormData(formElement)
+  const endpoint = formElement.action
+
+  // will send a 302 redirect if successfull
+  // we can't follow the redirect because of CORS, son instead we just load the success URL manually
+  const response = await fetch(endpoint, { method: 'POST', body: formData, redirect: 'manual' })
+  // status returns 0 instead of 302 if redirect hits
+  if (response.status === 0 || response.status === 302) {
+    const container = document.getElementById('sib-container')
+    if (container)
+      container.style.display = 'none'
+    if (successMsgElement)
+      successMsgElement.style.display = 'block'
+
+    setTimeout(() => {
+      // actually rediect
+      // window.location.href = 'https://sibforms.com/confirmation/success/subscription/double?locale=de'
+      emit('close')
+    }, 1500)
+  }
+  else {
+    if (errorMsgElement)
+      errorMsgElement.style.display = 'block'
+  }
+}
+
+watch(() => props.email, async (newEmail) => {
+  await nextTick()
+  const emailElement = document.getElementById('EMAIL') as HTMLInputElement
+  if (emailElement)
+    emailElement.value = newEmail ?? ''
+})
+
+watch(() => props.show, async () => {
   await nextTick()
 
-  const utmUrlInput = document.querySelector('#UTM_URL');
-  (utmUrlInput as HTMLInputElement).value = window.location.href
+  // TODO delete this, so far for backward compatibility
+  const utmElement = document.getElementById('UTM_URL') as HTMLInputElement
+  if (utmElement)
+    utmElement.value = window.location.href ?? ''
 
-  const emailInput = document.querySelector('#EMAIL');
-  (emailInput as HTMLInputElement).value = email.value
-  if (e.submitter?.id === 'perPost') {
-    (document.querySelectorAll('[name="INFOPAKET"]')[1] as HTMLInputElement).checked = true;
-    (document.querySelector('#STRASSE_HAUSNUMMER') as HTMLInputElement).required = true;
-    (document.querySelector('#PLZ') as HTMLInputElement).required = true;
-    (document.querySelector('#STADT') as HTMLInputElement).required = true
-  }
-  if (e.submitter?.id === 'perEmail') {
-    (document.querySelectorAll('[name="INFOPAKET"]')[0] as HTMLInputElement).checked = true;
-    (document.querySelector('#STRASSE_HAUSNUMMER_DIV') as HTMLDivElement).style.display = 'none';
-    (document.querySelector('#PLZ_DIV') as HTMLDivElement).style.display = 'none';
-    (document.querySelector('#STADT_DIV') as HTMLDivElement).style.display = 'none'
-  }
+  const elems = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
 
-  (document.querySelector('#INFOPAKET_DIV') as HTMLDivElement).style.display = 'none'
-  const formSubmit = document.querySelector('#sib-form');
-  formSubmit?.addEventListener('submit', () => {
-    const emailvalue = (document.querySelector('#EMAIL') as HTMLInputElement).value;
-    const telvalue = (document.querySelector('#TELEFONNUMMER') as HTMLInputElement).value;
-    const firstnamevalue = (document.querySelector('#VORNAME') as HTMLInputElement).value;
-    const lastnamevalue = (document.querySelector('#NACHNAME') as HTMLInputElement).value;
-    fireInfoPackageSentEvent(emailvalue, telvalue, firstnamevalue, lastnamevalue);
+  const currentParams: URLSearchParams = new URL(window.location.href).searchParams
+
+  elems.forEach(elem => {
+    const domElem = document.getElementById(elem) as HTMLInputElement
+    if (domElem) {
+      // first get it from url, if not there lookup in localStorage, maybe just get it from localStorage?
+      const currentValue = currentParams.get(elem.toLowerCase())
+      const value = currentValue !== null ? currentValue : window.localStorage.getItem(elem.toLowerCase()) ?? ''
+      domElem.value = value
+    }
   })
-
-  fireInfoPackageOpenEvent(email.value)
-}
+})
 </script>
 
 <template>
-  <form id="Form1" class="flex flex-col gap-4" method="get" @submit.prevent="e => submitFunction(e as SubmitEvent)">
-    <input id="emailinput" v-model="email" class="w-100 border-2 rounded-full w-full max-w-112 px-4 py-2.5 mx-auto"
-      placeholder="name@email.de" type="email" name="email" required>
-    <div class="flex gap-3 mx-auto">
-      <button id="perPost" type="submit"
-        class="text-white bg-primary-400 flex gap-2 items-center px-4 py-2.5 rounded-lg w-fit">
-        <div class="i-lucide:package w-6 h-6 shrink-0" />Per Post erhalten
-      </button>
-      <button id="perEmail" type="submit"
-        class="text-white bg-primary-400 flex gap-2 items-center px-4 py-2.5 rounded-lg w-fit">
-        <div class="i-lucide:mail w-6 h-6 shrink-0" />Per Email erhalten
-      </button>
-    </div>
-  </form>
-
-  <Modal :show="showForm" @close="showForm = false">
+  <Modal :show="show" @close="() => emit('close')">
     <!-- Begin Brevo Form -->
-    <!-- START - We recommend to place the below code in head tag of your website html  -->
-
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
     <!--  END - We recommend to place the above code in head tag of your website html -->
 
@@ -80,7 +107,7 @@ const submitFunction = async (e: SubmitEvent) => {
             </span>
           </div>
         </div>
-        <div></div>
+        <div />
         <div id="success-message" class="sib-form-message-panel"
           style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
           <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
@@ -93,12 +120,12 @@ const submitFunction = async (e: SubmitEvent) => {
             </span>
           </div>
         </div>
-        <div></div>
+        <div />
         <div id="sib-container" class="sib-container--large sib-container--vertical"
           style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
           <form id="sib-form" method="POST"
-            action="https://ccfae1fd.sibforms.com/serve/MUIFABV9SJTvUEsBggc8ZtHONafw6Z3TNDsG4MdET0yqBBxlzCQsyhw2KFhT8QfanNsarJeT_eGEb_EyoJpfTCXobvD-Q4wIX90cuqGPgK7wwuaew7IyBdr4H2Wo_pzGgcNWmWQEjrZF0ByKRKQmXShvQ_bLefNzhuRnbIPGLx74Ap7GtqExWtfCVKjsLkazQkTghgZFffYCmrXL"
-            data-type="subscription">
+            action="https://ccfae1fd.sibforms.com/serve/MUIFACz6BX0yANNtCwvS-D2jYSMoMGicbhCMAc0yLmh4KgWLrhSFiRxVKsmUT9P-OfxR5vod7f3MjiqdKArshTpJp2NhmOo_IwGlVCdgZkiWYSsX0PVaVODZTE8Rg-T-loa_M9A44Etr9R-cLpIRA4zxn_L90lLD2FOwIVkv-ldmrIT2wU-bbSug6Qj39Od9-NiCqj1RgglSHtMh"
+            data-type="subscription" @submit.prevent="onFormSubmit">
             <div style="padding: 8px 0;">
               <div class="sib-form-block"
                 style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
@@ -113,19 +140,26 @@ const submitFunction = async (e: SubmitEvent) => {
                 </div>
               </div>
             </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <input class="input " maxlength="200" type="text" id="UTM_URL" name="UTM_URL" autocomplete="off"
-                      placeholder="UTM_URL" hidden />
-                  </div>
+            <div style="padding: 8px 0; display: none;">
 
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
+              <input id="UTM_URL" class="input " maxlength="200" type="text" name="UTM_URL" placeholder="UTM_URL">
+              <input class="input " maxlength="200" type="text" id="UTM_SOURCE" name="UTM_SOURCE" autocomplete="off"
+                placeholder="UTM_SOURCE" />
+              <input class="input " maxlength="200" type="text" id="UTM_MEDIUM" name="UTM_MEDIUM" autocomplete="off"
+                placeholder="UTM_MEDIUM" />
+              <input class="input " maxlength="200" type="text" id="UTM_CAMPAIGN" name="UTM_CAMPAIGN" autocomplete="off"
+                placeholder="UTM_CAMPAIGN" />
+              <input class="input " maxlength="200" type="text" id="UTM_CONTENT" name="UTM_CONTENT" autocomplete="off"
+                placeholder="UTM_CONTENT" />
+              <input class="input " maxlength="200" type="text" id="GCLID" name="GCLID" autocomplete="off"
+                placeholder="GCLID" />
+              <input class="input " maxlength="200" type="text" id="FBCLID" name="FBCLID" autocomplete="off"
+                placeholder="FBCLID" />
+              <input class="input " maxlength="200" type="text" id="MELLITBCLID" name="MELLITBCLID" autocomplete="off"
+                placeholder="MELLITBCLID" />
+              <input class="input " maxlength="200" type="text" id="MELLIOBCLID" name="MELLIOBCLID" autocomplete="off"
+                placeholder="MELLIOBCLID" />
+
             </div>
             <div style="padding: 8px 0;">
               <div class="sib-input sib-form-block">
@@ -136,14 +170,13 @@ const submitFunction = async (e: SubmitEvent) => {
                       for="VORNAME" data-required="*">Vorname</label>
 
                     <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="VORNAME" name="VORNAME" autocomplete="off"
-                        placeholder="Max" data-required="true" required />
+                      <input id="VORNAME" class="input " maxlength="200" type="text" name="VORNAME" placeholder="Max"
+                        data-required="true" required>
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                 </div>
               </div>
             </div>
@@ -156,14 +189,13 @@ const submitFunction = async (e: SubmitEvent) => {
                       for="NACHNAME" data-required="*">Nachname</label>
 
                     <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="NACHNAME" name="NACHNAME" autocomplete="off"
-                        placeholder="Mustermann" data-required="true" required />
+                      <input id="NACHNAME" class="input " maxlength="200" type="text" name="NACHNAME"
+                        placeholder="Mustermann" data-required="true" required>
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                 </div>
               </div>
             </div>
@@ -176,14 +208,13 @@ const submitFunction = async (e: SubmitEvent) => {
                       for="EMAIL" data-required="*">Email-Adresse</label>
 
                     <div class="entry__field">
-                      <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off"
-                        placeholder="max.mustermann@mail.de" data-required="true" required />
+                      <input id="EMAIL" class="input" type="email" name="EMAIL" placeholder="max.mustermann@mail.de"
+                        data-required="true" required>
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                 </div>
               </div>
             </div>
@@ -196,14 +227,13 @@ const submitFunction = async (e: SubmitEvent) => {
                       for="TELEFONNUMMER" data-required="*">Telefonnummer</label>
 
                     <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="TELEFONNUMMER" name="TELEFONNUMMER"
-                        autocomplete="off" placeholder="+49 170 12345678" data-required="true" required />
+                      <input id="TELEFONNUMMER" class="input " maxlength="200" type="text" name="TELEFONNUMMER"
+                        placeholder="+49 170 12345678" data-required="true" required>
                     </div>
                   </div>
 
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                 </div>
               </div>
             </div>
@@ -218,97 +248,27 @@ const submitFunction = async (e: SubmitEvent) => {
                       <div class="entry__choice" style="">
                         <label>
                           <input type="radio" name="QUESTION_ROLE" class="input_replaced" value="1" required>
-                          <span class="radio-button" style="margin-left: "></span><span
+                          <span class="radio-button" style="margin-left: " /><span
                             style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">mich
                             selbst</span> </label>
                       </div>
                       <div class="entry__choice" style="">
                         <label>
                           <input type="radio" name="QUESTION_ROLE" class="input_replaced" value="2" required>
-                          <span class="radio-button" style="margin-left: "></span><span
+                          <span class="radio-button" style="margin-left: " /><span
                             style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">einen
                             Angehörigen</span> </label>
                       </div>
                     </div>
                   </div>
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                 </div>
               </div>
             </div>
             <div style="padding: 8px 0;">
               <div class="sib-form-block sib-divider-form-block">
-                <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
-              </div>
-            </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-form-block"
-                style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#6d737b; background-color:transparent; text-align:left">
-                <div class="sib-text-form-block">
-                  <p>Fast geschafft! Jetzt benötigen wir nur noch deine Adresse, damit sich dein Infopaket auf den weg
-                    machen kann.</p>
-                </div>
-              </div>
-            </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="STRASSE_HAUSNUMMER" data-required="*">Straße, Hausnummer</label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="STRASSE_HAUSNUMMER" name="STRASSE_HAUSNUMMER"
-                        autocomplete="off" placeholder="Musterstraße 6" data-required="true" required />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="PLZ" data-required="*">PLZ</label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="PLZ" name="PLZ" autocomplete="off"
-                        placeholder="12101" data-required="true" required />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div style="padding: 8px 0;">
-              <div class="sib-input sib-form-block">
-                <div class="form__entry entry_block">
-                  <div class="form__label-row ">
-                    <label class="entry__label"
-                      style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;"
-                      for="STADT" data-required="*">Stadt</label>
-
-                    <div class="entry__field">
-                      <input class="input " maxlength="200" type="text" id="STADT" name="STADT" autocomplete="off"
-                        placeholder="Berlin" data-required="true" required />
-                    </div>
-                  </div>
-
-                  <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
-                </div>
+                <div style="border: 0; border-bottom: 1px solid #E5EDF6" />
               </div>
             </div>
             <div style="padding: 8px 0;">
@@ -317,17 +277,16 @@ const submitFunction = async (e: SubmitEvent) => {
                   <div class="form__label-row ">
                     <div class="entry__choice" style="">
                       <label>
-                        <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-                        <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span
+                        <input id="OPT_IN" type="checkbox" class="input_replaced" value="1" name="OPT_IN" required>
+                        <span class="checkbox checkbox_tick_positive" style="margin-left:" /><span
                           style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
                           <p>Ich möchte den melli.com Newsletter erhalten und akzeptiere die Datenschutzerklärung.</p>
-                          <span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span>
+                          <span data-required="*" style="display: inline;" class="entry__label entry__label_optin" />
                         </span> </label>
                     </div>
                   </div>
                   <label class="entry__error entry__error--primary"
-                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                  </label>
+                    style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;" />
                   <label class="entry__specification"
                     style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; text-align:left">
                     Du kannst den Newsletter jederzeit über den Link in unserem Newsletter abbestellen.
@@ -355,6 +314,7 @@ const submitFunction = async (e: SubmitEvent) => {
         </div>
       </div>
     </div>
+    <!-- END - We recommend to place the below code where you want the form in your website html  -->
     <!-- End Brevo Form -->
   </Modal>
 </template>

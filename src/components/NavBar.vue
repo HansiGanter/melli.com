@@ -6,30 +6,34 @@ import { fireGoToAppEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLogi
 const { t } = useI18n()
 
 const showNav = ref(false)
+const router = useRouter()
 </script>
 
 <template>
   <nav class="bg-white py-4">
-    <div class="container mx-auto px-4 lg:px-0">
+    <div class="container mx-auto">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-x-8">
           <RouterLink to="/">
-            <Logo />
+            <Logo class="px-4" />
           </RouterLink>
           <div class="lg:flex hidden items-center gap-x-4">
             <RouterLink to="/" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
               {{ t('navbar.about') }}
             </RouterLink>
-            <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToBlogEvent">
+            <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
+              @click="fireGoToBlogEvent">
               {{ t('navbar.blog.heading') }}
             </RouterLink>
             <!-- <RouterLink to="/live-demo" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToLiveDemoEvent">
               {{ t('navbar.live-demo') }}
             </RouterLink> -->
-            <RouterLink to="/app" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToAppEvent">
+            <RouterLink to="/app" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
+              @click="fireGoToAppEvent">
               {{ t('navbar.app') }}
             </RouterLink>
-            <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireGoToInfoPackageEvent">
+            <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
+              @click="fireGoToInfoPackageEvent">
               {{ t('navbar.infopackage') }}
             </RouterLink>
             <!-- <RouterLink to="/karriere" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium" @click="fireKarriereEvent">
@@ -52,56 +56,64 @@ const showNav = ref(false)
               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600" />
             </span>
           </RouterLink> -->
-          <RouterLink
-            to="/shop"
-            class="py-4 px-7 rounded-lg bg-primary-500 text-white text-base font-medium"
-            @click="fireShopEvent"
-          >
-            Jetzt kaufen
+          <RouterLink v-if="router.currentRoute.value.path !== '/shop'" to="/shop"
+            class="py-3.5 px-7 rounded-lg bg-primary-500 text-white text-base font-medium" @click="fireShopEvent">
+            Preise ansehen
           </RouterLink>
+          <CallOrPipedrive icon-class="text-grey-600" text-class="" />
         </div>
-        <button type="button" class="lg:hidden block p-2" @click="showNav = !showNav">
-          <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />
-          <div v-else class="i-heroicons-outline:menu stroke-2 w-6 h-6 bg-gray-700" />
-        </button>
+        <div class="flex flex-nowrap gap-2 items-center lg:hidden">
+          <a href="tel:030-555703440"
+            class="rounded-md border-solid border-2 px-4 py-2 border-primary-300 flex items-center gap-2 w-fit">
+            <div class="i-lucide:phone-call w-6 h-6 shrink-0" />030-555703440
+          </a>
+          <button type="button" class="block p-4" @click="showNav = !showNav">
+            <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />
+            <div v-else class="i-heroicons-outline:menu stroke-2 w-6 h-6 bg-gray-700" />
+          </button>
+        </div>
       </div>
     </div>
-    <transition
-      enter-active-class="transition-all duration-1000 ease-in-out"
+    <transition enter-active-class="transition-all duration-1000 ease-in-out"
       enter-from-class="transform translate-y--5 opacity-0"
       leave-active-class="transition-all duration-500 ease-[cubic-bezier(1, 0.5, 0.8, 1)]"
-      leave-to-class="transform -translate-y-5 opacity-0"
-    >
-      <div v-if="showNav" class="container mx-auto px-4 lg:px-0 lg:hidden" :class="showNav ? 'grid' : 'hidden'">
+      leave-to-class="transform -translate-y-5 opacity-0">
+      <div v-if="showNav" class="mt-4 container mx-auto px-4 lg:px-0 lg:hidden" :class="showNav ? 'grid' : 'hidden'">
         <div class="grid gap-2 ">
-          <RouterLink to="/" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2">
+          <RouterLink to="/"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2">
             {{ t('navbar.about') }}
           </RouterLink>
-          <RouterLink to="/blog" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToBlogEvent">
+          <RouterLink to="/blog"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
+            @click="fireGoToBlogEvent">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
           <!-- <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToLiveDemoEvent">
             {{ t('navbar.live-demo') }}
           </RouterLink> -->
-          <RouterLink to="/app" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToAppEvent">
+          <RouterLink to="/app"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
+            @click="fireGoToAppEvent">
             {{ t('navbar.app') }}
           </RouterLink>
-          <RouterLink to="/infopaket" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToInfoPackageEvent">
+          <RouterLink to="/infopaket"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
+            @click="fireGoToInfoPackageEvent">
             {{ t('navbar.infopackage') }}
           </RouterLink>
           <!-- <RouterLink to="/karriere" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireKarriereEvent">
             {{ t('navbar.karriere') }}
           </RouterLink> -->
-          <a href="https://app.melli.com/" class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
+          <!-- <a href="https://app.melli.com/"
+            class="flex items-center justify-center gap-2 py-2.5 rounded-lg text-primary-500 text-base font-medium">
             <div class="i-carbon:user stroke-2 w-5 h-5" />
             <span>Account</span>
-          </a>
+          </a> -->
         </div>
-        <RouterLink
-          to="/shop"
-          class="py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
-          @click="fireShopEvent"
-        >
+
+        <RouterLink to="/shop" class="my-4 py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
+          @click="fireShopEvent">
           <span>Jetzt kaufen</span>
         </RouterLink>
       </div>
