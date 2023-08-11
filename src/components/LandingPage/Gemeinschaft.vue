@@ -72,8 +72,8 @@ const startVideo = (event: Event) => {
                 </div>
             </div>
         </div>
-        <div class="my-8 mt-8 lg:mt-0 rounded-3xl overflow-hidden relative" :class="!startedVideo ? 'cursor-pointer' : ''"
-            @click="startVideo">
+        <div class="my-8 mt-8 lg:mt-0 mb-0 lg:mb-48 rounded-3xl overflow-hidden relative"
+            :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
             <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false">
                 <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
                 <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
