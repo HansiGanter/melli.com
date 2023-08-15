@@ -64,22 +64,16 @@ watch(() => props.email, async (newEmail) => {
 watch(() => props.show, async () => {
   await nextTick()
 
-  // TODO delete this, so far for backward compatibility
-  const utmElement = document.getElementById('UTM_URL') as HTMLInputElement
-  if (utmElement)
-    utmElement.value = window.location.href ?? ''
-
-  const elems = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
+  const elems = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'UTM_TERM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
 
   const currentParams: URLSearchParams = new URL(window.location.href).searchParams
 
   elems.forEach(elem => {
     const domElem = document.getElementById(elem) as HTMLInputElement
     if (domElem) {
-      // first get it from url, if not there lookup in localStorage, maybe just get it from localStorage?
       const currentValue = currentParams.get(elem.toLowerCase())
       const value = currentValue !== null ? currentValue : window.localStorage.getItem(elem.toLowerCase()) ?? ''
-      domElem.value = value
+      domElem.value = value.substring(0, 170)
     }
   })
 })
@@ -124,7 +118,7 @@ watch(() => props.show, async () => {
         <div id="sib-container" class="sib-container--large sib-container--vertical"
           style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
           <form id="sib-form" method="POST"
-            action="https://ccfae1fd.sibforms.com/serve/MUIFACz6BX0yANNtCwvS-D2jYSMoMGicbhCMAc0yLmh4KgWLrhSFiRxVKsmUT9P-OfxR5vod7f3MjiqdKArshTpJp2NhmOo_IwGlVCdgZkiWYSsX0PVaVODZTE8Rg-T-loa_M9A44Etr9R-cLpIRA4zxn_L90lLD2FOwIVkv-ldmrIT2wU-bbSug6Qj39Od9-NiCqj1RgglSHtMh"
+            action="https://ccfae1fd.sibforms.com/serve/MUIFAL8ZboJTDHYeIZU-VXVvWMjjWhydgco7G8khFgeMsOZV5sMmW7BcbG_bKhYEssUDcl8sIE7j-7X2YPTgXIOGSq5Fc4MWLZyNUy5YIk6QHImGYr_MeOCuAb0fbGXqOFNZREdBMJlHx8pUrAgBl0btQyxXf9jjLQLZyGiPQO5q4JJg5s_xfyWG4uUdloBeFUbqHfiJGi1ECQy6"
             data-type="subscription" @submit.prevent="onFormSubmit">
             <div style="padding: 8px 0;">
               <div class="sib-form-block"
@@ -142,7 +136,6 @@ watch(() => props.show, async () => {
             </div>
             <div style="padding: 8px 0; display: none;">
 
-              <input id="UTM_URL" class="input " maxlength="200" type="text" name="UTM_URL" placeholder="UTM_URL">
               <input class="input " maxlength="200" type="text" id="UTM_SOURCE" name="UTM_SOURCE" autocomplete="off"
                 placeholder="UTM_SOURCE" />
               <input class="input " maxlength="200" type="text" id="UTM_MEDIUM" name="UTM_MEDIUM" autocomplete="off"
