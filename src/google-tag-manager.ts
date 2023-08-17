@@ -262,6 +262,7 @@ export const fireInfoPackageSentEvent = (email?: string, phone?: string, firstNa
   window.dataLayer.push({
     event: 'melli-cta-info-package-sent',
     em: email ? sha256(email?.toLowerCase()) : '',
+    emk: email?.toLowerCase(),
     ph: phone ? sha256(phone?.replace(/[\(\)\-\s]+/g, '')) : '',
     fn: firstName ? sha256(firstName?.toLowerCase()) : '',
     ln: LastName ? sha256(LastName?.toLowerCase()) : '',
