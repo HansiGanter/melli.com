@@ -64,18 +64,22 @@ watch(() => props.email, async (newEmail) => {
 watch(() => props.show, async () => {
   await nextTick()
 
-  const elems = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'UTM_TERM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
+  const searchParams: URLSearchParams = new URL(window.location.href).searchParams
+  const inputElementIds = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'UTM_TERM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
 
-  const currentParams: URLSearchParams = new URL(window.location.href).searchParams
-
-  elems.forEach(elem => {
-    const domElem = document.getElementById(elem) as HTMLInputElement
+  inputElementIds.forEach((inputId) => {
+    const domElem = document.getElementById(inputId) as HTMLInputElement
     if (domElem) {
-      const currentValue = currentParams.get(elem.toLowerCase())
-      const value = currentValue !== null ? currentValue : window.localStorage.getItem(elem.toLowerCase()) ?? ''
-      domElem.value = value.substring(0, 170)
+      const currentValue = searchParams.get(inputId.toLowerCase())
+      const value = currentValue !== null ? currentValue : window.localStorage.getItem(inputId.toLowerCase()) ?? ''
+      domElem.value = value.substring(0, 150)
     }
   })
+
+  // also fill UTM_URL input field with hostname + path
+  const domElem = document.getElementById('UTM_URL') as HTMLInputElement | undefined
+  if (domElem)
+    domElem.value = (window.location.origin + window.location.pathname).substring(0, 170)
 })
 </script>
 
@@ -135,24 +139,22 @@ watch(() => props.show, async () => {
               </div>
             </div>
             <div style="padding: 8px 0; display: none;">
-
-              <input class="input " maxlength="200" type="text" id="UTM_SOURCE" name="UTM_SOURCE" autocomplete="off"
-                placeholder="UTM_SOURCE" />
-              <input class="input " maxlength="200" type="text" id="UTM_MEDIUM" name="UTM_MEDIUM" autocomplete="off"
-                placeholder="UTM_MEDIUM" />
-              <input class="input " maxlength="200" type="text" id="UTM_CAMPAIGN" name="UTM_CAMPAIGN" autocomplete="off"
-                placeholder="UTM_CAMPAIGN" />
-              <input class="input " maxlength="200" type="text" id="UTM_CONTENT" name="UTM_CONTENT" autocomplete="off"
-                placeholder="UTM_CONTENT" />
-              <input class="input " maxlength="200" type="text" id="GCLID" name="GCLID" autocomplete="off"
-                placeholder="GCLID" />
-              <input class="input " maxlength="200" type="text" id="FBCLID" name="FBCLID" autocomplete="off"
-                placeholder="FBCLID" />
-              <input class="input " maxlength="200" type="text" id="MELLITBCLID" name="MELLITBCLID" autocomplete="off"
-                placeholder="MELLITBCLID" />
-              <input class="input " maxlength="200" type="text" id="MELLIOBCLID" name="MELLIOBCLID" autocomplete="off"
-                placeholder="MELLIOBCLID" />
-
+              <input id="UTM_SOURCE" class="input " maxlength="200" type="text" name="UTM_SOURCE" autocomplete="off"
+                placeholder="UTM_SOURCE">
+              <input id="UTM_MEDIUM" class="input " maxlength="200" type="text" name="UTM_MEDIUM" autocomplete="off"
+                placeholder="UTM_MEDIUM">
+              <input id="UTM_CAMPAIGN" class="input " maxlength="200" type="text" name="UTM_CAMPAIGN" autocomplete="off"
+                placeholder="UTM_CAMPAIGN">
+              <input id="UTM_CONTENT" class="input " maxlength="200" type="text" name="UTM_CONTENT" autocomplete="off"
+                placeholder="UTM_CONTENT">
+              <input id="GCLID" class="input " maxlength="200" type="text" name="GCLID" autocomplete="off"
+                placeholder="GCLID">
+              <input id="FBCLID" class="input " maxlength="200" type="text" name="FBCLID" autocomplete="off"
+                placeholder="FBCLID">
+              <input id="MELLITBCLID" class="input " maxlength="200" type="text" name="MELLITBCLID" autocomplete="off"
+                placeholder="MELLITBCLID">
+              <input id="MELLIOBCLID" class="input " maxlength="200" type="text" name="MELLIOBCLID" autocomplete="off"
+                placeholder="MELLIOBCLID">
             </div>
             <div style="padding: 8px 0;">
               <div class="sib-input sib-form-block">
