@@ -120,9 +120,12 @@ function submitBuy() {
           <p class="text-3xl font-medium">
             €{{ answers[0] === '' ? '0,00' : options[priceIndex].price.toFixed(2) }}<span class="text-lg"> / Monat</span>
           </p>
-          <p v-if="answers[0] === 'yearly'" class="text-gray-400 text-xs font-light">
-            jährlich abgerechnet mit €{{ (Math.round(options[priceIndex].price * 12 * 100) / 100).toFixed(2) }}/Jahr
-          </p>
+          <div v-if="answers[0] === 'yearly'" class="text-gray-400 text-xs font-light">
+            <p> jährlich abgerechnet mit €{{ (24.9 * 12 * 100 / 100).toFixed(2) }}</p>
+            <p v-if="options[priceIndex].price > 24.9" class="text-gray-400 text-xs font-light">
+              monatlich abgerechnet mit €{{ (options[priceIndex].price - 24.9).toFixed(2) }}
+            </p>
+          </div>
         </div>
         <p v-if="answers[2] === 'onetime'" class="font-medium">
           + €175,00 Tablet / einmalig
@@ -133,7 +136,7 @@ function submitBuy() {
         <li>30 Tage kostenlos testen</li>
         <li>Melli-Abo</li>
         <li>Melli-App für Familie und Freunde</li>
-        <li>Melli-Gruppen mit professionellen Betreuungskräften</li>
+        <!-- <li>Melli-Gruppen mit professionellen Betreuungskräften</li> -->
         <li v-if="answers[1] === 'SIM'">
           SIM mit unbegrenztem Internet
         </li>
