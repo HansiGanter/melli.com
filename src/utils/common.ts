@@ -7,6 +7,6 @@ export function mergeObjectLists<
 
 const NBSP = '\u00A0' // non-breaking space unicode
 export const displayPrice = (price: number) => `€${NBSP}${price.toLocaleString('de', { useGrouping: false, minimumFractionDigits: 2 })}`
-export const customParams = ["gclid", "fbclid", "mellitbclid", "melliobclid"]
-export const utmParams = ["utm_source", "utm_medium", "utm_content", "utm_campaign", "utm_term"]
+export const customParams = ['gclid', 'fbclid', 'mellitbclid', 'melliobclid']
+export const utmParams = ['utm_source', 'utm_medium', 'utm_content', 'utm_campaign', 'utm_term']
 export const paramsToStore = customParams.concat(utmParams)

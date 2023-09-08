@@ -78,7 +78,7 @@ watch(() => props.show, async () => {
 
   // set hidden utm param fields
   const searchParams = new URL(window.location.href).searchParams
-  const inputElementIds = ['UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'UTM_TERM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
+  const inputElementIds = ['INITIAL_REFERRER_URL', 'UTM_CONTENT', 'UTM_CAMPAIGN', 'UTM_SOURCE', 'UTM_MEDIUM', 'UTM_TERM', 'GCLID', 'FBCLID', 'MELLITBCLID', 'MELLIOBCLID']
 
   inputElementIds.forEach((inputId) => {
     const domElem = document.getElementById(inputId) as HTMLInputElement
@@ -90,9 +90,14 @@ watch(() => props.show, async () => {
   })
 
   // also fill UTM_URL input field with hostname + path
-  const domElem = document.getElementById('UTM_URL') as HTMLInputElement | undefined
-  if (domElem)
-    domElem.value = (window.location.origin + window.location.pathname).substring(0, 150)
+  const inputUtmUrl = document.getElementById('UTM_URL') as HTMLInputElement | undefined
+  if (inputUtmUrl)
+    inputUtmUrl.value = (window.location.origin + window.location.pathname).substring(0, 150)
+
+  // also fill LAST_REFERRER_URL input field with referrer
+  const inputLastReferrerUrl = document.getElementById('LAST_REFERRER_URL') as HTMLInputElement | undefined
+  if (inputLastReferrerUrl)
+    inputLastReferrerUrl.value = (document.referrer).substring(0, 150)
 })
 </script>
 
@@ -161,7 +166,7 @@ watch(() => props.show, async () => {
           <form
             id="sib-form"
             method="POST"
-            action="https://ccfae1fd.sibforms.com/serve/MUIFAGQyxb95Jq7t3Z8TDO0WgGmUx8Y5XOSCbvBRyQiDjyvFjKYJpBrGzz7JHzf2wWJCNmE4LzbZxAxqPBLQ_4FkOhKOfsMlTexBjkfyBdvhBWM4aru1irEdt5XfjtLmHEZmr7d6MVwOXNh8rWRzvq78FJoWHxtYkhgI2vi-zXxKA1W9DxuppRXdglpOvzYbd4R7ZlRWTyUfmAy4"
+            action="https://ccfae1fd.sibforms.com/serve/MUIFACszhUP__t1XmAdDZhPE4NgCdpOU6ZeUKN--CEFtKsfB0BvTC9gOveBVYoD6MGvc3SXhS02GVVr4AziiX8LZosuS5mYEkDokF3I0mCgrQLggj4V1_rAb0VyGOuwsKwvga3seSQFlris6MX_ETLVd53rGQobOnV8jJFU_B798jHXC8bLHKhv3XmSQ8khj4soEm_VzgJ0LvRDw"
             data-type="subscription"
             @submit.prevent="onFormSubmit"
           >
@@ -184,6 +189,24 @@ watch(() => props.show, async () => {
               </div>
             </div>
             <div style="padding: 8px 0; display: none;">
+              <input
+                id="INITIAL_REFERRER_URL"
+                class="input "
+                maxlength="200"
+                type="text"
+                name="INITIAL_REFERRER_URL"
+                autocomplete="off"
+                placeholder="INITIAL_REFERRER_URL"
+              >
+              <input
+                id="LAST_REFERRER_URL"
+                class="input "
+                maxlength="200"
+                type="text"
+                name="LAST_REFERRER_URL"
+                autocomplete="off"
+                placeholder="LAST_REFERRER_URL"
+              >
               <input
                 id="UTM_URL"
                 class="input "
