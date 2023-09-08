@@ -4,9 +4,11 @@ const props = defineProps<{
 }>()
 
 const router = useRouter()
-const routes: any = []
-for (const article of props.articles)
-  routes.push(router.getRoutes().filter(r => r.path === article))
+const routes: any = props.articles
+  .map(articlePath => router.getRoutes().find(r => r.path === articlePath))
+  .filter(x => x !== undefined)
+
+console.log(routes)
 </script>
 
 <template>
@@ -23,18 +25,18 @@ for (const article of props.articles)
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="route in routes" :key="route" class="grid content-start cursor-pointer rounded-3xl hover:shadow-md p-2">
-          <router-link :to="route[0].path">
-            <img :src="route[0].meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
+          <router-link :to="route.path">
+            <img :src="route.meta.frontmatter.previewUrl ?? route.meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
             <div class="flex flex-wrap py-4 gap-2">
-              <Badge v-for="category in route[0].meta.frontmatter.categories" :key="category" class="bg-primary-50">
+              <Badge v-for="category in route.meta.frontmatter.categories" :key="category" class="bg-primary-50">
                 <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
               </Badge>
               <div class="text-black">
                 <h4 class="font-semibold text-xl">
-                  {{ route[0].meta.frontmatter.title }}
+                  {{ route.meta.frontmatter.title }}
                 </h4>
                 <div class="font-normal text-base">
-                  {{ route[0].meta.frontmatter.description }}
+                  {{ route.meta.frontmatter.description }}
                 </div>
               </div>
             </div>
@@ -45,6 +47,4 @@ for (const article of props.articles)
   </Container>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -9,6 +9,7 @@ author:
 date: 2023-05-15
 readingTime: 9min
 imageUrl: https://assets.melli.com/images/testimonials/helga-7-v2-2048.webp
+previewUrl: https://assets.melli.com/images/testimonials/helga-7-v2-768.webp
 articleRecommendations: ['/blog/struktur', '/blog/interview-schuldt', '/blog/unterhaltung']
 ---
 

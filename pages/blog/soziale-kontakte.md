@@ -9,6 +9,7 @@ author:
 date: 2022-11-10T16:00:00.000+00:00
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
+previewUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-768.webp
 articleRecommendations: ['/blog/struktur', '/blog/unterhaltung', '/blog/interview-schuldt']
 ---
 

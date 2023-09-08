@@ -9,6 +9,7 @@ author:
 date: 2022-10-09
 readingTime: 7min
 imageUrl: https://assets.melli.com/images/mockups/02_interior/device_interior_scheduler-2048.webp
+previewUrl: https://assets.melli.com/images/mockups/02_interior/device_interior_scheduler-768.webp
 articleRecommendations: ['/blog/soziale-kontakte', '/blog/unterhaltung', '/blog/wege-aus-der-einsamkeit']
 ---
 

@@ -8,6 +8,7 @@ author:
   name: Dr. Matthias Weber
 date: 2022-11-14
 imageUrl: https://assets.melli.com/images/team/gruender/melli_gruender-02-1536.webp
+previewUrl: https://assets.melli.com/images/team/gruender/melli_gruender-02-768.webp
 articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
 ---
 

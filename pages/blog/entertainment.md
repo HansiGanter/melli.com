@@ -9,6 +9,7 @@ author:
 date: 2023-06-02
 readingTime: 8min
 imageUrl: https://assets.melli.com/images/testimonials/gisla-2-2048.webp
+previewUrl: https://assets.melli.com/images/testimonials/gisla-2-768.webp
 articleRecommendations: ['/blog/unterhaltung', '/blog/struktur', '/blog/soziale-kontakte']
 ---
 

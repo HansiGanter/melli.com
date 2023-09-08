@@ -16,6 +16,7 @@ export interface PostItem {
   date: string
   readingTime: string
   imageUrl: string
+  previewUrl?: string
 }
 
 export interface Person {

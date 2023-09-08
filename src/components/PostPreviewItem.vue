@@ -16,10 +16,7 @@ const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatt
   <router-link :key="route.path" :to="route.path" class="contents">
     <div class="bg-white dark:bg-gray-800 flex flex-col gap-8 px-6 pb-8 pt-6 rounded-2xl shadow-lg overflow-hidden">
       <div class="flex-shrink-0 rounded-lg overflow-hidden">
-        <img
-          class="h-60 w-full object-cover"
-          :src="frontmatter.imageUrl ? frontmatter.imageUrl : 'logo.svg'"
-        >
+        <img class="h-60 w-full object-cover" :src="frontmatter.previewUrl ?? frontmatter.imageUrl ?? 'logo.svg'">
       </div>
       <div class="flex-1 flex flex-col justify-between">
         <div class="flex-1">
