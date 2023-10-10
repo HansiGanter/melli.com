@@ -7,7 +7,7 @@ href: blogs
 author:
   name: Dr. Matthias Weber
 date: 2022-21-09
-imageUrl: https://assets.melli.com/images/blogs/melli-gruppe/melli-image-testimonial-helga-6v4-1536.webp
+imageUrl: https://assets.melli.com/images/blogs/melli-gruppe/melli-image-testimonial-helga-3-v2-1536.webp
 articleRecommendations: ['/blog/melli-in-tv', '/blog/gruenderstory', '/blog/beispieltag']
 ---
 
