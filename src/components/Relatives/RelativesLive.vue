@@ -45,7 +45,7 @@ const playVideo = () => {
               class="rounded-lg bg-primary-400 text-white font-medium py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center">
               <div class="i-lucide:gift w-6 h-6" /><span>30 Tage kostenlos testen</span>
             </RouterLink>
-            <a href="tel:030555703440"
+            <a href="tel:03031198464"
               class="rounded-lg border-gray-900 font-medium border-2 text-gray-900 py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center">
               <div class="i-lucide:phone-call w-6 h-6" /><span>Lass dich beraten!</span>
             </a>

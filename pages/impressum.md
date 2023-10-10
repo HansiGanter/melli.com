@@ -19,7 +19,7 @@ Dr. Stefan Buchkremer, Dr. Matthias Weber, Hans Ganter
 
 ## Kontakt
 
-Telefon: +4930555703440 \
+Telefon: +493031198464 \
 Telefax: +4930555703449 \
 E-Mail: info@meetap.de
 

@@ -63,9 +63,9 @@ const router = useRouter()
           <CallOrPipedrive icon-class="text-grey-600" text-class="" />
         </div>
         <div class="flex flex-nowrap gap-2 items-center lg:hidden">
-          <a href="tel:030-555703440"
+          <a href="tel:030-31198464"
             class="rounded-md border-solid border-2 px-4 py-2 border-primary-300 flex items-center gap-2 w-fit">
-            <div class="i-lucide:phone-call w-6 h-6 shrink-0" />030-555703440
+            <div class="i-lucide:phone-call w-6 h-6 shrink-0" />030-31198464
           </a>
           <button type="button" class="block p-4" @click="showNav = !showNav">
             <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />

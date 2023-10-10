@@ -29,7 +29,7 @@ const { t } = useI18n()
                     class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                     {{ t('404.go-home') }}
                   </router-link>
-                  <a href="tel:030555703440"
+                  <a href="tel:03031198464"
                     class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                     {{ t('404.contact-support') }}
                   </a>

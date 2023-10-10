@@ -31,7 +31,7 @@ const technicalDetails = [
   },
   {
     question: 'Kann ich das Gerät auch mit WLAN nutzen?',
-    answer: 'Sie können Melli auch mit Ihrem WLAN verbinden. Dazu müssen Sie einmalig Ihr WLAN-Passwort eingeben und Melli verbindet sich automatisch. Wenn Sie Hilfe benötigen, rufen Sie bitte unsere Service Team unter der Nummer 030555703440 an. Dort erreichen Sie uns von Montags bis Freitags.',
+    answer: 'Sie können Melli auch mit Ihrem WLAN verbinden. Dazu müssen Sie einmalig Ihr WLAN-Passwort eingeben und Melli verbindet sich automatisch. Wenn Sie Hilfe benötigen, rufen Sie bitte unsere Service Team unter der Nummer 03031198464 an. Dort erreichen Sie uns von Montags bis Freitags.',
   },
   {
     question: 'Ist das Datenvolumen auf der SIM-Karte begrenzt?',
@@ -151,8 +151,8 @@ const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SI
                   class="lg:text-justify text-left text-gray-500 lg:ml-10 font-normal text-xl pb-2 grid gap-2">
                   <span>Ja, unser Service-Team steht Ihnen bei der Inbetriebnahme und Erst-Einrichtung telefonisch zur
                     Seite. Sie erreichen uns von Montag bis Freitag von 08:00 bis 17:00 unter der Nummer <a
-                      href="tel:030555703440"
-                      class="underline decoration-1 decoration-solid underline-offset-1">030-555703440</a>.</span>
+                      href="tel:03031198464"
+                      class="underline decoration-1 decoration-solid underline-offset-1">030-31198464</a>.</span>
                 </DisclosurePanel>
               </transition>
             </Disclosure>

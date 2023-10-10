@@ -17,7 +17,7 @@ Außerdem enthält diese Datenschutzerklärung Informationen über Empfänger pe
 Verantwortliche für die Verarbeitung Ihrer personenbezogenen Daten im Rahmen der Nutzung von Melli ist:
 
 meetap GmbH, Manfred-von-Richthofen-Str. 4, 12101 Berlin<br>
-Telefon: +4930555703440<br>
+Telefon: +493031198464<br>
 Telefax: +4930555703449<br>
 E-Mail: support@melli.com<br>
 

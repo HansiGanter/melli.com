@@ -25,7 +25,7 @@ href: legal
 
     In diesen Fällen wird der Anbieter die Zustimmung des Kunden zu den Änderungen in anderer Weise einholen. 
 
-5. Anbieter ist die meetap GmbH, Manfred-von-Richthofen-Str. 4, D-12101 Berlin, Tel: +49 30 555703440, eingetragen im Handelsregister des Amtsgerichts Berlin-Charlottenburg unter HRB 231091 B, vertreten durch die Geschäftsführer Dr. Stefan Buchkremer, Dr. Matthias Weber, Hans Ganter, Umsatzsteuer-Identifikationsnummer DE 283254323.
+5. Anbieter ist die meetap GmbH, Manfred-von-Richthofen-Str. 4, D-12101 Berlin, Tel: +49 30 31198464, eingetragen im Handelsregister des Amtsgerichts Berlin-Charlottenburg unter HRB 231091 B, vertreten durch die Geschäftsführer Dr. Stefan Buchkremer, Dr. Matthias Weber, Hans Ganter, Umsatzsteuer-Identifikationsnummer DE 283254323.
 
 ### § 2 Vertragsabschluss
 1. Die Darstellung der Applikation so wie der Hardware auf unserer Website, in unserem Online-Shop oder in unserem Angebot stellen kein rechtlich bindendes Angebot, sondern eine Aufforderung zur Bestellung (invitatio ad offerendum) dar, es sei denn, im Einzelfall wird ausdrücklich darauf hingewiesen, dass es sich um ein rechtlich bindendes Angebot handelt.

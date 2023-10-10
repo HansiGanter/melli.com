@@ -163,7 +163,7 @@ der verantwortlichen Person bzw. Stelle:\
 Manfred-von-Richthofen-Str. 4 12101 Berlin]{style="font-weight: 400"}
 
 E-Mail: <datenschutz@meetap.de>\
-Telefon: [+4930555703440](tel:+4930555703440)\
+Telefon: [+493031198464](tel:+493031198464)\
 Impressum: <https://melli.com/impressum>
 
 ## Kontaktdaten des Datenschutzbeauftragten {#kontaktdaten-datenschutzbeauftragter}

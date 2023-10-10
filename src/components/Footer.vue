@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 const navigation = {
   resources: [
-    { name: '030-555703440', href: 'tel:030555703440', icon: 'i-carbon:phone' },
+    { name: '030-31198464', href: 'tel:03031198464', icon: 'i-carbon:phone' },
     { name: 'support@melli.com', href: 'mailto:support@melli.com', icon: 'i-carbon:email' },
   ],
   support: [
