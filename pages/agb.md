@@ -249,4 +249,4 @@ Entscheidet sich der Kunde zum Ende der Studiennutzungsphase gegen eine Weiternu
 
 ***
 
-<a href="https://assets.melli.com/files/230614.ABGs.und.Wiederrufbelehrung.melli.pdf" target="_blank" class="appearance-none w-fit flex items-center gap-2 text-base font-normal text-white bg-primary-500 my-12 py-2 px-4 rounded-lg">AGBs als PDF Downloaden <div class="i-lucide:download font-bold" /></a>
+<a href="https://assets.melli.com/files/230925.AGB.und.Widerruf.melli.v17.pdf" target="_blank" class="appearance-none w-fit flex items-center gap-2 text-base font-normal text-white bg-primary-500 my-12 py-2 px-4 rounded-lg">AGB als PDF Downloaden <div class="i-lucide:download font-bold" /></a>
