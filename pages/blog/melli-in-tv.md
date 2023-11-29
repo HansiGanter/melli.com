@@ -2,7 +2,7 @@
 title: "Künstliche Intelligenz in der Altenpflege: Die Tagesschau berichtet über Melli"
 description: |
   Melli erobert die Nachrichten: Ein echtes Highlight für uns! Schau dir hier den Beitrag der Tagesschau an.
-categories: ['News']
+categories: ['Neuigkeiten']
 href: blogs
 author:
   name: Dr. Matthias Weber

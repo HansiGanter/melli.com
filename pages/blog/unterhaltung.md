@@ -2,7 +2,7 @@
 title: Mit Melli zu einem gesunden und aktiven Lebensabend
 description: |
   Mehr Freizeit bedeutet nicht unbedingt mehr Zufriedenheit - besonders im Alter fehlt es häufig an Möglichkeiten die freie Zeit mit spannden Inhalten und Aktivitäten zu füllen. Wir zeigen, wie Melli dabei helfen kann.
-categories: ['Funktionen', 'Entertainment', 'Digitale Teilhabe im Alter']
+categories: ['Melli-Funktionen']
 href: blogs
 author:
   name: Dr. Matthias Weber

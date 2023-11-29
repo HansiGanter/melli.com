@@ -1,16 +1,19 @@
 <script setup lang="ts">
-const { t } = useI18n()
-import { fireInfoPackageOpenEvent } from '~/google-tag-manager'
+const { t } = useI18n();
+import { fireInfoPackageOpenEvent } from '~/google-tag-manager';
+import { breakpointsTailwind } from '@vueuse/core';
 
-const isProduction = import.meta.env.PROD
+const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm');
+
+const isProduction = import.meta.env.PROD;
 useHead({
   title: 'Melli',
   meta: [
     { name: 'description', content: 'News und Beiträge zu Melli. Informiere dich über neue Produktfunktionen, kostenlose Tipps, Angebote, Aktionen und vieles mehr.' },
   ],
-})
+});
 
-const router = useRouter()
+const router = useRouter();
 const categories = [...new Set(router.getRoutes()
   .filter(
     route =>
@@ -19,26 +22,26 @@ const categories = [...new Set(router.getRoutes()
       && (!isProduction || !route.path.startsWith('/blog/examples'))
       && (route.meta as any).frontmatter.categories,
   ).map(route => (route.meta as any).frontmatter.categories)
-  .flat())]
-categories.sort()
-categories.unshift('Alle')
+  .flat())];
+categories.sort();
+categories.unshift('Alle');
 
-const currentFilter = ref(categories[0])
+const currentFilter = ref(categories[0]);
 
-const showNewsletterModal = ref(false)
-const newsletterEmail = ref()
+const showNewsletterModal = ref(false);
+const newsletterEmail = ref();
 
 const openNewsletterModal = (email?: string) => {
-  fireInfoPackageOpenEvent(email)
-  newsletterEmail.value = email
-  showNewsletterModal.value = true
-}
+  fireInfoPackageOpenEvent(email);
+  newsletterEmail.value = email;
+  showNewsletterModal.value = true;
+};
 
 const onEmailFormSubmit = (e: Event) => {
-  const formData = new FormData(e.target as HTMLFormElement)
-  const email = formData.get('email') as string
-  openNewsletterModal(email)
-}
+  const formData = new FormData(e.target as HTMLFormElement);
+  const email = formData.get('email') as string;
+  openNewsletterModal(email);
+};
 </script>
 
 <template>
@@ -69,9 +72,9 @@ const onEmailFormSubmit = (e: Event) => {
       </div>
     </div>
   </Container>
-  <Container class="pb-20 lg:pb-28 px-5">
+  <Container class="pb-20 lg:pb-28">
     <div class="grid gap-8">
-      <div class="flex items-center justify-center gap-3 flex-wrap">
+      <div v-if="greaterSm" class="flex sm:items-center justify-center flex-wrap">
         <button v-for="categorie in categories" :key="categorie" type="button"
           class="py-2.5 px-4 font-medium text-sm inline rounded-full transition delay-150 ease-in-out cursor-pointer hover:bg-primary-50 hover:text-primary-700"
           :class="currentFilter === categorie ? 'bg-primary-50 text-primary-700' : 'bg-transparent text-gray-500'"

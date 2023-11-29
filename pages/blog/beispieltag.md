@@ -2,7 +2,7 @@
 title: Ein Tag mit Melli
 description: |
     Begleite die Sprachassistentin für Senioren bei einem Tag mit ihrer 79-jährigen Nutzerin Alma
-categories: ["Entertainment", "Tagesstruktur"]
+categories: ["Tipps & Tricks", "Melli-Funktionen"]
 href: blogs
 author:
     name: Matthias Weber

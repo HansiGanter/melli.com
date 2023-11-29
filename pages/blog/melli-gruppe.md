@@ -2,7 +2,7 @@
 title: Gemeinsam statt einsam
 description: |
     Wie einsame Senioren durch Melli zu Freunden werden.
-categories: ['Einsamkeit im Alter', 'Funktionen']
+categories: ['Melli-Funktionen', 'Einsamkeit im Alter']
 href: blogs
 author:
   name: Dr. Matthias Weber

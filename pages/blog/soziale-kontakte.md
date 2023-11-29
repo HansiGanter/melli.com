@@ -2,7 +2,7 @@
 title: Weil gemeinsam das Leben einfach besser ist.
 description: |
     Rund acht Millionen Senioren in Deutschland sind zeitweise von Einsamkeit betroffen. Erfahre hier wie Melli dem Trend der Vereinsamung entgegenwirkt und welche Hürden sie dabei zu bewältigen hat.
-categories: ['Funktionen', 'Einsamkeit im Alter', 'Soziale Beziehungen']
+categories: ['Einsamkeit im Alter', 'Melli-Funktionen']
 href: blogs
 author:
     name: Dr. Matthias Weber

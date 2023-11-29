@@ -1,7 +1,7 @@
 ---
 title: 'Melli goes DiPA: So kannst du Melli bald kostenfrei beantragen'
 description: Wir führen eine große Studie durch, um Melli bei den Pflegekassen als digitale Pflegeanwendung zu zertifizieren. Sei dabei, teste Melli kostenfrei und hilf uns, sie auch für andere zugänglich zu machen. Wie du teilnehmen kannst, erfährst du hier!
-categories: ['Digitale Teilhabe im Alter', 'News', 'Einsamkeit im Alter']
+categories: ['Neuigkeiten']
 href: blogs
 author:
     name: Dr. Stefan Buchkremer

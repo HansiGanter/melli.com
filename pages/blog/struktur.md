@@ -1,7 +1,7 @@
 ---
 title: Ordnung ist mehr als das halbe Leben – Wie Melli gesunde Gewohnheiten fördert
 description: Vielen Senioren fehlt es an Strukturen in ihrem Alltag. Einerseits mangelt es den Senioren an Aufgaben, andererseits wird die Bewältigung des ganz normalen Alltags immer schwieriger. Erfahre wie Melli Senioren verschiedene Möglichkeiten bieten kann alltägliche Strukturen neu zu finden und gesunde Routinen beizubehalten.
-categories: ['Funktionen', 'Tagesstruktur']
+categories: ['Melli-Funktionen']
 href: blogs
 author:
     name: Dr. Matthias Weber
