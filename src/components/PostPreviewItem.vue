@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import type { RouteRecordNormalized } from 'vue-router'
-import type { PostItem } from '~/types'
+import { computed } from 'vue';
+import type { RouteRecordNormalized } from 'vue-router';
+import type { PostItem } from '~/types';
 
 const props = defineProps<{
-  route: RouteRecordNormalized
-}>()
+  route: RouteRecordNormalized;
+}>();
 
-const { d } = useI18n()
+const { d } = useI18n();
 
-const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatter)
+const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatter);
 </script>
 
 <template>

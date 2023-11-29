@@ -47,9 +47,9 @@ Erlebnis, dass sie genießen kann. Eine Einladung zu einem Konzert ihres Lieblin
 
 1. **Eine digitale Begleiterin für Omas Alltag:** Melli - die digitale Begleiterin für Senioren - ist die perfekte Lösung damit Oma auch nach Weihnachten nicht alleine ist. Dank einfachster Bedienung per Sprache ermöglicht sie deinen Großeltern den Zugang zur digitalen Welt. So kann Melli die Verbindung zwischen Oma und deiner Familie verstärken und gleichzeitig Omas Alltag erleichtern.
 
-<a class="bg-primary-500 text-white px-4 py-2 rounded-lg no-underline m-4" href="https://check.melli.com">Finde heraus, ob Melli zu Oma & Opa passt</a>
-
-<br>
+<div class="sm:mt-4 sm:mb-8 sm:mx-6">
+<a class="block sm:inline bg-primary-500 text-white px-8 sm:px-4 py-2 rounded-lg no-underline my-8 mx-auto w-fit text-center" href="https://check.melli.com">Finde heraus, ob Melli zu Oma & Opa passt</a>
+</div>
 
 Egal für welche Idee du dich entscheidest, denk daran, dass das wertvollste Geschenk immer die Zeit und Liebe ist, die du investierst, um sie glücklich zu machen. Wir wünschen eine fröhliche Bescherung!
 <div class="i-ph:1"></div>

@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const props = defineProps<{
-  articles: Array<string>
-}>()
+  articles: Array<string>;
+}>();
 
-const router = useRouter()
+const router = useRouter();
 const routes: any = props.articles
   .map(articlePath => router.getRoutes().find(r => r.path === articlePath))
-  .filter(x => x !== undefined)
+  .filter(x => x !== undefined);
 
-console.log(routes)
+console.log(routes);
 </script>
 
 <template>
-  <Container class="bg-primary-100 py-10 md:py-24 px-4 lg:px-0 mx-auto">
+  <Container class="bg-primary-100 py-10 md:py-24 mx-auto">
     <div class="grid gap-12">
       <div class="flex items-center justify-between">
         <h2 class="text-gray-900 font-semibold sm:text-2xl md:text-4xl my-0">
@@ -24,9 +24,11 @@ console.log(routes)
         </router-link>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="route in routes" :key="route" class="grid content-start cursor-pointer rounded-3xl hover:shadow-md p-2">
+        <div v-for="route in routes" :key="route"
+          class="grid content-start cursor-pointer rounded-3xl hover:shadow-md p-2">
           <router-link :to="route.path">
-            <img :src="route.meta.frontmatter.previewUrl ?? route.meta.frontmatter.imageUrl" class="w-full h-64 rounded-3xl object-center object-cover">
+            <img :src="route.meta.frontmatter.previewUrl ?? route.meta.frontmatter.imageUrl"
+              class="w-full h-64 rounded-3xl object-center object-cover">
             <div class="flex flex-wrap py-4 gap-2">
               <Badge v-for="category in route.meta.frontmatter.categories" :key="category" class="bg-primary-50">
                 <span class="text-primary-700 font-medium text-sm">{{ category }}</span>
