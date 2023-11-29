@@ -18,14 +18,13 @@ console.log(routes);
         <h2 class="text-gray-900 font-semibold sm:text-2xl md:text-4xl my-0">
           Auch interessant
         </h2>
-        <router-link to="/blog" class="inline-flex gap-3 items-center px-4">
+        <router-link to="/blog" class="inline-flex gap-3 items-center">
           <span class="font-medium sm:text-base md:text-lg text-black">mehr Artikel</span>
           <div class="i-carbon:arrow-right bg-gray-700 h-6 w-6" />
         </router-link>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="route in routes" :key="route"
-          class="grid content-start cursor-pointer rounded-3xl hover:shadow-md p-2">
+        <div v-for="route in routes" :key="route" class="grid content-start cursor-pointer rounded-3xl hover:shadow-md">
           <router-link :to="route.path">
             <img :src="route.meta.frontmatter.previewUrl ?? route.meta.frontmatter.imageUrl"
               class="w-full h-64 rounded-3xl object-center object-cover">
