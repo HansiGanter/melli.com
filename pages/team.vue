@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Person } from '~/types'
+import type { Person } from '~/types';
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const people: Array<Person> = [
   {
@@ -41,22 +41,22 @@ const people: Array<Person> = [
     role: 'B2C Marketing',
     imageUrl: 'https://assets.melli.com/images/team/franziska-lerch.webp',
   },
-  {
-    name: 'Philip Krech',
-    role: 'Product Manager',
-    imageUrl: 'https://assets.melli.com/images/team/philip-krech.webp',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/philip-krech-447032b0/',
-    },
-  },
-  {
-    name: 'Johanna Döller',
-    role: 'Research & Development',
-    imageUrl: 'https://assets.melli.com/images/team/johanna-doeller.webp',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/johanna-d%C3%B6ller-51a9481b3/',
-    },
-  },
+  // {
+  //   name: 'Philip Krech',
+  //   role: 'Product Manager',
+  //   imageUrl: 'https://assets.melli.com/images/team/philip-krech.webp',
+  //   social: {
+  //     linkedin: 'https://www.linkedin.com/in/philip-krech-447032b0/',
+  //   },
+  // },
+  // {
+  //   name: 'Johanna Döller',
+  //   role: 'Research & Development',
+  //   imageUrl: 'https://assets.melli.com/images/team/johanna-doeller.webp',
+  //   social: {
+  //     linkedin: 'https://www.linkedin.com/in/johanna-d%C3%B6ller-51a9481b3/',
+  //   },
+  // },
   // {
   //   name: 'Leonie Krumbholz',
   //   role: 'Recruiting',
@@ -73,7 +73,7 @@ const people: Array<Person> = [
       github: 'https://github.com/andreasfelix/',
     },
   },
-]
+];
 </script>
 
 <template>
@@ -87,10 +87,7 @@ const people: Array<Person> = [
           {{ t('team.subheading') }}
         </p>
       </div>
-      <ul
-        role="list"
-        class="z-1 grid gap-4 sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4"
-      >
+      <ul role="list" class="z-1 grid gap-4 sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8 2xl:grid-cols-4">
         <TeamCardItem v-for="(person, p) in people" :key="p" :person="person" />
       </ul>
     </div>
