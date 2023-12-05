@@ -50,14 +50,6 @@ const people: Array<Person> = [
   //   },
   // },
   // {
-  //   name: 'Johanna Döller',
-  //   role: 'Research & Development',
-  //   imageUrl: 'https://assets.melli.com/images/team/johanna-doeller.webp',
-  //   social: {
-  //     linkedin: 'https://www.linkedin.com/in/johanna-d%C3%B6ller-51a9481b3/',
-  //   },
-  // },
-  // {
   //   name: 'Leonie Krumbholz',
   //   role: 'Recruiting',
   //   imageUrl: 'https://assets.melli.com/images/team/leonie-krumbholz.webp',
