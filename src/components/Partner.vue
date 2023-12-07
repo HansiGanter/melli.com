@@ -17,7 +17,7 @@ const partnerList = [
 </template>
 <style>
 .slide {
-    animation: slide 3s linear infinite;
+    animation: slide 10s linear infinite;
 }
 
 @media (min-width: 640px) {
