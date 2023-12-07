@@ -1,11 +1,12 @@
+
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { fireFAQEvent } from '~/google-tag-manager'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
+import { fireFAQEvent } from '~/google-tag-manager';
 
 defineProps<{
-  question: string
-  answer: string
-}>()
+  question: string;
+  answer: string;
+}>();
 </script>
 
 <template>

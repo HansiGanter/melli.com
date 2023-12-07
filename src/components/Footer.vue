@@ -1,154 +1,94 @@
 <script setup lang="ts">
-import { fireContactEvent } from '~/google-tag-manager'
-// todo: add system option
+import { fireContactEvent, fireInfoPackageOpenEvent } from '~/google-tag-manager';
 
-const { t } = useI18n()
+const email = ref('');
+const showNewsletterModal = ref(false);
+const newsletterEmail = ref();
 
-const navigation = {
-  resources: [
-    { name: '030-31198464', href: 'tel:03031198464', icon: 'i-carbon:phone' },
-    { name: 'support@melli.com', href: 'mailto:support@melli.com', icon: 'i-carbon:email' },
-  ],
-  support: [
-    { name: t('footer.support.faq'), href: '/faq' },
-    { name: t('footer.support.user-login'), href: 'https://app.melli.com/' },
-  ],
-  solutions: [
-    { name: 'AGB', href: '/agb' },
-    { name: t('footer.solutions.privacy'), href: '/datenschutz' },
-    { name: t('footer.solutions.privacy-melli'), href: '/datenschutz-melli' },
-    { name: t('footer.solutions.legal-notice'), href: '/impressum' },
-  ],
-  // company: [
-  //   { name: t('footer.company.jobs'), href: '/karriere' },
-  // ],
-  social: [
-    {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/deine.melli',
-      icon: 'i-carbon:logo-facebook h-5 w-5',
-    },
-    {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/deine.melli/',
-      icon: 'i-carbon:logo-instagram h-5 w-5'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/mit-melli/',
-      icon: 'i-carbon:logo-linkedin h-5 w-5',
-    },
-    {
-      name: 'Github',
-      href: 'https://github.com/melli-labs',
-      icon: 'i-carbon:logo-github h-5 w-5',
-    },
-    {
-      name: 'YouTube',
-      href: 'https://www.youtube.com/channel/UC9kINIc7RSUKfMu8LXaWnTQ',
-      icon: 'i-carbon:logo-youtube h-5 w-5',
-    },
-  ],
-}
+const openNewsletterModal = (email?: string) => {
+  fireInfoPackageOpenEvent(email);
+  newsletterEmail.value = email;
+  showNewsletterModal.value = true;
+};
 </script>
-
 <template>
-  <footer aria-labelledby="footer-heading" class="py-12 lg:py-16">
-    <div class="mb-12">
-      <hr>
-      <SocialMedia class="py-8" />
-      <hr>
-    </div>
-    <h2 id="footer-heading" class="sr-only">
-      Footer
-    </h2>
-    <div class="pb-8 grid grid-cols-1 xl:grid-cols-4 gap-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm font-semibold text-primary-400 dark:text-white dark:text-white tracking-wider uppercase">
-              Sie brauchen Hilfe?
-            </h3>
-            <ul role="list" class="mt-4 space-y-2 flex-wrap">
-              <li class="text-lg font-semibold text-gray-500">
-                Lassen Sie sich kostenlos beraten!
-              </li>
-              <li v-for="item in navigation.resources" :key="item.name">
-                <a :href="item.href"
-                  class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center"
-                  @click="fireContactEvent(item.name)">
-                  <div :class="item.icon" />
-                  <span>{{ item.name }}</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-12 md:mt-0">
-            <h3 class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase">
-              FAQ & Login
-            </h3>
-            <ul role="list" class="mt-4 space-y-2">
-              <li v-for="item in navigation.support" :key="item.name">
-                <a :href="item.href" class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">{{
-                  item.name }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase">
-              Wichtige Links
-            </h3>
-            <ul role="list" class="mt-4 space-y-2">
-              <li v-for="item in navigation.solutions" :key="item.name">
-                <a :href="item.href" class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300">{{
-                  item.name }}</a>
-              </li>
-            </ul>
-          </div>
-          <!-- <div class="mt-12 md:mt-0">
-                  <h3
-                    class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase"
-                  >
-                    Karriere
-                  </h3>
-                  <ul role="list" class="mt-4 space-y-2">
-                    <li v-for="item in navigation.company" :key="item.name">
-                      <router-link
-                        :to="item.href"
-                        class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300"
-                      >
-                        {{ item.name }}
-                      </router-link>
-                    </li>
-                  </ul>
-                </div> -->
-          <div class=" lg:mt-0">
-            <h3 class="text-sm font-semibold text-primary-400 dark:text-white tracking-wider uppercase">
-              Folge uns!
-            </h3>
-            <ul role="list" class="mt-4 space-y-2">
-              <li v-for="item in navigation.social" :key="item.name" @click="fireContactEvent(item.name)">
-                <a :href="item.href" target="_blank"
-                  class="text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-300 flex gap-2 items-center">
-                  <div :class="item.icon" />
-                  <span>{{ item.name }}</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-      <Logo />
+  <InfoPackageModal :show="showNewsletterModal" :email="newsletterEmail" @close="showNewsletterModal = false" />
 
-      <div class="flex gap-8 items-center">
-        <p class="mt-8 text-gray-400 dark:text-white md:mt-0 md:order-1">
-          &copy; {{ new Date().getFullYear() }} meetap, GmbH. All rights reserved.
-        </p>
+  <footer>
+    <Container id="footer-img" class="w-full h-full py-24 rounded-tr-48px sm:rounded-tr-96px">
+      <div class="flex flex-col gap-12 max-w-180">
+        <h1 class="text-white text-3xl sm:text-5xl font-semibold">Hol dir das Melli-Infopaket nach Hause!</h1>
+        <form class="flex flex-wrap gap-3" @submit.prevent="openNewsletterModal(email)">
+          <input v-model="email" class="border-2 rounded-lg w-full px-4 py-2.5 max-w-100" placeholder="name@email.de"
+            type="email" name="email" required>
+          <InfopaketBestellen></InfopaketBestellen>
+          <p class="text-white text-xl">Lass dir das Infopaket kostenlos per Post oder Email zusenden.</p>
+        </form>
       </div>
-    </div>
+    </Container>
+    <Container class="bg-primary-900 pt-24 pb-12">
+      <div class="grid gap-16">
+        <div class="grid md:grid-cols-2 gap-24">
+          <div class="grid gap-12">
+            <h2 class="text-3xl text-primary-400 font-semibold">Offene Fragen?</h2>
+            <p class="text-white">Egal, ob Fragen zum Produkt oder zum Bestellprozess - wir beraten dich per E-Mail,
+              WhatsApp und natürlich
+              telefonisch und räumen alle Unklarheiten aus dem Weg.
+            </p>
+            <div class="flex flex-col lg:flex-row gap-8 text-white">
+              <CallOrPipedrive></CallOrPipedrive>
+              <a href="mailto:support@melli.com" class="flex gap-3 items-center justify-start px-4"
+                @click="fireContactEvent('email')">
+                <div class="i-lucide:mail w-8 h-8 text-primary-300"></div>
+                <span>info@melli.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-8 text-white">
+            <div class="flex flex-col gap-3 justify-start">
+              <h4 class="text-primary-400 text-lg font-semibold">FAQ & Login</h4>
+              <a href="https://melli.com/faq">Häufige Fragen</a>
+              <a href="https://app.melli.com/">Benutzer-Login</a>
+              <h4 class="text-primary-400 text-lg font-semibold mt-6">Wichtige Links</h4>
+              <a href="https://melli.com/agb">AGB & Widerrufsbelehrung</a>
+              <a href="https://melli.com/datenschutz">Datenschutz Website</a>
+              <a href="https://melli.com/datenschutz-melli">Datenschutz Melli</a>
+              <a href="https://melli.com/impressum">Impressum</a>
+            </div>
+            <div class="flex flex-col gap-3 justify-start">
+              <h4 class="text-primary-400 text-lg font-semibold">Folge uns!</h4>
+              <a href="https://www.facebook.com/meine.melli" class="flex gap-2 justify-start items-center">
+                <div class="i-lucide:facebook text-primary-400 w-6 h-6"></div>Facebook
+              </a>
+              <a href="https://www.instagram.com/meine.melli/" class="flex gap-2 justify-start items-center">
+                <div class="i-lucide:instagram text-primary-400 w-6 h-6"></div>Instagram
+              </a>
+              <a href="https://www.linkedin.com/company/mit-melli/" class="flex gap-2 justify-start items-center">
+                <div class="i-lucide:linkedin text-primary-400 w-6 h-6"></div>LinkedIn
+              </a>
+              <a href="https://github.com/melli-labs" class="flex gap-2 justify-start items-center">
+                <div class="i-lucide:github text-primary-400 w-6 h-6"></div>GitHub
+              </a>
+              <a href="https://www.youtube.com/channel/UC9kINIc7RSUKfMu8LXaWnTQ"
+                class="flex gap-2 justify-start items-center">
+                <div class="i-lucide:youtube text-primary-400 w-6 h-6"></div>YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-baseline justify-between pt-8 border-white border-t-1">
+          <img class="h-8" src="https://assets.melli.com/logo.svg" alt="Melli Logo">
+          <p class="text-white">© 2022 Melli. All rights reserved.</p>
+        </div>
+      </div>
+    </Container>
   </footer>
 </template>
+<style>
+#footer-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://assets.melli.com/images/own-content/melli-infopaket-content-1024.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

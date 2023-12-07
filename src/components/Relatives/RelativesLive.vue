@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { fireVideoEvent } from '~/google-tag-manager'
+import { fireVideoEvent } from '~/google-tag-manager';
 
-const healthyroutinesvideo = ref()
-const isPlaying = ref(false)
+const healthyroutinesvideo = ref();
+const isPlaying = ref(false);
 const playVideo = () => {
   if (healthyroutinesvideo.value.paused) {
-    healthyroutinesvideo.value.play()
-    isPlaying.value = true
+    healthyroutinesvideo.value.play();
+    isPlaying.value = true;
   }
   else {
-    healthyroutinesvideo.value.pause()
-    isPlaying.value = false
+    healthyroutinesvideo.value.pause();
+    isPlaying.value = false;
   }
-}
+};
 </script>
 
 <template>
   <div class="flex flex-col gap-24">
     <div class="flex flex-col gap-12">
       <div class="flex flex-col gap-7.5">
-        <BubbleIcon :bubble-type="0" icon="i-lucide:heart text-gray-900 w-16 h-16" bubble="text-primary-200 " />
+        <BubbleIcon bubble-type="0" icon="i-lucide:heart text-gray-900 w-16 h-16" bubble="text-primary-200 " />
         <h2 class="text-4xl sm:text-5xl font-semibold">
           Lass Oma & Opa wieder mehr an eurem Leben teilhaben
         </h2>

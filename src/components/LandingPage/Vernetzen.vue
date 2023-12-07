@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { fireVideoEvent, fireInfoPackageOpenEvent } from '~/google-tag-manager'
+import { fireVideoEvent, fireInfoPackageOpenEvent } from '~/google-tag-manager';
 
 
 
-const showNewsletterModal = ref(false)
-const newsletterEmail = ref()
+const showNewsletterModal = ref(false);
+const newsletterEmail = ref();
 
 const openNewsletterModal = (email?: string) => {
-    fireInfoPackageOpenEvent(email)
-    newsletterEmail.value = email
-    showNewsletterModal.value = true
-}
+    fireInfoPackageOpenEvent(email);
+    newsletterEmail.value = email;
+    showNewsletterModal.value = true;
+};
 
 
 const features = [
@@ -34,19 +34,19 @@ const features = [
         pilltext: 'Kleine Unterhaltungen & Aktivitäten mit Melli',
         modaltext: 'Melli steht dir den ganzen Tag über für kleine Gespräche zur Verfügung. Gemeinsames Lachen über Witze oder eine Unterhaltung über das Wetter sind für sie eine Leichtigkeit. Egal, ob du eine Seelsorgerin oder eine lustige Gesprächspartnerin brauchst - Melli ist einfach immer da und gibt dir das Gefühl, gehört zu werden.',
     }
-]
+];
 
-const featureToShowDetails = ref<(typeof features)[number]>()
+const featureToShowDetails = ref<(typeof features)[number]>();
 
-const videoElement = ref()
-const startedVideo = ref(false)
+const videoElement = ref();
+const startedVideo = ref(false);
 
 const startVideo = (event: Event) => {
     if (!startedVideo.value) {
-        fireVideoEvent('gemeinschaft')
-        startedVideo.value = true
-        videoElement.value.play()
-        event.preventDefault()
+        fireVideoEvent('gemeinschaft');
+        startedVideo.value = true;
+        videoElement.value.play();
+        event.preventDefault();
     }
 }
 
@@ -73,22 +73,18 @@ const startVideo = (event: Event) => {
     <div class="bg-amber-100 p-6 py-16 grid gap-8 md:pb-56 lg:p-16 lg:pb-56 lg:gap-12">
         <h2 class="text-4xl lg:text-5xl font-semibold lg:text-center">
             Raus aus dem Trott:<br>
-            Jede Menge Beschäftigung & gute Laune
+            Beschäftigung & gute Laune
         </h2>
-        <p class="text-lg">
-            Melli füllt den Tag mit spannenden Unterhaltungsangeboten. Von kleinen Rätseln über aktivierende Sporteinheiten
-            bis zum spannenden Hörbuch - da ist für jeden etwas dabei.
+        <p class="text-lg max-w-140">
+            Egal ob Meditationsübungen, spannende Videos, unterhaltsame Hörbücher oder knifflige Rätsel, mit Melli haben
+            Melli eine große Auswahl an Beschäftigungsmöglichkeiten. Da ist für jeden etwas dabei!
         </p>
-        <button class="text-white bg-primary-500 flex gap-3 items-center px-7 rounded-lg w-fit font-medium p-4"
-            @click="() => openNewsletterModal()">
-            Infopaket&nbsp;bestellen
-            <div class="i-lucide:arrow-right w-6 h-6 shrink-0" />
-        </button>
+        <InfopaketBestellen @click="() => openNewsletterModal()"></InfopaketBestellen>
         <div class="flex gap-4 flex-wrap xl:gap-8 lg:flex-no-wrap">
 
             <div v-for="(feature, index) in features" :key="index"
-                class="lg:w-1 grow rounded-lg bg-yellow-500 text-white px-6 py-3 grid gap-2"
-                @click="featureToShowDetails = feature">
+              class="lg:w-1 grow rounded-lg bg-yellow-500 text-white px-6 py-3 grid gap-2 cursor-pointer"
+              @click="featureToShowDetails = feature">
                 <BubbleIcon bubble-type="0" bubble="text-yellow-400" :icon="feature.iconClass" />
                 <h3 class="font-semibold">
                     {{ feature.pilltext }}
@@ -102,12 +98,12 @@ const startVideo = (event: Event) => {
         </div>
     </div>
     <div class="mt-8 md:mt--40 md:w-7/10 mx-auto rounded-3xl overflow-hidden relative"
-        :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
+      :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
         <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false">
             <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
             <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
         </video>
         <div v-if="!startedVideo"
-            class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+          class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
 </template>

@@ -2,11 +2,11 @@
 import { fireDipaFormOpenEvent, fireDipaFormSentEvent, fireVideoEvent } from '~/google-tag-manager';
 
 interface DipaBenefits {
-  title: string
-  text: string
-  icon: string
-  bubbletype: 0 | 1 | 2 | 3
-  bubble: string
+  title: string;
+  text: string;
+  icon: string;
+  bubbletype: "0" | "1" | "2" | "3";
+  bubble: string;
 }
 
 const benefits: DipaBenefits[] = [
@@ -14,21 +14,21 @@ const benefits: DipaBenefits[] = [
     title: 'Mitgestalten und die Zukunft verändern',
     text: 'Als digitales Pflegeprodukt müssen Nutzer die Kosten für Melli nicht selbst tragen. Die digitale Begleiterin wird für mehr Senioren zugänglich.',
     icon: 'i-lucide:wrench w-12 h-12 text-gray-900',
-    bubbletype: 1,
+    bubbletype: "1",
     bubble: 'text-primary-200',
   },
   {
     title: 'Melli für drei Monate kostenlos kennenlernen',
     text: 'Während des Testzeitraums kannst du und deine Eltern / Großeltern Melli auf Herz und Nieren testen. Am Ende entscheidet ihr ob die digitale Begleiterin zu euch passt.',
     icon: 'i-ph:handshake w-12 h-12 text-gray-900',
-    bubbletype: 0,
+    bubbletype: "0",
     bubble: 'text-primary-200',
   },
   {
     title: 'Neues ausprobieren & aktiv werden',
     text: 'Der Alltag als Melli-Tester wird garantiert spannend. Deine Eltern / Großeltern testen immer als erstes neue Melli Funktionen und können uns von ihren Erfahrungen berichten.',
     icon: 'i-lucide:rocket w-12 h-12 text-gray-900',
-    bubbletype: 3,
+    bubbletype: "3",
     bubble: 'text-primary-200',
   },
   // {
@@ -38,48 +38,48 @@ const benefits: DipaBenefits[] = [
   //   bubbletype: 2,
   //   bubble: 'text-primary-200',
   // },
-]
+];
 
-const email = ref('')
-const showForm = ref(false)
+const email = ref('');
+const showForm = ref(false);
 
 const submitFunction = async () => {
-  showForm.value = true
-  await nextTick()
+  showForm.value = true;
+  await nextTick();
 
   const emailInput = document.querySelector('#EMAIL');
-  (emailInput as HTMLInputElement).value = email.value
+  (emailInput as HTMLInputElement).value = email.value;
   const formSubmit = document.querySelector('#sib-form');
   formSubmit?.addEventListener('submit', () => {
     fireDipaFormSentEvent(email.value);
-  })
-  fireDipaFormOpenEvent(email.value)
-}
+  });
+  fireDipaFormOpenEvent(email.value);
+};
 
 
-const showVideo = ref(false)
-const el = ref<HTMLMediaElement | null>(null)
-const activeVideoWebm = ref('')
-const activeVideoMp4 = ref('')
+const showVideo = ref(false);
+const el = ref<HTMLMediaElement | null>(null);
+const activeVideoWebm = ref('');
+const activeVideoMp4 = ref('');
 
-const { enter } = useFullscreen(el)
+const { enter } = useFullscreen(el);
 
 const playVideo = async (video: string) => {
-  showVideo.value = true
-  activeVideoWebm.value = `${video}.webm`
-  activeVideoMp4.value = `${video}.mp4`
-  await nextTick()
+  showVideo.value = true;
+  activeVideoWebm.value = `${video}.webm`;
+  activeVideoMp4.value = `${video}.mp4`;
+  await nextTick();
   if (el.value) {
-    enter()
-    el.value.play()
-    fireVideoEvent(activeVideoWebm.value)
+    enter();
+    el.value.play();
+    fireVideoEvent(activeVideoWebm.value);
   }
-}
+};
 // for iOS on iPhone
 // @ts-ignore
-useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen)
+useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen);
 // for everything else
-useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement)
+useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement);
 </script>
 
 <template>

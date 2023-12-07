@@ -1,26 +1,26 @@
 <script lang="ts" setup>
-import { breakpointsTailwind } from '@vueuse/core'
-import { fireBuyEvent } from '~/google-tag-manager'
-const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg')
+import { breakpointsTailwind } from '@vueuse/core';
+import { fireBuyEvent } from '~/google-tag-manager';
+const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
 
-interface StripePrice { price: number; wlan: boolean; onetime: boolean; stripeId: string }
+interface StripePrice { price: number; wlan: boolean; onetime: boolean; stripeId: string; }
 
 const price = ref<StripePrice>(
   { price: 24.90, wlan: true, onetime: true, stripeId: 'https://placeholder.stripe1' },
-)
+);
 
-const setPrice = (p: StripePrice) => price.value = p
+const setPrice = (p: StripePrice) => price.value = p;
 
-const show = ref(false)
+const show = ref(false);
 
-const showErrorMessage = ref(false)
+const showErrorMessage = ref(false);
 
 function submitBuy() {
-  showErrorMessage.value = true
+  showErrorMessage.value = true;
   if (show.value)
-    window.open(price.value.stripeId, '_blank')
+    window.open(price.value.stripeId, '_blank');
 
-  fireBuyEvent()
+  fireBuyEvent();
 }
 </script>
 
@@ -75,8 +75,3 @@ function submitBuy() {
     <FaqSection />
   </Container>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: donationbanner
-</route>

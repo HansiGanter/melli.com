@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { fireJobApplyEvent } from '~/google-tag-manager'
-defineProps<{ apply: string }>()
+defineProps<{ apply: string; }>();
 </script>
 
 <template>
@@ -11,6 +11,4 @@ defineProps<{ apply: string }>()
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

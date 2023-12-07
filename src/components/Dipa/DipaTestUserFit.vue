@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { breakpointsTailwind } from '@vueuse/core'
-import { fireDipaFormOpenEvent } from '~/google-tag-manager'
-const greaterLg = useBreakpoints(breakpointsTailwind).greater('sm')
+import { breakpointsTailwind } from '@vueuse/core';
+import { fireDipaFormOpenEvent } from '~/google-tag-manager';
+const greaterLg = useBreakpoints(breakpointsTailwind).greater('sm');
 
-const showForm = ref(false)
+const showForm = ref(false);
 
 const criteria = [
   '55 Jahre oder älter.*',
@@ -13,11 +13,11 @@ const criteria = [
   'Aufgeschlossen gegenüber Technik.',
   'Keine schweren kognitiven Einschränkungen.*',
   'Keine schwerwiegenden Sprachstörungen.*',
-]
+];
 
 function openForm() {
-  showForm.value = true
-  fireDipaFormOpenEvent()
+  showForm.value = true;
+  fireDipaFormOpenEvent();
 }
 </script>
 
@@ -52,7 +52,7 @@ function openForm() {
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-12 lg:gap-0">
       <div class="flex flex-col gap-6 text-white sm:border-t-2 sm:border-t-white items-center px-6">
         <div v-if="greaterLg" class="h-9 w-9 bg-primary-300 rounded-full border-5 border-primary-900 -m-t-5" />
-        <BubbleIcon :bubble-type="0" bubble="text-primary-700" icon="i-lucide:pencil w-12 h-12 text-primary-300" />
+        <BubbleIcon bubble-type="0" bubble="text-primary-700" icon="i-lucide:pencil w-12 h-12 text-primary-300" />
         <h3 class="text-xl font-semibold text-center px-9">
           Als Testnutzer bewerben
         </h3>
@@ -66,7 +66,7 @@ function openForm() {
       </div>
       <div class="flex flex-col gap-6 text-white sm:border-t-2 sm:border-t-white items-center px-6">
         <div v-if="greaterLg" class="h-9 w-9 bg-primary-300 rounded-full border-5 border-primary-900 -m-t-5" />
-        <BubbleIcon :bubble-type="3" bubble="text-primary-700" icon="i-lucide:clipboard w-12 h-12 text-primary-300" />
+        <BubbleIcon bubble-type="3" bubble="text-primary-700" icon="i-lucide:clipboard w-12 h-12 text-primary-300" />
         <h3 class="text-xl font-semibold text-center px-9">
           Fragebogen ausfüllen
         </h3>
@@ -77,7 +77,7 @@ function openForm() {
       </div>
       <div class="flex flex-col gap-6 text-white sm:border-t-2 sm:border-t-white items-center px-6">
         <div v-if="greaterLg" class="h-9 w-9 bg-primary-300 rounded-full border-5 border-primary-900 -m-t-5" />
-        <BubbleIcon :bubble-type="1" bubble="text-primary-700" icon="i-lucide:phone-call w-12 h-12 text-primary-300" />
+        <BubbleIcon bubble-type="1" bubble="text-primary-700" icon="i-lucide:phone-call w-12 h-12 text-primary-300" />
         <h3 class="text-xl font-semibold text-center px-9">
           Wir melden uns bei euch
         </h3>
@@ -87,7 +87,7 @@ function openForm() {
       </div>
       <div class="flex flex-col gap-6 text-white sm:border-t-2 sm:border-t-white items-center px-6">
         <div v-if="greaterLg" class="h-9 w-9 bg-primary-300 rounded-full border-5 border-primary-900 -m-t-5" />
-        <BubbleIcon :bubble-type="2" bubble="text-primary-700" icon="i-lucide:thumbs-up w-12 h-12 text-primary-300" />
+        <BubbleIcon bubble-type="2" bubble="text-primary-700" icon="i-lucide:thumbs-up w-12 h-12 text-primary-300" />
         <h3 class="text-xl font-semibold text-center px-9">
           Melli drei Monate kostenlos testen
         </h3>

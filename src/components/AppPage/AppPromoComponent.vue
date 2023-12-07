@@ -6,7 +6,7 @@ import { fireContactEvent, fireShopEvent } from '~/google-tag-manager';
   <div class="flex flex-col gap-12 py-12 px-6 sm:px-16 rounded-3xl bg-primary-100">
     <div class="flex flex-col gap-6">
       <div class="flex flex-col gap-3 sm:items-center">
-        <BubbleIcon :bubble-type="3" bubble="text-primary-200"
+        <BubbleIcon bubble-type="3" bubble="text-primary-200"
           icon="i-lucide:gift w-12 h-12 sm:w-24 sm:h-24 text-#2F363D" />
         <h3 class="text-3xl font-semibold sm:text-center text-gray-900">
           30 Tage kostenlos ausprobieren!
@@ -27,5 +27,6 @@ import { fireContactEvent, fireShopEvent } from '~/google-tag-manager';
         @click="fireContactEvent('call')">
         <div class="i-lucide:phone-call w-6 h-6" /><span>Kostenlose Beratung</span>
       </a>
+    </div>
   </div>
-</div></template>
+</template>

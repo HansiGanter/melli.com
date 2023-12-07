@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { breakpointsTailwind } from '@vueuse/core'
-import { fireInfoPackageOpenEvent } from '~/google-tag-manager'
+import { breakpointsTailwind } from '@vueuse/core';
+import { fireInfoPackageOpenEvent } from '~/google-tag-manager';
 
-const greaterMd = useBreakpoints(breakpointsTailwind).greater('md')
+const greaterMd = useBreakpoints(breakpointsTailwind).greater('md');
 
-const showNewsletterModal = ref(false)
-const newsletterEmail = ref()
+const showNewsletterModal = ref(false);
+const newsletterEmail = ref();
 
 const openNewsletterModal = (email?: string) => {
-  fireInfoPackageOpenEvent(email)
-  newsletterEmail.value = email
-  showNewsletterModal.value = true
-}
+  fireInfoPackageOpenEvent(email);
+  newsletterEmail.value = email;
+  showNewsletterModal.value = true;
+};
 
 const onEmailFormSubmit = (e: Event) => {
-  const formData = new FormData(e.target as HTMLFormElement)
-  const email = formData.get('email') as string
-  openNewsletterModal(email)
+  const formData = new FormData(e.target as HTMLFormElement);
+  const email = formData.get('email') as string;
+  openNewsletterModal(email);
 }
 
 </script>
@@ -30,14 +30,10 @@ const onEmailFormSubmit = (e: Event) => {
 
   <Container class="px-5 my-12 sm:my-16">
     <form class="flex flex-wrap gap-4 justify-center" @submit.prevent="onEmailFormSubmit">
-      <input class="border-2 rounded-full w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de" type="email"
+      <input class="border-2 rounded-lg w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de" type="email"
         name="email" required>
       <div class="flex gap-3">
-        <button type="submit"
-          class="text-white bg-primary-400 flex gap-0.5 items-center px-7 py-3 rounded-lg w-fit font-medium">
-          Infopaket&nbsp;bestellen
-          <div class="i-lucide:arrow-right w-6 h-6 shrink-0" />
-        </button>
+        <InfopaketBestellen></InfopaketBestellen>
       </div>
     </form>
 

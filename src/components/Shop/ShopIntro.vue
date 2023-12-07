@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function scrollToChat() {
-  document.getElementById('shopchat')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  document.getElementById('shopchat')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 </script>
 
@@ -10,7 +10,7 @@ function scrollToChat() {
     <div class="grid md:grid-cols-2 gap-12">
       <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-6">
-          <BubbleIcon class="mr-auto ml-auto md:ml-0" :bubble-type="0" bubble="text-primary-200"
+          <BubbleIcon class="mr-auto ml-auto md:ml-0" bubble-type="0" bubble="text-primary-200"
             icon="i-lucide:message-circle w-12 h-12 text-gray-900" />
           <h1 class="text-4xl sm:text-5xl font-semibold text-center sm:text-left">
             Konfiguriere mit Melli dein individuelles Abo.

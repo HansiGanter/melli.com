@@ -6,8 +6,6 @@
 
     <RouterView />
 
-    <Container class="px-5">
-      <Footer />
-    </Container>
+    <Footer />
   </main>
 </template>

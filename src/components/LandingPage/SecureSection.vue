@@ -1,23 +1,23 @@
 <script setup lang="ts">
-const { t } = useI18n()
-import { fireInfoPackageOpenEvent } from '~/google-tag-manager'
+const { t } = useI18n();
+import { fireInfoPackageOpenEvent } from '~/google-tag-manager';
 
 
 
-const showNewsletterModal = ref(false)
-const newsletterEmail = ref()
+const showNewsletterModal = ref(false);
+const newsletterEmail = ref();
 
 const openNewsletterModal = (email?: string) => {
-  fireInfoPackageOpenEvent(email)
-  newsletterEmail.value = email
-  showNewsletterModal.value = true
-}
+  fireInfoPackageOpenEvent(email);
+  newsletterEmail.value = email;
+  showNewsletterModal.value = true;
+};
 
 const onEmailFormSubmit = (e: Event) => {
-  const formData = new FormData(e.target as HTMLFormElement)
-  const email = formData.get('email') as string
-  openNewsletterModal(email)
-}
+  const formData = new FormData(e.target as HTMLFormElement);
+  const email = formData.get('email') as string;
+  openNewsletterModal(email);
+};
 </script>
 
 <template>
@@ -37,14 +37,10 @@ const onEmailFormSubmit = (e: Event) => {
       </div>
       <span>
         <form class="flex flex-wrap gap-4 justify-center" @submit.prevent="onEmailFormSubmit">
-          <input class="border-2 rounded-full w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de"
+          <input class="border-2 rounded-lg w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de"
             type="email" name="email" required>
           <div class="flex gap-3">
-            <button type="submit"
-              class="text-white bg-primary-400 flex gap-0.5 items-center px-7 py-3 rounded-lg w-fit font-medium">
-              Infopaket&nbsp;bestellen
-              <div class="i-lucide:arrow-right w-6 h-6 shrink-0" />
-            </button>
+            <InfopaketBestellen></InfopaketBestellen>
           </div>
         </form>
       </span>

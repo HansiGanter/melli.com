@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const { t, te } = useI18n()
+const { t, te } = useI18n();
 
-const faqs: { question: string; answer: string }[] = []
+const faqs: { question: string; answer: string; }[] = [];
 for (let i = 0; i < 99; i++) {
-  const key_question = `faq-list.${i}.question`
-  const key_answer = `faq-list.${i}.answer`
+  const key_question = `faq-list.${i}.question`;
+  const key_answer = `faq-list.${i}.answer`;
 
   if (te(key_question) && te(key_answer))
-    faqs.push({ question: t(key_question), answer: t(key_answer) })
+    faqs.push({ question: t(key_question), answer: t(key_answer) });
   else
-    continue
+    continue;
 }
 </script>
 

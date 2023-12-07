@@ -1,45 +1,45 @@
 <script setup lang="ts">
-import { breakpointsTailwind } from '@vueuse/core'
+import { breakpointsTailwind } from '@vueuse/core';
 import { fireDipaFormOpenEvent, fireVideoEvent } from '~/google-tag-manager';
-const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg')
+const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
 
-const showForm = ref(false)
+const showForm = ref(false);
 
 function openForm() {
-  showForm.value = true
-  fireDipaFormOpenEvent()
+  showForm.value = true;
+  fireDipaFormOpenEvent();
 }
 
 
-const showVideo = ref(false)
-const el = ref<HTMLMediaElement | null>(null)
-const activeVideoWebm = ref('')
-const activeVideoMp4 = ref('')
+const showVideo = ref(false);
+const el = ref<HTMLMediaElement | null>(null);
+const activeVideoWebm = ref('');
+const activeVideoMp4 = ref('');
 
-const { enter } = useFullscreen(el)
+const { enter } = useFullscreen(el);
 
 const playVideo = async (video: string) => {
-  showVideo.value = true
-  activeVideoWebm.value = `${video}.webm`
-  activeVideoMp4.value = `${video}.mp4`
-  await nextTick()
+  showVideo.value = true;
+  activeVideoWebm.value = `${video}.webm`;
+  activeVideoMp4.value = `${video}.mp4`;
+  await nextTick();
   if (el.value) {
-    enter()
-    el.value.play()
-    fireVideoEvent(activeVideoWebm.value)
+    enter();
+    el.value.play();
+    fireVideoEvent(activeVideoWebm.value);
   }
-}
+};
 // for iOS on iPhone
 // @ts-ignore
-useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen)
+useEventListener(el, 'webkitendfullscreen', () => showVideo.value = document.webkitIsFullScreen);
 // for everything else
-useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement)
+useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.fullscreenElement);
 </script>
 
 <template>
   <div class="flex flex-col gap-30">
     <div class="flex flex-col gap-7.5 sm:items-center">
-      <BubbleIcon :bubble-type="2" icon="i-lucide:heart text-gray-900 w-16 h-16" bubble="text-primary-200 " />
+      <BubbleIcon bubble-type="2" icon="i-lucide:heart text-gray-900 w-16 h-16" bubble="text-primary-200 " />
       <h1 class="text-4xl sm:text-5xl font-semibold sm:text-center max-w-160">
         <span class="text-primary-400">Mellis Mission:</span><span> Jeden Tag zu den guten zählen lassen!</span>
       </h1>
