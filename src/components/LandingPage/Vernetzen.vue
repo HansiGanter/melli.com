@@ -99,7 +99,8 @@ const startVideo = (event: Event) => {
     </div>
     <div class="mt-8 md:mt--40 md:w-7/10 mx-auto rounded-3xl overflow-hidden relative"
       :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
-        <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false">
+        <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false"
+          poster="https://assets.melli.com/images/backgrounds/website-video-thumbnail-3-1024.webp">
             <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
             <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
         </video>
