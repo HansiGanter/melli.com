@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <template>
@@ -39,9 +39,7 @@ const { t } = useI18n()
           </div>
         </div>
       </Container>
-      <Container class="px-5 ">
-        <Footer />
-      </Container>
+      <Footer />
     </div>
   </main>
 </template>
