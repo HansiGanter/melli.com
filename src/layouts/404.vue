@@ -39,7 +39,7 @@ const { t } = useI18n();
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
+    <Footer />
   </main>
 </template>
