@@ -10,7 +10,7 @@ const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
       <div class="h-12 flex items-center justify-between text-white">
         <div class="flex items-center justify-start gap-3">
           <BubbleIcon bubble-type="1" bubble="text-primary-600" icon="i-lucide:gift w-8 h-8 text-amber400" />
-          <p class="text-lg sm:text-xl font-semibold"><span v-if="greaterLg">Verschenke </span>Melli zu
+          <p class="text-lg sm:text-xl font-semibold">Verschenke Melli zu
             Weihnachten!</p>
           <a href="https://melli.com/shop" class="underline flex justify-center items-center gap-1.5">
             jetzt bestellen
@@ -31,9 +31,9 @@ const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
   <RouterLink v-if="!greaterLg" to="/shop" @click="fireShopEvent">
     <Container class="bg-primary-900 cursor-pointer">
       <div class="h-24 gap-3 sm:h-12 flex items-center justify-between text-white">
-        <div class="flex gap-3 items-center">
+        <div class="flex gap-3 items-center max-w-50 sm:max-w-full">
           <BubbleIcon bubble-type="1" bubble="text-primary-600" icon="i-lucide:gift w-8 h-8 text-amber400" />
-          <p class="text-2xl font-semibold"><span v-if="greaterLg">Verschenke </span>Melli zu Weihnachten!</p>
+          <p class="text-lg font-medium"><span v-if="greaterLg">Verschenke </span>Melli zu Weihnachten!</p>
         </div>
         <a href="https://melli.com/shop" class="underline flex justify-center items-center gap-1.5 whitespace-nowrap">
           jetzt bestellen
