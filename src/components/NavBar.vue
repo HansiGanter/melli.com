@@ -8,7 +8,7 @@ const router = useRouter();
 
 <template>
   <nav class="bg-white py-4">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between gap-x-8">
       <div class="flex items-center gap-x-8">
         <RouterLink to="/">
           <Logo />
@@ -31,16 +31,20 @@ const router = useRouter();
           </RouterLink>
         </div>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center sm:gap-4">
         <a href="https://app.melli.com/" target="_blank" title="Login" @click="fireLoginEvent" class="hidden lg:block">
           <div class="i-carbon:user stroke-2 w-6 h-6" />
         </a>
         <RouterLink v-if="router.currentRoute.value.path !== '/shop'" to="/shop"
-          class="py-3.5 px-7 rounded-lg bg-primary-500 text-white text-base font-medium hidden md:block"
+          class="py-3.5 px-7 rounded-lg bg-primary-500 text-white text-base font-medium hidden md:block border-2 border-primary-500 whitespace-nowrap"
           @click="fireShopEvent">
           Preise ansehen
         </RouterLink>
         <CallOrPipedrive class="visible" />
+        <button type="button" class="block lg:hidden pl-4 sm:pr-4" @click="showNav = !showNav">
+          <div v-if="showNav" class="i-heroicons-outline:x stroke-2 w-6 h-6 bg-gray-700" />
+          <div v-else class="i-heroicons-outline:menu stroke-2 w-6 h-6 bg-gray-700" />
+        </button>
       </div>
     </div>
     <transition enter-active-class="transition-all duration-1000 ease-in-out"
