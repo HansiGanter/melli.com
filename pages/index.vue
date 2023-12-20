@@ -140,8 +140,8 @@ const sliderImages = [
   </div>
 </template>
 
-<route lang="yaml">
+<!-- <route lang="yaml">
 meta:
   layout: christmasbanner
-</route>
+</route> -->
 
