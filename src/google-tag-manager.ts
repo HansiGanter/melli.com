@@ -17,9 +17,9 @@ export const fireMelliDemoEvent = () => {
 
 export const fireBuyEvent = () => {
   window.dataLayer.push({
-    event: 'melli-cta-buy',
+    event: 'melli-cta-stripe-checkout',
   });
-  console.log('melli-cta-buy');
+  console.log('melli-cta-stripe-checkout');
 };
 
 export const firePaymentSuccess = () => {

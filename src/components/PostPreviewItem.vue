@@ -24,11 +24,11 @@ const frontmatter = computed<PostItem>(() => (props.route.meta as any).frontmatt
             {{ d(frontmatter.date, 'long') }}
           </span>
           <div class="flex-col gap-3 mt-3">
-            <div class="flex items-center justify-between gap-4">
+            <div class="flex justify-between gap-4">
               <h1 class="text-xl font-semibold">
                 {{ frontmatter.title }}
               </h1>
-              <div class="i-carbon:arrow-up-right text-gray-900 shrink-0" />
+              <div class="i-carbon:arrow-up-right text-gray-900 shrink-0 py-3.5" />
             </div>
             <p class="mt-3 text-base text-gray-500 dark:text-white">
               {{ frontmatter.description }}

@@ -1,77 +1,108 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core';
 import { fireBuyEvent } from '~/google-tag-manager';
+
+const sliderImages = [
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
+  "https://assets.melli.com/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
+];
+const benefits = [
+  "30 Tage kostenlos testen",
+  "Telefonische Unterstützung bei allen technischen Fragen",
+  "Flexible Abos / monatlich kündbar",
+  "Hilfe bei der Ersteinrichtung",
+  "Kostenloser Rückversand*",
+  "Beliebig viele Melli-App Nutzer (Familienmitglieder)"
+];
+
 const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
 
-interface StripePrice { price: number; wlan: boolean; onetime: boolean; stripeId: string; }
-
-const price = ref<StripePrice>(
-  { price: 24.90, wlan: true, onetime: true, stripeId: 'https://placeholder.stripe1' },
-);
-
-const setPrice = (p: StripePrice) => price.value = p;
-
-const show = ref(false);
-
-const showErrorMessage = ref(false);
+const wifiSetting = ref('wifi');
 
 function submitBuy() {
-  showErrorMessage.value = true;
-  if (show.value)
-    window.open(price.value.stripeId, '_blank');
+  if (wifiSetting.value === 'wifi') {
+    window.open('https://buy.stripe.com/5kA5kF8TigNF2v68wK', '_blank');
+  }
+  else if (wifiSetting.value === 'sim') {
+    window.open('https://buy.stripe.com/dR64gB2uU2WPc5G6oB', '_blank');
+  }
 
   fireBuyEvent();
 }
 </script>
-
 <template>
-  <Container v-if="!greaterLg" class="sticky z-1 top-6 mx-6">
-    <div class="max-w-160 bg-gray-50 flex flex-col gap-3 shadow-lg rounded-lg p-4 -mx-3 sm:mx-auto left-0 right-0">
-      <div class="grid grid-cols-2 gap-3">
-        <div>
-          <p class="text-xl font-semibold">
-            Dein Melli-Abo
-          </p>
-          <p class="text-xl font-semibold">
-            €{{ price.price.toFixed(2) }}
-            <span class="text-xs font-medium">/ Monat</span>
-          </p>
-          <p v-if="price.onetime" class=" text-xs font-medium">
-            + €175,00 Tablet (einmalig)
-          </p>
+  <Container class="my-24 sm:mt-24 sm:mb-48">
+    <div class="flex flex-col lg:flex-row gap-12 items-center">
+      <h1 v-if="!greaterLg" class="font-semibold text-4xl sm:text-5xl text-center lg:text-left"> Teste Melli 30 Tage
+        kostenlos</h1>
+      <Carousel arrow-button-size="small" class="lg:w-65% max-w-200">
+        <img v-for="sliderImage in sliderImages" :src="sliderImage" class="snap-center">
+      </Carousel>
+      <div class="flex flex-col gap-12 w-full max-w-200 lg:w-35%">
+        <h1 v-if="greaterLg" class="font-semibold text-4xl sm:text-5xl text-center lg:text-left"> Teste Melli 30 Tage
+          kostenlos</h1>
+        <div class="flex flex-col gap-6 text-gray-700">
+          <hr class="border-gray-700">
+          <div class="flex-col gap-1">
+            <fieldset class="flex flex-col gap-1">
+              <p class="font-semibold">WLAN Anschluss vorhanden?</p>
+              <div class="flex gap-1">
+                <input type="radio" id="wifi_input" name="wifi" value="wifi" checked v-model="wifiSetting" />
+                <label for="wifi_input">Ja</label>
+              </div>
+              <div class="flex gap-1">
+                <input type="radio" id="sim_input" name="wifi" value="sim" v-model="wifiSetting" />
+                <label for="sim_input">Nein <span class="text-gray-500">+7€ SIM
+                    Karte</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <hr class="border-gray-700">
+          <div class="flex justify-between">
+            <ul class="text-sm">
+              <li class="flex gap-1 items-center my-1">
+                <div class="i-ph:check-bold w-4.5 h-4.5 text-primary-600"></div>Melli-Abo
+              </li>
+              <li class="flex gap-1 items-center my-1">
+                <div class="i-ph:check-bold w-4.5 h-4.5 text-primary-600"></div>Melli-Tablet
+              </li>
+              <li class="flex gap-1 items-center my-1">
+                <div class="i-ph:check-bold w-4.5 h-4.5 text-primary-600"></div>Melli-App für Familie & Freunde
+              </li>
+              <li class="flex gap-1 items-center my-1">
+                <div class="i-ph:check-bold w-4.5 h-4.5 text-primary-600"></div>30 Tage kostenlos testen
+              </li>
+            </ul>
+            <div class="text-right mt-auto">
+              <p class="text-2xl font-semibold text-gray-900">0,00€*</p>
+              <p class="text-gray-500">nach der Testphase<br>{{ wifiSetting === 'wifi' ? '42,00' : '49,00' }}€/Monat</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <button class="w-full bg-primary-500 rounded-full py-4 px-6 text-white text-xl" @click="submitBuy">
+              Jetzt loslegen
+            </button>
+            <p class="text-xs">*einmalig €6,90 Versandkosten</p>
+          </div>
         </div>
-        <!-- <a v-if="show" target="_blank" :href="price.stripeId"
-          class="transition text-center text-white bg-primary-400 w-full h-full rounded-lg px-2.5 py-4 flex items-center justify-center"
-          @click="fireBuyEvent()">
-          30 Tage kostenlos testen
-        </a> -->
-        <button id="button-test" :class="!show ? 'bg-gray-300 !cursor-not-allowed' : 'bg-primary-400 cursor-pointer'"
-          class="text-center text-white px-2 py-4 rounded-lg" @click="submitBuy">
-          30 Tage kostenlos testen
-        </button>
       </div>
-      <span v-if="!show && showErrorMessage" class="flex gap-1.5 text-sm items-center text-danger-500">
-        <div class="i-lucide:info w-6 h-6" />Konfiguriere zuerst dein Melli-Abo im Chat
-      </span>
     </div>
   </Container>
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 relative overflow-hidden">
-    <ShopIntro />
+  <Container class="my-24 sm:my-48">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-primary-700 p-8 text-white rounded-3xl">
+      <div v-for="benefit in benefits" class="flex items-center gap-3 text-xl">
+        <div class="i-ph:check-circle w-12 h-12 shrink-0 text-primary-300"></div>
+        {{ benefit }}
+      </div>
+    </div>
+    <span class="text-xs">*innerhalb der Testphase</span>
   </Container>
-
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 relative">
-    <ShopChat :set-price="setPrice" :show-buy-botton="(s: any) => show = s" />
-  </Container>
-
-  <Container class="py-12 lg:py-24 px-6">
-    <ShoppingDetails />
-  </Container>
-
-  <Container class="py-12 lg:py-24">
-    <SecureSection />
-  </Container>
-
-  <Container class="py-12 lg:py-24 px-6">
+  <Container class="my-24 sm:my-48">
     <FaqSection />
   </Container>
 </template>

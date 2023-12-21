@@ -1,16 +1,46 @@
 <script setup lang="ts">
-const { t, te } = useI18n();
+const { t } = useI18n();
 
-const faqs: { question: string; answer: string; }[] = [];
-for (let i = 0; i < 99; i++) {
-  const key_question = `faq-list.${i}.question`;
-  const key_answer = `faq-list.${i}.answer`;
-
-  if (te(key_question) && te(key_answer))
-    faqs.push({ question: t(key_question), answer: t(key_answer) });
-  else
-    continue;
-}
+const faqsraw: { question: string; answer: string; }[] = [
+  {
+    question: t("faq-list.0.question"),
+    answer: t("faq-list.0.answer")
+  }, {
+    question: t("faq-list.1.question"),
+    answer: t("faq-list.1.answer")
+  }, {
+    question: t("faq-list.2.question"),
+    answer: t("faq-list.2.answer")
+  }, {
+    question: t("faq-list.3.question"),
+    answer: t("faq-list.3.answer")
+  }, {
+    question: t("faq-list.4.question"),
+    answer: t("faq-list.4.answer")
+  }, {
+    question: t("faq-list.5.question"),
+    answer: t("faq-list.5.answer")
+  }, {
+    question: t("faq-list.6.question"),
+    answer: t("faq-list.6.answer")
+  }, {
+    question: t("faq-list.7.question"),
+    answer: t("faq-list.7.answer")
+  }, {
+    question: t("faq-list.8.question"),
+    answer: t("faq-list.8.answer")
+  }, {
+    question: t("faq-list.9.question"),
+    answer: t("faq-list.9.answer")
+  }, {
+    question: t("faq-list.10.question"),
+    answer: t("faq-list.10.answer")
+  }, {
+    question: t("faq-list.11.question"),
+    answer: t("faq-list.11.answer")
+  }
+];
+const faqs = faqsraw.filter((f) => !f.question.startsWith('faq-list.') && !f.answer.startsWith('faq-list.'));
 </script>
 
 <template>

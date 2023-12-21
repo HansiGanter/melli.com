@@ -27,10 +27,11 @@ const onEmailFormSubmit = (e: Event) => {
 const sliderImages = [
   "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
   "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
   "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder-1536.webp",
+  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
   "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
+  "https://assets.melli.com/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
 ];
 </script>
 
@@ -48,7 +49,7 @@ const sliderImages = [
     </div>
 
     <Container class="mx-auto mt-12 sm:mt-24">
-      <Carousel>
+      <Carousel arrow-button-size="big">
         <img v-for="sliderImage in sliderImages" :src="sliderImage" class="snap-center">
       </Carousel>
       <p class="text-center text-xl max-w-150 mx-auto mt-12 sm:mt-6 mb-6">

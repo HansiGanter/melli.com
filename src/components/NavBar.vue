@@ -10,7 +10,7 @@ const router = useRouter();
   <nav class="bg-white py-4">
     <div class="flex items-center justify-between gap-x-8">
       <div class="flex items-center gap-x-8">
-        <RouterLink to="/">
+        <RouterLink to="/" class="">
           <Logo />
         </RouterLink>
         <div class="hidden lg:flex items-center gap-x-4">
@@ -78,7 +78,7 @@ const router = useRouter();
         </div>
         <RouterLink to="/shop" class="my-4 py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"
           @click="fireShopEvent">
-          <span>Jetzt kaufen</span>
+          <span>Preise ansehen</span>
         </RouterLink>
       </div>
     </transition>
