@@ -6283,6 +6283,10 @@ Daten verwendet werden, können Sie auch auf
 [https://www.google.com/intl/de/policies/privacy/](https://policies.google.com/privacy?hl=de&tid=312541755)
 nachlesen.
 
+<h2 id="heyflow-datenschutzerklaerung" class="adsimple-312541755">heyflow Datenschutzerklärung</h2>
+<p>Wir verwenden auf unserer Website das Webdesign-Tool heyflow. Dienstanbieter ist das deutsche Unternehmen Heyflow GmbH, Jungfernstieg 49, 20354 Hamburg, Deutschland.</p>
+<p>Mehr über die Daten, die durch die Verwendung von heyflow verarbeitet werden, erfahren Sie in der Datenschutzerklärung auf <a class="adsimple-312541755" href="https://heyflow.app/de/datenschutz?tid=312541755" target="_blank" rel="follow noopener">https://heyflow.app/de/datenschutz</a>.</p>
+
 ## Sonstiges Einleitung
 
   -----------------------------------------------------------------------
