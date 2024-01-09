@@ -1,6 +1,22 @@
 /download-infobrosch%C3%BCre https://assets.melli.com/files/melli-broschuere.pdf
 /download-pflege-broschuere https://assets.melli.com/files/melli-pflege-broschuere.pdf
+
 /shop-page/ /shop
+/karriere /404
+/karriere/* /404
+/checkout /shop
+/checkout/* /shop
+/dipa-submit-testuserform /404
+/dipa /404
+/live-demo /404
+/lp-old /404
+/relatives /404
+/shop-not-so-old /shop
+/shop-old /shop
+/success /404
+/successful-double-opt-in /404
+/test-user /404
+
 
 /beig https://zeitung.melli.com
 /noz https://zeitung.melli.com
