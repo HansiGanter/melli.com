@@ -25,13 +25,13 @@ const greaterLg = useBreakpoints(breakpointsTailwind).greater('lg');
 const wifiSetting = ref('wifi');
 
 function submitBuy() {
+  const currentUrl = window.location.href;
   if (wifiSetting.value === 'wifi') {
-    window.open('https://buy.stripe.com/5kA5kF8TigNF2v68wK', '_blank');
+    window.open('https://buy.stripe.com/5kA5kF8TigNF2v68wK?' + currentUrl.split('?')[1], '_blank');
   }
   else if (wifiSetting.value === 'sim') {
-    window.open('https://buy.stripe.com/dR64gB2uU2WPc5G6oB', '_blank');
+    window.open('https://buy.stripe.com/dR64gB2uU2WPc5G6oB?' + currentUrl.split('?')[1], '_blank');
   }
-
   fireBuyEvent();
 }
 </script>
