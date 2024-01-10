@@ -46,6 +46,6 @@ onMounted(() => {
 </template>
 <style>
 .calcscreen {
-  height: calc(100vh - 88px);
+  height: calc(100vh - 88px) !important;
 }
 </style>
