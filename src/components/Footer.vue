@@ -77,7 +77,7 @@ const openNewsletterModal = (email?: string) => {
           </div>
         </div>
         <div class="flex items-baseline justify-between pt-8 border-white border-t-1">
-          <img class="h-8" src="https://assets.melli.com/logo.svg" alt="Melli Logo">
+          <img src="https://assets.melli.com/logo.svg" alt="Melli Logo">
           <p class="text-white">© {{ new Date().getFullYear() }} Melli. All rights reserved.</p>
         </div>
       </div>
