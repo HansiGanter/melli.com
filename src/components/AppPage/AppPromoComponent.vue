@@ -18,7 +18,7 @@ import { fireContactEvent, fireShopEvent } from '~/google-tag-manager';
     </div>
     <div class="flex flex-col md:flex-row md:justify-center gap-3">
       <RouterLink to="/shop"
-        class="rounded-lg bg-primary-400 text-white font-medium py-2.5 px-4 flex w-full sm:w-fit gap-2 m-auto md:m-0 justify-center"
+        class="rounded-lg bg-primary-500 text-white font-medium py-2.5 px-4 flex items-center w-full sm:w-fit gap-2 m-auto md:m-0 justify-center"
         @click="fireShopEvent()">
         <div class="i-lucide:gift w-6 h-6" /><span>30 Tage kostenlos testen</span>
       </RouterLink>

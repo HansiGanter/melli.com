@@ -24,7 +24,8 @@ import { fireShopEvent } from '~/google-tag-manager';
           </span>
         </h1>
         <div class="flex flex-col gap-5 sm:gap-4 sm:items-center">
-          <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center"
+          <RouterLink to="/shop"
+            class="rounded-lg text-lg font-medium bg-primary-500 text-white py-2.5 px-4 flex w-fit gap-2 justify-center"
             @click="fireShopEvent()">
             <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
           </RouterLink>

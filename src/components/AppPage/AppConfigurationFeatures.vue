@@ -86,15 +86,16 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
         <div class="flex flex-col gap-4">
           <!-- Current Features -->
           <span
-            class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-xs font-semibold w-fit">released</span>
+            class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-sm font-semibold w-fit">released</span>
           <Pill v-for="(feature, index) in configurationFeatures" :key="index" :pilltext="feature.pilltext"
             :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
             :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-primary-50 text-gray-900" />
         </div>
         <div class="flex flex-col gap-4">
           <!-- Features Coming Soon -->
-          <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-xs font-semibold w-fit">bald
-            verfügbar</span>
+          <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-sm font-semibold w-fit">
+            bald verfügbar
+          </span>
           <Pill v-for="(feature, index) in configurationFeaturesComingSoon" :key="index" :pilltext="feature.pilltext"
             :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
             :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-amber-100 text-gray-900" />

@@ -83,7 +83,8 @@ const communicationFeaturesComingSoon: CommunicationFeature[] = [
         Die Liebsten jeden Tag dabei!
       </h2>
       <div class="flex flex-col gap-6">
-        <RouterLink to="/shop" class="rounded-lg bg-primary-400 text-white py-2.5 px-4 flex w-fit gap-2 justify-center"
+        <RouterLink to="/shop"
+          class="rounded-lg bg-primary-600 font-medium text-white py-2.5 px-4 flex w-fit gap-2 justify-center"
           @click="fireShopEvent()">
           <div class="i-lucide:gift w-6 h-6" /><span>Melli 30 Tage kostenlos testen</span>
         </RouterLink>
@@ -99,15 +100,16 @@ const communicationFeaturesComingSoon: CommunicationFeature[] = [
       <div class="flex flex-col gap-3">
         <!-- Current Features -->
         <span
-          class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-xs font-semibold w-fit">released</span>
+          class="rounded-full border-2 py-2 px-4 border-primary-400 text-primary-400 text-sm font-semibold w-fit">released</span>
         <Pill v-for="(feature, index) in communicationFeatures" :key="index" :pilltext="feature.pilltext"
           :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
           :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-primary-50 text-gray-900" />
       </div>
       <div class="flex flex-col gap-3">
         <!-- Features Coming Soon -->
-        <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-xs font-semibold w-fit">bald
-          verfügbar</span>
+        <span class="rounded-full border-2 py-2 px-4 border-amber-500 text-amber-500 text-sm font-semibold w-fit">
+          bald verfügbar
+        </span>
         <Pill v-for="(feature, index) in communicationFeaturesComingSoon" :key="index" :pilltext="feature.pilltext"
           :modaltext="feature.modaltext" :bubbletype="feature.bubbletype" :bubble="feature.bubble"
           :iconmodal="feature.iconmodal" :iconpill="feature.iconpill" pill="bg-amber-100 text-gray-900" />
