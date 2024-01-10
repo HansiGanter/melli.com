@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { firePaymentSuccess } from '~/google-tag-manager';
+
+onMounted(() => {
+  const linkOfTheWebsiteUserCame = document.referrer;
+  linkOfTheWebsiteUserCame && firePaymentSuccess();
+  linkOfTheWebsiteUserCame && console.log(linkOfTheWebsiteUserCame);
+})
+
+</script>
 <template>
   <Container class="calcscreen">
     <div class="h-full flex items-center">
