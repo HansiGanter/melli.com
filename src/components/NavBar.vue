@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fireGoToAppEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager';
+import { fireGoToAppEvent, fireGoToPflegeeinrichtungenEvent, fireGoToBlogEvent, fireGoToInfoPackageEvent, fireLoginEvent, fireShopEvent } from '~/google-tag-manager';
 const { t } = useI18n();
 
 const showNav = ref(false);
@@ -10,17 +10,14 @@ const router = useRouter();
   <nav class="bg-white py-4">
     <div class="flex items-center justify-between gap-x-8">
       <div class="flex items-center gap-x-8">
-        <RouterLink to="/" class="">
+        <RouterLink to="/" class="shrink-0">
           <Logo />
         </RouterLink>
         <div class="hidden lg:flex items-center gap-x-4">
-          <RouterLink to="/" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
+          <!-- <RouterLink to="/" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium">
             {{ t('navbar.about') }}
-          </RouterLink>
-          <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
-            @click="fireGoToBlogEvent">
-            {{ t('navbar.blog.heading') }}
-          </RouterLink>
+          </RouterLink> -->
+
           <RouterLink to="/app" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
             @click="fireGoToAppEvent">
             {{ t('navbar.app') }}
@@ -28,6 +25,14 @@ const router = useRouter();
           <RouterLink to="/infopaket" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
             @click="fireGoToInfoPackageEvent">
             {{ t('navbar.infopackage') }}
+          </RouterLink>
+          <a href="https://m.melli.com/einrichtungen" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
+            @click="fireGoToPflegeeinrichtungenEvent">
+            {{ t('navbar.pflegeeinrichtungen') }}
+          </a>
+          <RouterLink to="/blog" class="py-2.5 px-4 rounded-lg text-gray-600 text-base font-medium"
+            @click="fireGoToBlogEvent">
+            {{ t('navbar.blog.heading') }}
           </RouterLink>
         </div>
       </div>
@@ -53,15 +58,11 @@ const router = useRouter();
       leave-to-class="transform -translate-y-5 opacity-0">
       <div v-if="showNav" class="mt-4 container mx-auto px-4 lg:px-0 lg:hidden" :class="showNav ? 'grid' : 'hidden'">
         <div class="grid gap-2 ">
-          <RouterLink to="/"
+          <!-- <RouterLink to="/"
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2">
             {{ t('navbar.about') }}
-          </RouterLink>
-          <RouterLink to="/blog"
-            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
-            @click="fireGoToBlogEvent">
-            {{ t('navbar.blog.heading') }}
-          </RouterLink>
+          </RouterLink> -->
+
           <!-- <RouterLink to="/live-demo" class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2" @click="fireGoToLiveDemoEvent">
             {{ t('navbar.live-demo') }}
           </RouterLink> -->
@@ -74,6 +75,16 @@ const router = useRouter();
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
             @click="fireGoToInfoPackageEvent">
             {{ t('navbar.infopackage') }}
+          </RouterLink>
+          <a href="https://m.melli.com/einrichtungen"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
+            @click="fireGoToPflegeeinrichtungenEvent">
+            {{ t('navbar.pflegeeinrichtungen') }}
+          </a>
+          <RouterLink to="/blog"
+            class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
+            @click="fireGoToBlogEvent">
+            {{ t('navbar.blog.heading') }}
           </RouterLink>
         </div>
         <RouterLink to="/shop" class="my-4 py-2.5 rounded-lg bg-primary-500 text-center text-white text-base font-medium"

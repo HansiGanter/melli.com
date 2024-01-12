@@ -110,6 +110,13 @@ export const fireGoToBlogEvent = () => {
   console.log('melli-cta-go-to-blog');
 };
 
+export const fireGoToPflegeeinrichtungenEvent = () => {
+  window.dataLayer.push({
+    event: 'melli-cta-go-to-pflegeeinrichtungen',
+  });
+  console.log('melli-cta-go-to-pflegeeinrichtungen');
+};
+
 export const fireGoToAppEvent = () => {
   window.dataLayer.push({
     event: 'melli-cta-go-to-app',
