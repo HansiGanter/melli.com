@@ -3,21 +3,21 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from '@headlessui/vue'
-import { fireCallbackOpenEvent, fireFAQEvent } from '~/google-tag-manager'
+} from '@headlessui/vue';
+import { fireCallbackOpenEvent, fireFAQEvent } from '~/google-tag-manager';
 
-const { t, te } = useI18n()
-const callbackModalOpen = ref(false)
+const { t, te } = useI18n();
+const callbackModalOpen = ref(false);
 
-const faqs: { question: string; answer: string }[] = []
+const faqs: { question: string; answer: string; }[] = [];
 for (let i = 0; i < 99; i++) {
-  const key_question = `faq-list.${i}.question`
-  const key_answer = `faq-list.${i}.answer`
+  const key_question = `faq-list.${i}.question`;
+  const key_answer = `faq-list.${i}.answer`;
 
   if (te(key_question) && te(key_answer))
-    faqs.push({ question: t(key_question), answer: t(key_answer) })
+    faqs.push({ question: t(key_question), answer: t(key_answer) });
   else
-    continue
+    continue;
 }
 
 const technicalDetails = [
@@ -37,9 +37,9 @@ const technicalDetails = [
     question: 'Ist das Datenvolumen auf der SIM-Karte begrenzt?',
     answer: 'Nein, das Datenvolumen ist nicht begerenzt.',
   },
-]
+];
 
-const items = ['Melli-Abo', 'Tablet + Docking Station + Netzteil', 'Optional: SIM-Karte mit unbegrenztem Datenvolumen', 'Melli-App für Familie und Freunde', 'Alle Softwareupdates während der Abo-Laufzeit', 'Kostenlose Lieferung']
+const items = ['Melli-Abo', 'Tablet + Holzständer + Netzteil', 'Optional: SIM-Karte mit unbegrenztem Datenvolumen', 'Melli-App für Familie und Freunde', 'Alle Softwareupdates während der Abo-Laufzeit'];
 </script>
 
 <template>
