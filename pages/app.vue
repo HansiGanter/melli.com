@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useHead({
+  title: 'Melli-App für Familie & Freunde',
+  meta: [
+    { name: 'description', content: 'Die Melli-App ist die Brücke zwischen dir und der Melli bei deinen Eltern oder Großeltern. Videoanrufe, Einstellungen an Melli vornehmen, Erinnerungen organisieren - das alles funktioniert mit der Melli-App.' },
+  ],
+});
+</script>
 <template>
   <AppHero />
 

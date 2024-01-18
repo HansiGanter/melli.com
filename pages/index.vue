@@ -3,9 +3,9 @@ import { fireInfoPackageOpenEvent, fireMelliDemoEvent } from '~/google-tag-manag
 
 const { t } = useI18n();
 useHead({
-  title: 'Melli',
+  title: 'Melli - die digitale Begleiterin für Senioren',
   meta: [
-    { name: 'description', content: 'Melli - deine Freundin für ein glückliches Älterwerden. Melli ist eine sprachgesteuerte Begleiterin, speziell entwickelt für die Bedürfnisse älterer Menschen. Als gute Freundin ist sie den ganzen Tag über für ihre Nutzer da und tut alles dafür, ihnen jeden Tag ein Lächeln ins Gesicht zu zaubern.' },
+    { name: 'description', content: 'Seniorentablet, Sprachassistentin und Smartphone in Einem. Melli verbindet dich mit Oma & Opa und sorgt für einen bunten und aktiven Alltag.' },
   ],
 });
 
