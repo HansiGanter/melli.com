@@ -2,7 +2,7 @@
 import { firePaymentSuccess } from '~/google-tag-manager';
 
 // url for testing:
-// http://localhost:3333/success?session_id=cs_test_b1ewxRv2TOwS5WM5OoPcienhaGGKTmFyq9fS8HPeTjGqUxoGS9U3e393cx&utm_medium=earned_email&utm_source=marketo&utm_campaign=campaign_a
+// http://localhost:3333/success?session_id=cs_test_b1ewxRv2TOwS5WM5OoPcienhaGGKTmFyq9fS8HPeTjGqUxoGS9U3e393cx&utm_medium=earned_email&utm_source=marketo&utm_campaign=campaign_a&utm_content=content_a&utm_term=term_a
 
 const session_id = ref<string | null>(null);
 onMounted(() => {
@@ -21,7 +21,16 @@ onMounted(() => {
 
   fetch(stripeBackendEndpoint, {
     method: 'POST',
-    body: JSON.stringify({ session_id: session_id.value }),
+    body: JSON.stringify({
+      checkout_session_id: url.searchParams.get('session_id'),
+      data: {
+        utm_medium: url.searchParams.get('utm_medium'),
+        utm_source: url.searchParams.get('utm_source'),
+        utm_campaign: url.searchParams.get('utm_campaign'),
+        utm_content: url.searchParams.get('utm_content'),
+        utm_term: url.searchParams.get('utm_term'),
+      }
+    }),
     headers: {
       'Content-Type': 'application/json'
     }
