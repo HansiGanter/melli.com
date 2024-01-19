@@ -17,7 +17,7 @@ onMounted(() => {
     console.log(key, value);
   });
 
-  const stripeBackendEndpoint = process.env.NODE_ENV === 'production' ? 'https://stripe.prod.melli.com/checkout-success' : 'https://stripe.dev.melli.com/checkout-success';
+  const stripeBackendEndpoint = process.env.NODE_ENV === 'development' ? 'https://stripe.dev.melli.com/checkout-success' : 'https://stripe.prod.melli.com/checkout-success';
 
   fetch(stripeBackendEndpoint, {
     method: 'POST',

@@ -28,10 +28,10 @@ function submitBuy() {
   const currentUrl = window.location.href;
   let paymentlink = "";
   if (wifiSetting.value === 'wifi') {
-    paymentlink = process.env.NODE_ENV === 'production' ? 'https://buy.stripe.com/5kA5kF8TigNF2v68wK?' : 'https://buy.stripe.com/test_fZe7ti7KDaA7dJC6oJ?';
+    paymentlink = process.env.NODE_ENV === 'development' ? 'https://buy.stripe.com/test_fZe7ti7KDaA7dJC6oJ?' : 'https://buy.stripe.com/5kA5kF8TigNF2v68wK?';
   }
   else if (wifiSetting.value === 'sim') {
-    paymentlink = process.env.NODE_ENV === 'production' ? 'https://buy.stripe.com/dR64gB2uU2WPc5G6oB?' : 'https://buy.stripe.com/test_fZe7ti7KDaA7dJC6oJ?';
+    paymentlink = process.env.NODE_ENV === 'development' ? 'https://buy.stripe.com/test_fZe7ti7KDaA7dJC6oJ?' : 'https://buy.stripe.com/dR64gB2uU2WPc5G6oB?';
   }
   window.open(paymentlink + currentUrl.split('?')[1], '_blank');
   fireBuyEvent();
