@@ -10,38 +10,39 @@ onMounted(() => {
   const url = new URL(window.location.href);
   session_id.value = url.searchParams.get('session_id');
 
-  linkOfTheWebsiteUserCame && session_id && firePaymentSuccess();
+  if (session_id.value) {
+    linkOfTheWebsiteUserCame && firePaymentSuccess();
 
-  console.log(linkOfTheWebsiteUserCame);
-  url.searchParams.forEach((value, key) => {
-    console.log(key, value);
-  });
+    console.log(linkOfTheWebsiteUserCame);
+    url.searchParams.forEach((value, key) => {
+      console.log(key, value);
+    });
 
-  const stripeBackendEndpoint = process.env.NODE_ENV === 'development' ? 'https://stripe.dev.melli.com/checkout-success' : 'https://stripe.prod.melli.com/checkout-success';
+    const stripeBackendEndpoint = process.env.NODE_ENV === 'development' ? 'https://stripe.dev.melli.com/checkout-success' : 'https://stripe.prod.melli.com/checkout-success';
 
-  fetch(stripeBackendEndpoint, {
-    method: 'POST',
-    body: JSON.stringify({
-      checkout_session_id: url.searchParams.get('session_id'),
-      data: {
-        utm_medium: url.searchParams.get('utm_medium'),
-        utm_source: url.searchParams.get('utm_source'),
-        utm_campaign: url.searchParams.get('utm_campaign'),
-        utm_content: url.searchParams.get('utm_content'),
-        utm_term: url.searchParams.get('utm_term'),
-      }
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error:', error));
-
+    fetch(stripeBackendEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        checkout_session_id: url.searchParams.get('session_id') ?? "",
+        data: {
+          utm_medium: url.searchParams.get('utm_medium') ?? "",
+          utm_source: url.searchParams.get('utm_source') ?? "",
+          utm_campaign: url.searchParams.get('utm_campaign') ?? "",
+          utm_content: url.searchParams.get('utm_content') ?? "",
+          utm_term: url.searchParams.get('utm_term') ?? "",
+        },
+      })
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+  }
 });
-
 </script>
+
 <template>
   <Container class="calcscreen">
     <div v-if="!session_id" class="h-full flex items-center justify-center">
