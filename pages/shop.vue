@@ -33,7 +33,7 @@ function submitBuy() {
   else if (wifiSetting.value === 'sim') {
     paymentlink = process.env.NODE_ENV === 'development' ? 'https://buy.stripe.com/test_fZe7ti7KDaA7dJC6oJ?' : 'https://buy.stripe.com/dR64gB2uU2WPc5G6oB?';
   }
-  window.open(paymentlink + currentUrl.split('?')[1], '_blank');
+  window.open(paymentlink + currentUrl.split('?')[1]);
   fireBuyEvent();
 }
 </script>
