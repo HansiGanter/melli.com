@@ -9,43 +9,43 @@ useHead({
 <template>
   <AppHero />
 
-  <Container id="appoverview" class="py-12 lg:py-24 px-6 lg:px-24">
+  <Container id="appoverview" class="py-12 lg:py-24 lg:px-24">
     <AppIntroText />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-6 lg:px-24">
+  <Container class="my-12 lg:my-24 lg:px-24">
     <AppOverview />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 bg-gray-50">
+  <Container class="py-12 lg:py-24 lg:px-24 bg-gray-50">
     <AppCommunicationFeatures />
   </Container>
 
-  <Container id="app-safety-features" class="py-12 lg:py-24 px-6 lg:px-24">
+  <Container id="app-safety-features" class="py-12 lg:py-24 lg:px-24">
     <AppSafetyFeatures />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-6 lg:px-24">
+  <Container class="my-12 lg:my-24 lg:px-24">
     <AppConfigurationFeatures />
   </Container>
 
-  <Container class="py-12 lg:py-24 px-6 lg:px-24 bg-gray-50">
+  <Container class="py-12 lg:py-24 lg:px-24 bg-gray-50">
     <AppScheduleFeatures />
   </Container>
 
-  <Container class="my-12 lg:my-24 px-6 lg:px-24">
+  <Container class="my-12 lg:my-24 lg:px-24">
     <AppPromoComponent />
   </container>
 
-  <Container class="my-24 px-6 lg:px-24">
+  <Container class="my-24 lg:px-24">
     <SecureSection />
   </Container>
 
-  <Container class="px-6 lg:px-24 my-12 lg:my-24">
+  <Container class="lg:px-24 my-12 lg:my-24">
     <AppFaqSection />
   </Container>
 
-  <Container class="my-24 px-6 lg:px-24">
+  <Container class="my-24 lg:px-24">
     <ContactSection />
   </Container>
 
