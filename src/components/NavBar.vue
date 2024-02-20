@@ -68,22 +68,22 @@ const router = useRouter();
           </RouterLink> -->
           <RouterLink to="/app"
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
-            @click="fireGoToAppEvent">
+            @click="fireGoToAppEvent(); showNav = !showNav;">
             {{ t('navbar.app') }}
           </RouterLink>
           <RouterLink to="/infopaket"
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
-            @click="fireGoToInfoPackageEvent">
+            @click="fireGoToInfoPackageEvent(); showNav = !showNav;">
             {{ t('navbar.infopackage') }}
           </RouterLink>
           <a href="https://m.melli.com/einrichtungen"
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
-            @click="fireGoToPflegeeinrichtungenEvent">
+            @click="fireGoToPflegeeinrichtungenEvent(); showNav = !showNav;">
             {{ t('navbar.pflegeeinrichtungen') }}
           </a>
           <RouterLink to="/blog"
             class="focus:outline-none focus:bg-gray-100 rounded-md font-medium text-gray-600 text-left p-2 my-2"
-            @click="fireGoToBlogEvent">
+            @click="fireGoToBlogEvent(); showNav = !showNav;">
             {{ t('navbar.blog.heading') }}
           </RouterLink>
         </div>
