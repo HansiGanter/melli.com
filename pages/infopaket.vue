@@ -24,11 +24,11 @@ const onEmailFormSubmit = (e: Event) => {
 <template>
   <InfoPackageModal :show="showNewsletterModal" :email="newsletterEmail" @close="showNewsletterModal = false" centered />
 
-  <Container class="">
+  <Container class="lg:px-24 ">
     <InfopaketHeading class="my-8 sm:my-12" />
   </Container>
 
-  <Container class=" my-12 sm:my-16">
+  <Container class="lg:px-24  my-12 sm:my-16">
     <form class="flex flex-wrap gap-4 justify-center" @submit.prevent="onEmailFormSubmit">
       <input class="border-2 rounded-lg w-full min-w-48 max-w-100 px-4 py-2.5" placeholder="name@email.de" type="email"
         name="email" required>
@@ -39,7 +39,7 @@ const onEmailFormSubmit = (e: Event) => {
 
   </Container>
 
-  <Container class="">
+  <Container class="lg:px-24 ">
     <div v-if="greaterMd" class="flex gap-4">
       <div class="flex-[60%]" style="max-width: calc(60% - 16px);">
         <img class="rounded-2xl w-full h-full object-cover"
@@ -62,15 +62,15 @@ const onEmailFormSubmit = (e: Event) => {
     </div>
   </Container>
 
-  <Container class="">
+  <Container class="lg:px-24 ">
     <InfoPackageContains class="my-12 sm:my-16 mx-auto" />
   </Container>
 
-  <Container class=" py-8 bg-tertiary-50 dark:from-gray-900 dark:to-gray-800">
+  <Container class="lg:px-24  py-8 bg-tertiary-50 dark:from-gray-900 dark:to-gray-800">
     <FaqSection />
   </Container>
 
-  <Container class="bg-primary-900 py-24 mb-48">
+  <Container class="lg:px-24 bg-primary-900 py-24 mb-48">
     <ContactSection />
   </Container>
 </template>
