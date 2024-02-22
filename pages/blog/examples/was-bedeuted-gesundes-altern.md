@@ -5,10 +5,10 @@ description: |
 categories: ["examples"]
 author:
     name: Franziska Lerch
-    imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/franziska-lerch.webp
 date: 2022-01-16T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/woman-yoga.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/woman-yoga.webp
 ---
 
 ## Klassische Maßnahmen zur Gesundheitsförderung
@@ -31,7 +31,7 @@ Der körperliche Abbau wird oftmals vehement geleugnet und es wird zwanghaft ver
 
 Das hat selbstinduzierten Stress zur Folge, der die Unzufriedenheit mit der eigenen Gesundheit noch größer machen kann. Das Rostocker Zentrum zur Erforschung des demografischen Wandels hat in einer Studie herausgefunden, dass die Unzufriedenheit mit der eigenen Gesundheit Frauen im Durchschnitt 11 und Männer 14 Lebensjahre kostet. Der Anti-Aging Wahn ist somit nicht nur psychisch belastend, sondern verkürzt sogar die Lebenserwartung.
 
-![](https://assets.melli.com/stock/2.webp)
+![](https://melli-assets.netlify.app/stock/2.webp)
 
 ## Erfülltes Sozialleben
 

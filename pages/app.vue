@@ -55,7 +55,7 @@ useHead({
 <style>
 #app-safety-features {
   background: linear-gradient(rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)), url('https://assets.melli.com/images/images/stock/melli-asset-image-stock-473590178-2by3-1536.webp');
+      rgba(0, 0, 0, 0.3)), url('https://melli-assets.netlify.app/images/images/stock/melli-asset-image-stock-473590178-2by3-1536.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ useHead({
 @media (min-width: 768px) {
   #app-safety-features {
     background: linear-gradient(rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)), url('https://assets.melli.com/images/images/stock/melli-asset-image-stock-473590178-5by3-2048.webp');
+        rgba(0, 0, 0, 0.3)), url('https://melli-assets.netlify.app/images/images/stock/melli-asset-image-stock-473590178-5by3-2048.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -19,18 +19,14 @@ useHead({
   </Container>
 
   <Container class="px-5">
-    <Quote
-      class="my-12"
-      :quote="t('citation.matthias.quote')"
-      :source="t('citation.matthias.source')"
+    <Quote class="my-12" :quote="t('citation.matthias.quote')" :source="t('citation.matthias.source')"
       :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
-    />
+      portrait="https://melli-assets.netlify.app/images/team/matthias-weber-3.webp" />
   </Container>
 
   <Container class="bg-primary-900 rounded-[30px] px-5 py-16 my-16 lg:my-24 ">
     <!-- <div class="grid gap-4 lg:w-200 text-center mx-auto">
-      <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20 mx-auto">
+      <img src="https://melli-assets.netlify.app/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20 mx-auto">
       <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center">
         Mellis Tipp für Weihnachten:
       </h1>
@@ -74,7 +70,9 @@ useHead({
       </h1>
     </div>
     <p class="color-gray-900 text-lg py-6">
-      Wähle eine Abo-Option um deinen kostenlosen Test zu starten. Dir werden für die ersten 60 Tage keinerlei Kosten berechnet. Nach Ablauf der 60 Tage beginnt dein Abo, zu den von dir ausgewählten Konditionen. Du kannst dein Abo vor Ablauf der 60 Tage kündigen, sodass keinerlei Kosten anfallen, sollte Melli nicht zu dir passen.
+      Wähle eine Abo-Option um deinen kostenlosen Test zu starten. Dir werden für die ersten 60 Tage keinerlei Kosten
+      berechnet. Nach Ablauf der 60 Tage beginnt dein Abo, zu den von dir ausgewählten Konditionen. Du kannst dein Abo vor
+      Ablauf der 60 Tage kündigen, sodass keinerlei Kosten anfallen, sollte Melli nicht zu dir passen.
     </p>
     <StatsSection />
   </Container>

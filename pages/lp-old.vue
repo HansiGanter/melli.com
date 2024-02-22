@@ -16,13 +16,9 @@ useHead({
   </Container>
 
   <Container class="px-5">
-    <Quote
-      class="my-12"
-      :quote="t('citation.matthias.quote')"
-      :source="t('citation.matthias.source')"
+    <Quote class="my-12" :quote="t('citation.matthias.quote')" :source="t('citation.matthias.source')"
       :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
-    />
+      portrait="https://melli-assets.netlify.app/images/team/matthias-weber-3.webp" />
   </Container>
   <Container class="my-16 lg:my-24 px-5">
     <div class="grid gap-2 lg:w-5/12 lg:mx-auto">

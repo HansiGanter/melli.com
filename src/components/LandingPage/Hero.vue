@@ -25,7 +25,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
   <header class="relative bg-black" style="height: calc(100vh - 88px)">
     <!-- The video -->
     <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
-      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp">
+      poster="https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp">
       <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
       <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
     </video>

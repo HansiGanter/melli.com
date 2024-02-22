@@ -27,10 +27,10 @@ const { t } = useI18n()
               class="fill-primary-900 translate-y--1" />
           </svg>
           <img class="relative translate-x-2"
-            src="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp" srcset="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp 512w,
-                  https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left-768.webp 768w,
-                  https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left-1024.webp 1024w"
-            alt="Melli-Gerät Mockup">
+            src="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left.webp"
+            srcset="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left.webp 512w,
+                  https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left-768.webp 768w,
+                  https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left-1024.webp 1024w" alt="Melli-Gerät Mockup">
         </div>
       </div>
     </div>

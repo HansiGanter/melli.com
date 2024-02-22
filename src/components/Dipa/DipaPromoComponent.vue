@@ -22,7 +22,7 @@ const submitFunction = async () => {
   <div class="grid md:grid-cols-2 rounded-3xl overflow-hidden">
     <div class="h-full">
       <img class="min-h-full max-h-full object-cover"
-        src="https://assets.melli.com/images/mockups/02_interior/device_interior_intro-tag-gestalten-2048.webp">
+        src="https://melli-assets.netlify.app/images/mockups/02_interior/device_interior_intro-tag-gestalten-2048.webp">
     </div>
     <div class="flex flex-col gap-8 bg-primary-900 py-6 sm:py-18 px-6 sm:px-12">
       <div class="flex flex-col gap-4">

@@ -83,8 +83,8 @@ const startVideo = (event: Event) => {
         <div class="flex gap-4 flex-wrap xl:gap-8 lg:flex-no-wrap">
 
             <div v-for="(feature, index) in features" :key="index"
-                class="lg:w-1 grow rounded-lg bg-yellow-500 text-white px-6 py-3 grid gap-2 cursor-pointer"
-                @click="featureToShowDetails = feature">
+              class="lg:w-1 grow rounded-lg bg-yellow-500 text-white px-6 py-3 grid gap-2 cursor-pointer"
+              @click="featureToShowDetails = feature">
                 <BubbleIcon bubble-type="0" bubble="text-yellow-400" :icon="feature.iconClass" />
                 <h3 class="font-semibold">
                     {{ feature.pilltext }}
@@ -98,13 +98,13 @@ const startVideo = (event: Event) => {
         </div>
     </div>
     <div class="mt-8 md:mt--40 md:w-7/10 mx-auto rounded-3xl overflow-hidden relative"
-        :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
+      :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
         <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false"
-            poster="https://assets.melli.com/images/backgrounds/website-video-thumbnail-3-1024.webp">
+          poster="https://melli-assets.netlify.app/images/backgrounds/website-video-thumbnail-3-1024.webp">
             <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
             <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
         </video>
         <div v-if="!startedVideo"
-            class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
+          class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />
     </div>
 </template>

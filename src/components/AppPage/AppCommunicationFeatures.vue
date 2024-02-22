@@ -75,7 +75,7 @@ const communicationFeaturesComingSoon: CommunicationFeature[] = [
         Die Liebsten jeden Tag dabei!
       </h2>
       <img
-        :src="greaterLg ? 'https://assets.melli.com/images/images/commercials/melli-asset-image-communication-2-5by3-1024.webp' : 'https://assets.melli.com/images/images/commercials/melli-asset-image-communication-2-4by5.webp'"
+        :src="greaterLg ? 'https://melli-assets.netlify.app/images/images/commercials/melli-asset-image-communication-2-5by3-1024.webp' : 'https://melli-assets.netlify.app/images/images/commercials/melli-asset-image-communication-2-4by5.webp'"
         class="object-cover rounded-3xl max-w-100 lg:max-w-none md:min-w-100">
     </div>
     <div class="flex flex-col gap-9 sm:gap-12 max-w-140">

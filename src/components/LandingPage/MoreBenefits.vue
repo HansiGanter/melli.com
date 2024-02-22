@@ -12,22 +12,22 @@ const benefits: Benefits[] = [
   {
     pilltext: t('more-benefit-1'),
     modaltext: t('more-benefits.card1'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_brain-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_brain-thick-yellow.svg',
   },
   {
     pilltext: t('more-benefit-2'),
     modaltext: t('more-benefits.card2'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_dribble-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_dribble-thick-yellow.svg',
   },
   {
     pilltext: t('more-benefit-3'),
     modaltext: t('more-benefits.card3'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_smile-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_smile-thick-yellow.svg',
   },
   {
     pilltext: t('more-benefit-4'),
     modaltext: t('more-benefits.card4'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_music-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_music-thick-yellow.svg',
   },
 ]
 
@@ -89,7 +89,7 @@ const playVideo = () => {
     <div class="relative overflow-hidden lg:max-w-6xl rounded-2xl lg:-mt-88 mx-auto"
       @click="[playVideo(), fireVideoEvent('beschäftigung')]">
       <video ref="morebenefitsvideo" width="1024"
-        poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-3-1024.webp"
+        poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_entertainment-3-1024.webp"
         playsinline>
         <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
         <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">

@@ -2,9 +2,9 @@
 const { t } = useI18n();
 
 const images = [
-  'https://assets.melli.com/images/mockups/product-image-01.webp',
-  'https://assets.melli.com/images/mockups/product-image-02.webp',
-  'https://assets.melli.com/images/mockups/product-image-03.webp',
+  'https://melli-assets.netlify.app/images/mockups/product-image-01.webp',
+  'https://melli-assets.netlify.app/images/mockups/product-image-02.webp',
+  'https://melli-assets.netlify.app/images/mockups/product-image-03.webp',
 ];
 const active = ref(0);
 

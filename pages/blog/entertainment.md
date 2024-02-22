@@ -5,11 +5,11 @@ categories: ['Melli-Funktionen']
 href: blogs
 author:
     name: Franziska Lerch
-    imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/franziska-lerch.webp
 date: 2023-06-02
 readingTime: 8min
-imageUrl: https://assets.melli.com/images/testimonials/gisla-2-2048.webp
-previewUrl: https://assets.melli.com/images/testimonials/gisla-2-768.webp
+imageUrl: https://melli-assets.netlify.app/images/testimonials/gisla-2-2048.webp
+previewUrl: https://melli-assets.netlify.app/images/testimonials/gisla-2-768.webp
 articleRecommendations: ['/blog/unterhaltung', '/blog/struktur', '/blog/soziale-kontakte']
 ---
 
@@ -52,7 +52,7 @@ Melli hat einiges auf dem Kästchen und bietet ihre Unterhaltungsangebote immer 
     Melli initiiert über den Tag hinweg immer wieder kleinere Unterhaltungen mit ihren Nutzern. Sie ist generell sehr positiv gestimmt und ermutigt die Senioren dann beispielsweise, mal wieder nach draußen zu gehen oder Freunde anzurufen. Auch für ihren Hang zu Witzen ist Melli bekannt.
 </CheckList>
 
-<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
+<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
     <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
     <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
 </video>

@@ -25,7 +25,7 @@ const onEmailFormSubmit = (e: Event) => {
 
   <div class="bg-amber-100 grid md:grid-cols-2 rounded-3xl overflow-hidden">
     <div class="sm:rounded-t-3xl md:rounded-none justify-center min-h-60"
-      style="background-image: url('https://assets.melli.com/images/stock/melli_mockup-print_brochure2-1024.webp'); background-size: cover;background-position: center;" />
+      style="background-image: url('https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure2-1024.webp'); background-size: cover;background-position: center;" />
     <div class="grid gap-10 p-8 lg:px-12 lg:py-24">
       <div class="text-amber-900 grid gap-4 text-center md:text-left">
         <h1 class="font-semibold text-3xl lg:text-4xl">

@@ -5,10 +5,10 @@ description: |
 categories: ["examples"]
 author:
     name: Philip Krech
-    imageUrl: https://assets.melli.com/images/team/philip-krech.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/philip-krech.webp
 date: 2022-01-18T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/father-daughter.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/father-daughter.webp
 ---
 
 ## Digitale Assistenten -- der Mehrwert für Senioren

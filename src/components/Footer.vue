@@ -77,7 +77,7 @@ const openNewsletterModal = (email?: string) => {
           </div>
         </div>
         <div class="flex items-baseline justify-between pt-8 border-white border-t-1">
-          <img src="https://assets.melli.com/logo.svg" alt="Melli Logo">
+          <img src="https://melli-assets.netlify.app/logo.svg" alt="Melli Logo">
           <p class="text-white">© {{ new Date().getFullYear() }} Melli. All rights reserved.</p>
         </div>
       </div>
@@ -86,7 +86,7 @@ const openNewsletterModal = (email?: string) => {
 </template>
 <style>
 #footer-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://assets.melli.com/images/own-content/melli-infopaket-content-1024.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://melli-assets.netlify.app/images/own-content/melli-infopaket-content-1024.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

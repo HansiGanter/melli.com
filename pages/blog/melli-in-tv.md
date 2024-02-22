@@ -7,7 +7,7 @@ href: blogs
 author:
   name: Dr. Matthias Weber
 date: 2023-08-22
-imageUrl: https://assets.melli.com/images/blogs/melli-in-tv/hero-1536.webp
+imageUrl: https://melli-assets.netlify.app/images/blogs/melli-in-tv/hero-1536.webp
 articleRecommendations: ['/blog/struktur', '/blog/wege-aus-der-einsamkeit', '/blog/interview-schuldt']
 ---
 
@@ -27,15 +27,15 @@ Herr Krebel, Leiter eines Pflegeheimes und Messebesucher, sprach vor laufender K
 
 <p class="flex flex-wrap items-center justify-center md:grid md:grid-cols-3 gap-4 p-8">
   <div class="w-60 grow">
-    <img src="https://assets.melli.com/images/blogs/melli-in-tv/frank_krebel.webp" alt="Bild von Frank Krebel">
+    <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/frank_krebel.webp" alt="Bild von Frank Krebel">
     <p class="text-sm h-10">Frank Krebel, Pflegeheimleiter</p>
   </div>
   <div class="w-60 grow">
-    <img src="https://assets.melli.com/images/blogs/melli-in-tv/dr_matthias_weber.webp" alt="Bild von Dr. Matthias Weber">
+    <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/dr_matthias_weber.webp" alt="Bild von Dr. Matthias Weber">
     <p class="text-sm h-10">Dr. Matthias Weber, Mit-Gründer von Melli</p>
   </div>
   <div class="w-60 grow">
-    <img src="https://assets.melli.com/images/blogs/melli-in-tv/melli.webp" alt="Bild von einem Melli Gerät">
+    <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/melli.webp" alt="Bild von einem Melli Gerät">
     <p class="text-sm h-10">Melli auf der Altenpflegemesse 2023</p>
   </div>
 </p>
@@ -49,25 +49,25 @@ Nein? Dann kommt hier deine zweite Chance. Wir haben dir alle im Nachhinein abru
 <div class="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4 p-8">
   <div>
     <a href="https://media.tagesschau.de/video/2023/0425/TV-20230425-1714-3600.webxxl.h264.mp4?utm_source=sendinblue&utm_campaign=newsletter%20%20230511%20%20melli-im-tv&utm_medium=email" target="_blank">
-      <img src="https://assets.melli.com/images/blogs/melli-in-tv/tagesschau.webp" alt="Vorschau des Tagesschau-Beitrags">
+      <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/tagesschau.webp" alt="Vorschau des Tagesschau-Beitrags">
       <p>Zum Tagesschau-Beitrag</p>
     </a>
   </div>
   <div>
     <a href="https://www.daserste.de/information/politik-weltgeschehen/morgenmagazin/berichte-und-interviews/Angelika-Herdemann-zu-Einsamkeit-100.html?utm_source=sendinblue&utm_campaign=newsletter%20%20230511%20%20melli-im-tv&utm_medium=email" target="_blank">
-      <img src="https://assets.melli.com/images/blogs/melli-in-tv/moma.webp" alt="Vorschau des MOMA-Beitrags">
+      <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/moma.webp" alt="Vorschau des MOMA-Beitrags">
       <p>Zum MOMA-Beitrag</p>
     </a>
   </div>
   <div>
     <a href="https://www.ardmediathek.de/video/frankenschau-aktuell/kuenstliche-intelligenz-in-der-altenpflege/br-fernsehen/Y3JpZDovL2JyLmRlL3ZpZGVvLzY4YzNiN2YwLTA1MWQtNDVkOS1iMDMzLTQxZWExYmRlMDMzYw?utm_source=sendinblue&utm_campaign=newsletter%20%20230511%20%20melli-im-tv&utm_medium=email" target="_blank">
-      <img src="https://assets.melli.com/images/blogs/melli-in-tv/frankenschau.webp" alt="Vorschau des Frankenschau-Beitrags">
+      <img src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/frankenschau.webp" alt="Vorschau des Frankenschau-Beitrags">
       <p>Zum Frankenschau-Beitrag</p>
     </a>
   </div>
   <div>
     <a href="https://www.ardaudiothek.de/episode/das-computermagazin/ki-soll-zum-projektmanager-werden/br24/12635611/?utm_source=sendinblue&utm_campaign=newsletter%20%20230511%20%20melli-im-tv&utm_medium=email" target="_blank">
-      <img class="max-h-54 object-contain m-auto border border-gray-200" src="https://assets.melli.com/images/blogs/melli-in-tv/br24.webp" alt="Vorschau des BR24-Beitrags">
+      <img class="max-h-54 object-contain m-auto border border-gray-200" src="https://melli-assets.netlify.app/images/blogs/melli-in-tv/br24.webp" alt="Vorschau des BR24-Beitrags">
       <p>Zum BR24-Beitrag (Radio)</p>
     </a>
   </div>

@@ -31,7 +31,7 @@ const benefits = ref([{ icon: 'i-heroicons:book-open', text: 'Melli-Informations
     </div>
     <div class="relative overflow-hidden lg:max-w-6xl lg:-mt-88 mx-auto">
       <img class="rounded-2xl mx-auto"
-        src="https://assets.melli.com/images/stock/melli-mockup-print-flyer&businesscard-1024.webp"
+        src="https://melli-assets.netlify.app/images/stock/melli-mockup-print-flyer&businesscard-1024.webp"
         alt="Melli Magazin geöffnet auf Founder Seite">
     </div>
   </div>

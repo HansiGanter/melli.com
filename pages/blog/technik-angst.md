@@ -5,11 +5,11 @@ categories: ['Tipps & Tricks', 'Melli-Funktionen']
 href: blogs
 author:
     name: Tanja Lerch
-    imageUrl: https://assets.melli.com/images/team/franziska-lerch.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/franziska-lerch.webp
 date: 2023-12-14
 readingTime: 8min
-imageUrl: https://assets.melli.com/images/stock/worried-old-lady-1024.webp
-previewUrl: https://assets.melli.com/images/stock/worried-old-lady-1024.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/worried-old-lady-1024.webp
+previewUrl: https://melli-assets.netlify.app/images/stock/worried-old-lady-1024.webp
 articleRecommendations: ['/blog/melli-in-tv', '/blog/beispieltag', '/blog/gruenderstory']
 ---
 
@@ -46,7 +46,7 @@ Melli ist mehr als nur ein digitaler Assistent – sie ist eine vertrauenswürdi
 
 <br>
 <br>
-<img src="https://assets.melli.com/images/stock/granny-grandchild-tablet-kitchen-1024.webp" style="border-radius:32px">
+<img src="https://melli-assets.netlify.app/images/stock/granny-grandchild-tablet-kitchen-1024.webp" style="border-radius:32px">
 <br>
 
 ### Melli’s Vorteile im Überblick:

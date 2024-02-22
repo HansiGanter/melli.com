@@ -80,7 +80,7 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
       </div>
       <div v-if="!greaterLg" class="max-w-120 mx-auto">
         <img class="object-contain"
-          src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-1536.webp">
+          src="https://melli-assets.netlify.app/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-1536.webp">
       </div>
       <div class="flex flex-col sm:flex-row gap-6">
         <div class="flex flex-col gap-4">
@@ -104,7 +104,7 @@ const configurationFeaturesComingSoon: ConfigurationFeature[] = [
     </div>
     <div class="h-full max-w-120">
       <img v-if="greaterLg" class="object-contain"
-        src="https://assets.melli.com/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-2048.webp">
+        src="https://melli-assets.netlify.app/images/mockups/03_smartphone/mockup-smartphone-interests-two-phones-2048.webp">
     </div>
   </div>
 </template>

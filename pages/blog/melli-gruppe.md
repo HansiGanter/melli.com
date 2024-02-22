@@ -7,7 +7,7 @@ href: blogs
 author:
   name: Dr. Matthias Weber
 date: 2022-21-09
-imageUrl: https://assets.melli.com/images/blogs/melli-gruppe/melli-image-testimonial-helga-3-v2-1536.webp
+imageUrl: https://melli-assets.netlify.app/images/blogs/melli-gruppe/melli-image-testimonial-helga-3-v2-1536.webp
 articleRecommendations: ['/blog/melli-in-tv', '/blog/gruenderstory', '/blog/beispieltag']
 ---
 
@@ -38,7 +38,7 @@ Melli bietet einen digitalen Seniorentreff an, bei dem Melli-Nutzer in regelmä�
 
 <br>
 
-  <img class="rounded-3xl aspect-9/4 object-cover" src="https://assets.melli.com/images/commercials/melli_commercial-screenshots_social-contacts_1-1536.webp" alt="gedeckter Tisch mit einem Melli-Gerät">
+  <img class="rounded-3xl aspect-9/4 object-cover" src="https://melli-assets.netlify.app/images/commercials/melli_commercial-screenshots_social-contacts_1-1536.webp" alt="gedeckter Tisch mit einem Melli-Gerät">
 
 <br>
 

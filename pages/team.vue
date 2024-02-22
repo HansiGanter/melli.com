@@ -7,7 +7,7 @@ const people: Array<Person> = [
   {
     name: 'Stefan Buchkremer',
     role: 'Co-Founder / CEO',
-    imageUrl: 'https://assets.melli.com/images/team/stefan-buchkremer.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/stefan-buchkremer.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/stefan-buchkremer/',
     },
@@ -15,7 +15,7 @@ const people: Array<Person> = [
   {
     name: 'Matthias Weber',
     role: 'Co-Founder / CPO',
-    imageUrl: 'https://assets.melli.com/images/team/matthias-weber.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/dr-matthias-weber-550b34107/',
     },
@@ -23,7 +23,7 @@ const people: Array<Person> = [
   {
     name: 'Hans Ganter',
     role: 'Co-Founder / CTO',
-    imageUrl: 'https://assets.melli.com/images/team/hans-ganter.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/hans-ganter.webp',
     social: {
       linkedin: 'https://www.linkedin.com/in/hans-ganter-269b09117/',
     },
@@ -31,7 +31,7 @@ const people: Array<Person> = [
   {
     name: 'Benjamin Mollier',
     role: 'Co-Founder / Head of Engineering',
-    imageUrl: 'https://assets.melli.com/images/team/benjamin-mollier.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/benjamin-mollier.webp',
     social: {
       github: 'https://github.com/boemjay',
     },
@@ -39,12 +39,12 @@ const people: Array<Person> = [
   {
     name: 'Franziska Lerch',
     role: 'B2C Marketing',
-    imageUrl: 'https://assets.melli.com/images/team/franziska-lerch.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
   },
   // {
   //   name: 'Philip Krech',
   //   role: 'Product Manager',
-  //   imageUrl: 'https://assets.melli.com/images/team/philip-krech.webp',
+  //   imageUrl: 'https://melli-assets.netlify.app/images/team/philip-krech.webp',
   //   social: {
   //     linkedin: 'https://www.linkedin.com/in/philip-krech-447032b0/',
   //   },
@@ -52,7 +52,7 @@ const people: Array<Person> = [
   // {
   //   name: 'Leonie Krumbholz',
   //   role: 'Recruiting',
-  //   imageUrl: 'https://assets.melli.com/images/team/leonie-krumbholz.webp',
+  //   imageUrl: 'https://melli-assets.netlify.app/images/team/leonie-krumbholz.webp',
   //   social: {
   //     linkedin: 'https://www.linkedin.com/in/leonie-krumbholz-92311481/',
   //   },
@@ -60,7 +60,7 @@ const people: Array<Person> = [
   {
     name: 'Felix Andreas',
     role: 'Senior Engineer',
-    imageUrl: 'https://assets.melli.com/images/team/felix-andreas.webp',
+    imageUrl: 'https://melli-assets.netlify.app/images/team/felix-andreas.webp',
     social: {
       github: 'https://github.com/andreasfelix/',
     },

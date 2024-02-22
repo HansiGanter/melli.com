@@ -6,7 +6,7 @@ categories: ["examples"]
 author:
   name: Dr. Matthias Weber
 date: 2022-07-12
-imageUrl: "https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp"
+imageUrl: "https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp"
 articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
 
 ---
@@ -99,7 +99,7 @@ _*obligatorisch_
 <br>
 
  <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
-    <BubbleIcon :bubbleType="3" bubbleColor="#FFFFFF" iconColor="#123abc" iconType="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg"/>
+    <BubbleIcon :bubbleType="3" bubbleColor="#FFFFFF" iconColor="#123abc" iconType="https://melli-assets.netlify.app/bubble-icons/bubble-icon_gift_1-green.svg"/>
     <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
       Mellis Tipp für Weihnachten:
     </h1>

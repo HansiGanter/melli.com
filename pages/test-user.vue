@@ -10,13 +10,9 @@ const { t } = useI18n()
 
   <!-- Why Melli -->
   <Container class="my-12 md:my-24 px-5">
-    <Quote
-      id="test-why-melli"
-      :quote="t('citation.matthias.quote')"
-      :source="t('citation.matthias.source')"
+    <Quote id="test-why-melli" :quote="t('citation.matthias.quote')" :source="t('citation.matthias.source')"
       :source-description="t('citation.matthias.source-description')"
-      portrait="https://assets.melli.com/images/team/matthias-weber-3.webp"
-    />
+      portrait="https://melli-assets.netlify.app/images/team/matthias-weber-3.webp" />
   </Container>
 
   <!-- Melli Mission -->
@@ -60,25 +56,28 @@ const { t } = useI18n()
   </Container>
 </template>
 
-    <style>
-    @keyframes float {
-      0% {
-        transform: translatey(0px);
-      }
-      50% {
-        transform: translatey(-10px);
-      }
-      100% {
-        transform: translatey(0px);
-      }
-    }
-    .down {
-      transform: translatey(0px);
-      animation: float 2s ease-in-out infinite;
-    }
-    </style>
+<style>
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
 
-    <route lang="yaml">
+  50% {
+    transform: translatey(-10px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.down {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+</style>
+
+<route lang="yaml">
 meta:
   layout: testuser
     </route>

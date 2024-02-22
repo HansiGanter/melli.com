@@ -43,21 +43,21 @@ const onEmailFormSubmit = (e: Event) => {
     <div v-if="greaterMd" class="flex gap-4">
       <div class="flex-[60%]" style="max-width: calc(60% - 16px);">
         <img class="rounded-2xl w-full h-full object-cover"
-          src="https://assets.melli.com/images/stock/melli_mockup-print_brochure2-1024.webp"
+          src="https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure2-1024.webp"
           alt="Melli Magazin geöffnet auf Melli Seite">
       </div>
       <div class="rounded-2xl flex-[40%] max-w-[40%] object-cover" style="max-width: calc(40% - 16px);">
         <img class="rounded-2xl w-full h-full object-cover "
-          src="https://assets.melli.com/images/stock/melli_mockup-print_brochure3-1024.webp"
+          src="https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure3-1024.webp"
           alt="Melli Magazin geöffnet auf Founder Seite">
       </div>
     </div>
     <div v-else>
       <img class="rounded-2xl w-full mx-auto my-4"
-        src="https://assets.melli.com/images/stock/melli_mockup-print_brochure2-1024.webp"
+        src="https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure2-1024.webp"
         alt="Melli Magazin geöffnet auf Melli Seite">
       <img class="rounded-2xl mx-auto w-[66%] my-4"
-        src="https://assets.melli.com/images/stock/melli_mockup-print_brochure3-1024.webp"
+        src="https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure3-1024.webp"
         alt="Melli Magazin geöffnet auf Founder Seite">
     </div>
   </Container>

@@ -7,8 +7,8 @@ href: blogs
 author:
   name: Franziska Lerch
 date: 2022-11-29
-imageUrl: https://assets.melli.com/images/images/stock/melli-stock-senior-group-2048.webp
-previewUrl: https://assets.melli.com/images/images/stock/melli-stock-senior-group-768.webp
+imageUrl: https://melli-assets.netlify.app/images/images/stock/melli-stock-senior-group-2048.webp
+previewUrl: https://melli-assets.netlify.app/images/images/stock/melli-stock-senior-group-768.webp
 articleRecommendations: ['/blog/gruenderstory', '/blog/interview-schuldt', '/blog/soziale-kontakte']
 ---
 

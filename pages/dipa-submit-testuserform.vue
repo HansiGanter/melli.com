@@ -20,7 +20,7 @@ onMounted(() => {
   <Container class="mb-12 lg:mb-24 px-6 lg:px-24">
     <div class="grid gap-4 content-center items-stretch justify-items-center">
       <div class="h-96 overflow-hidden">
-        <img src="https://assets.melli.com/illustrations/avatar/Sprechen.svg" class="h-full object-cover">
+        <img src="https://melli-assets.netlify.app/illustrations/avatar/Sprechen.svg" class="h-full object-cover">
       </div>
 
       <div class="grid gap-2 text-center lg:w-1/2">

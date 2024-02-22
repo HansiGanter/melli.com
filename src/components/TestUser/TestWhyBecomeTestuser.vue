@@ -4,17 +4,17 @@ const features = ref([
   {
     title: t('test-why-become-testuser.feature-1.title'),
     text: t('test-why-become-testuser.feature-1.text'),
-    src: 'https://assets.melli.com/pictograms/award.svg',
+    src: 'https://melli-assets.netlify.app/pictograms/award.svg',
   },
   {
     title: t('test-why-become-testuser.feature-2.title'),
     text: t('test-why-become-testuser.feature-2.text'),
-    src: 'https://assets.melli.com/pictograms/heart.svg',
+    src: 'https://melli-assets.netlify.app/pictograms/heart.svg',
   },
   {
     title: t('test-why-become-testuser.feature-3.title'),
     text: t('test-why-become-testuser.feature-3.text'),
-    src: 'https://assets.melli.com/pictograms/next.svg',
+    src: 'https://melli-assets.netlify.app/pictograms/next.svg',
   },
 ])
 </script>
@@ -42,7 +42,7 @@ const features = ref([
       </div>
     </div>
     <div class="relative overflow-hidden lg:max-w-5xl mx-auto rounded-2xl lg:-mt-60">
-      <img src="https://assets.melli.com/images/stock/granny-with-dog-1024.webp" class="w-full">
+      <img src="https://melli-assets.netlify.app/images/stock/granny-with-dog-1024.webp" class="w-full">
     </div>
   </div>
 </template>

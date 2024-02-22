@@ -12,17 +12,17 @@ const routines: HealthyRoutines[] = [
   {
     pilltext: t('healthy-routines-1'),
     modaltext: t('healthy-routine.card1'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_bell-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_bell-thick-yellow.svg',
   },
   {
     pilltext: t('healthy-routines-2'),
     modaltext: t('healthy-routine.card2'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_pill-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_pill-thick-yellow.svg',
   },
   {
     pilltext: t('healthy-routines-3'),
     modaltext: t('healthy-routine.card3'),
-    icon: 'https://assets.melli.com/bubble-icons/bubble-icon_heart-thick-yellow.svg',
+    icon: 'https://melli-assets.netlify.app/bubble-icons/bubble-icon_heart-thick-yellow.svg',
   },
 ]
 
@@ -53,7 +53,7 @@ const playVideo = () => {
       <div class="relative overflow-hidden rounded-2xl h-fit order-1 lg:order-1"
         @click="[playVideo(), fireVideoEvent('routinen')]">
         <video ref="healthyroutinesvideo" class="lg:w-[845px] w-full" height="475"
-          poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_structure-3_lowRes-1024.webp"
+          poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_structure-3_lowRes-1024.webp"
           playsinline>
           <source src="https://videos.melli.com/struktur.webm" type="video/webm">
           <source src="https://videos.melli.com/struktur.mp4" type="video/mp4">

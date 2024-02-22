@@ -7,8 +7,8 @@ href: blogs
 author:
   name: Dr. Matthias Weber
 date: 2022-11-14
-imageUrl: https://assets.melli.com/images/team/gruender/melli_gruender-02-1536.webp
-previewUrl: https://assets.melli.com/images/team/gruender/melli_gruender-02-768.webp
+imageUrl: https://melli-assets.netlify.app/images/team/gruender/melli_gruender-02-1536.webp
+previewUrl: https://melli-assets.netlify.app/images/team/gruender/melli_gruender-02-768.webp
 articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
 ---
 
@@ -48,10 +48,10 @@ Vor dem Hintergrund unserer immer älter werdenden Gesellschaft und dem Mangel a
 
 <StaticGallery
   :images="[
-    'https://assets.melli.com/images/images/team/melli_team_matthias-01-1536.webp', 
-    'https://assets.melli.com/images/images/team/melli_team_benni-01-1536.webp',
-    'https://assets.melli.com/images/images/team/melli_team_stefan-01-1536.webp',
-    'https://assets.melli.com/images/images/team/melli_team_hansi-01-1536.webp',
+    'https://melli-assets.netlify.app/images/images/team/melli_team_matthias-01-1536.webp', 
+    'https://melli-assets.netlify.app/images/images/team/melli_team_benni-01-1536.webp',
+    'https://melli-assets.netlify.app/images/images/team/melli_team_stefan-01-1536.webp',
+    'https://melli-assets.netlify.app/images/images/team/melli_team_hansi-01-1536.webp',
 ]"
 />
 

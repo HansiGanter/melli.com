@@ -38,7 +38,7 @@ const scheduleFeatures: ConfigurationFeature[] = [
   <div class="flex flex-col gap-9 lg:flex-row lg:gap-12">
     <div v-if="!greaterLg" class="max-w-200 mx-auto">
       <img
-        :src="greaterMd ? 'https://assets.melli.com/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-5by3-1536.webp' : 'https://assets.melli.com/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-4by5-1024.webp'"
+        :src="greaterMd ? 'https://melli-assets.netlify.app/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-5by3-1536.webp' : 'https://melli-assets.netlify.app/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-4by5-1024.webp'"
         class="rounded-3xl">
     </div>
     <div class="flex flex-col gap-9 lg:gap-12 max-w-160">
@@ -60,7 +60,7 @@ const scheduleFeatures: ConfigurationFeature[] = [
   </div>
   <div v-if="greaterLg" class="max-w-200 mx-auto mt-24">
     <img
-      src="https://assets.melli.com/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-5by3-1536.webp"
+      src="https://melli-assets.netlify.app/images/mockups/02_interior/melli-assets-device-interior-scheduler-doctors-appointment-5by3-1536.webp"
       class="rounded-3xl">
   </div>
 </template>

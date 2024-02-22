@@ -35,17 +35,17 @@ const benefits = [
 
 const coreBenefits = [
   {
-    image: 'https://assets.melli.com/pictograms/flag.svg',
+    image: 'https://melli-assets.netlify.app/pictograms/flag.svg',
     title: 'Unsere Grundeinstellung: CAN DO!',
     backText: 'Wir glauben daran, dass eine postive Perspektive Berge versetzen kann. Deshalb stellen wir uns jeder neuen Herausforderungen mit Enthusiasmus und Vorfreude. Wir motivieren unsere Teammitglieder dazu Dinge neu zu denken und verrückte Ideen einfach auzuprobieren. Dabei gehen wir bewusst Risiken ein ohne Angst vorm Scheitern. Das macht unser handeln schnell und das lernen noch schneller.',
   },
   {
-    image: 'https://assets.melli.com/pictograms/shake.svg',
+    image: 'https://melli-assets.netlify.app/pictograms/shake.svg',
     title: 'Wir schaffen Miteinander.',
     backText: 'Wir sind davon überzeugt, dass Gemeinschaft vieles besser macht – unser Produkt, das Arbeiten, die Erfolge und auch das Fehler machen. Deshalb legen wir großen Wert auch eine positive Teamkultur und einen freundschaftlichen Umgang untereinander.',
   },
   {
-    image: 'https://assets.melli.com/pictograms/love.svg',
+    image: 'https://melli-assets.netlify.app/pictograms/love.svg',
     title: 'Wir übernehmen Verantwortung',
     backText: 'Wir treten an, um das Leben unserer Nutzer mitzugestalten, es besser und glücklicher zu machen. Hieraus leitet sich für uns eine besondere Verantwortung ab, die jedes einzelne Teammitglied mitträgt. Maximales Engagement, ein gewissenhafter Umgang mit dem uns entgegengebrachten Vertrauen und der Schutz von Daten und Privatsphäre sind deshalb unsere oberste Priorität.',
   },
@@ -97,7 +97,7 @@ const coreBenefits = [
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 content-start">
             <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start gap-4 w-fit">
               <div :class="benefit.icon" class="text-tertiary-500 w-12 h-12" />
-              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title
+              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title;
               }}</strong> {{ benefit.text }}</span>
             </div>
           </div>
@@ -105,7 +105,8 @@ const coreBenefits = [
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-6 gap-6 lg:gap-11 items-center">
         <div class="w-44 h-44 rounded-full mx-auto overflow-hidden">
-          <img src="https://assets.melli.com/images/team/matthias-weber-circle-1024.webp" class="object-cover h-44 w-44">
+          <img src="https://melli-assets.netlify.app/images/team/matthias-weber-circle-1024.webp"
+            class="object-cover h-44 w-44">
         </div>
         <div class="grid gap-5 lg:col-span-5 bg-contain bg-no-repeat bg-center py-5 lg:py-20"
           style="background-image: url('/assets/bubble_bg.png')">

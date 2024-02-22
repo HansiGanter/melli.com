@@ -15,8 +15,8 @@ html.dark {
 }
 
 .curly-1 {
-  -webkit-mask-image: url(https://assets.melli.com/shapes/curly-1.svg);
-  mask-image: url(https://assets.melli.com/shapes/curly-1.svg);
+  -webkit-mask-image: url(https://melli-assets.netlify.app/shapes/curly-1.svg);
+  mask-image: url(https://melli-assets.netlify.app/shapes/curly-1.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;

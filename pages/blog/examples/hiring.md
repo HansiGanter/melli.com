@@ -7,7 +7,7 @@ description: |
 categories: ["examples"]
 author:
     name: Hans Ganter
-    imageUrl: https://assets.melli.com/images/team/hans-ganter.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/hans-ganter.webp
 date: 2022-01-05T16:00:00.000+00:00
 readingTime: 15min
 imageUrl: https://images.pexels.com/photos/935977/pexels-photo-935977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260

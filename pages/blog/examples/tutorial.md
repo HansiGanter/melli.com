@@ -7,7 +7,7 @@ href: blogs
 author:
   name: Name des Autors
 date: 2022-08-08T16:00:00.000+00:00
-imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1.webp
+imageUrl: https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_1.webp
 articleRecommendations: ['/blog/struktur', '/blog/unterhaltung', '/blog/interview-schuldt']
 ---
 
@@ -31,7 +31,7 @@ categories:
 author:
   name: Name des Autors
 date: 2022-08-08T16:00:00.000+00:00
-imageUrl: https://assets.melli.com/images/stock/red-hair-greeting-1024.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp
 ---
 ```
 
@@ -52,9 +52,9 @@ Gebe die Image URLs (2-4!) an, um die Bilder hinzuzufügen.
 
 <TutorialWrapper>
     <StaticGallery :images="[
-        'https://assets.melli.com/images/team/hans-ganter.webp', 
-        'https://assets.melli.com/images/team/matthias-weber.webp',
-        'https://assets.melli.com/images/team/franziska-lerch.webp',
+        'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+        'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
+        'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
     ]"/>
 </TutorialWrapper>
 
@@ -63,9 +63,9 @@ Gebe die Image URLs (2-4!) an, um die Bilder hinzuzufügen.
 ```html
 <StaticGallery
   :images="[
-    'https://assets.melli.com/images/team/hans-ganter.webp', 
-    'https://assets.melli.com/images/team/matthias-weber.webp',
-    'https://assets.melli.com/images/team/franziska-lerch.webp',
+    'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+    'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
+    'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
 ]"
 />
 ```
@@ -84,14 +84,14 @@ Die letzte URL könnte von einem Bild sein, das in einer größeren/breiten Aufl
 
 <TutorialWrapper>
     <DynamicGallery :images="[
-        'https://assets.melli.com/images/team/hans-ganter.webp', 
-        'https://assets.melli.com/images/team/matthias-weber.webp',
-        'https://assets.melli.com/images/team/franziska-lerch.webp',
-        'https://assets.melli.com/images/team/franziska-lerch.webp',
-        'https://assets.melli.com/images/team/franziska-lerch.webp',
-        'https://assets.melli.com/images/team/franziska-lerch.webp',
-        'https://assets.melli.com/images/team/hans-ganter.webp', 
-        'https://assets.melli.com/images/team/matthias-weber.webp',
+        'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+        'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
+        'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+        'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+        'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+        'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+        'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+        'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
     ]"/>
 </TutorialWrapper>
 
@@ -100,14 +100,14 @@ Die letzte URL könnte von einem Bild sein, das in einer größeren/breiten Aufl
 ```html
 <DynamicGallery
   :images="[
-    'https://assets.melli.com/images/team/hans-ganter.webp', 
-    'https://assets.melli.com/images/team/matthias-weber.webp',
-    'https://assets.melli.com/images/team/franziska-lerch.webp',
-    'https://assets.melli.com/images/team/franziska-lerch.webp',
-    'https://assets.melli.com/images/team/franziska-lerch.webp',
-    'https://assets.melli.com/images/team/franziska-lerch.webp',
-    'https://assets.melli.com/images/team/hans-ganter.webp', 
-    'https://assets.melli.com/images/team/matthias-weber.webp',
+    'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+    'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
+    'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+    'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+    'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+    'https://melli-assets.netlify.app/images/team/franziska-lerch.webp',
+    'https://melli-assets.netlify.app/images/team/hans-ganter.webp', 
+    'https://melli-assets.netlify.app/images/team/matthias-weber.webp',
 ]"
 />
 ```
@@ -266,12 +266,12 @@ Hier sind die Icons auch anpassbar, aber wenn nicht angegeben, wird das Standard
 ### Beispiel
 
 <TutorialWrapper>
-  <img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
+  <img src="https://melli-assets.netlify.app/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
 </TutorialWrapper>
 
 ### Code
 ```html
-  <img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
+  <img src="https://melli-assets.netlify.app/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
 ```
 
 ## Image2 (with rounded corners)
@@ -284,13 +284,13 @@ Nutze `<img>` um ...
 ### Beispiel
 
 <TutorialWrapper>
-  <img class="rounded-3xl aspect-9/4 object-cover" src="https://assets.melli.com/images/stock/man-livingroom-1024.webp" alt="Old man in lingroom thinking">
+  <img class="rounded-3xl aspect-9/4 object-cover" src="https://melli-assets.netlify.app/images/stock/man-livingroom-1024.webp" alt="Old man in lingroom thinking">
 </TutorialWrapper>
 
 ### Code
 
 ```html
-  <img class="rounded-3xl aspect-9/4 object-cover" src="https://assets.melli.com/images/stock/man-livingroom-1024.webp" alt="Old man in lingroom thinking">
+  <img class="rounded-3xl aspect-9/4 object-cover" src="https://melli-assets.netlify.app/images/stock/man-livingroom-1024.webp" alt="Old man in lingroom thinking">
 ```
 
 ## IconColumn
@@ -329,7 +329,7 @@ Nutze `IconColumn` um ...
 Nutze `PromoComponentIcon` um ...
 
 <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
-    <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
+    <img src="https://melli-assets.netlify.app/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
     <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
       Mellis Tipp für Weihnachten:
     </h1>
@@ -343,7 +343,7 @@ Nutze `PromoComponentIcon` um ...
 
 ```html    
   <div class="bg-primary-900 rounded-3xl p-8 grid gap-4 lg:w-200 text-center mx-auto">
-    <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
+    <img src="https://melli-assets.netlify.app/bubble-icons/bubble-icon_gift_1-green.svg" class="w-24 h-24 mx-auto">
     <h1 class="text-white font-semibold text-4xl md:text-5xl leading-tight md:text-center my-0">
       Mellis Tipp für Weihnachten:
     </h1>

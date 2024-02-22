@@ -10,17 +10,17 @@ interface Feature {
 
 const features: Ref<Feature[]> = ref([
   {
-    image: 'https://assets.melli.com/images/mockups/device-group-call.webp',
+    image: 'https://melli-assets.netlify.app/images/mockups/device-group-call.webp',
     title: 'Für ein kommunikativeres & geselligeres Leben',
     description: t('why-melli.feature-1.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-sleeptime.webp',
+    image: 'https://melli-assets.netlify.app/images/mockups/device-sleeptime.webp',
     title: 'Für einen gesünderen & aktiveren Alltag',
     description: t('why-melli.feature-2.description'),
   },
   {
-    image: 'https://assets.melli.com/images/mockups/device-satisfaction.webp',
+    image: 'https://melli-assets.netlify.app/images/mockups/device-satisfaction.webp',
     title: 'Für mehr Lebenszufriedenheit & glückliche Momente',
     description: t('why-melli.feature-3.description'),
   },

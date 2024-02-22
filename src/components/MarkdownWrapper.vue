@@ -15,7 +15,7 @@ if (props.frontmatter.title) {
         content: computed(
           () => props.frontmatter.cover
             ? props.frontmatter.cover
-            : 'https://assets.melli.com/https://assets.melli.com/logo.svg'),
+            : 'https://melli-assets.netlify.app/https://melli-assets.netlify.app/logo.svg'),
       },
       {
         property: 'og:description',

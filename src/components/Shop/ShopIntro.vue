@@ -28,11 +28,11 @@ function scrollToChat() {
       </div>
       <BubbleImage class="mx-auto my-auto" bubble1-color="fill-primary-50" bubble2-color="fill-primary-100"
         svgclass="scale-120">
-        <img class="relative" src="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp"
-          srcset="https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left.webp 512w,
-                  https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left-768.webp 768w,
-                  https://assets.melli.com/images/images/mockups/01_free/mockup-device-intro-left-1024.webp 1024w"
-          alt="Melli-Gerät Mockup">
+        <img class="relative"
+          src="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left.webp"
+          srcset="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left.webp 512w,
+                  https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left-768.webp 768w,
+                  https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-intro-left-1024.webp 1024w" alt="Melli-Gerät Mockup">
       </BubbleImage>
     </div>
   </div>

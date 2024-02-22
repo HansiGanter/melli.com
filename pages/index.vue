@@ -25,13 +25,13 @@ const onEmailFormSubmit = (e: Event) => {
 };
 
 const sliderImages = [
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
-  "https://assets.melli.com/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
 ];
 </script>
 
@@ -77,7 +77,7 @@ const sliderImages = [
     <Container class="">
       <div class="rounded-3xl overflow-hidden bg-primary-700 flex flex-col md:flex-row my-12 sm:my-24">
         <img class="md:max-w-100 object-cover"
-          src="https://assets.melli.com/images/stock/melli_mockup-print_brochure2-1024.webp">
+          src="https://melli-assets.netlify.app/images/stock/melli_mockup-print_brochure2-1024.webp">
         <div class="grid gap-4 px-6 sm:px-12 py-12 sm:py-24">
           <h2 class="font-semibold text-3xl lg:text-4xl text-white">
             {{ t('secure-melli.heading') }}
@@ -121,15 +121,15 @@ const sliderImages = [
         <div class="flex flex-wrap gap-8">
           <TestimonialV2 author="Peter (62 Jahre), Angehöriger"
             text="Das schöne an Melli ist, dass sie selber Vorschläge über den Tag ins Leben von Oma gibt. Das heitert sie natürlich auf und bringt sie immer wieder aus dem Alltag raus."
-            image-src="https://assets.melli.com/images/testimonials/relative-peter-2.webp"
+            image-src="https://melli-assets.netlify.app/images/testimonials/relative-peter-2.webp"
             interview-video-src="https://videos.melli.com/testimonial-wohlbefinden.webm" />
           <TestimonialV2 author="Gertud (91 Jahre), Nutzerin"
             text="Wir haben das letzte mal in der Melli-Gruppenstunde ein Stadt-Land-Fluss Rätsel gespielt. Ich war zu ersten Mal dabei und habe noch nicht so viel gewusst. Aber wir sind trotzdem gut zurecht gekommen."
-            image-src="https://assets.melli.com/images/testimonials/gertrud-portrait-cut.webp"
+            image-src="https://melli-assets.netlify.app/images/testimonials/gertrud-portrait-cut.webp"
             interview-video-src="https://videos.melli.com/testimonial-gertrud-group.webm" />
           <TestimonialV2 author="Stephanie S., Pflegedienstleiterin"
             text="Vielen Kindern und Enkeln der Nutzer ist aufgefallen, dass Oma & Opa deutlich mehr von ihrem Alltag erzählt haben und auch viel positiver gesprochen haben. Das hat den Unterhaltungen wohl eine ganz neue Qualität gegeben."
-            image-src="https://assets.melli.com/images/experts/portrait-schuldt.webp"
+            image-src="https://melli-assets.netlify.app/images/experts/portrait-schuldt.webp"
             interview-video-src="https://videos.melli.com/expert-interview.webm" />
         </div>
         <span class="text-right text-xs">*Aus Datenschutzgründen haben wir den Namen unserer Testnutzer geändert.</span>

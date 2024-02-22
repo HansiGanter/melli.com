@@ -1,10 +1,10 @@
 
 <script setup lang="ts">
 const partnerList = [
-    "https://assets.melli.com/logos/ARD_Morgenmagazin_Logo_Neu-3.png",
-    "https://assets.melli.com/logos/Tagesschau_Logo_2015.svg",
-    "https://assets.melli.com/logos/BR24_logo.svg",
-    "https://assets.melli.com/logos/Logo_klassikradio.svg",
+    "https://melli-assets.netlify.app/logos/ARD_Morgenmagazin_Logo_Neu-3.png",
+    "https://melli-assets.netlify.app/logos/Tagesschau_Logo_2015.svg",
+    "https://melli-assets.netlify.app/logos/BR24_logo.svg",
+    "https://melli-assets.netlify.app/logos/Logo_klassikradio.svg",
 ];
 </script>
 <template>

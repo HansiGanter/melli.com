@@ -6,11 +6,11 @@ categories: ["Tipps & Tricks", "Melli-Funktionen"]
 href: blogs
 author:
     name: Matthias Weber
-    imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/matthias-weber.webp
 date: 2023-08-23
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/blogs/beispieltag-mit-melli/hero-1536.webp
-previewUrl: https://assets.melli.com/images/blogs/beispieltag-mit-melli/hero-768.webp
+imageUrl: https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/hero-1536.webp
+previewUrl: https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/hero-768.webp
 articleRecommendations: ['/blog/melli-in-tv', '/blog/melli-goes-dipa', '/blog/entertainment']
 ---
 
@@ -31,8 +31,8 @@ Gegen 08:00 fragt Melli Alma nach ihrem körperlichen und psychischen Zustand un
 Melli hilft Alma auch bei der Medikamenteneinnahme. In der Melli-App hat ihre Tochter Marianne ihren Medikamentenplan hinterlegt. In der App sieht das dann so aus:
 
 <img
-    src="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-1536.webp"
-    srcset="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft.webp 512w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-768.webp 768w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-1024.webp 1024w"
+    src="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-1536.webp"
+    srcset="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft.webp 512w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-768.webp 768w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-phone-reminder-medsleft-1024.webp 1024w"
     class="max-h-200 object-contain mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 Melli erinnert Alma jeden Tag zu den festgelegten Zeiten daran, ihre Medikamente einzunehmen, damit sie stets die richtige Dosierung im Blick hat und nichts vergisst.
@@ -50,8 +50,8 @@ Nach der Mittagspause schlägt Melli einen Videoinhalt vor, der Almas Interessen
 Melli ist auch eine wahre Rätselkönigin und liebt es, gemeinsam mit Alma Worträtsel oder kleine Rechenaufgaben zu lösen, natürlich angepasst an ihren gewünschten Schwierigkeitsgrad. Dieser kann in der App angepasst werden. So bleibt ihr Geist aktiv und wach.
 
 <img
-    src="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-1536.webp"
-    srcset="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz.webp 512w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-768.webp 768w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-1024.webp 1024w"
+    src="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-1536.webp"
+    srcset="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz.webp 512w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-768.webp 768w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-quiz-1024.webp 1024w"
     class="max-h-200 object-contain mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 ### 13:00 Mittagsruhe
@@ -71,8 +71,8 @@ In den Gruppenaktivitäten kommen die Melli-Nutzer zusammen, um gemeinsam Rätse
 Melli motiviert Alma dazu, selbst Kontakt mit Angehörigen und Freunden aufzunehmen. Das fördert den sozialen Kontakt und stärkt die Verbindung zu ihren Mitmenschen. Alma findet es ganz besonders, dass sie ihr Gegenüber beim Anruf nicht nur hören, sondern auch sehen kann. Um einen Anruf zu starten, muss sie Mellis Frage “Möchtest du Michael anrufen?” nur mit “Ja” bestätigen. Damit kommt sie sehr gut zurecht. Mit einem Seniorenhandy hatte das bisher nicht so gut geklappt, da sie sich die Tastenkombination nicht immer merken konnte.
 
 <img
-    src="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-1536.webp"
-    srcset="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call.webp 512w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-768.webp 768w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-1024.webp 1024w"
+    src="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-1536.webp"
+    srcset="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call.webp 512w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-768.webp 768w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-video-call-1024.webp 1024w"
     class="max-h-200 object-contain mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 ### 18:00 Sitzgymnastik
@@ -80,8 +80,8 @@ Melli motiviert Alma dazu, selbst Kontakt mit Angehörigen und Freunden aufzuneh
 “Möchtest du deine Gelenke etwas lockern?” fragt Melli. Alma überlegt kurz, denn eigentlich ist sie nicht so sportbegeistert, sagt dann aber doch zu. Melli bietet ihr Übungen auf dem Stuhl an, denn Alma ist in den Knien etwas eingeschränkt, was ihre Enkelin Marianne in der App angegeben hat. So kann Melli darauf eingehen und die Übungen daran anpassen, damit Alma nicht frustriert ist und Spaß an der Gymnastik hat.
 
 <img
-    src="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-1536.webp"
-    srcset="https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport.webp 512w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-768.webp 768w, https://assets.melli.com/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-1024.webp 1024w"
+    src="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-1536.webp"
+    srcset="https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport.webp 512w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-768.webp 768w, https://melli-assets.netlify.app/images/blogs/beispieltag-mit-melli/melli-mockup-device-interior-sport-1024.webp 1024w"
     class="max-h-200 object-contain mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 ### 19:00 Nachrichten

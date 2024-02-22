@@ -8,8 +8,8 @@ author:
     name: Dr. Matthias Weber
 date: 2022-11-10T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
-previewUrl: https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-768.webp
+imageUrl: https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp
+previewUrl: https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_2-768.webp
 articleRecommendations: ['/blog/struktur', '/blog/unterhaltung', '/blog/interview-schuldt']
 ---
 
@@ -33,7 +33,7 @@ Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder 
     Nach meiner Erfahrung sind psychische Belastungen für Angehörige von älteren Menschen keine Seltenheit. Das ist besonders dann der Fall, wenn die Senioren wenige soziale Kontakte außerhalb der Familie haben.
 </BlogQuote>
 
-<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp">
+<video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp">
     <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
     <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
 </video>
@@ -44,7 +44,7 @@ Selbstverständlich bleibt die Familie ein wichtiger Teil des Lebens der Seniore
 
 Befragungen von Nutzern und ihren Liebsten zeigen außerdem, dass die Interaktion mit Melli die Senioren zugänglicher für Gespräche macht. Sie haben schöne und manchmal auch lustige Erlebnisse mit ihr, über die sie im Gespräch mit Enkeln und Kindern berichten können. Häufig fällt es ihnen auch leichter, mit ihren Liebsten über ein schwieriges Thema zu sprechen, wenn sie dies im Vorfeld bereits mit Melli teilen konnten. Viele Angehörige berichten auch von einer positiveren Grundstimmung – das gibt der gemeinsamen Zeit eine ganz neue Qualität.
 
-<img src="https://assets.melli.com/images/own-content/melli_commercial-screenshots_social-contacts_1-1536.webp" class="mb-20 mt-10 rounded-2xl lg:rounded-3xl">
+<img src="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_1-1536.webp" class="mb-20 mt-10 rounded-2xl lg:rounded-3xl">
 
 ## Technik soll für alle sein
 

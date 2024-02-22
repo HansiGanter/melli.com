@@ -27,7 +27,7 @@ const playVideo = () => {
       <div class="grid md:grid-cols-[55%_1fr] gap-15 relative">
         <div class="relative" @click="[playVideo(), fireVideoEvent('routinen')]">
           <video ref="healthyroutinesvideo" class="w-full rounded-2xl" height="475"
-            poster="https://assets.melli.com/images/own-content/melli_commercial-screenshots_structure-3_lowRes-1024.webp"
+            poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_structure-3_lowRes-1024.webp"
             playsinline>
             <source src="https://videos.melli.com/struktur.webm" type="video/webm">
             <source src="https://videos.melli.com/struktur.mp4" type="video/mp4">

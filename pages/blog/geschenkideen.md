@@ -8,8 +8,8 @@ author:
     name: Tanja Lerch
 date: 2023-11-29T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/mockup-interior_christmas-2048.webp
-previewUrl: https://assets.melli.com/images/stock/mockup-interior_christmas.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/mockup-interior_christmas-2048.webp
+previewUrl: https://melli-assets.netlify.app/images/stock/mockup-interior_christmas.webp
 articleRecommendations: ['/blog/beispieltag', '/blog/melli-in-tv', '/blog/gruenderstory']
 ---
 

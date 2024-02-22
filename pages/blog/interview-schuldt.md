@@ -7,8 +7,8 @@ href: blogs
 author:
   name: Dr. Matthias Weber
 date: 2022-11-09
-imageUrl: https://assets.melli.com/images/stock/stephanie-portrait-1536.webp
-previewUrl: https://assets.melli.com/images/stock/stephanie-portrait-768.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/stephanie-portrait-1536.webp
+previewUrl: https://melli-assets.netlify.app/images/stock/stephanie-portrait-768.webp
 articleRecommendations: ['/blog/gruenderstory', '/blog/wege-aus-der-einsamkeit', '/blog/struktur']
 ---
 
@@ -18,7 +18,7 @@ articleRecommendations: ['/blog/gruenderstory', '/blog/wege-aus-der-einsamkeit',
 
 <br>
 
-<img src="https://assets.melli.com/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
+<img src="https://melli-assets.netlify.app/images/own-content/melli_image_senior-group-with-mockups-1536.webp" style="border-radius:32px">
 
 <br>
 

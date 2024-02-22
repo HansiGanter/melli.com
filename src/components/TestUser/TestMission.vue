@@ -9,21 +9,21 @@ const { isFullscreen } = useFullscreen(missionVideo)
 
 const missions = [
   {
-    image: 'https://assets.melli.com/images/stock/red-hair-greeting.webp',
-    device: 'https://assets.melli.com/images/mockups/device-group-call.webp',
+    image: 'https://melli-assets.netlify.app/images/stock/red-hair-greeting.webp',
+    device: 'https://melli-assets.netlify.app/images/mockups/device-group-call.webp',
     title: t('test-mission.feature-1.title'),
     description: t('test-mission.feature-1.description'),
     video: 'https://videos.melli.com/communication.webm',
   },
   {
-    image: 'https://assets.melli.com/images/mockups/image-meeting-bubble.webp',
+    image: 'https://melli-assets.netlify.app/images/mockups/image-meeting-bubble.webp',
     title: t('test-mission.feature-2.title'),
     description: t('test-mission.feature-2.description'),
     video: 'https://videos.melli.com/struktur.webm',
   },
   {
-    image: 'https://assets.melli.com/images/stock/man-portrait.webp',
-    device: 'https://assets.melli.com/images/mockups/sentiment-analysis-left.webp',
+    image: 'https://melli-assets.netlify.app/images/stock/man-portrait.webp',
+    device: 'https://melli-assets.netlify.app/images/mockups/sentiment-analysis-left.webp',
     title: t('test-mission.feature-3.title'),
     description: t('test-mission.feature-3.description'),
   },
@@ -67,7 +67,7 @@ const playVideo = () => {
       </div>
       <div class="relative overflow-hidden w-fit mx-auto rounded-2xl" @click="[playVideo(), fireVideoEvent('mission')]">
         <video ref="mellivideo" width="875" height="375"
-          poster="https://assets.melli.com/images/stock/daughter-mother-in-call-1024.webp" playsinline>
+          poster="https://melli-assets.netlify.app/images/stock/daughter-mother-in-call-1024.webp" playsinline>
           <source src="https://videos.melli.com/fuersorge.webm" type="video/webm">
           <source src="https://videos.melli.com/fuersorge.mp4" type="video/mp4">
         </video>

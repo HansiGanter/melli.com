@@ -16,7 +16,7 @@ function openForm() {
   <header class="relative bg-black h-screen">
     <!-- The video -->
     <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
-      poster="https://assets.melli.com/images/stock/red-hair-greeting-1024.webp">
+      poster="https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp">
       <source src="https://videos.melli.com/header-app.webm" type="video/webm">
       <source src="https://videos.melli.com/header-app.mp4" type="video/mp4">
     </video>
@@ -40,7 +40,7 @@ function openForm() {
       <RouterLink to="#dipa-quote"
         class="absolute bottom-6 font-normal text-lg text-white flex flex-col gap-2 w-full mx-auto items-center">
         mehr erfahren
-        <img src="https://assets.melli.com/icons/arrow-down-circle-white.svg" class="mx-auto w-12 h-12">
+        <img src="https://melli-assets.netlify.app/icons/arrow-down-circle-white.svg" class="mx-auto w-12 h-12">
       </RouterLink>
     </div>
   </header>

@@ -7,7 +7,7 @@
     </video>
     <div class="shop-video-filter absolute top-0 w-full h-full pt-1/5 px-6 sm:px-16">
       <div class="max-w-100 md:max-w-120">
-        <img src="https://assets.melli.com/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20">
+        <img src="https://melli-assets.netlify.app/bubble-icons/bubble-icon_gift_1-green.svg" class="w-20 h-20">
         <h1 class=" text-3xl sm:text-5xl font-semibold pt-4 pb-12">
           <span class="text-white">
             Melli Neujahrs-Aktion:

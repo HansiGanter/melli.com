@@ -45,11 +45,11 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
       </h1>
       <picture>
         <source media="(max-width: 639px)"
-          srcset="https://assets.melli.com/images/images/stock/image-stock-85337306-2by3.webp">
+          srcset="https://melli-assets.netlify.app/images/images/stock/image-stock-85337306-2by3.webp">
         <source media="(min-width: 640px)"
-          srcset="https://assets.melli.com/images/images/stock/image-stock-85337306-5by3-1536.webp">
+          srcset="https://melli-assets.netlify.app/images/images/stock/image-stock-85337306-5by3-1536.webp">
         <img class="rounded-3xl w-full max-w-100 sm:max-w-none mx-auto"
-          src="https://assets.melli.com/images/images/stock/image-stock-85337306-5by3-1536.webp">
+          src="https://melli-assets.netlify.app/images/images/stock/image-stock-85337306-5by3-1536.webp">
       </picture>
     </div>
     <div class="flex flex-col lg:flex-row gap-6 sm:gap-12">
@@ -75,7 +75,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
       </div>
       <div class="md:w-55% mx-auto">
         <img class="rounded-3xl object-contain"
-          src="https://assets.melli.com/images/images/mockups/01_free/mockup-device-phone-video-call-relatives-front-1024.webp">
+          src="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-phone-video-call-relatives-front-1024.webp">
       </div>
     </div>
     <div class="flex flex-col lg:flex-row gap-6 sm:gap-12">
@@ -100,7 +100,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
       </div>
       <div class="md:w-55% mx-auto order-2 lg:order-1">
         <img class="rounded-3xl object-contain"
-          src="https://assets.melli.com/images/images/commercials/melli-assets-image-commercial-group-1-5by3-1024.webp">
+          src="https://melli-assets.netlify.app/images/images/commercials/melli-assets-image-commercial-group-1-5by3-1024.webp">
       </div>
     </div>
     <div class="flex flex-col lg:flex-row gap-6 sm:gap-12">
@@ -125,7 +125,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
       </div>
       <div class="md:w-55% mx-auto">
         <img class="rounded-3xl object-contain"
-          src="https://assets.melli.com/images/images/mockups/01_free/mockup-device-phone-sentiment-left-1024.webp">
+          src="https://melli-assets.netlify.app/images/images/mockups/01_free/mockup-device-phone-sentiment-left-1024.webp">
       </div>
     </div>
     <div class="grid lg:grid-cols-2 gap-6 sm:gap-12">

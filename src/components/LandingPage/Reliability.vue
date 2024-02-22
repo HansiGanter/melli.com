@@ -81,12 +81,12 @@ const startVideo = (event: Event) => {
       </div>
     </div>
     <img class="w-full max-w-100 object-contain mx-auto"
-      src="https://assets.melli.com/images/mockups/03_smartphone/melli_mockups-smartphone_communication_two-phones-1536.webp">
+      src="https://melli-assets.netlify.app/images/mockups/03_smartphone/melli_mockups-smartphone_communication_two-phones-1536.webp">
   </div>
   <div class="mt-12 md:-mt-20 md:w-7/10 mx-auto rounded-3xl overflow-hidden relative"
     :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
     <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false"
-      poster="https://assets.melli.com/images/backgrounds/website-video-thumbnail-1-1024.webp">
+      poster="https://melli-assets.netlify.app/images/backgrounds/website-video-thumbnail-1-1024.webp">
       <source src="https://videos.melli.com/communication.webm" type="video/webm">
       <source src="https://videos.melli.com/communication.mp4" type="video/mp4">
     </video>

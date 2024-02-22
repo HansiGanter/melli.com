@@ -3,13 +3,13 @@ import { breakpointsTailwind } from '@vueuse/core';
 import { fireBuyEvent } from '~/google-tag-manager';
 
 const sliderImages = [
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
-  "https://assets.melli.com/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
-  "https://assets.melli.com/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand_christmas-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free-front-with-stand-intro-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_video-call_and_mobile_callscreen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_movement-exercise-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_med-reminder_and_mobile_medscreen-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/04_levnovo_tabm10_3rdGen/mockup-device-free_front_with-stand_scheduler-1536.webp",
+  "https://melli-assets.netlify.app/images/mockups/03_smartphone/mockup-mobile_interessts_and_chat_screen-1536.webp",
 ];
 const benefits = [
   "30 Tage kostenlos testen",

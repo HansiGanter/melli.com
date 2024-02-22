@@ -5,10 +5,10 @@ description: |
 categories: ["examples"]
 author:
     name: Matthias Weber
-    imageUrl: https://assets.melli.com/images/team/matthias-weber.webp
+    imageUrl: https://melli-assets.netlify.app/images/team/matthias-weber.webp
 date: 2022-01-12T16:00:00.000+00:00
 readingTime: 7min
-imageUrl: https://assets.melli.com/images/stock/red-hair-greeting.webp
+imageUrl: https://melli-assets.netlify.app/images/stock/red-hair-greeting.webp
 articleRecommendations: ['/blog/wege-aus-der-einsamkeit', '/blog/struktur', '/blog/soziale-kontakte']
 
 ---
@@ -28,7 +28,7 @@ Da in vielen Ländern gleichzeitig die Geburtenrate sinkt, wandelt sich die Gese
 * **Neue Strategien und Technologien** für seniorengerechtes Wohnen werden in Zukunft deshalb eine tragende Rolle übernehmen. Besonders wichtig dabei: Generationskompatibilität und ganzheitliche Wohnkonzepte die niemanden ausschließen (zum Beispiel kollaborative Wohnformen). Außerdem sollte Praktikabilität nicht im Kontrast zu Ästhetik stehen.
 
 
-![](https://assets.melli.com/stock/video-chat-1.webp)
+![](https://melli-assets.netlify.app/stock/video-chat-1.webp)
 
 ## Digitale Technologien als Gamechanger
 
