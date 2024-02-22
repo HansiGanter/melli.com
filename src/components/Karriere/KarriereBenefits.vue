@@ -31,7 +31,7 @@ const benefits = [
     title: 'Niedrige Hierarchien & echter Teamspirit,',
     text: 'nimm direkt Teil an Entscheidungen - deine Meinung zählt bei uns. Als Team motivieren und stärken wir uns gegenseitig.',
   },
-]
+];
 
 const coreBenefits = [
   {
@@ -42,14 +42,14 @@ const coreBenefits = [
   {
     image: 'https://melli-assets.netlify.app/pictograms/shake.svg',
     title: 'Wir schaffen Miteinander.',
-    backText: 'Wir sind davon überzeugt, dass Gemeinschaft vieles besser macht – unser Produkt, das Arbeiten, die Erfolge und auch das Fehler machen. Deshalb legen wir großen Wert auch eine positive Teamkultur und einen freundschaftlichen Umgang untereinander.',
+    backText: 'Wir sind davon überzeugt, dass Gemeinschaft vieles besser macht - unser Produkt, das Arbeiten, die Erfolge und auch das Fehler machen. Deshalb legen wir großen Wert auch eine positive Teamkultur und einen freundschaftlichen Umgang untereinander.',
   },
   {
     image: 'https://melli-assets.netlify.app/pictograms/love.svg',
     title: 'Wir übernehmen Verantwortung',
     backText: 'Wir treten an, um das Leben unserer Nutzer mitzugestalten, es besser und glücklicher zu machen. Hieraus leitet sich für uns eine besondere Verantwortung ab, die jedes einzelne Teammitglied mitträgt. Maximales Engagement, ein gewissenhafter Umgang mit dem uns entgegengebrachten Vertrauen und der Schutz von Daten und Privatsphäre sind deshalb unsere oberste Priorität.',
   },
-]
+];
 </script>
 
 <template>
@@ -97,8 +97,8 @@ const coreBenefits = [
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 content-start">
             <div v-for="(benefit, bID) in benefits" :key="bID" class="flex flex-col lg:flex-row items-start gap-4 w-fit">
               <div :class="benefit.icon" class="text-tertiary-500 w-12 h-12" />
-              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{ benefit.title;
-              }}</strong> {{ benefit.text }}</span>
+              <span class="text-black text-xl font-normal grow flex-1"><strong class="font-semibold">{{
+                benefit.title }}</strong> {{ benefit.text }}</span>
             </div>
           </div>
         </div>
