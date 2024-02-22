@@ -53,8 +53,8 @@ Melli hat einiges auf dem Kästchen und bietet ihre Unterhaltungsangebote immer 
 </CheckList>
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_entertainment-1-1536.webp">
-    <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
-    <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
+    <source src="https://melli-assets.netlify.app/videos/entertainment.webm" type="video/webm">
+    <source src="https://melli-assets.netlify.app/videos/entertainment.mp4" type="video/mp4">
 </video>
 
 ## Soziale Beziehungen halten jung und glücklich

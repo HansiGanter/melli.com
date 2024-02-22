@@ -75,8 +75,8 @@ const startVideo = (event: Event) => {
             <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false"
               class="object-cover rounded-3xl"
               poster="https://melli-assets.netlify.app/images/backgrounds/website-video-thumbnail-2-1024.webp">
-                <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
-                <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+                <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.webm" type="video/webm">
+                <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.mp4" type="video/mp4">
             </video>
             <div v-if="!startedVideo"
               class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

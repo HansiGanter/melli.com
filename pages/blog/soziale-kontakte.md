@@ -34,8 +34,8 @@ Familienangehörige sind häufig die einzigen Kontaktpersonen ihrer Eltern oder 
 </BlogQuote>
 
 <video id="heroVideo" ref="heroVideo" class="lg:object-cover w-full h-full mb-20 mt-10 rounded-2xl lg:rounded-3xl" controls poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_social-contacts_2-2048.webp">
-    <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
-    <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+    <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.webm" type="video/webm">
+    <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.mp4" type="video/mp4">
 </video>
 
 ### Mit den Liebsten in Verbindung bleiben

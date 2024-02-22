@@ -29,8 +29,8 @@ const playVideo = () => {
           <video ref="healthyroutinesvideo" class="w-full rounded-2xl" height="475"
             poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_structure-3_lowRes-1024.webp"
             playsinline>
-            <source src="https://videos.melli.com/struktur.webm" type="video/webm">
-            <source src="https://videos.melli.com/struktur.mp4" type="video/mp4">
+            <source src="https://melli-assets.netlify.app/videos/struktur.webm" type="video/webm">
+            <source src="https://melli-assets.netlify.app/videos/struktur.mp4" type="video/mp4">
           </video>
           <div v-if="!isPlaying"
             class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

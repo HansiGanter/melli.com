@@ -13,13 +13,13 @@ const missions = [
     device: 'https://melli-assets.netlify.app/images/mockups/device-group-call.webp',
     title: t('test-mission.feature-1.title'),
     description: t('test-mission.feature-1.description'),
-    video: 'https://videos.melli.com/communication.webm',
+    video: 'https://melli-assets.netlify.app/videos/communication.webm',
   },
   {
     image: 'https://melli-assets.netlify.app/images/mockups/image-meeting-bubble.webp',
     title: t('test-mission.feature-2.title'),
     description: t('test-mission.feature-2.description'),
-    video: 'https://videos.melli.com/struktur.webm',
+    video: 'https://melli-assets.netlify.app/videos/struktur.webm',
   },
   {
     image: 'https://melli-assets.netlify.app/images/stock/man-portrait.webp',
@@ -68,8 +68,8 @@ const playVideo = () => {
       <div class="relative overflow-hidden w-fit mx-auto rounded-2xl" @click="[playVideo(), fireVideoEvent('mission')]">
         <video ref="mellivideo" width="875" height="375"
           poster="https://melli-assets.netlify.app/images/stock/daughter-mother-in-call-1024.webp" playsinline>
-          <source src="https://videos.melli.com/fuersorge.webm" type="video/webm">
-          <source src="https://videos.melli.com/fuersorge.mp4" type="video/mp4">
+          <source src="https://melli-assets.netlify.app/videos/fuersorge.webm" type="video/webm">
+          <source src="https://melli-assets.netlify.app/videos/fuersorge.mp4" type="video/mp4">
         </video>
         <div v-if="!isPlaying"
           class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

@@ -1,56 +1,56 @@
 <script setup lang="ts">
-import { breakpointsTailwind } from '@vueuse/core'
-import { fireShopEvent } from '~/google-tag-manager'
-const heroVideo = ref<HTMLElement | null>(null)
+import { breakpointsTailwind } from '@vueuse/core';
+import { fireShopEvent } from '~/google-tag-manager';
+const heroVideo = ref<HTMLElement | null>(null);
 
-const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
+const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm');
 
 /**
  * Our JavaScript function, which calculates the days, hours,
  * minutes and seconds left until Christmas day.
  */
-const days = ref(0)
-const hours = ref(0)
-const minutes = ref(0)
-const seconds = ref(0)
+const days = ref(0);
+const hours = ref(0);
+const minutes = ref(0);
+const seconds = ref(0);
 
 function calculateChristmasCountdown() {
   // Get today's date.
-  const now = new Date()
+  const now = new Date();
 
   // Get the current month. Add a +1 because
   // getMonth starts at 0 for January.
-  const currentMonth = (now.getMonth() + 1)
+  const currentMonth = (now.getMonth() + 1);
 
   // Get the current day of the month.
-  const currentDay = now.getDate()
+  const currentDay = now.getDate();
 
   // Set next Christmas Day
   // One hour earlier because of GTM+1
-  const christmasDay = new Date('2022-12-15T23:00:00.000Z')
+  const christmasDay = new Date('2022-12-15T23:00:00.000Z');
 
   // Get the difference in seconds between the two days.
-  let diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000)
+  let diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000);
   if (diffSeconds <= 0)
-    diffSeconds = 0
+    diffSeconds = 0;
 
   // Don't calculate the time left if it is Christmas day.
   if (currentMonth !== 12 || (currentMonth === 12 && currentDay !== 25)) {
     // Convert these seconds into days, hours, minutes, seconds.
-    days.value = Math.floor(diffSeconds / (3600 * 24))
-    diffSeconds -= days.value * 3600 * 24
-    hours.value = Math.floor(diffSeconds / 3600)
-    diffSeconds -= hours.value * 3600
-    minutes.value = Math.floor(diffSeconds / 60)
-    diffSeconds -= minutes.value * 60
-    seconds.value = diffSeconds
+    days.value = Math.floor(diffSeconds / (3600 * 24));
+    diffSeconds -= days.value * 3600 * 24;
+    hours.value = Math.floor(diffSeconds / 3600);
+    diffSeconds -= hours.value * 3600;
+    minutes.value = Math.floor(diffSeconds / 60);
+    diffSeconds -= minutes.value * 60;
+    seconds.value = diffSeconds;
   }
 
   // Recursive call after 1 second using setTimeout
-  setTimeout(calculateChristmasCountdown, 1000)
+  setTimeout(calculateChristmasCountdown, 1000);
 }
 
-calculateChristmasCountdown()
+calculateChristmasCountdown();
 </script>
 
 <template>
@@ -58,8 +58,8 @@ calculateChristmasCountdown()
     <!-- The video -->
     <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
       poster="https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp">
-      <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
-      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.webm" type="video/webm">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.mp4" type="video/mp4">
     </video>
 
     <!-- Heading & link to Video -->

@@ -91,8 +91,8 @@ const playVideo = () => {
       <video ref="morebenefitsvideo" width="1024"
         poster="https://melli-assets.netlify.app/images/own-content/melli_commercial-screenshots_entertainment-3-1024.webp"
         playsinline>
-        <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
-        <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
+        <source src="https://melli-assets.netlify.app/videos/entertainment.webm" type="video/webm">
+        <source src="https://melli-assets.netlify.app/videos/entertainment.mp4" type="video/mp4">
       </video>
       <div v-if="!isPlaying"
         class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl cursor-pointer absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

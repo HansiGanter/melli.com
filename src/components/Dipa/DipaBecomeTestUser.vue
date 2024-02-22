@@ -115,7 +115,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
       <div
         class="flex flex-col md:flex-row gap-6 lg:gap-15 bg-primary-800 rounded-3xl shadow-xl p-12 border-2 border-primary-300 sm:max-w-80% mx-auto items-center mt-12 sm:-mt-24">
         <div class="w-50 h-50 shrink-0 relative cursor-pointer"
-          @click="playVideo('https://videos.melli.com/testimonial-gertrud-group')">
+          @click="playVideo('https://melli-assets.netlify.app/videos/testimonial-gertrud-group')">
           <img class="aspect-square rounded-full object-cover"
             src="https://melli-assets.netlify.app/images/images/commercials/portrait-oma-gertrud.webp">
           <div class="absolute flex gap-1.5 text-white items-center justify-center top-0 left-0 bottom-0 right-0">
@@ -127,7 +127,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
             Oma Gertrud (91) ist bereits Melli-Testerin. Sieh dir an, wie ihr die Melli-Gruppenstunde so gefällt.
           </p>
           <button class="text-primary-300 font-medium flex gap-2 w-fit items-center mx-auto sm:mx-0"
-            @click="playVideo('https://videos.melli.com/testimonial-gertrud-group')">
+            @click="playVideo('https://melli-assets.netlify.app/videos/testimonial-gertrud-group')">
             <div class="i-lucide:arrow-right w-6 h-6" />Video ansehen
           </button>
         </div>

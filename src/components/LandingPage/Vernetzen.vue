@@ -101,8 +101,8 @@ const startVideo = (event: Event) => {
       :class="!startedVideo ? 'cursor-pointer' : ''" @click="startVideo">
         <video ref="videoElement" playsinline :controls="startedVideo" @ended="startedVideo = false"
           poster="https://melli-assets.netlify.app/images/backgrounds/website-video-thumbnail-3-1024.webp">
-            <source src="https://videos.melli.com/entertainment.webm" type="video/webm">
-            <source src="https://videos.melli.com/entertainment.mp4" type="video/mp4">
+            <source src="https://melli-assets.netlify.app/videos/entertainment.webm" type="video/webm">
+            <source src="https://melli-assets.netlify.app/videos/entertainment.mp4" type="video/mp4">
         </video>
         <div v-if="!startedVideo"
           class="i-carbon:play-outline text-tertiary-200 text-6xl lg:text-8xl absolute top-0 left-0 bottom-0 right-0 mx-auto my-auto" />

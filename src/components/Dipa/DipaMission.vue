@@ -68,7 +68,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="playVideo('https://videos.melli.com/communication')">
+            @click="playVideo('https://melli-assets.netlify.app/videos/communication')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>
@@ -93,7 +93,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="playVideo('https://videos.melli.com/soziale-kontakte')">
+            @click="playVideo('https://melli-assets.netlify.app/videos/soziale-kontakte')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>
@@ -118,7 +118,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
             <div class="i-carbon:user-favorite-alt-filled w-6 h-6" /><span>Werde Melli-Tester</span>
           </button>
           <button class="rounded-lg py-2.5 px-4 flex items-center w-fit gap-2 border-2 border-gray-900"
-            @click="playVideo('https://videos.melli.com/fuersorge')">
+            @click="playVideo('https://melli-assets.netlify.app/videos/fuersorge')">
             <div class="i-lucide:play-circle w-6 h-6" /><span>Video ansehen</span>
           </button>
         </div>

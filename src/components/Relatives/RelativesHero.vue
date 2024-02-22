@@ -31,8 +31,8 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
     <!-- The video -->
     <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
       poster="https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp">
-      <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
-      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.webm" type="video/webm">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.mp4" type="video/mp4">
     </video>
 
     <!-- Heading & link to Video -->
@@ -49,7 +49,7 @@ useEventListener(el, 'fullscreenchange', () => showVideo.value = !!document.full
               <div class="i-lucide:gift w-6 h-6 shrink-0" /> 30 Tage kostenlos Testen
             </RouterLink>
             <button class="rounded-lg text-white border-1.5 border-white py-2.5 px-4 flex w-fit gap-2 justify-center"
-              @click="playVideo('https://videos.melli.com/soziale-kontakte')">
+              @click="playVideo('https://melli-assets.netlify.app/videos/soziale-kontakte')">
               <span>ganzes Video ansehen</span>
               <div class="i-lucide:arrow-right w-6 h-6" />
             </button>

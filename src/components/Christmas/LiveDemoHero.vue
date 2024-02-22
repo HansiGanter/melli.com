@@ -10,8 +10,8 @@ const greaterSm = useBreakpoints(breakpointsTailwind).greater('sm')
     <!-- The video -->
     <video id="heroVideo" ref="heroVideo" class="w-full h-full object-cover" autoplay loop muted playsinline
       poster="https://melli-assets.netlify.app/images/stock/red-hair-greeting-1024.webp">
-      <source src="https://videos.melli.com/soziale-kontakte.webm" type="video/webm">
-      <source src="https://videos.melli.com/soziale-kontakte.mp4" type="video/mp4">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.webm" type="video/webm">
+      <source src="https://melli-assets.netlify.app/videos/soziale-kontakte.mp4" type="video/mp4">
     </video>
 
     <!-- Heading & link to Video -->

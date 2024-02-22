@@ -122,15 +122,15 @@ const sliderImages = [
           <TestimonialV2 author="Peter (62 Jahre), Angehöriger"
             text="Das schöne an Melli ist, dass sie selber Vorschläge über den Tag ins Leben von Oma gibt. Das heitert sie natürlich auf und bringt sie immer wieder aus dem Alltag raus."
             image-src="https://melli-assets.netlify.app/images/testimonials/relative-peter-2.webp"
-            interview-video-src="https://videos.melli.com/testimonial-wohlbefinden.webm" />
+            interview-video-src="https://melli-assets.netlify.app/videos/testimonial-wohlbefinden.webm" />
           <TestimonialV2 author="Gertud (91 Jahre), Nutzerin"
             text="Wir haben das letzte mal in der Melli-Gruppenstunde ein Stadt-Land-Fluss Rätsel gespielt. Ich war zu ersten Mal dabei und habe noch nicht so viel gewusst. Aber wir sind trotzdem gut zurecht gekommen."
             image-src="https://melli-assets.netlify.app/images/testimonials/gertrud-portrait-cut.webp"
-            interview-video-src="https://videos.melli.com/testimonial-gertrud-group.webm" />
+            interview-video-src="https://melli-assets.netlify.app/videos/testimonial-gertrud-group.webm" />
           <TestimonialV2 author="Stephanie S., Pflegedienstleiterin"
             text="Vielen Kindern und Enkeln der Nutzer ist aufgefallen, dass Oma & Opa deutlich mehr von ihrem Alltag erzählt haben und auch viel positiver gesprochen haben. Das hat den Unterhaltungen wohl eine ganz neue Qualität gegeben."
             image-src="https://melli-assets.netlify.app/images/experts/portrait-schuldt.webp"
-            interview-video-src="https://videos.melli.com/expert-interview.webm" />
+            interview-video-src="https://melli-assets.netlify.app/videos/expert-interview.webm" />
         </div>
         <span class="text-right text-xs">*Aus Datenschutzgründen haben wir den Namen unserer Testnutzer geändert.</span>
       </div>

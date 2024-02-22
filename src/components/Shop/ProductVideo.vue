@@ -2,8 +2,8 @@
   <div class="relative w-full h-full">
     <video autoplay loop muted playsinline class="object-cover object-bottom w-screen lg:h-full lg:min-h-unset!"
       style="min-height: calc(100vh - 80px);">
-      <source src="https://videos.melli.com/video_christmas-dialogue-erster-advent.webm" type="video/webm">
-      <source src="https://videos.melli.com/video_christmas-dialogue-erster-advent.mp4" type="video/mp4">
+      <source src="https://melli-assets.netlify.app/videos/video_christmas-dialogue-erster-advent.webm" type="video/webm">
+      <source src="https://melli-assets.netlify.app/videos/video_christmas-dialogue-erster-advent.mp4" type="video/mp4">
     </video>
     <div class="shop-video-filter absolute top-0 w-full h-full pt-1/5 px-6 sm:px-16">
       <div class="max-w-100 md:max-w-120">
